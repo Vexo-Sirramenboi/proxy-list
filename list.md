@@ -63,7 +63,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 9 |
+> | Proxy/Games | captcha | Scramjet | 10 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -76,12 +76,13 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://velara.cc | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://onybj.adm62.ru | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://chem-test-tomorrow-im-cooked.cravat-club.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://bulls.eat.grass.klrmowse.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # ➗ gn-math
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | N/A | N/A | 53 |
+> | Games | N/A | N/A | 54 |
 
 > [!IMPORTANT]
 > View importance notices section if link is broken.
@@ -141,12 +142,13 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://stockstuf.blogspot.com/2026/05/const-newscript-document.html | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://codehs.com/uploads/edf989a37aad2e8e728ece9cf58a778a | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://www.khanacademy.org/computer-programming/all-about-polar-bears-official/5536966650740736 | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://gn23245349.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🐸 frogie's arcade
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Ultraviolet | 31 |
+> | Proxy/Games | captcha | Ultraviolet | 32 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -181,6 +183,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://yassersokawaii.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://sonic-burger.nexus-computing.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://frog.hpsschools.org/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://frogies23445980.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🍌 Jordan's Math Work
 > [!NOTE]
@@ -354,7 +357,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet, Ultraviolet | 38 |
+> | Proxy/Games | unknown | Scramjet, Ultraviolet | 40 |
 
 > [!IMPORTANT]
 > Fern does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -399,6 +402,8 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://s3.amazonaws.com/writevc/index.html | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://s3.amazonaws.com/bullbestyoutuber/index.html | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://bullbestyoutuber.s3.amazonaws.com/index.html | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://onelastlink.s3.amazonaws.com/index.html | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://s3.amazonaws.com/onelastlink/index.html | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🟣 UniUB
 > [!NOTE]
@@ -446,7 +451,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 70 |
+> | Proxy/Games | unknown | Scramjet | 72 |
 
 > [!IMPORTANT]
 > Truffled does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -523,6 +528,8 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://docs.hospedajemariafresia.cl/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://gooningfor-life.hospedajemariafresia.cl/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://ilovereading.blogmedoc.ru/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://eat-more.expensive-meals.fhdstdfffghg.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://truffler24678.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🥱 Boredom
 > [!NOTE]
@@ -662,7 +669,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 86 |
+> | Proxy/Games | unknown | unknown | 89 |
 
 > [!IMPORTANT]
 > Shadow does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -755,12 +762,15 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://truebio.camberleycricket.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://coollogic.camberleycricket.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://wisebio.camberleycricket.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://primegrammar.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://rapidgrammar.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://sharpgeo.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🐶 dogeub
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 87 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 90 |
 
 > [!IMPORTANT]
 > dogeub does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -854,6 +864,9 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://educationbull.asturkiters.es/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://software.config.bull.stuff.ldeazevedo.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://dodge.ball.pe.activities.fun.colloky.com.pe/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://dlah6r0ddz4mx.cloudfront.net/index.html | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://doge452238.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://tasty.how-to-cook.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🌕 Lunar
 > [!NOTE]
@@ -1022,7 +1035,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet, Ultraviolet | 14 |
+> | Proxy/Games | captcha | Scramjet, Ultraviolet | 20 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -1043,12 +1056,18 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://mteverest.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://whyeverestsotall.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://everest6.asturkiters.es/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://everest1.klrmowse.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://everest2.klrmowse.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://everest3.klrmowse.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://everest4.klrmowse.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://everest5.klrmowse.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://about.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🏴 OverCloaked
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp | Scramjet | 24 |
+> | Proxy/Games | epoxy, libcurl, wisp | Scramjet | 27 |
 
 > [!IMPORTANT]
 > OverCloaked does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1079,12 +1098,15 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://s3.amazonaws.com/elliotslinks-tnjavxyp/exam45879/index.html | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://s3.amazonaws.com/elliotslinks-tnjavxyp/essay71679/index.html | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://s3.amazonaws.com/elliotslinks-tnjavxyp/quiz10430/index.html | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://biology.reading.writing.teacher.student.handfolding.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://land.handfolding.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://overd.thenme.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 😈 Imp Proxy
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | Unknown | Scramjet | 101 |
+> | Proxy/Games | Unknown | Scramjet | 103 |
 
 > [!IMPORTANT]
 > Imp Proxy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1192,6 +1214,8 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://txfk.recepist.fi | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://wcir.recepist.fi | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://zyzp.recepist.fi | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://qxkct.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://ypqsc.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🍫 Endis
 > [!NOTE]
@@ -1220,7 +1244,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | Unknown | Scramjet | 103 |
+> | Proxy/Games | Unknown | Scramjet | 107 |
 
 > [!IMPORTANT]
 > Rosin does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1330,6 +1354,10 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://callgobrr.callcentercuritiba.com.br/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://indian.callcentercuritiba.com.br/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://brrrchopa.esdata.info/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://doggy.math57.wr.zdertis.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://domain.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://flyerprogram.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://whathappenedonstonie.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # ⬡ TGLSC Density 4
 > [!NOTE]
@@ -1476,7 +1504,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 31 |
+> | Proxy/Games | unknown | unknown | 39 |
 
 > [!IMPORTANT]
 > StudyHub does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1514,12 +1542,20 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://study.cazaresulina.ro/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://studying.klrmowse.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://learning.lastarria43.cl/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://cranky-clarke.152-53-246-17.plesk.page | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://www.cranky-clarke.152-53-246-17.plesk.page | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://magical-jepsen.152-53-246-17.plesk.page | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://vcsa.newkingdomglobal.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://www.magical-jepsen.152-53-246-17.plesk.page | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://naughty-haibt.152-53-246-17.plesk.page | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://www.naughty-haibt.152-53-246-17.plesk.page | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://studying.klrmowse.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🍓 Strawberry
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 83 |
+> | Proxy/Games | unknown | unknown | 85 |
 
 > [!IMPORTANT]
 > Strawberry does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1609,6 +1645,8 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://info.srivaishnavam.org.au | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://berry.webinfo.tw/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://learning.colloky.com.pe/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://cipher.alalalal.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://ford.klrmowse.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🧱 Noblocc
 > [!NOTE]
@@ -1676,7 +1714,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Ultraviolet | 65 |
+> | Proxy/Games | unknown | Ultraviolet | 66 |
 
 > [!IMPORTANT]
 > Void Network does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1748,12 +1786,13 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://lightspeedistrash.recepist.fi | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://lightspeedistrash.patriciachamudis.com.ar | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://www.fvjmszwd.renaissance-go.de.com | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://nez.alalalal.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🦄 Utopia Education
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 38 |
+> | Proxy/Games | unknown | unknown | 39 |
 
 > [!IMPORTANT]
 > Utopia Education does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1798,6 +1837,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://tatata12345678910e2.chickenkiller.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://proxyyourmom.jumpingcrab.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://auto.detect.math.work.tanenbaumchat.org/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://clever.data.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🌘 Lunaar
 > [!NOTE]
@@ -1845,7 +1885,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | libcurl, epoxy | Scramjet, Ultraviolet | 19 |
+> | Proxy/Games | libcurl, epoxy | Scramjet, Ultraviolet | 21 |
 
 > [!IMPORTANT]
 > Celestial does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1871,12 +1911,14 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://creditrepair911.us/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://celestial-bib.duckdns.org/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://task.bdyoutube.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://hiring.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://edu.thenme.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # ✨ Quasar
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 19 |
+> | Proxy/Games | captcha | Scramjet | 20 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -1902,6 +1944,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://frosted.torontowestpsychotherapy.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://frosted.tongllfoundation.org/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://starr.bijayakilla.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://slantsite.s3.amazonaws.com/index.html | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🧀 Cheesy
 > [!NOTE]
@@ -2233,7 +2276,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 32 |
+> | pending | pending | pending | 33 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -2272,12 +2315,13 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://studyguide.virtualmathnav.online | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://readingstudies.v6.rocks | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://inf69580.ecolefrancophone.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://inf24624.thenme.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🌸 Cherri
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 25 |
+> | pending | pending | pending | 26 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -2309,6 +2353,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://cherribull.asturkiters.es/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://content.keeper.go.gaurd.ian.bvhoa.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://chem.cherri.beearomi.bull.tanenbaumchat.org/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://beearomi.klrmowse.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 💙 LuminalOS
 > [!NOTE]
@@ -2539,7 +2584,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 58 |
+> | pending | pending | pending | 62 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -2604,6 +2649,10 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://library.seminar.vocabulary.drama.learning.recepist.fi | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://homework.learning.drama.lecture.grammar.dirtchicvt.com | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://drama.classroom.geography.seminar.lecture.coosemansla.com | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://glue.tuition.varsity.student.dean.russischbureau.nl | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://calculus.teacher.drama.algebra.lecture.anostudio.info | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://educational.science.lessons.on.canvas.whitestonetech.org | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://educational.science.lessons.on.canvas.cpcmusic.org | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🧪 Totally Science
 > [!NOTE]
@@ -2750,7 +2799,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 3 |
+> | pending | pending | pending | 4 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -2760,6 +2809,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://mathematics.calculus.reformarchive.com/ | 4/30/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://english.seminar.lervs.ro | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://math.science.lervs.ro | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://rhodium.thenme.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🌟 Starlight
 > [!NOTE]
@@ -3037,7 +3087,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 40 |
+> | Proxy/Games | unknown | unknown | 46 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -3081,6 +3131,12 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://xylora.camaradellibro.cl/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://xylora.makeupbuzz.co.uk/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://xylora.k0a1a.net/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://help.science.co.clever.com.alalalal.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://lszx.alalalal.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://xylora.alalalal.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://cmadf.newkingdomglobal.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://science.experiment.anostudio.info | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://meals.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 👟 Nikehub
 > [!NOTE]
@@ -3179,3 +3235,25 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://ixlmathteacherpanel.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+
+
+# TungTung
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | Proxy/Games | unknown | unknown | 2 |
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+| | https://tungtung.vcsa.alalalal.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://vcsacontent.anostudio.info | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+
+# Freebird
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | Proxy/Games | unknown | unknown | 1 |
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+| | https://pale-dawn.thenme.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
