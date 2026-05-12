@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "v4.4",
-    "revision": "r92",
+    "revision": "r93",
     "last_updated": "May 12, 2026",
     "unsorted_total": 1967,
     "important_notices": "### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
-    "update_notice": "### Optimizing jsDelivr To Your Region\nWhen opening/copying jsDelivr links, you can now choose the jsDelivr host you want to open from, recommended to you based on your region.",
+    "update_notice": "### Bugfix\nFixed a bug where the contributed link count would decrease when a link was removed via the link removal script. Contributed link counts couldn't be restored from their previous values before the link removal bot took away links but the current link count is unchanged and cannot be changed by the link removal bot.",
     "fail_threshold": 3,
     "popular_note": "Hand-picked links that tend to work well — not ranked by site traffic (this page has no analytics). Edit docs/popular_links.json and run scripts/convert_list_to_json.py.",
     "popular_links": [
@@ -148,35 +148,55 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-12T19:43:03Z",
-    "checked_at_display": "2026-05-12 19:43 UTC",
+    "checked_at": "2026-05-12T22:07:08Z",
+    "checked_at_display": "2026-05-12 22:07 UTC",
     "added_count": 0,
-    "removed_count": 1,
+    "removed_count": 2,
     "added_links": [],
     "removed_links": [
-      "https://stopsign8.adrian-hofer.at"
+      "https://securly.lysterfam.net",
+      "https://plss.lervs.ro"
     ]
   },
   "failing_links": {
-    "https://vorg-has.me-at-gun-point3.cyberninja.ie": 2,
-    "https://vorg-isnt-a-fem.boy3.cyberninja.ie": 2,
-    "https://update.update.really.info.north-kazakhstan.su.cdn.cloudflare.net": 1,
-    "https://update.update.lunar.info.north-kazakhstan.su.cdn.cloudflare.net": 1,
-    "https://update.www.hello.info.north-kazakhstan.su.cdn.cloudflare.net": 1,
-    "https://update.www.spacce.info.north-kazakhstan.su.cdn.cloudflare.net": 1,
-    "https://www.hjxcbshadikjsad.info.north-kazakhstan.su.cdn.cloudflare.net": 1,
-    "https://third-army.surge.sh": 1,
-    "https://securly.lysterfam.net": 2,
-    "https://home.lervs.ro": 1,
-    "https://learningpolicy.lervs.ro": 1,
-    "https://plss.lervs.ro": 2,
-    "https://sunsett.cc": 1,
-    "https://science.teacher.assignment.physics.homework.shatrughansingh.com.np": 1,
-    "https://fastly.jsdelivr.net/gh/mrdavidzs/svgfrosted@A4/surgeray2343.svg": 1,
-    "https://xylora-on.top.thenookfactory.com": 1,
-    "https://onybj.adm62.ru": 1,
-    "https://update.www.minecraft.info.north-kazakhstan.su.cdn.cloudflare.net": 1,
-    "https://yeah.info.north-kazakhstan.su.cdn.cloudflare.net": 1
+    "https://cdn.jsdelivr.net/gh/carls-math-class/491171-physics@main/doesn.svg": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/logarithmic-limits-4596@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/transcendental-eigenvalues-3653@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/recursive-graph-theory-7131@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/golden-theorem-7490@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/complex-topology-6341@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/transcendental-vectors-5672@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/continuous-vectors-8081@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/discrete-differential-4944@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/quadratic-geometry-6832@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/abstract-combinatorics-1766@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/exponential-calculus-6386@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/irrational-derivatives-8705@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/real-eigenvalues-7807@main/doesn.svg": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/axiomatic-derivatives-3879@main/doesn.svg": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/cubic-matrices-4645@main/doesn.svg": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/real-theorem-2414@main/doesn.svg": 1,
+    "https://update.update.really.info.north-kazakhstan.su.cdn.cloudflare.net": 2,
+    "https://update.update.lunar.info.north-kazakhstan.su.cdn.cloudflare.net": 2,
+    "https://update.www.hello.info.north-kazakhstan.su.cdn.cloudflare.net": 2,
+    "https://update.www.spacce.info.north-kazakhstan.su.cdn.cloudflare.net": 2,
+    "https://www.hjxcbshadikjsad.info.north-kazakhstan.su.cdn.cloudflare.net": 2,
+    "https://evenmore.delafuentefunerales.cl": 1,
+    "https://third-army.surge.sh": 2,
+    "https://home.lervs.ro": 2,
+    "https://learningpolicy.lervs.ro": 2,
+    "https://api.academinctools.pw": 1,
+    "https://educational-site.academinctools.pw": 1,
+    "https://cdn.jsdelivr.net/gh/TwiLabs/history/dist/index.svg": 1,
+    "https://golflefleur.tutoring.rest/actual.html": 1,
+    "https://xylora-on.top.thenookfactory.com": 2,
+    "https://quantil.jsdelivr.net/gh/snoopyeducation/securly.com@main/classlink.com/math.svg": 1,
+    "https://update.www.minecraft.info.north-kazakhstan.su.cdn.cloudflare.net": 2,
+    "https://yeah.info.north-kazakhstan.su.cdn.cloudflare.net": 2,
+    "https://cdn.jsdelivr.net/gh/Flamed-Games/Flamed-Lite@main/index.svg": 1,
+    "https://fastly.jsdelivr.net/gh/Flamed-Games/Flamed-Lite@main/index.svg": 1,
+    "https://fastly.jsdelivr.net/gh/HamCraft-UB/Singlefile@main/index.svg": 1,
+    "https://quantil.jsdelivr.net/gh/HamCraft-UB/Singlefile@main/index.svg": 1
   },
   "links": [
     {
@@ -22180,25 +22200,6 @@
         "unknown"
       ],
       "locked": "",
-      "link": "https://securly.lysterfam.net/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "📖 StudyHub",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
       "link": "https://mathnotes.online",
       "found": "5/2/2026",
       "username": "N/A",
@@ -37872,25 +37873,6 @@
       ],
       "locked": "",
       "link": "https://weqweqw.meshtastic.hu",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌀 Interstellar",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://plss.lervs.ro",
       "found": "5/1/2026",
       "username": "N/A",
       "password": "N/A",
