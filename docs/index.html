@@ -439,6 +439,92 @@
       z-index: 30;
     }
     .summary-backdrop.open { display: flex; }
+    .summary-backdrop.jsdelivr-alias-backdrop {
+      z-index: 35;
+    }
+    .jsdelivr-url-preview-wrap code {
+      word-break: break-all;
+      font-size: 0.78rem;
+    }
+    .summary-modal.jsdelivr-mirror-modal {
+      width: min(900px, 100%);
+    }
+    .jsdelivr-alias-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      margin-top: 0.45rem;
+    }
+    .jsdelivr-alias-card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.65rem 0.75rem;
+      background: var(--surface);
+      border-left: 3px solid #4a5a6e;
+    }
+    .jsdelivr-alias-card[data-tier="best"] { border-left-color: var(--ok); }
+    .jsdelivr-alias-card[data-tier="good"] { border-left-color: #4a9e78; }
+    .jsdelivr-alias-card[data-tier="neutral"] { border-left-color: #5c6d82; }
+    .jsdelivr-alias-card[data-tier="caution"] { border-left-color: #c9a227; }
+    .jsdelivr-alias-card[data-tier="poor"] { border-left-color: #b07070; }
+    .jsdelivr-alias-card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 0.35rem;
+    }
+    .jsdelivr-pill {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.45rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      background: rgba(0, 0, 0, 0.2);
+    }
+    .jsdelivr-alias-card[data-tier="best"] .jsdelivr-pill {
+      color: var(--ok);
+      border-color: #305244;
+    }
+    .jsdelivr-alias-card[data-tier="good"] .jsdelivr-pill {
+      color: #7dd4a8;
+      border-color: #2f4d3d;
+    }
+    .jsdelivr-alias-card[data-tier="caution"] .jsdelivr-pill {
+      color: #ffd57e;
+      border-color: #5d4d2a;
+    }
+    .jsdelivr-alias-card[data-tier="poor"] .jsdelivr-pill {
+      color: #ff9a9a;
+      border-color: #60333e;
+    }
+    .jsdelivr-alias-title {
+      font-size: 0.88rem;
+      margin: 0 0 0.25rem;
+      color: #e8eef5;
+    }
+    .jsdelivr-alias-title code {
+      font-size: 0.82rem;
+    }
+    .jsdelivr-alias-lines {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    .jsdelivr-alias-lines li { margin: 0.15rem 0; }
+    .jsdelivr-alias-lines strong { color: #c5d0dc; font-weight: 600; }
+    .jsdelivr-alias-card .btn {
+      font-size: 0.8rem;
+      flex-shrink: 0;
+    }
     .summary-modal {
       width: min(760px, 100%);
       max-height: 85vh;
@@ -927,6 +1013,20 @@
       </div>
       <div class="summary-body" id="summaryBody"></div>
       <div class="summary-footer" id="summaryFooter"></div>
+    </section>
+  </div>
+  <div class="summary-backdrop jsdelivr-alias-backdrop" id="jsDelivrBackdrop" aria-hidden="true">
+    <section class="summary-modal jsdelivr-mirror-modal" role="dialog" aria-modal="true" aria-labelledby="jsDelivrTitle">
+      <div class="summary-head">
+        <h2 class="summary-title" id="jsDelivrTitle">jsDelivr mirror</h2>
+        <button class="btn" id="jsDelivrCloseBtn" type="button">Close</button>
+      </div>
+      <div class="summary-body">
+        <p class="summary-muted" id="jsDelivrIntro"></p>
+        <p class="summary-muted" id="jsDelivrRegionLine"></p>
+        <p class="summary-muted jsdelivr-url-preview-wrap"><code id="jsDelivrUrlPreview"></code></p>
+        <div class="jsdelivr-alias-list" id="jsDelivrAliasGrid"></div>
+      </div>
     </section>
   </div>
   <div class="summary-backdrop" id="updateBackdrop" aria-hidden="true">
@@ -2347,6 +2447,424 @@
       $("summaryBackdrop").setAttribute("aria-hidden", "true");
     }
 
+    const JSDELIVR_PREF_STORAGE = "proxyList_jsdelivrHost_v1";
+    const JSDELIVR_HOST_OPTIONS = [
+      {
+        host: "cdn.jsdelivr.net",
+        label: "cdn (default)",
+        backend: "jsDelivr auto-balanced entry",
+        regions: "Global",
+        notes:
+          "Usually the best overall default: jsDelivr picks among Fastly, Gcore, Bunny, and Cloudflare-related paths based on health and latency. Forcing another alias can help during outages or odd routing—or hurt you if conditions change.",
+      },
+      {
+        host: "fastly.jsdelivr.net",
+        label: "fastly",
+        backend: "Fastly CDN",
+        regions: "North America, Europe",
+        notes: "Very strong peering and low latency in the US and EU.",
+      },
+      {
+        host: "gcore.jsdelivr.net",
+        label: "gcore",
+        backend: "Gcore CDN",
+        regions: "Eastern Europe, CIS, parts of Asia",
+        notes: "Often faster in Russia / Eastern Europe; sometimes competitive in Southeast Asia depending on ISP.",
+      },
+      {
+        host: "testingcf.jsdelivr.net",
+        label: "testingcf",
+        backend: "Cloudflare-style testing endpoint",
+        regions: "Globally variable",
+        notes: "Not intended as a stable public endpoint. On some mobile networks, Cloudflare-style routing can win due to carrier peering.",
+      },
+      {
+        host: "origin2.jsdelivr.net",
+        label: "origin2",
+        backend: "Origin / backend-style path",
+        regions: "Usually nowhere ideally",
+        notes: "Often slower because traffic stays closer to origin-style infrastructure; useful mainly for debugging or rare routing experiments.",
+      },
+      {
+        host: "quantil.jsdelivr.net",
+        label: "quantil",
+        backend: "Quantil CDN",
+        regions: "Historically China / East Asia",
+        notes: "Older infrastructure; can be inconsistent today. Modern access to jsDelivr from China is often messy (filtering, TLS, routing) regardless of alias.",
+      },
+      {
+        host: "originfastly.jsdelivr.net",
+        label: "originfastly",
+        backend: "Fastly-origin route",
+        regions: "Varies",
+        notes: "Can bypass some CDN layers (useful when caches or edges misbehave) but may add latency.",
+      },
+    ];
+
+    let jsDelivrPickerBaseUrl = "";
+    let jsDelivrPickerMode = "open";
+
+    function inferUserRegionFromTimezone() {
+      let tz = "";
+      try {
+        tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+      } catch (_) {}
+      const t = String(tz || "").toLowerCase();
+      const base = { tz, t };
+      if (!t) return { ...base, key: "unknown", label: "Unknown" };
+
+      if (/\/(shanghai|chongqing|urumqi|harbin|kashgar|hong_kong|macau|macao|taipei)$/.test(t)) {
+        return { ...base, key: "china", label: "Greater China" };
+      }
+      if (
+        /europe\/(moscow|simferopol|kyiv|kiev|minsk|chisinau|kishinev|tiraspol|volgograd|astrakhan|samara|saratov|ulyanovsk|kirov)$/.test(t) ||
+        /asia\/(yekaterinburg|omsk|novosibirsk|barnaul|tomsk|novokuznetsk|krasnoyarsk|irkutsk|chita|yakutsk|khandyga|vladivostok|ussuriysk|magadan|sakhalin|kamchatka|anadyr|almaty|tashkent|bishkek|ashgabat|dushanbe|baku|yerevan|tbilisi|oral|atyrau|aktobe|aqtobe|aqtau|qyzylorda|qostanay)$/.test(t)
+      ) {
+        return { ...base, key: "cis", label: "Russia / CIS" };
+      }
+      if (
+        /asia\/(bangkok|jakarta|pontianak|manila|singapore|ho_chi_minh|hanoi|kuala_lumpur|phnom_penh|vientiane|brunei|rangoon|yangon|jayapura|makassar)$/.test(t)
+      ) {
+        return { ...base, key: "sea", label: "Southeast Asia" };
+      }
+      if (/^(australia|pacific)\//.test(t)) {
+        return { ...base, key: "oceania", label: "Oceania / Pacific" };
+      }
+      if (
+        /america\/(argentina|santiago|lima|bogota|caracas|la_paz|sao_paulo|montevideo|asuncion|guayaquil|belem|fortaleza|recife|maceio|bahia|rio_branco|porto_velho|campo_grande|cuiaba|goiania|brasilia)$/.test(t)
+      ) {
+        return { ...base, key: "latam", label: "Latin America" };
+      }
+      if (t.startsWith("america/") || t.startsWith("us/") || t.startsWith("canada/")) {
+        return { ...base, key: "na", label: "North America" };
+      }
+      if (t.startsWith("europe/") || t.startsWith("atlantic/") || t.startsWith("arctic/")) {
+        return { ...base, key: "eu", label: "Europe" };
+      }
+      if (t.startsWith("asia/") || t.startsWith("indian/")) {
+        return { ...base, key: "asia", label: "Asia" };
+      }
+      if (t.startsWith("africa/")) {
+        return { ...base, key: "africa", label: "Africa" };
+      }
+      return { ...base, key: "unknown", label: "Unknown" };
+    }
+
+    function pickRegionTier(table, regionKey) {
+      const rk = regionKey || "unknown";
+      if (table[rk]) return table[rk];
+      return table.default || { tier: "neutral", hint: "" };
+    }
+
+    function jsDelivrTierForHostAndRegion(host, regionKey) {
+      const rk = regionKey || "unknown";
+      if (host === "cdn.jsdelivr.net") {
+        return {
+          tier: "best",
+          hint:
+            "Best default for most people: jsDelivr balances providers automatically. Manual aliases are for outages, throttling, or odd ISP routing.",
+        };
+      }
+      if (host === "fastly.jsdelivr.net") {
+        return pickRegionTier(
+          {
+            na: { tier: "good", hint: "Often among the fastest mirrors in North America." },
+            eu: { tier: "good", hint: "Strong peering and low latency across much of Europe." },
+            cis: {
+              tier: "neutral",
+              hint: "Can be fast, but some ISPs route to Fastly poorly—compare with Gcore.",
+            },
+            china: {
+              tier: "caution",
+              hint: "International CDN paths into China are often inconsistent (filtering, routing, TLS).",
+            },
+            sea: {
+              tier: "neutral",
+              hint: "Highly ISP-dependent; Gcore or Cloudflare-style paths sometimes win here.",
+            },
+            asia: { tier: "good", hint: "Often strong where Fastly has dense presence." },
+            oceania: { tier: "good", hint: "Usually reasonable to Pacific POPs." },
+            africa: { tier: "good", hint: "Often usable where Fastly peers well." },
+            latam: { tier: "neutral", hint: "Varies a lot by country, city, and carrier." },
+            default: { tier: "good", hint: "Global Fastly edge; especially strong in North America and Europe." },
+          },
+          rk
+        );
+      }
+      if (host === "gcore.jsdelivr.net") {
+        return pickRegionTier(
+          {
+            cis: { tier: "good", hint: "Often the best unofficial choice in Russia / CIS." },
+            eu: { tier: "good", hint: "Strong in Eastern Europe; worth comparing with Fastly." },
+            sea: { tier: "good", hint: "Sometimes wins in Southeast Asia depending on ISP and path." },
+            asia: { tier: "good", hint: "Can be competitive in parts of Asia vs other aliases." },
+            na: { tier: "neutral", hint: "Usually fine but not the typical first pick in US/Canada." },
+            china: { tier: "neutral", hint: "May help in some cases; overall China access to jsDelivr remains inconsistent." },
+            oceania: { tier: "neutral", hint: "Try if Fastly or the default entry feels slow." },
+            africa: { tier: "neutral", hint: "Try if default routing is poor on your network." },
+            latam: { tier: "neutral", hint: "Worth testing if default or Fastly paths underperform." },
+            default: { tier: "neutral", hint: "Good when you are geographically close to Gcore POPs or when Fastly routes oddly." },
+          },
+          rk
+        );
+      }
+      if (host === "testingcf.jsdelivr.net") {
+        return {
+          tier: "caution",
+          hint:
+            rk === "sea" || rk === "latam"
+              ? "Testing endpoint—not guaranteed stable. Mobile carriers sometimes peer better to Cloudflare-style paths."
+              : "Testing endpoint—not intended as a stable public mirror; use only if you know why you need it.",
+        };
+      }
+      if (host === "quantil.jsdelivr.net") {
+        return pickRegionTier(
+          {
+            china: {
+              tier: "good",
+              hint: "Historically associated with China / East Asia, but quality is inconsistent today.",
+            },
+            na: { tier: "poor", hint: "Often slower in North America vs Fastly or the default entry." },
+            eu: { tier: "poor", hint: "Often slower in Europe vs Fastly or the default entry." },
+            cis: { tier: "caution", hint: "Rarely the first choice in CIS; compare with Gcore or the default entry." },
+            sea: { tier: "caution", hint: "Can vary; usually not the first mirror to try in SEA." },
+            asia: { tier: "neutral", hint: "Sometimes used for East Asia paths; verify with measurements." },
+            default: { tier: "caution", hint: "Older Quantil path; behavior can be inconsistent outside historical China use." },
+          },
+          rk
+        );
+      }
+      if (host === "originfastly.jsdelivr.net") {
+        return {
+          tier: "neutral",
+          hint: "Bypasses some layers—can help with stale cache or edge bugs, but latency may rise.",
+        };
+      }
+      if (host === "origin2.jsdelivr.net") {
+        return {
+          tier: "poor",
+          hint: "Usually slower (closer to origin-style infra). Mostly for debugging or special routing cases.",
+        };
+      }
+      return { tier: "neutral", hint: "" };
+    }
+
+    const JSDELIVR_TIER_ORDER = { best: 0, good: 1, neutral: 2, caution: 3, poor: 4 };
+
+    function jsDelivrTierPillText(tier) {
+      switch (tier) {
+        case "best":
+          return "Recommended default";
+        case "good":
+          return "Good choice";
+        case "neutral":
+          return "Neutral / situational";
+        case "caution":
+          return "Caution";
+        case "poor":
+          return "Often suboptimal";
+        default:
+          return "—";
+      }
+    }
+
+    function isJsDelivrUrl(urlStr) {
+      try {
+        const u = new URL(urlStr);
+        return /^https?:$/i.test(u.protocol) && u.hostname.toLowerCase().endsWith(".jsdelivr.net");
+      } catch (_) {
+        return false;
+      }
+    }
+
+    function swapJsDelivrHost(urlStr, newHost) {
+      const u = new URL(urlStr);
+      u.hostname = String(newHost).toLowerCase();
+      return u.toString();
+    }
+
+    function closeJsDelivrPicker() {
+      const bd = $("jsDelivrBackdrop");
+      if (!bd) return;
+      bd.classList.remove("open");
+      bd.setAttribute("aria-hidden", "true");
+      jsDelivrPickerBaseUrl = "";
+      jsDelivrPickerMode = "open";
+    }
+
+    async function copyPlainTextToClipboard(text) {
+      let ok = false;
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(text);
+          ok = true;
+        } else {
+          const ta = document.createElement("textarea");
+          ta.value = text;
+          ta.setAttribute("readonly", "");
+          ta.style.position = "absolute";
+          ta.style.left = "-9999px";
+          document.body.appendChild(ta);
+          ta.select();
+          ok = document.execCommand("copy");
+          document.body.removeChild(ta);
+        }
+      } catch (_) {
+        ok = false;
+      }
+      if (!ok) {
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        try {
+          ok = document.execCommand("copy");
+        } catch (_) {
+          ok = false;
+        }
+        document.body.removeChild(ta);
+      }
+      return ok;
+    }
+
+    function flashSummaryCopyButtonState(ok) {
+      const btn = $("summaryCopyBtn");
+      if (!btn) return;
+      btn.textContent = ok ? "Copied!" : "Copy failed";
+      if (ok) btn.classList.add("copied");
+      setTimeout(() => {
+        btn.textContent = "Copy link";
+        btn.classList.remove("copied");
+      }, 1500);
+    }
+
+    function openJsDelivrPicker(baseUrl, mode) {
+      jsDelivrPickerMode = mode === "copy" ? "copy" : "open";
+      jsDelivrPickerBaseUrl = baseUrl;
+      const bd = $("jsDelivrBackdrop");
+      const grid = $("jsDelivrAliasGrid");
+      const preview = $("jsDelivrUrlPreview");
+      const intro = $("jsDelivrIntro");
+      const regionLine = $("jsDelivrRegionLine");
+      if (!bd || !grid) return;
+
+      const region = inferUserRegionFromTimezone();
+      const regionKey = region.key;
+
+      let pref = "";
+      try {
+        pref = localStorage.getItem(JSDELIVR_PREF_STORAGE) || "";
+      } catch (_) {}
+
+      if (preview) preview.textContent = baseUrl;
+      if (intro) {
+        intro.textContent =
+          jsDelivrPickerMode === "copy"
+            ? "Choose a CDN hostname to copy. Path, query, and hash stay the same as in the list."
+            : "Choose a CDN hostname to open in a new tab. Path, query, and hash stay the same as in the list.";
+      }
+      if (regionLine) {
+        let msg = "Rough guess for where you are: " + region.label + ". Inferred from your browser timezone";
+        if (region.tz) msg += " (" + region.tz + ")";
+        msg +=
+          ")—not GPS-accurate. VPNs, remote desktop, travel, or an unusual system timezone can skew these hints.";
+        regionLine.textContent = msg;
+      }
+
+      const indexed = JSDELIVR_HOST_OPTIONS.map((opt, i) => {
+        const { tier } = jsDelivrTierForHostAndRegion(opt.host, regionKey);
+        return { opt, i, ord: JSDELIVR_TIER_ORDER[tier] ?? 9 };
+      });
+      indexed.sort((a, b) => {
+        if (a.ord !== b.ord) return a.ord - b.ord;
+        return a.i - b.i;
+      });
+
+      const frag = document.createDocumentFragment();
+      for (const { opt } of indexed) {
+        const tierInfo = jsDelivrTierForHostAndRegion(opt.host, regionKey);
+        const card = document.createElement("article");
+        card.className = "jsdelivr-alias-card";
+        card.dataset.tier = tierInfo.tier;
+
+        const top = document.createElement("div");
+        top.className = "jsdelivr-alias-card-top";
+
+        const pill = document.createElement("span");
+        pill.className = "jsdelivr-pill";
+        pill.textContent = jsDelivrTierPillText(tierInfo.tier);
+
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "btn" + (opt.host === pref ? " btn-active" : "");
+        if (tierInfo.tier === "best") btn.classList.add("btn-primary");
+        btn.textContent =
+          jsDelivrPickerMode === "copy" ? "Copy with this host" : "Open with this host";
+        btn.title = opt.host;
+
+        btn.addEventListener("click", async () => {
+          const modeAtClick = jsDelivrPickerMode;
+          const out = swapJsDelivrHost(jsDelivrPickerBaseUrl, opt.host);
+          try {
+            localStorage.setItem(JSDELIVR_PREF_STORAGE, opt.host);
+          } catch (_) {}
+          closeJsDelivrPicker();
+          if (modeAtClick === "copy") {
+            const ok = await copyPlainTextToClipboard(out);
+            flashSummaryCopyButtonState(ok);
+          } else {
+            window.open(out, "_blank", "noopener,noreferrer");
+          }
+        });
+
+        top.appendChild(pill);
+        top.appendChild(btn);
+
+        const title = document.createElement("p");
+        title.className = "jsdelivr-alias-title";
+        const nameStrong = document.createElement("strong");
+        nameStrong.textContent = opt.label;
+        title.appendChild(nameStrong);
+        title.appendChild(document.createTextNode(" · " + opt.backend));
+
+        const ul = document.createElement("ul");
+        ul.className = "jsdelivr-alias-lines";
+
+        const liRegions = document.createElement("li");
+        const sr = document.createElement("strong");
+        sr.textContent = "Usually strongest in:";
+        liRegions.appendChild(sr);
+        liRegions.appendChild(document.createTextNode(" " + opt.regions));
+
+        const liNotes = document.createElement("li");
+        const sn = document.createElement("strong");
+        sn.textContent = "General notes:";
+        liNotes.appendChild(sn);
+        liNotes.appendChild(document.createTextNode(" " + opt.notes));
+
+        const liHint = document.createElement("li");
+        const sh = document.createElement("strong");
+        sh.textContent = "Hint for your guess:";
+        liHint.appendChild(sh);
+        liHint.appendChild(document.createTextNode(" " + (tierInfo.hint || "—")));
+
+        ul.appendChild(liRegions);
+        ul.appendChild(liNotes);
+        ul.appendChild(liHint);
+
+        card.appendChild(top);
+        card.appendChild(title);
+        card.appendChild(ul);
+        frag.appendChild(card);
+      }
+      grid.replaceChildren(frag);
+
+      bd.classList.add("open");
+      bd.setAttribute("aria-hidden", "false");
+    }
+
     function escapeHtml(s) {
       return String(s)
         .replace(/&/g, "&amp;")
@@ -2870,48 +3388,26 @@
         $("summaryOpenBtn").addEventListener("click", (ev) => {
           const link = ev.currentTarget.getAttribute("href") || "";
           if (!link || link === "#") return;
-          if (!confirmMalwareAction(link, "open")) ev.preventDefault();
+          if (!confirmMalwareAction(link, "open")) {
+            ev.preventDefault();
+            return;
+          }
+          if (isJsDelivrUrl(link)) {
+            ev.preventDefault();
+            openJsDelivrPicker(link);
+          }
         });
         $("summaryCopyBtn").addEventListener("click", async (ev) => {
           const btn = ev.currentTarget;
           const link = (btn && btn.dataset && btn.dataset.link) || "";
           if (!link) return;
           if (!confirmMalwareAction(link, "copy")) return;
-          let ok = false;
-          try {
-            if (navigator.clipboard && navigator.clipboard.writeText) {
-              await navigator.clipboard.writeText(link);
-              ok = true;
-            } else {
-              const ta = document.createElement("textarea");
-              ta.value = link;
-              ta.setAttribute("readonly", "");
-              ta.style.position = "absolute";
-              ta.style.left = "-9999px";
-              document.body.appendChild(ta);
-              ta.select();
-              ok = document.execCommand("copy");
-              document.body.removeChild(ta);
-            }
-          } catch (_) {
-            ok = false;
+          if (isJsDelivrUrl(link)) {
+            openJsDelivrPicker(link, "copy");
+            return;
           }
-          if (!ok) {
-            const ta = document.createElement("textarea");
-            ta.value = link;
-            ta.style.position = "fixed";
-            ta.style.opacity = "0";
-            document.body.appendChild(ta);
-            ta.select();
-            try { ok = document.execCommand("copy"); } catch (_) { ok = false; }
-            document.body.removeChild(ta);
-          }
-          btn.textContent = ok ? "Copied!" : "Copy failed";
-          if (ok) btn.classList.add("copied");
-          setTimeout(() => {
-            btn.textContent = "Copy link";
-            btn.classList.remove("copied");
-          }, 1500);
+          const ok = await copyPlainTextToClipboard(link);
+          flashSummaryCopyButtonState(ok);
         });
         $("selectFilterBtn").addEventListener("click", () => void openFilterModal());
         $("filterCloseBtn").addEventListener("click", closeFilterModal);
@@ -2952,6 +3448,14 @@
         $("updateBackdrop").addEventListener("click", (ev) => {
           if (ev.target === $("updateBackdrop")) closeUpdateModal(meta);
         });
+        const jsDelivrBd = $("jsDelivrBackdrop");
+        if (jsDelivrBd) {
+          jsDelivrBd.addEventListener("click", (ev) => {
+            if (ev.target === jsDelivrBd) closeJsDelivrPicker();
+          });
+        }
+        const jsDelivrCloseBtn = $("jsDelivrCloseBtn");
+        if (jsDelivrCloseBtn) jsDelivrCloseBtn.addEventListener("click", closeJsDelivrPicker);
         $("updateCloseBtn").addEventListener("click", () => closeUpdateModal(meta));
         $("updateGotItBtn").addEventListener("click", () => closeUpdateModal(meta));
         $("updateNoticeBtn").addEventListener("click", () => openUpdateModal(meta, readSeenVersion()));
@@ -2978,6 +3482,11 @@
         });
         document.addEventListener("keydown", (ev) => {
           if (ev.key === "Escape") {
+            const jdb = $("jsDelivrBackdrop");
+            if (jdb && jdb.classList.contains("open")) {
+              closeJsDelivrPicker();
+              return;
+            }
             closeSummary();
             closeFilterModal();
             closeUpdateModal(meta);
