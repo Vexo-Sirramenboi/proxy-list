@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v4.4 | Released: May 12, 2026
-> r93 | Last Updated: May 12, 2026
+> r94 | Last Updated: May 12, 2026
 > Total onsite links: 4122 (sorted list + unsorted page)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -205,7 +205,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp, captcha, reflux | Scramjet, Ultraviolet | 49 |
+> | Proxy/Games | epoxy, libcurl, wisp, captcha, reflux | Scramjet, Ultraviolet | 42 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -224,11 +224,6 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://thinking.kinemasot.cl/ | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://thinking.rymconstrucciones.cl/ | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://thinking.gangashrestha.com.np/ | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://update.update.really.info.north-kazakhstan.su.cdn.cloudflare.net/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://update.update.lunar.info.north-kazakhstan.su.cdn.cloudflare.net/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://update.www.hello.info.north-kazakhstan.su.cdn.cloudflare.net/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://update.www.spacce.info.north-kazakhstan.su.cdn.cloudflare.net/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://www.hjxcbshadikjsad.info.north-kazakhstan.su.cdn.cloudflare.net/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://51.222.206.184.dyn.tcadmin.net/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://51.222.206.184.my.local-ip.co/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://51.222.206.184.my.local-ip.sh | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -256,8 +251,6 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://raw.esm.sh/gh/TwiLabs/art/dist/index.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://dy3.real3m.com | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://raw.esm.sh/gh/NightProxy/DD-Static@3775f24/dist/index.svg | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://update.www.minecraft.info.north-kazakhstan.su.cdn.cloudflare.net | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://yeah.info.north-kazakhstan.su.cdn.cloudflare.net | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🚀 Nebulo
 > [!NOTE]
@@ -918,7 +911,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 14 |
+> | Proxy/Games | unknown | Scramjet | 12 |
 
 > [!IMPORTANT]
 > Ghost does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -927,8 +920,6 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | - | - | - | - | - | - |
 | | https://main.d39joesfd55qkg.amplifyapp.com/ | 3/17/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://s3.amazonaws.com/ghst/index.html | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://home.lervs.ro | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://learningpolicy.lervs.ro | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://thyistof.page.gd/?i=1 | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://superdupereducationalsite.page.gd/?i=1 | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://securely-is-ahh.fwh.is/?i=1 | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
@@ -3087,7 +3078,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 46 |
+> | Proxy/Games | unknown | unknown | 45 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -3102,7 +3093,6 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://xylora.beerporn.org | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://play.nation.xylora.beltfrog.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://xylora.co.ldeazevedo.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://xylora-on.top.thenookfactory.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://vcsa.easternstamps.com | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://xylora.searching.dirtchicvt.com | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://xylora.rust.rusticrivergear.com | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
@@ -3235,7 +3225,6 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://ixlmathteacherpanel.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-
 
 # TungTung
 > [!NOTE]
