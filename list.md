@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
-> v4.3.1 | Released: May 11, 2026
-> r91 | Last Updated: May 12, 2026
+> v4.4 | Released: May 12, 2026
+> r92 | Last Updated: May 12, 2026
 > Total onsite links: 4122 (sorted list + unsorted page)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
