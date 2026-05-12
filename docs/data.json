@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v4.3.1",
-    "revision": "r89",
+    "revision": "r90",
     "last_updated": "May 12, 2026",
     "unsorted_total": 1967,
     "important_notices": "### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
@@ -148,28 +148,66 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-12T08:32:57Z",
-    "checked_at_display": "2026-05-12 08:32 UTC",
+    "checked_at": "2026-05-12T14:08:25Z",
+    "checked_at_display": "2026-05-12 14:08 UTC",
     "added_count": 0,
-    "removed_count": 4,
+    "removed_count": 5,
     "added_links": [],
     "removed_links": [
-      "https://learning-science.cloudfare.teimporto.cl",
-      "https://hvtzw.reformarchive.com",
-      "https://copabag.bagos.ro",
-      "https://psavw.alexhuart.com"
+      "https://bbrq.consulting-octopus.co.uk",
+      "https://mome.bylooma.com",
+      "https://jjju.lastarria43.cl",
+      "https://light.cops.klrmowse.com",
+      "https://briaisahotmess.lastarria43.cl"
     ]
   },
   "failing_links": {
-    "https://evenmore.delafuentefunerales.cl": 1,
-    "https://stopsign8.adrian-hofer.at": 1,
-    "https://bbrq.consulting-octopus.co.uk": 2,
-    "https://mome.bylooma.com": 2,
-    "https://jjju.lastarria43.cl": 2,
-    "https://onybj.adm62.ru": 1,
-    "https://chem-test-tomorrow-im-cooked.cravat-club.com": 1,
-    "https://light.cops.klrmowse.com": 2,
-    "https://briaisahotmess.lastarria43.cl": 2
+    "https://vorg-has.me-at-gun-point3.cyberninja.ie": 1,
+    "https://vorg-isnt-a-fem.boy3.cyberninja.ie": 1,
+    "https://bobbydongschreinerus8.weebly.com/my-work.html": 1,
+    "https://evenmore.delafuentefunerales.cl": 2,
+    "https://securly.lysterfam.net": 1,
+    "https://plss.lervs.ro": 1,
+    "https://velara.cc": 1,
+    "https://clapclapclapclapinthebed.aber.ir": 1,
+    "https://xylora.grahammurryinsuranceagency.com": 1,
+    "https://xylora.notariamelipilla.cl": 1,
+    "https://sub.to.playernation.xylora.renaca.com": 1,
+    "https://join.mizumath.babypos.hk": 1,
+    "https://xylora.vta-international.com": 1,
+    "https://summer.hot.sun.longerdays.shorternights.japan.is": 1,
+    "https://xylora.triatlonpacense.es": 1,
+    "https://xylora.beerporn.org": 1,
+    "https://play.nation.xylora.beltfrog.com": 1,
+    "https://xylora.co.ldeazevedo.com": 1,
+    "https://technology.student.geography.chemistry.drama.colloky.com.pe": 1,
+    "https://vcsa.easternstamps.com": 1,
+    "https://xylora.searching.dirtchicvt.com": 1,
+    "https://xylora.rust.rusticrivergear.com": 1,
+    "https://stopsign8.adrian-hofer.at": 2,
+    "https://repeating.xylora.webinfo.tw": 1,
+    "https://xylora.read.about.willy.cat": 1,
+    "https://xylora.research.about.dogs.valor.ar": 1,
+    "https://xy.lora.grahammurryinsuranceagency.com": 1,
+    "https://days.delia-derbyshire.net": 1,
+    "https://resting.cazaresulina.ro": 1,
+    "https://fishes.colloky.com.pe": 1,
+    "https://testing.notariamelipilla.cl": 1,
+    "https://exam.grahammurryinsuranceagency.com": 1,
+    "https://xylora.math.science.heidibranlund.com": 1,
+    "https://xylora.testout.repuestoslibertad.cl": 1,
+    "https://xylora.countertops.kwgranitecountertops.com": 1,
+    "https://xylora.asturkiters.es": 1,
+    "https://xylora.elymbmx.com": 1,
+    "https://xylora.alalalal.com": 1,
+    "https://xylora.rodzinnawiez.pl": 1,
+    "https://xylora.ucdcanoeclub.com": 1,
+    "https://xylora.pilith.com": 1,
+    "https://xylora.nurah.com.my": 1,
+    "https://xylora.sudandulal.com.np": 1,
+    "https://xylora.camaradellibro.cl": 1,
+    "https://xylora.makeupbuzz.co.uk": 1,
+    "https://xylora.k0a1a.net": 1
   },
   "links": [
     {
@@ -648,63 +686,6 @@
       ],
       "locked": "",
       "link": "https://stopsign8.adrian-hofer.at/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌙 Velara",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://bbrq.consulting-octopus.co.uk",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌙 Velara",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://mome.bylooma.com",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌙 Velara",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://jjju.lastarria43.cl",
       "found": "5/9/2026",
       "username": "N/A",
       "password": "N/A",
@@ -40544,44 +40525,6 @@
       ],
       "locked": "",
       "link": "https://xylora.searching.dirtchicvt.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://light.cops.klrmowse.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://briaisahotmess.lastarria43.cl/",
       "found": "5/9/2026",
       "username": "N/A",
       "password": "N/A",
