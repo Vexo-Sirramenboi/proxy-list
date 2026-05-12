@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "v4.3.1",
-    "revision": "r87",
-    "last_updated": "May 11, 2026",
+    "revision": "r88",
+    "last_updated": "May 12, 2026",
     "unsorted_total": 1967,
     "important_notices": "### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
     "update_notice": "### Bugfix\nFixed a bug where the contributed link count would decrease when a link was removed via the link removal script. Contributed link counts couldn't be restored from their previous values before the link removal bot took away links but the current link count is unchanged and cannot be changed by the link removal bot.",
@@ -148,44 +148,30 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-11T19:41:47Z",
-    "checked_at_display": "2026-05-11 19:41 UTC",
+    "checked_at": "2026-05-12T02:31:33Z",
+    "checked_at_display": "2026-05-12 02:31 UTC",
     "added_count": 0,
-    "removed_count": 3,
+    "removed_count": 2,
     "added_links": [],
     "removed_links": [
-      "https://bulls.eat.grass.klrmowse.com",
-      "https://testifies.birds.com.chickenkiller.com",
-      "https://laweducation.clipfaktory.com"
+      "https://sail.with.educated.bulls.poloniacruz.com",
+      "https://ebutter.chickenkiller.com"
     ]
   },
   "failing_links": {
-    "https://vorg-isnt-a-fem.boy3.cyberninja.ie": 1,
-    "https://learning-science.cloudfare.teimporto.cl": 1,
-    "https://evenmore.delafuentefunerales.cl": 2,
-    "https://ciaworldfactbook.daybits.net": 1,
-    "https://psavw.alexhuart.com": 1,
-    "https://hvtzw.reformarchive.com": 1,
-    "https://frosted.numbercraftacademy.com": 1,
-    "https://api.notariamelipilla.cl": 1,
-    "https://frosted.vta-international.com": 1,
-    "https://cherri.totallyeducation.info": 1,
-    "https://cherryontop.wikidelia.net": 1,
-    "https://dudewhatthecherryists.wikidelia.net": 1,
-    "https://stopsign8.adrian-hofer.at": 1,
-    "https://sail.with.educated.bulls.poloniacruz.com": 2,
-    "https://chem-test-tomorrow-im-cooked.cravat-club.com": 1,
-    "https://ebutter.chickenkiller.com": 2,
-    "https://copabag.bagos.ro": 1,
-    "https://napoleon-wiki.2to1agri.com": 1,
-    "https://education.potomacriversafetycommittee.org": 1,
-    "https://edu.bdyoutube.com": 1,
-    "https://frosted.latine.ca": 1,
-    "https://frosted.valor.ar": 1,
-    "https://frosted.torontowestpsychotherapy.com": 1,
-    "https://frosted.tongllfoundation.org": 1,
-    "https://starr.bijayakilla.com": 1,
-    "https://mathstudies.calculuslessons.lol": 1
+    "https://vorg-has.me-at-gun-point3.cyberninja.ie": 1,
+    "https://vorg-isnt-a-fem.boy3.cyberninja.ie": 2,
+    "https://learning-science.cloudfare.teimporto.cl": 2,
+    "https://psavw.alexhuart.com": 2,
+    "https://sunsett.cc": 1,
+    "https://hvtzw.reformarchive.com": 2,
+    "https://velara.cc": 1,
+    "https://bbrq.consulting-octopus.co.uk": 1,
+    "https://mome.bylooma.com": 1,
+    "https://jjju.lastarria43.cl": 1,
+    "https://copabag.bagos.ro": 2,
+    "https://light.cops.klrmowse.com": 1,
+    "https://briaisahotmess.lastarria43.cl": 1
   },
   "links": [
     {
@@ -778,25 +764,6 @@
       ],
       "locked": "",
       "link": "https://onybj.adm62.ru",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌙 Velara",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://sail.with.educated.bulls.poloniacruz.com/",
       "found": "5/9/2026",
       "username": "N/A",
       "password": "N/A",
@@ -8398,25 +8365,6 @@
       ],
       "locked": "",
       "link": "https://boredonasndkf.freetls.fastly.net/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🥱 Boredom",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://ebutter.chickenkiller.com/",
       "found": "5/9/2026",
       "username": "N/A",
       "password": "N/A",

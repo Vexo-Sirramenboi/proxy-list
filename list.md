@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v4.3.1 | Released: May 11, 2026
-> r87 | Last Updated: May 11, 2026
+> r88 | Last Updated: May 12, 2026
 > Total onsite links: 4122 (sorted list + unsorted page)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -63,7 +63,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 16 |
+> | Proxy/Games | captcha | Scramjet | 15 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -81,7 +81,6 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://mome.bylooma.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://jjju.lastarria43.cl | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://onybj.adm62.ru | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://sail.with.educated.bulls.poloniacruz.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://chem-test-tomorrow-im-cooked.cravat-club.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # ➗ gn-math
@@ -535,7 +534,7 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 38 |
+> | Proxy/Games | unknown | Scramjet | 37 |
 
 > [!IMPORTANT]
 > Boredom does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -576,7 +575,6 @@ Fixed a bug where the contributed link count would decrease when a link was remo
 | | https://about-wikidelia.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://secure-learning-halka.educationalstudies.edu.europeserv.org | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://boredonasndkf.freetls.fastly.net/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://ebutter.chickenkiller.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://homeworkhelper6741.jumpingcrab.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://vps-ac2179fd.vps.ovh.ca/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://docs.remiosenifoundation.org/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
