@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v4.3.1",
-    "revision": "r88",
+    "revision": "r89",
     "last_updated": "May 12, 2026",
     "unsorted_total": 1967,
     "important_notices": "### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
@@ -148,30 +148,28 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-12T02:31:33Z",
-    "checked_at_display": "2026-05-12 02:31 UTC",
+    "checked_at": "2026-05-12T08:32:57Z",
+    "checked_at_display": "2026-05-12 08:32 UTC",
     "added_count": 0,
-    "removed_count": 2,
+    "removed_count": 4,
     "added_links": [],
     "removed_links": [
-      "https://sail.with.educated.bulls.poloniacruz.com",
-      "https://ebutter.chickenkiller.com"
+      "https://learning-science.cloudfare.teimporto.cl",
+      "https://hvtzw.reformarchive.com",
+      "https://copabag.bagos.ro",
+      "https://psavw.alexhuart.com"
     ]
   },
   "failing_links": {
-    "https://vorg-has.me-at-gun-point3.cyberninja.ie": 1,
-    "https://vorg-isnt-a-fem.boy3.cyberninja.ie": 2,
-    "https://learning-science.cloudfare.teimporto.cl": 2,
-    "https://psavw.alexhuart.com": 2,
-    "https://sunsett.cc": 1,
-    "https://hvtzw.reformarchive.com": 2,
-    "https://velara.cc": 1,
-    "https://bbrq.consulting-octopus.co.uk": 1,
-    "https://mome.bylooma.com": 1,
-    "https://jjju.lastarria43.cl": 1,
-    "https://copabag.bagos.ro": 2,
-    "https://light.cops.klrmowse.com": 1,
-    "https://briaisahotmess.lastarria43.cl": 1
+    "https://evenmore.delafuentefunerales.cl": 1,
+    "https://stopsign8.adrian-hofer.at": 1,
+    "https://bbrq.consulting-octopus.co.uk": 2,
+    "https://mome.bylooma.com": 2,
+    "https://jjju.lastarria43.cl": 2,
+    "https://onybj.adm62.ru": 1,
+    "https://chem-test-tomorrow-im-cooked.cravat-club.com": 1,
+    "https://light.cops.klrmowse.com": 2,
+    "https://briaisahotmess.lastarria43.cl": 2
   },
   "links": [
     {
@@ -554,25 +552,6 @@
         "scramjet"
       ],
       "locked": "",
-      "link": "https://learning-science.cloudfare.teimporto.cl/",
-      "found": "4/26/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌙 Velara",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
       "link": "https://baconatorsmath.2nx.org/",
       "found": "4/26/2026",
       "username": "N/A",
@@ -632,25 +611,6 @@
       "locked": "",
       "link": "https://noterplus-157.firebaseapp.com/",
       "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌙 Velara",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://hvtzw.reformarchive.com",
-      "found": "5/2/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",
@@ -19671,25 +19631,6 @@
         "scramjet"
       ],
       "locked": "",
-      "link": "https://copabag.bagos.ro",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🎮 Rosin",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
       "link": "https://tungtung.tongllfoundation.org",
       "found": "5/9/2026",
       "username": "N/A",
@@ -25957,25 +25898,6 @@
       ],
       "locked": "",
       "link": "https://szf.gressvikbmx.no/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://psavw.alexhuart.com/",
       "found": "4/30/2026",
       "username": "N/A",
       "password": "N/A",
