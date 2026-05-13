@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v4.4.1 | Released: May 12, 2026
-> r95 | Last Updated: May 12, 2026
+> r96 | Last Updated: May 13, 2026
 > Total onsite links: 4128 (sorted list + unsorted page)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -763,6 +763,7 @@ Updated the info on a few sections to allow better sorting of links
 | | https://rapidcalc.hotelconsuladoinn.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://brightcoding.hotelconsuladoinn.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://lightpoems.hotelconsuladoinn.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
 # 🐶 dogeub
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -1062,7 +1063,7 @@ Updated the info on a few sections to allow better sorting of links
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp | Scramjet | 27 |
+> | Proxy/Games | epoxy, libcurl, wisp | Scramjet | 24 |
 
 > [!IMPORTANT]
 > OverCloaked does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1093,9 +1094,6 @@ Updated the info on a few sections to allow better sorting of links
 | | https://s3.amazonaws.com/elliotslinks-tnjavxyp/exam45879/index.html | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://s3.amazonaws.com/elliotslinks-tnjavxyp/essay71679/index.html | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://s3.amazonaws.com/elliotslinks-tnjavxyp/quiz10430/index.html | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://biology.reading.writing.teacher.student.handfolding.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://land.handfolding.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://overd.thenme.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 😈 Imp Proxy
 > [!NOTE]
@@ -2510,7 +2508,6 @@ Updated the info on a few sections to allow better sorting of links
 | | https://learn-build-grow.findelschnecke.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://focus-train-achieve.horizonpublishingllc.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
-
 # 🟨 Noahs Tutoring
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -2555,7 +2552,6 @@ Updated the info on a few sections to allow better sorting of links
 | | https://trim.barberduck.ro/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://trimmer.barberduck.ro/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-
 # 🧪 Totally Science
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -2568,7 +2564,6 @@ Updated the info on a few sections to allow better sorting of links
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://firstwordithinkofisfish.stonestackstrategies.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-
 
 # 🧑‍🧒‍🧒 Soul
 > [!NOTE]
@@ -3135,7 +3130,6 @@ Updated the info on a few sections to allow better sorting of links
 | | https://cdn.jsdelivr.net/gh/Flamed-Games/Flamed-Lite@main/index.svg | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://fastly.jsdelivr.net/gh/Flamed-Games/Flamed-Lite@main/index.svg | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://quantil.jsdelivr.net/gh/Flamed-Games/Flamed-Lite@main/index.svg | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-
 
 # 👾 Zyron
 > [!NOTE]
