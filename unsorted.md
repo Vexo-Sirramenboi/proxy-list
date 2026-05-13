@@ -1970,3 +1970,6 @@ Move links from here into `list.md` once sorted.
 - https://readinghelpforelementary.online
 - https://sciencemath.gtec.ar
 - https://lllllllllliiillliiiilililililllllllllliiiiii.plik-perm.ru
+- https://dgfv.easychargebatteries.com
+- https://selevseesa.gpu74.ru
+- https://vcsa.easycharge-batteries.com
