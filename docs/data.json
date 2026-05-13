@@ -1,11 +1,11 @@
 {
   "meta": {
-    "version": "v4.4",
-    "revision": "r94",
+    "version": "v4.4.1",
+    "revision": "r95",
     "last_updated": "May 12, 2026",
     "unsorted_total": 1967,
     "important_notices": "### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
-    "update_notice": "### Bugfix\nFixed a bug where the contributed link count would decrease when a link was removed via the link removal script. Contributed link counts couldn't be restored from their previous values before the link removal bot took away links but the current link count is unchanged and cannot be changed by the link removal bot.",
+    "update_notice": "### Info Update\nUpdated the info on a few sections to allow better sorting of links",
     "fail_threshold": 3,
     "popular_note": "Hand-picked links that tend to work well — not ranked by site traffic (this page has no analytics). Edit docs/popular_links.json and run scripts/convert_list_to_json.py.",
     "popular_links": [
@@ -11373,6 +11373,82 @@
       "password": "N/A",
       "contributor": "1NobleCyber",
       "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "👤 Shadow",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://keenenglish.hotelconsuladoinn.com/",
+      "found": "4/30/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "👤 Shadow",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://rapidcalc.hotelconsuladoinn.com/",
+      "found": "4/30/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "👤 Shadow",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://brightcoding.hotelconsuladoinn.com/",
+      "found": "4/30/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "👤 Shadow",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://lightpoems.hotelconsuladoinn.com/",
+      "found": "4/30/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
       "provider": "🐶 dogeub",
@@ -33315,15 +33391,18 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf34268.cyberninja.ie",
@@ -33334,15 +33413,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf55076.cyberninja.ie",
@@ -33353,15 +33435,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf90954.cyberninja.ie",
@@ -33372,15 +33457,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://infb711dd.myfdistribuidora.com.ar/",
@@ -33391,15 +33479,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf6bdb04.hookextender.com/",
@@ -33410,15 +33501,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://infc1a664.mchini.com/",
@@ -33429,15 +33523,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf0cd84e.fbsistemas.com.ar/",
@@ -33448,15 +33545,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf843535.mchini.com/",
@@ -33467,15 +33567,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf3d0813.fbsistemas.com.ar/",
@@ -33486,15 +33589,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf0b8a4a.myfdistribuidora.com.ar/",
@@ -33505,15 +33611,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://infb0d247.hookextender.com/",
@@ -33524,15 +33633,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf1b4140.mchini.com/",
@@ -33543,15 +33655,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf6170c4.fbsistemas.com.ar/",
@@ -33562,15 +33677,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf63834.myfdistribuidora.com.ar",
@@ -33581,15 +33699,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf33456.hookextender.com",
@@ -33600,15 +33721,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf29323.fbsistemas.com.ar",
@@ -33619,15 +33743,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf31265.notinthearchives.net/",
@@ -33638,15 +33765,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://infamous.qzz.io/",
@@ -33657,15 +33787,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://photoshoot.estudiodebiaggi.com.ar/",
@@ -33676,15 +33809,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://clever.com.dmc219.com/",
@@ -33695,15 +33831,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://clever.com.londonwhiteeagles.ca/",
@@ -33714,15 +33853,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://clever.com.srijanakhadka.com.np/",
@@ -33733,15 +33875,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf59452.chrismccrory.com",
@@ -33752,15 +33897,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf50537.nutrait.co.kr",
@@ -33771,15 +33919,18 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf65982.real3m.com",
@@ -33790,15 +33941,18 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf68704.real3m.com",
@@ -33809,15 +33963,18 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf93381.real3m.com",
@@ -33828,15 +33985,18 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf85830.colloky.com.pe",
@@ -33847,15 +34007,18 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://computers.recepist.fi",
@@ -33866,15 +34029,18 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://studyguide.virtualmathnav.online",
@@ -33885,15 +34051,18 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://readingstudies.v6.rocks",
@@ -33904,15 +34073,18 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf69580.ecolefrancophone.com",
@@ -33923,15 +34095,18 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Infamous",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "✨ Infamous",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, captcha",
       "capability_tags": [
-        "pending"
+        "epoxy",
+        "libcurl",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://inf24624.thenme.net",
@@ -34436,11 +34611,11 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "💙 LuminalOS",
+      "provider": "🌙 LuminalOS",
       "category": "Proxy/Games",
-      "capabilities": "unknown",
+      "capabilities": "captcha",
       "capability_tags": [
-        "unknown"
+        "captcha"
       ],
       "protocols": "Scramjet",
       "protocol_tags": [
@@ -36602,25 +36777,6 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Suntree",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://sunny-day.global.ssl.fastly.net/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
       "provider": "🟨 Noahs Tutoring",
       "category": "pending",
       "capabilities": "pending",
@@ -36830,15 +36986,15 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Nexora",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "🧡 Nexora",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
       "capability_tags": [
-        "pending"
+        "unknown"
       ],
-      "protocols": "pending",
+      "protocols": "Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://noterplusfire02.web.app/",
@@ -36849,16 +37005,12 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Marz",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
+      "provider": "😼 Marz",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "N/A",
+      "protocol_tags": [],
       "locked": "",
       "link": "https://trim.barberduck.ro/",
       "found": "4/26/2026",
@@ -36868,16 +37020,12 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Marz",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
+      "provider": "😼 Marz",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "N/A",
+      "protocol_tags": [],
       "locked": "",
       "link": "https://trimmer.barberduck.ro/",
       "found": "4/26/2026",
@@ -36885,1184 +37033,6 @@
       "password": "N/A",
       "contributor": "yourworstnightmare1",
       "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://history.campus.physics.project.teacher.bimax.ar/",
-      "found": "4/26/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://programming.teacher.grammar.physics.vocabulary.natkajoyas.cl/",
-      "found": "4/26/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://technology.english.classroom.science.computer.yuanfey.com/",
-      "found": "4/26/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://chemistry.computer.english.geography.reading.ramnarine.com/",
-      "found": "4/26/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://oliuzzxewu.mrwheeler.uk/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://art.reading.biology.geometry.drama.renaca.com",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://history.math.geometry.english.teacher.babypos.hk",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://math.art.technology.drama.assignment.babypos.hk",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://algebra.learning.geography.lecture.engineering.astrodestin.ro",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://classroom.homework.physics.assignment.programming.astrodestin.ro",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://reading.writing.learning.history.physics.astrodestin.ro",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://computer.classroom.english.reading.grammar.japan.is",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://homework.project.lecture.chemistry.campus.japan.is",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://learning.campus.geography.programming.grammar.japan.is",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://math.teacher.classroom.science.vocabulary.japan.is",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://science.learning.project.math.art.japan.is",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://vocabulary.programming.history.lecture.biology.interluxvs.com",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://calculus.writing.literature.teacher.homework.thenookfactory.com",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://vocabulary.classroom.biology.lecture.math.thenookfactory.com",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://geometry.physics.learning.studying.reading.bamastuff.com",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://homework.writing.grammar.programming.music.scrapitsoftware.com",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://geography.library.grammar.calculus.student.agreca.com.ar",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://algebra.math.music.vocabulary.project.real3m.com",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://aporzsblci.bvhoa.com",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://algebra.grammar.calculus.homework.geography.srivaishnavam.org.au",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://art.technology.engineering.homework.writing.srivaishnavam.org.au",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://classroom.seminar.homework.writing.campus.srivaishnavam.org.au",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://computer.calculus.drama.music.math.srivaishnavam.org.au",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://geography.history.technology.art.physics.srivaishnavam.org.au",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://grammar.biology.homework.geometry.math.srivaishnavam.org.au",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://learning.biology.geometry.math.teacher.srivaishnavam.org.au",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://library.science.assignment.student.grammar.srivaishnavam.org.au",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://math.science.programming.student.art.srivaishnavam.org.au",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://math.studying.drama.art.classroom.srivaishnavam.org.au",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://music.teacher.studying.drama.technology.srivaishnavam.org.au",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://reading.assignment.science.student.music.srivaishnavam.org.au",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://reading.chemistry.grammar.math.music.srivaishnavam.org.au",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://student.learning.literature.homework.drama.srivaishnavam.org.au",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://studying.biology.homework.library.lecture.srivaishnavam.org.au",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://teacher.drama.music.geography.computer.srivaishnavam.org.au",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://vocabulary.campus.history.library.grammar.srivaishnavam.org.au",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://writing.project.campus.seminar.biology.srivaishnavam.org.au",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://classroom.math.reading.english.art.poloniacruz.com",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://engineering.homework.geometry.biology.drama.poloniacruz.com",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://greenbaypackerssuck.lervs.ro",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://writing.art.teacher.calculus.geography.glenoriebakery.com.au",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://history.music.geometry.reading.teacher.easternstamps.com",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://programming.project.english.campus.seminar.colloky.com.pe",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://technology.algebra.physics.vocabulary.student.colloky.com.pe",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://technology.student.geography.chemistry.drama.colloky.com.pe",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://mrsdukeclassboring.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://programming.english.reading.classroom.chemistry.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://assignment.classroom.teacher.technology.writing.galtex.ca",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://campus.engineering.programming.reading.library.galtex.ca",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://grammar.algebra.computer.science.campus.galtex.ca",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://library.seminar.vocabulary.drama.learning.recepist.fi",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://homework.learning.drama.lecture.grammar.dirtchicvt.com",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://drama.classroom.geography.seminar.lecture.coosemansla.com",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://glue.tuition.varsity.student.dean.russischbureau.nl",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://calculus.teacher.drama.algebra.lecture.anostudio.info",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://educational.science.lessons.on.canvas.whitestonetech.org",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Strongdog",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://educational.science.lessons.on.canvas.cpcmusic.org",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
     },
     {
       "provider": "🧪 Totally Science",
@@ -38084,91 +37054,15 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Glint",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "🧑‍🧒‍🧒 Soul",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
       "capability_tags": [
-        "pending"
+        "unknown"
       ],
-      "protocols": "pending",
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://keenenglish.hotelconsuladoinn.com/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Glint",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://rapidcalc.hotelconsuladoinn.com/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Glint",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://brightcoding.hotelconsuladoinn.com/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Glint",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://lightpoems.hotelconsuladoinn.com/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Soul",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://mathtutors4school.firebaseapp.com/index.html",
@@ -38198,15 +37092,13 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://jmehynqnvt.aura-alcove.com/",
@@ -38217,15 +37109,13 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://tvufcmkxyp.plik-perm.ru/",
@@ -38236,15 +37126,13 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://okvrlsgvsq.pcrage2000.com/",
@@ -38255,15 +37143,13 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://zgdhgzrcjx.stonestackstrategies.com/",
@@ -38274,15 +37160,13 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://pucjpeaavu.bitmagazin.com/",
@@ -38293,15 +37177,13 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://art.literature.homework.science.student.derementeria.cl",
@@ -38312,15 +37194,13 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://technology.reading.drama.programming.geometry.kormann.name",
@@ -38331,15 +37211,13 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://computer.biology.teacher.campus.seminar.ianmaffett.com",
@@ -38350,15 +37228,13 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://lecture.campus.chemistry.science.music.onachile.cl",
@@ -38369,15 +37245,13 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://geometry.grammar.math.seminar.english.nabinkhadka.com.np",
@@ -38388,15 +37262,13 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://vocabulary.studying.physics.art.history.clinicamarshaka.com",
@@ -38407,15 +37279,13 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://lecture.literature.art.learning.science.forkfront.com",
@@ -38426,15 +37296,13 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://vocabulary.seminar.project.engineering.writing.ih4a.co.za",
@@ -38445,15 +37313,13 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://geometry.studying.english.seminar.computer.megamor.com.br",
@@ -38464,15 +37330,13 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://writing.engineering.computer.classroom.calculus.retrolegends.com",
@@ -38483,15 +37347,13 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://science.teacher.assignment.physics.homework.shatrughansingh.com.np",
@@ -38502,15 +37364,13 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://library.literature.geometry.student.project.mwbread.com",
@@ -38521,15 +37381,13 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://history.algebra.science.classroom.campus.recruitment7.com",
@@ -38540,15 +37398,13 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://algebra.geometry.campus.reading.calculus.catril.com",
@@ -38559,19 +37415,1071 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "SDXP",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
       "protocol_tags": [
-        "pending"
+        "unknown"
       ],
       "locked": "",
       "link": "https://algebra.science.vocabulary.geometry.writing.recepist.fi",
       "found": "5/6/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://history.campus.physics.project.teacher.bimax.ar/",
+      "found": "4/26/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://programming.teacher.grammar.physics.vocabulary.natkajoyas.cl/",
+      "found": "4/26/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://technology.english.classroom.science.computer.yuanfey.com/",
+      "found": "4/26/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://chemistry.computer.english.geography.reading.ramnarine.com/",
+      "found": "4/26/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://oliuzzxewu.mrwheeler.uk/",
+      "found": "4/30/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://art.reading.biology.geometry.drama.renaca.com",
+      "found": "5/4/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://history.math.geometry.english.teacher.babypos.hk",
+      "found": "5/4/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://math.art.technology.drama.assignment.babypos.hk",
+      "found": "5/4/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://algebra.learning.geography.lecture.engineering.astrodestin.ro",
+      "found": "5/4/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://classroom.homework.physics.assignment.programming.astrodestin.ro",
+      "found": "5/4/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://reading.writing.learning.history.physics.astrodestin.ro",
+      "found": "5/4/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://computer.classroom.english.reading.grammar.japan.is",
+      "found": "5/4/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://homework.project.lecture.chemistry.campus.japan.is",
+      "found": "5/4/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://learning.campus.geography.programming.grammar.japan.is",
+      "found": "5/4/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://math.teacher.classroom.science.vocabulary.japan.is",
+      "found": "5/4/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://science.learning.project.math.art.japan.is",
+      "found": "5/4/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://vocabulary.programming.history.lecture.biology.interluxvs.com",
+      "found": "5/4/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://calculus.writing.literature.teacher.homework.thenookfactory.com",
+      "found": "5/4/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://vocabulary.classroom.biology.lecture.math.thenookfactory.com",
+      "found": "5/4/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://geometry.physics.learning.studying.reading.bamastuff.com",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://homework.writing.grammar.programming.music.scrapitsoftware.com",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://geography.library.grammar.calculus.student.agreca.com.ar",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://algebra.math.music.vocabulary.project.real3m.com",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://aporzsblci.bvhoa.com",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://algebra.grammar.calculus.homework.geography.srivaishnavam.org.au",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://art.technology.engineering.homework.writing.srivaishnavam.org.au",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://classroom.seminar.homework.writing.campus.srivaishnavam.org.au",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://computer.calculus.drama.music.math.srivaishnavam.org.au",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://geography.history.technology.art.physics.srivaishnavam.org.au",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://grammar.biology.homework.geometry.math.srivaishnavam.org.au",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://learning.biology.geometry.math.teacher.srivaishnavam.org.au",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://library.science.assignment.student.grammar.srivaishnavam.org.au",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://math.science.programming.student.art.srivaishnavam.org.au",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://math.studying.drama.art.classroom.srivaishnavam.org.au",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://music.teacher.studying.drama.technology.srivaishnavam.org.au",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://reading.assignment.science.student.music.srivaishnavam.org.au",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://reading.chemistry.grammar.math.music.srivaishnavam.org.au",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://student.learning.literature.homework.drama.srivaishnavam.org.au",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://studying.biology.homework.library.lecture.srivaishnavam.org.au",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://teacher.drama.music.geography.computer.srivaishnavam.org.au",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://vocabulary.campus.history.library.grammar.srivaishnavam.org.au",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://writing.project.campus.seminar.biology.srivaishnavam.org.au",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://classroom.math.reading.english.art.poloniacruz.com",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://engineering.homework.geometry.biology.drama.poloniacruz.com",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://greenbaypackerssuck.lervs.ro",
+      "found": "5/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://writing.art.teacher.calculus.geography.glenoriebakery.com.au",
+      "found": "5/6/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://history.music.geometry.reading.teacher.easternstamps.com",
+      "found": "5/6/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://programming.project.english.campus.seminar.colloky.com.pe",
+      "found": "5/6/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://technology.algebra.physics.vocabulary.student.colloky.com.pe",
+      "found": "5/6/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://technology.student.geography.chemistry.drama.colloky.com.pe",
+      "found": "5/6/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://mrsdukeclassboring.wikidelia.net",
+      "found": "5/6/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://programming.english.reading.classroom.chemistry.wikidelia.net",
+      "found": "5/6/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://assignment.classroom.teacher.technology.writing.galtex.ca",
+      "found": "5/6/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://campus.engineering.programming.reading.library.galtex.ca",
+      "found": "5/6/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://grammar.algebra.computer.science.campus.galtex.ca",
+      "found": "5/6/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://library.seminar.vocabulary.drama.learning.recepist.fi",
+      "found": "5/6/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://homework.learning.drama.lecture.grammar.dirtchicvt.com",
+      "found": "5/6/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://drama.classroom.geography.seminar.lecture.coosemansla.com",
+      "found": "5/6/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://glue.tuition.varsity.student.dean.russischbureau.nl",
+      "found": "5/11/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://calculus.teacher.drama.algebra.lecture.anostudio.info",
+      "found": "5/11/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://educational.science.lessons.on.canvas.whitestonetech.org",
+      "found": "5/11/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "1NobleCyber",
+      "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "❤️ SDXP",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://educational.science.lessons.on.canvas.cpcmusic.org",
+      "found": "5/11/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "1NobleCyber",
@@ -38882,15 +38790,15 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "BrunysIXL",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "🧮 BrunysIXLWork",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
       "capability_tags": [
-        "pending"
+        "unknown"
       ],
-      "protocols": "pending",
+      "protocols": "Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://8q09mjmdh229.academinctools.pw/",
@@ -38920,15 +38828,15 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Korona",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "💟 Korona",
+      "category": "Proxy/Games",
+      "capabilities": "captcha",
       "capability_tags": [
-        "pending"
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet",
       "protocol_tags": [
-        "pending"
+        "scramjet"
       ],
       "locked": "",
       "link": "https://korona.alex.rf.gd",
@@ -38958,15 +38866,15 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Luna",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "🌕 Luna",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
       "capability_tags": [
-        "pending"
+        "unknown"
       ],
-      "protocols": "pending",
+      "protocols": "Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://finleyisabum.vixenlights.com/",
@@ -40136,15 +40044,15 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "OnlyLessons",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "📚 OnlyLessons",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
       "capability_tags": [
-        "pending"
+        "unknown"
       ],
-      "protocols": "pending",
+      "protocols": "Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://gabrielultrakill.bestar.sg",
@@ -40155,15 +40063,34 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "OnlyLessons",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "📚 OnlyLessons",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
       "capability_tags": [
-        "pending"
+        "unknown"
       ],
-      "protocols": "pending",
+      "protocols": "Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "ultraviolet"
+      ],
+      "locked": "",
+      "link": "https://sunny-day.global.ssl.fastly.net/",
+      "found": "4/25/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "📚 OnlyLessons",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "Ultraviolet",
+      "protocol_tags": [
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://suntree.alex.rf.gd",
@@ -40174,15 +40101,15 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "OnlyLessons",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "📚 OnlyLessons",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
       "capability_tags": [
-        "pending"
+        "unknown"
       ],
-      "protocols": "pending",
+      "protocols": "Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://focus-and-learn.2gfkitchen.com/",
@@ -40193,15 +40120,15 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "OnlyLessons",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "📚 OnlyLessons",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
       "capability_tags": [
-        "pending"
+        "unknown"
       ],
-      "protocols": "pending",
+      "protocols": "Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://study-smart-daily.bigheadpromo.com/",
@@ -40212,15 +40139,15 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "OnlyLessons",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "📚 OnlyLessons",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
       "capability_tags": [
-        "pending"
+        "unknown"
       ],
-      "protocols": "pending",
+      "protocols": "Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://revise-and-succeed.sage.li/",
@@ -40231,15 +40158,15 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "OnlyLessons",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "📚 OnlyLessons",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
       "capability_tags": [
-        "pending"
+        "unknown"
       ],
-      "protocols": "pending",
+      "protocols": "Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://learn-practice-grow.shirokuriwaki.com/",
@@ -40250,15 +40177,15 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "OnlyLessons",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "📚 OnlyLessons",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
       "capability_tags": [
-        "pending"
+        "unknown"
       ],
-      "protocols": "pending",
+      "protocols": "Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://plan-study-repeat.solarorbit.net/",
@@ -40269,15 +40196,15 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "OnlyLessons",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "📚 OnlyLessons",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
       "capability_tags": [
-        "pending"
+        "unknown"
       ],
-      "protocols": "pending",
+      "protocols": "Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://ixlpapi.logyca.com.mx",
@@ -40288,15 +40215,15 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "OnlyLessons",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "📚 OnlyLessons",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
       "capability_tags": [
-        "pending"
+        "unknown"
       ],
-      "protocols": "pending",
+      "protocols": "Ultraviolet",
       "protocol_tags": [
-        "pending"
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://education.math.wikidelia.net",
@@ -41580,16 +41507,12 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Chicken Kings Vault",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
+      "provider": "🐓 Chicken Kings Vault",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "N/A",
+      "protocol_tags": [],
       "locked": "",
       "link": "https://biologicalhomework.wikidelia.net",
       "found": "5/6/2026",
@@ -41599,16 +41522,12 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Chicken Kings Vault",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
+      "provider": "🐓 Chicken Kings Vault",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "N/A",
+      "protocol_tags": [],
       "locked": "",
       "link": "https://ip140.ip-15-204-150.us",
       "found": "5/6/2026",
@@ -41618,16 +41537,12 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Chicken Kings Vault",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
+      "provider": "🐓 Chicken Kings Vault",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "N/A",
+      "protocol_tags": [],
       "locked": "",
       "link": "https://ckvgoated.wikidelia.net",
       "found": "5/6/2026",
@@ -41637,16 +41552,12 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Chicken Kings Vault",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
+      "provider": "🐓 Chicken Kings Vault",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "N/A",
+      "protocol_tags": [],
       "locked": "",
       "link": "https://ilovechiken.wikidelia.net",
       "found": "5/6/2026",
@@ -41656,16 +41567,12 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Chicken Kings Vault",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
+      "provider": "🐓 Chicken Kings Vault",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "N/A",
+      "protocol_tags": [],
       "locked": "",
       "link": "https://rrreally.wikidelia.net",
       "found": "5/6/2026",
@@ -41675,16 +41582,12 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Chicken Kings Vault",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
+      "provider": "🐓 Chicken Kings Vault",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "N/A",
+      "protocol_tags": [],
       "locked": "",
       "link": "https://supermathwork.wikidelia.net",
       "found": "5/6/2026",
@@ -41694,16 +41597,12 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Zen",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
+      "provider": "🧘 Zen",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "N/A",
+      "protocol_tags": [],
       "locked": "",
       "link": "https://zennedu.github.io/math",
       "found": "5/9/2026",
@@ -41713,16 +41612,12 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Flamed Lite",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
+      "provider": "🔥 Flamed Lite",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "N/A",
+      "protocol_tags": [],
       "locked": "",
       "link": "https://cdn.jsdelivr.net/gh/Flamed-Games/Flamed-Lite@main/index.svg",
       "found": "5/9/2026",
@@ -41732,16 +41627,12 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Flamed Lite",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
+      "provider": "🔥 Flamed Lite",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "N/A",
+      "protocol_tags": [],
       "locked": "",
       "link": "https://fastly.jsdelivr.net/gh/Flamed-Games/Flamed-Lite@main/index.svg",
       "found": "5/9/2026",
@@ -41751,16 +41642,12 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Flamed Lite",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
+      "provider": "🔥 Flamed Lite",
+      "category": "Games",
+      "capabilities": "N/A",
+      "capability_tags": [],
+      "protocols": "N/A",
+      "protocol_tags": [],
       "locked": "",
       "link": "https://quantil.jsdelivr.net/gh/Flamed-Games/Flamed-Lite@main/index.svg",
       "found": "5/9/2026",
@@ -41770,72 +41657,16 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Hamcraft",
-      "category": "pending",
-      "capabilities": "pending",
+      "provider": "👾 Zyron",
+      "category": "Proxy",
+      "capabilities": "wisp, captcha",
       "capability_tags": [
-        "pending"
+        "wisp",
+        "captcha"
       ],
-      "protocols": "pending",
+      "protocols": "Scramjet",
       "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://fastly.jsdelivr.net/gh/HamCraft-UB/Singlefile@main/index.svg",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Hamcraft",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://gcore.jsdelivr.net/gh/HamCraft-UB/Singlefile@main/index.svg",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Hamcraft",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://quantil.jsdelivr.net/gh/HamCraft-UB/Singlefile@main/index.svg",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "Zyron",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
+        "scramjet"
       ],
       "locked": "",
       "link": "https://ixlmathteacherpanel.wikidelia.net",
@@ -41846,15 +41677,16 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "TungTung",
+      "provider": "🪵 Tung Tung",
       "category": "Proxy/Games",
-      "capabilities": "unknown",
+      "capabilities": "captcha",
       "capability_tags": [
-        "unknown"
+        "captcha"
       ],
-      "protocols": "unknown",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "unknown"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://tungtung.vcsa.alalalal.com",
@@ -41865,15 +41697,16 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "TungTung",
+      "provider": "🪵 Tung Tung",
       "category": "Proxy/Games",
-      "capabilities": "unknown",
+      "capabilities": "captcha",
       "capability_tags": [
-        "unknown"
+        "captcha"
       ],
-      "protocols": "unknown",
+      "protocols": "Scramjet, Ultraviolet",
       "protocol_tags": [
-        "unknown"
+        "scramjet",
+        "ultraviolet"
       ],
       "locked": "",
       "link": "https://vcsacontent.anostudio.info",
@@ -41884,15 +41717,15 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "Freebird",
+      "provider": "🕊️ Freebird",
       "category": "Proxy/Games",
-      "capabilities": "unknown",
+      "capabilities": "captcha",
       "capability_tags": [
-        "unknown"
+        "captcha"
       ],
-      "protocols": "unknown",
+      "protocols": "Scramjet",
       "protocol_tags": [
-        "unknown"
+        "scramjet"
       ],
       "locked": "",
       "link": "https://pale-dawn.thenme.net",
