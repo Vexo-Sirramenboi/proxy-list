@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v4.4.1 | Released: May 12, 2026
-> r100 | Last Updated: May 14, 2026
+> r101 | Last Updated: May 14, 2026
 > Total onsite links: 4128 (sorted list + unsorted page)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -44,14 +44,13 @@ Updated the info on a few sections to allow better sorting of links
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 8 |
+> | Proxy/Games | captcha | Scramjet | 7 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://vorg-has.me-at-gun-point3.cyberninja.ie/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://vorg-isnt-a-fem.boy3.cyberninja.ie/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://baconatorsmath.2nx.org/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://evenmore.delafuentefunerales.cl/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://sunsett.cc/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://noterplus-157.firebaseapp.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://velara.cc | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
@@ -1796,7 +1795,7 @@ Updated the info on a few sections to allow better sorting of links
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 17 |
+> | Proxy/Games | captcha | Scramjet | 14 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -1814,15 +1813,12 @@ Updated the info on a few sections to allow better sorting of links
 | | https://unpkg.com/browselucide@latest/logo.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://cdn.jsdelivr.net/gh/coinbaselarper/svg@latest/logo.svg | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://gawd.rcdx93.net | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://code.bull.graphs.math.colloky.com.pe/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://ninja.good.subscriber.eilong.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://bull.premises.quevo.com.br/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🔷 Celestial
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | libcurl, epoxy | Scramjet, Ultraviolet | 21 |
+> | Proxy/Games | libcurl, epoxy | Scramjet, Ultraviolet | 1 |
 
 > [!IMPORTANT]
 > Celestial does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1830,43 +1826,18 @@ Updated the info on a few sections to allow better sorting of links
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://celestialdevsalot.github.io/celestialisbest/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://celestial.webinfo.tw | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://task.babypos.hk | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://launch.newlifesanctuarychurch.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://help.globaltutors.me.cdn.cloudflare.net | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://jmw.thewellnessconference.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://easy.globaltutors.me | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://hours.stgenevieveschool.us | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://creditrepair911.us | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://task.babypos.hk/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://edu.jyotsnapandey.com.np/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://edu.numbercraftacademy.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://153.75.225.180.nip.io/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://153.75.225.180.sslip.io/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://task.globaltutors.me.cdn.cloudflare.net/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://help.ezlearning.qzz.io/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://creditrepair911.us/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://celestial-bib.duckdns.org/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://task.bdyoutube.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://hiring.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://edu.thenme.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # ✨ Quasar
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 18 |
+> | Proxy/Games | captcha | Scramjet | 13 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
-| | https://cavtalk.org/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://craftingwithmimi.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://cves359.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://kcomeacademy.org/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://schoolimprovementtips.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://api.notariamelipilla.cl/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://napoleon-wiki.2to1agri.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://education.potomacriversafetycommittee.org/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
@@ -2254,39 +2225,17 @@ Updated the info on a few sections to allow better sorting of links
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 26 |
+> | pending | pending | pending | 4 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
-| | https://campus.geometry.writing.history.programming.beltfrog.com/onboarding/ | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://campus.lecture.art.physics.english.beltfrog.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://lecture.geometry.biology.campus.music.beltfrog.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://lecture.physics.geometry.campus.music.beltfrog.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://studying.engineering.science.art.library.beltfrog.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://cherri.lalitakc.com.np/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://playernation.darkroom-lang.org/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://realvcsa.castemag.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://youtube.com.vcsa.lalitakc.com.np/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://cherri.altonhabitat.info | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://cherri.cc | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://cherri.altonhabitat.store | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://cherri.altonhabitat.online | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://cherri.totallyeducation.info | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://cherryontop.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://dudewhatthecherryists.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://gocherry.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://ilovecheerys.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://isitcherryorcherri.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://cherri.totallyeducation.info/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://mathstudies.calculuslessons.lol | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://beearomi.klrmowse.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://cherribull.asturkiters.es/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://content.keeper.go.gaurd.ian.bvhoa.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://chem.cherri.beearomi.bull.tanenbaumchat.org/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://beearomi.klrmowse.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🌙 LuminalOS
 > [!NOTE]

@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v4.4.1",
-    "revision": "r100",
+    "revision": "r101",
     "last_updated": "May 14, 2026",
     "unsorted_total": 1970,
     "important_notices": "### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
@@ -103,114 +103,84 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-14T02:39:04Z",
-    "checked_at_display": "2026-05-14 02:39 UTC",
+    "checked_at": "2026-05-14T08:32:47Z",
+    "checked_at_display": "2026-05-14 08:32 UTC",
     "added_count": 0,
-    "removed_count": 43,
+    "removed_count": 47,
     "added_links": [],
     "removed_links": [
-      "https://s3.amazonaws.com/mathvc/index.html",
-      "https://mathvc.s3.amazonaws.com/index.html",
-      "https://lsrelay-extension-production.s3.amazonaws.com/index.html",
-      "https://s3.amazonaws.com/lsrelay-extension-production/index.html",
-      "https://s3.amazonaws.com/bullisgoated/index.html",
-      "https://bullisgoated.s3.amazonaws.com/index.html",
-      "https://iloveliteratures.s3.amazonaws.com/index.html",
-      "https://s3.amazonaws.com/iloveliteratures/index.html",
-      "https://macrologoat.s3.amazonaws.com/index.html",
-      "https://s3.amazonaws.com/macrologoat/index.html",
-      "https://bullubg.s3.amazonaws.com/index.html",
-      "https://s3.amazonaws.com/bullubg/index.html",
-      "https://s3.amazonaws.com/bullmath/index.html",
-      "https://bullmath.s3.amazonaws.com/index.html",
-      "https://macrolo.s3.amazonaws.com/index.html",
-      "https://s3.amazonaws.com/macrolo/index.html",
-      "https://ilovemaths.s3.amazonaws.com/index.html",
-      "https://s3.amazonaws.com/ilovemaths/index.html",
-      "https://bulledu.s3.amazonaws.com/index.html",
-      "https://s3.amazonaws.com/bulledu/index.html",
-      "https://bullguardian.s3.amazonaws.com/index.html",
-      "https://s3.amazonaws.com/bullguardian/index.html",
-      "https://bulllightspeed.s3.amazonaws.com/index.html",
-      "https://s3.amazonaws.com/bulllightspeed/index.html",
-      "https://macrolomath.s3.amazonaws.com/index.html",
-      "https://s3.amazonaws.com/macrolomath/index.html",
-      "https://s3.amazonaws.com/readvc/index.html",
-      "https://s3.amazonaws.com/writevc/index.html",
-      "https://s3.amazonaws.com/bullbestyoutuber/index.html",
-      "https://bullbestyoutuber.s3.amazonaws.com/index.html",
-      "https://onelastlink.s3.amazonaws.com/index.html",
-      "https://s3.amazonaws.com/onelastlink/index.html",
-      "https://apsciencetutoring.luhe.tw/#home",
-      "https://s3.amazonaws.com/slantsite/index.html",
-      "https://slantsite.s3.amazonaws.com/index.html",
-      "https://s3.amazonaws.com/misting2/index.html",
-      "https://misting2.s3.amazonaws.com/index.html",
-      "https://s3.amazonaws.com/macmist/index.html",
-      "https://macmist.s3.amazonaws.com/index.html",
-      "https://s3.amazonaws.com/mistmac/index.html",
-      "https://mistmac.s3.amazonaws.com/index.html",
-      "https://s3.amazonaws.com/ilovecalc/index.html",
-      "https://ilovecalc.s3.amazonaws.com/index.html"
+      "https://evenmore.delafuentefunerales.cl",
+      "https://code.bull.graphs.math.colloky.com.pe",
+      "https://ninja.good.subscriber.eilong.com",
+      "https://bull.premises.quevo.com.br",
+      "https://celestial.webinfo.tw",
+      "https://task.babypos.hk",
+      "https://launch.newlifesanctuarychurch.com",
+      "https://help.globaltutors.me.cdn.cloudflare.net",
+      "https://jmw.thewellnessconference.org",
+      "https://easy.globaltutors.me",
+      "https://hours.stgenevieveschool.us",
+      "https://creditrepair911.us",
+      "https://edu.jyotsnapandey.com.np",
+      "https://edu.numbercraftacademy.com",
+      "https://153.75.225.180.nip.io",
+      "https://153.75.225.180.sslip.io",
+      "https://task.globaltutors.me.cdn.cloudflare.net",
+      "https://help.ezlearning.qzz.io",
+      "https://celestial-bib.duckdns.org",
+      "https://task.bdyoutube.com",
+      "https://hiring.airlinemeals.net",
+      "https://edu.thenme.net",
+      "https://cavtalk.org",
+      "https://craftingwithmimi.com",
+      "https://cves359.com",
+      "https://kcomeacademy.org",
+      "https://schoolimprovementtips.com",
+      "https://campus.geometry.writing.history.programming.beltfrog.com/onboarding",
+      "https://campus.lecture.art.physics.english.beltfrog.com",
+      "https://lecture.geometry.biology.campus.music.beltfrog.com",
+      "https://lecture.physics.geometry.campus.music.beltfrog.com",
+      "https://studying.engineering.science.art.library.beltfrog.com",
+      "https://cherri.altonhabitat.info",
+      "https://cherri.cc",
+      "https://cherri.altonhabitat.store",
+      "https://cherri.altonhabitat.online",
+      "https://cherri.totallyeducation.info",
+      "https://cherryontop.wikidelia.net",
+      "https://dudewhatthecherryists.wikidelia.net",
+      "https://gocherry.wikidelia.net",
+      "https://ilovecheerys.wikidelia.net",
+      "https://isitcherryorcherri.wikidelia.net",
+      "https://mathstudies.calculuslessons.lol",
+      "https://beearomi.klrmowse.com",
+      "https://cherribull.asturkiters.es",
+      "https://content.keeper.go.gaurd.ian.bvhoa.com",
+      "https://chem.cherri.beearomi.bull.tanenbaumchat.org"
     ]
   },
   "failing_links": {
-    "https://vorg-has.me-at-gun-point3.cyberninja.ie": 1,
-    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/transcendental-vectors-4136@main/INVADDEX.SVG": 1,
-    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/symmetric-integral-4684@main/INVADDEX.SVG": 1,
-    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/real-eigenvalues-7807@main/doesn.svg": 1,
-    "https://compontop.jayaho.ch": 1,
-    "https://evenmore.delafuentefunerales.cl": 2,
-    "https://aphistorytutoring.cencopro.cl": 1,
-    "https://mathpracticefun.ignorelist.com": 1,
-    "https://cavtalk.org": 2,
-    "https://craftingwithmimi.com": 2,
-    "https://cves359.com": 2,
-    "https://kcomeacademy.org": 2,
-    "https://schoolimprovementtips.com": 2,
-    "https://cherri.altonhabitat.info": 2,
-    "https://sunsett.cc": 1,
-    "https://velara.cc": 1,
-    "https://launch.newlifesanctuarychurch.com": 2,
-    "https://help.globaltutors.me.cdn.cloudflare.net": 2,
-    "https://jmw.thewellnessconference.org": 2,
-    "https://easy.globaltutors.me": 2,
-    "https://hours.stgenevieveschool.us": 2,
-    "https://cherri.cc": 2,
-    "https://cherri.altonhabitat.store": 2,
-    "https://cherri.altonhabitat.online": 2,
-    "https://celestial.webinfo.tw": 2,
-    "https://task.babypos.hk": 2,
-    "https://campus.geometry.writing.history.programming.beltfrog.com/onboarding": 2,
-    "https://campus.lecture.art.physics.english.beltfrog.com": 2,
-    "https://lecture.geometry.biology.campus.music.beltfrog.com": 2,
-    "https://lecture.physics.geometry.campus.music.beltfrog.com": 2,
-    "https://studying.engineering.science.art.library.beltfrog.com": 2,
-    "https://creditrepair911.us": 2,
-    "https://cherri.totallyeducation.info": 2,
-    "https://cherryontop.wikidelia.net": 2,
-    "https://dudewhatthecherryists.wikidelia.net": 2,
-    "https://gocherry.wikidelia.net": 2,
-    "https://ilovecheerys.wikidelia.net": 2,
-    "https://isitcherryorcherri.wikidelia.net": 2,
-    "https://code.bull.graphs.math.colloky.com.pe": 2,
-    "https://ninja.good.subscriber.eilong.com": 2,
-    "https://bull.premises.quevo.com.br": 2,
-    "https://edu.jyotsnapandey.com.np": 2,
-    "https://edu.numbercraftacademy.com": 2,
-    "https://153.75.225.180.nip.io": 2,
-    "https://153.75.225.180.sslip.io": 2,
-    "https://task.globaltutors.me.cdn.cloudflare.net": 2,
-    "https://help.ezlearning.qzz.io": 2,
-    "https://celestial-bib.duckdns.org": 2,
-    "https://task.bdyoutube.com": 2,
-    "https://mathstudies.calculuslessons.lol": 2,
-    "https://beearomi.klrmowse.com": 2,
-    "https://cherribull.asturkiters.es": 2,
-    "https://content.keeper.go.gaurd.ian.bvhoa.com": 2,
-    "https://chem.cherri.beearomi.bull.tanenbaumchat.org": 2,
-    "https://hiring.airlinemeals.net": 2,
-    "https://edu.thenme.net": 2
+    "https://cdn.jsdelivr.net/gh/scientific-studying/svg@main/logo.svg#/g": 1,
+    "https://cdn.jsdelivr.net/gh/carls-math-class/491171-physics@main/doesn.svg": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/recursive-analysis-3399@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/discrete-limits-2042@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/euler-eigenvalues-3562@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/recursive-graph-theory-4335@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/continuous-vectors-8081@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/discrete-differential-4944@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/infinite-trigonometry-7318@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/stochastic-primes-6974@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/transcendental-symmetry-1165@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/symmetric-integral-4684@main/INVADDEX.SVG": 2,
+    "https://compontop.jayaho.ch": 2,
+    "https://third-army.surge.sh": 1,
+    "https://mathpracticefun.ignorelist.com": 2,
+    "https://cdn.jsdelivr.net/gh/coinbaselarper/svg@latest/logo.svg": 1,
+    "https://kronos.onl.academinctools.pw": 1,
+    "https://sunsett.cc": 2,
+    "https://cdn.jsdelivr.net/gh/TwiLabs/math/dist/index.svg": 1,
+    "https://cdn.jsdelivr.net/gh/TwiLabs/history/dist/index.svg": 1,
+    "https://cdn.jsdelivr.net/gh/PeteZah-G/PeteZahStaticDone@main/new.svg": 1,
+    "https://gcore.jsdelivr.net/gh/mrdavidsz/svgfrosted@main/neonmesh6933.svg": 1
   },
   "links": [
     {
@@ -309,25 +279,6 @@
       ],
       "locked": "",
       "link": "https://baconatorsmath.2nx.org/",
-      "found": "4/26/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌙 Velara",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://evenmore.delafuentefunerales.cl/",
       "found": "4/26/2026",
       "username": "N/A",
       "password": "N/A",
@@ -26939,63 +26890,6 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "🤍 Lucide",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://code.bull.graphs.math.colloky.com.pe/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🤍 Lucide",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://ninja.good.subscriber.eilong.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🤍 Lucide",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://bull.premises.quevo.com.br/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
       "provider": "🔷 Celestial",
       "category": "Proxy/Games",
       "capabilities": "libcurl, epoxy",
@@ -27011,521 +26905,6 @@
       "locked": "",
       "link": "https://celestialdevsalot.github.io/celestialisbest/",
       "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://celestial.webinfo.tw",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://task.babypos.hk",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://launch.newlifesanctuarychurch.com",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://help.globaltutors.me.cdn.cloudflare.net",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://jmw.thewellnessconference.org",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://easy.globaltutors.me",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://hours.stgenevieveschool.us",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://creditrepair911.us",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://task.babypos.hk/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://edu.jyotsnapandey.com.np/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://edu.numbercraftacademy.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://153.75.225.180.nip.io/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://153.75.225.180.sslip.io/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://task.globaltutors.me.cdn.cloudflare.net/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://help.ezlearning.qzz.io/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://creditrepair911.us/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://celestial-bib.duckdns.org/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://task.bdyoutube.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://hiring.airlinemeals.net",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🔷 Celestial",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://edu.thenme.net",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://cavtalk.org/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://craftingwithmimi.com/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://cves359.com/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://kcomeacademy.org/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://schoolimprovementtips.com/",
-      "found": "4/25/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",
@@ -33026,101 +32405,6 @@
         "pending"
       ],
       "locked": "",
-      "link": "https://campus.geometry.writing.history.programming.beltfrog.com/onboarding/",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://campus.lecture.art.physics.english.beltfrog.com",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://lecture.geometry.biology.campus.music.beltfrog.com",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://lecture.physics.geometry.campus.music.beltfrog.com",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://studying.engineering.science.art.library.beltfrog.com",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
       "link": "https://cherri.lalitakc.com.np/",
       "found": "4/25/2026",
       "username": "N/A",
@@ -33184,329 +32468,6 @@
       "password": "N/A",
       "contributor": "yourworstnightmare1",
       "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://cherri.altonhabitat.info",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://cherri.cc",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://cherri.altonhabitat.store",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://cherri.altonhabitat.online",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://cherri.totallyeducation.info",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://cherryontop.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://dudewhatthecherryists.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://gocherry.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://ilovecheerys.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://isitcherryorcherri.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://cherri.totallyeducation.info/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://mathstudies.calculuslessons.lol",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://beearomi.klrmowse.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://cherribull.asturkiters.es/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://content.keeper.go.gaurd.ian.bvhoa.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://chem.cherri.beearomi.bull.tanenbaumchat.org/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://beearomi.klrmowse.com",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
     },
     {
       "provider": "🌙 LuminalOS",
