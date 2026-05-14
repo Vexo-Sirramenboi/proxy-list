@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "v4.4.1",
-    "revision": "r99",
-    "last_updated": "May 13, 2026",
+    "revision": "r100",
+    "last_updated": "May 14, 2026",
     "unsorted_total": 1970,
     "important_notices": "### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
     "update_notice": "### Info Update\nUpdated the info on a few sections to allow better sorting of links",
@@ -103,108 +103,114 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-13T19:47:31Z",
-    "checked_at_display": "2026-05-13 19:47 UTC",
+    "checked_at": "2026-05-14T02:39:04Z",
+    "checked_at_display": "2026-05-14 02:39 UTC",
     "added_count": 0,
-    "removed_count": 1,
+    "removed_count": 43,
     "added_links": [],
     "removed_links": [
-      "https://zeelix.web.app"
+      "https://s3.amazonaws.com/mathvc/index.html",
+      "https://mathvc.s3.amazonaws.com/index.html",
+      "https://lsrelay-extension-production.s3.amazonaws.com/index.html",
+      "https://s3.amazonaws.com/lsrelay-extension-production/index.html",
+      "https://s3.amazonaws.com/bullisgoated/index.html",
+      "https://bullisgoated.s3.amazonaws.com/index.html",
+      "https://iloveliteratures.s3.amazonaws.com/index.html",
+      "https://s3.amazonaws.com/iloveliteratures/index.html",
+      "https://macrologoat.s3.amazonaws.com/index.html",
+      "https://s3.amazonaws.com/macrologoat/index.html",
+      "https://bullubg.s3.amazonaws.com/index.html",
+      "https://s3.amazonaws.com/bullubg/index.html",
+      "https://s3.amazonaws.com/bullmath/index.html",
+      "https://bullmath.s3.amazonaws.com/index.html",
+      "https://macrolo.s3.amazonaws.com/index.html",
+      "https://s3.amazonaws.com/macrolo/index.html",
+      "https://ilovemaths.s3.amazonaws.com/index.html",
+      "https://s3.amazonaws.com/ilovemaths/index.html",
+      "https://bulledu.s3.amazonaws.com/index.html",
+      "https://s3.amazonaws.com/bulledu/index.html",
+      "https://bullguardian.s3.amazonaws.com/index.html",
+      "https://s3.amazonaws.com/bullguardian/index.html",
+      "https://bulllightspeed.s3.amazonaws.com/index.html",
+      "https://s3.amazonaws.com/bulllightspeed/index.html",
+      "https://macrolomath.s3.amazonaws.com/index.html",
+      "https://s3.amazonaws.com/macrolomath/index.html",
+      "https://s3.amazonaws.com/readvc/index.html",
+      "https://s3.amazonaws.com/writevc/index.html",
+      "https://s3.amazonaws.com/bullbestyoutuber/index.html",
+      "https://bullbestyoutuber.s3.amazonaws.com/index.html",
+      "https://onelastlink.s3.amazonaws.com/index.html",
+      "https://s3.amazonaws.com/onelastlink/index.html",
+      "https://apsciencetutoring.luhe.tw/#home",
+      "https://s3.amazonaws.com/slantsite/index.html",
+      "https://slantsite.s3.amazonaws.com/index.html",
+      "https://s3.amazonaws.com/misting2/index.html",
+      "https://misting2.s3.amazonaws.com/index.html",
+      "https://s3.amazonaws.com/macmist/index.html",
+      "https://macmist.s3.amazonaws.com/index.html",
+      "https://s3.amazonaws.com/mistmac/index.html",
+      "https://mistmac.s3.amazonaws.com/index.html",
+      "https://s3.amazonaws.com/ilovecalc/index.html",
+      "https://ilovecalc.s3.amazonaws.com/index.html"
     ]
   },
   "failing_links": {
-    "https://15.204.247.166.ip.ipq.co": 1,
-    "https://s3.amazonaws.com/slantsite/index.html": 2,
-    "https://evenmore.delafuentefunerales.cl": 1,
-    "https://apsciencetutoring.luhe.tw/#home": 2,
-    "https://learnaboutbillclinton.daybits.net": 1,
-    "https://cavtalk.org": 1,
-    "https://craftingwithmimi.com": 1,
-    "https://cves359.com": 1,
-    "https://kcomeacademy.org": 1,
-    "https://schoolimprovementtips.com": 1,
-    "https://lsrelay-extension-production.s3.amazonaws.com/index.html": 2,
-    "https://s3.amazonaws.com/lsrelay-extension-production/index.html": 2,
-    "https://s3.amazonaws.com/bullisgoated/index.html": 2,
-    "https://bullisgoated.s3.amazonaws.com/index.html": 2,
-    "https://iloveliteratures.s3.amazonaws.com/index.html": 2,
-    "https://s3.amazonaws.com/iloveliteratures/index.html": 2,
-    "https://macrologoat.s3.amazonaws.com/index.html": 2,
-    "https://s3.amazonaws.com/macrologoat/index.html": 2,
-    "https://bullubg.s3.amazonaws.com/index.html": 2,
-    "https://s3.amazonaws.com/bullubg/index.html": 2,
-    "https://s3.amazonaws.com/bullmath/index.html": 2,
-    "https://bullmath.s3.amazonaws.com/index.html": 2,
-    "https://macrolo.s3.amazonaws.com/index.html": 2,
-    "https://s3.amazonaws.com/macrolo/index.html": 2,
-    "https://ilovemaths.s3.amazonaws.com/index.html": 2,
-    "https://s3.amazonaws.com/ilovemaths/index.html": 2,
-    "https://bulledu.s3.amazonaws.com/index.html": 2,
-    "https://s3.amazonaws.com/bulledu/index.html": 2,
-    "https://bullguardian.s3.amazonaws.com/index.html": 2,
-    "https://s3.amazonaws.com/bullguardian/index.html": 2,
-    "https://bulllightspeed.s3.amazonaws.com/index.html": 2,
-    "https://s3.amazonaws.com/bulllightspeed/index.html": 2,
-    "https://macrolomath.s3.amazonaws.com/index.html": 2,
-    "https://s3.amazonaws.com/macrolomath/index.html": 2,
-    "https://cherri.altonhabitat.info": 1,
-    "https://s3.amazonaws.com/misting2/index.html": 2,
-    "https://misting2.s3.amazonaws.com/index.html": 2,
-    "https://s3.amazonaws.com/macmist/index.html": 2,
-    "https://macmist.s3.amazonaws.com/index.html": 2,
-    "https://s3.amazonaws.com/mistmac/index.html": 2,
-    "https://mistmac.s3.amazonaws.com/index.html": 2,
-    "https://s3.amazonaws.com/ilovecalc/index.html": 2,
-    "https://ilovecalc.s3.amazonaws.com/index.html": 2,
-    "https://launch.newlifesanctuarychurch.com": 1,
-    "https://help.globaltutors.me.cdn.cloudflare.net": 1,
-    "https://jmw.thewellnessconference.org": 1,
-    "https://easy.globaltutors.me": 1,
-    "https://hours.stgenevieveschool.us": 1,
-    "https://cherri.cc": 1,
-    "https://cherri.altonhabitat.store": 1,
-    "https://cherri.altonhabitat.online": 1,
-    "https://s3.amazonaws.com/mathvc/index.html": 2,
-    "https://mathvc.s3.amazonaws.com/index.html": 2,
-    "https://celestial.webinfo.tw": 1,
-    "https://task.babypos.hk": 1,
-    "https://campus.geometry.writing.history.programming.beltfrog.com/onboarding": 1,
-    "https://campus.lecture.art.physics.english.beltfrog.com": 1,
-    "https://lecture.geometry.biology.campus.music.beltfrog.com": 1,
-    "https://lecture.physics.geometry.campus.music.beltfrog.com": 1,
-    "https://studying.engineering.science.art.library.beltfrog.com": 1,
-    "https://creditrepair911.us": 1,
-    "https://cherri.totallyeducation.info": 1,
-    "https://cherryontop.wikidelia.net": 1,
-    "https://dudewhatthecherryists.wikidelia.net": 1,
-    "https://gocherry.wikidelia.net": 1,
-    "https://ilovecheerys.wikidelia.net": 1,
-    "https://isitcherryorcherri.wikidelia.net": 1,
-    "https://s3.amazonaws.com/readvc/index.html": 2,
-    "https://s3.amazonaws.com/writevc/index.html": 2,
-    "https://s3.amazonaws.com/bullbestyoutuber/index.html": 2,
-    "https://bullbestyoutuber.s3.amazonaws.com/index.html": 2,
-    "https://code.bull.graphs.math.colloky.com.pe": 1,
-    "https://ninja.good.subscriber.eilong.com": 1,
-    "https://bull.premises.quevo.com.br": 1,
-    "https://edu.jyotsnapandey.com.np": 1,
-    "https://edu.numbercraftacademy.com": 1,
-    "https://153.75.225.180.nip.io": 1,
-    "https://153.75.225.180.sslip.io": 1,
-    "https://task.globaltutors.me.cdn.cloudflare.net": 1,
-    "https://help.ezlearning.qzz.io": 1,
-    "https://celestial-bib.duckdns.org": 1,
-    "https://task.bdyoutube.com": 1,
-    "https://mathstudies.calculuslessons.lol": 1,
-    "https://beearomi.klrmowse.com": 1,
-    "https://cherribull.asturkiters.es": 1,
-    "https://content.keeper.go.gaurd.ian.bvhoa.com": 1,
-    "https://chem.cherri.beearomi.bull.tanenbaumchat.org": 1,
-    "https://onelastlink.s3.amazonaws.com/index.html": 2,
-    "https://s3.amazonaws.com/onelastlink/index.html": 2,
-    "https://hiring.airlinemeals.net": 1,
-    "https://edu.thenme.net": 1,
-    "https://slantsite.s3.amazonaws.com/index.html": 2
+    "https://vorg-has.me-at-gun-point3.cyberninja.ie": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/transcendental-vectors-4136@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/symmetric-integral-4684@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/real-eigenvalues-7807@main/doesn.svg": 1,
+    "https://compontop.jayaho.ch": 1,
+    "https://evenmore.delafuentefunerales.cl": 2,
+    "https://aphistorytutoring.cencopro.cl": 1,
+    "https://mathpracticefun.ignorelist.com": 1,
+    "https://cavtalk.org": 2,
+    "https://craftingwithmimi.com": 2,
+    "https://cves359.com": 2,
+    "https://kcomeacademy.org": 2,
+    "https://schoolimprovementtips.com": 2,
+    "https://cherri.altonhabitat.info": 2,
+    "https://sunsett.cc": 1,
+    "https://velara.cc": 1,
+    "https://launch.newlifesanctuarychurch.com": 2,
+    "https://help.globaltutors.me.cdn.cloudflare.net": 2,
+    "https://jmw.thewellnessconference.org": 2,
+    "https://easy.globaltutors.me": 2,
+    "https://hours.stgenevieveschool.us": 2,
+    "https://cherri.cc": 2,
+    "https://cherri.altonhabitat.store": 2,
+    "https://cherri.altonhabitat.online": 2,
+    "https://celestial.webinfo.tw": 2,
+    "https://task.babypos.hk": 2,
+    "https://campus.geometry.writing.history.programming.beltfrog.com/onboarding": 2,
+    "https://campus.lecture.art.physics.english.beltfrog.com": 2,
+    "https://lecture.geometry.biology.campus.music.beltfrog.com": 2,
+    "https://lecture.physics.geometry.campus.music.beltfrog.com": 2,
+    "https://studying.engineering.science.art.library.beltfrog.com": 2,
+    "https://creditrepair911.us": 2,
+    "https://cherri.totallyeducation.info": 2,
+    "https://cherryontop.wikidelia.net": 2,
+    "https://dudewhatthecherryists.wikidelia.net": 2,
+    "https://gocherry.wikidelia.net": 2,
+    "https://ilovecheerys.wikidelia.net": 2,
+    "https://isitcherryorcherri.wikidelia.net": 2,
+    "https://code.bull.graphs.math.colloky.com.pe": 2,
+    "https://ninja.good.subscriber.eilong.com": 2,
+    "https://bull.premises.quevo.com.br": 2,
+    "https://edu.jyotsnapandey.com.np": 2,
+    "https://edu.numbercraftacademy.com": 2,
+    "https://153.75.225.180.nip.io": 2,
+    "https://153.75.225.180.sslip.io": 2,
+    "https://task.globaltutors.me.cdn.cloudflare.net": 2,
+    "https://help.ezlearning.qzz.io": 2,
+    "https://celestial-bib.duckdns.org": 2,
+    "https://task.bdyoutube.com": 2,
+    "https://mathstudies.calculuslessons.lol": 2,
+    "https://beearomi.klrmowse.com": 2,
+    "https://cherribull.asturkiters.es": 2,
+    "https://content.keeper.go.gaurd.ian.bvhoa.com": 2,
+    "https://chem.cherri.beearomi.bull.tanenbaumchat.org": 2,
+    "https://hiring.airlinemeals.net": 2,
+    "https://edu.thenme.net": 2
   },
   "links": [
     {
@@ -4629,487 +4635,7 @@
         "ultraviolet"
       ],
       "locked": "",
-      "link": "https://s3.amazonaws.com/mathvc/index.html",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://mathvc.s3.amazonaws.com/index.html",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://lsrelay-extension-production.s3.amazonaws.com/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/lsrelay-extension-production/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/bullisgoated/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://bullisgoated.s3.amazonaws.com/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://iloveliteratures.s3.amazonaws.com/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/iloveliteratures/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://macrologoat.s3.amazonaws.com/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/macrologoat/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://bullubg.s3.amazonaws.com/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/bullubg/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/bullmath/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://bullmath.s3.amazonaws.com/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://macrolo.s3.amazonaws.com/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/macrolo/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://ilovemaths.s3.amazonaws.com/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/ilovemaths/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
       "link": "https://deaganfern.s3.amazonaws.com/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://bulledu.s3.amazonaws.com/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/bulledu/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://bullguardian.s3.amazonaws.com/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/bullguardian/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://bulllightspeed.s3.amazonaws.com/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/bulllightspeed/index.html",
       "found": "5/1/2026",
       "username": "N/A",
       "password": "N/A",
@@ -5149,168 +4675,8 @@
         "ultraviolet"
       ],
       "locked": "",
-      "link": "https://macrolomath.s3.amazonaws.com/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/macrolomath/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
       "link": "https://d1ow0xcl2w4e9a.cloudfront.net",
       "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/readvc/index.html",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/writevc/index.html",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/bullbestyoutuber/index.html",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://bullbestyoutuber.s3.amazonaws.com/index.html",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://onelastlink.s3.amazonaws.com/index.html",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/onelastlink/index.html",
-      "found": "5/11/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "1NobleCyber",
@@ -5711,26 +5077,6 @@
       "locked": "",
       "link": "https://15.schoolsandtravel.com/#home",
       "found": "4/26/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🟣 UniUB",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl",
-      "capability_tags": [
-        "epoxy",
-        "libcurl"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://apsciencetutoring.luhe.tw/#home",
-      "found": "4/27/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",
@@ -28102,25 +27448,6 @@
         "scramjet"
       ],
       "locked": "",
-      "link": "https://s3.amazonaws.com/slantsite/index.html",
-      "found": "4/21/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
       "link": "https://cavtalk.org/",
       "found": "4/25/2026",
       "username": "N/A",
@@ -28446,25 +27773,6 @@
       "locked": "",
       "link": "https://starr.bijayakilla.com/",
       "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://slantsite.s3.amazonaws.com/index.html",
-      "found": "5/11/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "1NobleCyber",
@@ -38677,158 +37985,6 @@
       ],
       "locked": "",
       "link": "https://ax7.lervs.ro",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌁 Mist",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/misting2/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌁 Mist",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://misting2.s3.amazonaws.com/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌁 Mist",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/macmist/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌁 Mist",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://macmist.s3.amazonaws.com/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌁 Mist",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/mistmac/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌁 Mist",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://mistmac.s3.amazonaws.com/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌁 Mist",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://s3.amazonaws.com/ilovecalc/index.html",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌁 Mist",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://ilovecalc.s3.amazonaws.com/index.html",
       "found": "5/1/2026",
       "username": "N/A",
       "password": "N/A",
