@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v4.4.1",
-    "revision": "r102",
+    "revision": "r103",
     "last_updated": "May 14, 2026",
     "unsorted_total": 1970,
     "important_notices": "### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
@@ -103,50 +103,23 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-14T13:56:41Z",
-    "checked_at_display": "2026-05-14 13:56 UTC",
+    "checked_at": "2026-05-14T19:40:52Z",
+    "checked_at_display": "2026-05-14 19:40 UTC",
     "added_count": 0,
-    "removed_count": 2,
+    "removed_count": 1,
     "added_links": [],
     "removed_links": [
-      "https://mathpracticefun.ignorelist.com",
-      "https://compontop.jayaho.ch"
+      "https://kronos.onl.academinctools.pw"
     ]
   },
   "failing_links": {
-    "https://vorg-has.me-at-gun-point3.cyberninja.ie": 1,
-    "https://vorg-isnt-a-fem.boy3.cyberninja.ie": 1,
-    "https://51.222.206.184.devns.me": 1,
-    "https://anderdingus.axsetubal.pt": 1,
-    "https://testinga.mooo.com": 1,
-    "https://booger.riteshp.com.np": 1,
-    "https://testing.farted.net": 1,
-    "https://bull.yarnowl.com": 1,
-    "https://history.campus.physics.project.teacher.bimax.ar": 1,
-    "https://nomorefortnige.bisblick.org": 1,
-    "https://kidsthesedaysbro.arxeiokin.gr": 1,
-    "https://weneedmorefhangbisbfo.camberleycricket.com": 1,
-    "https://chemistry.axiomait.pro": 1,
-    "https://midterms.wrexham.cn": 1,
-    "https://third-army.surge.sh": 2,
-    "https://computer.calculus.drama.music.math.srivaishnavam.org.au": 1,
-    "https://kronos.onl.academinctools.pw": 2,
-    "https://fly.qantas.hoohaamelbourne.com.au": 1,
-    "https://nebulo.beat.nebula.recreatinganew.com": 1,
-    "https://exam-mindset.itleague.com": 1,
-    "https://study-pattern.jandjley.com": 1,
-    "https://revision-flow.maverickden.com": 1,
-    "https://learning-tactics.ncknms.com": 1,
-    "https://brain-skills.ortonavarro.com": 1,
-    "https://learning-track.divvyboard.com": 1,
-    "https://focus-discipline.earlyriserscoffeeshop.com": 1,
-    "https://study-achievement.expedicionesytrekking.com": 1,
-    "https://revision-system.fiedleracres.com": 1,
-    "https://study-control.wayner.ca": 1,
-    "https://history.music.geometry.reading.teacher.easternstamps.com": 1,
-    "https://codehs.com/sandbox/id/html-ZhExDL/run": 1,
-    "https://bulls.eat.grass.klrmowse.com": 1,
-    "https://calculus.teacher.drama.algebra.lecture.anostudio.info": 1
+    "https://vorg-has.me-at-gun-point3.cyberninja.ie": 2,
+    "https://vorg-isnt-a-fem.boy3.cyberninja.ie": 2,
+    "https://sunsett.cc": 1,
+    "https://velara.cc": 1,
+    "https://vjenkins.texansaretrash.duckdns.org": 1,
+    "https://m.wobwob.duckdns.org": 1,
+    "https://liamkinch.rajendra-ghimire.com.np": 1
   },
   "links": [
     {
@@ -36646,25 +36619,6 @@
       ],
       "locked": "",
       "link": "https://finleyisabum.vixenlights.com/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌌 Nocturne",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://kronos.onl.academinctools.pw/",
       "found": "4/30/2026",
       "username": "N/A",
       "password": "N/A",
