@@ -15,6 +15,9 @@ Welcome to the official Proxy List! This has a running list of hundreds of unblo
 
 ## Important Notices
 
+### Problems with Authentication
+I am aware of an issue that is causing users to be repeatedly logged out of their account, which happens when navigating pages other than the main list.
+
 ### Link ratings currently down
 Link ratings are currently down due to issues with Firebase. I am working to fix it and it will be back up in the coming days. If you try to rate a link, it will fail.
 

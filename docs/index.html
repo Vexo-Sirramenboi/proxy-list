@@ -1111,6 +1111,14 @@
     .important-notices .notice-alert-block p {
       color: #ffd2d2;
     }
+    .important-notices .notice-alert-auth {
+      border-color: #b71c1c;
+      background: #2d1010;
+    }
+    .important-notices .notice-alert-auth h3,
+    .important-notices .notice-alert-auth p {
+      color: #ff3333;
+    }
     #filterSelect {
       width: 100%;
       padding: 0.5rem 0.65rem;
@@ -5725,8 +5733,11 @@
       }
     }
 
-    function isAlertImportantNoticeTitle(title) {
-      return /link ratings currently down/i.test(String(title || "").trim());
+    function importantNoticeAlertClass(title) {
+      const t = String(title || "").trim();
+      if (/link ratings currently down/i.test(t)) return "notice-alert-block";
+      if (/problems with authentication/i.test(t)) return "notice-alert-block notice-alert-auth";
+      return "";
     }
 
     function renderMarkdownLiteNotices(noticesText) {
@@ -5742,11 +5753,11 @@
           const nl = rest.indexOf("\n");
           const title = (nl === -1 ? rest : rest.slice(0, nl)).trim();
           const body = nl === -1 ? "" : rest.slice(nl + 1).trim();
-          const alert = isAlertImportantNoticeTitle(title);
-          if (alert) chunks.push('<div class="notice-alert-block">');
+          const alertClass = importantNoticeAlertClass(title);
+          if (alertClass) chunks.push('<div class="' + alertClass + '">');
           chunks.push("<h3>" + renderMarkdownInline(title) + "</h3>");
           if (body) renderNoticeSectionBody(chunks, body);
-          if (alert) chunks.push("</div>");
+          if (alertClass) chunks.push("</div>");
         } else {
           for (const para of s.split(/\n{2,}/)) {
             const p = para.replace(/\n+/g, " ").trim();
