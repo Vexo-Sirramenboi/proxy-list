@@ -86,7 +86,6 @@ Move links from here into `list.md` once sorted.
 - https://sites.google.com/view/super-ixl-math/gn-math
 - https://sites.google.com/view/unblockiverse-gnmath/gn-math
 - https://t9osclass.vercel.app
-- https://yesmath.kamenorezac-garic.rs
 - https://yuriko.uk/drrr
 - http://agenda.australianhuntermag.com.au
 - http://books.adepoju.org
@@ -413,7 +412,6 @@ Move links from here into `list.md` once sorted.
 - https://easycoding.manutec.co
 - https://easyenglish.blindatech.cl
 - https://edu.info.east-kazakhstan.su.cdn.cloudflare.net
-- https://edu.myt0.info
 - https://edu.readerwrangler.com
 - https://edu.ts-me.com.my
 - https://ee.rxtech.cl
@@ -1958,8 +1956,6 @@ Move links from here into `list.md` once sorted.
 - https://moreig.monedita.cl
 - https://thebestguyhere.monedita.cl
 - https://securelymaster2000934.greatgiftlists.com
-- https://chemistry.reading.math.writing.teacher.pnlbraila.ro
-- https://lecture.history.biology.science.writing.arxeiokin.gr
 - https://www.securly.com.chickenkiller.com
 - https://nirbytesqwo.2hintranet.hu
 - https://nirbytesmpv.bogie.me
@@ -1973,3 +1969,5 @@ Move links from here into `list.md` once sorted.
 - https://dgfv.easychargebatteries.com
 - https://selevseesa.gpu74.ru
 - https://vcsa.easycharge-batteries.com
+- https://sunsett.cc
+- https://velara.cc

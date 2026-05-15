@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "v5.0",
-    "revision": "r104",
+    "revision": "r105",
     "last_updated": "May 15, 2026",
-    "unsorted_total": 1970,
+    "unsorted_total": 1968,
     "important_notices": "### Link ratings currently down\nLink ratings are currently down due to issues with Firebase. I am working to fix it and it will be back up in the coming days. If you try to rate a link, it will fail.\n\n### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
-    "update_notice": "### Accounts and Connections\nYou can now make an account on the site and even connect using GitHub and Google. Making an account gives you access to community features such as link ratings, saving links, sharing link folders, and more.\n\n### Saving Links\nOnce you create an account and sign in, you can now save links and access them by going to your account name and going to \"Saved links\". This is where you can also make link folders and share your favorite links with the community.\n\n### Community - Rating Links\n(At the time of writing, link ratings are currently down.)\nYou can now upvote/downvote links and sort by most favorable links by rated by the community. You will no longer have to keep trying links until you find one that's actually good.\n\n### Community - Sharing Links\nYou can now share links globally using the new folder system. It can be accessed the same way you access saved links, and clicking \"New Folder\". Add your links, then check the \"Public\" checkmark, and you are all set! You can also copy the direct link to your folder to share with others. Community shared link folders also support community ratings.",
+    "update_notice": "### Accounts and Connections\nYou can now make an account on the site and even connect using GitHub and Google. Making an account gives you access to community features such as link ratings, saving links, sharing link folders, and more.\n### Saving Links\nOnce you create an account and sign in, you can now save links and access them by going to your account name and going to \"Saved links\". This is where you can also make link folders and share your favorite links with the community.\n### Community - Rating Links\n(At the time of writing, link ratings are currently down.)\nYou can now upvote/downvote links and sort by most favorable links by rated by the community. You will no longer have to keep trying links until you find one that's actually good.\n### Community - Sharing Links\nYou can now share links globally using the new folder system. It can be accessed the same way you access saved links, and clicking \"New Folder\". Add your links, then check the \"Public\" checkmark, and you are all set! You can also copy the direct link to your folder to share with others. Community shared link folders also support community ratings.",
     "fail_threshold": 3,
     "popular_note": "Hand-picked links that tend to work well — not ranked by site traffic (this page has no analytics). Edit docs/popular_links.json and run scripts/convert_list_to_json.py.",
     "popular_links": [
@@ -103,25 +103,86 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-15T02:39:14Z",
-    "checked_at_display": "2026-05-15 02:39 UTC",
-    "added_count": 0,
-    "removed_count": 2,
-    "added_links": [],
+    "checked_at": "2026-05-15T06:51:40Z",
+    "checked_at_display": "2026-05-15 06:51 UTC",
+    "added_count": 19,
+    "removed_count": 5,
+    "added_links": [
+      "https://vcsa-zone.esdata.info",
+      "https://player-nation.lucianmandru.ro",
+      "https://securelyplsspeedineedthis8weudidhske.suwal.com.np",
+      "https://math-worksheets.thuexetaxi.com",
+      "https://velara.my",
+      "https://learning.msspsparaguay.org",
+      "https://readyreading.kamenorezac-garic.rs",
+      "https://yesmath.kamenorezac-garic.rs",
+      "https://edu.myt0.info",
+      "https://waguri.pingoneando.me",
+      "https://lecture.history.biology.science.writing.arxeiokin.gr",
+      "https://chemistry.reading.math.writing.teacher.pnlbraila.ro",
+      "https://hence.thakuraiarman.com.np/onboarding",
+      "https://hoster.fhoster.ru/onboarding",
+      "https://hosting.fhoster.ru/onboarding",
+      "https://vcsa.mkhq.co.kr",
+      "https://slantsite.s3.amazonaws.com/index.html",
+      "https://contentkeepermaster3009.deltacompy.com.br",
+      "https://wearecharliekirkman.daybits.net"
+    ],
     "removed_links": [
-      "https://vorg-has.me-at-gun-point3.cyberninja.ie",
-      "https://vorg-isnt-a-fem.boy3.cyberninja.ie"
+      "https://sunsett.cc",
+      "https://velara.cc",
+      "https://liamkinch.rajendra-ghimire.com.np",
+      "https://vjenkins.texansaretrash.duckdns.org",
+      "https://m.wobwob.duckdns.org"
     ]
   },
   "failing_links": {
-    "https://site.nhd.org/11595885/home": 1,
-    "https://sunsett.cc": 2,
-    "https://velara.cc": 2,
-    "https://vjenkins.texansaretrash.duckdns.org": 2,
-    "https://m.wobwob.duckdns.org": 2,
-    "https://wikipedia.wikidelia.net": 1,
-    "https://howtotech.infotechnology.com": 1,
-    "https://liamkinch.rajendra-ghimire.com.np": 2
+    "https://files.copytek.cl": 1,
+    "https://app.codewave.com.np": 1,
+    "https://learn.morso-si.dk": 1,
+    "https://act.savequeechylake.org": 1,
+    "https://download.s-engine.com": 1,
+    "https://documentation.7btech.com": 1,
+    "https://learn.botsev.eu": 1,
+    "https://hosting.biec.com.np": 1,
+    "https://storytime.goodguysav.com": 1,
+    "https://read.nationalit.ru": 1,
+    "https://family.nembahadurraskoti.com.np": 1,
+    "https://status.xcloud.ar": 1,
+    "https://travel.national-birdshow.com": 1,
+    "https://k12edu.duckdns.org": 1,
+    "https://ethostulsa.org": 1,
+    "https://bllymartw.lekhnathfb.com.np": 1,
+    "https://site.nhd.org/11595885/home": 2,
+    "https://us.grumpyoldmen.us": 1,
+    "https://wiki.wikidelia.net": 1,
+    "https://blog.succeed.cl": 1,
+    "https://family.jessicacadotte.com": 1,
+    "https://purchase.halftech.com": 1,
+    "https://dev.cyber-ag.com": 1,
+    "https://recipies.dalicias.cl": 1,
+    "https://null-code.codewave.com.np": 1,
+    "https://dev.apa89.com": 1,
+    "https://updownyt.ytconverter.it": 1,
+    "https://cdn.adworldlog.com": 1,
+    "https://mathissofunicoulddoitfordaysonend.aber.ir": 1,
+    "https://learn.sharptutor.net": 1,
+    "https://dev.amq.li": 1,
+    "https://gitlab.amq.ro": 1,
+    "https://wikipedia.wikidelia.net": 2,
+    "https://hydration.zwanenwater48.nl": 1,
+    "https://launch.umlach.org": 1,
+    "https://app.cmyk-studio.com": 1,
+    "https://zlty.europeserv.org": 1,
+    "https://howtotech.infotechnology.com": 2,
+    "http://ipv6.bestar.sg": 1,
+    "http://dns.dnda.com.np": 1,
+    "https://math-worksheets.thuexetaxi.com": 1,
+    "https://velara.my": 1,
+    "https://lecture.history.biology.science.writing.arxeiokin.gr": 1,
+    "https://chemistry.reading.math.writing.teacher.pnlbraila.ro": 1,
+    "https://vcsa.mkhq.co.kr": 1,
+    "https://slantsite.s3.amazonaws.com/index.html": 1
   },
   "links": [
     {
@@ -200,46 +261,8 @@
         "scramjet"
       ],
       "locked": "",
-      "link": "https://sunsett.cc/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌙 Velara",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
       "link": "https://noterplus-157.firebaseapp.com/",
       "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌙 Velara",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://velara.cc",
-      "found": "5/2/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",
@@ -26553,25 +26576,6 @@
         "unknown"
       ],
       "locked": "",
-      "link": "https://liamkinch.rajendra-ghimire.com.np",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🦄 Utopia Education",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
       "link": "https://tatata12345678910e2.chickenkiller.com",
       "found": "5/9/2026",
       "username": "N/A",
@@ -36593,44 +36597,6 @@
       "password": "N/A",
       "contributor": "1NobleCyber",
       "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌀 Interstellar",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://vjenkins.texansaretrash.duckdns.org",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌀 Interstellar",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://m.wobwob.duckdns.org",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
       "provider": "🌴 aspen",
