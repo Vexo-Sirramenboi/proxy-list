@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.0",
-    "revision": "r107",
+    "revision": "r108",
     "last_updated": "May 15, 2026",
     "unsorted_total": 1970,
     "important_notices": "### Problems with Authentication\nI am aware of an issue that is causing users to be repeatedly logged out of their account, which happens when navigating pages other than the main list.\n\n### Link ratings currently down\nLink ratings are currently down due to issues with Firebase. I am working to fix it and it will be back up in the coming days. If you try to rate a link, it will fail.\n\n### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
@@ -103,37 +103,33 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-15T13:53:54Z",
-    "checked_at_display": "2026-05-15 13:53 UTC",
+    "checked_at": "2026-05-15T14:41:50Z",
+    "checked_at_display": "2026-05-15 14:41 UTC",
     "added_count": 0,
-    "removed_count": 5,
+    "removed_count": 1,
     "added_links": [],
     "removed_links": [
-      "https://math-worksheets.thuexetaxi.com",
-      "https://lecture.history.biology.science.writing.arxeiokin.gr",
-      "https://chemistry.reading.math.writing.teacher.pnlbraila.ro",
-      "https://vcsa.mkhq.co.kr",
-      "https://slantsite.s3.amazonaws.com/index.html"
+      "https://player-nation.lucianmandru.ro"
     ]
   },
   "failing_links": {
-    "https://aphistorytutoring.tjarba.com": 1,
-    "https://update.5432sdabhvaewukbcfjkaesk.152.53.136.204.nip.io": 1,
-    "https://www.update.vutsrmlkjqpupdate.hcbaupdate.98365432update.update.76update.158-69-222-114.sslip.io": 1,
-    "https://onmlkfehgfeupdate.update.218765432sdabhvaewukbcfjkaesk.152.53.136.204.nip.io": 1,
-    "https://32update.2sdabhvaewukbcfjkaesk.152.53.136.204.nip.io": 1,
-    "https://15.204.247.166.dyn.tcadmin.net": 1,
-    "https://sainttech.techmaxasia.com/#home": 1,
-    "https://art.technology.engineering.homework.writing.srivaishnavam.org.au": 1,
-    "https://grammar.biology.homework.geometry.math.srivaishnavam.org.au": 1,
-    "https://studying.campus.reading.programming.engineering.arionskyclub.com": 1,
-    "https://geometry.studying.calculus.music.chemistry.greenbaynz.com": 1,
-    "https://ax7.lervs.ro": 1,
-    "https://whyeverestsotall.wikidelia.net": 1,
-    "https://everest2.klrmowse.com": 1,
-    "https://everest3.klrmowse.com": 1,
-    "https://about.airlinemeals.net": 1,
-    "https://player-nation.lucianmandru.ro": 2
+    "https://imsovainthatinamelinksaftermyself.tjarba.com": 1,
+    "https://1928.lervs.ro": 1,
+    "https://1929.lervs.ro": 1,
+    "https://676767.lervs.ro": 1,
+    "https://everest-bot-is-being-verified-by-discord.lervs.ro": 1,
+    "https://oiplslahguys.lervs.ro": 1,
+    "https://ax7.lervs.ro": 2,
+    "https://writing.engineering.computer.classroom.calculus.retrolegends.com": 1,
+    "https://everestishigh.wikidelia.net": 1,
+    "https://whyeverestsotall.wikidelia.net": 2,
+    "https://everest6.asturkiters.es": 1,
+    "https://bulls.eat.grass.klrmowse.com": 1,
+    "https://everest2.klrmowse.com": 2,
+    "https://everest3.klrmowse.com": 2,
+    "https://everest5.klrmowse.com": 1,
+    "https://about.airlinemeals.net": 2,
+    "https://learning.msspsparaguay.org": 1
   },
   "links": [
     {
@@ -251,25 +247,6 @@
       ],
       "locked": "",
       "link": "https://vcsa-zone.esdata.info/",
-      "found": "5/14/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌙 Velara",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://player-nation.lucianmandru.ro/",
       "found": "5/14/2026",
       "username": "N/A",
       "password": "N/A",
