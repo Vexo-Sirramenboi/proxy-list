@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="google-adsense-account" content="ca-pub-8449488085448128" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8449488085448128" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Community folders | Proxy list</title>
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a222d;
+      --border: #2d3a4d;
+      --text: #e7ecf3;
+      --muted: #8b9cb3;
+      --accent: #6cb3ff;
+      --ok: #3ecf8e;
+      --warn: #ffd57e;
+      --danger: #ff8f8f;
+      --font: "Segoe UI", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    header {
+      padding: 1.4rem 1.4rem 1.2rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    h1 {
+      margin: 0 0 0.4rem;
+      font-size: clamp(1.35rem, 4vw, 1.75rem);
+    }
+    .sub {
+      margin: 0;
+      max-width: 46rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1.25rem 1.2rem 2.5rem;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.65rem 1rem;
+      margin-bottom: 1rem;
+    }
+    .toolbar label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .toolbar select {
+      padding: 0.45rem 0.55rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: #121920;
+      color: var(--text);
+      font: inherit;
+      font-size: 0.88rem;
+    }
+    .meta-line {
+      margin: 0;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+      padding: 0;
+      overflow: hidden;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.86rem;
+    }
+    th, td {
+      padding: 0.55rem 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th {
+      background: #121920;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.78rem;
+      letter-spacing: 0.02em;
+    }
+    tr:last-child td {
+      border-bottom: 0;
+    }
+    .col-title {
+      min-width: 8rem;
+    }
+    .folder-title {
+      font-weight: 600;
+      color: var(--text);
+    }
+    .folder-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .folder-title a:hover {
+      color: var(--accent);
+    }
+    .col-owner {
+      max-width: 11rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+      word-break: break-word;
+    }
+    .col-date { white-space: nowrap; color: var(--muted); font-size: 0.82rem; }
+    .col-rating { white-space: nowrap; font-size: 0.82rem; }
+    .rating-vote-btn {
+      padding: 0.1rem 0.32rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: #121920;
+      cursor: pointer;
+      font-size: 0.78rem;
+      line-height: 1.2;
+      color: var(--text);
+    }
+    .rating-vote-btn:hover { border-color: var(--accent); color: var(--accent); }
+    .rating-vote-btn.is-active {
+      border-color: #2d5588;
+      background: #1e3a5f;
+      color: var(--accent);
+    }
+    .rating-vote-btn img {
+      display: block;
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+      pointer-events: none;
+      vertical-align: middle;
+    }
+    .rating-score {
+      display: inline-block;
+      min-width: 1.35rem;
+      margin: 0 0.15rem;
+      text-align: center;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+    .rating-count-hint { margin-left: 0.25rem; font-size: 0.72rem; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.4rem 0.75rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--text);
+      background: #121920;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .btn:hover { border-color: var(--accent); color: var(--accent); }
+    .btn-primary {
+      border-color: #2d5588;
+      color: var(--accent);
+      background: #1e3a5f;
+    }
+    .empty, .err {
+      padding: 1.25rem 1rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .err { color: var(--danger); }
+    .back-row {
+      margin-top: 1.25rem;
+      font-size: 0.9rem;
+    }
+    a { color: var(--accent); }
+    @media (max-width: 640px) {
+      th:nth-child(5), td:nth-child(5) { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Community folders</h1>
+    <p class="sub">
+      Public link folders shared by list visitors (same folders as <code>?folder=…</code> when marked public).
+      <strong>Most popular</strong> ranks by how many links are in each folder.
+      Use <strong>Highest rated</strong> to sort by community thumbs (net score). Ratings are stored in Firestore; voting requires signing in on the main site (not anonymous).
+      Creator is the site username if set, otherwise the sign-in name from when the folder was created or last saved in settings.
+      Older public folders may show “—” until the owner saves folder settings once.
+    </p>
+  </header>
+  <main>
+    <div class="toolbar">
+      <label>
+        Sort by
+        <select id="sortSelect" aria-label="Sort folders">
+          <option value="newest">Newest (last updated)</option>
+          <option value="oldest">Oldest (created)</option>
+          <option value="popular">Most popular (most links)</option>
+          <option value="top_rated">Highest rated (net thumbs)</option>
+        </select>
+      </label>
+    </div>
+    <p class="meta-line" id="countLine" hidden></p>
+
+    <div class="card" id="tableCard" hidden>
+      <table>
+        <thead>
+          <tr>
+            <th class="col-title">Folder</th>
+            <th class="col-owner">Creator</th>
+            <th class="col-rating">Rating</th>
+            <th class="col-n">Links</th>
+            <th class="col-date">Updated</th>
+            <th class="col-actions">Open</th>
+          </tr>
+        </thead>
+        <tbody id="folderBody"></tbody>
+      </table>
+    </div>
+    <div class="empty" id="loadingState">Loading public folders…</div>
+    <div class="empty" id="emptyState" hidden>No public folders yet. Create one from the list while signed in, then turn on “Public” in folder settings.</div>
+    <div class="err" id="errorState" hidden></div>
+
+    <p class="back-row">
+      <a href="../">← Back to proxy list</a>
+      ·
+      <a href="../login/">Sign in</a>
+      ·
+      <a href="../contribute/">Contribute</a>
+    </p>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+  <script src="../firebase-config.example.js"></script>
+  <script src="../firebase-config.local.js"></script>
+  <script>
+    (function () {
+      const SORT_LS = "proxyList_community_folder_sort_v1";
+      const QUERY_LIMIT = 500;
+
+      const sortSelect = document.getElementById("sortSelect");
+      const countLine = document.getElementById("countLine");
+      const tableCard = document.getElementById("tableCard");
+      const folderBody = document.getElementById("folderBody");
+      const loadingState = document.getElementById("loadingState");
+      const emptyState = document.getElementById("emptyState");
+      const errorState = document.getElementById("errorState");
+
+      let rawRows = [];
+      let fireDb = null;
+      const folderRatingAgg = new Map();
+      const folderRatingSelf = new Map();
+
+      function escapeHtml(s) {
+        return String(s)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      function escapeAttr(s) {
+        return escapeHtml(s).replace(/'/g, "&#39;");
+      }
+
+      const RATING_THUMB_UP_IMG = "../rating-thumb-up.png";
+      const RATING_THUMB_DOWN_IMG = "../rating-thumb-down.png";
+
+      function tsMillis(ts) {
+        if (!ts) return 0;
+        if (typeof ts.toMillis === "function") return ts.toMillis();
+        if (typeof ts.seconds === "number") return ts.seconds * 1000;
+        return 0;
+      }
+
+      function formatWhen(ms) {
+        if (!ms) return "—";
+        try {
+          return new Date(ms).toLocaleString(undefined, {
+            dateStyle: "medium",
+            timeStyle: "short",
+          });
+        } catch (_) {
+          return "—";
+        }
+      }
+
+      function folderUrl(id) {
+        try {
+          return new URL("../?folder=" + encodeURIComponent(id), window.location.href).href;
+        } catch (_) {
+          return "../?folder=" + encodeURIComponent(id);
+        }
+      }
+
+      function itemCount(data) {
+        const items = data && data.items;
+        return Array.isArray(items) ? items.length : 0;
+      }
+
+      function folderScore(id) {
+        const o = folderRatingAgg.get(id);
+        if (!o) return 0;
+        return (Number(o.up) || 0) - (Number(o.down) || 0);
+      }
+
+      function ratingCellHtml(r) {
+        const id = r.id;
+        const o = folderRatingAgg.get(id) || { up: 0, down: 0 };
+        const up = Number(o.up) || 0;
+        const down = Number(o.down) || 0;
+        const self = folderRatingSelf.get(id) || 0;
+        const net = up - down;
+        const netStr = net > 0 ? "+" + net : String(net);
+        const upOn = self === 1 ? " is-active" : "";
+        const dnOn = self === -1 ? " is-active" : "";
+        return (
+          '<td class="col-rating">' +
+          '<button type="button" class="rating-vote-btn' +
+          upOn +
+          '" data-folder-rating-vote="1" data-folder-rating-id="' +
+          escapeAttr(id) +
+          '" title="Thumbs up" aria-label="Thumbs up"><img src="' +
+          escapeAttr(RATING_THUMB_UP_IMG) +
+          '" alt="" width="18" height="18" decoding="async" /></button>' +
+          '<span class="rating-score">' +
+          escapeHtml(netStr) +
+          "</span>" +
+          '<button type="button" class="rating-vote-btn' +
+          dnOn +
+          '" data-folder-rating-vote="-1" data-folder-rating-id="' +
+          escapeAttr(id) +
+          '" title="Thumbs down" aria-label="Thumbs down"><img src="' +
+          escapeAttr(RATING_THUMB_DOWN_IMG) +
+          '" alt="" width="18" height="18" decoding="async" /></button>' +
+          '<span class="sub rating-count-hint">' +
+          escapeHtml(String(up)) +
+          "/" +
+          escapeHtml(String(down)) +
+          "</span></td>"
+        );
+      }
+
+      async function prefetchFolderRatings(rows) {
+        folderRatingAgg.clear();
+        folderRatingSelf.clear();
+        if (!fireDb || !rows.length) return;
+        const ids = rows.map((x) => x.id).filter(Boolean);
+        const chunk = 30;
+        for (let i = 0; i < ids.length; i += chunk) {
+          const part = ids.slice(i, i + chunk);
+          const snaps = await Promise.all(part.map((id) => fireDb.collection("folderRatings").doc(id).get()));
+          snaps.forEach((snap, j) => {
+            const id = part[j];
+            if (snap.exists) {
+              const d = snap.data() || {};
+              folderRatingAgg.set(id, { up: Number(d.up) || 0, down: Number(d.down) || 0 });
+            } else {
+              folderRatingAgg.set(id, { up: 0, down: 0 });
+            }
+          });
+        }
+        const u = firebase.auth().currentUser;
+        if (u && !u.isAnonymous) {
+          for (let i = 0; i < ids.length; i += chunk) {
+            const part = ids.slice(i, i + chunk);
+            const snaps = await Promise.all(
+              part.map((id) => fireDb.collection("folderRatingVotes").doc(u.uid + "_" + id).get())
+            );
+            snaps.forEach((snap, j) => {
+              const id = part[j];
+              if (snap.exists) {
+                const v = Number(snap.data().vote);
+                folderRatingSelf.set(id, v === 1 ? 1 : v === -1 ? -1 : 0);
+              } else {
+                folderRatingSelf.set(id, 0);
+              }
+            });
+          }
+        }
+      }
+
+      async function applyFolderRatingVote(folderId, nextVote) {
+        const u = firebase.auth().currentUser;
+        if (!u || u.isAnonymous || !fireDb) {
+          window.alert("Sign in on the main site (../login/) with GitHub or email — anonymous visitors cannot vote.");
+          return;
+        }
+        const id = String(folderId || "").trim();
+        if (!id || !/^[a-zA-Z0-9_-]+$/.test(id) || id.length > 700) return;
+        const voteRef = fireDb.collection("folderRatingVotes").doc(u.uid + "_" + id);
+        const aggRef = fireDb.collection("folderRatings").doc(id);
+        let finalUp = 0;
+        let finalDown = 0;
+        try {
+          await fireDb.runTransaction(async (tx) => {
+            const voteSnap = await tx.get(voteRef);
+            const aggSnap = await tx.get(aggRef);
+            const old = voteSnap.exists ? Number(voteSnap.data().vote) || 0 : 0;
+            let up = aggSnap.exists ? Number(aggSnap.data().up) || 0 : 0;
+            let down = aggSnap.exists ? Number(aggSnap.data().down) || 0 : 0;
+            if (old === 1) up = Math.max(0, up - 1);
+            if (old === -1) down = Math.max(0, down - 1);
+            if (nextVote === 1) up++;
+            if (nextVote === -1) down++;
+            if (nextVote === 0) {
+              if (voteSnap.exists) tx.delete(voteRef);
+            } else {
+              tx.set(
+                voteRef,
+                {
+                  uid: u.uid,
+                  folderId: id,
+                  vote: nextVote,
+                  updated: firebase.firestore.FieldValue.serverTimestamp(),
+                },
+                { merge: true }
+              );
+            }
+            if (nextVote !== 0 || old !== 0) {
+              tx.set(
+                aggRef,
+                {
+                  up,
+                  down,
+                  updated: firebase.firestore.FieldValue.serverTimestamp(),
+                },
+                { merge: true }
+              );
+            }
+            finalUp = up;
+            finalDown = down;
+          });
+        } catch (e) {
+          console.warn("[community] folder rating failed", e);
+          window.alert("Could not save vote. Deploy Firestore rules or try again.");
+          return;
+        }
+        folderRatingAgg.set(id, { up: finalUp, down: finalDown });
+        folderRatingSelf.set(id, nextVote === 0 ? 0 : nextVote);
+        render();
+      }
+
+      function sortRows(mode, rows) {
+        const out = rows.slice();
+        if (mode === "newest") {
+          out.sort((a, b) => b.updatedMs - a.updatedMs || b.createdMs - a.createdMs);
+        } else if (mode === "oldest") {
+          out.sort((a, b) => a.createdMs - b.createdMs || a.updatedMs - b.updatedMs);
+        } else if (mode === "top_rated") {
+          out.sort((a, b) => {
+            const d = folderScore(b.id) - folderScore(a.id);
+            if (d !== 0) return d;
+            return b.linkCount - a.linkCount || b.updatedMs - a.updatedMs;
+          });
+        } else {
+          out.sort((a, b) => b.linkCount - a.linkCount || b.updatedMs - a.updatedMs);
+        }
+        return out;
+      }
+
+      function render() {
+        const mode = sortSelect && sortSelect.value ? sortSelect.value : "newest";
+        const sorted = sortRows(mode, rawRows);
+        if (!folderBody) return;
+        folderBody.innerHTML = sorted
+          .map((r) => {
+            const title = escapeHtml(r.title || "(untitled)");
+            const href = escapeAttr(r.openHref);
+            const ownerDisp = escapeHtml(r.ownerLabel || "—");
+            return (
+              "<tr>" +
+              '<td class="col-title"><span class="folder-title"><a href="' +
+              href +
+              '">' +
+              title +
+              "</a></span></td>" +
+              '<td class="col-owner">' +
+              ownerDisp +
+              "</td>" +
+              ratingCellHtml(r) +
+              '<td class="col-n">' +
+              r.linkCount +
+              "</td>" +
+              '<td class="col-date">' +
+              escapeHtml(r.updatedLabel) +
+              "</td>" +
+              '<td class="col-actions"><a class="btn btn-primary" href="' +
+              href +
+              '">Open</a></td>' +
+              "</tr>"
+            );
+          })
+          .join("");
+      }
+
+      function setVisible(el, on) {
+        if (el) el.hidden = !on;
+      }
+
+      function showError(msg) {
+        setVisible(loadingState, false);
+        setVisible(tableCard, false);
+        setVisible(emptyState, false);
+        setVisible(errorState, true);
+        if (errorState) errorState.textContent = msg;
+      }
+
+      function initSortFromStorage() {
+        try {
+          const v = localStorage.getItem(SORT_LS);
+          if (v && sortSelect && ["newest", "oldest", "popular", "top_rated"].includes(v)) sortSelect.value = v;
+        } catch (_) {}
+      }
+
+      async function loadFolders() {
+        const cfg = typeof window !== "undefined" && window.__FIREBASE_CONFIG__;
+        if (!cfg || !cfg.apiKey) {
+          showError("Firebase is not configured on this host (missing API key). Public folders cannot be loaded.");
+          return;
+        }
+        try {
+          if (!firebase.apps.length) firebase.initializeApp(cfg);
+        } catch (e) {
+          showError("Could not initialize Firebase: " + (e && e.message ? e.message : String(e)));
+          return;
+        }
+
+        try {
+          if (!firebase.auth().currentUser) {
+            await firebase.auth().signInAnonymously();
+          }
+        } catch (e) {
+          showError("Sign-in failed (anonymous). Check Auth is enabled and API key referrer rules: " + (e && e.message ? e.message : String(e)));
+          return;
+        }
+
+        const db = firebase.firestore();
+        fireDb = db;
+        let snap;
+        try {
+          snap = await db
+            .collection("savedFolders")
+            .where("isPublic", "==", true)
+            .limit(QUERY_LIMIT)
+            .get();
+        } catch (e) {
+          const code = e && e.code ? String(e.code) : "";
+          const msg = e && e.message ? String(e.message) : String(e);
+          showError(
+            "Could not load folders from Firestore" +
+              (code ? " (" + code + ")" : "") +
+              ". " +
+              msg +
+              " If this is permission-denied, deploy rules that allow reading documents where isPublic is true."
+          );
+          return;
+        }
+
+        rawRows = snap.docs.map((d) => {
+          const data = d.data() || {};
+          const updatedMs = tsMillis(data.updated);
+          const createdMs = tsMillis(data.created) || updatedMs;
+          const linkCount = itemCount(data);
+          const openHref = folderUrl(d.id);
+          const owner =
+            typeof data.ownerLabel === "string" && data.ownerLabel.trim()
+              ? data.ownerLabel.trim().slice(0, 120)
+              : "";
+          return {
+            id: d.id,
+            title: String(data.title || "").trim() || "(untitled)",
+            ownerLabel: owner,
+            linkCount,
+            updatedMs,
+            createdMs,
+            updatedLabel: formatWhen(updatedMs),
+            openHref,
+          };
+        });
+
+        await prefetchFolderRatings(rawRows);
+
+        setVisible(loadingState, false);
+        if (!rawRows.length) {
+          setVisible(tableCard, false);
+          setVisible(emptyState, true);
+          setVisible(countLine, false);
+          return;
+        }
+
+        setVisible(emptyState, false);
+        setVisible(errorState, false);
+        setVisible(tableCard, true);
+        setVisible(countLine, true);
+        if (countLine) {
+          countLine.textContent =
+            rawRows.length +
+            " public folder" +
+            (rawRows.length === 1 ? "" : "s") +
+            (snap.size >= QUERY_LIMIT ? " (showing first " + QUERY_LIMIT + " by query limit)" : "");
+        }
+        render();
+      }
+
+      document.addEventListener("click", (ev) => {
+        const b = ev.target && ev.target.closest ? ev.target.closest("[data-folder-rating-vote]") : null;
+        if (!b) return;
+        ev.preventDefault();
+        const id = b.getAttribute("data-folder-rating-id");
+        const val = Number(b.getAttribute("data-folder-rating-vote"));
+        if (!id || (val !== 1 && val !== -1)) return;
+        const u = typeof firebase !== "undefined" && firebase.auth ? firebase.auth().currentUser : null;
+        if (!u || u.isAnonymous) {
+          window.alert("Sign in on ../login/ (GitHub or email). This page stays read-only until you use a signed-in session.");
+          return;
+        }
+        const self = folderRatingSelf.get(id) || 0;
+        const next = self === val ? 0 : val;
+        void applyFolderRatingVote(id, next);
+      });
+
+      initSortFromStorage();
+      if (sortSelect) {
+        sortSelect.addEventListener("change", () => {
+          try {
+            localStorage.setItem(SORT_LS, sortSelect.value);
+          } catch (_) {}
+          render();
+        });
+      }
+
+      loadFolders();
+    })();
+  </script>
+</body>
+</html>

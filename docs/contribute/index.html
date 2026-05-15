@@ -141,6 +141,13 @@
       font-weight: 700;
       white-space: nowrap;
     }
+    .contributor-you {
+      margin-left: 0.35rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+    }
     .back-row {
       margin-top: 0.9rem;
       display: flex;
@@ -216,6 +223,10 @@
     </div>
   </main>
 
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+  <script src="../firebase-config.example.js"></script>
+  <script src="../firebase-config.local.js"></script>
   <script>
     function escapeHtml(s) {
       return String(s)
@@ -229,6 +240,76 @@
       return String(raw || "").trim() || "Anonymous Contributor";
     }
 
+    function githubUsernameFromHref(href) {
+      const s = String(href || "").trim();
+      const match = s.match(/^https?:\/\/(?:www\.)?github\.com\/(?:users\/)?([^/?#]+)/i);
+      if (!match) return "";
+      const login = match[1];
+      if (/^(orgs|settings|features|marketplace|sponsors|login|signup|new)$/i.test(login)) return "";
+      return login;
+    }
+
+    function contributorLabel(name, href) {
+      return githubUsernameFromHref(href) || normalizeContributorName(name);
+    }
+
+    let viewersGithubLogin = "";
+    let cachedContributorList = null;
+
+    function githubLoginFromUser(user) {
+      if (!user) return "";
+      const gh = (user.providerData || []).find((p) => p.providerId === "github.com");
+      if (!gh) return "";
+      if (gh.displayName) return String(gh.displayName).trim();
+      const email = gh.email ? String(gh.email).split("@")[0] : "";
+      return email;
+    }
+
+    function isGithubSignedInUser(user) {
+      return !!(user && (user.providerData || []).some((p) => p.providerId === "github.com"));
+    }
+
+    function contributorMatchesViewer(row) {
+      if (!viewersGithubLogin) return false;
+      const login = viewersGithubLogin.toLowerCase();
+      if (String(row.name || "").trim().toLowerCase() === login) return true;
+      const hrefLogin = githubUsernameFromHref(row.href);
+      if (hrefLogin && hrefLogin.toLowerCase() === login) return true;
+      const href = String(row.href || "").toLowerCase();
+      return href.includes("github.com/" + login);
+    }
+
+    function renderContributorRows(bodyEl, list) {
+      cachedContributorList = list;
+      bodyEl.innerHTML = list
+        .map((r) => {
+          const label = escapeHtml(r.name);
+          const youMark = contributorMatchesViewer(r) ? ' <span class="contributor-you">YOU</span>' : "";
+          const nameCell = r.href
+            ? '<a href="' + escapeHtml(r.href) + '" rel="noopener noreferrer" target="_blank">' + label + "</a>" + youMark
+            : label + youMark;
+          return "<tr><td>" + nameCell + '</td><td class="count">' + r.count + "</td></tr>";
+        })
+        .join("");
+    }
+
+    function refreshContributorYouMarks() {
+      const bodyEl = document.getElementById("contributorsBody");
+      if (bodyEl && cachedContributorList) renderContributorRows(bodyEl, cachedContributorList);
+    }
+
+    function initViewerAuth() {
+      const cfg = typeof window !== "undefined" && window.__FIREBASE_CONFIG__;
+      if (!cfg || !cfg.apiKey || typeof firebase === "undefined") return;
+      try {
+        if (!firebase.apps.length) firebase.initializeApp(cfg);
+        firebase.auth().onAuthStateChanged((user) => {
+          viewersGithubLogin = isGithubSignedInUser(user) ? githubLoginFromUser(user) : "";
+          refreshContributorYouMarks();
+        });
+      } catch (_) {}
+    }
+
     async function loadContributors() {
       const metaEl = document.getElementById("contributorsMeta");
       const bodyEl = document.getElementById("contributorsBody");
@@ -240,7 +321,6 @@
           if (raw && typeof raw === "object" && !Array.isArray(raw)) {
             const list = Object.keys(raw)
               .map((key) => {
-                const name = normalizeContributorName(key);
                 const v = raw[key];
                 let count = 0;
                 let href = "";
@@ -251,6 +331,7 @@
                   const u = v.contributor_url;
                   if (u && /^https?:\/\//i.test(String(u).trim())) href = String(u).trim();
                 }
+                const name = contributorLabel(key, href);
                 return { name, count, href };
               })
               .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
@@ -262,15 +343,7 @@
             }
 
             const sumLifetime = list.reduce((s, r) => s + r.count, 0);
-            bodyEl.innerHTML = list
-              .map((r) => {
-                const label = escapeHtml(r.name);
-                const nameCell = r.href
-                  ? '<a href="' + escapeHtml(r.href) + '" rel="noopener noreferrer" target="_blank">' + label + "</a>"
-                  : label;
-                return "<tr><td>" + nameCell + '</td><td class="count">' + r.count + "</td></tr>";
-              })
-              .join("");
+            renderContributorRows(bodyEl, list);
 
             metaEl.textContent =
               list.length +
@@ -288,8 +361,8 @@
         const byName = new Map();
         let totalRows = 0;
         for (const row of links) {
-          const name = normalizeContributorName(row && row.contributor);
           const href = row && row.contributor_url ? String(row.contributor_url).trim() : "";
+          const name = contributorLabel(row && row.contributor, href);
           if (!byName.has(name)) byName.set(name, { count: 0, href: "" });
           const entry = byName.get(name);
           entry.count += 1;
@@ -307,15 +380,7 @@
           return;
         }
 
-        bodyEl.innerHTML = list
-          .map((r) => {
-            const label = escapeHtml(r.name);
-            const nameCell = r.href
-              ? '<a href="' + escapeHtml(r.href) + '" rel="noopener noreferrer" target="_blank">' + label + "</a>"
-              : label;
-            return "<tr><td>" + nameCell + '</td><td class="count">' + r.count + "</td></tr>";
-          })
-          .join("");
+        renderContributorRows(bodyEl, list);
 
         metaEl.textContent =
           list.length + " contributors • " + totalRows + " links on the list (live count)";
@@ -328,6 +393,7 @@
       }
     }
 
+    initViewerAuth();
     loadContributors();
   </script>
 </body>

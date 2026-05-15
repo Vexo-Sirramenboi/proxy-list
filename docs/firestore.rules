@@ -3,9 +3,188 @@ rules_version = '2';
 // Uses Anonymous Auth from the site; tighten further if you enable App Check.
 service cloud.firestore {
   match /databases/{database}/documents {
+    function ratingSmallDelta(oldV, newV) {
+      return newV is int
+        && oldV is int
+        && newV >= 0
+        && newV - oldV <= 1
+        && newV - oldV >= -1;
+    }
+
     match /link_clicks/{docId} {
       allow read: if true;
       allow create, update: if request.auth != null;
+    }
+    match /users/{userId} {
+      allow read, create, update, delete: if request.auth != null && request.auth.uid == userId;
+    }
+    // Lowercase username → uid (claim on create; only owner may update/delete).
+    match /usernames/{uname} {
+      allow read: if true;
+      allow create: if request.auth != null
+        && request.resource.data.keys().hasAll(["uid"])
+        && request.resource.data.uid == request.auth.uid
+        && (!exists(/databases/$(database)/documents/usernames/$(uname))
+            || get(/databases/$(database)/documents/usernames/$(uname)).data.uid == request.auth.uid);
+      allow update: if request.auth != null
+        && resource.data.uid == request.auth.uid
+        && request.resource.data.uid == request.auth.uid;
+      allow delete: if request.auth != null && resource.data.uid == request.auth.uid;
+    }
+
+    // Shared saved-link folders: owner edits sync live to all readers (onSnapshot).
+    // Public: anyone can read. Private: only the signed-in (non-anonymous) owner matches ownerUid.
+    match /savedFolders/{folderId} {
+      allow read: if resource.data.isPublic == true
+        || (request.auth != null
+            && request.auth.token.firebase.sign_in_provider != 'anonymous'
+            && request.auth.uid == resource.data.ownerUid);
+      allow create: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && request.resource.data.ownerUid == request.auth.uid
+        && request.resource.data.title is string
+        && request.resource.data.title.size() > 0
+        && request.resource.data.title.size() <= 200
+        && request.resource.data.isPublic is bool
+        && request.resource.data.items is list
+        && request.resource.data.items.size() <= 3000
+        && (!request.resource.data.keys().hasAny(['ownerLabel'])
+            || (request.resource.data.ownerLabel is string
+                && request.resource.data.ownerLabel.size() <= 120));
+      allow update: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && resource.data.ownerUid == request.auth.uid
+        && request.resource.data.ownerUid == resource.data.ownerUid
+        && request.resource.data.title is string
+        && request.resource.data.title.size() > 0
+        && request.resource.data.title.size() <= 200
+        && request.resource.data.isPublic is bool
+        && request.resource.data.items is list
+        && request.resource.data.items.size() <= 3000
+        && (!request.resource.data.keys().hasAny(['ownerLabel'])
+            || (request.resource.data.ownerLabel is string
+                && request.resource.data.ownerLabel.size() <= 120));
+      allow delete: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && resource.data.ownerUid == request.auth.uid;
+    }
+
+    // Community link thumbs (aggregate + one vote doc per signed-in user per link hash).
+    match /linkRatings/{linkHash} {
+      allow read: if true;
+      allow create: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && linkHash.matches('^[a-f0-9]{64}$')
+        && request.resource.data.keys().hasOnly(['up', 'down', 'norm', 'updated'])
+        && request.resource.data.up is int
+        && request.resource.data.down is int
+        && request.resource.data.up >= 0
+        && request.resource.data.down >= 0
+        && request.resource.data.norm is string
+        && request.resource.data.norm.size() <= 2048
+        && ((request.resource.data.up == 1 && request.resource.data.down == 0)
+            || (request.resource.data.up == 0 && request.resource.data.down == 1));
+      allow update: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && linkHash.matches('^[a-f0-9]{64}$')
+        && request.resource.data.keys().hasOnly(['up', 'down', 'norm', 'updated'])
+        && request.resource.data.up is int
+        && request.resource.data.down is int
+        && request.resource.data.up >= 0
+        && request.resource.data.down >= 0
+        && request.resource.data.up <= 500000
+        && request.resource.data.down <= 500000
+        && request.resource.data.norm is string
+        && request.resource.data.norm.size() <= 2048
+        && ratingSmallDelta(resource.data.up, request.resource.data.up)
+        && ratingSmallDelta(resource.data.down, request.resource.data.down);
+    }
+    match /linkRatingVotes/{voteId} {
+      allow get: if request.auth != null
+        && voteId.matches('^' + request.auth.uid + '_[a-f0-9]{64}$');
+      allow list: if false;
+      allow create, update: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && voteId == request.auth.uid + '_' + request.resource.data.linkHash
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.linkHash is string
+        && request.resource.data.linkHash.matches('^[a-f0-9]{64}$')
+        && request.resource.data.norm is string
+        && request.resource.data.norm.size() <= 2048
+        && request.resource.data.vote is int
+        && (request.resource.data.vote == 1 || request.resource.data.vote == -1)
+        && request.resource.data.keys().hasOnly(['uid', 'linkHash', 'norm', 'vote', 'updated']);
+      allow delete: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && resource.data.uid == request.auth.uid
+        && voteId == request.auth.uid + '_' + resource.data.linkHash;
+    }
+
+    // How many signed-in users currently have this normalized URL in their saved list (±1 per save/unsave).
+    match /linkSaveCounts/{linkHash} {
+      allow read: if true;
+      allow create: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && linkHash.matches('^[a-f0-9]{64}$')
+        && request.resource.data.keys().hasOnly(['count', 'norm', 'updated'])
+        && request.resource.data.count is int
+        && request.resource.data.count >= 0
+        && request.resource.data.count <= 1
+        && request.resource.data.norm is string
+        && request.resource.data.norm.size() <= 2048;
+      allow update: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && linkHash.matches('^[a-f0-9]{64}$')
+        && request.resource.data.keys().hasOnly(['count', 'norm', 'updated'])
+        && request.resource.data.count is int
+        && request.resource.data.count >= 0
+        && request.resource.data.count <= 500000
+        && request.resource.data.norm == resource.data.norm
+        && ratingSmallDelta(resource.data.count, request.resource.data.count);
+    }
+
+    match /folderRatings/{folderId} {
+      allow read: if true;
+      allow create: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && folderId.matches('^[a-zA-Z0-9_-]{1,700}$')
+        && request.resource.data.keys().hasOnly(['up', 'down', 'updated'])
+        && request.resource.data.up is int
+        && request.resource.data.down is int
+        && request.resource.data.up >= 0
+        && request.resource.data.down >= 0
+        && ((request.resource.data.up == 1 && request.resource.data.down == 0)
+            || (request.resource.data.up == 0 && request.resource.data.down == 1));
+      allow update: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && folderId.matches('^[a-zA-Z0-9_-]{1,700}$')
+        && request.resource.data.keys().hasOnly(['up', 'down', 'updated'])
+        && request.resource.data.up is int
+        && request.resource.data.down is int
+        && request.resource.data.up >= 0
+        && request.resource.data.down >= 0
+        && request.resource.data.up <= 500000
+        && request.resource.data.down <= 500000
+        && ratingSmallDelta(resource.data.up, request.resource.data.up)
+        && ratingSmallDelta(resource.data.down, request.resource.data.down);
+    }
+    match /folderRatingVotes/{voteId} {
+      allow get: if request.auth != null
+        && voteId.matches('^' + request.auth.uid + '_[a-zA-Z0-9_-]{1,700}$');
+      allow list: if false;
+      allow create, update: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && voteId == request.auth.uid + '_' + request.resource.data.folderId
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.folderId is string
+        && request.resource.data.folderId.matches('^[a-zA-Z0-9_-]{1,700}$')
+        && request.resource.data.vote is int
+        && (request.resource.data.vote == 1 || request.resource.data.vote == -1)
+        && request.resource.data.keys().hasOnly(['uid', 'folderId', 'vote', 'updated']);
+      allow delete: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && resource.data.uid == request.auth.uid
+        && voteId == request.auth.uid + '_' + resource.data.folderId;
     }
   }
 }

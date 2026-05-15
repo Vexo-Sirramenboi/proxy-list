@@ -36,6 +36,339 @@
       border-bottom: 1px solid var(--border);
       background: var(--surface);
     }
+    .header-bar {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .header-primary {
+      min-width: 0;
+      flex: 1 1 auto;
+    }
+    .header-greeting {
+      margin: 0 0 0.35rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    .account-corner {
+      position: relative;
+      flex-shrink: 0;
+    }
+    .account-signed-in-cluster {
+      position: relative;
+    }
+    .account-trigger-row {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+    .account-avatar {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .account-trigger {
+      max-width: 14rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .account-trigger--repo-starred {
+      color: #ffd57e;
+      border-color: #5d4d2a;
+    }
+    .account-menu {
+      position: absolute;
+      top: calc(100% + 0.35rem);
+      right: 0;
+      z-index: 60;
+      min-width: 11rem;
+      padding: 0.35rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #121920;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+    }
+    .account-menu.open {
+      display: block;
+    }
+    .account-menu-group[hidden] {
+      display: none !important;
+    }
+    .account-menu-item[hidden] {
+      display: none !important;
+    }
+    .account-menu-item {
+      display: block;
+      width: 100%;
+      padding: 0.5rem 0.65rem;
+      border: 0;
+      border-radius: 6px;
+      background: transparent;
+      color: var(--text);
+      font: inherit;
+      font-size: 0.82rem;
+      text-align: left;
+      cursor: pointer;
+    }
+    .account-menu-item:hover {
+      background: #1f2e42;
+      color: var(--accent);
+    }
+    .account-menu-item--link {
+      text-decoration: none;
+    }
+    .account-menu-divider {
+      margin: 0.35rem 0;
+      border: 0;
+      border-top: 1px solid var(--border);
+    }
+    .github-notifications {
+      margin: 0.75rem 0 0;
+      display: grid;
+      gap: 0.45rem;
+    }
+    .github-notification {
+      padding: 0.55rem 0.7rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #121920;
+      font-size: 0.82rem;
+      color: var(--text);
+    }
+    .github-notification a {
+      color: var(--accent);
+    }
+    .contributor-you {
+      margin-left: 0.35rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+    }
+    .save-link-btn {
+      margin-right: 0.35rem;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1;
+      cursor: pointer;
+      vertical-align: middle;
+    }
+    .save-link-btn.is-saved {
+      color: #ffd57e;
+    }
+    .save-link-btn.is-saved:hover {
+      color: #ffe8a8;
+    }
+    .save-link-btn:hover {
+      color: var(--accent);
+    }
+    .link-rating-cell {
+      white-space: nowrap;
+      font-size: 0.8rem;
+      vertical-align: middle;
+    }
+    .link-rating-cell .rating-score {
+      display: inline-block;
+      min-width: 1.35rem;
+      margin: 0 0.15rem;
+      text-align: center;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+    .rating-vote-btn {
+      padding: 0.1rem 0.32rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: #121920;
+      cursor: pointer;
+      font-size: 0.78rem;
+      line-height: 1.2;
+      vertical-align: middle;
+      color: var(--text);
+    }
+    .rating-vote-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .rating-vote-btn.is-active {
+      border-color: #2d5588;
+      background: #1e3a5f;
+      color: var(--accent);
+    }
+    .rating-vote-btn img {
+      display: block;
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+      pointer-events: none;
+      vertical-align: middle;
+    }
+    .rating-count-hint {
+      margin-left: 0.25rem;
+      font-size: 0.72rem;
+    }
+    .folder-rating-inline {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .folder-chrome {
+      margin: 0 0 1rem;
+      padding: 0.85rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+      font-size: 0.88rem;
+    }
+    .folder-chrome h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .folder-chrome-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem 0.75rem;
+      margin-top: 0.45rem;
+    }
+    .folder-chrome-row:first-of-type {
+      margin-top: 0;
+    }
+    .folder-live-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.12rem 0.45rem;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background: #1a3d2a;
+      color: #8ef0b4;
+      border: 1px solid #2d6b45;
+    }
+    .folder-privacy-pill {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.12rem 0.45rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .folder-privacy-pill.is-public {
+      color: #9fd4ff;
+      border-color: #2d5588;
+    }
+    .folder-my-list {
+      list-style: none;
+      margin: 0.35rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 0.35rem;
+    }
+    .folder-my-list li {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .folder-my-list a {
+      color: var(--accent);
+    }
+    .folder-row-tools {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.15rem;
+      margin-right: 0.35rem;
+      vertical-align: middle;
+    }
+    .folder-row-tools .btn {
+      padding: 0.12rem 0.35rem;
+      font-size: 0.72rem;
+      min-height: 0;
+    }
+    .folder-meta-input {
+      flex: 1 1 12rem;
+      min-width: 8rem;
+      padding: 0.35rem 0.5rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      font: inherit;
+      font-size: 0.85rem;
+    }
+    .folder-add-textarea {
+      width: 100%;
+      min-height: 4.5rem;
+      margin-top: 0.35rem;
+      padding: 0.45rem 0.55rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      font: inherit;
+      font-size: 0.82rem;
+      resize: vertical;
+    }
+    .folder-trusted-results {
+      margin-top: 0.4rem;
+      display: flex;
+      flex-direction: column;
+      max-height: min(52vh, 420px);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--bg);
+      padding: 0;
+      overflow: hidden;
+    }
+    .folder-trusted-results-meta {
+      flex: 0 0 auto;
+      padding: 0.35rem 0.55rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.78rem;
+    }
+    .folder-trusted-results-scroll {
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow: auto;
+      padding: 0.2rem 0.45rem 0.45rem;
+    }
+    .folder-trusted-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.35rem 0.5rem;
+      padding: 0.4rem 0.25rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.8rem;
+    }
+    .folder-trusted-row:last-child {
+      border-bottom: 0;
+    }
+    .folder-trusted-row-main {
+      flex: 1 1 12rem;
+      min-width: 0;
+      color: var(--text);
+    }
+    .folder-trusted-row-url {
+      display: block;
+      margin-top: 0.15rem;
+      word-break: break-all;
+      color: var(--muted);
+      font-size: 0.76rem;
+    }
     h1 { font-size: 1.35rem; font-weight: 600; margin: 0 0 0.35rem; }
     .sub { color: var(--muted); font-size: 0.9rem; }
     .btn {
@@ -52,6 +385,9 @@
       background: var(--surface);
       color: var(--text);
       cursor: pointer;
+    }
+    .btn[hidden] {
+      display: none !important;
     }
     .btn:hover { border-color: var(--accent); color: var(--accent); }
     .btn-primary {
@@ -90,6 +426,18 @@
       color: var(--muted);
       line-height: 1.4;
     }
+    .filter-powered-by {
+      margin: 0.35rem 0 0;
+      font-size: 0.72rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    aside .filter-powered-by {
+      margin: 0 0 1rem;
+    }
+    .filter-powered-by-credit {
+      color: #ff7a7a;
+    }
     .layout {
       display: grid;
       grid-template-columns: minmax(260px, 300px) 1fr;
@@ -103,6 +451,16 @@
       border-right: 1px solid var(--border);
       padding: 1rem 1.25rem;
       background: #121920;
+      align-self: start;
+    }
+    @media (min-width: 841px) {
+      aside {
+        position: sticky;
+        top: 0;
+        max-height: 100vh;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+      }
     }
     @media (max-width: 840px) {
       aside { border-right: none; border-bottom: 1px solid var(--border); }
@@ -379,6 +737,14 @@
       margin: 0;
       font-size: 0.95rem;
       color: var(--muted);
+    }
+    .content-loading-pct {
+      margin: 0;
+      font-size: 1.35rem;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+      color: var(--text);
+      letter-spacing: 0.02em;
     }
     .table-chunk-wrap {
       position: relative;
@@ -732,6 +1098,19 @@
     .important-notices a {
       word-break: break-all;
     }
+    .important-notices .notice-alert-block {
+      border: 1px solid #8b3a3a;
+      background: #2a1515;
+      border-radius: 6px;
+      padding: 0.65rem 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+    .important-notices .notice-alert-block h3 {
+      color: #ff8a8a;
+    }
+    .important-notices .notice-alert-block p {
+      color: #ffd2d2;
+    }
     #filterSelect {
       width: 100%;
       padding: 0.5rem 0.65rem;
@@ -879,8 +1258,37 @@
     <p>This site must be viewed in landscape mode to display properly.</p>
   </div>
   <header>
-    <h1>Proxy list</h1>
-    <p class="sub">Multi-select provider, category, protocol, and capability tags (parsed from <code>list.md</code>). Nothing checked means no filter on that group.</p>
+    <div class="header-bar">
+      <div class="header-primary">
+        <p class="header-greeting" id="headerGreeting" hidden></p>
+        <h1 id="headerTitle">Proxy list</h1>
+        <p class="sub" id="headerSub">Multi-select provider, category, protocol, and capability tags (parsed from <code>list.md</code>). Nothing checked means no filter on that group.</p>
+        <div id="githubNotificationList" class="github-notifications" hidden></div>
+      </div>
+      <div class="account-corner" id="accountCorner">
+        <a class="btn account-trigger" id="headerSignInLink" href="./login/">Sign in</a>
+        <div class="account-signed-in-cluster" id="accountSignedInCluster" hidden>
+          <div class="account-trigger-row">
+            <img class="account-avatar" id="accountAvatarImg" alt="" width="28" height="28" hidden />
+            <button
+              type="button"
+              class="btn account-trigger"
+              id="accountMenuBtn"
+              aria-haspopup="menu"
+              aria-expanded="false"
+              aria-controls="accountMenu"
+            >
+              Sign in
+            </button>
+          </div>
+          <div class="account-menu" id="accountMenu" role="menu" hidden>
+            <a class="account-menu-item account-menu-item--link" id="savedLinksLink" href="./?saved=1" role="menuitem">Saved links</a>
+            <a class="account-menu-item account-menu-item--link" id="accountManagementLink" href="./account/" role="menuitem">Account management</a>
+            <button type="button" class="account-menu-item" id="accountSignOutBtn" role="menuitem">Sign out</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
   <div class="layout">
     <aside aria-label="Filters and site menu">
@@ -890,14 +1298,29 @@
           <a class="btn" href="./unsorted.html">Unsorted links</a>
           <button class="btn" id="selectFilterBtn" type="button">Select filter</button>
           <button class="btn" id="updateNoticeBtn" type="button">Update Notice</button>
+          <a class="btn" href="./login/" id="sidebarSignInLink">Sign in</a>
           <a class="btn btn-primary" href="./contribute/">Contribute</a>
+          <a class="btn" href="./community/">Community folders</a>
         </nav>
-        <p class="selected-filter-label" id="selectedFilterLabel">Selected gn-math filter: Any / Not selected</p>
+        <p class="selected-filter-label" id="selectedFilterLabel">Selected web filter: Any / Not selected</p>
         <p class="selected-filter-disclaimer">This does not determine if a link is blocked, it is just a highly reliable estimation on knowing whether or not a link is blocked. Some links may still be blocked despite showing unblocked in the summary.</p>
+        <p class="filter-powered-by">Powered by <span class="filter-powered-by-credit">gn-math discord bot</span></p>
       </fieldset>
 
       <label for="q">Search</label>
       <input type="search" id="q" placeholder="URL, provider, contributor…" autocomplete="off" />
+
+      <fieldset>
+        <legend>Link order</legend>
+        <label for="linkListSortSelect">Sort the filtered table</label>
+        <select id="linkListSortSelect" aria-label="Sort filtered links">
+          <option value="default">Default (data order)</option>
+          <option value="rating_desc">Highest rated (net thumbs)</option>
+          <option value="rating_asc">Lowest rated first</option>
+          <option value="saved_desc">Most saved (all users)</option>
+        </select>
+        <p class="hint">Ratings and “most saved” use Firestore; deploy rules in <code>docs/firestore.rules</code>. Thumbs and save counts update when signed in (non-anonymous). This browser caches score aggregates for the same list version to stay within the Spark (free) plan’s daily read cap.</p>
+      </fieldset>
 
       <fieldset>
         <legend>Provider</legend>
@@ -966,6 +1389,7 @@
         </div>
       </section>
       <div class="stats" id="stats"></div>
+      <div class="folder-chrome" id="folderChromeHost" hidden></div>
       <div id="tableWrap"></div>
     </main>
   </div>
@@ -1047,7 +1471,7 @@
   <div class="summary-backdrop" id="filterBackdrop" aria-hidden="true">
     <section class="summary-modal" role="dialog" aria-modal="true" aria-labelledby="filterTitle">
       <div class="summary-head">
-        <h2 class="summary-title" id="filterTitle">Select gn-math Filter</h2>
+        <h2 class="summary-title" id="filterTitle">Select web filter</h2>
         <button class="btn" id="filterCloseBtn" type="button">Close</button>
       </div>
       <div class="summary-body">
@@ -1061,11 +1485,28 @@
         <p style="margin-top:0.5rem;">
           <button class="btn" id="hideUncheckedBtn" type="button">Hide unchecked links: Off</button>
         </p>
+        <p class="filter-powered-by">Powered by <span class="filter-powered-by-credit">gn-math discord bot</span></p>
+      </div>
+    </section>
+  </div>
+  <div class="summary-backdrop" id="signInRequiredBackdrop" aria-hidden="true">
+    <section class="summary-modal" role="dialog" aria-modal="true" aria-labelledby="signInRequiredTitle">
+      <div class="summary-head">
+        <h2 class="summary-title" id="signInRequiredTitle">Sign in required</h2>
+        <button class="btn" id="signInRequiredCloseBtn" type="button">Close</button>
+      </div>
+      <div class="summary-body">
+        <p class="summary-muted">You need to be signed in to save links to your account.</p>
+      </div>
+      <div class="summary-footer">
+        <a class="btn" href="./login/" id="signInRequiredLoginBtn">Sign in</a>
+        <button class="btn btn-primary" id="signInRequiredDismissBtn" type="button">OK</button>
       </div>
     </section>
   </div>
   <div id="contentLoadingOverlay" aria-hidden="true" role="status">
     <img src="loading-spinner.gif" width="80" height="80" alt="" decoding="async" />
+    <p class="content-loading-pct" id="contentLoadingPct" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">0%</p>
     <p class="content-loading-msg">Getting data...</p>
   </div>
   <div class="floating-corner-actions" aria-label="Page tools">
@@ -1172,6 +1613,7 @@
     let linkLensFetchPromise = null;
     /** Filled on main data load so we can re-render after lazy linklens arrives. */
     let pageContext = null;
+    let contentLoadingHighWater = 0;
     let summaryEntryCache = new Map();
     let lensDomainSignalFirst = new Map();
     let checkedDomains = new Set();
@@ -1187,7 +1629,851 @@
     let activeSessionsCount = null;
     let presenceListenerAttached = false;
 
+    const GITHUB_REPO_OWNER = "yourworstnightmare1";
+    const GITHUB_REPO_NAME = "proxy-list";
+    const GITHUB_REPO_SLUG = GITHUB_REPO_OWNER + "/" + GITHUB_REPO_NAME;
+    const GITHUB_TOKEN_SESSION_KEY = "proxyList_github_access_token";
+    const GITHUB_NOTIFICATIONS_SEEN_KEY = "proxyList_github_notifications_seen_v1";
+
+    let savedLinksViewOnly = false;
+    let viewingFolderId = "";
+    let folderDocSnap = null;
+    let folderViewState = "idle";
+    let folderDocUnsub = null;
+    let myFoldersQueryUnsub = null;
+    let myFoldersList = [];
+    let folderTrustedSearchTimer = null;
+    let folderTrustedSearchLastQuery = "";
+    let folderTrustedPickerMatches = [];
+    let folderTrustedPickerOffset = 0;
+    const FOLDER_TRUSTED_PICKER_CHUNK = 80;
+
+    const LS_LINK_LIST_SORT_KEY = "proxyList_link_list_sort_v1";
+    const LINK_SORT_DEFAULT = "default";
+    const LINK_SORT_RATING_DESC = "rating_desc";
+    const LINK_SORT_RATING_ASC = "rating_asc";
+    const LINK_SORT_SAVED_DESC = "saved_desc";
+
+    const RATING_THUMB_UP_IMG = "rating-thumb-up.png";
+    const RATING_THUMB_DOWN_IMG = "rating-thumb-down.png";
+
+    function readLinkListSortFromLS() {
+      try {
+        const v = localStorage.getItem(LS_LINK_LIST_SORT_KEY);
+        if (
+          v === LINK_SORT_RATING_DESC ||
+          v === LINK_SORT_RATING_ASC ||
+          v === LINK_SORT_DEFAULT ||
+          v === LINK_SORT_SAVED_DESC
+        )
+          return v;
+      } catch (_) {}
+      return LINK_SORT_DEFAULT;
+    }
+
+    let listSortMode = readLinkListSortFromLS();
+    let linkRatingAggByHash = new Map();
+    let linkSaveCountByHash = new Map();
+    let linkRatingSelfByHash = new Map();
+    let hashToNormMap = new Map();
+    let normToHashCache = new Map();
+    /** Set each main `render()` from `data.json` meta — used for Firestore aggregate disk cache. */
+    let currentListVersionStamp = "";
+
+    let headerSubDefaultHtml = "";
+
+    function sanitizeFolderDocId(raw) {
+      const s = String(raw || "").trim();
+      if (!s || s.length > 700) return "";
+      if (!/^[a-zA-Z0-9_-]+$/.test(s)) return "";
+      return s;
+    }
+
+    function initSavedLinksView() {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        viewingFolderId = sanitizeFolderDocId(params.get("folder"));
+        savedLinksViewOnly =
+          !viewingFolderId &&
+          (params.get("saved") === "1" || params.get("saved") === "true");
+        folderViewState = viewingFolderId ? "loading" : "idle";
+      } catch (_) {
+        savedLinksViewOnly = false;
+        viewingFolderId = "";
+        folderViewState = "idle";
+      }
+      const subEl = $("headerSub");
+      if (subEl && !headerSubDefaultHtml) headerSubDefaultHtml = subEl.innerHTML;
+      updateSavedViewUI();
+    }
+
+    function shouldHideMostOpenedSection() {
+      return !!(viewingFolderId || savedLinksViewOnly);
+    }
+
+    function hideMostOpenedSection() {
+      const sec = $("mostOpenedSection");
+      if (!sec) return;
+      sec.hidden = true;
+      const noteEl = $("mostOpenedNote");
+      if (noteEl) {
+        noteEl.textContent = "";
+        noteEl.hidden = true;
+      }
+      const thead = $("mostOpenedThead");
+      const tbody = $("mostOpenedTableBody");
+      if (thead) setHtml(thead, "");
+      if (tbody) setHtml(tbody, "");
+      const moEmpty = $("mostOpenedEmptyState");
+      if (moEmpty) {
+        moEmpty.hidden = true;
+        setHtml(moEmpty, "");
+      }
+      const moMount = $("mostOpenedTableMount");
+      if (moMount) moMount.hidden = false;
+    }
+
+    function updateSavedViewUI() {
+      const titleEl = $("headerTitle");
+      const subEl = $("headerSub");
+      if (viewingFolderId) {
+        if (titleEl) {
+          if (folderViewState === "loading") titleEl.textContent = "Folder";
+          else if (folderViewState === "denied") titleEl.textContent = "Private folder";
+          else if (folderViewState === "missing") titleEl.textContent = "Folder not found";
+          else
+            titleEl.textContent =
+              folderDocSnap && folderDocSnap.title ? String(folderDocSnap.title) : "Folder";
+        }
+        if (subEl) {
+          if (folderViewState === "loading") {
+            subEl.innerHTML = 'Loading folder… <a href="./">All links</a>';
+          } else if (folderViewState === "denied") {
+            subEl.innerHTML =
+              'This folder is private. <a href="./login/">Sign in</a> as the owner to view it, or <a href="./">return to the full list</a>.';
+          } else if (folderViewState === "missing") {
+            subEl.innerHTML = 'No such folder. <a href="./">Back to the list</a>';
+          } else {
+            const pub =
+              folderDocSnap && folderDocSnap.isPublic === true
+                ? '<span class="folder-privacy-pill is-public">Public</span>'
+                : '<span class="folder-privacy-pill">Private</span>';
+            subEl.innerHTML =
+              pub +
+              ' <span class="folder-live-pill">Live</span> — updates from the owner appear automatically. <a href="./">Show all links</a>';
+          }
+        }
+        const ft =
+          folderViewState === "ready" && folderDocSnap && folderDocSnap.title
+            ? String(folderDocSnap.title).slice(0, 72) + " · "
+            : "";
+        document.title = ft + "Folder | Proxy list";
+        hideMostOpenedSection();
+      } else if (savedLinksViewOnly) {
+        if (titleEl) titleEl.textContent = "Saved links";
+        if (subEl) {
+          subEl.innerHTML =
+            'Links you starred on the list. <a href="./">Show all links</a> · <span class="sub">Folders: use “Your folders” below when signed in.</span>';
+        }
+        document.title = "Saved links | Proxy list";
+        hideMostOpenedSection();
+      } else {
+        if (titleEl) titleEl.textContent = "Proxy list";
+        if (subEl && headerSubDefaultHtml) subEl.innerHTML = headerSubDefaultHtml;
+        document.title = "Proxy list";
+      }
+      renderFolderChromeIntoHost();
+    }
+
+    let authUser = null;
+    let authDisplayName = "";
+    let githubLogin = "";
+    let githubRepoStarred = false;
+    let savedLinks = new Set();
+    let applyingUserSettings = false;
+    let userSiteProfile = { siteUsername: "", profilePhotoDataUrl: "" };
+    let userProfileWriteTimer = null;
+    let accountMenuOpen = false;
+    let githubNotificationsPollTimer = null;
+    let authStateReady = false;
+    let authStateReadyResolve = null;
+    const authStateReadyPromise = new Promise((resolve) => {
+      authStateReadyResolve = resolve;
+    });
+
+    function isSignedInUser() {
+      return !!(authUser && !authUser.isAnonymous);
+    }
+
+    function accountUsername() {
+      if (!isSignedInUser()) return "";
+      if (userSiteProfile.siteUsername) return userSiteProfile.siteUsername;
+      if (githubLogin) return githubLogin;
+      if (authDisplayName) return authDisplayName;
+      if (authUser.displayName) return authUser.displayName;
+      if (authUser.email) return authUser.email.split("@")[0];
+      return "Account";
+    }
+
+    /** Public-facing creator label stored on savedFolders for the community directory. */
+    function folderOwnerLabelForFirestore(user) {
+      if (!user || user.isAnonymous) return "";
+      const gh = (user.providerData || []).find((p) => p && p.providerId === "github.com");
+      if (gh && gh.displayName) return String(gh.displayName).trim().slice(0, 120);
+      if (gh && gh.email) return String(gh.email).split("@")[0].slice(0, 120);
+      if (user.displayName) return String(user.displayName).trim().slice(0, 120);
+      if (user.email) return String(user.email).split("@")[0].slice(0, 120);
+      return "Member";
+    }
+
+    function folderOwnerLabelForDirectory() {
+      if (!isSignedInUser() || !authUser) return "";
+      const fromProfile = userSiteProfile && userSiteProfile.siteUsername
+        ? String(userSiteProfile.siteUsername).trim()
+        : "";
+      if (fromProfile) return fromProfile.slice(0, 120);
+      return folderOwnerLabelForFirestore(authUser) || "Member";
+    }
+
+    function githubLoginFromUser(user) {
+      if (!user) return "";
+      const gh = (user.providerData || []).find((p) => p.providerId === "github.com");
+      if (!gh) return "";
+      if (gh.displayName) return String(gh.displayName).trim();
+      const email = gh.email ? String(gh.email).split("@")[0] : "";
+      return email;
+    }
+
+    function isGithubSignedInUser() {
+      return !!(authUser && (authUser.providerData || []).some((p) => p.providerId === "github.com"));
+    }
+
+    function getGithubAccessToken() {
+      try {
+        return sessionStorage.getItem(GITHUB_TOKEN_SESSION_KEY) || "";
+      } catch (_) {
+        return "";
+      }
+    }
+
+    function storeGithubAccessToken(token) {
+      if (!token) return;
+      try {
+        sessionStorage.setItem(GITHUB_TOKEN_SESSION_KEY, token);
+      } catch (_) {}
+    }
+
+    function clearGithubAccessToken() {
+      try {
+        sessionStorage.removeItem(GITHUB_TOKEN_SESSION_KEY);
+      } catch (_) {}
+    }
+
+    function timeOfDayGreeting() {
+      const hour = new Date().getHours();
+      if (hour < 5) return "Night";
+      if (hour < 12) return "Morning";
+      if (hour < 17) return "Afternoon";
+      return "Evening";
+    }
+
+    function updateHeaderGreeting() {
+      const el = $("headerGreeting");
+      if (!el) return;
+      if (!isSignedInUser()) {
+        el.hidden = true;
+        el.textContent = "";
+        return;
+      }
+      el.hidden = false;
+      el.textContent = timeOfDayGreeting() + ", " + accountUsername();
+    }
+
+    function setAccountMenuOpen(open) {
+      accountMenuOpen = !!open;
+      const menu = $("accountMenu");
+      const btn = $("accountMenuBtn");
+      if (menu) {
+        menu.hidden = !accountMenuOpen;
+        menu.classList.toggle("open", accountMenuOpen);
+      }
+      if (btn) btn.setAttribute("aria-expanded", accountMenuOpen ? "true" : "false");
+    }
+
+    function updateAccountUI() {
+      const btn = $("accountMenuBtn");
+      const signInLink = $("headerSignInLink");
+      const sidebarSignInLink = $("sidebarSignInLink");
+      const cluster = $("accountSignedInCluster");
+      if (!btn && !signInLink && !sidebarSignInLink) return;
+      if (isSignedInUser()) {
+        if (btn) {
+          btn.textContent = accountUsername();
+          btn.classList.toggle("account-trigger--repo-starred", !!(isGithubSignedInUser() && githubRepoStarred));
+        }
+        if (signInLink) signInLink.hidden = true;
+        if (sidebarSignInLink) sidebarSignInLink.hidden = true;
+        if (cluster) cluster.hidden = false;
+      } else {
+        if (btn) {
+          btn.textContent = "Sign in";
+          btn.classList.remove("account-trigger--repo-starred");
+        }
+        if (signInLink) signInLink.hidden = false;
+        if (sidebarSignInLink) sidebarSignInLink.hidden = false;
+        if (cluster) cluster.hidden = true;
+        setAccountMenuOpen(false);
+      }
+      updateHeaderGreeting();
+    }
+
+    function contributorMatchesViewer(row) {
+      if (!isGithubSignedInUser() || !githubLogin) return false;
+      const login = githubLogin.toLowerCase();
+      if (String(row.contributor || "").trim().toLowerCase() === login) return true;
+      const href = String(row.contributor_url || "").toLowerCase();
+      return href.includes("github.com/" + login);
+    }
+
+    function collectSettingsSnapshot() {
+      return {
+        webFilter: selectedGnMathFilter || "",
+        hideBlocked: !!hideBlockedBySelectedFilter,
+        hideUnchecked: !!hideLinksWithoutLensCheck,
+        search: $("q") ? String($("q").value || "") : "",
+        providers: selectedIn("providerTags"),
+        categories: selectedIn("categoryTags"),
+        protocols: selectedIn("protocolTags"),
+        capabilities: selectedCaps(),
+        capMode: capMode(),
+        mostOpenedSort: getMostOpenedSortMode(),
+        mostOpenedProvider: getMostOpenedProviderChoice(),
+        linkListSort: listSortMode,
+      };
+    }
+
+    function setCheckboxGroup(containerId, values) {
+      const wanted = new Set((values || []).map((v) => String(v)));
+      document.querySelectorAll("#" + containerId + " input[type=checkbox]").forEach((input) => {
+        input.checked = wanted.has(input.value);
+      });
+    }
+
+    function applyUserSettings(settings) {
+      if (!settings || typeof settings !== "object") return;
+      applyingUserSettings = true;
+      try {
+        selectedGnMathFilter = settings.webFilter ? String(settings.webFilter) : "";
+        hideBlockedBySelectedFilter = !!settings.hideBlocked;
+        hideLinksWithoutLensCheck = !!settings.hideUnchecked;
+        const filterSel = $("filterSelect");
+        if (filterSel) filterSel.value = selectedGnMathFilter;
+        updateSelectedFilterUI();
+        const q = $("q");
+        if (q && settings.search != null) q.value = String(settings.search);
+        setCheckboxGroup("providerTags", settings.providers);
+        setCheckboxGroup("categoryTags", settings.categories);
+        setCheckboxGroup("protocolTags", settings.protocols);
+        setCheckboxGroup("capTags", settings.capabilities);
+        const capRadio = document.querySelector(
+          'input[name="capMode"][value="' + (settings.capMode === "all" ? "all" : "any") + '"]'
+        );
+        if (capRadio) capRadio.checked = true;
+        const moSortSel = $("mostOpenedSortSelect");
+        if (moSortSel && settings.mostOpenedSort) {
+          moSortSel.value = settings.mostOpenedSort;
+          persistMostOpenedSortMode(settings.mostOpenedSort);
+        }
+        const moProvSel = $("mostOpenedProviderSelect");
+        if (moProvSel) {
+          moProvSel.value = settings.mostOpenedProvider || "";
+          persistMostOpenedProviderChoice(settings.mostOpenedProvider || "");
+        }
+        const linkSortSel = $("linkListSortSelect");
+        if (
+          settings.linkListSort === LINK_SORT_RATING_DESC ||
+          settings.linkListSort === LINK_SORT_RATING_ASC ||
+          settings.linkListSort === LINK_SORT_DEFAULT ||
+          settings.linkListSort === LINK_SORT_SAVED_DESC
+        ) {
+          listSortMode = settings.linkListSort;
+          try {
+            localStorage.setItem(LS_LINK_LIST_SORT_KEY, listSortMode);
+          } catch (_) {}
+          if (linkSortSel) linkSortSel.value = listSortMode;
+        }
+      } finally {
+        applyingUserSettings = false;
+      }
+    }
+
+    function applySavedLinks(list) {
+      savedLinks = new Set();
+      (list || []).forEach((url) => {
+        const norm = normalizeUrlKeyForClicks(url);
+        if (norm) savedLinks.add(norm);
+      });
+    }
+
+    function applySiteProfileFromDoc(data) {
+      const d = data || {};
+      userSiteProfile = {
+        siteUsername: d.siteUsername ? String(d.siteUsername).trim() : "",
+        profilePhotoDataUrl: d.profilePhotoDataUrl ? String(d.profilePhotoDataUrl) : "",
+      };
+      const img = $("accountAvatarImg");
+      if (img) {
+        if (userSiteProfile.profilePhotoDataUrl) {
+          img.src = userSiteProfile.profilePhotoDataUrl;
+          img.hidden = false;
+        } else {
+          img.removeAttribute("src");
+          img.hidden = true;
+        }
+      }
+    }
+
+    async function loadUserProfile() {
+      if (!isSignedInUser() || !firebaseDb) return;
+      const user = await ensureAuthForFirestore();
+      if (!user) return;
+      try {
+        const snap = await firebaseDb.collection("users").doc(user.uid).get();
+        const data = snap.exists ? snap.data() || {} : {};
+        applySiteProfileFromDoc(data);
+        applySavedLinks(data.savedLinks || []);
+        writeSavedLinksCache(user.uid, data.savedLinks || []);
+        applyUserSettings(data.settings || {});
+        if (pageContext) {
+          scheduleRenderFromPageContext();
+          void renderMostOpenedForList(pageContext.links);
+        }
+        updateHeaderGreeting();
+        updateAccountUI();
+      } catch (err) {
+        console.warn("[proxy-list] Failed to load user profile", err);
+        applySiteProfileFromDoc({});
+        applySavedLinks(readSavedLinksCache(user.uid));
+        if (pageContext) scheduleRenderFromPageContext();
+      }
+    }
+
+    function scheduleUserProfileWrite() {
+      if (!isSignedInUser() || !firebaseDb || applyingUserSettings) return;
+      if (userProfileWriteTimer) clearTimeout(userProfileWriteTimer);
+      userProfileWriteTimer = setTimeout(() => {
+        userProfileWriteTimer = null;
+        writeUserProfile();
+      }, 450);
+    }
+
+    async function writeUserProfile() {
+      if (!isSignedInUser() || !firebaseDb) return;
+      const user = await ensureAuthForFirestore();
+      if (!user) return;
+      const payload = {
+        githubLogin: githubLogin || null,
+        savedLinks: [...savedLinks].map((norm) => norm),
+        settings: collectSettingsSnapshot(),
+        updated: firebase.firestore.FieldValue.serverTimestamp(),
+      };
+      writeSavedLinksCache(user.uid, payload.savedLinks);
+      try {
+        await firebaseDb.collection("users").doc(user.uid).set(payload, { merge: true });
+      } catch (err) {
+        console.warn("[proxy-list] Failed to save user profile", err);
+        if (!isFirestorePermissionDenied(err)) return;
+      }
+    }
+
+    async function toggleSavedLink(url) {
+      if (!isSignedInUser()) return;
+      const norm = normalizeUrlKeyForClicks(url);
+      if (!norm) return;
+      const wasSaved = savedLinks.has(norm);
+      if (wasSaved) savedLinks.delete(norm);
+      else savedLinks.add(norm);
+      scheduleUserProfileWrite();
+      await bumpLinkSaveCountForNorm(norm, wasSaved ? -1 : 1);
+      scheduleRenderFromPageContext();
+    }
+
+    async function bumpLinkSaveCountForNorm(norm, delta) {
+      if (!norm || !delta || !firebaseDb) return;
+      let hash = "";
+      try {
+        hash = await sha256Hex(norm);
+        const cur = Number(linkSaveCountByHash.get(hash)) || 0;
+        linkSaveCountByHash.set(hash, Math.max(0, cur + delta));
+        const user = firebase.auth().currentUser;
+        if (!user || user.isAnonymous) return;
+        await firebaseDb
+          .collection("linkSaveCounts")
+          .doc(hash)
+          .set(
+            {
+              norm: norm,
+              count: firebase.firestore.FieldValue.increment(delta),
+              updated: firebase.firestore.FieldValue.serverTimestamp(),
+            },
+            { merge: true }
+          );
+        patchLinkSaveCountDiskCacheOne(hash, Number(linkSaveCountByHash.get(hash)) || 0);
+      } catch (err) {
+        if (hash) {
+          const cur = Number(linkSaveCountByHash.get(hash)) || 0;
+          linkSaveCountByHash.set(hash, Math.max(0, cur - delta));
+        }
+        if (!isFirestorePermissionDenied(err)) {
+          console.warn("[proxy-list] linkSaveCounts update failed", err);
+        }
+      }
+    }
+
+    function buildSaveLinkButtonHtml(link) {
+      const norm = normalizeUrlKeyForClicks(link);
+      const signedIn = isSignedInUser();
+      const saved = signedIn && norm && savedLinks.has(norm);
+      return (
+        '<button type="button" class="save-link-btn' +
+        (saved ? " is-saved" : "") +
+        '" data-link="' +
+        escapeAttr(link) +
+        '" aria-pressed="' +
+        (saved ? "true" : "false") +
+        '" title="' +
+        (signedIn ? (saved ? "Unsave link" : "Save link") : "Sign in to save links") +
+        '">' +
+        (saved ? "★" : "☆") +
+        "</button>"
+      );
+    }
+
+    function openSignInRequiredModal(message) {
+      const backdrop = $("signInRequiredBackdrop");
+      if (!backdrop) return;
+      const body = backdrop.querySelector(".summary-body .summary-muted");
+      if (body) {
+        body.textContent =
+          message && String(message).trim()
+            ? String(message).trim()
+            : "You need to be signed in to save links to your account.";
+      }
+      backdrop.classList.add("open");
+      backdrop.setAttribute("aria-hidden", "false");
+    }
+
+    function closeSignInRequiredModal() {
+      const backdrop = $("signInRequiredBackdrop");
+      if (!backdrop) return;
+      backdrop.classList.remove("open");
+      backdrop.setAttribute("aria-hidden", "true");
+    }
+
+    function readGithubNotificationsSeen() {
+      try {
+        const raw = localStorage.getItem(GITHUB_NOTIFICATIONS_SEEN_KEY);
+        const parsed = raw ? JSON.parse(raw) : {};
+        return parsed && typeof parsed === "object" ? parsed : {};
+      } catch (_) {
+        return {};
+      }
+    }
+
+    function writeGithubNotificationsSeen(map) {
+      try {
+        localStorage.setItem(GITHUB_NOTIFICATIONS_SEEN_KEY, JSON.stringify(map || {}));
+      } catch (_) {}
+    }
+
+    function renderGithubNotifications(items) {
+      const wrap = $("githubNotificationList");
+      if (!wrap) return;
+      if (!items.length) {
+        wrap.hidden = true;
+        wrap.innerHTML = "";
+        return;
+      }
+      wrap.hidden = false;
+      setHtml(
+        wrap,
+        items
+          .map(
+            (item) =>
+              '<div class="github-notification" role="status">' +
+              escapeHtml(item.title) +
+              (item.url
+                ? ' <a href="' + escapeAttr(item.url) + '" rel="noopener noreferrer" target="_blank">Open</a>'
+                : "") +
+              "</div>"
+          )
+          .join("")
+      );
+    }
+
+    async function refreshGithubExtras() {
+      if (!isGithubSignedInUser()) {
+        githubRepoStarred = false;
+        renderGithubNotifications([]);
+        updateAccountUI();
+        return;
+      }
+      const token = getGithubAccessToken();
+      if (!token) {
+        updateAccountUI();
+        return;
+      }
+      try {
+        const starRes = await fetch(
+          "https://api.github.com/user/starred/" + GITHUB_REPO_OWNER + "/" + GITHUB_REPO_NAME,
+          {
+            headers: {
+              Authorization: "Bearer " + token,
+              Accept: "application/vnd.github+json",
+            },
+          }
+        );
+        githubRepoStarred = starRes.status === 204;
+      } catch (_) {
+        githubRepoStarred = false;
+      }
+      try {
+        const notifRes = await fetch("https://api.github.com/notifications?participating=true", {
+          headers: {
+            Authorization: "Bearer " + token,
+            Accept: "application/vnd.github+json",
+          },
+        });
+        if (notifRes.ok) {
+          const notifications = await notifRes.json();
+          const seen = readGithubNotificationsSeen();
+          const fresh = [];
+          (notifications || []).forEach((note) => {
+            const repo = note.repository && note.repository.full_name;
+            if (repo !== GITHUB_REPO_SLUG) return;
+            const subject = note.subject || {};
+            const type = String(subject.type || "").toLowerCase();
+            if (type !== "pullrequest" && type !== "issue") return;
+            const reason = String(note.reason || "").toLowerCase();
+            if (reason !== "state_change" && reason !== "author" && reason !== "subscribed") return;
+            const id = String(note.id || note.updated_at || note.last_read_at || "");
+            if (!id || seen[id]) return;
+            seen[id] = Date.now();
+            fresh.push({
+              title:
+                (subject.title ? String(subject.title) : "Repository update") +
+                " was updated on " +
+                GITHUB_REPO_SLUG,
+              url: subject.url || note.repository.html_url || "",
+            });
+          });
+          writeGithubNotificationsSeen(seen);
+          renderGithubNotifications(fresh);
+        }
+      } catch (err) {
+        console.warn("[proxy-list] GitHub notifications unavailable", err);
+      }
+      updateAccountUI();
+    }
+
+    function scheduleGithubNotificationsPoll() {
+      if (githubNotificationsPollTimer) clearInterval(githubNotificationsPollTimer);
+      if (!isGithubSignedInUser()) return;
+      void refreshGithubExtras();
+      githubNotificationsPollTimer = setInterval(() => {
+        void refreshGithubExtras();
+      }, 5 * 60 * 1000);
+    }
+
+    async function signOutAccount() {
+      if (typeof firebase === "undefined") return;
+      setAccountMenuOpen(false);
+      clearGithubAccessToken();
+      githubLogin = "";
+      githubRepoStarred = false;
+      savedLinks = new Set();
+      renderGithubNotifications([]);
+      try {
+        await firebase.auth().signOut();
+        await firebase.auth().signInAnonymously();
+      } catch (err) {
+        console.error("[proxy-list] Sign-out failed", err);
+      }
+    }
+
+    function handleAuthUserChanged(user) {
+      authUser = user || null;
+      authDisplayName = user && user.displayName ? String(user.displayName) : "";
+      githubLogin = githubLoginFromUser(user);
+      if (!isSignedInUser()) {
+        savedLinks = new Set();
+        githubRepoStarred = false;
+        userSiteProfile = { siteUsername: "", profilePhotoDataUrl: "" };
+        linkRatingSelfByHash.clear();
+        const img = $("accountAvatarImg");
+        if (img) {
+          img.removeAttribute("src");
+          img.hidden = true;
+        }
+        renderGithubNotifications([]);
+        if (githubNotificationsPollTimer) {
+          clearInterval(githubNotificationsPollTimer);
+          githubNotificationsPollTimer = null;
+        }
+      } else {
+        applySavedLinks(readSavedLinksCache(authUser.uid));
+        void loadUserProfile();
+        scheduleGithubNotificationsPoll();
+      }
+      updateAccountUI();
+      updateSavedViewUI();
+      startFolderAndMyFoldersListeners();
+      if (pageContext) scheduleRenderFromPageContext();
+    }
+
+    function setupAccountUI() {
+      const btn = $("accountMenuBtn");
+      const menu = $("accountMenu");
+      const signOutBtn = $("accountSignOutBtn");
+      const signInRequiredBackdrop = $("signInRequiredBackdrop");
+      const signInRequiredCloseBtn = $("signInRequiredCloseBtn");
+      const signInRequiredDismissBtn = $("signInRequiredDismissBtn");
+      if (btn) {
+        btn.addEventListener("click", (ev) => {
+          ev.stopPropagation();
+          setAccountMenuOpen(!accountMenuOpen);
+        });
+      }
+      if (signOutBtn) signOutBtn.addEventListener("click", () => void signOutAccount());
+      document.addEventListener("click", (ev) => {
+        if (!accountMenuOpen) return;
+        const corner = $("accountCorner");
+        if (corner && !corner.contains(ev.target)) setAccountMenuOpen(false);
+      });
+      document.addEventListener("click", (ev) => {
+        const saveBtn = ev.target && ev.target.closest ? ev.target.closest(".save-link-btn") : null;
+        if (!saveBtn) return;
+        ev.preventDefault();
+        if (!isSignedInUser()) {
+          openSignInRequiredModal();
+          return;
+        }
+        const link = saveBtn.getAttribute("data-link");
+        if (!link) return;
+        const norm = normalizeUrlKeyForClicks(link);
+        void toggleSavedLink(link);
+        if (norm) {
+          const saved = savedLinks.has(norm);
+          saveBtn.classList.toggle("is-saved", saved);
+          saveBtn.setAttribute("aria-pressed", saved ? "true" : "false");
+          saveBtn.title = saved ? "Unsave link" : "Save link";
+          saveBtn.textContent = saved ? "★" : "☆";
+        }
+      });
+      if (signInRequiredCloseBtn) signInRequiredCloseBtn.addEventListener("click", closeSignInRequiredModal);
+      if (signInRequiredDismissBtn) signInRequiredDismissBtn.addEventListener("click", closeSignInRequiredModal);
+      if (signInRequiredBackdrop) {
+        signInRequiredBackdrop.addEventListener("click", (ev) => {
+          if (ev.target === signInRequiredBackdrop) closeSignInRequiredModal();
+        });
+      }
+      document.addEventListener("click", (ev) => {
+        const addL = ev.target && ev.target.closest ? ev.target.closest("[data-folder-add-link]") : null;
+        if (addL) {
+          ev.preventDefault();
+          const u = addL.getAttribute("data-folder-add-link");
+          if (u) void addTrustedLinkUrlToFolder(u);
+          return;
+        }
+        const tool = ev.target && ev.target.closest ? ev.target.closest("[data-folder-tool]") : null;
+        if (!tool) return;
+        if (!viewingFolderId || !isViewingOwnFolder()) return;
+        const idx = Number(tool.getAttribute("data-folder-idx"));
+        if (!Number.isFinite(idx)) return;
+        const kind = tool.getAttribute("data-folder-tool");
+        if (kind === "up") void folderRowMove(idx, "up");
+        else if (kind === "down") void folderRowMove(idx, "down");
+        else if (kind === "remove") void folderRowRemove(idx);
+      });
+      document.addEventListener("click", (ev) => {
+        const rateBtn = ev.target && ev.target.closest ? ev.target.closest("[data-link-rating-vote]") : null;
+        if (rateBtn) {
+          ev.preventDefault();
+          const url = rateBtn.getAttribute("data-link-rating-url");
+          const val = Number(rateBtn.getAttribute("data-link-rating-vote"));
+          if (url && (val === 1 || val === -1)) void handleLinkRatingButtonClick(url, val);
+          return;
+        }
+        const fr = ev.target && ev.target.closest ? ev.target.closest("[data-folder-rating-vote]") : null;
+        if (fr) {
+          ev.preventDefault();
+          const fid = fr.getAttribute("data-folder-rating-id");
+          const val = Number(fr.getAttribute("data-folder-rating-vote"));
+          if (fid && (val === 1 || val === -1)) void handleFolderRatingButtonClick(fid, val);
+        }
+      });
+      updateAccountUI();
+    }
+
     const LS_CLICK_KEY = "proxyList_link_clicks_v1";
+    const LS_SAVED_LINKS_KEY = "proxyList_saved_links_v1";
+
+    function isFirestorePermissionDenied(err) {
+      const code = err && err.code ? String(err.code) : "";
+      const message = err && err.message ? String(err.message) : "";
+      return code === "permission-denied" || /insufficient permissions/i.test(message);
+    }
+
+    function isFirestoreResourceExhausted(err) {
+      const code = err && err.code ? String(err.code) : "";
+      const message = err && err.message ? String(err.message) : "";
+      return (
+        code === "resource-exhausted" ||
+        code === "unavailable" ||
+        /resource-exhausted|quota exceeded|too many requests|429/i.test(message)
+      );
+    }
+
+    function firestoreRatingFailureUserHint(err) {
+      if (isFirestorePermissionDenied(err)) {
+        return "Firestore refused the request. Deploy the rules from docs/firestore.rules to the same Firebase project as this site.";
+      }
+      if (isFirestoreResourceExhausted(err)) {
+        return "Firebase hit a quota or rate limit (often after loading ratings for a very large list). Wait a few minutes and try again, reload less often, or upgrade the Firebase plan for higher limits.";
+      }
+      return "Sign in with a non-anonymous account, or deploy updated Firestore rules if this persists.";
+    }
+
+    function readSavedLinksCache(uid) {
+      if (!uid) return [];
+      try {
+        const raw = localStorage.getItem(LS_SAVED_LINKS_KEY);
+        const map = raw ? JSON.parse(raw) : {};
+        return Array.isArray(map[uid]) ? map[uid].filter(Boolean) : [];
+      } catch (_) {
+        return [];
+      }
+    }
+
+    function writeSavedLinksCache(uid, links) {
+      if (!uid) return;
+      try {
+        const raw = localStorage.getItem(LS_SAVED_LINKS_KEY);
+        const map = raw && typeof JSON.parse(raw) === "object" ? JSON.parse(raw) : {};
+        map[uid] = (links || []).filter(Boolean);
+        localStorage.setItem(LS_SAVED_LINKS_KEY, JSON.stringify(map));
+      } catch (_) {}
+    }
+
+    async function ensureAuthForFirestore() {
+      if (typeof firebase === "undefined" || !firebaseDb) return null;
+      const user = firebase.auth().currentUser;
+      if (!user || user.isAnonymous) return null;
+      try {
+        await user.getIdToken();
+      } catch (_) {}
+      return user;
+    }
 
     function normalizeUrlKeyForClicks(u) {
       return String(u || "")
@@ -1227,11 +2513,604 @@
         .join("");
     }
 
+    function persistLinkListSortMode(mode) {
+      if (
+        mode !== LINK_SORT_RATING_DESC &&
+        mode !== LINK_SORT_RATING_ASC &&
+        mode !== LINK_SORT_DEFAULT &&
+        mode !== LINK_SORT_SAVED_DESC
+      )
+        return;
+      listSortMode = mode;
+      try {
+        localStorage.setItem(LS_LINK_LIST_SORT_KEY, mode);
+      } catch (_) {}
+      scheduleUserProfileWrite();
+    }
+
+    function linkNetScoreFromHash(hash) {
+      if (!hash) return 0;
+      const o = linkRatingAggByHash.get(hash);
+      if (!o) return 0;
+      return (Number(o.up) || 0) - (Number(o.down) || 0);
+    }
+
+    function linkSaveCountFromHash(hash) {
+      if (!hash) return 0;
+      const v = linkSaveCountByHash.get(hash);
+      return Number(v) || 0;
+    }
+
+    function sortFilteredRowsByListSort(filteredRows) {
+      if (!filteredRows || !filteredRows.length) return filteredRows;
+      if (listSortMode === LINK_SORT_DEFAULT) return filteredRows;
+      if (listSortMode === LINK_SORT_SAVED_DESC) {
+        return filteredRows.slice().sort((a, b) => {
+          const na = normalizeUrlKeyForClicks(a && a.link);
+          const nb = normalizeUrlKeyForClicks(b && b.link);
+          const ha = na ? normToHashCache.get(na) : "";
+          const hb = nb ? normToHashCache.get(nb) : "";
+          const sa = linkSaveCountFromHash(ha);
+          const sb = linkSaveCountFromHash(hb);
+          const diff = sb - sa;
+          if (diff !== 0) return diff;
+          const pa = String((a && a.provider) || "").localeCompare(String((b && b.provider) || ""), undefined, {
+            sensitivity: "base",
+          });
+          if (pa !== 0) return pa;
+          return String((a && a.link) || "").localeCompare(String((b && b.link) || ""));
+        });
+      }
+      const desc = listSortMode === LINK_SORT_RATING_DESC;
+      return filteredRows.slice().sort((a, b) => {
+        const na = normalizeUrlKeyForClicks(a && a.link);
+        const nb = normalizeUrlKeyForClicks(b && b.link);
+        const ha = na ? normToHashCache.get(na) : "";
+        const hb = nb ? normToHashCache.get(nb) : "";
+        const sa = linkNetScoreFromHash(ha);
+        const sb = linkNetScoreFromHash(hb);
+        const diff = sa - sb;
+        if (diff !== 0) return desc ? -diff : diff;
+        const pa = String((a && a.provider) || "").localeCompare(String((b && b.provider) || ""), undefined, {
+          sensitivity: "base",
+        });
+        if (pa !== 0) return pa;
+        return String((a && a.link) || "").localeCompare(String((b && b.link) || ""));
+      });
+    }
+
+    function linkSortNeedsFullFirestoreForLinks() {
+      return (
+        listSortMode === LINK_SORT_RATING_DESC ||
+        listSortMode === LINK_SORT_RATING_ASC ||
+        listSortMode === LINK_SORT_SAVED_DESC
+      );
+    }
+
+    const LS_LINK_RATING_AGG_DISK = "proxyList_linkRatingAggDisk_v1";
+    const LS_LINK_SAVE_COUNT_DISK = "proxyList_linkSaveCountDisk_v1";
+    /** Reuse aggregates across reloads until the list version changes or this TTL passes (saves Spark read quota). */
+    const LINK_AGG_DISK_CACHE_MAX_MS = 48 * 60 * 60 * 1000;
+
+    function readJsonLocalDisk(key) {
+      try {
+        const raw = localStorage.getItem(key);
+        if (!raw) return null;
+        return JSON.parse(raw);
+      } catch (_) {
+        return null;
+      }
+    }
+
+    function hydrateLinkRatingAggFromDiskCache(stamp, hashes) {
+      if (!stamp || !hashes || !hashes.length) return;
+      const o = readJsonLocalDisk(LS_LINK_RATING_AGG_DISK);
+      if (!o || o.stamp !== stamp || typeof o.savedAt !== "number") return;
+      if (Date.now() - o.savedAt > LINK_AGG_DISK_CACHE_MAX_MS) return;
+      const byHash = o.byHash;
+      if (!byHash || typeof byHash !== "object") return;
+      for (const h of hashes) {
+        if (linkRatingAggByHash.has(h)) continue;
+        const row = byHash[h];
+        if (!row || typeof row !== "object") continue;
+        const up = Number(row.u);
+        const down = Number(row.d);
+        if (!Number.isFinite(up) || !Number.isFinite(down)) continue;
+        linkRatingAggByHash.set(h, { up, down });
+      }
+    }
+
+    function hydrateLinkSaveCountFromDiskCache(stamp, hashes) {
+      if (!stamp || !hashes || !hashes.length) return;
+      const o = readJsonLocalDisk(LS_LINK_SAVE_COUNT_DISK);
+      if (!o || o.stamp !== stamp || typeof o.savedAt !== "number") return;
+      if (Date.now() - o.savedAt > LINK_AGG_DISK_CACHE_MAX_MS) return;
+      const byHash = o.byHash;
+      if (!byHash || typeof byHash !== "object") return;
+      for (const h of hashes) {
+        if (linkSaveCountByHash.has(h)) continue;
+        const c = Number(byHash[h]);
+        if (!Number.isFinite(c)) continue;
+        linkSaveCountByHash.set(h, c);
+      }
+    }
+
+    function persistLinkRatingAggDiskCache(stamp, hashes) {
+      if (!stamp || !hashes || !hashes.length) return;
+      try {
+        const prev = readJsonLocalDisk(LS_LINK_RATING_AGG_DISK);
+        const byHash =
+          prev && prev.stamp === stamp && prev.byHash && typeof prev.byHash === "object" ? { ...prev.byHash } : {};
+        for (const h of hashes) {
+          const ag = linkRatingAggByHash.get(h);
+          if (!ag) continue;
+          byHash[h] = { u: Number(ag.up) || 0, d: Number(ag.down) || 0 };
+        }
+        const payload = { stamp, savedAt: Date.now(), byHash };
+        const s = JSON.stringify(payload);
+        if (s.length > 4.5e6) return;
+        localStorage.setItem(LS_LINK_RATING_AGG_DISK, s);
+      } catch (_) {}
+    }
+
+    function persistLinkSaveCountDiskCache(stamp, hashes) {
+      if (!stamp || !hashes || !hashes.length) return;
+      try {
+        const prev = readJsonLocalDisk(LS_LINK_SAVE_COUNT_DISK);
+        const byHash =
+          prev && prev.stamp === stamp && prev.byHash && typeof prev.byHash === "object" ? { ...prev.byHash } : {};
+        for (const h of hashes) {
+          if (!linkSaveCountByHash.has(h)) continue;
+          byHash[h] = Number(linkSaveCountByHash.get(h)) || 0;
+        }
+        const payload = { stamp, savedAt: Date.now(), byHash };
+        const s = JSON.stringify(payload);
+        if (s.length > 4.5e6) return;
+        localStorage.setItem(LS_LINK_SAVE_COUNT_DISK, s);
+      } catch (_) {}
+    }
+
+    function patchLinkRatingAggDiskCacheOne(hash, up, down) {
+      const stamp = currentListVersionStamp;
+      if (!stamp || !hash) return;
+      try {
+        const o = readJsonLocalDisk(LS_LINK_RATING_AGG_DISK);
+        if (!o || o.stamp !== stamp || typeof o.byHash !== "object") return;
+        o.byHash[hash] = { u: Number(up) || 0, d: Number(down) || 0 };
+        o.savedAt = Date.now();
+        const s = JSON.stringify(o);
+        if (s.length > 4.5e6) return;
+        localStorage.setItem(LS_LINK_RATING_AGG_DISK, s);
+      } catch (_) {}
+    }
+
+    function patchLinkSaveCountDiskCacheOne(hash, count) {
+      const stamp = currentListVersionStamp;
+      if (!stamp || !hash) return;
+      try {
+        const o = readJsonLocalDisk(LS_LINK_SAVE_COUNT_DISK);
+        if (!o || o.stamp !== stamp || typeof o.byHash !== "object") return;
+        o.byHash[hash] = Math.max(0, Number(count) || 0);
+        o.savedAt = Date.now();
+        const s = JSON.stringify(o);
+        if (s.length > 4.5e6) return;
+        localStorage.setItem(LS_LINK_SAVE_COUNT_DISK, s);
+      } catch (_) {}
+    }
+
+    /**
+     * Batched Firestore document reads. Keep concurrency modest: hundreds of parallel .get()
+     * calls trigger 429 / resource-exhausted on small Firebase plans and break writes (ratings).
+     */
+    const FS_DOC_READ_CHUNK = 40;
+    const FS_DOC_READ_LANES = 1;
+    const FS_DOC_READ_WAVE_GAP_MS = 12;
+
+    async function parallelFirestoreDocGets(collectionName, docIds, onEach) {
+      const ids = docIds.filter(Boolean);
+      const wave = FS_DOC_READ_CHUNK * FS_DOC_READ_LANES;
+      for (let base = 0; base < ids.length; base += wave) {
+        if (base > 0 && FS_DOC_READ_WAVE_GAP_MS > 0) {
+          await new Promise((r) => setTimeout(r, FS_DOC_READ_WAVE_GAP_MS));
+        }
+        const parts = [];
+        for (let lane = 0; lane < FS_DOC_READ_LANES; lane++) {
+          const lo = base + lane * FS_DOC_READ_CHUNK;
+          if (lo >= ids.length) break;
+          parts.push(ids.slice(lo, Math.min(lo + FS_DOC_READ_CHUNK, ids.length)));
+        }
+        await Promise.all(
+          parts.map((part) =>
+            Promise.all(part.map((id) => firebaseDb.collection(collectionName).doc(id).get())).then((snaps) => {
+              snaps.forEach((snap, j) => onEach(part[j], snap));
+            })
+          )
+        );
+      }
+    }
+
+    async function prefetchLinkRatingsForNorms(normsList, opts) {
+      const rawNorms = [...new Set((normsList || []).map((n) => String(n || "").trim()).filter(Boolean))];
+      if (!firebaseDb || !rawNorms.length) return;
+
+      const stamp = ((opts && opts.listVersionStamp) || currentListVersionStamp || "").trim();
+
+      try {
+        const normsNeedHash = rawNorms.filter((n) => !normToHashCache.has(n));
+        const HASH_BATCH = 64;
+        const HASH_LANES = 4;
+        for (let i = 0; i < normsNeedHash.length; i += HASH_BATCH * HASH_LANES) {
+          await Promise.all(
+            Array.from({ length: HASH_LANES }, (_, lane) => {
+              const lo = i + lane * HASH_BATCH;
+              if (lo >= normsNeedHash.length) return Promise.resolve();
+              const slice = normsNeedHash.slice(lo, Math.min(lo + HASH_BATCH, normsNeedHash.length));
+              return Promise.all(
+                slice.map(async (n) => {
+                  const h = await sha256Hex(n);
+                  return { n, h };
+                })
+              ).then((pairs) => {
+                pairs.forEach(({ n, h }) => {
+                  normToHashCache.set(n, h);
+                  hashToNormMap.set(h, n);
+                });
+              });
+            })
+          );
+        }
+
+        const hashes = rawNorms.map((n) => normToHashCache.get(n)).filter(Boolean);
+        hydrateLinkRatingAggFromDiskCache(stamp, hashes);
+        if (!opts || !opts.skipLinkSaveCounts) hydrateLinkSaveCountFromDiskCache(stamp, hashes);
+
+        const toFetchAgg = hashes.filter((h) => !linkRatingAggByHash.has(h));
+        await parallelFirestoreDocGets("linkRatings", toFetchAgg, (h, snap) => {
+          if (snap.exists) {
+            const d = snap.data() || {};
+            linkRatingAggByHash.set(h, { up: Number(d.up) || 0, down: Number(d.down) || 0 });
+          } else {
+            linkRatingAggByHash.set(h, { up: 0, down: 0 });
+          }
+        });
+
+        const toFetchSave =
+          opts && opts.skipLinkSaveCounts ? [] : hashes.filter((h) => !linkSaveCountByHash.has(h));
+        await parallelFirestoreDocGets("linkSaveCounts", toFetchSave, (h, snap) => {
+          if (snap.exists) {
+            const d = snap.data() || {};
+            linkSaveCountByHash.set(h, Number(d.count) || 0);
+          } else {
+            linkSaveCountByHash.set(h, 0);
+          }
+        });
+
+        const user = firebase.auth().currentUser;
+        if (user && !user.isAnonymous) {
+          const toFetchSelf = hashes.filter((h) => !linkRatingSelfByHash.has(h));
+          await parallelFirestoreDocGets("linkRatingVotes", toFetchSelf.map((h) => user.uid + "_" + h), (docId, snap) => {
+            const h = docId.slice(user.uid.length + 1);
+            if (snap.exists) {
+              const v = Number(snap.data().vote);
+              linkRatingSelfByHash.set(h, v === 1 ? 1 : v === -1 ? -1 : 0);
+            } else {
+              linkRatingSelfByHash.set(h, 0);
+            }
+          });
+        }
+
+        if (stamp) {
+          persistLinkRatingAggDiskCache(stamp, hashes);
+          if (!opts || !opts.skipLinkSaveCounts) persistLinkSaveCountDiskCache(stamp, hashes);
+        }
+      } catch (err) {
+        if (isFirestorePermissionDenied(err)) {
+          console.warn(
+            "[proxy-list] Link ratings skipped: Firestore permission denied. Deploy the rules in docs/firestore.rules (linkRatings, linkRatingVotes, linkSaveCounts, folderRatings, folderRatingVotes) to the same Firebase project as this site.",
+            err
+          );
+        } else if (isFirestoreResourceExhausted(err)) {
+          console.warn("[proxy-list] Link ratings prefetch hit Firestore quota/rate limits; some counts may be missing until retry.", err);
+        } else {
+          console.warn("[proxy-list] Link ratings prefetch failed", err);
+        }
+      }
+    }
+
+    function ratingCellInnerHtmlForLinkUrl(link) {
+      const norm = normalizeUrlKeyForClicks(link);
+      if (!norm) return "—";
+      const hash = normToHashCache.get(norm) || "";
+      const agg = hash ? linkRatingAggByHash.get(hash) : null;
+      const up = agg ? Number(agg.up) || 0 : 0;
+      const down = agg ? Number(agg.down) || 0 : 0;
+      const self = hash ? linkRatingSelfByHash.get(hash) || 0 : 0;
+      const upOn = self === 1 ? " is-active" : "";
+      const dnOn = self === -1 ? " is-active" : "";
+      const net = up - down;
+      const netStr = net > 0 ? "+" + net : String(net);
+      return (
+        '<button type="button" class="rating-vote-btn' +
+        upOn +
+        '" data-link-rating-vote="1" data-link-rating-url="' +
+        escapeAttr(link) +
+        '" title="Thumbs up" aria-label="Thumbs up"><img src="' +
+        escapeAttr(RATING_THUMB_UP_IMG) +
+        '" alt="" width="18" height="18" decoding="async" /></button>' +
+        '<span class="rating-score" title="Net score (up minus down)">' +
+        escapeHtml(netStr) +
+        "</span>" +
+        '<button type="button" class="rating-vote-btn' +
+        dnOn +
+        '" data-link-rating-vote="-1" data-link-rating-url="' +
+        escapeAttr(link) +
+        '" title="Thumbs down" aria-label="Thumbs down"><img src="' +
+        escapeAttr(RATING_THUMB_DOWN_IMG) +
+        '" alt="" width="18" height="18" decoding="async" /></button>' +
+        '<span class="sub rating-count-hint" title="Up / down counts">' +
+        escapeHtml(String(up)) +
+        "/" +
+        escapeHtml(String(down)) +
+        "</span>"
+      );
+    }
+
+    function ratingCellTdHtml(link) {
+      const norm = normalizeUrlKeyForClicks(link);
+      const hash = norm ? normToHashCache.get(norm) || "" : "";
+      return (
+        '<td class="link-rating-cell"' +
+        (hash ? ' data-rating-hash="' + escapeAttr(hash) + '"' : "") +
+        ">" +
+        ratingCellInnerHtmlForLinkUrl(link) +
+        "</td>"
+      );
+    }
+
+    async function applyLinkRatingVote(norm, nextVote) {
+      const user = await ensureAuthForFirestore();
+      if (!user || user.isAnonymous || !firebaseDb) {
+        openSignInRequiredModal("You need to be signed in to rate links.");
+        return;
+      }
+      const hash = await sha256Hex(norm);
+      normToHashCache.set(norm, hash);
+      hashToNormMap.set(hash, norm);
+      const voteRef = firebaseDb.collection("linkRatingVotes").doc(user.uid + "_" + hash);
+      const aggRef = firebaseDb.collection("linkRatings").doc(hash);
+      let finalUp = 0;
+      let finalDown = 0;
+      try {
+        await firebaseDb.runTransaction(async (tx) => {
+          const voteSnap = await tx.get(voteRef);
+          const aggSnap = await tx.get(aggRef);
+          const old = voteSnap.exists ? Number(voteSnap.data().vote) || 0 : 0;
+          let up = aggSnap.exists ? Number(aggSnap.data().up) || 0 : 0;
+          let down = aggSnap.exists ? Number(aggSnap.data().down) || 0 : 0;
+          if (old === 1) up = Math.max(0, up - 1);
+          if (old === -1) down = Math.max(0, down - 1);
+          if (nextVote === 1) up++;
+          if (nextVote === -1) down++;
+          if (nextVote === 0) {
+            if (voteSnap.exists) tx.delete(voteRef);
+          } else {
+            tx.set(
+              voteRef,
+              {
+                uid: user.uid,
+                linkHash: hash,
+                norm,
+                vote: nextVote,
+                updated: firebase.firestore.FieldValue.serverTimestamp(),
+              },
+              { merge: true }
+            );
+          }
+          if (nextVote !== 0 || old !== 0) {
+            tx.set(
+              aggRef,
+              {
+                up,
+                down,
+                norm,
+                updated: firebase.firestore.FieldValue.serverTimestamp(),
+              },
+              { merge: true }
+            );
+          }
+          finalUp = up;
+          finalDown = down;
+        });
+      } catch (err) {
+        console.warn("[proxy-list] Link rating failed", err);
+        window.alert("Could not save that rating. " + firestoreRatingFailureUserHint(err));
+        return;
+      }
+      linkRatingAggByHash.set(hash, { up: finalUp, down: finalDown });
+      linkRatingSelfByHash.set(hash, nextVote === 0 ? 0 : nextVote);
+      patchLinkRatingAggDiskCacheOne(hash, finalUp, finalDown);
+      repaintLinkRatingCellsForHash(hash);
+    }
+
+    function repaintLinkRatingCellsForHash(hash) {
+      if (!hash) return;
+      const sel = 'td.link-rating-cell[data-rating-hash="' + hash.replace(/"/g, "") + '"]';
+      document.querySelectorAll(sel).forEach((td) => {
+        const tr = td.closest("tr");
+        const a = tr && tr.querySelector("a.js-link-summary[data-link]");
+        const linkUrl = a ? a.getAttribute("data-link") : "";
+        td.innerHTML = ratingCellInnerHtmlForLinkUrl(linkUrl);
+      });
+    }
+
+    async function handleLinkRatingButtonClick(url, clickedVal) {
+      const norm = normalizeUrlKeyForClicks(url);
+      if (!norm || !firebaseDb) return;
+      const user = await ensureAuthForFirestore();
+      if (!user || user.isAnonymous) {
+        openSignInRequiredModal("You need to be signed in to rate links.");
+        return;
+      }
+      let hash = normToHashCache.get(norm);
+      if (!hash) {
+        hash = await sha256Hex(norm);
+        normToHashCache.set(norm, hash);
+        hashToNormMap.set(hash, norm);
+      }
+      const self = linkRatingSelfByHash.get(hash) || 0;
+      const nextVote = self === clickedVal ? 0 : clickedVal;
+      await applyLinkRatingVote(norm, nextVote);
+    }
+
+    let folderViewRatingAgg = { up: 0, down: 0 };
+    let folderViewRatingSelf = 0;
+
+    function folderRatingBarInnerHtml(folderId) {
+      const up = folderViewRatingAgg.up || 0;
+      const down = folderViewRatingAgg.down || 0;
+      const self = folderViewRatingSelf || 0;
+      const net = up - down;
+      const netStr = net > 0 ? "+" + net : String(net);
+      const upOn = self === 1 ? " is-active" : "";
+      const dnOn = self === -1 ? " is-active" : "";
+      return (
+        '<span class="folder-rating-inline">' +
+        '<button type="button" class="rating-vote-btn' +
+        upOn +
+        '" data-folder-rating-vote="1" data-folder-rating-id="' +
+        escapeAttr(folderId) +
+        '" title="Thumbs up this folder" aria-label="Thumbs up folder"><img src="' +
+        escapeAttr(RATING_THUMB_UP_IMG) +
+        '" alt="" width="18" height="18" decoding="async" /></button>' +
+        '<span class="rating-score" title="Net score">' +
+        escapeHtml(netStr) +
+        "</span>" +
+        '<button type="button" class="rating-vote-btn' +
+        dnOn +
+        '" data-folder-rating-vote="-1" data-folder-rating-id="' +
+        escapeAttr(folderId) +
+        '" title="Thumbs down" aria-label="Thumbs down folder"><img src="' +
+        escapeAttr(RATING_THUMB_DOWN_IMG) +
+        '" alt="" width="18" height="18" decoding="async" /></button>' +
+        '<span class="sub rating-count-hint">' +
+        escapeHtml(String(up)) +
+        "/" +
+        escapeHtml(String(down)) +
+        "</span></span>"
+      );
+    }
+
+    async function refreshFolderRatingMount(folderId) {
+      const mount = $("folderRatingMount");
+      if (!mount || !folderId || !firebaseDb) return;
+      mount.innerHTML = '<span class="sub">…</span>';
+      try {
+        const aggSnap = await firebaseDb.collection("folderRatings").doc(folderId).get();
+        if (aggSnap.exists) {
+          const d = aggSnap.data() || {};
+          folderViewRatingAgg = { up: Number(d.up) || 0, down: Number(d.down) || 0 };
+        } else {
+          folderViewRatingAgg = { up: 0, down: 0 };
+        }
+        const user = firebase.auth().currentUser;
+        folderViewRatingSelf = 0;
+        if (user && !user.isAnonymous) {
+          const vSnap = await firebaseDb.collection("folderRatingVotes").doc(user.uid + "_" + folderId).get();
+          if (vSnap.exists) {
+            const v = Number(vSnap.data().vote);
+            folderViewRatingSelf = v === 1 ? 1 : v === -1 ? -1 : 0;
+          }
+        }
+        mount.innerHTML = folderRatingBarInnerHtml(folderId);
+      } catch (err) {
+        console.warn("[proxy-list] Folder rating load failed", err);
+        mount.innerHTML = '<span class="sub">—</span>';
+      }
+    }
+
+    async function applyFolderRatingVote(folderId, nextVote) {
+      const id = sanitizeFolderDocId(folderId);
+      if (!id || !firebaseDb) return;
+      const user = await ensureAuthForFirestore();
+      if (!user || user.isAnonymous) {
+        openSignInRequiredModal("You need to be signed in to rate folders.");
+        return;
+      }
+      const voteRef = firebaseDb.collection("folderRatingVotes").doc(user.uid + "_" + id);
+      const aggRef = firebaseDb.collection("folderRatings").doc(id);
+      let finalUp = 0;
+      let finalDown = 0;
+      try {
+        await firebaseDb.runTransaction(async (tx) => {
+          const voteSnap = await tx.get(voteRef);
+          const aggSnap = await tx.get(aggRef);
+          const old = voteSnap.exists ? Number(voteSnap.data().vote) || 0 : 0;
+          let up = aggSnap.exists ? Number(aggSnap.data().up) || 0 : 0;
+          let down = aggSnap.exists ? Number(aggSnap.data().down) || 0 : 0;
+          if (old === 1) up = Math.max(0, up - 1);
+          if (old === -1) down = Math.max(0, down - 1);
+          if (nextVote === 1) up++;
+          if (nextVote === -1) down++;
+          if (nextVote === 0) {
+            if (voteSnap.exists) tx.delete(voteRef);
+          } else {
+            tx.set(
+              voteRef,
+              {
+                uid: user.uid,
+                folderId: id,
+                vote: nextVote,
+                updated: firebase.firestore.FieldValue.serverTimestamp(),
+              },
+              { merge: true }
+            );
+          }
+          if (nextVote !== 0 || old !== 0) {
+            tx.set(
+              aggRef,
+              {
+                up,
+                down,
+                updated: firebase.firestore.FieldValue.serverTimestamp(),
+              },
+              { merge: true }
+            );
+          }
+          finalUp = up;
+          finalDown = down;
+        });
+      } catch (err) {
+        console.warn("[proxy-list] Folder rating failed", err);
+        window.alert("Could not save folder rating. " + firestoreRatingFailureUserHint(err));
+        return;
+      }
+      folderViewRatingAgg = { up: finalUp, down: finalDown };
+      folderViewRatingSelf = nextVote === 0 ? 0 : nextVote;
+      const mount = $("folderRatingMount");
+      if (mount) mount.innerHTML = folderRatingBarInnerHtml(id);
+    }
+
+    async function handleFolderRatingButtonClick(folderId, clickedVal) {
+      const id = sanitizeFolderDocId(folderId);
+      if (!id) return;
+      const user = await ensureAuthForFirestore();
+      if (!user || user.isAnonymous) {
+        openSignInRequiredModal("You need to be signed in to rate folders.");
+        return;
+      }
+      const self = folderViewRatingSelf || 0;
+      const nextVote = self === clickedVal ? 0 : clickedVal;
+      await applyFolderRatingVote(id, nextVote);
+    }
+
     function initClickTracking() {
       const cfg = typeof window !== "undefined" && window.__FIREBASE_CONFIG__;
       if (!cfg || !cfg.apiKey || typeof firebase === "undefined") {
         useFirebaseClicks = false;
         firebaseDb = null;
+        authStateReady = true;
+        if (authStateReadyResolve) authStateReadyResolve();
+        startFolderAndMyFoldersListeners();
         return Promise.resolve(false);
       }
       try {
@@ -1241,38 +3120,65 @@
         firebaseDb = firebase.firestore();
         /* Safari / WebKit: default WebChannel long-poll can fail with “access control checks” on Listen/channel. */
         try {
-          firebaseDb.settings({ experimentalAutoDetectLongPolling: true }, { merge: true });
+          firebaseDb.settings({
+            experimentalAutoDetectLongPolling: true,
+            merge: true,
+          });
         } catch (_) {}
-        return firebase
-          .auth()
-          .signInAnonymously()
-          .then(() => {
+        if (!window.__proxyListAuthListenerAttached) {
+          window.__proxyListAuthListenerAttached = true;
+          firebase.auth().onAuthStateChanged((user) => {
+            handleAuthUserChanged(user);
+            if (!authStateReady) {
+              authStateReady = true;
+              if (authStateReadyResolve) authStateReadyResolve();
+            }
+          });
+        }
+        return authStateReadyPromise.then(() => {
+          const user = firebase.auth().currentUser;
+          if (user) {
             useFirebaseClicks = true;
             startPresenceTracking();
+            startFolderAndMyFoldersListeners();
             return true;
-          })
-          .catch((err) => {
-            const msg = String(err?.message || err?.code || "");
-            const referrerBlocked = /referer|referrer/i.test(msg);
-            console.error(
-              "[proxy-list] Firebase anonymous sign-in failed — click counts stay in this browser only." +
-                (referrerBlocked
-                  ? " This error usually means the browser API key has HTTP referrer restrictions that exclude this page. Google Cloud Console → APIs & Services → Credentials → your key → Application restrictions → HTTP referrers — add e.g. http://localhost:8080/* and your hosted site (https://….github.io/*)."
-                  : " Firebase Console → Authentication → Sign-in method → enable Anonymous; Settings → Authorized domains must include this host."),
-              err
-            );
-            useFirebaseClicks = false;
-            firebaseDb = null;
-            activeSessionsCount = null;
-            updateActiveUsersDisplay();
-            return false;
-          });
+          }
+          return firebase
+            .auth()
+            .signInAnonymously()
+            .then(() => {
+              useFirebaseClicks = true;
+              startPresenceTracking();
+              startFolderAndMyFoldersListeners();
+              return true;
+            })
+            .catch((err) => {
+              const msg = String(err?.message || err?.code || "");
+              const referrerBlocked = /referer|referrer/i.test(msg);
+              console.error(
+                "[proxy-list] Firebase anonymous sign-in failed — click counts stay in this browser only." +
+                  (referrerBlocked
+                    ? " This error usually means the browser API key has HTTP referrer restrictions that exclude this page. Google Cloud Console → APIs & Services → Credentials → your key → Application restrictions → HTTP referrers — add e.g. http://localhost:8080/* and your hosted site (https://….github.io/*)."
+                    : " Firebase Console → Authentication → Sign-in method → enable Anonymous; Settings → Authorized domains must include this host."),
+                err
+              );
+              useFirebaseClicks = false;
+              firebaseDb = null;
+              activeSessionsCount = null;
+              updateActiveUsersDisplay();
+              startFolderAndMyFoldersListeners();
+              return false;
+            });
+        });
       } catch (e) {
         console.error("[proxy-list] Firebase initializeApp / firestore() failed:", e);
         useFirebaseClicks = false;
         firebaseDb = null;
         activeSessionsCount = null;
         updateActiveUsersDisplay();
+        authStateReady = true;
+        if (authStateReadyResolve) authStateReadyResolve();
+        startFolderAndMyFoldersListeners();
         return Promise.resolve(false);
       }
     }
@@ -1356,10 +3262,13 @@
       localClickInc(norm);
     }
 
-    async function fetchClickCounts(urls) {
+    async function fetchClickCounts(urls, onProgress) {
       const norms = [...new Set(urls.map((u) => normalizeUrlKeyForClicks(u)).filter(Boolean))];
       const map = new Map();
-      if (!norms.length) return map;
+      if (!norms.length) {
+        if (onProgress) onProgress(0, 0);
+        return map;
+      }
 
       if (useFirebaseClicks && firebaseDb) {
         for (let i = 0; i < norms.length; i += 10) {
@@ -1377,11 +3286,13 @@
           } catch (_) {
             chunk.forEach((n) => map.set(n, localClickGet(n)));
           }
+          if (onProgress) onProgress(Math.min(i + chunk.length, norms.length), norms.length);
         }
         return map;
       }
 
       norms.forEach((n) => map.set(n, localClickGet(n)));
+      if (onProgress) onProgress(norms.length, norms.length);
       return map;
     }
 
@@ -1504,6 +3415,11 @@
       const provWrap = $("mostOpenedProviderWrap");
       const provSel = $("mostOpenedProviderSelect");
       if (!sec || !thead || !tbody) return;
+      /* Folder (?folder=…) or saved links (?saved=1): global “most opened” is not relevant here. */
+      if (shouldHideMostOpenedSection()) {
+        hideMostOpenedSection();
+        return;
+      }
       if (moEmpty) {
         moEmpty.hidden = true;
         setHtml(moEmpty, "");
@@ -1597,7 +3513,7 @@
         } else if (mode === MO_SORT_FILTER) {
           if (normalizeFilterKey(selectedGnMathFilter)) {
             note =
-              "Sorted by your selected gn-math filter: unblocked first, then warning, then blocked; links without that check rank last. Tie-break: opens. " +
+              "Sorted by your selected web filter: unblocked first, then warning, then blocked; links without that check rank last. Tie-break: opens. " +
               note;
           } else {
             note =
@@ -1620,6 +3536,7 @@
         noteEl.textContent = note;
         noteEl.hidden = false;
       }
+      await prefetchLinkRatingsForNorms(picked.map(({ row }) => normalizeUrlKeyForClicks(row && row.link)));
       setHtml(thead, linkTableTheadRowHtml());
       setHtml(tbody, picked.map(({ row, count }) => buildRowTrHtml(row, count)).join(""));
     }
@@ -1641,19 +3558,53 @@
       ].join(" ").toLowerCase();
     }
 
+    function trustedListRowsByNorm() {
+      const map = new Map();
+      if (!pageContext || !Array.isArray(pageContext.links)) return map;
+      for (const row of pageContext.links) {
+        const n = normalizeUrlKeyForClicks(row && row.link);
+        if (n && !map.has(n)) map.set(n, row);
+      }
+      return map;
+    }
+
+    /** Keep only URLs that exist on the loaded sorted list (same normalization as the table). */
+    function sanitizeFolderItemsToTrustedOrder(items) {
+      const trusted = trustedListRowsByNorm();
+      if (!trusted.size) {
+        return normalizeFolderItemsList(items);
+      }
+      const out = [];
+      const seen = new Set();
+      for (const u of items || []) {
+        const n = normalizeUrlKeyForClicks(u);
+        if (!n || !trusted.has(n) || seen.has(n)) continue;
+        seen.add(n);
+        out.push(n);
+      }
+      return out;
+    }
+
+    function scheduleRenderFromPageContext() {
+      if (!pageContext) return;
+      void renderAfterHeavyFilter(pageContext.links, pageContext.meta, pageContext.link_check);
+    }
+
     function formatContributorCell(r) {
       const label = r.contributor != null ? String(r.contributor) : "";
       const href = r.contributor_url && String(r.contributor_url).trim();
+      const youMark = contributorMatchesViewer(r) ? ' <span class="contributor-you">YOU</span>' : "";
       if (href) {
         return (
           '<a href="' +
           escapeAttr(href) +
           '" rel="noopener noreferrer" target="_blank">' +
           escapeHtml(label) +
-          "</a>"
+          "</a>" +
+          youMark
         );
       }
-      return escapeHtml(label);
+      return escapeHtml(label) + youMark;
     }
 
     function selectedCaps() {
@@ -1694,6 +3645,546 @@
       return true;
     }
 
+    function tsMs(ts) {
+      if (!ts) return 0;
+      if (typeof ts.toMillis === "function") return ts.toMillis();
+      if (typeof ts.seconds === "number") return ts.seconds * 1000;
+      return 0;
+    }
+
+    function normalizeFolderItemsList(items) {
+      const out = [];
+      const seen = new Set();
+      (items || []).forEach((u) => {
+        const n = normalizeUrlKeyForClicks(u);
+        if (n && !seen.has(n)) {
+          seen.add(n);
+          out.push(n);
+        }
+      });
+      return out;
+    }
+
+    function folderItemsOrderedRaw() {
+      return ((folderDocSnap && folderDocSnap.items) || [])
+        .map((u) => normalizeUrlKeyForClicks(u))
+        .filter(Boolean);
+    }
+
+    function orderRowsByFolderNorms(rows, normsOrdered) {
+      const map = new Map();
+      for (const row of rows) {
+        const n = normalizeUrlKeyForClicks(row.link);
+        if (n) map.set(n, row);
+      }
+      const out = [];
+      for (const n of normsOrdered) {
+        if (map.has(n)) out.push(map.get(n));
+      }
+      return out;
+    }
+
+    function buildFolderShareUrl(folderId) {
+      try {
+        const u = new URL(window.location.href);
+        u.search = "";
+        u.searchParams.set("folder", folderId);
+        return u.toString();
+      } catch (_) {
+        return "./?folder=" + encodeURIComponent(folderId);
+      }
+    }
+
+    function isViewingOwnFolder() {
+      return (
+        !!viewingFolderId &&
+        !!folderDocSnap &&
+        !!authUser &&
+        !authUser.isAnonymous &&
+        authUser.uid === folderDocSnap.ownerUid
+      );
+    }
+
+    function detachFolderDocListener() {
+      if (folderDocUnsub) {
+        try {
+          folderDocUnsub();
+        } catch (_) {}
+        folderDocUnsub = null;
+      }
+    }
+
+    function detachMyFoldersListener() {
+      if (myFoldersQueryUnsub) {
+        try {
+          myFoldersQueryUnsub();
+        } catch (_) {}
+        myFoldersQueryUnsub = null;
+      }
+    }
+
+    function attachFolderDocListener() {
+      detachFolderDocListener();
+      if (!viewingFolderId) {
+        folderViewState = "idle";
+        folderDocSnap = null;
+        return;
+      }
+      if (!firebaseDb) {
+        folderViewState = viewingFolderId ? "missing" : "idle";
+        folderDocSnap = null;
+        updateSavedViewUI();
+        return;
+      }
+      folderViewState = "loading";
+      folderDocSnap = null;
+      const ref = firebaseDb.collection("savedFolders").doc(viewingFolderId);
+      folderDocUnsub = ref.onSnapshot(
+        (snap) => {
+          if (!snap.exists) {
+            folderViewState = "missing";
+            folderDocSnap = null;
+          } else {
+            folderViewState = "ready";
+            folderDocSnap = snap.data() || {};
+          }
+          updateSavedViewUI();
+          if (pageContext) scheduleRenderFromPageContext();
+        },
+        (err) => {
+          console.warn("[proxy-list] Folder snapshot failed", err);
+          folderViewState = isFirestorePermissionDenied(err) ? "denied" : "missing";
+          folderDocSnap = null;
+          updateSavedViewUI();
+          if (pageContext) scheduleRenderFromPageContext();
+        }
+      );
+    }
+
+    function startFolderAndMyFoldersListeners() {
+      if (viewingFolderId) attachFolderDocListener();
+      else detachFolderDocListener();
+      detachMyFoldersListener();
+      if (!savedLinksViewOnly || viewingFolderId || !isSignedInUser() || !firebaseDb) {
+        myFoldersList = [];
+        renderFolderChromeIntoHost();
+        return;
+      }
+      void ensureAuthForFirestore().then((user) => {
+        if (!user || !savedLinksViewOnly || viewingFolderId || !firebaseDb) return;
+        const q = firebaseDb.collection("savedFolders").where("ownerUid", "==", user.uid);
+        myFoldersQueryUnsub = q.onSnapshot(
+          (snap) => {
+            myFoldersList = snap.docs.map((d) => ({ id: d.id, data: d.data() || {} }));
+            myFoldersList.sort((a, b) => tsMs(b.data.updated) - tsMs(a.data.updated));
+            renderFolderChromeIntoHost();
+          },
+          (err) => {
+            console.warn("[proxy-list] Folder list query failed", err);
+            myFoldersList = [];
+            renderFolderChromeIntoHost();
+          }
+        );
+      });
+    }
+
+    async function persistFolderItemsUpdate(newItems) {
+      if (!viewingFolderId || !isViewingOwnFolder() || !firebaseDb) return;
+      const user = await ensureAuthForFirestore();
+      if (!user) return;
+      const norms = sanitizeFolderItemsToTrustedOrder(newItems);
+      await firebaseDb
+        .collection("savedFolders")
+        .doc(viewingFolderId)
+        .update({
+          items: norms,
+          updated: firebase.firestore.FieldValue.serverTimestamp(),
+        });
+    }
+
+    async function folderRowMove(idx, dir) {
+      const arr = folderItemsOrderedRaw();
+      const j = idx + (dir === "up" ? -1 : 1);
+      if (idx < 0 || idx >= arr.length || j < 0 || j >= arr.length) return;
+      const t = arr[idx];
+      arr[idx] = arr[j];
+      arr[j] = t;
+      await persistFolderItemsUpdate(arr);
+    }
+
+    async function folderRowRemove(idx) {
+      const arr = folderItemsOrderedRaw();
+      if (idx < 0 || idx >= arr.length) return;
+      arr.splice(idx, 1);
+      await persistFolderItemsUpdate(arr);
+    }
+
+    async function copyFolderShareLink() {
+      if (!viewingFolderId) return;
+      const url = buildFolderShareUrl(viewingFolderId);
+      const ok = await copyPlainTextToClipboard(url);
+      if (!ok) window.prompt("Copy this link", url);
+    }
+
+    async function createUserFolder() {
+      const user = await ensureAuthForFirestore();
+      if (!user || !firebaseDb) {
+        window.alert("Sign in to create folders.");
+        return;
+      }
+      const title = window.prompt("Folder name", "My folder");
+      if (title == null) return;
+      const t = String(title).trim().slice(0, 200);
+      if (!t) return;
+      try {
+        const ref = await firebaseDb.collection("savedFolders").add({
+          ownerUid: user.uid,
+          ownerLabel: folderOwnerLabelForFirestore(user) || "Member",
+          title: t,
+          isPublic: false,
+          items: [],
+          created: firebase.firestore.FieldValue.serverTimestamp(),
+          updated: firebase.firestore.FieldValue.serverTimestamp(),
+        });
+        window.location.href = buildFolderShareUrl(ref.id);
+      } catch (err) {
+        console.warn("[proxy-list] Create folder failed", err);
+        window.alert("Could not create folder. Deploy updated Firestore rules if this persists.");
+      }
+    }
+
+    async function saveFolderMetaFromForm() {
+      if (!viewingFolderId || !isViewingOwnFolder() || !firebaseDb) return;
+      const titleEl = $("folderMetaTitle");
+      const pubEl = $("folderMetaPublic");
+      const title = titleEl ? String(titleEl.value || "").trim().slice(0, 200) : "";
+      if (!title) {
+        window.alert("Title is required.");
+        return;
+      }
+      const isPublic = !!(pubEl && pubEl.checked);
+      const user = await ensureAuthForFirestore();
+      if (!user) return;
+      try {
+        await firebaseDb.collection("savedFolders").doc(viewingFolderId).update({
+          title,
+          isPublic,
+          ownerLabel: folderOwnerLabelForDirectory(),
+          updated: firebase.firestore.FieldValue.serverTimestamp(),
+        });
+      } catch (err) {
+        console.warn("[proxy-list] Save folder meta failed", err);
+        window.alert("Could not save folder settings.");
+      }
+    }
+
+    async function importStarredIntoFolder() {
+      if (!viewingFolderId || !isViewingOwnFolder() || !firebaseDb) return;
+      const trusted = trustedListRowsByNorm();
+      const merged = folderItemsOrderedRaw();
+      const have = new Set(merged);
+      let added = 0;
+      for (const n of savedLinks) {
+        if (!trusted.has(n)) continue;
+        if (!have.has(n)) {
+          have.add(n);
+          merged.push(n);
+          added++;
+        }
+      }
+      if (!added) {
+        window.alert("No starred links from the list to import, or the folder already has them.");
+        return;
+      }
+      await persistFolderItemsUpdate(merged);
+    }
+
+    async function deleteFolderDoc() {
+      if (!viewingFolderId || !isViewingOwnFolder() || !firebaseDb) return;
+      if (!window.confirm("Delete this folder permanently?")) return;
+      try {
+        await firebaseDb.collection("savedFolders").doc(viewingFolderId).delete();
+        window.location.href = new URL("./?saved=1", window.location.href).href;
+      } catch (err) {
+        console.warn("[proxy-list] Delete folder failed", err);
+        window.alert("Could not delete folder.");
+      }
+    }
+
+    function folderTrustedPickerRowHtml(r) {
+      const link = String(r.link || "");
+      return (
+        '<div class="folder-trusted-row">' +
+        '<span class="folder-trusted-row-main">' +
+        escapeHtml(String(r.provider || "")) +
+        '<span class="folder-trusted-row-url">' +
+        escapeHtml(link) +
+        "</span></span>" +
+        '<button type="button" class="btn" data-folder-add-link="' +
+        escapeAttr(link) +
+        '">Add</button></div>'
+      );
+    }
+
+    function appendFolderTrustedPickerRows(inner) {
+      if (!inner) return;
+      const chunk = FOLDER_TRUSTED_PICKER_CHUNK;
+      const start = folderTrustedPickerOffset;
+      const end = Math.min(start + chunk, folderTrustedPickerMatches.length);
+      if (start >= end) return;
+      const slice = folderTrustedPickerMatches.slice(start, end);
+      folderTrustedPickerOffset = end;
+      inner.insertAdjacentHTML("beforeend", slice.map(folderTrustedPickerRowHtml).join(""));
+    }
+
+    function updateFolderTrustedPickerMeta() {
+      const meta = $("folderTrustedPickerMeta");
+      if (!meta) return;
+      const total = folderTrustedPickerMatches.length;
+      const shown = Math.min(folderTrustedPickerOffset, total);
+      if (!total) {
+        meta.textContent = "";
+        return;
+      }
+      const rest = total - shown;
+      meta.textContent =
+        shown +
+        " of " +
+        total +
+        " shown" +
+        (rest > 0 ? " · scroll for more" : " · end of list");
+    }
+
+    function maybeLoadMoreFolderTrustedRows(scroller, inner) {
+      if (!scroller || !inner) return;
+      let guard = 0;
+      while (
+        guard++ < 48 &&
+        folderTrustedPickerOffset < folderTrustedPickerMatches.length &&
+        scroller.scrollTop + scroller.clientHeight >= scroller.scrollHeight - 72
+      ) {
+        appendFolderTrustedPickerRows(inner);
+      }
+      updateFolderTrustedPickerMeta();
+    }
+
+    function ensureFolderTrustedPickerFilledViewport(scroller, inner) {
+      if (!scroller || !inner) return;
+      let attempts = 0;
+      function tick() {
+        if (folderTrustedPickerOffset >= folderTrustedPickerMatches.length) {
+          updateFolderTrustedPickerMeta();
+          return;
+        }
+        if (inner.scrollHeight > scroller.clientHeight + 8 || attempts++ > 240) {
+          updateFolderTrustedPickerMeta();
+          return;
+        }
+        appendFolderTrustedPickerRows(inner);
+        requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }
+
+    function refreshFolderTrustedSearchUI(query) {
+      const wrap = $("folderTrustedResults");
+      if (!wrap) return;
+      folderTrustedSearchLastQuery = String(query != null ? query : "");
+      const q = folderTrustedSearchLastQuery.trim().toLowerCase();
+      const inFolder = new Set(folderItemsOrderedRaw());
+      const rows = pageContext && Array.isArray(pageContext.links) ? pageContext.links : [];
+      if (!rows.length) {
+        folderTrustedPickerMatches = [];
+        folderTrustedPickerOffset = 0;
+        setHtml(
+          wrap,
+          "<p class=\"sub\" style=\"padding:0.45rem 0.55rem\">The sorted link list is not loaded yet — refresh the page.</p>"
+        );
+        return;
+      }
+      const matches = [];
+      if (!q) {
+        for (const r of rows) {
+          const n = normalizeUrlKeyForClicks(r.link);
+          if (n && !inFolder.has(n)) matches.push(r);
+        }
+      } else {
+        for (const r of rows) {
+          const n = normalizeUrlKeyForClicks(r.link);
+          if (!n || inFolder.has(n)) continue;
+          if (haystack(r).includes(q)) matches.push(r);
+        }
+      }
+      if (!matches.length) {
+        folderTrustedPickerMatches = [];
+        folderTrustedPickerOffset = 0;
+        setHtml(
+          wrap,
+          "<p class=\"sub\" style=\"padding:0.45rem 0.55rem\">" +
+            (q
+              ? "No list rows match that search (or every match is already in this folder)."
+              : "No more rows to suggest, or every list row is already in this folder.") +
+            "</p>"
+        );
+        return;
+      }
+      folderTrustedPickerMatches = matches;
+      folderTrustedPickerOffset = 0;
+      setHtml(
+        wrap,
+        '<div id="folderTrustedPickerMeta" class="folder-trusted-results-meta sub"></div>' +
+          '<div id="folderTrustedRowsScroller" class="folder-trusted-results-scroll">' +
+          '<div id="folderTrustedRowsInner"></div></div>'
+      );
+      const inner = $("folderTrustedRowsInner");
+      const scroller = $("folderTrustedRowsScroller");
+      appendFolderTrustedPickerRows(inner);
+      updateFolderTrustedPickerMeta();
+      ensureFolderTrustedPickerFilledViewport(scroller, inner);
+      if (scroller) {
+        scroller.onscroll = () => {
+          maybeLoadMoreFolderTrustedRows(scroller, inner);
+        };
+      }
+    }
+
+    function scheduleFolderTrustedSearchRefresh() {
+      if (folderTrustedSearchTimer) clearTimeout(folderTrustedSearchTimer);
+      folderTrustedSearchTimer = setTimeout(() => {
+        folderTrustedSearchTimer = null;
+        const el = $("folderTrustedSearch");
+        refreshFolderTrustedSearchUI(el ? el.value : folderTrustedSearchLastQuery);
+      }, 140);
+    }
+
+    async function addTrustedLinkUrlToFolder(url) {
+      if (!viewingFolderId || !isViewingOwnFolder() || !firebaseDb) return;
+      const trusted = trustedListRowsByNorm();
+      const n = normalizeUrlKeyForClicks(url);
+      if (!n || !trusted.has(n)) {
+        window.alert("Only links that appear on this site’s sorted list can be added.");
+        return;
+      }
+      const merged = folderItemsOrderedRaw();
+      if (merged.includes(n)) {
+        window.alert("That link is already in this folder.");
+        return;
+      }
+      merged.push(n);
+      await persistFolderItemsUpdate(merged);
+      const sIn = $("folderTrustedSearch");
+      refreshFolderTrustedSearchUI(sIn ? sIn.value : folderTrustedSearchLastQuery);
+    }
+
+    function wireFolderChromeButtons() {
+      const copyBtn = $("folderCopyShareBtn");
+      if (copyBtn) copyBtn.onclick = () => void copyFolderShareLink();
+      const createBtn = $("folderCreateNewBtn");
+      if (createBtn) createBtn.onclick = () => void createUserFolder();
+      const saveMeta = $("folderSaveMetaBtn");
+      if (saveMeta) saveMeta.onclick = () => void saveFolderMetaFromForm();
+      const delBtn = $("folderDeleteBtn");
+      if (delBtn) delBtn.onclick = () => void deleteFolderDoc();
+      const searchIn = $("folderTrustedSearch");
+      if (searchIn) {
+        searchIn.value = folderTrustedSearchLastQuery;
+        searchIn.oninput = () => {
+          folderTrustedSearchLastQuery = String(searchIn.value || "");
+          scheduleFolderTrustedSearchRefresh();
+        };
+        refreshFolderTrustedSearchUI(folderTrustedSearchLastQuery);
+      }
+      const impBtn = $("folderImportSavedBtn");
+      if (impBtn) impBtn.onclick = () => void importStarredIntoFolder();
+    }
+
+    function renderFolderChromeIntoHost() {
+      const host = $("folderChromeHost");
+      if (!host) return;
+      let show = false;
+      let html = "";
+      if (viewingFolderId) {
+        show = true;
+        if (folderViewState === "loading") {
+          html = "<h2>Folder</h2><p class=\"sub\">Loading…</p>";
+        } else if (folderViewState === "denied") {
+          html =
+            "<h2>Private folder</h2><p class=\"sub\">You do not have access. Sign in as the owner, or ask them to make the folder public.</p>";
+        } else if (folderViewState === "missing") {
+          html = "<h2>Not found</h2><p class=\"sub\">This folder ID does not exist.</p>";
+        } else if (folderViewState === "ready" && folderDocSnap) {
+          const shareUrl = buildFolderShareUrl(viewingFolderId);
+          const owner = isViewingOwnFolder();
+          if (owner) {
+            html =
+              "<h2>Manage folder</h2>" +
+              '<div class="folder-chrome-row"><label>Title <input class="folder-meta-input" id="folderMetaTitle" type="text" maxlength="200" value="' +
+              escapeAttr(String(folderDocSnap.title || "")) +
+              '" /></label></div>' +
+              '<div class="folder-chrome-row"><label><input type="checkbox" id="folderMetaPublic" ' +
+              (folderDocSnap.isPublic === true ? "checked" : "") +
+              " /> Public (anyone with the link can view; updates sync live)</label></div>" +
+              '<div class="folder-chrome-row"><span class="sub">Share</span> <code style="font-size:0.78rem;word-break:break-all">' +
+              escapeHtml(shareUrl) +
+              '</code> <button type="button" class="btn" id="folderCopyShareBtn">Copy link</button></div>' +
+              '<div class="folder-chrome-row"><button type="button" class="btn btn-primary" id="folderSaveMetaBtn">Save title &amp; visibility</button> ' +
+              '<button type="button" class="btn" id="folderDeleteBtn">Delete folder</button></div>' +
+              '<div class="folder-chrome-row" id="folderRatingRow"><span class="sub">Community rating</span> <span id="folderRatingMount"></span></div>' +
+              "<h2 style=\"margin-top:0.85rem;font-size:0.95rem\">Add links</h2>" +
+              '<p class="sub">Only rows from this site’s sorted list can be added. Search by URL, provider, or contributor — anything not on the list is rejected.</p>' +
+              '<label class="sub" for="folderTrustedSearch">Search the list</label>' +
+              '<input type="search" class="folder-meta-input" id="folderTrustedSearch" placeholder="Provider, URL, contributor…" autocomplete="off" style="margin-top:0.25rem;display:block;width:100%;max-width:40rem" />' +
+              '<div class="folder-trusted-results" id="folderTrustedResults" role="listbox" aria-label="Matching list links"><!-- rows injected by script --></div>' +
+              '<div class="folder-chrome-row"><button type="button" class="btn" id="folderImportSavedBtn">Import starred links (list only)</button></div>';
+          } else {
+            html =
+              "<h2>" +
+              escapeHtml(String(folderDocSnap.title || "Folder")) +
+              "</h2>" +
+              '<p class="sub">Read-only view' +
+              (folderDocSnap.isPublic === true ? " · public" : "") +
+              ". Live updates from the owner.</p>" +
+              '<div class="folder-chrome-row" id="folderRatingRow"><span class="sub">Community rating</span> <span id="folderRatingMount"></span></div>' +
+              '<div class="folder-chrome-row"><code style="font-size:0.78rem;word-break:break-all">' +
+              escapeHtml(shareUrl) +
+              "</code> " +
+              '<button type="button" class="btn" id="folderCopyShareBtn">Copy link</button></div>';
+          }
+        }
+      } else if (savedLinksViewOnly && isSignedInUser()) {
+        show = true;
+        html =
+          "<h2>Your folders</h2><p class=\"sub\">Create folders, add links, and share with <code>?folder=…</code>. Edits sync live for everyone with access.</p>";
+        html +=
+          '<div class="folder-chrome-row"><button type="button" class="btn btn-primary" id="folderCreateNewBtn">New folder</button> <a class="btn" href="./">Full list</a></div>';
+        if (myFoldersList.length) {
+          html += "<ul class=\"folder-my-list\">";
+          for (const row of myFoldersList) {
+            const t = escapeHtml(String(row.data.title || "(untitled)"));
+            const n = (row.data.items && row.data.items.length) || 0;
+            html +=
+              "<li><a href=\"./?folder=" +
+              escapeAttr(row.id) +
+              '">' +
+              t +
+              "</a> <span class=\"sub\">(" +
+              n +
+              ")</span></li>";
+          }
+          html += "</ul>";
+        } else {
+          html += "<p class=\"sub\">No folders yet.</p>";
+        }
+      }
+      host.hidden = !show;
+      setHtml(host, html);
+      if (!show) return;
+      wireFolderChromeButtons();
+      if (viewingFolderId && folderViewState === "ready" && firebaseDb) {
+        void refreshFolderRatingMount(viewingFolderId);
+      }
+    }
+
     function filterRows(rows, opts) {
       const exclude = (opts && opts.excludeGroup) || "";
       const q = $("q").value.trim().toLowerCase();
@@ -1717,6 +4208,16 @@
         for (const group of ["providerTags", "categoryTags", "protocolTags", "capTags"]) {
           if (group === exclude) continue;
           if (!rowMatchesGroup(row, group, selections[group], mode)) return false;
+        }
+        const folderNormSet = opts && opts.folderNormSet;
+        if (folderNormSet) {
+          const norm = normalizeUrlKeyForClicks(row.link);
+          if (!norm || !folderNormSet.has(norm)) return false;
+        }
+        if (savedLinksViewOnly) {
+          if (!isSignedInUser()) return false;
+          const norm = normalizeUrlKeyForClicks(row.link);
+          if (!norm || !savedLinks.has(norm)) return false;
         }
         return true;
       });
@@ -1784,7 +4285,7 @@
     function linkTableTheadRowHtml() {
       return (
         "<tr>" +
-        ["Provider", "Link", "Clicks", "Category", "Capabilities", "Protocols", "Contributor"]
+        ["Provider", "Link", "Clicks", "Rating", "Category", "Capabilities", "Protocols", "Contributor"]
           .map((h) => "<th>" + h + "</th>")
           .join("") +
         "</tr>"
@@ -1797,7 +4298,7 @@
       let out = "";
       for (let r = 0; r < n; r++) {
         out += '<tr class="table-row-skeleton" aria-hidden="true">';
-        for (let c = 0; c < 7; c++) {
+        for (let c = 0; c < 8; c++) {
           out += '<td><span class="table-sk-line"></span></td>';
         }
         out += "</tr>";
@@ -1810,16 +4311,46 @@
       tbody.querySelectorAll("tr.table-row-skeleton").forEach((tr) => tr.remove());
     }
 
+    function folderRowOptsAt(idx) {
+      if (viewingFolderId && folderViewState === "ready" && isViewingOwnFolder()) {
+        return { folderOwnerManage: true, folderRowIndex: idx };
+      }
+      return null;
+    }
+
     /** @param fixedClickCount if set, skips async click refresh for this row */
-    function buildRowTrHtml(r, fixedClickCount) {
+    function buildRowTrHtml(r, fixedClickCount, rowOpts) {
+      const fro = rowOpts || {};
+      const showFolderTools =
+        viewingFolderId &&
+        folderViewState === "ready" &&
+        fro.folderOwnerManage === true &&
+        typeof fro.folderRowIndex === "number";
+      const folderToolsHtml = showFolderTools
+        ? '<span class="folder-row-tools">' +
+          '<button type="button" class="btn" data-folder-tool="up" data-folder-idx="' +
+          fro.folderRowIndex +
+          '" title="Move up" aria-label="Move up">↑</button>' +
+          '<button type="button" class="btn" data-folder-tool="down" data-folder-idx="' +
+          fro.folderRowIndex +
+          '" title="Move down" aria-label="Move down">↓</button>' +
+          '<button type="button" class="btn" data-folder-tool="remove" data-folder-idx="' +
+          fro.folderRowIndex +
+          '" title="Remove from folder" aria-label="Remove from folder">×</button>' +
+          "</span>"
+        : "";
       const clickCell =
         fixedClickCount !== undefined
           ? '<td class="click-cell">' + escapeHtml(String(fixedClickCount)) + "</td>"
           : '<td class="click-cell" data-click-url="' + escapeAttr(r.link) + '">…</td>';
+      const ratingCell = ratingCellTdHtml(r.link);
       return (
         "<tr><td>" +
         escapeHtml(r.provider) +
-        '</td><td><a href="' +
+        '</td><td>' +
+        buildSaveLinkButtonHtml(r.link) +
+        folderToolsHtml +
+        '<a href="' +
         escapeAttr(r.link) +
         '" rel="noopener noreferrer" target="_blank" class="js-link-summary" data-link="' +
         escapeAttr(r.link) +
@@ -1827,6 +4358,7 @@
         escapeHtml(r.link) +
         "</a></td>" +
         clickCell +
+        ratingCell +
         "<td>" +
         escapeHtml(canonicalCategory(r.category)) +
         "</td><td>" +
@@ -1839,7 +4371,7 @@
       );
     }
 
-    async function refreshClickCellsForSlice(rowsSlice, startIndex) {
+    async function refreshClickCellsForSlice(rowsSlice, startIndex, options) {
       if (!rowsSlice || !rowsSlice.length) return;
       const tbody = $("linksTableBody");
       if (!tbody || !tbody.isConnected) return;
@@ -1855,7 +4387,8 @@
         targets.push({ td, link });
       }
       if (!targets.length) return;
-      const map = await fetchClickCounts(targets.map((t) => t.link));
+      const onClickProgress = options && options.onClickProgress;
+      const map = await fetchClickCounts(targets.map((t) => t.link), onClickProgress);
       if (!tbody.isConnected) return;
       for (const t of targets) {
         if (!t.td || !t.td.isConnected) continue;
@@ -1873,11 +4406,17 @@
         const startIndex = st.rendered;
         const next = Math.min(st.rendered + TABLE_CHUNK_SIZE, st.filtered.length);
         const slice = st.filtered.slice(st.rendered, next);
+        await prefetchLinkRatingsForNorms(
+          slice.map((r) => normalizeUrlKeyForClicks(r && r.link)),
+          { skipLinkSaveCounts: listSortMode !== LINK_SORT_SAVED_DESC }
+        );
         insertAdjacentHtmlSafe(tbody, "beforeend", buildSkeletonChunkHtml(slice.length));
         await yieldForSkeletonPaint(tbody);
         for (let off = 0; off < slice.length; off += TABLE_ROW_APPEND_BATCH) {
           const part = slice.slice(off, off + TABLE_ROW_APPEND_BATCH);
-          const html = part.map(buildRowTrHtml).join("");
+          const html = part
+            .map((r, k) => buildRowTrHtml(r, undefined, folderRowOptsAt(startIndex + off + k)))
+            .join("");
           insertAdjacentHtmlSafe(tbody, "beforeend", html);
           if (off + TABLE_ROW_APPEND_BATCH < slice.length) {
             await waitNextPaint();
@@ -1938,11 +4477,47 @@
       tableInfiniteObserver.observe(sentinel);
     }
 
-    function setContentLoading(on) {
+    function setContentLoadingProgress(percent, message) {
+      const requested = Math.max(0, Math.min(100, Math.round(Number(percent) || 0)));
+      const overlay = $("contentLoadingOverlay");
+      const pct =
+        overlay && overlay.classList.contains("open")
+          ? Math.max(contentLoadingHighWater, requested)
+          : requested;
+      contentLoadingHighWater = pct;
+      const pctEl = $("contentLoadingPct");
+      if (pctEl) {
+        pctEl.textContent = pct + "%";
+        pctEl.setAttribute("aria-valuenow", String(pct));
+      }
+      if (message !== undefined) {
+        const loadMsg = overlay && overlay.querySelector(".content-loading-msg");
+        if (loadMsg) loadMsg.textContent = message;
+      }
+    }
+
+    function reportContentLoadingProgress(percent, message) {
+      const el = $("contentLoadingOverlay");
+      if (!el || !el.classList.contains("open")) return;
+      setContentLoadingProgress(percent, message);
+    }
+
+    function setContentLoading(on, options) {
       const el = $("contentLoadingOverlay");
       if (!el) return;
       el.classList.toggle("open", on);
       el.setAttribute("aria-hidden", on ? "false" : "true");
+      if (on) {
+        contentLoadingHighWater =
+          options && options.progress != null ? Math.max(0, Math.min(100, options.progress)) : 0;
+        setContentLoadingProgress(
+          contentLoadingHighWater,
+          options && options.message !== undefined ? options.message : "Getting data..."
+        );
+      } else {
+        contentLoadingHighWater = 0;
+        setContentLoadingProgress(0);
+      }
     }
 
     function waitNextPaint() {
@@ -1960,19 +4535,54 @@
       await new Promise((resolve) => setTimeout(resolve, 0));
     }
 
+    async function finishContentLoading() {
+      reportContentLoadingProgress(100, "Done");
+      await waitNextPaint();
+      setContentLoading(false);
+    }
+
     async function renderAfterHeavyFilter(rows, meta, linkCheck) {
-      setContentLoading(true);
+      setContentLoading(true, { progress: 0, message: "Updating list…" });
       await waitNextPaint();
       try {
         await render(rows, meta, linkCheck);
       } finally {
-        setContentLoading(false);
+        await finishContentLoading();
       }
     }
 
     async function render(rows, meta, linkCheck) {
+      currentListVersionStamp = versionStamp(meta) || "";
       disconnectTableInfinite();
-      const filtered = filterRows(rows, {});
+      reportContentLoadingProgress(12, "Filtering links…");
+      let filtered;
+      if (viewingFolderId) {
+        if (folderViewState === "ready" && folderDocSnap) {
+          const rawItems = Array.isArray(folderDocSnap.items) ? folderDocSnap.items : [];
+          const normsOrdered = trustedListRowsByNorm().size
+            ? sanitizeFolderItemsToTrustedOrder(rawItems.slice())
+            : normalizeFolderItemsList(rawItems.slice());
+          const folderSet = new Set(normsOrdered);
+          filtered = orderRowsByFolderNorms(filterRows(rows, { folderNormSet: folderSet }), normsOrdered);
+        } else {
+          filtered = [];
+        }
+      } else {
+        filtered = filterRows(rows, {});
+      }
+      const allLinkNorms = filtered.map((r) => normalizeUrlKeyForClicks(r && r.link));
+      if (linkSortNeedsFullFirestoreForLinks()) {
+        reportContentLoadingProgress(22, "Loading link ratings…");
+        await prefetchLinkRatingsForNorms(allLinkNorms, {
+          skipLinkSaveCounts: listSortMode !== LINK_SORT_SAVED_DESC,
+        });
+      } else {
+        reportContentLoadingProgress(22, "Preparing list…");
+        const quickCount = Math.min(TABLE_CHUNK_SIZE, filtered.length);
+        const quickNorms = filtered.slice(0, quickCount).map((r) => normalizeUrlKeyForClicks(r && r.link));
+        await prefetchLinkRatingsForNorms(quickNorms, { skipLinkSaveCounts: true });
+      }
+      filtered = sortFilteredRowsByListSort(filtered);
       updateFilterCounts(rows);
 
       const checkedAt = linkCheck && linkCheck.checked_at_display ? linkCheck.checked_at_display : "—";
@@ -1982,20 +4592,54 @@
       const unsortedCount = Number.isFinite(meta && meta.unsorted_total) ? meta.unsorted_total : 0;
       const combinedTotal = rows.length + unsortedCount;
 
+      let statsPrimary = "";
+      if (viewingFolderId) {
+        if (folderViewState === "loading") {
+          statsPrimary = '<p class="stat-line">Loading folder…</p>';
+        } else if (folderViewState === "denied") {
+          statsPrimary = '<p class="stat-line">You do not have access to this private folder.</p>';
+        } else if (folderViewState === "missing") {
+          statsPrimary = '<p class="stat-line">This folder does not exist (or was deleted).</p>';
+        } else {
+          statsPrimary =
+            '<p class="stat-line">Showing <strong>' +
+            filtered.length +
+            "</strong> link" +
+            (filtered.length === 1 ? "" : "s") +
+            " in this folder.</p>";
+        }
+      } else if (savedLinksViewOnly) {
+        statsPrimary =
+          '<p class="stat-line">Showing <strong>' +
+          filtered.length +
+          "</strong> saved link" +
+          (filtered.length === 1 ? "" : "s") +
+          (isSignedInUser() ? "" : " — sign in to load your saved links.") +
+          ".</p>";
+      } else {
+        statsPrimary =
+          '<p class="stat-line">Showing <strong>' +
+          filtered.length +
+          "</strong> of <strong>" +
+          rows.length +
+          "</strong> sorted links.</p>";
+      }
+
+      const statsCombined =
+        viewingFolderId || savedLinksViewOnly
+          ? ""
+          : '<p class="stat-line">Combined total: <strong>' +
+            rows.length +
+            "</strong> sorted + <strong>" +
+            unsortedCount +
+            "</strong> unsorted = <strong>" +
+            combinedTotal +
+            "</strong>.</p>";
+
       setHtml(
         $("stats"),
-        '<p class="stat-line">Showing <strong>' +
-        filtered.length +
-        "</strong> of <strong>" +
-        rows.length +
-        "</strong> sorted links.</p>" +
-        '<p class="stat-line">Combined total: <strong>' +
-        rows.length +
-        "</strong> sorted + <strong>" +
-        unsortedCount +
-        "</strong> unsorted = <strong>" +
-        combinedTotal +
-        "</strong>.</p>" +
+        statsPrimary +
+        statsCombined +
         '<p class="stat-line">Since last link check: <strong>+' +
         added +
         '</strong> added, <strong class="removed">-' +
@@ -2018,12 +4662,14 @@
 
       if (!filtered.length) {
         setHtml($("tableWrap"), emptyStateNoResultsHtml());
+        reportContentLoadingProgress(100, "Done");
         return;
       }
 
+      reportContentLoadingProgress(45, "Building table…");
       const initial = Math.min(TABLE_CHUNK_SIZE, filtered.length);
       const firstChunk = filtered.slice(0, initial);
-      const firstHtml = firstChunk.map((r) => buildRowTrHtml(r)).join("");
+      const firstHtml = firstChunk.map((r, i) => buildRowTrHtml(r, undefined, folderRowOptsAt(i))).join("");
       const theadRow = linkTableTheadRowHtml();
       const sentinelHtml =
         filtered.length > TABLE_CHUNK_SIZE
@@ -2041,7 +4687,15 @@
           "</div>"
       );
 
-      await refreshClickCellsForSlice(firstChunk, 0);
+      reportContentLoadingProgress(90, "Loading open counts…");
+      await refreshClickCellsForSlice(firstChunk, 0, {
+        onClickProgress(done, total) {
+          if (!total) return;
+          const pct =
+            done >= total ? 99 : 90 + Math.min(9, Math.round((done / total) * 9));
+          reportContentLoadingProgress(pct, "Loading open counts…");
+        },
+      });
       setupTableInfiniteScroll(filtered, initial);
     }
 
@@ -2088,7 +4742,7 @@
       const hideBtn = $("hideBlockedBtn");
       const hideUncheckedBtn = $("hideUncheckedBtn");
       const selected = selectedGnMathFilter ? cleanSummaryText(selectedGnMathFilter) : "Any / Not selected";
-      if (label) label.textContent = "Selected gn-math filter: " + selected;
+      if (label) label.textContent = "Selected web filter: " + selected;
       if (btn) {
         if (selectedGnMathFilter) btn.classList.add("btn-active");
         else btn.classList.remove("btn-active");
@@ -2341,10 +4995,13 @@
       const prevLoadMsg = loadMsg ? loadMsg.textContent : "";
       if (loadMsg) loadMsg.textContent = "Loading summary…";
       try {
-        setContentLoading(true);
+        setContentLoading(true, { progress: 0, message: "Loading summary…" });
         await waitNextPaint();
+        reportContentLoadingProgress(20, "Recording visit…");
         await recordLinkClick(link);
+        reportContentLoadingProgress(55, "Loading filter data…");
         await ensureLinkLensLoaded();
+        reportContentLoadingProgress(85, "Building summary…");
         const entry = summaryEntryFor(link);
         const body = $("summaryBody");
         setSummaryFooterLink(link);
@@ -2426,6 +5083,7 @@
         $("summaryTitle").textContent = "Link summary";
         $("summaryBackdrop").classList.add("open");
         $("summaryBackdrop").setAttribute("aria-hidden", "false");
+        reportContentLoadingProgress(100, "Done");
       } finally {
         setContentLoading(false);
         if (loadMsg) loadMsg.textContent = prevLoadMsg;
@@ -2881,6 +5539,75 @@
       "https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/common-actions/question-mark-sqok8vg2o1dd9g07du59d.png/question-mark-fh239k9aqe5ayqfowratid.png?_a=DATAiZAAZAA0";
 
     function emptyStateNoResultsInnerHtml() {
+      if (viewingFolderId) {
+        if (folderViewState === "loading") {
+          return (
+            '<img class="empty-state-icon" src="' +
+            escapeAttr(EMPTY_STATE_ICON_URL) +
+            '" width="120" height="120" alt="" decoding="async" />' +
+            '<h2 class="empty-state-title">Loading folder</h2>' +
+            '<p class="empty-state-desc">Fetching the latest list from Firestore…</p>'
+          );
+        }
+        if (folderViewState === "denied") {
+          return (
+            '<img class="empty-state-icon" src="' +
+            escapeAttr(EMPTY_STATE_ICON_URL) +
+            '" width="120" height="120" alt="" decoding="async" />' +
+            '<h2 class="empty-state-title">Private folder</h2>' +
+            '<p class="empty-state-desc">Only the owner account can open this folder. Ask them to set it public, or sign in as them.</p>' +
+            '<a class="btn btn-primary" href="./login/">Sign in</a> <a class="btn" href="./">All links</a>'
+          );
+        }
+        if (folderViewState === "missing") {
+          return (
+            '<img class="empty-state-icon" src="' +
+            escapeAttr(EMPTY_STATE_ICON_URL) +
+            '" width="120" height="120" alt="" decoding="async" />' +
+            '<h2 class="empty-state-title">Folder not found</h2>' +
+            '<p class="empty-state-desc">This link may be wrong or the folder was deleted.</p>' +
+            '<a class="btn btn-primary" href="./">Browse the list</a>'
+          );
+        }
+        if (folderViewState === "ready" && isViewingOwnFolder()) {
+          return (
+            '<img class="empty-state-icon" src="' +
+            escapeAttr(EMPTY_STATE_ICON_URL) +
+            '" width="120" height="120" alt="" decoding="async" />' +
+            '<h2 class="empty-state-title">Empty folder</h2>' +
+            '<p class="empty-state-desc">Search the curated list in the panel above, import starred links, or star links on the full list then import.</p>' +
+            '<a class="btn btn-primary" href="./">Browse the list</a>'
+          );
+        }
+        return (
+          '<img class="empty-state-icon" src="' +
+          escapeAttr(EMPTY_STATE_ICON_URL) +
+          '" width="120" height="120" alt="" decoding="async" />' +
+          '<h2 class="empty-state-title">No matching rows</h2>' +
+          '<p class="empty-state-desc">Nothing in this folder appears in the sorted list with your current filters — try resetting filters.</p>' +
+          '<button type="button" class="btn btn-primary empty-state-reset-btn">Reset filters</button>'
+        );
+      }
+      if (savedLinksViewOnly) {
+        if (!isSignedInUser()) {
+          return (
+            '<img class="empty-state-icon" src="' +
+            escapeAttr(EMPTY_STATE_ICON_URL) +
+            '" width="120" height="120" alt="" decoding="async" />' +
+            '<h2 class="empty-state-title">Sign in to view saved links</h2>' +
+            '<p class="empty-state-desc">Saved links are tied to your account.</p>' +
+            '<a class="btn btn-primary" href="./login/">Sign in</a>'
+          );
+        }
+        return (
+          '<img class="empty-state-icon" src="' +
+          escapeAttr(EMPTY_STATE_ICON_URL) +
+          '" width="120" height="120" alt="" decoding="async" />' +
+          '<h2 class="empty-state-title">No saved links yet</h2>' +
+          '<p class="empty-state-desc">Star links on the full list to add them here.</p>' +
+          '<a class="btn btn-primary" href="./">Browse the list</a>'
+        );
+      }
       return (
         '<img class="empty-state-icon" src="' +
         escapeAttr(EMPTY_STATE_ICON_URL) +
@@ -2998,6 +5725,10 @@
       }
     }
 
+    function isAlertImportantNoticeTitle(title) {
+      return /link ratings currently down/i.test(String(title || "").trim());
+    }
+
     function renderMarkdownLiteNotices(noticesText) {
       const text = String(noticesText || "").trim();
       if (!text) return "";
@@ -3011,8 +5742,11 @@
           const nl = rest.indexOf("\n");
           const title = (nl === -1 ? rest : rest.slice(0, nl)).trim();
           const body = nl === -1 ? "" : rest.slice(nl + 1).trim();
+          const alert = isAlertImportantNoticeTitle(title);
+          if (alert) chunks.push('<div class="notice-alert-block">');
           chunks.push("<h3>" + renderMarkdownInline(title) + "</h3>");
           if (body) renderNoticeSectionBody(chunks, body);
+          if (alert) chunks.push("</div>");
         } else {
           for (const para of s.split(/\n{2,}/)) {
             const p = para.replace(/\n+/g, " ").trim();
@@ -3233,7 +5967,10 @@
         const inp = document.createElement("input");
         inp.type = "checkbox";
         inp.value = v;
-        inp.addEventListener("change", () => render(rows, meta, linkCheck));
+        inp.addEventListener("change", () => {
+          render(rows, meta, linkCheck);
+          scheduleUserProfileWrite();
+        });
         const countEl = document.createElement("span");
         countEl.className = "tag-count";
         countEl.textContent = "(" + countForValue(v) + ") ";
@@ -3266,6 +6003,10 @@
       };
     }
 
+    setContentLoading(true, { progress: 0, message: "Getting data..." });
+    initSavedLinksView();
+    setupAccountUI();
+
     Promise.all([
       fetch("data.json").then((r) => {
         if (!r.ok) throw new Error("Could not load data.json (" + r.status + ")");
@@ -3275,8 +6016,10 @@
         .then((r) => (r.ok ? r.text() : ""))
         .catch(() => ""),
     ])
-      .then(([json, checkedDomainsText]) =>
-        initClickTracking().then(() => {
+      .then(([json, checkedDomainsText]) => {
+        reportContentLoadingProgress(35, "Getting data...");
+        return initClickTracking().then(() => {
+        reportContentLoadingProgress(55, "Preparing list…");
         rebuildLinkLensIndexes();
         populateKnownFilters();
         updateSelectedFilterUI();
@@ -3288,6 +6031,7 @@
         );
         const { meta, link_check, links } = normalizePayload(json);
         pageContext = { links, meta, link_check };
+        currentListVersionStamp = versionStamp(meta) || "";
         if (json && typeof json.failing_links === "object" && json.failing_links) {
           failingLinks = json.failing_links;
         }
@@ -3335,6 +6079,7 @@
           link_check
         );
         buildCapCheckboxes(links, meta, link_check);
+        reportContentLoadingProgress(82, "Rendering links…");
 
         function resetAllFilters() {
           const q = $("q");
@@ -3360,17 +6105,25 @@
           }
           render(links, meta, link_check);
           void renderMostOpenedForList(links);
+          scheduleUserProfileWrite();
         }
 
-        $("q").addEventListener("input", () => render(links, meta, link_check));
+        $("q").addEventListener("input", () => {
+          render(links, meta, link_check);
+          scheduleUserProfileWrite();
+        });
         $("resetFiltersBtn").addEventListener("click", resetAllFilters);
         document.querySelectorAll('input[name="capMode"]').forEach((el) => {
-          el.addEventListener("change", () => render(links, meta, link_check));
+          el.addEventListener("change", () => {
+            render(links, meta, link_check);
+            scheduleUserProfileWrite();
+          });
         });
 
         $("mainContent").addEventListener("click", (ev) => {
           const target = ev.target;
           if (!(target instanceof Element)) return;
+          if (target.closest(".save-link-btn")) return;
           if (target.closest(".empty-state-reset-btn")) {
             ev.preventDefault();
             resetAllFilters();
@@ -3416,28 +6169,41 @@
           updateSelectedFilterUI();
           void renderAfterHeavyFilter(links, meta, link_check);
           void renderMostOpenedForList(links);
+          scheduleUserProfileWrite();
         });
         if (moSortSel) {
           moSortSel.addEventListener("change", () => {
             persistMostOpenedSortMode(moSortSel.value);
             void renderMostOpenedForList(links);
+            scheduleUserProfileWrite();
           });
         }
         if (moProvSel) {
           moProvSel.addEventListener("change", () => {
             persistMostOpenedProviderChoice(moProvSel.value);
             void renderMostOpenedForList(links);
+            scheduleUserProfileWrite();
+          });
+        }
+        const linkListSortSelect = $("linkListSortSelect");
+        if (linkListSortSelect) {
+          linkListSortSelect.value = listSortMode;
+          linkListSortSelect.addEventListener("change", () => {
+            persistLinkListSortMode(linkListSortSelect.value);
+            void renderAfterHeavyFilter(links, meta, link_check);
           });
         }
         $("hideBlockedBtn").addEventListener("click", () => {
           hideBlockedBySelectedFilter = !hideBlockedBySelectedFilter;
           updateSelectedFilterUI();
           void renderAfterHeavyFilter(links, meta, link_check);
+          scheduleUserProfileWrite();
         });
         $("hideUncheckedBtn").addEventListener("click", () => {
           hideLinksWithoutLensCheck = !hideLinksWithoutLensCheck;
           updateSelectedFilterUI();
           void renderAfterHeavyFilter(links, meta, link_check);
+          scheduleUserProfileWrite();
         });
         $("summaryBackdrop").addEventListener("click", (ev) => {
           if (ev.target === $("summaryBackdrop")) closeSummary();
@@ -3493,15 +6259,27 @@
           }
         });
 
-        render(links, meta, link_check);
-        })
-      )
+        return render(links, meta, link_check).then(() => {
+          finishContentLoading();
+          if ($("folderTrustedResults")) refreshFolderTrustedSearchUI(folderTrustedSearchLastQuery);
+        });
+      });
+    })
       .catch((e) => {
+        setContentLoading(false);
+        const msg = e && e.message ? String(e.message) : String(e);
+        let lead =
+          "Something went wrong while loading the app. If you opened this file as file://, use a local server or GitHub Pages so <code>data.json</code> can load.";
+        if (/Failed to fetch|NetworkError|Load failed|blocked by CORS|file:\/\//i.test(msg)) {
+          lead =
+            "Could not load <code>data.json</code>. Browsers block <code>fetch</code> from <code>file://</code>; run a local server (for example <code>python3 -m http.server</code> in the <code>docs</code> folder) or use the hosted site.";
+        } else if (isFirestorePermissionDenied(e)) {
+          lead =
+            "Firestore reported permission denied. Deploy the latest <code>docs/firestore.rules</code> to your Firebase project (including <code>linkRatings</code>, <code>linkRatingVotes</code>, <code>linkSaveCounts</code> if you use thumbs / “most saved”), and ensure Authentication is enabled for this host.";
+        }
         setHtml(
           $("tableWrap"),
-          '<p class="err">Failed to load data. Open this page via GitHub Pages or a local server so <code>data.json</code> can load (file:// blocks fetch).<br><br>' +
-            escapeHtml(e.message) +
-            "</p>"
+          '<p class="err">' + lead + "<br><br><strong>Details:</strong> " + escapeHtml(msg) + "</p>"
         );
       });
   </script>

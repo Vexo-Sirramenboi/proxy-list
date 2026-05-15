@@ -175,6 +175,14 @@
       font-size: 0.95rem;
       color: var(--muted);
     }
+    .content-loading-pct {
+      margin: 0;
+      font-size: 1.35rem;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+      color: var(--text);
+      letter-spacing: 0.02em;
+    }
   </style>
 </head>
 <body class="orientation-locked">
@@ -187,6 +195,7 @@
   </div>
   <div id="contentLoadingOverlay" aria-hidden="true" role="status">
     <img src="loading-spinner.gif" width="80" height="80" alt="" decoding="async" />
+    <p class="content-loading-pct" id="contentLoadingPct" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">0%</p>
     <p class="content-loading-msg">Getting data...</p>
   </div>
   <header>
@@ -226,6 +235,7 @@
     const q = document.getElementById("q");
     const sortMode = document.getElementById("sortMode");
     const contentLoadingOverlay = document.getElementById("contentLoadingOverlay");
+    const contentLoadingPct = document.getElementById("contentLoadingPct");
     let allLinks = [];
 
     function setHtml(el, html) {
@@ -234,10 +244,30 @@
       el.innerHTML = window.DOMPurify ? DOMPurify.sanitize(raw) : raw;
     }
 
-    function setContentLoading(on) {
+    function setContentLoadingProgress(percent, message) {
+      const pct = Math.max(0, Math.min(100, Math.round(Number(percent) || 0)));
+      if (contentLoadingPct) {
+        contentLoadingPct.textContent = pct + "%";
+        contentLoadingPct.setAttribute("aria-valuenow", String(pct));
+      }
+      if (message !== undefined && contentLoadingOverlay) {
+        const loadMsg = contentLoadingOverlay.querySelector(".content-loading-msg");
+        if (loadMsg) loadMsg.textContent = message;
+      }
+    }
+
+    function setContentLoading(on, options) {
       if (!contentLoadingOverlay) return;
       contentLoadingOverlay.classList.toggle("open", on);
       contentLoadingOverlay.setAttribute("aria-hidden", on ? "false" : "true");
+      if (on) {
+        setContentLoadingProgress(
+          options && options.progress != null ? options.progress : 0,
+          options && options.message !== undefined ? options.message : "Getting data..."
+        );
+      } else {
+        setContentLoadingProgress(0);
+      }
     }
 
     function waitNextPaint() {
@@ -249,10 +279,12 @@
     }
 
     async function renderAfterSortChange() {
-      setContentLoading(true);
+      setContentLoading(true, { progress: 0, message: "Updating list…" });
       await waitNextPaint();
       try {
+        setContentLoadingProgress(35, "Sorting links…");
         render();
+        setContentLoadingProgress(100, "Done");
       } finally {
         setContentLoading(false);
       }
@@ -335,16 +367,21 @@
       );
     }
 
+    setContentLoading(true, { progress: 0, message: "Getting data..." });
+
     fetch("unsorted.json")
       .then((r) => {
         if (!r.ok) throw new Error("Could not load unsorted.json (" + r.status + ")");
         return r.json();
       })
       .then((payload) => {
+        setContentLoadingProgress(55, "Preparing list…");
         const links = Array.isArray(payload) ? payload : (payload.links || []);
         if (!links.length) {
           setHtml(stats, "Unsorted links: <strong>0</strong>");
           setHtml(tableWrap, '<p class="empty">No unsorted links right now.</p>');
+          setContentLoadingProgress(100, "Done");
+          setContentLoading(false);
           return;
         }
         allLinks = links.map((r) => (typeof r === "string" ? r : r.link)).filter(Boolean);
@@ -352,9 +389,13 @@
         sortMode.addEventListener("change", () => {
           void renderAfterSortChange();
         });
+        setContentLoadingProgress(85, "Rendering links…");
         render();
+        setContentLoadingProgress(100, "Done");
+        setContentLoading(false);
       })
       .catch((e) => {
+        setContentLoading(false);
         setHtml(tableWrap, '<p class="err">' + escapeHtml(e.message) + "</p>");
       });
   </script>

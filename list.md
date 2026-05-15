@@ -1,8 +1,8 @@
 # Proxy List
 > [!NOTE]
-> v4.4.1 | Released: May 12, 2026
+> v5.0 | Released: May 15, 2026
 > r104 | Last Updated: May 15, 2026
-> Total onsite links: 4128 (sorted list + unsorted page)\
+> Total onsite links: 4131 (2161 sorted + 1970 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
 Welcome to the official Proxy List! This has a running list of hundreds of unblocked websites and games that anyone is free to use. We have the most popular and reliable sites here, so you'll never run out!
@@ -15,6 +15,9 @@ Welcome to the official Proxy List! This has a running list of hundreds of unblo
 
 ## Important Notices
 
+### Link ratings currently down
+Link ratings are currently down due to issues with Firebase. I am working to fix it and it will be back up in the coming days. If you try to rate a link, it will fail.
+
 ### Selenite
 The owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!
 
@@ -25,8 +28,18 @@ The owner has announced that Selenite is here to stay! The changes made to those
 
 ## Update Notice
 
-### Info Update
-Updated the info on a few sections to allow better sorting of links
+### Accounts and Connections
+You can now make an account on the site and even connect using GitHub and Google. Making an account gives you access to community features such as link ratings, saving links, sharing link folders, and more.
+
+### Saving Links
+Once you create an account and sign in, you can now save links and access them by going to your account name and going to "Saved links". This is where you can also make link folders and share your favorite links with the community.
+
+### Community - Rating Links
+(At the time of writing, link ratings are currently down.)
+You can now upvote/downvote links and sort by most favorable links by rated by the community. You will no longer have to keep trying links until you find one that's actually good.
+
+### Community - Sharing Links
+You can now share links globally using the new folder system. It can be accessed the same way you access saved links, and clicking "New Folder". Add your links, then check the "Public" checkmark, and you are all set! You can also copy the direct link to your folder to share with others. Community shared link folders also support community ratings.
 
 # 💜 Selenite
 > [!NOTE]
@@ -44,7 +57,7 @@ Updated the info on a few sections to allow better sorting of links
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 5 |
+> | Proxy/Games | captcha | Scramjet | 11 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -53,12 +66,18 @@ Updated the info on a few sections to allow better sorting of links
 | | https://noterplus-157.firebaseapp.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://velara.cc | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://bulls.eat.grass.klrmowse.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://vcsa-zone.esdata.info/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://player-nation.lucianmandru.ro/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://securelyplsspeedineedthis8weudidhske.suwal.com.np/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://math-worksheets.thuexetaxi.com/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://velara.my/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://learning.msspsparaguay.org/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # ➗ gn-math
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | N/A | N/A | 54 |
+> | Games | N/A | N/A | 56 |
 
 > [!IMPORTANT]
 > View importance notices section if link is broken.
@@ -78,6 +97,8 @@ Updated the info on a few sections to allow better sorting of links
 | | https://happyhappy.kamenorezac-garic.rs/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://hellomath.kamenorezac-garic.rs/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://kamenmath.kamenorezac-garic.rs/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://readyreading.kamenorezac-garic.rs/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://yesmath.kamenorezac-garic.rs/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://snoopy.education.vta-international.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://bull.interluxvs.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://pls.speed.i.need.this.interluxvs.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
@@ -387,7 +408,7 @@ Updated the info on a few sections to allow better sorting of links
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 72 |
+> | Proxy/Games | unknown | Scramjet | 74 |
 
 > [!IMPORTANT]
 > Truffled does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -466,6 +487,8 @@ Updated the info on a few sections to allow better sorting of links
 | | https://ilovereading.blogmedoc.ru/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://eat-more.expensive-meals.fhdstdfffghg.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://truffler24678.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://edu.myt0.info/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://waguri.pingoneando.me/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🥱 Boredom
 > [!NOTE]
@@ -1004,7 +1027,7 @@ Updated the info on a few sections to allow better sorting of links
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp | Scramjet | 24 |
+> | Proxy/Games | epoxy, libcurl, wisp | Scramjet | 26 |
 
 > [!IMPORTANT]
 > OverCloaked does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1035,6 +1058,8 @@ Updated the info on a few sections to allow better sorting of links
 | | https://s3.amazonaws.com/elliotslinks-tnjavxyp/exam45879/index.html | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://s3.amazonaws.com/elliotslinks-tnjavxyp/essay71679/index.html | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://s3.amazonaws.com/elliotslinks-tnjavxyp/quiz10430/index.html | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://lecture.history.biology.science.writing.arxeiokin.gr/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://chemistry.reading.math.writing.teacher.pnlbraila.ro/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 😈 Imp Proxy
 > [!NOTE]
@@ -1327,7 +1352,7 @@ Updated the info on a few sections to allow better sorting of links
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | libcurl, epoxy, wisp | Scramjet, Ultraviolet | 83 |
+> | Proxy/Games | libcurl, epoxy, wisp | Scramjet, Ultraviolet | 86 |
 
 > [!IMPORTANT]
 > Galaxy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1367,6 +1392,9 @@ Updated the info on a few sections to allow better sorting of links
 | | https://21.polden21vek.ru/onboarding/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://glacier-water.waterloobae.com/onboarding/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://crops.primeflk.ch/onboarding/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://hence.thakuraiarman.com.np/onboarding/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://hoster.fhoster.ru/onboarding/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://hosting.fhoster.ru/onboarding/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://filterbrowser.tiatex.com/onboarding/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://start.pastorschwittay.com.ar/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://filter.pilatesfitness.co.uk/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -1596,6 +1624,19 @@ Updated the info on a few sections to allow better sorting of links
 | | https://noblocc.com/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cokezero.uk/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://vanillacoke.co.uk/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
+# Rammerhead
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | Proxy/Games | unknown | Rammerhead | 1 |
+
+> [!IMPORTANT]
+> This section has not been categorized or checked for protocol(s) and capabilities.
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+| | https://vcsa.mkhq.co.kr/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🔼 Axiom
 > [!NOTE]
@@ -1827,7 +1868,7 @@ Updated the info on a few sections to allow better sorting of links
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 13 |
+> | Proxy/Games | captcha | Scramjet | 16 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -1847,6 +1888,9 @@ Updated the info on a few sections to allow better sorting of links
 | | https://frosted.torontowestpsychotherapy.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://frosted.tongllfoundation.org/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://starr.bijayakilla.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://slantsite.s3.amazonaws.com/index.html | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://contentkeepermaster3009.deltacompy.com.br/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://wearecharliekirkman.daybits.net/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🧀 Cheesy
 > [!NOTE]

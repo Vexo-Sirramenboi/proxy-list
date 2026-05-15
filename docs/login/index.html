@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="google-adsense-account" content="ca-pub-8449488085448128" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8449488085448128" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign in | Proxy list</title>
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a222d;
+      --border: #2d3a4d;
+      --text: #e7ecf3;
+      --muted: #8b9cb3;
+      --accent: #6cb3ff;
+      --ok: #3ecf8e;
+      --warn: #ffd57e;
+      --font: "Segoe UI", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    header {
+      padding: 1.4rem 1.4rem 1.2rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    h1 {
+      margin: 0 0 0.4rem;
+      font-size: clamp(1.45rem, 4vw, 1.85rem);
+      letter-spacing: -0.02em;
+    }
+    .sub {
+      margin: 0;
+      max-width: 42rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1.25rem 1.2rem 2.5rem;
+    }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+      padding: 1.1rem 1.15rem;
+      margin-bottom: 1rem;
+    }
+    .card h2 {
+      margin: 0 0 0.55rem;
+      font-size: 1.05rem;
+    }
+    .muted {
+      margin: 0 0 0.75rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .benefits {
+      margin: 0;
+      padding-left: 1.15rem;
+    }
+    .benefits li {
+      margin: 0.45rem 0;
+    }
+    .benefits li strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+    .benefit-note {
+      display: block;
+      margin-top: 0.15rem;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+    .benefit-note--github {
+      color: #9eb4d0;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-top: 1rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.9rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--text);
+      background: #121920;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .btn:hover { border-color: var(--accent); color: var(--accent); }
+    .btn:disabled {
+      opacity: 0.55;
+      cursor: wait;
+    }
+    .btn-primary {
+      border-color: #2d5588;
+      color: var(--accent);
+      background: #1e3a5f;
+    }
+    .btn-primary:hover {
+      color: #fff;
+      background: #35619c;
+    }
+    .status {
+      margin: 0.75rem 0 0;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .status--error { color: #ff9b9b; }
+    .status--ok { color: var(--ok); }
+    .signed-in-panel[hidden],
+    .signed-out-panel[hidden] {
+      display: none !important;
+    }
+    .signed-in-name {
+      margin: 0;
+      font-size: 1rem;
+    }
+    .back-row {
+      margin-top: 1.25rem;
+    }
+    .auth-divider {
+      margin: 1.15rem 0 0.85rem;
+      border: 0;
+      border-top: 1px solid var(--border);
+    }
+    .auth-divider-label {
+      margin: 0 0 0.65rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .provider-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.5rem;
+    }
+    .provider-btn {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0.62rem 0.75rem;
+      padding-left: 2.65rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #121920;
+      color: var(--text);
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+    }
+    .provider-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .provider-btn:disabled {
+      opacity: 0.55;
+      cursor: wait;
+    }
+    .provider-icon {
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.35rem;
+      height: 1.35rem;
+      flex-shrink: 0;
+    }
+    .provider-icon svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .email-heading {
+      margin-top: 0;
+    }
+    .email-form {
+      display: grid;
+      gap: 0.65rem;
+      margin-top: 0.35rem;
+    }
+    .email-form label {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .email-form input {
+      width: 100%;
+      padding: 0.55rem 0.65rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: #121920;
+      color: var(--text);
+      font: inherit;
+    }
+    .email-form input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    .email-mode {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .email-mode-btn {
+      flex: 1;
+      min-width: 7.5rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: #121920;
+      color: var(--muted);
+      font: inherit;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .email-mode-btn:hover {
+      border-color: var(--accent);
+      color: var(--text);
+    }
+    .email-mode-btn--active {
+      border-color: #2d5588;
+      color: var(--accent);
+      background: #1e3a5f;
+    }
+    .email-mode-btn--active:hover {
+      color: #fff;
+      background: #35619c;
+    }
+    .profile-field {
+      display: grid;
+      gap: 0.35rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    .preset-avatars {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 0.35rem 0 0.85rem;
+    }
+    .preset-avatar-btn {
+      padding: 0;
+      border: 2px solid transparent;
+      border-radius: 10px;
+      background: transparent;
+      cursor: pointer;
+      line-height: 0;
+    }
+    .preset-avatar-btn.is-selected {
+      border-color: var(--accent);
+    }
+    .preset-avatar-btn img {
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      display: block;
+    }
+    .profile-preview-img {
+      margin-top: 0.35rem;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      object-fit: cover;
+    }
+    .profile-setup-hint {
+      min-height: 1.25em;
+      margin: 0.35rem 0 0;
+      font-size: 0.88rem;
+    }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Never be blocked again.</h1>
+    <p class="sub">Sign in with email, GitHub, or Google to sync saved links and settings across visits and devices.</p>
+  </header>
+  <main>
+    <section class="card signed-out-panel" id="signedOutPanel">
+      <h2>Sign in</h2>
+      <p class="muted">Your first visit may start as an anonymous session. Signing in links that session to your account.</p>
+
+      <h2 class="email-heading" id="email">Email &amp; password</h2>
+      <p class="muted">Use a standard email account. Google and email sign-in do not unlock GitHub-only extras listed below.</p>
+      <form class="email-form" id="emailAuthForm" novalidate>
+        <label>
+          Email
+          <input type="email" id="emailInput" name="email" autocomplete="email" required />
+        </label>
+        <label>
+          Password
+          <input type="password" id="passwordInput" name="password" autocomplete="current-password" minlength="6" required />
+        </label>
+        <div class="email-mode" role="group" aria-label="Email account mode">
+          <button type="button" class="email-mode-btn email-mode-btn--active" id="emailModeSignInBtn" aria-pressed="true">
+            Sign in
+          </button>
+          <button type="button" class="email-mode-btn" id="emailModeCreateBtn" aria-pressed="false">
+            Create account
+          </button>
+        </div>
+        <div class="actions">
+          <button type="submit" class="btn btn-primary" id="emailSubmitBtn">Continue with email</button>
+        </div>
+      </form>
+
+      <hr class="auth-divider" />
+      <p class="auth-divider-label" id="otherSignInLabel">Other sign-in options</p>
+      <ul class="provider-list" aria-labelledby="otherSignInLabel">
+        <li>
+          <button type="button" class="provider-btn" id="githubSignInBtn">
+            <span class="provider-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.74.08-.74 1.22.09 1.86 1.25 1.86 1.25 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.32.76-1.62-2.67-.3-5.48-1.34-5.48-5.96 0-1.32.47-2.39 1.24-3.23-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.05.14 3 .4 2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.23 0 4.63-2.81 5.66-5.49 5.95.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.28 0 .32.22.7.83.58A12.01 12.01 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </span>
+            Continue with GitHub
+          </button>
+        </li>
+        <li>
+          <button type="button" class="provider-btn" id="googleSignInBtn">
+            <span class="provider-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+              </svg>
+            </span>
+            Continue with Google
+          </button>
+        </li>
+      </ul>
+
+      <div class="actions">
+        <a class="btn" href="../">Back to list</a>
+      </div>
+      <p class="status" id="authStatus" hidden></p>
+    </section>
+
+    <section class="card signed-in-panel" id="signedInPanel" hidden>
+      <div id="signedInNormal">
+        <h2>You are signed in</h2>
+        <p class="signed-in-name" id="signedInName"></p>
+        <p class="muted">Your saved links and settings will load on the main list.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="../" id="openListBtn">Open proxy list</a>
+          <button type="button" class="btn" id="signOutBtn">Sign out</button>
+        </div>
+      </div>
+      <div id="profileSetupWrap" hidden>
+        <h2>Set up your profile</h2>
+        <p class="muted">Pick a unique username (3–20 characters: letters, numbers, underscore) and a profile picture.</p>
+        <label class="profile-field">
+          Username
+          <input type="text" id="profileSetupUsername" maxlength="20" autocomplete="username" spellcheck="false" />
+        </label>
+        <p class="muted">Profile picture</p>
+        <img id="profileSetupPreview" class="profile-preview-img" alt="Preview" width="72" height="72" hidden />
+        <div class="preset-avatars" id="presetAvatarsRow" aria-label="Preset pictures"></div>
+        <label class="profile-field">
+          Or upload a photo (cropped square, compressed)
+          <input type="file" id="profileSetupFile" accept="image/*" />
+        </label>
+        <p class="status profile-setup-hint" id="profileSetupHint"></p>
+        <div class="actions">
+          <button type="button" class="btn btn-primary" id="profileSetupSaveBtn">Save and open list</button>
+          <button type="button" class="btn" id="profileSetupSignOutBtn">Sign out</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="benefitsHeading">
+      <h2 id="benefitsHeading">What you get with an account</h2>
+      <p class="muted">Anonymous browsing still works without signing in. Every signed-in account gets the core tools below.</p>
+      <ul class="benefits">
+        <li>
+          <strong>Saved links</strong>
+          <span class="benefit-note">Star links from the list and reopen them from your profile on any device.</span>
+        </li>
+        <li>
+          <strong>Saved filters and settings</strong>
+          <span class="benefit-note">Keep your web filter, sort mode, and sidebar choices tied to your account.</span>
+        </li>
+        <li>
+          <strong>Personal greeting</strong>
+          <span class="benefit-note">See a time-of-day hello with your display name or email when you return.</span>
+        </li>
+        <li>
+          <strong>Contributor highlights</strong>
+          <span class="benefit-note benefit-note--github">GitHub sign-in only: YOU badge when your GitHub login matches the contributor field.</span>
+        </li>
+        <li>
+          <strong>Repo activity</strong>
+          <span class="benefit-note benefit-note--github">GitHub sign-in only: pull request and issue updates for this list in the header.</span>
+        </li>
+        <li>
+          <strong>Star recognition</strong>
+          <span class="benefit-note benefit-note--github">GitHub sign-in only: gold username in the header when you star the proxy-list repo.</span>
+        </li>
+      </ul>
+    </section>
+
+    <p class="back-row">
+      <a href="../">← Back to proxy list</a>
+      ·
+      <a href="../contribute/">Contribute</a>
+    </p>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+  <script src="../firebase-config.example.js"></script>
+  <script src="../firebase-config.local.js"></script>
+  <script>
+    (function () {
+      const signedOutPanel = document.getElementById("signedOutPanel");
+      const signedInPanel = document.getElementById("signedInPanel");
+      const signedInName = document.getElementById("signedInName");
+      const githubSignInBtn = document.getElementById("githubSignInBtn");
+      const googleSignInBtn = document.getElementById("googleSignInBtn");
+      const emailAuthForm = document.getElementById("emailAuthForm");
+      const emailSubmitBtn = document.getElementById("emailSubmitBtn");
+      const emailModeSignInBtn = document.getElementById("emailModeSignInBtn");
+      const emailModeCreateBtn = document.getElementById("emailModeCreateBtn");
+      let emailAccountMode = "signin";
+
+      function setEmailAccountMode(mode) {
+        emailAccountMode = mode === "create" ? "create" : "signin";
+        if (emailModeSignInBtn) {
+          emailModeSignInBtn.classList.toggle("email-mode-btn--active", emailAccountMode === "signin");
+          emailModeSignInBtn.setAttribute("aria-pressed", emailAccountMode === "signin" ? "true" : "false");
+        }
+        if (emailModeCreateBtn) {
+          emailModeCreateBtn.classList.toggle("email-mode-btn--active", emailAccountMode === "create");
+          emailModeCreateBtn.setAttribute("aria-pressed", emailAccountMode === "create" ? "true" : "false");
+        }
+      }
+      const signOutBtn = document.getElementById("signOutBtn");
+      const authStatus = document.getElementById("authStatus");
+
+      function isSignedInUser(user) {
+        return !!(user && !user.isAnonymous);
+      }
+
+      function accountLabelFromUser(user) {
+        if (!user) return "";
+        const gh = (user.providerData || []).find((p) => p && p.providerId === "github.com");
+        if (gh && gh.displayName) return String(gh.displayName).trim();
+        if (gh && gh.email) return String(gh.email).split("@")[0];
+        if (user.displayName) return String(user.displayName).trim();
+        if (user.email) return String(user.email).split("@")[0];
+        return "Account";
+      }
+
+      function setStatus(message, kind) {
+        if (!authStatus) return;
+        if (!message) {
+          authStatus.hidden = true;
+          authStatus.textContent = "";
+          authStatus.className = "status";
+          return;
+        }
+        authStatus.hidden = false;
+        authStatus.textContent = message;
+        authStatus.className = "status" + (kind ? " status--" + kind : "");
+      }
+
+      function setAuthBusy(busy) {
+        authButtons.forEach((btn) => {
+          if (btn) btn.disabled = !!busy;
+        });
+      }
+
+      const signedInNormal = document.getElementById("signedInNormal");
+      const profileSetupWrap = document.getElementById("profileSetupWrap");
+      const profileSetupUsername = document.getElementById("profileSetupUsername");
+      const profileSetupPreview = document.getElementById("profileSetupPreview");
+      const presetAvatarsRow = document.getElementById("presetAvatarsRow");
+      const profileSetupFile = document.getElementById("profileSetupFile");
+      const profileSetupHint = document.getElementById("profileSetupHint");
+      const profileSetupSaveBtn = document.getElementById("profileSetupSaveBtn");
+      const profileSetupSignOutBtn = document.getElementById("profileSetupSignOutBtn");
+
+      const authButtons = [
+        githubSignInBtn,
+        googleSignInBtn,
+        emailSubmitBtn,
+        emailModeSignInBtn,
+        emailModeCreateBtn,
+        profileSetupSaveBtn,
+        profileSetupSignOutBtn,
+      ];
+
+      const USERNAME_RE = /^[a-zA-Z0-9_]{3,20}$/;
+      const PROFILE_PHOTO_MAX_CHARS = 125000;
+
+      function encodeSvgCircle(fill) {
+        const svg =
+          '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="32" fill="' +
+          fill +
+          '"/></svg>';
+        return "data:image/svg+xml," + encodeURIComponent(svg);
+      }
+
+      const PRESET_AVATARS = [
+        encodeSvgCircle("#5b8cff"),
+        encodeSvgCircle("#3ecf8e"),
+        encodeSvgCircle("#ff9b9b"),
+        encodeSvgCircle("#ffd57e"),
+        encodeSvgCircle("#c78bff"),
+        encodeSvgCircle("#5ce1e6"),
+        encodeSvgCircle("#ff8c42"),
+        encodeSvgCircle("#e7ecf3"),
+      ];
+
+      let selectedProfilePhoto = PRESET_AVATARS[0];
+      let profileSetupDb = null;
+      let profileSetupAuth = null;
+
+      function usernameDocKey(displayName) {
+        return String(displayName || "").trim().toLowerCase();
+      }
+
+      function validateSiteUsername(raw) {
+        const s = String(raw || "").trim();
+        if (!USERNAME_RE.test(s)) {
+          return { ok: false, message: "Username must be 3–20 characters (letters, numbers, underscore only)." };
+        }
+        return { ok: true, value: s };
+      }
+
+      function setProfileHint(msg, kind) {
+        if (!profileSetupHint) return;
+        profileSetupHint.textContent = msg || "";
+        profileSetupHint.className = "status profile-setup-hint" + (kind ? " status--" + kind : "");
+      }
+
+      function renderPresetAvatars() {
+        if (!presetAvatarsRow) return;
+        presetAvatarsRow.innerHTML = "";
+        PRESET_AVATARS.forEach((src, i) => {
+          const b = document.createElement("button");
+          b.type = "button";
+          b.className = "preset-avatar-btn" + (i === 0 ? " is-selected" : "");
+          b.setAttribute("aria-label", "Preset " + (i + 1));
+          const img = document.createElement("img");
+          img.src = src;
+          img.alt = "";
+          b.appendChild(img);
+          b.addEventListener("click", () => {
+            selectedProfilePhoto = src;
+            presetAvatarsRow.querySelectorAll(".preset-avatar-btn").forEach((el) => el.classList.remove("is-selected"));
+            b.classList.add("is-selected");
+            if (profileSetupPreview) {
+              profileSetupPreview.src = src;
+              profileSetupPreview.hidden = false;
+            }
+          });
+          presetAvatarsRow.appendChild(b);
+        });
+      }
+
+      function fileToProfilePhotoDataUrl(file) {
+        return new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = () => {
+            const img = new Image();
+            img.onload = () => {
+              const size = 160;
+              const canvas = document.createElement("canvas");
+              canvas.width = size;
+              canvas.height = size;
+              const ctx = canvas.getContext("2d");
+              const scale = Math.max(size / img.width, size / img.height);
+              const w = img.width * scale;
+              const h = img.height * scale;
+              ctx.drawImage(img, (size - w) / 2, (size - h) / 2, w, h);
+              let q = 0.88;
+              let data = canvas.toDataURL("image/jpeg", q);
+              while (data.length > PROFILE_PHOTO_MAX_CHARS && q > 0.42) {
+                q -= 0.07;
+                data = canvas.toDataURL("image/jpeg", q);
+              }
+              if (data.length > PROFILE_PHOTO_MAX_CHARS + 8000) {
+                reject(new Error("Image is still too large; try a smaller file."));
+              } else {
+                resolve(data);
+              }
+            };
+            img.onerror = () => reject(new Error("Could not decode image."));
+            img.src = reader.result;
+          };
+          reader.onerror = () => reject(new Error("Could not read file."));
+          reader.readAsDataURL(file);
+        });
+      }
+
+      /** After site username is set/changed, update Creator on all folders owned by this uid. */
+      function syncSavedFolderOwnerLabelsForUid(db, uid, ownerLabel) {
+        const label = String(ownerLabel || "").trim().slice(0, 120);
+        if (!uid || !label || !db) return Promise.resolve();
+        return db
+          .collection("savedFolders")
+          .where("ownerUid", "==", uid)
+          .get()
+          .then((snap) => {
+            if (!snap.docs.length) return;
+            const CHUNK = 400;
+            const docs = snap.docs;
+            const runChunk = (i) => {
+              if (i >= docs.length) return Promise.resolve();
+              const batch = db.batch();
+              let n = 0;
+              for (const d of docs.slice(i, i + CHUNK)) {
+                const data = d.data() || {};
+                const cur = typeof data.ownerLabel === "string" ? data.ownerLabel.trim() : "";
+                if (cur === label) continue;
+                batch.update(d.ref, { ownerLabel: label });
+                n++;
+              }
+              const p = n ? batch.commit() : Promise.resolve();
+              return p.then(() => runChunk(i + CHUNK));
+            };
+            return runChunk(0);
+          })
+          .catch((err) => console.warn("[login] folder ownerLabel sync failed", err));
+      }
+
+      function showProfileSetupUI(auth, db, user) {
+        profileSetupAuth = auth;
+        profileSetupDb = db;
+        if (signedInNormal) signedInNormal.hidden = true;
+        if (profileSetupWrap) profileSetupWrap.hidden = false;
+        if (profileSetupUsername) {
+          profileSetupUsername.value = accountLabelFromUser(user).replace(/[^a-zA-Z0-9_]/g, "").slice(0, 20);
+          if (profileSetupUsername.value.length < 3) profileSetupUsername.value = "";
+        }
+        selectedProfilePhoto = PRESET_AVATARS[0];
+        renderPresetAvatars();
+        if (profileSetupPreview) {
+          profileSetupPreview.src = selectedProfilePhoto;
+          profileSetupPreview.hidden = false;
+        }
+        if (profileSetupFile) profileSetupFile.value = "";
+        setProfileHint("", "");
+      }
+
+      function saveFirstProfileFromLogin() {
+        const auth = profileSetupAuth;
+        const db = profileSetupDb;
+        const user = auth && auth.currentUser;
+        if (!user || user.isAnonymous || !db) return Promise.resolve();
+        const v = validateSiteUsername(profileSetupUsername && profileSetupUsername.value);
+        if (!v.ok) {
+          setProfileHint(v.message, "error");
+          return Promise.resolve();
+        }
+        const photo = selectedProfilePhoto;
+        if (!photo || photo.length > PROFILE_PHOTO_MAX_CHARS + 15000) {
+          setProfileHint("Profile picture is too large.", "error");
+          return Promise.resolve();
+        }
+        const uid = user.uid;
+        const display = v.value;
+        const key = usernameDocKey(display);
+        setProfileHint("Saving…", "");
+        if (profileSetupSaveBtn) profileSetupSaveBtn.disabled = true;
+        const userRef = db.collection("users").doc(uid);
+        const nameRef = db.collection("usernames").doc(key);
+        return db
+          .runTransaction((t) => {
+            return t.get(nameRef).then((unameSnap) => {
+              if (unameSnap.exists) {
+                const owner = unameSnap.data() && unameSnap.data().uid;
+                if (owner && owner !== uid) {
+                  throw Object.assign(new Error("USERNAME_TAKEN"), { code: "USERNAME_TAKEN" });
+                }
+              }
+              t.set(
+                nameRef,
+                { uid: uid, updated: firebase.firestore.FieldValue.serverTimestamp() },
+                { merge: true }
+              );
+              t.set(
+                userRef,
+                {
+                  siteUsername: display,
+                  profilePhotoDataUrl: photo,
+                  usernameChangedAt: [],
+                  updated: firebase.firestore.FieldValue.serverTimestamp(),
+                },
+                { merge: true }
+              );
+            });
+          })
+          .then(() =>
+            syncSavedFolderOwnerLabelsForUid(db, uid, display).catch((e) =>
+              console.warn("[login] folder ownerLabel sync", e)
+            )
+          )
+          .then(() => {
+            setProfileHint("Saved. Redirecting…", "ok");
+            redirectToList();
+          })
+          .catch((err) => {
+            const code = err && err.code ? String(err.code) : "";
+            if (code === "USERNAME_TAKEN" || /already exists/i.test(String(err && err.message))) {
+              setProfileHint("That username is taken. Pick another.", "error");
+            } else {
+              setProfileHint(err && err.message ? err.message : "Could not save profile.", "error");
+            }
+          })
+          .finally(() => {
+            if (profileSetupSaveBtn) profileSetupSaveBtn.disabled = false;
+          });
+      }
+
+      async function afterSignIn(auth, db, allowRedirect) {
+        const user = auth.currentUser;
+        if (!user || user.isAnonymous) {
+          if (allowRedirect) {
+            setStatus("Signed in. Redirecting…", "ok");
+            redirectToList();
+          }
+          return;
+        }
+        try {
+          const snap = await db.collection("users").doc(user.uid).get();
+          const d = snap.exists ? snap.data() : {};
+          if (d.siteUsername && String(d.siteUsername).trim()) {
+            if (allowRedirect) {
+              setStatus("Signed in. Redirecting…", "ok");
+              redirectToList();
+            }
+            return;
+          }
+          setStatus("", "");
+          showProfileSetupUI(auth, db, user);
+        } catch (err) {
+          console.warn("[login] profile check failed", err);
+          if (allowRedirect) {
+            setStatus("Signed in. Open Account to finish your profile if needed.", "ok");
+            redirectToList();
+          }
+        }
+      }
+
+      function updatePanels(user) {
+        const signedIn = isSignedInUser(user);
+        signedOutPanel.hidden = signedIn;
+        signedInPanel.hidden = !signedIn;
+        if (signedInNormal) signedInNormal.hidden = false;
+        if (profileSetupWrap) profileSetupWrap.hidden = true;
+        if (signedIn) {
+          const label = accountLabelFromUser(user);
+          signedInName.textContent = label ? "Signed in as " + label + "." : "Signed in.";
+          setStatus("", "");
+        }
+      }
+
+      function redirectToList() {
+        window.setTimeout(() => {
+          window.location.href = new URL("../", window.location.href).href;
+        }, 450);
+      }
+
+      function ensureAnonymousSession(auth) {
+        if (auth.currentUser) return Promise.resolve(auth.currentUser);
+        return auth.signInAnonymously().then((cred) => cred.user);
+      }
+
+      function authErrorMessage(err) {
+        const code = err && err.code ? String(err.code) : "";
+        if (code === "auth/popup-closed-by-user") return { message: "Sign-in was cancelled.", kind: "" };
+        if (code === "auth/account-exists-with-different-credential") {
+          return {
+            message: "That account already exists with a different sign-in method. Try another option or sign out first.",
+            kind: "error",
+          };
+        }
+        if (code === "auth/email-already-in-use") {
+          return { message: "That email already has an account. Use Sign in instead.", kind: "error" };
+        }
+        if (code === "auth/invalid-email") return { message: "Enter a valid email address.", kind: "error" };
+        if (code === "auth/weak-password") return { message: "Password must be at least 6 characters.", kind: "error" };
+        if (code === "auth/wrong-password" || code === "auth/invalid-credential") {
+          return { message: "Email or password is incorrect.", kind: "error" };
+        }
+        if (code === "auth/user-not-found") return { message: "No account exists for that email.", kind: "error" };
+        return { message: err && err.message ? err.message : "Sign-in failed.", kind: "error" };
+      }
+
+      function signInWithPopupProvider(auth, db, provider) {
+        setAuthBusy(true);
+        setStatus("Opening sign-in…", "");
+        return ensureAnonymousSession(auth)
+          .then((user) => {
+            if (user.isAnonymous) {
+              return user.linkWithPopup(provider).catch(() => auth.signInWithPopup(provider));
+            }
+            return auth.signInWithPopup(provider);
+          })
+          .then(() => afterSignIn(auth, db, true))
+          .catch((err) => {
+            const info = authErrorMessage(err);
+            setStatus(info.message, info.kind);
+          })
+          .finally(() => setAuthBusy(false));
+      }
+
+      function selectedEmailMode() {
+        return emailAccountMode === "create" ? "create" : "signin";
+      }
+
+      function handleEmailAuth(auth, db) {
+        const email = String(document.getElementById("emailInput").value || "").trim();
+        const password = String(document.getElementById("passwordInput").value || "");
+        const mode = selectedEmailMode();
+        if (!email || !password) {
+          setStatus("Enter an email and password.", "error");
+          return Promise.resolve();
+        }
+        if (password.length < 6) {
+          setStatus("Password must be at least 6 characters.", "error");
+          return Promise.resolve();
+        }
+
+        setAuthBusy(true);
+        setStatus(mode === "create" ? "Creating account…" : "Signing in…", "");
+        const credential = firebase.auth.EmailAuthProvider.credential(email, password);
+        return ensureAnonymousSession(auth)
+          .then((user) => {
+            if (mode === "create") {
+              if (user.isAnonymous) return user.linkWithCredential(credential);
+              return auth.createUserWithEmailAndPassword(email, password);
+            }
+            if (user.isAnonymous) {
+              return user.linkWithCredential(credential).catch(() => auth.signInWithEmailAndPassword(email, password));
+            }
+            return auth.signInWithEmailAndPassword(email, password);
+          })
+          .then(() => afterSignIn(auth, db, true))
+          .catch((err) => {
+            const info = authErrorMessage(err);
+            setStatus(info.message, info.kind);
+          })
+          .finally(() => setAuthBusy(false));
+      }
+
+      const config = typeof window !== "undefined" && window.__FIREBASE_CONFIG__;
+      if (!config || !config.apiKey) {
+        setStatus("Firebase is not configured on this deployment. Check docs/firebase-config.example.js is deployed and includes an apiKey.", "error");
+        setAuthBusy(true);
+        return;
+      }
+
+      if (!firebase.apps.length) firebase.initializeApp(config);
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+
+      auth.onAuthStateChanged((user) => {
+        updatePanels(user);
+        if (isSignedInUser(user)) void afterSignIn(auth, db, false);
+      });
+
+      githubSignInBtn.addEventListener("click", () => {
+        const provider = new firebase.auth.GithubAuthProvider();
+        provider.addScope("read:user");
+        provider.addScope("notifications");
+        signInWithPopupProvider(auth, db, provider);
+      });
+      googleSignInBtn.addEventListener("click", () => {
+        signInWithPopupProvider(auth, db, new firebase.auth.GoogleAuthProvider());
+      });
+      if (emailModeSignInBtn) {
+        emailModeSignInBtn.addEventListener("click", () => setEmailAccountMode("signin"));
+      }
+      if (emailModeCreateBtn) {
+        emailModeCreateBtn.addEventListener("click", () => setEmailAccountMode("create"));
+      }
+      emailAuthForm.addEventListener("submit", (ev) => {
+        ev.preventDefault();
+        void handleEmailAuth(auth, db);
+      });
+      if (profileSetupSaveBtn) {
+        profileSetupSaveBtn.addEventListener("click", () => void saveFirstProfileFromLogin());
+      }
+      if (profileSetupSignOutBtn) {
+        profileSetupSignOutBtn.addEventListener("click", () => {
+          profileSetupSignOutBtn.disabled = true;
+          auth.signOut().finally(() => {
+            profileSetupSignOutBtn.disabled = false;
+            updatePanels(auth.currentUser);
+          });
+        });
+      }
+      if (profileSetupFile) {
+        profileSetupFile.addEventListener("change", () => {
+          const f = profileSetupFile.files && profileSetupFile.files[0];
+          if (!f) return;
+          setProfileHint("Processing image…", "");
+          fileToProfilePhotoDataUrl(f)
+            .then((data) => {
+              selectedProfilePhoto = data;
+              if (profileSetupPreview) {
+                profileSetupPreview.src = data;
+                profileSetupPreview.hidden = false;
+              }
+              if (presetAvatarsRow) {
+                presetAvatarsRow.querySelectorAll(".preset-avatar-btn").forEach((el) => el.classList.remove("is-selected"));
+              }
+              setProfileHint("", "");
+            })
+            .catch((err) => setProfileHint(err && err.message ? err.message : "Could not use that image.", "error"));
+        });
+      }
+      signOutBtn.addEventListener("click", () => {
+        signOutBtn.disabled = true;
+        auth.signOut().finally(() => {
+          signOutBtn.disabled = false;
+          updatePanels(auth.currentUser);
+        });
+      });
+
+      if (window.location.hash === "#email" || window.location.hash === "#create") {
+        if (window.location.hash === "#create") setEmailAccountMode("create");
+        const emailSection = document.getElementById("email");
+        if (emailSection) emailSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    })();
+  </script>
+</body>
+</html>

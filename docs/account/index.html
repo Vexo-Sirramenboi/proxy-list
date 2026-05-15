@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="google-adsense-account" content="ca-pub-8449488085448128" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8449488085448128" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Account | Proxy list</title>
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a222d;
+      --border: #2d3a4d;
+      --text: #e7ecf3;
+      --muted: #8b9cb3;
+      --accent: #6cb3ff;
+      --ok: #3ecf8e;
+      --warn: #ffd57e;
+      --danger: #ff8f8f;
+      --font: "Segoe UI", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    header {
+      padding: 1.4rem 1.4rem 1.2rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    h1 {
+      margin: 0 0 0.4rem;
+      font-size: clamp(1.35rem, 4vw, 1.75rem);
+    }
+    .sub {
+      margin: 0;
+      max-width: 42rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1.25rem 1.2rem 2.5rem;
+    }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+      padding: 1.1rem 1.15rem;
+      margin-bottom: 1rem;
+    }
+    .card h2 {
+      margin: 0 0 0.55rem;
+      font-size: 1.05rem;
+    }
+    .muted {
+      margin: 0 0 0.75rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .account-name {
+      margin: 0 0 0.75rem;
+      font-weight: 600;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-top: 0.75rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.9rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--text);
+      background: #121920;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .btn:hover { border-color: var(--accent); color: var(--accent); }
+    .btn:disabled {
+      opacity: 0.55;
+      cursor: wait;
+    }
+    .btn-primary {
+      border-color: #2d5588;
+      color: var(--accent);
+      background: #1e3a5f;
+    }
+    .btn-danger {
+      border-color: #6b3a3a;
+      color: var(--danger);
+      background: #2a1717;
+    }
+    .btn-danger:hover {
+      border-color: #a04a4a;
+      color: #ffc9c9;
+    }
+    .status {
+      margin: 0.75rem 0 0;
+      font-size: 0.88rem;
+    }
+    .status--ok { color: var(--ok); }
+    .status--error { color: var(--danger); }
+    .back-row {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+    .profile-field {
+      display: grid;
+      gap: 0.35rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    .profile-field input[type="text"] {
+      padding: 0.55rem 0.65rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: #121920;
+      color: var(--text);
+      font: inherit;
+    }
+    .preset-avatars {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 0.35rem 0 0.85rem;
+    }
+    .preset-avatar-btn {
+      padding: 0;
+      border: 2px solid transparent;
+      border-radius: 10px;
+      background: transparent;
+      cursor: pointer;
+      line-height: 0;
+    }
+    .preset-avatar-btn.is-selected {
+      border-color: var(--accent);
+    }
+    .preset-avatar-btn img {
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      display: block;
+    }
+    .profile-preview-img {
+      margin-top: 0.35rem;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      object-fit: cover;
+    }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Account management</h1>
+    <p class="sub">Manage your profile, saved data, sign out, or start a new account.</p>
+  </header>
+  <main>
+    <section class="card" id="signedOutPanel" hidden>
+      <h2>Sign in required</h2>
+      <p class="muted">Open the sign-in page to manage your account.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="../login/">Sign in</a>
+        <a class="btn" href="../">Back to list</a>
+      </div>
+    </section>
+
+    <section class="card" id="signedInPanel" hidden>
+      <h2>Signed in</h2>
+      <p class="account-name" id="signedInName"></p>
+      <p class="muted">Saved links and filter settings are stored in your account profile.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="../">Back to list</a>
+        <button type="button" class="btn" id="signOutBtn">Sign out</button>
+      </div>
+    </section>
+
+    <section class="card" id="profilePanel" hidden>
+      <h2>Profile</h2>
+      <p class="muted" id="profileLimitNote"></p>
+      <label class="profile-field">
+        Username
+        <input type="text" id="profileUsernameInput" maxlength="20" autocomplete="username" spellcheck="false" />
+      </label>
+      <p class="muted">Profile picture (change anytime)</p>
+      <img id="profilePreviewImg" class="profile-preview-img" alt="Preview" width="72" height="72" hidden />
+      <div class="preset-avatars" id="profilePresetRow" aria-label="Preset pictures"></div>
+      <label class="profile-field">
+        Or upload a photo
+        <input type="file" id="profileFileInput" accept="image/*" />
+      </label>
+      <div class="actions">
+        <button type="button" class="btn btn-primary" id="profileSaveBtn">Save profile</button>
+      </div>
+      <p class="status" id="profileInlineStatus" hidden></p>
+    </section>
+
+    <section class="card" id="dataPanel" hidden>
+      <h2>Saved data</h2>
+      <p class="muted">Remove starred links and synced filter settings from your account without deleting the account itself.</p>
+      <div class="actions">
+        <button type="button" class="btn btn-danger" id="deleteSavedDataBtn">Delete saved data</button>
+      </div>
+    </section>
+
+    <section class="card" id="accountActionsPanel" hidden>
+      <h2>Account actions</h2>
+      <p class="muted">Create a new account signs you out and opens the sign-in page with account creation selected. Delete account permanently removes your sign-in and stored profile.</p>
+      <div class="actions">
+        <button type="button" class="btn" id="createAccountBtn">Create a new account</button>
+        <button type="button" class="btn btn-danger" id="deleteAccountBtn">Delete account</button>
+      </div>
+    </section>
+
+    <p class="status" id="accountStatus" hidden></p>
+
+    <p class="back-row">
+      <a href="../">← Back to proxy list</a>
+      ·
+      <a href="../login/">Sign in</a>
+    </p>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+  <script src="../firebase-config.example.js"></script>
+  <script src="../firebase-config.local.js"></script>
+  <script>
+    (function () {
+      const signedOutPanel = document.getElementById("signedOutPanel");
+      const signedInPanel = document.getElementById("signedInPanel");
+      const profilePanel = document.getElementById("profilePanel");
+      const dataPanel = document.getElementById("dataPanel");
+      const accountActionsPanel = document.getElementById("accountActionsPanel");
+      const signedInName = document.getElementById("signedInName");
+      const accountStatus = document.getElementById("accountStatus");
+      const signOutBtn = document.getElementById("signOutBtn");
+      const deleteSavedDataBtn = document.getElementById("deleteSavedDataBtn");
+      const createAccountBtn = document.getElementById("createAccountBtn");
+      const deleteAccountBtn = document.getElementById("deleteAccountBtn");
+      const profileLimitNote = document.getElementById("profileLimitNote");
+      const profileUsernameInput = document.getElementById("profileUsernameInput");
+      const profilePreviewImg = document.getElementById("profilePreviewImg");
+      const profilePresetRow = document.getElementById("profilePresetRow");
+      const profileFileInput = document.getElementById("profileFileInput");
+      const profileSaveBtn = document.getElementById("profileSaveBtn");
+      const profileInlineStatus = document.getElementById("profileInlineStatus");
+      const actionButtons = [
+        signOutBtn,
+        deleteSavedDataBtn,
+        createAccountBtn,
+        deleteAccountBtn,
+        profileSaveBtn,
+      ];
+
+      const USERNAME_RE = /^[a-zA-Z0-9_]{3,20}$/;
+      const USERNAME_WINDOW_MS = 7 * 24 * 60 * 60 * 1000;
+      const MAX_USERNAME_CHANGES_PER_WINDOW = 2;
+      const PROFILE_PHOTO_MAX_CHARS = 125000;
+
+      let currentProfile = {
+        siteUsername: "",
+        profilePhotoDataUrl: "",
+        usernameChangedAt: [],
+      };
+      let selectedProfilePhoto = "";
+      let authRef = null;
+      let dbRef = null;
+
+      function encodeSvgCircle(fill) {
+        const svg =
+          '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="32" fill="' +
+          fill +
+          '"/></svg>';
+        return "data:image/svg+xml," + encodeURIComponent(svg);
+      }
+
+      const PRESET_AVATARS = [
+        encodeSvgCircle("#5b8cff"),
+        encodeSvgCircle("#3ecf8e"),
+        encodeSvgCircle("#ff9b9b"),
+        encodeSvgCircle("#ffd57e"),
+        encodeSvgCircle("#c78bff"),
+        encodeSvgCircle("#5ce1e6"),
+        encodeSvgCircle("#ff8c42"),
+        encodeSvgCircle("#e7ecf3"),
+      ];
+
+      function isSignedInUser(user) {
+        return !!(user && !user.isAnonymous);
+      }
+
+      function accountLabelFromUser(user) {
+        if (!user) return "";
+        const gh = (user.providerData || []).find((p) => p && p.providerId === "github.com");
+        if (gh && gh.displayName) return String(gh.displayName).trim();
+        if (gh && gh.email) return String(gh.email).split("@")[0];
+        if (user.displayName) return String(user.displayName).trim();
+        if (user.email) return String(user.email).split("@")[0];
+        return "Account";
+      }
+
+      function usernameDocKey(displayName) {
+        return String(displayName || "").trim().toLowerCase();
+      }
+
+      function validateSiteUsername(raw) {
+        const s = String(raw || "").trim();
+        if (!USERNAME_RE.test(s)) {
+          return { ok: false, message: "Username must be 3–20 characters (letters, numbers, underscore only)." };
+        }
+        return { ok: true, value: s };
+      }
+
+      function pruneUsernameChanges(tsList, now) {
+        const t = now || Date.now();
+        return (tsList || []).filter((x) => typeof x === "number" && t - x < USERNAME_WINDOW_MS);
+      }
+
+      function usernameChangesRemaining() {
+        const pruned = pruneUsernameChanges(currentProfile.usernameChangedAt, Date.now());
+        return Math.max(0, MAX_USERNAME_CHANGES_PER_WINDOW - pruned.length);
+      }
+
+      function setStatus(message, kind) {
+        if (!accountStatus) return;
+        if (!message) {
+          accountStatus.hidden = true;
+          accountStatus.textContent = "";
+          accountStatus.className = "status";
+          return;
+        }
+        accountStatus.hidden = false;
+        accountStatus.textContent = message;
+        accountStatus.className = "status" + (kind ? " status--" + kind : "");
+      }
+
+      function setProfileStatus(message, kind) {
+        if (!profileInlineStatus) return;
+        if (!message) {
+          profileInlineStatus.hidden = true;
+          profileInlineStatus.textContent = "";
+          profileInlineStatus.className = "status";
+          return;
+        }
+        profileInlineStatus.hidden = false;
+        profileInlineStatus.textContent = message;
+        profileInlineStatus.className = "status" + (kind ? " status--" + kind : "");
+      }
+
+      function setBusy(busy) {
+        actionButtons.forEach((btn) => {
+          if (btn) btn.disabled = !!busy;
+        });
+      }
+
+      function updateLimitNote() {
+        if (!profileLimitNote) return;
+        const rem = usernameChangesRemaining();
+        profileLimitNote.textContent =
+          "You can change your username up to " +
+          MAX_USERNAME_CHANGES_PER_WINDOW +
+          " times per rolling 7-day window (" +
+          rem +
+          " change" +
+          (rem === 1 ? "" : "s") +
+          " left). Profile picture can be updated anytime.";
+      }
+
+      function renderPresetAvatars() {
+        if (!profilePresetRow) return;
+        profilePresetRow.innerHTML = "";
+        PRESET_AVATARS.forEach((src, i) => {
+          const b = document.createElement("button");
+          b.type = "button";
+          b.className = "preset-avatar-btn" + (selectedProfilePhoto === src ? " is-selected" : "");
+          b.setAttribute("aria-label", "Preset " + (i + 1));
+          const img = document.createElement("img");
+          img.src = src;
+          img.alt = "";
+          b.appendChild(img);
+          b.addEventListener("click", () => {
+            selectedProfilePhoto = src;
+            profilePresetRow.querySelectorAll(".preset-avatar-btn").forEach((el) => el.classList.remove("is-selected"));
+            b.classList.add("is-selected");
+            if (profilePreviewImg) {
+              profilePreviewImg.src = src;
+              profilePreviewImg.hidden = false;
+            }
+            if (profileFileInput) profileFileInput.value = "";
+          });
+          profilePresetRow.appendChild(b);
+        });
+      }
+
+      function fileToProfilePhotoDataUrl(file) {
+        return new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = () => {
+            const img = new Image();
+            img.onload = () => {
+              const size = 160;
+              const canvas = document.createElement("canvas");
+              canvas.width = size;
+              canvas.height = size;
+              const ctx = canvas.getContext("2d");
+              const scale = Math.max(size / img.width, size / img.height);
+              const w = img.width * scale;
+              const h = img.height * scale;
+              ctx.drawImage(img, (size - w) / 2, (size - h) / 2, w, h);
+              let q = 0.88;
+              let data = canvas.toDataURL("image/jpeg", q);
+              while (data.length > PROFILE_PHOTO_MAX_CHARS && q > 0.42) {
+                q -= 0.07;
+                data = canvas.toDataURL("image/jpeg", q);
+              }
+              if (data.length > PROFILE_PHOTO_MAX_CHARS + 8000) {
+                reject(new Error("Image is still too large; try a smaller file."));
+              } else {
+                resolve(data);
+              }
+            };
+            img.onerror = () => reject(new Error("Could not decode image."));
+            img.src = reader.result;
+          };
+          reader.onerror = () => reject(new Error("Could not read file."));
+          reader.readAsDataURL(file);
+        });
+      }
+
+      function syncProfileFormFromState() {
+        if (profileUsernameInput) profileUsernameInput.value = currentProfile.siteUsername || "";
+        selectedProfilePhoto = currentProfile.profilePhotoDataUrl || PRESET_AVATARS[0];
+        if (profilePreviewImg) {
+          profilePreviewImg.src = selectedProfilePhoto;
+          profilePreviewImg.hidden = false;
+        }
+        if (profileFileInput) profileFileInput.value = "";
+        renderPresetAvatars();
+        updateLimitNote();
+      }
+
+      function updateSignedInLine(user) {
+        const site = (currentProfile.siteUsername || "").trim();
+        const authLabel = accountLabelFromUser(user);
+        if (site) {
+          signedInName.textContent = "Signed in as " + site + (authLabel && authLabel !== site ? " (" + authLabel + ")." : ".");
+        } else {
+          signedInName.textContent = authLabel ? "Signed in as " + authLabel + "." : "Signed in.";
+        }
+      }
+
+      function updatePanels(user) {
+        const signedIn = isSignedInUser(user);
+        signedOutPanel.hidden = signedIn;
+        signedInPanel.hidden = !signedIn;
+        profilePanel.hidden = !signedIn;
+        dataPanel.hidden = !signedIn;
+        accountActionsPanel.hidden = !signedIn;
+        if (signedIn) {
+          updateSignedInLine(user);
+          setStatus("", "");
+          void loadUserProfileDoc(user);
+        } else {
+          signedInName.textContent = "";
+          setStatus("", "");
+        }
+      }
+
+      async function loadUserProfileDoc(user) {
+        if (!user || !dbRef) return;
+        try {
+          const snap = await dbRef.collection("users").doc(user.uid).get();
+          const d = snap.exists ? snap.data() || {} : {};
+          currentProfile = {
+            siteUsername: d.siteUsername ? String(d.siteUsername).trim() : "",
+            profilePhotoDataUrl: d.profilePhotoDataUrl ? String(d.profilePhotoDataUrl) : "",
+            usernameChangedAt: Array.isArray(d.usernameChangedAt)
+              ? d.usernameChangedAt.filter((x) => typeof x === "number")
+              : [],
+          };
+          syncProfileFormFromState();
+          updateSignedInLine(user);
+        } catch (err) {
+          console.warn("[account] profile load failed", err);
+        }
+      }
+
+      function authErrorMessage(err) {
+        const code = err && err.code ? String(err.code) : "";
+        if (code === "auth/requires-recent-login") {
+          return {
+            message: "For security, sign in again on the login page, then return here to delete your account.",
+            kind: "error",
+          };
+        }
+        return { message: err && err.message ? err.message : "That action failed.", kind: "error" };
+      }
+
+      async function signOutToAnonymous(auth) {
+        await auth.signOut();
+        await auth.signInAnonymously();
+      }
+
+      /** Keep community folder "Creator" in sync when site username changes (match savedFolders.ownerUid). */
+      async function syncSavedFolderOwnerLabelsForUid(db, uid, ownerLabel) {
+        const label = String(ownerLabel || "").trim().slice(0, 120);
+        if (!uid || !label || !db) return;
+        const snap = await db.collection("savedFolders").where("ownerUid", "==", uid).get();
+        if (snap.empty) return;
+        const CHUNK = 400;
+        const docs = snap.docs;
+        for (let i = 0; i < docs.length; i += CHUNK) {
+          const batch = db.batch();
+          let n = 0;
+          for (const d of docs.slice(i, i + CHUNK)) {
+            const data = d.data() || {};
+            const cur = typeof data.ownerLabel === "string" ? data.ownerLabel.trim() : "";
+            if (cur === label) continue;
+            batch.update(d.ref, { ownerLabel: label });
+            n++;
+          }
+          if (n) await batch.commit();
+        }
+      }
+
+      async function saveProfile() {
+        const user = authRef && authRef.currentUser;
+        if (!isSignedInUser(user) || !dbRef) return;
+        const v = validateSiteUsername(profileUsernameInput && profileUsernameInput.value);
+        if (!v.ok) {
+          setProfileStatus(v.message, "error");
+          return;
+        }
+        const newName = v.value;
+        const oldName = (currentProfile.siteUsername || "").trim();
+        const photo = selectedProfilePhoto;
+        if (!photo || photo.length > PROFILE_PHOTO_MAX_CHARS + 15000) {
+          setProfileStatus("Profile picture is too large.", "error");
+          return;
+        }
+        const oldKey = oldName ? usernameDocKey(oldName) : "";
+        const newKey = usernameDocKey(newName);
+        const isRename = oldKey && oldKey !== newKey;
+        let nextLog = pruneUsernameChanges(currentProfile.usernameChangedAt, Date.now());
+        if (isRename) {
+          if (nextLog.length >= MAX_USERNAME_CHANGES_PER_WINDOW) {
+            setProfileStatus("You have reached the username change limit for this 7-day period.", "error");
+            return;
+          }
+          nextLog = nextLog.concat([Date.now()]);
+        }
+        setBusy(true);
+        setProfileStatus("Saving…", "");
+        const uid = user.uid;
+        const userRef = dbRef.collection("users").doc(uid);
+        const newNameRef = dbRef.collection("usernames").doc(newKey);
+        try {
+          await dbRef.runTransaction((t) => {
+            return t.get(newNameRef).then((unameSnap) => {
+              if (unameSnap.exists) {
+                const owner = unameSnap.data() && unameSnap.data().uid;
+                if (owner && owner !== uid) {
+                  throw Object.assign(new Error("USERNAME_TAKEN"), { code: "USERNAME_TAKEN" });
+                }
+              }
+              if (isRename && oldKey) {
+                const oldRef = dbRef.collection("usernames").doc(oldKey);
+                t.delete(oldRef);
+              }
+              t.set(
+                newNameRef,
+                { uid: uid, updated: firebase.firestore.FieldValue.serverTimestamp() },
+                { merge: true }
+              );
+              t.set(
+                userRef,
+                {
+                  siteUsername: newName,
+                  profilePhotoDataUrl: photo,
+                  usernameChangedAt: nextLog,
+                  updated: firebase.firestore.FieldValue.serverTimestamp(),
+                },
+                { merge: true }
+              );
+            });
+          });
+          if (newName !== oldName) {
+            try {
+              await syncSavedFolderOwnerLabelsForUid(dbRef, uid, newName);
+            } catch (syncErr) {
+              console.warn("[account] folder ownerLabel sync failed", syncErr);
+            }
+          }
+          currentProfile.siteUsername = newName;
+          currentProfile.profilePhotoDataUrl = photo;
+          currentProfile.usernameChangedAt = nextLog;
+          updateSignedInLine(user);
+          updateLimitNote();
+          setProfileStatus("Profile saved.", "ok");
+        } catch (err) {
+          const code = err && err.code ? String(err.code) : "";
+          if (code === "USERNAME_TAKEN" || /already exists/i.test(String(err && err.message))) {
+            setProfileStatus("That username is taken.", "error");
+          } else {
+            setProfileStatus(err && err.message ? err.message : "Save failed.", "error");
+          }
+        } finally {
+          setBusy(false);
+        }
+      }
+
+      const config = typeof window !== "undefined" && window.__FIREBASE_CONFIG__;
+      if (!config || !config.apiKey) {
+        signedOutPanel.hidden = false;
+        setStatus("Firebase is not configured on this deployment.", "error");
+        return;
+      }
+
+      if (!firebase.apps.length) firebase.initializeApp(config);
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+      authRef = auth;
+      dbRef = db;
+
+      auth.onAuthStateChanged((user) => updatePanels(user));
+
+      signOutBtn.addEventListener("click", () => {
+        setBusy(true);
+        setStatus("Signing out…", "");
+        signOutToAnonymous(auth)
+          .then(() => setStatus("Signed out.", "ok"))
+          .catch((err) => setStatus(authErrorMessage(err).message, "error"))
+          .finally(() => setBusy(false));
+      });
+
+      profileSaveBtn.addEventListener("click", () => void saveProfile());
+
+      if (profileFileInput) {
+        profileFileInput.addEventListener("change", () => {
+          const f = profileFileInput.files && profileFileInput.files[0];
+          if (!f) return;
+          setProfileStatus("Processing image…", "");
+          fileToProfilePhotoDataUrl(f)
+            .then((data) => {
+              selectedProfilePhoto = data;
+              if (profilePreviewImg) {
+                profilePreviewImg.src = data;
+                profilePreviewImg.hidden = false;
+              }
+              if (profilePresetRow) {
+                profilePresetRow.querySelectorAll(".preset-avatar-btn").forEach((el) => el.classList.remove("is-selected"));
+              }
+              setProfileStatus("", "");
+            })
+            .catch((err) => setProfileStatus(err && err.message ? err.message : "Could not use that image.", "error"));
+        });
+      }
+
+      deleteSavedDataBtn.addEventListener("click", () => {
+        const user = auth.currentUser;
+        if (!isSignedInUser(user)) return;
+        if (!window.confirm("Delete all saved links, shared folders you own, and synced settings from your account?")) return;
+        setBusy(true);
+        setStatus("Deleting saved data…", "");
+        db.collection("savedFolders")
+          .where("ownerUid", "==", user.uid)
+          .get()
+          .then((snap) => {
+            if (!snap.docs.length) return Promise.resolve();
+            const batch = db.batch();
+            snap.docs.forEach((d) => batch.delete(d.ref));
+            return batch.commit();
+          })
+          .catch(() => {})
+          .then(() =>
+            db.collection("users").doc(user.uid).set(
+              {
+                savedLinks: [],
+                settings: {},
+                updated: firebase.firestore.FieldValue.serverTimestamp(),
+              },
+              { merge: true }
+            )
+          )
+          .then(() => setStatus("Saved data deleted.", "ok"))
+          .catch((err) => setStatus(authErrorMessage(err).message, "error"))
+          .finally(() => setBusy(false));
+      });
+
+      createAccountBtn.addEventListener("click", () => {
+        if (!window.confirm("Sign out and open the sign-in page to create a different account?")) return;
+        setBusy(true);
+        setStatus("Preparing a fresh sign-in…", "");
+        signOutToAnonymous(auth)
+          .then(() => {
+            window.location.href = new URL("../login/#create", window.location.href).href;
+          })
+          .catch((err) => {
+            setStatus(authErrorMessage(err).message, "error");
+            setBusy(false);
+          });
+      });
+
+      deleteAccountBtn.addEventListener("click", () => {
+        const user = auth.currentUser;
+        if (!isSignedInUser(user)) return;
+        if (
+          !window.confirm(
+            "Permanently delete your account and stored profile? This cannot be undone."
+          )
+        ) {
+          return;
+        }
+        setBusy(true);
+        setStatus("Deleting account…", "");
+        const uid = user.uid;
+        const userRef = db.collection("users").doc(uid);
+        userRef
+          .get()
+          .then((snap) => {
+            const d = snap.exists ? snap.data() || {} : {};
+            const un = d.siteUsername ? usernameDocKey(d.siteUsername) : "";
+            if (un) {
+              return db
+                .collection("usernames")
+                .doc(un)
+                .delete()
+                .catch(() => {});
+            }
+          })
+          .then(() =>
+            db
+              .collection("savedFolders")
+              .where("ownerUid", "==", uid)
+              .get()
+              .then((snap) => {
+                if (!snap.docs.length) return Promise.resolve();
+                const batch = db.batch();
+                snap.docs.forEach((d) => batch.delete(d.ref));
+                return batch.commit();
+              })
+              .catch(() => {})
+          )
+          .then(() => userRef.delete().catch(() => {}))
+          .then(() => user.delete())
+          .then(() => auth.signInAnonymously())
+          .then(() => {
+            window.location.href = new URL("../", window.location.href).href;
+          })
+          .catch((err) => {
+            const info = authErrorMessage(err);
+            setStatus(info.message, info.kind);
+            setBusy(false);
+          });
+      });
+    })();
+  </script>
+</body>
+</html>

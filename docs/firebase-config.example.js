@@ -15,9 +15,19 @@
    For "Most opened", Firestore must allow authenticated clients, e.g.:
 
    match /link_clicks/{id} {
-     allow read: if request.auth != null;
+     allow read: if true;
      allow create, update: if request.auth != null;
    }
+
+   match /users/{userId} {
+     allow read, write: if request.auth != null && request.auth.uid == userId;
+   }
+
+   See docs/firestore.rules for the deployed username registry rules (collection usernames)
+   and savedFolders (shared / private link folders).
+
+   Enable Authentication → Sign-in method → Anonymous, GitHub (OAuth app in Firebase Console),
+   Google, and Email/Password.
 
    Active user count uses Realtime Database (not Firestore). In Firebase Console:
    Build → Realtime Database → Create database. If the SDK cannot connect, add
