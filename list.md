@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.0 | Released: May 15, 2026
-> r105 | Last Updated: May 15, 2026
+> r106 | Last Updated: May 15, 2026
 > Total onsite links: 4131 (2161 sorted + 1970 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -251,7 +251,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl | Scramjet, Ultraviolet, Eclipse | 32 |
+> | Proxy/Games | epoxy, libcurl | Scramjet, Ultraviolet, Eclipse | 31 |
 
 > [!IMPORTANT]
 > Nebulo does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -273,7 +273,6 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://trending.kutsenko.cc/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://petezahaltsource.firebaseapp.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://4e5uwe.mimo.run/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://site.nhd.org/11595885/home | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://literacyadventures.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://third-army.surge.sh/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://www.msn.com/en-us/play | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -406,7 +405,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 74 |
+> | Proxy/Games | unknown | Scramjet | 73 |
 
 > [!IMPORTANT]
 > Truffled does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -476,7 +475,6 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://www.securly.com.ermestel.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://www.securly.com.phi-taiwan.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://www.securly.com.northbangkokfc.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://howtotech.infotechnology.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://classlink.com.de.cdn.cloudflare.net/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://idk.hldj.nl/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://i-havenojobbutidolinks.eastcountywireless.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
@@ -540,7 +538,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 72 |
+> | Proxy/Games | unknown | Scramjet | 71 |
 
 > [!IMPORTANT]
 > Vapor does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -610,7 +608,6 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://ivanhasbigbuns.richz.createdthis.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://mathlessonsfork12.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://timer.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://wikipedia.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://water.zwanenwater48.nl | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://mededucation.org/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://alexlovedih.chickenkiller.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
