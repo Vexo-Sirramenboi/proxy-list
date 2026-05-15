@@ -1,9 +1,9 @@
 {
   "meta": {
     "version": "v5.0",
-    "revision": "r106",
+    "revision": "r107",
     "last_updated": "May 15, 2026",
-    "unsorted_total": 1968,
+    "unsorted_total": 1970,
     "important_notices": "### Link ratings currently down\nLink ratings are currently down due to issues with Firebase. I am working to fix it and it will be back up in the coming days. If you try to rate a link, it will fail.\n\n### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
     "update_notice": "### Accounts and Connections\nYou can now make an account on the site and even connect using GitHub and Google. Making an account gives you access to community features such as link ratings, saving links, sharing link folders, and more.\n### Saving Links\nOnce you create an account and sign in, you can now save links and access them by going to your account name and going to \"Saved links\". This is where you can also make link folders and share your favorite links with the community.\n### Community - Rating Links\n(At the time of writing, link ratings are currently down.)\nYou can now upvote/downvote links and sort by most favorable links by rated by the community. You will no longer have to keep trying links until you find one that's actually good.\n### Community - Sharing Links\nYou can now share links globally using the new folder system. It can be accessed the same way you access saved links, and clicking \"New Folder\". Add your links, then check the \"Public\" checkmark, and you are all set! You can also copy the direct link to your folder to share with others. Community shared link folders also support community ratings.",
     "fail_threshold": 3,
@@ -103,66 +103,37 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-15T08:44:06Z",
-    "checked_at_display": "2026-05-15 08:44 UTC",
+    "checked_at": "2026-05-15T13:53:54Z",
+    "checked_at_display": "2026-05-15 13:53 UTC",
     "added_count": 0,
-    "removed_count": 3,
+    "removed_count": 5,
     "added_links": [],
     "removed_links": [
-      "https://site.nhd.org/11595885/home",
-      "https://howtotech.infotechnology.com",
-      "https://wikipedia.wikidelia.net"
+      "https://math-worksheets.thuexetaxi.com",
+      "https://lecture.history.biology.science.writing.arxeiokin.gr",
+      "https://chemistry.reading.math.writing.teacher.pnlbraila.ro",
+      "https://vcsa.mkhq.co.kr",
+      "https://slantsite.s3.amazonaws.com/index.html"
     ]
   },
   "failing_links": {
-    "https://files.copytek.cl": 2,
-    "https://app.codewave.com.np": 2,
-    "https://learn.morso-si.dk": 2,
-    "https://act.savequeechylake.org": 2,
-    "https://download.s-engine.com": 2,
-    "https://documentation.7btech.com": 2,
-    "https://learn.botsev.eu": 2,
-    "https://hosting.biec.com.np": 2,
-    "https://storytime.goodguysav.com": 2,
-    "https://read.nationalit.ru": 2,
-    "https://family.nembahadurraskoti.com.np": 2,
-    "https://status.xcloud.ar": 2,
-    "https://travel.national-birdshow.com": 2,
-    "https://k12edu.duckdns.org": 2,
-    "https://ethostulsa.org": 2,
-    "https://novacs.letiatours.com": 1,
-    "https://virtualgeo.letiatours.com": 1,
-    "https://bllymartw.lekhnathfb.com.np": 2,
-    "https://us.grumpyoldmen.us": 2,
-    "https://wiki.wikidelia.net": 2,
-    "https://blog.succeed.cl": 2,
-    "https://family.jessicacadotte.com": 2,
-    "https://purchase.halftech.com": 2,
-    "https://dev.cyber-ag.com": 2,
-    "https://recipies.dalicias.cl": 2,
-    "https://null-code.codewave.com.np": 2,
-    "https://dev.apa89.com": 2,
-    "https://updownyt.ytconverter.it": 2,
-    "https://cdn.adworldlog.com": 2,
-    "https://mathissofunicoulddoitfordaysonend.aber.ir": 2,
-    "https://learn.sharptutor.net": 2,
-    "https://dev.amq.li": 2,
-    "https://gitlab.amq.ro": 2,
-    "https://hydration.zwanenwater48.nl": 2,
-    "https://launch.umlach.org": 2,
-    "https://app.cmyk-studio.com": 2,
-    "https://zlty.europeserv.org": 2,
-    "http://ipv6.bestar.sg": 2,
-    "http://dns.dnda.com.np": 2,
-    "https://bulls.eat.grass.klrmowse.com": 1,
-    "https://player-nation.lucianmandru.ro": 1,
-    "https://securelyplsspeedineedthis8weudidhske.suwal.com.np": 1,
-    "https://math-worksheets.thuexetaxi.com": 2,
-    "https://velara.my": 2,
-    "https://lecture.history.biology.science.writing.arxeiokin.gr": 2,
-    "https://chemistry.reading.math.writing.teacher.pnlbraila.ro": 2,
-    "https://vcsa.mkhq.co.kr": 2,
-    "https://slantsite.s3.amazonaws.com/index.html": 2
+    "https://aphistorytutoring.tjarba.com": 1,
+    "https://update.5432sdabhvaewukbcfjkaesk.152.53.136.204.nip.io": 1,
+    "https://www.update.vutsrmlkjqpupdate.hcbaupdate.98365432update.update.76update.158-69-222-114.sslip.io": 1,
+    "https://onmlkfehgfeupdate.update.218765432sdabhvaewukbcfjkaesk.152.53.136.204.nip.io": 1,
+    "https://32update.2sdabhvaewukbcfjkaesk.152.53.136.204.nip.io": 1,
+    "https://15.204.247.166.dyn.tcadmin.net": 1,
+    "https://sainttech.techmaxasia.com/#home": 1,
+    "https://art.technology.engineering.homework.writing.srivaishnavam.org.au": 1,
+    "https://grammar.biology.homework.geometry.math.srivaishnavam.org.au": 1,
+    "https://studying.campus.reading.programming.engineering.arionskyclub.com": 1,
+    "https://geometry.studying.calculus.music.chemistry.greenbaynz.com": 1,
+    "https://ax7.lervs.ro": 1,
+    "https://whyeverestsotall.wikidelia.net": 1,
+    "https://everest2.klrmowse.com": 1,
+    "https://everest3.klrmowse.com": 1,
+    "https://about.airlinemeals.net": 1,
+    "https://player-nation.lucianmandru.ro": 2
   },
   "links": [
     {
@@ -318,25 +289,6 @@
       ],
       "locked": "",
       "link": "https://securelyplsspeedineedthis8weudidhske.suwal.com.np/",
-      "found": "5/14/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌙 Velara",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://math-worksheets.thuexetaxi.com/",
       "found": "5/14/2026",
       "username": "N/A",
       "password": "N/A",
@@ -14999,48 +14951,6 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "🏴 OverCloaked",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://lecture.history.biology.science.writing.arxeiokin.gr/",
-      "found": "5/14/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🏴 OverCloaked",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://chemistry.reading.math.writing.teacher.pnlbraila.ro/",
-      "found": "5/14/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
       "provider": "😈 Imp Proxy",
       "category": "Proxy/Games",
       "capabilities": "Unknown",
@@ -23882,25 +23792,6 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Rammerhead",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Rammerhead",
-      "protocol_tags": [
-        "rammerhead"
-      ],
-      "locked": "",
-      "link": "https://vcsa.mkhq.co.kr/",
-      "found": "5/14/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
       "provider": "🔼 Axiom",
       "category": "Proxy/Games",
       "capabilities": "captcha",
@@ -27250,25 +27141,6 @@
       "locked": "",
       "link": "https://starr.bijayakilla.com/",
       "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://slantsite.s3.amazonaws.com/index.html",
-      "found": "5/11/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "1NobleCyber",

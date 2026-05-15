@@ -1971,3 +1971,5 @@ Move links from here into `list.md` once sorted.
 - https://vcsa.easycharge-batteries.com
 - https://sunsett.cc
 - https://velara.cc
+- https://chemistry.reading.math.writing.teacher.pnlbraila.ro
+- https://lecture.history.biology.science.writing.arxeiokin.gr
