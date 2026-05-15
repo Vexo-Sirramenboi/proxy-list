@@ -15,11 +15,8 @@ Welcome to the official Proxy List! This has a running list of hundreds of unblo
 
 ## Important Notices
 
-### Problems with Authentication
-I am aware of an issue that is causing users to be repeatedly logged out of their account, which happens when navigating pages other than the main list.
-
-### Link ratings currently down
-Link ratings are currently down due to issues with Firebase. I am working to fix it and it will be back up in the coming days. If you try to rate a link, it will fail.
+### Link ratings back up
+Link ratings are now working as intended, feel free to rate any link you choose! More info in the update notice, which can be accessed from the sidebar to your left (or above you if you're viewing on mobile).
 
 ### Selenite
 The owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!
@@ -38,7 +35,7 @@ You can now make an account on the site and even connect using GitHub and Google
 Once you create an account and sign in, you can now save links and access them by going to your account name and going to "Saved links". This is where you can also make link folders and share your favorite links with the community.
 
 ### Community - Rating Links
-(At the time of writing, link ratings are currently down.)
+Link ratings are working again — you can thumbs-up or thumbs-down links and sort by highest rated or most saved.
 You can now upvote/downvote links and sort by most favorable links by rated by the community. You will no longer have to keep trying links until you find one that's actually good.
 
 ### Community - Sharing Links

@@ -1098,26 +1098,18 @@
     .important-notices a {
       word-break: break-all;
     }
-    .important-notices .notice-alert-block {
-      border: 1px solid #8b3a3a;
-      background: #2a1515;
+    .important-notices .notice-alert-info {
+      border: 1px solid #2d6aa8;
+      background: #132438;
       border-radius: 6px;
       padding: 0.65rem 0.75rem;
       margin-bottom: 0.75rem;
     }
-    .important-notices .notice-alert-block h3 {
-      color: #ff8a8a;
+    .important-notices .notice-alert-info h3 {
+      color: #8ec8ff;
     }
-    .important-notices .notice-alert-block p {
-      color: #ffd2d2;
-    }
-    .important-notices .notice-alert-auth {
-      border-color: #b71c1c;
-      background: #2d1010;
-    }
-    .important-notices .notice-alert-auth h3,
-    .important-notices .notice-alert-auth p {
-      color: #ff3333;
+    .important-notices .notice-alert-info p {
+      color: #d8eaff;
     }
     #filterSelect {
       width: 100%;
@@ -5735,8 +5727,7 @@
 
     function importantNoticeAlertClass(title) {
       const t = String(title || "").trim();
-      if (/link ratings currently down/i.test(t)) return "notice-alert-block";
-      if (/problems with authentication/i.test(t)) return "notice-alert-block notice-alert-auth";
+      if (/link ratings back up/i.test(t)) return "notice-alert-info";
       return "";
     }
 

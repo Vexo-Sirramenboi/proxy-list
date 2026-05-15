@@ -195,31 +195,12 @@
     @media (max-width: 640px) {
       th:nth-child(5), td:nth-child(5) { display: none; }
     }
-    .auth-outage-banner {
-      margin: 0;
-      padding: 0.85rem 1.25rem;
-      border-bottom: 2px solid #b71c1c;
-      background: #2a1010;
-      font-size: 0.88rem;
-      line-height: 1.55;
-    }
-    .auth-outage-heading {
-      margin: 0 0 0.45rem;
-      font-size: 1rem;
-      font-weight: 700;
-      color: #ff3333;
-    }
-    .auth-outage-banner p {
-      margin: 0;
-      color: #ff3333;
-    }
+
+
   </style>
 </head>
 <body>
-  <div class="auth-outage-banner" role="alert">
-    <h2 class="auth-outage-heading">Problems with Authentication</h2>
-    <p>I am aware of an issue that is causing users to be repeatedly logged out of their account, which happens when navigating pages other than the main list.</p>
-  </div>
+
   <header>
     <h1>Community folders</h1>
     <p class="sub">
@@ -305,6 +286,18 @@
 
       function escapeAttr(s) {
         return escapeHtml(s).replace(/'/g, "&#39;");
+      }
+
+      /** Persisted auth restores asynchronously; reading currentUser before this can falsely look signed out. */
+      function waitForFirebaseAuth(auth) {
+        if (!auth || typeof auth.onAuthStateChanged !== "function") return Promise.resolve();
+        if (typeof auth.authStateReady === "function") return auth.authStateReady();
+        return new Promise(function (resolve) {
+          var unsub = auth.onAuthStateChanged(function () {
+            unsub();
+            resolve();
+          });
+        });
       }
 
       const RATING_THUMB_UP_IMG = "../rating-thumb-up.png";
@@ -570,9 +563,11 @@
           return;
         }
 
+        var auth = firebase.auth();
         try {
-          if (!firebase.auth().currentUser) {
-            await firebase.auth().signInAnonymously();
+          await waitForFirebaseAuth(auth);
+          if (!auth.currentUser) {
+            await auth.signInAnonymously();
           }
         } catch (e) {
           showError("Sign-in failed (anonymous). Check Auth is enabled and API key referrer rules: " + (e && e.message ? e.message : String(e)));
