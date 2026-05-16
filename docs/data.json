@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.0",
-    "revision": "r111",
+    "revision": "r112",
     "last_updated": "May 16, 2026",
     "unsorted_total": 1970,
     "important_notices": "### Link ratings back up\nLink ratings are now working as intended, feel free to rate any link you choose! More info in the update notice, which can be accessed from the sidebar to your left (or above you if you're viewing on mobile).\n\n### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
@@ -103,123 +103,43 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-16T13:10:39Z",
-    "checked_at_display": "2026-05-16 13:10 UTC",
+    "checked_at": "2026-05-16T18:57:02Z",
+    "checked_at_display": "2026-05-16 18:57 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 11,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://dfdfsdfs.rinet.ai/onboarding",
+      "https://aside.segurosdepersonas.cl",
+      "https://winter.snow.coldness.frostbite.frozen.christmas.japan.is",
+      "https://writing.english.assignment.technology.classroom.japan.is",
+      "https://greenfn.beerporn.org",
+      "https://belt-frog.beltfrog.com",
+      "https://belt.beltfrog.com",
+      "https://programming.grammar.drama.biology.physics.glenoriebakery.com.au",
+      "https://classroom.library.chemistry.learning.music.glenoriebakery.com.au",
+      "https://geography.seminar.campus.engineering.learning.easternstamps.com",
+      "https://moreinfo.wikidelia.net"
+    ]
   },
   "failing_links": {
-    "https://yvhv.luxuryroig.com": 2,
-    "https://xcwuz.myfdistribuidora.com.ar": 2,
-    "https://wcgcn.tiatex.com": 2,
-    "https://rify.hospitaldelninodif.gob.mx": 2,
-    "https://tbma.gressvikbmx.no": 2,
-    "https://campus.calculus.project.lecture.engineering.everestkc.com.np/onboarding": 2,
-    "http://hmmmmmmmm.monedita.cl/onboarding": 2,
-    "https://youaresosamige.govt.hu/onboarding": 2,
-    "https://yougotme.mysaol.com/onboarding": 2,
-    "https://youaremyfire.verymad.net/onboarding": 2,
-    "https://uhybefvbhuyifvdhiu.cuetara.name/onboarding": 2,
-    "https://iliketoeat.ftp.sh/onboarding": 2,
-    "https://imlikeby2025.hosts.name/onboarding": 2,
-    "https://youareagooner.ovie.gob.mx/onboarding": 2,
-    "https://imsoslay.yodyiam.com/onboarding": 2,
-    "https://youaremysunshine.auszeitseminar.ch/onboarding": 2,
-    "https://infgbifbgijm.cuetara.name/onboarding": 2,
-    "https://dfdfsdfs.rinet.ai/onboarding": 2,
-    "https://imlikefgfgd.rinet.ai/onboarding": 2,
-    "https://food.gostiljerestoran.rs": 2,
-    "https://granit.granit-union.ru": 2,
-    "https://doyourshcoolwork.cuetara.name/onboarding": 2,
-    "https://youaresomean.cuetara.name/onboarding": 2,
-    "https://youlikepoop.cuetara.name/onboarding": 2,
-    "https://eatyourfoodnotmine.rinet.ai/onboarding": 2,
-    "https://somean.rinet.ai/onboarding": 2,
-    "https://justmathgames.auszeitseminar.ch/onboarding": 2,
-    "https://mathgamesarefun.auszeitseminar.ch/onboarding": 2,
-    "https://doyourwork.lyxcorp.com/onboarding": 2,
-    "https://mathgames.lyxcorp.com/onboarding": 2,
-    "http://teacher.art.science.math.biology.top-povar.ru": 2,
-    "https://player-nation.kellerzahnarzt.ch": 1,
-    "https://realvcsa.fineone.ru": 1,
-    "https://vseesa-yt.machophd.org": 1,
-    "https://cherri.lalitakc.com.np": 1,
-    "https://playernation.darkroom-lang.org": 1,
-    "https://realvcsa.castemag.com": 1,
-    "https://youtube.com.vcsa.lalitakc.com.np": 1,
-    "https://aside.segurosdepersonas.cl": 2,
-    "https://vek.polden21vek.ru/onboarding": 2,
-    "https://polden.polden21vek.ru/onboarding": 2,
-    "https://21vek.polden21vek.ru/onboarding": 2,
-    "https://21.polden21vek.ru/onboarding": 2,
-    "https://glacier-water.waterloobae.com/onboarding": 2,
-    "https://crops.primeflk.ch/onboarding": 2,
-    "https://aphistorytutoring.cencopro.cl": 1,
-    "https://filterbrowser.tiatex.com/onboarding": 2,
-    "https://start.pastorschwittay.com.ar": 2,
-    "https://filter.pilatesfitness.co.uk": 2,
-    "https://contact.maxmir-energy.ru": 2,
-    "https://gfgfgfg.dnswish.com": 2,
-    "https://dfgdfgdfg.maxmir-energy.ru": 2,
-    "https://ghhgvgvgh.maxmir-energy.ru": 2,
-    "https://dffdgdfgdfg.bryankrawetz.com": 2,
-    "https://ffgfgfgfgh.bryankrawetz.com": 2,
-    "https://dgfdfgdfgfgd.fppagos.com": 2,
-    "https://gvcgfhgfhfg.fppagos.com": 2,
-    "https://dffdgdfg.robbinsaviation.com": 2,
-    "https://qlsp.lervs.ro": 2,
-    "https://tfvsi.lervs.ro": 2,
-    "https://uesln.lervs.ro": 2,
-    "https://zjdrv.lervs.ro": 2,
-    "https://doyourwork.lervs.ro": 2,
-    "https://fdfggdfgdf.lervs.ro": 2,
-    "https://ohiolearningschools.com": 2,
-    "https://jane.academinctools.pw": 2,
-    "https://jane.agreca.com.ar": 2,
-    "https://your.early.cbcsystems.co.uk": 2,
-    "https://your.lives.work.easternstouch.co.za": 2,
-    "https://galaxy.altonhabitat.info": 2,
-    "https://galaxy.altonhabitat.store": 2,
-    "https://galaxy.altonhabitat.online": 2,
-    "https://bayy.dinocol.co.uk": 2,
-    "https://snia.dinocol.co.uk": 2,
-    "https://wlakp.dinocol.co.uk": 2,
-    "https://learning.drama.biology.algebra.teacher.japan.is": 2,
-    "https://learning.history.drama.vocabulary.writing.japan.is": 2,
-    "https://winter.snow.coldness.frostbite.frozen.christmas.japan.is": 2,
-    "https://writing.english.assignment.technology.classroom.japan.is": 2,
-    "https://monocal.dinocol.co.uk": 2,
-    "https://greenfn.beerporn.org": 2,
-    "https://belt-frog.beltfrog.com": 2,
-    "https://belt.beltfrog.com": 2,
-    "https://frog-belt.beltfrog.com": 2,
-    "https://frog.beltfrog.com": 2,
-    "https://froggie.beltfrog.com": 2,
-    "https://programming.grammar.drama.biology.physics.glenoriebakery.com.au": 2,
-    "https://classroom.library.chemistry.learning.music.glenoriebakery.com.au": 2,
-    "https://geography.seminar.campus.engineering.learning.easternstamps.com": 2,
-    "https://moreinfo.wikidelia.net": 2,
-    "https://doyourwork.dnswish.com": 2,
-    "https://dfsdsfdsf.fppagos.com": 2,
-    "https://dfsdfsdfsdfs.bryankrawetz.com": 2,
-    "https://fdsdfs.elmirador360.com": 2,
-    "https://galaxy.notariamelipilla.cl": 2,
-    "http://galaxy.notariamelipilla.cl/onboarding": 2,
-    "https://doyourwork.dnswish.com/onboarding": 2,
-    "https://iliketocode.dnswish.com/onboarding": 2,
-    "https://dfsdsfdsf.fppagos.com/onboarding": 2,
-    "https://jndfgijgfd.fppagos.com/onboarding": 2,
-    "https://dfsdfsdfsdfs.bryankrawetz.com/onboarding": 2,
-    "https://gffgdfgdfg.bryankrawetz.com/onboarding": 2,
-    "https://fdsdfs.elmirador360.com/onboarding": 2,
-    "https://ypqsc.airlinemeals.net": 2,
-    "https://securelyplsspeedineedthis8weudidhske.suwal.com.np": 2,
-    "https://hence.thakuraiarman.com.np/onboarding": 2,
-    "https://hoster.fhoster.ru/onboarding": 2,
-    "https://hosting.fhoster.ru/onboarding": 2,
-    "https://shopnow.womenclothingtoday.com": 1
+    "https://clever.com.rodzinnawiez.pl": 1,
+    "https://clever.com.eastcountywireless.com": 1,
+    "https://player-nation.kellerzahnarzt.ch": 2,
+    "https://realvcsa.fineone.ru": 2,
+    "https://vseesa-yt.machophd.org": 2,
+    "https://photoshoot.estudiodebiaggi.com.ar": 1,
+    "https://cherri.lalitakc.com.np": 2,
+    "https://playernation.darkroom-lang.org": 2,
+    "https://realvcsa.castemag.com": 2,
+    "https://youtube.com.vcsa.lalitakc.com.np": 2,
+    "https://clever.com.dmc219.com": 1,
+    "https://clever.com.londonwhiteeagles.ca": 1,
+    "https://clever.com.srijanakhadka.com.np": 1,
+    "https://cdn.jsdelivr.net/gh/TwiLabs/art/dist/index.svg": 1,
+    "https://vikvippro-canlitev2.geobattery.com": 1,
+    "https://computers.recepist.fi": 1,
+    "https://shopnow.womenclothingtoday.com": 2
   },
   "links": [
     {
@@ -19454,28 +19374,6 @@
         "ultraviolet"
       ],
       "locked": "",
-      "link": "https://dfdfsdfs.rinet.ai/onboarding/",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🪐 Galaxy",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy, wisp",
-      "capability_tags": [
-        "libcurl",
-        "epoxy",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
       "link": "https://imlikefgfgd.rinet.ai/onboarding/",
       "found": "4/18/2026",
       "username": "N/A",
@@ -19742,28 +19640,6 @@
       "locked": "",
       "link": "http://teacher.art.science.math.biology.top-povar.ru/",
       "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🪐 Galaxy",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy, wisp",
-      "capability_tags": [
-        "libcurl",
-        "epoxy",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://aside.segurosdepersonas.cl/",
-      "found": "4/26/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",
@@ -20290,117 +20166,7 @@
         "ultraviolet"
       ],
       "locked": "",
-      "link": "https://winter.snow.coldness.frostbite.frozen.christmas.japan.is",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪐 Galaxy",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy, wisp",
-      "capability_tags": [
-        "libcurl",
-        "epoxy",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://writing.english.assignment.technology.classroom.japan.is",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪐 Galaxy",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy, wisp",
-      "capability_tags": [
-        "libcurl",
-        "epoxy",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
       "link": "https://monocal.dinocol.co.uk",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪐 Galaxy",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy, wisp",
-      "capability_tags": [
-        "libcurl",
-        "epoxy",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://greenfn.beerporn.org",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪐 Galaxy",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy, wisp",
-      "capability_tags": [
-        "libcurl",
-        "epoxy",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://belt-frog.beltfrog.com",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪐 Galaxy",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy, wisp",
-      "capability_tags": [
-        "libcurl",
-        "epoxy",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://belt.beltfrog.com",
       "found": "5/4/2026",
       "username": "N/A",
       "password": "N/A",
@@ -20692,94 +20458,6 @@
       "password": "N/A",
       "contributor": "yourworstnightmare1",
       "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🪐 Galaxy",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy, wisp",
-      "capability_tags": [
-        "libcurl",
-        "epoxy",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://programming.grammar.drama.biology.physics.glenoriebakery.com.au",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪐 Galaxy",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy, wisp",
-      "capability_tags": [
-        "libcurl",
-        "epoxy",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://classroom.library.chemistry.learning.music.glenoriebakery.com.au",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪐 Galaxy",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy, wisp",
-      "capability_tags": [
-        "libcurl",
-        "epoxy",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://geography.seminar.campus.engineering.learning.easternstamps.com",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🪐 Galaxy",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy, wisp",
-      "capability_tags": [
-        "libcurl",
-        "epoxy",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://moreinfo.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
     },
     {
       "provider": "🪐 Galaxy",
