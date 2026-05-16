@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.0 | Released: May 15, 2026
-> r108 | Last Updated: May 15, 2026
+> r109 | Last Updated: May 16, 2026
 > Total onsite links: 4175 (2210 sorted + 1965 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -58,7 +58,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 8 |
+> | Proxy/Games | captcha | Scramjet | 7 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -68,7 +68,6 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://vcsa-zone.esdata.info/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://securelyplsspeedineedthis8weudidhske.suwal.com.np/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://velara.my/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://learning.msspsparaguay.org/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://quick-learning.gorich.hk/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # ➗ gn-math
@@ -885,7 +884,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 42 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 43 |
 
 > [!IMPORTANT]
 > Lunar does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.

@@ -1,10 +1,9 @@
 # Unsorted Links
 
-Contributions below are credited to **yourworstnightmare1** ([GitHub profile](https://github.com/yourworstnightmare1)) until each link is moved into a provider table in `list.md`.
-
 Links that do not have a confirmed provider section yet.
 Move links from here into `list.md` once sorted.
 
+- https://github.com/yourworstnightmare1
 - https://hyperbio.bostoncareercounselor.com
 - https://iwonder.zotova.ca
 - https://keenreading.contauditor.cl
@@ -802,7 +801,6 @@ Move links from here into `list.md` once sorted.
 - https://2.asistdoc.ar
 - https://3.asistdoc.ar
 - https://3306speciallink.surendrapant.com.np
-- https://3e3c.org
 - https://67-67-67-67-67-67-67-67-67-67-67-67-67-67-67-67-67-67--17246506.codehs.me
 - https://a.godiscoolest.cf
 - https://a.godiscoolest.ga
@@ -1058,8 +1056,6 @@ Move links from here into `list.md` once sorted.
 - https://membean.cf
 - https://monitoring.gpu74.ru
 - https://monkeytype.gq
-- https://motor-cycle-part.org
-- https://msbabkiesclass.com
 - https://mydogwasinnnn.vercel.app/static
 - https://mymathclass.doriswel.com
 - https://mywholelife.screenclip.net
@@ -1200,14 +1196,12 @@ Move links from here into `list.md` once sorted.
 - https://school.screenclip.net
 - https://science.naturalstatehollow.com
 - https://science.willemvisser.co.za
-- https://scrapbooking-directory.com
 - https://securly.zoho.to
 - https://securlysettings.latinliturgy.com
 - https://securlysettings.latinliturgy.com/.
 - https://see.easycharge-batteries.com
 - https://sentry.soraapp.ga
 - https://sethmightshoothimself.codehs.me
-- https://sfasoftballcamps.com
 - https://shadow.isreallycool.lol
 - https://sharkquiz.cf
 - https://shdjdgdhsidhwfs.graphicon.ru
