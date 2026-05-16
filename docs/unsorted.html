@@ -317,11 +317,22 @@
       const query = q.value.trim().toLowerCase();
       const mode = sortMode.value;
       const rows = allLinks
-        .filter((link) => {
+        .filter((row) => {
+          const link = row.link;
           if (!query) return true;
-          return link.toLowerCase().includes(query) || safeDomain(link).includes(query);
+          const cq = query.toLowerCase();
+          return (
+            link.toLowerCase().includes(cq) ||
+            safeDomain(link).includes(cq) ||
+            String(row.contributor || "").toLowerCase().includes(cq)
+          );
         })
-        .map((link) => ({ link, domain: safeDomain(link) }));
+        .map((row) => ({
+          link: row.link,
+          domain: safeDomain(row.link),
+          contributor: row.contributor || "—",
+          contributor_url: row.contributor_url || null,
+        }));
 
       if (mode === "domain-asc" || mode === "domain-desc") {
         const direction = mode === "domain-asc" ? 1 : -1;
@@ -353,6 +364,14 @@
 
       const rows = rowsData
         .map((r) => {
+          const contribCell =
+            r.contributor_url && r.contributor && r.contributor !== "—"
+              ? '<a href="' +
+                escapeAttr(r.contributor_url) +
+                '" rel="noopener noreferrer" target="_blank">' +
+                escapeHtml(r.contributor) +
+                "</a>"
+              : escapeHtml(String(r.contributor || "—"));
           return (
             "<tr><td>" +
             escapeHtml(r.domain || "—") +
@@ -360,13 +379,17 @@
             escapeAttr(r.link) +
             '" rel="noopener noreferrer" target="_blank">' +
             escapeHtml(r.link) +
-            "</a></td></tr>"
+            '</a></td><td class="contrib-cell">' +
+            contribCell +
+            "</td></tr>"
           );
         })
         .join("");
       setHtml(
         tableWrap,
-        "<table><thead><tr><th>Domain</th><th>Link</th></tr></thead><tbody>" + rows + "</tbody></table>"
+        "<table><thead><tr><th>Domain</th><th>Link</th><th>Contributor</th></tr></thead><tbody>" +
+          rows +
+          "</tbody></table>"
       );
     }
 
@@ -387,7 +410,22 @@
           setContentLoading(false);
           return;
         }
-        allLinks = links.map((r) => (typeof r === "string" ? r : r.link)).filter(Boolean);
+        allLinks = links
+          .map((r) => {
+            if (typeof r === "string") {
+              return {
+                link: r,
+                contributor: "yourworstnightmare1",
+                contributor_url: "https://github.com/yourworstnightmare1",
+              };
+            }
+            return {
+              link: r.link || "",
+              contributor: r.contributor || "yourworstnightmare1",
+              contributor_url: r.contributor_url || "https://github.com/yourworstnightmare1",
+            };
+          })
+          .filter((row) => row.link);
         q.addEventListener("input", render);
         sortMode.addEventListener("change", () => {
           void renderAfterSortChange();

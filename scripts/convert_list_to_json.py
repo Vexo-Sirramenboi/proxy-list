@@ -20,6 +20,10 @@ UNSORTED_OUTPUT = ROOT / "docs" / "unsorted.json"
 
 LINK_CHECK_FAIL_THRESHOLD = 3
 
+# Credited contributor for entries in unsorted.md until they are merged into list.md rows.
+UNSORTED_CONTRIBUTOR = "yourworstnightmare1"
+UNSORTED_CONTRIBUTOR_URL = "https://github.com/yourworstnightmare1"
+
 
 def strip_blockquote_prefix(line: str) -> str:
     s = line.strip()
@@ -230,19 +234,27 @@ def parse_unsorted_links(existing_sorted_keys: set[str] | None = None) -> list[d
         return []
     existing_sorted_keys = existing_sorted_keys or set()
     raw = UNSORTED_INPUT.read_text(encoding="utf-8")
-    links = re.findall(r"https?://[^\s|)]+", raw)
+    _bullet_link = re.compile(r"^\s*-\s+(https?://\S+)\s*$")
     seen: set[str] = set()
     out: list[dict[str, str]] = []
-    for link in links:
+    for line in raw.splitlines():
+        m = _bullet_link.match(line)
+        if not m:
+            continue
+        link = m.group(1).strip()
         nk = _normalize_url_key(link)
         if not nk or nk in seen:
             continue
-        # Safety net: if unsorted.md contains a link already present in list.md,
-        # exclude it from docs/unsorted.json.
         if nk in existing_sorted_keys:
             continue
         seen.add(nk)
-        out.append({"link": link})
+        out.append(
+            {
+                "link": link,
+                "contributor": UNSORTED_CONTRIBUTOR,
+                "contributor_url": UNSORTED_CONTRIBUTOR_URL,
+            }
+        )
     return out
 
 
@@ -432,12 +444,12 @@ def main() -> int:
     important = parse_important_notices(raw)
     update_notice = parse_update_notice(raw)
     links = parse_list_md(raw)
-    live_by_contributor = contributor_counts_from_rows(links)
+    sorted_keys = {_normalize_url_key(row.get("link", "")) for row in links if row.get("link")}
+    unsorted_links = parse_unsorted_links(sorted_keys)
+    live_by_contributor = contributor_counts_from_rows(links + unsorted_links)
     prev_totals = load_contributor_totals(CONTRIBUTOR_TOTALS)
     merged_totals = merge_contributor_totals(prev_totals, live_by_contributor)
     write_contributor_totals(CONTRIBUTOR_TOTALS, merged_totals)
-    sorted_keys = {_normalize_url_key(row.get("link", "")) for row in links if row.get("link")}
-    unsorted_links = parse_unsorted_links(sorted_keys)
     popular_urls, popular_note = load_popular_config()
     popular_entries = resolve_popular_entries(links, popular_urls)
     payload = {

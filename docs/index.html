@@ -556,6 +556,13 @@
       font-size: 0.82rem;
       font-family: inherit;
     }
+    .most-opened-sort-select:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 1px;
+    }
+    aside .most-opened-toolbar .most-opened-sort-select {
+      max-width: none;
+    }
     .popular-section .table-chunk-wrap {
       overflow-x: auto;
       margin: 0 -0.15rem;
@@ -660,7 +667,9 @@
       object-fit: contain;
       display: block;
       margin: 0 auto 1rem;
-      opacity: 0.9;
+      opacity: 0.92;
+      /* Raster icon is dark; invert for readability on dark theme */
+      filter: brightness(0) invert(1);
     }
     .empty-state-title {
       font-size: 1.35rem;
@@ -1113,16 +1122,7 @@
     }
     #filterSelect {
       width: 100%;
-      padding: 0.5rem 0.65rem;
-      border-radius: 6px;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      color: var(--text);
-      font-size: 0.9rem;
-    }
-    #filterSelect:focus {
-      outline: 2px solid var(--accent);
-      outline-offset: 1px;
+      max-width: none;
     }
 
     /* New deploy / list update — sticky below orientation overlay; below modal backdrop (30) */
@@ -1312,14 +1312,15 @@
 
       <fieldset>
         <legend>Link order</legend>
-        <label for="linkListSortSelect">Sort the filtered table</label>
-        <select id="linkListSortSelect" aria-label="Sort filtered links">
-          <option value="default">Default (data order)</option>
-          <option value="rating_desc">Highest rated (net thumbs)</option>
-          <option value="rating_asc">Lowest rated first</option>
-          <option value="saved_desc">Most saved (all users)</option>
-        </select>
-        <p class="hint">Ratings and “most saved” use Firestore; deploy rules in <code>docs/firestore.rules</code>. Thumbs and save counts update when signed in (non-anonymous). This browser caches score aggregates for the same list version to stay within the Spark (free) plan’s daily read cap.</p>
+        <div class="most-opened-toolbar">
+          <label class="most-opened-sort-label" for="linkListSortSelect">Sort the filtered table</label>
+          <select id="linkListSortSelect" class="most-opened-sort-select" aria-label="Sort filtered links">
+            <option value="default">Default (data order)</option>
+            <option value="rating_desc">Highest rated (net thumbs)</option>
+            <option value="rating_asc">Lowest rated first</option>
+            <option value="saved_desc">Most saved (all users)</option>
+          </select>
+        </div>
       </fieldset>
 
       <fieldset>
@@ -1476,7 +1477,7 @@
       </div>
       <div class="summary-body">
         <p class="summary-muted">Choose the filter used on your network. Link summaries will show a warning when this filter reports blocked or warning.</p>
-        <select id="filterSelect">
+        <select id="filterSelect" class="most-opened-sort-select">
           <option value="">Any / Not selected</option>
         </select>
         <p style="margin-top:0.75rem;">
@@ -5613,7 +5614,7 @@
         escapeAttr(EMPTY_STATE_ICON_URL) +
         '" width="120" height="120" alt="" decoding="async" />' +
         '<h2 class="empty-state-title">No results found</h2>' +
-        '<p class="empty-state-desc">Your likely have too many sort filters selected, or all links for your system&#39;s web filter are blocked.</p>' +
+        '<p class="empty-state-desc">What you&#39;re searching may not exist, you likely have too many sort filters selected, or all links for your system&#39;s web filter are blocked.</p>' +
         '<button type="button" class="btn btn-primary empty-state-reset-btn">Reset filters</button>'
       );
     }

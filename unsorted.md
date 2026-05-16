@@ -1,5 +1,7 @@
 # Unsorted Links
 
+Contributions below are credited to **yourworstnightmare1** ([GitHub profile](https://github.com/yourworstnightmare1)) until each link is moved into a provider table in `list.md`.
+
 Links that do not have a confirmed provider section yet.
 Move links from here into `list.md` once sorted.
 
