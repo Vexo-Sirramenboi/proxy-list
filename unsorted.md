@@ -1969,3 +1969,7 @@ Move links from here into `list.md` once sorted.
 - https://velara.cc
 - https://chemistry.reading.math.writing.teacher.pnlbraila.ro
 - https://lecture.history.biology.science.writing.arxeiokin.gr
+- https://edu.myt0.info
+- https://infoo.infotechnology.com
+- https://learningcomesfirst.madhavkhanal.com.np
+- https://tuffle.infotechnology.com
