@@ -24,7 +24,6 @@ Move links from here into `list.md` once sorted.
 - https://unblocc.co.uk
 - https://waterthetree.co.uk
 - https://octopusspaghetti.co.uk
-- https://vividdarkness.uk
 - https://status.noblo.cc
 - https://nobloccstatus.pages.dev
 - https://nobloccstatus.mattle.uk
@@ -145,7 +144,6 @@ Move links from here into `list.md` once sorted.
 - https://edu.mouse-hole.com
 - https://fcvcx-17856309.codehs.me/index.html
 - https://github.com/Kn0tzer/kn0tzer.github.io/blob/main/math/index.html
-- https://gn-math-t.github.io
 - https://gn-mathq6bv.hosteriafutaleufu.cl
 - https://help.learnbyvisuals.com
 - https://ididfour.vercel.app
@@ -159,7 +157,6 @@ Move links from here into `list.md` once sorted.
 - https://maybeisthebestgoatkingever.vercel.app/%20
 - https://minecraftuser2.github.io/gn-math.github.io
 - https://mkfmnk-17856311.codehs.me/index.html
-- https://mrvaporwave25.github.io/breadkartextremecomingsoonquestionmark
 - https://project-one-15257027.codehs.me/?id=468
 - https://prolinkmaker123.vercel.app/%20
 - https://pug-really-gatekeeping-public-methods.global.ssl.fastly.net
@@ -769,7 +766,6 @@ Move links from here into `list.md` once sorted.
 - https://sciencelovers.dinprima.ro
 - https://f.freetls.fastly.net
 - https://admin.v2202508297531378155.powersrv.de
-- https://cool67.allisons.org
 - https://bobbyrizz2.canadianlocomotivelogistics.ca
 - https://emis67.polden.com
 - https://classroom.boiso.ar
@@ -850,7 +846,6 @@ Move links from here into `list.md` once sorted.
 - https://britannica.ga
 - https://buy.gpu74.ru
 - https://buy.patf.net
-- https://byodisthebest.hobbygame.dev
 - https://c.godiscoolest.ml
 - https://c.peep.cf
 - https://canvas.lnstructure.cf
@@ -1093,7 +1088,6 @@ Move links from here into `list.md` once sorted.
 - https://notdominospizzeria.fluxus.org
 - https://object-fighters-is-peak-17245571.codehs.me
 - https://oh-hell-nah.5inas.cf
-- https://ohgodplease.help
 - https://ohio-apply-lat-17246212.codehs.me/index.html
 - https://oijkmuiojk.yhujnmok.dingsheng-yule.com
 - https://one.of.the.rammerheadproxies.gq
@@ -1201,7 +1195,6 @@ Move links from here into `list.md` once sorted.
 - https://securlysettings.latinliturgy.com/.
 - https://see.easycharge-batteries.com
 - https://sentry.soraapp.ga
-- https://sethmightshoothimself.codehs.me
 - https://shadow.isreallycool.lol
 - https://sharkquiz.cf
 - https://shdjdgdhsidhwfs.graphicon.ru
@@ -1258,7 +1251,6 @@ Move links from here into `list.md` once sorted.
 - https://verynormalsite.wendyandnick.net
 - https://wasd-17676779.codehs.me/index.html
 - https://we-hate-school.bastaff.ru
-- https://wearerhebeat9e48373.knowhowit.com.au
 - https://wecanbebees.primeflk.ch
 - https://what-is-this-diddyblud-doing-on-a-calculator-17246519.codehs.me
 - https://wiki.schooloqy.com
@@ -1969,7 +1961,5 @@ Move links from here into `list.md` once sorted.
 - https://velara.cc
 - https://chemistry.reading.math.writing.teacher.pnlbraila.ro
 - https://lecture.history.biology.science.writing.arxeiokin.gr
-- https://edu.myt0.info
-- https://infoo.infotechnology.com
-- https://learningcomesfirst.madhavkhanal.com.np
-- https://tuffle.infotechnology.com
+- https://clever.com.rodzinnawiez.pl
+- https://clever.com.eastcountywireless.com

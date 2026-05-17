@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.1 | Released: May 17, 2026
-> r114 | Last Updated: May 17, 2026
+> r115 | Last Updated: May 17, 2026
 > Total onsite links: 4348 (2390 sorted + 1958 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -207,6 +207,7 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | | https://vu0f9yd9.ceifjskdj.fwh.is/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://dphckbc9.ceifjskdj.fwh.is/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://frogieone.theworkpc.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
 # 🍌 Jordan's Math Work
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -561,6 +562,7 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | | https://truf.ghadirfoods.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://byodisthebest.hobbygame.dev/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://locations.pro-kickboxing.org | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
 # 🥱 Boredom
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -985,6 +987,7 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | | https://learning.hkieca.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://studying.nigelupchurch.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://freelessons.sismonda.com.ar/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
 # 👻 Ghost
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -1176,7 +1179,7 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | Unknown | Scramjet | 102 |
+> | Proxy/Games | Unknown | Scramjet | 100 |
 
 > [!IMPORTANT]
 > Imp Proxy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1208,8 +1211,6 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | | https://ela.next-education-learning.sbs/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://tbma.gressvikbmx.no/ | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://tjnh.gressvikbmx.no/ | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://clever.com.rodzinnawiez.pl/ | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://clever.com.eastcountywireless.com/ | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://edudash.edu-spark.top/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://learningdash.edu-spark.top/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://edu.agatab.com/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -1457,6 +1458,7 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | | https://stillaintcall.callcentercuritiba.com.br | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://stillchasing.thuexetaxi.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://lastweekbaby.tozsugianto.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
 # ⬡ TGLSC Density 4
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -1598,6 +1600,7 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | | https://japan2026fieldtrip.goon.hkmedal.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://tracks.empleosonora.gob.mx/onboarding/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://galaxy.fortbendisd.cc/onboarding/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
 # ♈ Zodiac
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -1679,6 +1682,7 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | | https://united.scrapitsoftware.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cipherop.2660010.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://learning.sismonda.com.ar | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
 # 🍓 Strawberry
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -2007,6 +2011,7 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | | https://facts.brain.theaknights.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://skebob.my.neptune.cdpa.cc/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://skibbity.iuncork.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
 # 🌘 Lunaar
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -2134,7 +2139,7 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy | unknown | unknown | 174 |
+> | Proxy | unknown | unknown | 173 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -2235,7 +2240,6 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | | https://canlite.morrisis.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://e6d8ksc1d0vz.estudioladigan.com.ar | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://z3b1398o0qgu.blueprintdigital.ca | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://vikvippro-canlitev2.geobattery.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://if0po4u5ejq3.thisoldrack.us | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://agbile1j1ky7.idemonch.cl | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://ur2z3iumavna.gari.ro | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
@@ -2422,7 +2426,7 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, captcha | Scramjet, Ultraviolet | 33 |
+> | Proxy/Games | epoxy, libcurl, captcha | Scramjet, Ultraviolet | 28 |
 
 
 | Locked | Link | Found Date | Username | Password | Contributor |
@@ -2445,17 +2449,12 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | | https://inf29323.fbsistemas.com.ar | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://inf31265.notinthearchives.net/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://infamous.qzz.io/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://photoshoot.estudiodebiaggi.com.ar/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://clever.com.dmc219.com/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://clever.com.londonwhiteeagles.ca/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://clever.com.srijanakhadka.com.np/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://inf59452.chrismccrory.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://inf50537.nutrait.co.kr | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://inf65982.real3m.com | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://inf68704.real3m.com | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://inf93381.real3m.com | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://inf85830.colloky.com.pe | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://computers.recepist.fi | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://studyguide.virtualmathnav.online/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://readingstudies.v6.rocks | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://inf69580.ecolefrancophone.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
@@ -2619,6 +2618,7 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | | https://education--main.tharun9772.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://edu-cdn.tharun9772.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://edu-cdn--main.tharun9772.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
 # Luminal
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -2667,6 +2667,7 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | | https://calculatemath.org | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://relic-summer.funmath.installgentoo.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://learning-canvas.fun.sismonda.com.ar | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
 # 🗝️ 1Key
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -2725,6 +2726,7 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | | https://utxp.fatemokid.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://mfcd.baden.ru/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://vnvv.alexlan.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
 # 🧡 Nexora
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -3067,6 +3069,7 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | | https://axischurch.ldeazevedo.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://axiscoding.e50nyc.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://axisbio.e50nyc.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
 # 🌊 Splash
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -3254,6 +3257,7 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | | https://muffin.best.romppais.ca/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://muffi.n.tire.is/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://choc.mutfin.greenbaynz.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
 # 👟 Nikehub
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -3432,7 +3436,6 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | | https://smartstudy.2660010.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cleanenglish.hjshop.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-
 # Secured V3
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -3444,7 +3447,6 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://madebyplyrnationforsk.hjshop.net/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-
 
 # Dll
 > [!NOTE]
@@ -3464,7 +3466,6 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | | https://skibidirizz.delectare.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://learnspanish.kwgranitecountertops.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://mathtextbook314.kwgranitecountertops.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-
 
 # Horizon
 > [!NOTE]
@@ -3486,4 +3487,3 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | | https://oynvd.chocolatespicacho.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://mcud.comit.com.ar/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://jdu.record-point.com.au/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-
