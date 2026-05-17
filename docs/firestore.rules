@@ -11,6 +11,15 @@ service cloud.firestore {
         && newV - oldV >= -1;
     }
 
+    /** New folders set visibility + isPublic; legacy docs may only have isPublic. */
+    function savedFolderPrivacyPairOk(d) {
+      return (d.visibility is string
+          && (d.visibility == 'public' || d.visibility == 'unlisted' || d.visibility == 'private')
+          && d.isPublic is bool
+          && d.isPublic == (d.visibility == 'public'))
+        || (!(d.visibility is string) && d.isPublic is bool);
+    }
+
     match /link_clicks/{docId} {
       allow read: if true;
       allow create, update: if request.auth != null;
@@ -33,9 +42,12 @@ service cloud.firestore {
     }
 
     // Shared saved-link folders: owner edits sync live to all readers (onSnapshot).
-    // Public: anyone can read. Private: only the signed-in (non-anonymous) owner matches ownerUid.
+    // Anyone may read folders that are publicly listed OR unlisted by link (?folder=). Writes keep isPublic in sync so isPublic == true <=> visibility public / legacy public.
+    // Firestore QUERY rules must line up with allow read predicates: listing uses where(isPublic == true); that proves isPublic matches the first clause below — required or permission-denied.
+    // Private (isPublic false): only the signed-in non-anonymous owner may read unless visibility is still unlisted (link-only opens).
     match /savedFolders/{folderId} {
       allow read: if resource.data.isPublic == true
+        || resource.data.visibility == 'unlisted'
         || (request.auth != null
             && request.auth.token.firebase.sign_in_provider != 'anonymous'
             && request.auth.uid == resource.data.ownerUid);
@@ -45,7 +57,8 @@ service cloud.firestore {
         && request.resource.data.title is string
         && request.resource.data.title.size() > 0
         && request.resource.data.title.size() <= 200
-        && request.resource.data.isPublic is bool
+        && request.resource.data.visibility is string
+        && savedFolderPrivacyPairOk(request.resource.data)
         && request.resource.data.items is list
         && request.resource.data.items.size() <= 3000
         && (!request.resource.data.keys().hasAny(['ownerLabel'])
@@ -58,7 +71,7 @@ service cloud.firestore {
         && request.resource.data.title is string
         && request.resource.data.title.size() > 0
         && request.resource.data.title.size() <= 200
-        && request.resource.data.isPublic is bool
+        && savedFolderPrivacyPairOk(request.resource.data)
         && request.resource.data.items is list
         && request.resource.data.items.size() <= 3000
         && (!request.resource.data.keys().hasAny(['ownerLabel'])

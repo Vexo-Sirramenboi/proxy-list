@@ -21,6 +21,11 @@ from urllib.parse import urlparse
 
 import discord
 
+try:
+    import certifi
+except ImportError:
+    certifi = None  # type: ignore[misc, assignment]
+
 ROOT = Path(__file__).resolve().parents[1]
 TOKEN_FILE = ROOT / ".token"
 DATA_JSON = ROOT / "docs" / "data.json"
@@ -487,6 +492,182 @@ class CollectorClient(discord.Client):
             await asyncio.sleep(self.cfg.min_delay)
 
 
+def _discord_ssl_context():
+    if not certifi:
+        raise SystemExit(
+            "REST Discord API calls require certifi (pip install certifi) for SSL certificates."
+        )
+    import ssl
+
+    return ssl.create_default_context(cafile=certifi.where())
+
+
+def _discord_api_json(method: str, path_with_query: str, token: str) -> Any:
+    """Synchronous Discord REST call using stdlib + certifi (avoids broken aiohttp SSL on some Mac/Python installs)."""
+    import urllib.error
+    import urllib.request
+
+    url = f"https://discord.com/api/v10{path_with_query}"
+    req = urllib.request.Request(
+        url,
+        method=method,
+        headers={
+            "Authorization": f"Bot {token}",
+            "User-Agent": "proxy-list-linklens-collector/1.0 (+https://github.com)",
+        },
+    )
+    ctx = _discord_ssl_context()
+    try:
+        with urllib.request.urlopen(req, context=ctx, timeout=90) as resp:
+            body = resp.read().decode("utf-8")
+            if not body:
+                return None
+            return json.loads(body)
+    except urllib.error.HTTPError as exc:
+        err_body = exc.read().decode("utf-8", errors="replace")[:500]
+        raise SystemExit(f"Discord HTTP {exc.code}: {err_body}") from exc
+
+
+def discord_bot_user_id(token: str) -> int | None:
+    data = _discord_api_json("GET", "/users/@me", token)
+    if not isinstance(data, dict) or "id" not in data:
+        return None
+    try:
+        return int(data["id"])
+    except (TypeError, ValueError):
+        return None
+
+
+def fetch_channel_messages_rest(token: str, channel_id: int, max_messages: int) -> list[dict[str, Any]]:
+    """Paginate GET /channels/{id}/messages (newest first per request; walk older with before=)."""
+    out: list[dict[str, Any]] = []
+    before: str | None = None
+    while len(out) < max_messages:
+        take = min(100, max_messages - len(out))
+        q = f"/channels/{channel_id}/messages?limit={take}"
+        if before:
+            q += f"&before={before}"
+        batch = _discord_api_json("GET", q, token)
+        if not batch:
+            break
+        if not isinstance(batch, list):
+            break
+        out.extend(batch)
+        if len(batch) < take:
+            break
+        before = str(batch[-1]["id"])
+    return out[:max_messages]
+
+
+def snowflake_to_iso_utc(sfid: str) -> str:
+    ts = ((int(sfid) >> 22) + 1420070400000) / 1000.0
+    return datetime.fromtimestamp(ts, tz=timezone.utc).replace(microsecond=0).isoformat().replace(
+        "+00:00", "Z"
+    )
+
+
+def extract_api_message_text(msg: dict[str, Any]) -> str:
+    chunks: list[str] = []
+    if msg.get("content"):
+        chunks.append(str(msg["content"]))
+    for emb in msg.get("embeds") or []:
+        if not isinstance(emb, dict):
+            continue
+        if emb.get("title"):
+            chunks.append(str(emb["title"]))
+        if emb.get("description"):
+            chunks.append(str(emb["description"]))
+        for field in emb.get("fields") or []:
+            if not isinstance(field, dict):
+                continue
+            if field.get("name"):
+                chunks.append(str(field["name"]))
+            if field.get("value"):
+                chunks.append(str(field["value"]))
+        footer = emb.get("footer")
+        if isinstance(footer, dict) and footer.get("text"):
+            chunks.append(str(footer["text"]))
+    return "\n".join(chunks)
+
+
+def author_matches_api(author: dict[str, Any], cfg: Config, bot_user_id: int | None) -> bool:
+    try:
+        aid = int(author.get("id", 0))
+    except (TypeError, ValueError):
+        return False
+    if bot_user_id is not None and aid == bot_user_id:
+        return False
+    if cfg.target_author_id is not None and aid != cfg.target_author_id:
+        return False
+    uname = str(author.get("username") or "").strip()
+    disp = str(author.get("global_name") or "").strip()
+    if cfg.target_author_name:
+        want = cfg.target_author_name.strip()
+        if uname != want and disp != want:
+            return False
+    if cfg.target_author_names:
+        allowed = cfg.target_author_names
+        if uname not in allowed and disp not in allowed:
+            return False
+    return True
+
+
+def run_history_ingest_rest(cfg: Config, output: dict[str, Any]) -> None:
+    """Import gn-math (or other bot) embed summaries from channel history without discord.py."""
+    bot_id = discord_bot_user_id(cfg.token)
+    msgs = fetch_channel_messages_rest(cfg.token, cfg.channel_id, cfg.history_limit)
+    new_domains: list[str] = []
+    seen = 0
+    matched = 0
+    updated = 0
+    for msg in msgs:
+        if not isinstance(msg, dict):
+            continue
+        seen += 1
+        author = msg.get("author")
+        if not isinstance(author, dict):
+            continue
+        if not author_matches_api(author, cfg, bot_id):
+            continue
+        text = extract_api_message_text(msg)
+        providers, summary = parse_provider_lines(text)
+        if not providers:
+            continue
+        urls = sorted(set(re.findall(r"https?://[^\s|)]+", text)))
+        domains = extract_domains_from_text(text)
+        total = summary["blocked"] + summary["unblocked"] + summary["warning"]
+        if not urls and not domains:
+            continue
+        matched += 1
+        checked_at = snowflake_to_iso_utc(str(msg.get("id", "0")))
+        record = {
+            "checked_at": checked_at,
+            "status": "ok",
+            "source_message_id": str(msg.get("id", "")),
+            "source_author_id": str(author.get("id", "")),
+            "source_author": str(author.get("username", ""))[:120],
+            "providers": providers,
+            "summary": {**summary, "total": total},
+            "raw_excerpt": text[:5000],
+        }
+        for url in urls:
+            output[url] = {"url": url, "domain": safe_domain(url), **record}
+            updated += 1
+            d = safe_domain(url)
+            if d:
+                new_domains.append(d)
+        for domain in domains:
+            output["domain:" + domain] = {"url": "", "domain": domain, **record}
+            updated += 1
+            new_domains.append(domain)
+    write_output(OUTPUT_JSON, output)
+    added = append_checked_domains(new_domains)
+    print(
+        f"REST history ingest: http_messages={len(msgs)} scanned={seen} matched={matched} "
+        f"rows_touched={updated} checked_domains_added={added}"
+    )
+
+
 def apply_dot_token_env() -> None:
     """Fill DISCORD_BOT_TOKEN / DISCORD_CHANNEL_ID from .token if env vars are empty.
 
@@ -560,6 +741,11 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument("--ingest-history", action="store_true", help="Parse existing summary messages from channel history.")
     p.add_argument(
+        "--ingest-history-rest",
+        action="store_true",
+        help="Same as --ingest-history but uses Discord REST + certifi (no discord.py). Use if SSL to Discord fails.",
+    )
+    p.add_argument(
         "--reparse-from-raw",
         action="store_true",
         help="Rewrite providers/summary in linklens.json from each entry's raw_excerpt (no Discord).",
@@ -595,6 +781,8 @@ def validate_args(args: argparse.Namespace) -> Config:
 def main() -> int:
     apply_dot_token_env()
     args = parse_args()
+    if getattr(args, "ingest_history_rest", False) and args.ingest_history:
+        raise SystemExit("Use only one of --ingest-history or --ingest-history-rest.")
     if args.reparse_from_raw:
         if not OUTPUT_JSON.is_file():
             raise SystemExit(f"Missing {OUTPUT_JSON}")
@@ -602,6 +790,10 @@ def main() -> int:
         print(f"Reparse from raw_excerpt: updated={updated} linklens keys (scanned {keys} top-level keys).")
         return 0
     cfg = validate_args(args)
+    if getattr(args, "ingest_history_rest", False):
+        existing = load_existing(OUTPUT_JSON)
+        run_history_ingest_rest(cfg, existing)
+        return 0
     if not DATA_JSON.is_file():
         raise SystemExit(f"Missing {DATA_JSON}. Run scripts/convert_list_to_json.py first.")
     links = load_links(DATA_JSON)

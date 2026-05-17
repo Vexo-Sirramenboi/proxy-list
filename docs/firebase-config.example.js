@@ -24,7 +24,7 @@
    }
 
    See docs/firestore.rules for the deployed username registry rules (collection usernames)
-   and savedFolders (shared / private link folders).
+   and savedFolders (folder visibility: public / unlisted / private; isPublic is true only for public).
 
    Enable Authentication → Sign-in method → Anonymous, GitHub (OAuth app in Firebase Console),
    Google, and Email/Password.

@@ -1,8 +1,8 @@
 # Proxy List
 > [!NOTE]
-> v5.0 | Released: May 15, 2026
-> r113 | Last Updated: May 17, 2026
-> Total onsite links: 4175 (2210 sorted + 1965 unsorted)\
+> v5.1 | Released: May 17, 2026
+> r114 | Last Updated: May 17, 2026
+> Total onsite links: 4348 (2390 sorted + 1958 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
 Welcome to the official Proxy List! This has a running list of hundreds of unblocked websites and games that anyone is free to use. We have the most popular and reliable sites here, so you'll never run out!
@@ -28,50 +28,61 @@ The owner has announced that Selenite is here to stay! The changes made to those
 
 ## Update Notice
 
-### Accounts and Connections
-You can now make an account on the site and even connect using GitHub and Google. Making an account gives you access to community features such as link ratings, saving links, sharing link folders, and more.
+### UI Redesign
+I've updated the UI with icons and better formatting for people on mobile so that full links are actually visible on mobile.
 
-### Saving Links
-Once you create an account and sign in, you can now save links and access them by going to your account name and going to "Saved links". This is where you can also make link folders and share your favorite links with the community.
+### Unlisted Folders
+Link folders can now be shared as unlisted, allowing only people with the link to view the folder. If the link is private, no one except for the owner can view it. Public functionality was unchanged. Unlisted links do not show up publicly.
 
-### Community - Rating Links
-Link ratings are working again — you can thumbs-up or thumbs-down links and sort by highest rated or most saved.
-You can now upvote/downvote links and sort by most favorable links by rated by the community. You will no longer have to keep trying links until you find one that's actually good.
-
-### Community - Sharing Links
-You can now share links globally using the new folder system. It can be accessed the same way you access saved links, and clicking "New Folder". Add your links, then check the "Public" checkmark, and you are all set! You can also copy the direct link to your folder to share with others. Community shared link folders also support community ratings.
+### Fixes
+- Fixed a bug that caused accounts to be repeatedly signed out (this was fixed 5/15 with a remote hotfix).
+- Fixed a bug that caused link ratings to not work (this was automatically fixed 5/15).
+- Fixed a bug that caused extremely long load times when sorting by highest rated links.
+- Fixed a bug that caused contributed links to be incorrectly counted.
+- Fixed a bug that caused some sections to have inaccurate data.
+- Fixed a bug with Google Form link contributions that caused contributor names to not be hyperlinked properly.
+- Fixed a bug that caused links to show vertically instead of horizontally on mobile, making links very hard to read.
+- Fixed a bug where saving links would not save them properly (this seems to have been mostly fixed after the remote hotfix on 5/15).
+- Fixed a bug where saving links would not make the star yellow, making it hard to differentiate saved from unsaved links.
+- Fixed a bug that caused proxied users to have long load times. Optimizations have been made to lower loading.
+- Fixed a bug with the link checker bot not removing links.
 
 # 💜 Selenite
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | N/A | N/A | 3 |
+> | Games | N/A | N/A | 6 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://supplies.artsineducation.net/ | 1/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://account.englishbridalcouture.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://mail.adriapartners.net/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://livialearnsgreek.boiso.ar/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://computer-textbooks.eclipsecastellon.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://jesus.churchinhuntsville.org/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # 🌙 Velara
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 5 |
+> | Proxy/Games | captcha | Scramjet | 7 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://baconatorsmath.2nx.org/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://noterplus-157.firebaseapp.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://bulls.eat.grass.klrmowse.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://vcsa-zone.esdata.info/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://securelyplsspeedineedthis8weudidhske.suwal.com.np/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://velara.my/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://quick-learning.gorich.hk/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # ➗ gn-math
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | N/A | N/A | 56 |
+> | Games | N/A | N/A | 64 |
 
 > [!IMPORTANT]
 > View importance notices section if link is broken.
@@ -134,12 +145,20 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://codehs.com/uploads/edf989a37aad2e8e728ece9cf58a778a | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://www.khanacademy.org/computer-programming/all-about-polar-bears-official/5536966650740736 | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://gn23245349.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://sethmightshoothimself.codehs.me/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://gn-math-t.github.io/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://mrvaporwave25.github.io/breadkartextremecomingsoonquestionmark/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://cdn.jsdelivr.net/gh/drewalow860-ctrl/securly.com@main/classlink.com/math.svg | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://quantil.jsdelivr.net/gh/drewalow860-ctrl/securly.com@main/classlink.com/math.svg | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://gimmemcdonaldspls.web.app | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://gimmemcdonaldspls.firebaseapp.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://classlink-redirect.surge.sh | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🐸 frogie's arcade
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Ultraviolet | 43 |
+> | Proxy/Games | captcha | Ultraviolet | 45 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -175,6 +194,7 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://sonic-burger.nexus-computing.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://frog.hpsschools.org/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://frogies23445980.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://docs.quiz-me.org/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://gsigdigs.ceifjskdj.fwh.is/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://gsyostos9t.ceifjskdj.fwh.is/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://edu.ceifjskdj.fwh.is/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -186,7 +206,7 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://ogdoh.ceifjskdj.fwh.is/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://vu0f9yd9.ceifjskdj.fwh.is/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://dphckbc9.ceifjskdj.fwh.is/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-
+| | https://frogieone.theworkpc.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 # 🍌 Jordan's Math Work
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -258,7 +278,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl | Scramjet, Ultraviolet, Eclipse | 31 |
+> | Proxy/Games | epoxy, libcurl | Scramjet, Ultraviolet, Eclipse | 33 |
 
 > [!IMPORTANT]
 > Nebulo does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -296,6 +316,8 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://study-achievement.expedicionesytrekking.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://revision-system.fiedleracres.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://study-control.wayner.ca | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
+| | https://broken.realisation.org/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://large.realisation.org/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🌑 Space
 > [!NOTE]
@@ -351,7 +373,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet, Ultraviolet | 37 |
+> | Proxy/Games | unknown | Scramjet, Ultraviolet | 44 |
 
 > [!IMPORTANT]
 > Fern does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -366,6 +388,8 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://deaganfern.s3.amazonaws.com/index.html | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://angelfern.s3.amazonaws.com/index.html | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://d1ow0xcl2w4e9a.cloudfront.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://scoot.boiso.ar/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://nevada.egevad.se/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://talesfiction.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://snapclass.site/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://siftfilter.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -395,6 +419,11 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://gnigfinsiu.unionvillelacrosse.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://ubwbiucbiua.unionvillelacrosse.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://wegibusiu.unionvillelacrosse.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://superrunning.net/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://investcollegiate.org/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://propertydealersinindia.org/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://eiym.org/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://youretheblessed.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # 🟣 UniUB
 > [!NOTE]
@@ -441,7 +470,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 2 |
+> | Proxy/Games | unknown | Scramjet | 84 |
 
 > [!IMPORTANT]
 > Truffled does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -449,13 +478,94 @@ You can now share links globally using the new folder system. It can be accessed
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://script.google.com/macros/s/AKfycbwqqo2qu8qT_KWNwhFRMIa-IzTs2S3vgH_7Rx14OCM8dSJU_u3TUCC7AMsrTtjo2oG-rQ/exec | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://artisticlife.xenopoem.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://hatisthemeaningofourexistenceinourlifeofourcurrentreality.xenopoem.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://vcsa-yt.blogspot.com/2026/02/82-new-websites.html | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-
+| | https://christmas.fusionid.fi/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://icantbelieveitsnotbutter.teimporto.cl/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://info.stoke-park.co.uk/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://truffled.lol/?988lifeline.org | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://truffled.lol/?ixl.com | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://hi.wulabs.org/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://e.mza.com.ar/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://eee.krahl.com.br/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://hi.birdriver.org/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://it.deltachat.me/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://info.v119.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://uhidk.infotechnology.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://infoo.infotechnology.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://landon.infotechnology.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://learningcomesfirst.madhavkhanal.com.np/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://tuffle.infotechnology.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://sneakers-otoole.lervs.ro/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://carp.teachmetofish.net/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://feel.lervs.ro/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://school.flextron.xyz/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://reading.astrodestin.ro | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://historyofdinosaurs.dinocol.co.uk | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://precalculus.textbook.beerporn.org | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://waguri.real3m.com | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://chance.bull.luck.poloniacruz.com | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://homeworkhelp.mb.doris-safety.com | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://somewhere.find.bull.doris-safety.com | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://mathematics1.lervs.ro | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://n8-math.dev | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://tutoring-services.org | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://doc8.themathdoctors.org/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://doc8.tozsugianto.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://tutoring-services.org/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://mathprep.calculuslessons.lol/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://hullos-pizza-restaurant.chanka.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://tung.tung.tung.tung.tung.tungtung.tung.sahur.settiermauro.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://hello-bog-pls-fix-about-blank-thanks.sisfirewall.com.br | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://info.callcentercuritiba.com.br/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://2026math.segurosdepersonas.cl/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://this-is-albert-v.383.li/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://ohmb-iforgotsensocloud.blacknapkins.org/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://facility-dentistroof.primebuildings.bg/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://farmlands-policestation.planetlabs.net/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://fizzlams.snbs.dk/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://fizzylams.skills-sims.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://trampoline-scienceactivity.mushkoorfoods.co.uk/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://newyork-newspaperprinter.socialistsushi.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://calculatorsolver-truffled.azure-cost-estimator.se/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://supermath.salavat.ru/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://history-geographytests.corporateadworld.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://algebra1topics.arionskyclub.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://edu-mathhelper-shop.neo-space.space/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://european-history.elmvp.cl/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://world-peace-volunteerformath.installgentoo.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://www.securly.com.intelligentscada.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://www.securly.com.fixbigoil.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://www.securly.com.ermestel.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://www.securly.com.phi-taiwan.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://www.securly.com.northbangkokfc.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://classlink.com.de.cdn.cloudflare.net/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://idk.hldj.nl/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://i-havenojobbutidolinks.eastcountywireless.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://docs.hospedajemariafresia.cl/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://gooningfor-life.hospedajemariafresia.cl/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://ilovereading.blogmedoc.ru/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://eat-more.expensive-meals.fhdstdfffghg.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://truffler24678.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://edu.myt0.info/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://waguri.pingoneando.me/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://crszujwit.rhyno-audio.net/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://truf.remiosenifoundation.org/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://mathsacademy.uk/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://prealgebra-sandwichmaker.palypro.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://truf.the-nest.at/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://truf.antispeciesism.org/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://truf.connected-dx.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://truf.kshealthjobs.net/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://truf.ghadirfoods.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://byodisthebest.hobbygame.dev/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://locations.pro-kickboxing.org | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 # 🥱 Boredom
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 36 |
+> | Proxy/Games | unknown | Scramjet | 39 |
 
 > [!IMPORTANT]
 > Boredom does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -498,12 +608,15 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://homeworkhelper6741.jumpingcrab.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://vps-ac2179fd.vps.ovh.ca/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://docs.remiosenifoundation.org/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://books.egevad.se/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://cool67.allisons.org/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://wearerhebeat9e48373.knowhowit.com.au/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # 💨 Vapor
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 71 |
+> | Proxy/Games | unknown | Scramjet | 78 |
 
 > [!IMPORTANT]
 > Vapor does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -581,12 +694,19 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://alexisafemboy.numbercraftacademy.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://159.195.59.55.local-ip.sh | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://yoko.wheels.for.tire.is/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://hellothereworld.storage.googleapis.com/index.html | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://trucks.eemotors.uk/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://helpmecheckthisout.help/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://wildcard.vaporized.help/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://wildcard.mtviewbaptist.org/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://welcome-to-learning.fredrikkivi.se/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://ohgodplease.help/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # 👤 Shadow
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 93 |
+> | Proxy/Games | unknown | unknown | 97 |
 
 > [!IMPORTANT]
 > Shadow does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -687,12 +807,16 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://rapidcalc.hotelconsuladoinn.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://brightcoding.hotelconsuladoinn.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://lightpoems.hotelconsuladoinn.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://masterhistory.centromariapolis.cl/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://magicmath.centromariapolis.cl/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://d934d76gd4387.centromariapolis.cl/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://readylearning.centromariapolis.cl/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🐶 dogeub
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 90 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 96 |
 
 > [!IMPORTANT]
 > dogeub does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -789,12 +913,18 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://dlah6r0ddz4mx.cloudfront.net/index.html | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://doge452238.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://tasty.how-to-cook.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://login-withclever-public.nfilatova.ru/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://kuromi.sieuthitpcn.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://crazymath.centromariapolis.cl/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://happymath.centromariapolis.cl/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://superread.centromariapolis.cl/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://storage.googleapis.com/instructure/index.html | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # 🌕 Lunar
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 36 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 51 |
 
 > [!IMPORTANT]
 > Lunar does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -840,7 +970,21 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://cantwaitforlunarv3.egevad.se/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://uh.egevad.se/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://uhno.egevad.se/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-
+| | https://iluvchicken.realisation.org/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://manoperagxisslow.realisation.org/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://bearthecat.realisation.org/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://almostlosttsaccount.realisation.org/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://oohoohahah.realisation.org/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | http://game.time.prestamosorion.ar/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | http://10-38.ayy.prestamosorion.ar/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://mushroomvita.blog/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://lectures.vta-international.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://smartbio.2660010.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://dear.d3.ro/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://growth.hjshop.net/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://learning.hkieca.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://studying.nigelupchurch.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://freelessons.sismonda.com.ar/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 # 👻 Ghost
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -869,7 +1013,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 52 |
+> | Proxy/Games | unknown | Scramjet | 56 |
 
 > [!IMPORTANT]
 > PetZah does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -928,6 +1072,10 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://math.webinfo.tw | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://seasons.spring.rain.flowers.japan.is | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://679.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://yoyo.interluxvs.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://mathstuff.interluxvs.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://auth.mrwheeler.uk/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://learning.technology.sieuthitpcn.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🕳️ Rift
 > [!NOTE]
@@ -1142,11 +1290,12 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, captcha, wisp | Scramjet, Ultraviolet, Rammerhead | 1 |
+> | Proxy/Games | epoxy, libcurl, captcha, wisp | Scramjet, Ultraviolet, Rammerhead | 2 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://sites.google.com/view/endisendis | 3/28/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://classroom.reformdecor.org/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # ⚡ Epicway
 > [!NOTE]
@@ -1187,7 +1336,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | Unknown | Scramjet | 107 |
+> | Proxy/Games | Unknown | Scramjet | 114 |
 
 > [!IMPORTANT]
 > Rosin does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1301,7 +1450,13 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://domain.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://flyerprogram.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://whathappenedonstonie.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-
+| | https://alisotuff.realisation.org/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://hellnah.lecorps.ar/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://beenlookingforu.brgv-os.ro | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://florance.brgv-os.ro | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://stillaintcall.callcentercuritiba.com.br | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://stillchasing.thuexetaxi.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://lastweekbaby.tozsugianto.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 # ⬡ TGLSC Density 4
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -1337,7 +1492,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | libcurl, epoxy, wisp | Scramjet, Ultraviolet | 75 |
+> | Proxy/Games | libcurl, epoxy, wisp | Scramjet, Ultraviolet | 99 |
 
 > [!IMPORTANT]
 > Galaxy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1356,6 +1511,7 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://imsoslay.yodyiam.com/onboarding/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://youaremysunshine.auszeitseminar.ch/onboarding/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://infgbifbgijm.cuetara.name/onboarding/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://dfdfsdfs.rinet.ai/onboarding/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://imlikefgfgd.rinet.ai/onboarding/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://food.gostiljerestoran.rs/ | 3/28/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://granit.granit-union.ru/ | 3/28/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -1369,6 +1525,7 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://doyourwork.lyxcorp.com/onboarding/ | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://mathgames.lyxcorp.com/onboarding/ | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | http://teacher.art.science.math.biology.top-povar.ru/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://aside.segurosdepersonas.cl/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://vek.polden21vek.ru/onboarding/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://polden.polden21vek.ru/onboarding/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://21vek.polden21vek.ru/onboarding/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -1392,7 +1549,12 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://dffdgdfg.robbinsaviation.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://learning.drama.biology.algebra.teacher.japan.is | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://learning.history.drama.vocabulary.writing.japan.is | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://winter.snow.coldness.frostbite.frozen.christmas.japan.is | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://writing.english.assignment.technology.classroom.japan.is | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://monocal.dinocol.co.uk | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://greenfn.beerporn.org | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://belt-frog.beltfrog.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://belt.beltfrog.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://frog-belt.beltfrog.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://frog.beltfrog.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://froggie.beltfrog.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
@@ -1406,6 +1568,10 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://galaxy.altonhabitat.info | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://galaxy.altonhabitat.store | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://galaxy.altonhabitat.online | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
+| | https://programming.grammar.drama.biology.physics.glenoriebakery.com.au | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://classroom.library.chemistry.learning.music.glenoriebakery.com.au | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://geography.seminar.campus.engineering.learning.easternstamps.com | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://moreinfo.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://doyourwork.dnswish.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://dfsdsfdsf.fppagos.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://dfsdfsdfsdfs.bryankrawetz.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
@@ -1419,7 +1585,19 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://dfsdfsdfsdfs.bryankrawetz.com/onboarding | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://gffgdfgdfg.bryankrawetz.com/onboarding | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://fdsdfs.elmirador360.com/onboarding | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-
+| | https://magicreading.centromariapolis.cl/onboarding/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://green.greenmilesev.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://hand.hand-und-herz.at/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://hubert.hubretro.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://hyper.hypersas.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://geography.indormost.ru/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://gold.goldmanconsulting.com.au/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://techno.tecnosilver.net/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://algo.algodenada.com.ar/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://cc.curlycraftworks.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://japan2026fieldtrip.goon.hkmedal.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://tracks.empleosonora.gob.mx/onboarding/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://galaxy.fortbendisd.cc/onboarding/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 # ♈ Zodiac
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -1439,7 +1617,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 39 |
+> | Proxy/Games | unknown | unknown | 55 |
 
 > [!IMPORTANT]
 > StudyHub does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1485,7 +1663,22 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://naughty-haibt.152-53-246-17.plesk.page | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://www.naughty-haibt.152-53-246-17.plesk.page | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://studying.klrmowse.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-
+| | https://healthislife.peperepara.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://lanschool.thenme.net/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://cooking.vipinsagar.net/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://termsofuse.imagetemplate.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://highschoolteacher.reasonman.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://pictures.selugallery.com.np/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://houses.epusara.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://asap.g-osap.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://vcsa.babypos.hk/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://pneducation.org/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://greenlight.2660010.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://studying.2660010.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://study.scrapitsoftware.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://united.scrapitsoftware.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://cipherop.2660010.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://learning.sismonda.com.ar | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 # 🍓 Strawberry
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -1587,7 +1780,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 4 |
+> | Proxy/Games | unknown | unknown | 5 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -1598,12 +1791,13 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://noblocc.com/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cokezero.uk/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://vanillacoke.co.uk/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://vividdarkness.uk/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # 🔼 Axiom
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 36 |
+> | Proxy/Games | captcha | Scramjet | 41 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -1643,12 +1837,17 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://zlty.europeserv.org | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | http://ipv6.bestar.sg/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | http://dns.dnda.com.np/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://services.gorich.hk/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://cooked-or-what-chris.bienaldeescuch.ar/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://no-67-luke.bienaldeescuch.ar/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://seb-like-men.bienaldeescuch.ar/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://nick-o-lai.bienaldeescuch.ar/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🖤 Void Network
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Ultraviolet | 82 |
+> | Proxy/Games | unknown | Ultraviolet | 89 |
 
 > [!IMPORTANT]
 > Void Network does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1724,25 +1923,32 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://info-national.artmuseum.org/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://live.mmafrica.net/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://tuffestwebsite.jake.eu/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://educationvideos.tvlinux.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://scienceandmath-tuff.8bit.ca/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://modernart.isthmusportrait.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://learnyourwordschud.dicionar.io/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://banphonesinschools.antiphone.net/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://vng.lol/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://visitlittle.stjameskilolo.org/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://claudethegoat.aifocus.us/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://shopnow.womenclothingtoday.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://darkchocolateisbetterthanmilkchocolate.chocolatespicacho.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://learntofight.teakwondo.one.pl/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://webhosting.e-cloud.ch/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://bookingavailability.hotelconsuladoinn.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://meditate.theyogaboutique.co.uk/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://learnvibecoding.hackquest.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://watch.bdyoutube.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://math.numbercraftacademy.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://bluemoneytuff.zayqan.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://learnagriculture.danfarm.ru/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://edu.ucecom-craiova.ro/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # 🦄 Utopia Education
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 38 |
+> | Proxy/Games | unknown | unknown | 52 |
 
 > [!IMPORTANT]
 > Utopia Education does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1787,7 +1993,20 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://proxyyourmom.jumpingcrab.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://auto.detect.math.work.tanenbaumchat.org/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://clever.data.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-
+| | https://qowerschool.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://4l3x19the562oh.twilightparadox.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://mhi.imaginelearningmath.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://mhi.banglam.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://hcpss.org.bitds.eu | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://paperelathailandhappiness.chickenkiller.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://lilchickinsssssssssshhh.chickenkiller.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://idea.study.tamegao.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://basic.paper.a-quo.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://write.words.karlw.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://mind.topic.ronin.one.pl | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://facts.brain.theaknights.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://skebob.my.neptune.cdpa.cc/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://skibbity.iuncork.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 # 🌘 Lunaar
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -1808,7 +2027,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 11 |
+> | Proxy/Games | captcha | Scramjet | 14 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -1817,8 +2036,11 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://cdn.jsdelivr.net/gh/scientific-studying/svg@main/logo.svg#/g | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://unpkg.com/browselucide@1.0.0/logo.svg#/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://unpkg.com/browselucide@1.0.1/logo.svg#/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://player-nation.kellerzahnarzt.ch/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://pub-bc82e2ed41754dc4b80c6d83a173f04b.r2.dev/index.html#/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://realvcsa.fineone.ru/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://s3.amazonaws.com/lucidestatic/index.html | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://vseesa-yt.machophd.org/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://lsrelay-l.s3.amazonaws.com/index.html | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://unpkg.com/browselucide@latest/logo.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://cdn.jsdelivr.net/gh/coinbaselarper/svg@latest/logo.svg | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
@@ -1868,7 +2090,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 8 |
+> | Proxy/Games | unknown | Scramjet | 9 |
 
 > [!IMPORTANT]
 > Cheesy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1883,6 +2105,7 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://pr.evelynslost.party | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://tuffmango.grahammurryinsuranceagency.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://cheesyweb.tech | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://apple.cheesyeducation.live/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🔫 AWP
 > [!NOTE]
@@ -1911,7 +2134,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy | unknown | unknown | 169 |
+> | Proxy | unknown | unknown | 174 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -2087,6 +2310,11 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://sbbkmkib5tx2.oportuna.cl | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://math.questions.agreca.com.ar | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://xx6w8j79xw5q.fritsche.org | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://rammer.nana.vpspure.cf/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://rc-1140.germlab.ca/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://papertutor.azseguros.cl/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://script.google.com/macros/s/AKfycbxFgc6eMlC97epFZSuIWDjGvJ-q--hrqPJB_KrFIDazL1iKDfoosQ2w_5jWOxLMi5HndA/exec | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://script.google.com/macros/s/AKfycby0904KOR73LkC1iymAOSjOpkLfuDLfvaTvICEgc78AsPofM4qn2e-3Y4UA_5prDTFhpQ/exec | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # 🔺 Vertix
 > [!NOTE]
@@ -2237,13 +2465,17 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 38 |
+> | pending | pending | pending | 42 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
+| | https://cherri.lalitakc.com.np/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://playernation.darkroom-lang.org/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://realvcsa.castemag.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://youtube.com.vcsa.lalitakc.com.np/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://exyfnlk.exotic-test.kesug.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://jgn0xqo.exotic-test.kesug.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cudzgkr.exotic-test.kesug.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -2297,7 +2529,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 66 |
+> | Proxy/Games | unknown | unknown | 86 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -2367,7 +2599,26 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://ubgtuff.vercel.app | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://unstable-smp.vercel.app | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://tharun9772gaming.vercel.app | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-
+| | https://bloxy.sphazelnut.tech | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://bloxcraft-ubg.bloxcraftstudios.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://bloxcraft-ubg--main.bloxcraftstudios.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://blox-cdn.bloxcraftstudios.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://blox-cdn--main.bloxcraftstudios.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://blox.bloxcraftstudios.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://blox--main.bloxcraftstudios.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://english.bloxcraftstudios.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://english--main.bloxcraftstudios.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://english-cdn.bloxcraftstudios.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://bloxcraft-ubg.tharun9772.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://bloxcraft-ubg--main.tharun9772.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://french-learning-app.tharun9772.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://french-learning-app--main.tharun9772.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://math-science-app.tharun9772.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://math-science-app--main.tharun9772.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://education.tharun9772.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://education--main.tharun9772.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://edu-cdn.tharun9772.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://edu-cdn--main.tharun9772.deno.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 # Luminal
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -2385,7 +2636,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | unknown | 23 |
+> | Proxy/Games | captcha | unknown | 27 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -2412,7 +2663,10 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://asknmefgd.panel-laboralcj.gob.mx | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://did-youknow-that-vacmadethislink.lol.rednutricional.cl | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://bomboclat-wallahi.urpalestinian.tokeslaszlo.eu | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-
+| | https://algebra.calculatemath.org | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://calculatemath.org | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://relic-summer.funmath.installgentoo.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://learning-canvas.fun.sismonda.com.ar | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 # 🗝️ 1Key
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -2448,7 +2702,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 11 |
+> | pending | pending | pending | 16 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -2466,7 +2720,11 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://script.google.com/macros/s/AKfycbz_3CKzRKXyisc_WYcOIG6adYY2QUTS13-jO0XA70aPzmiNz23XNHGaU9LYBgRs8iZq/exec?url=https://originfastly.jsdelivr.net/gh/NoahsAmazingTutoringHelp/reimagined-octo-winner@main/blahblahblah.html | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://ixllearning-bengali89.web.app | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://ixllearning-bengali89.firebaseapp.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-
+| | https://xljl.gsxpress.com.my/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://chp.iz.rs/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://utxp.fatemokid.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://mfcd.baden.ru/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://vnvv.alexlan.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 # 🧡 Nexora
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -2492,7 +2750,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 1 |
+> | pending | pending | pending | 7 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -2500,6 +2758,12 @@ You can now share links globally using the new folder system. It can be accessed
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://firstwordithinkofisfish.stonestackstrategies.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://superdupercalc.realisation.org/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://mastermath.centromariapolis.cl/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://crazycoding.centromariapolis.cl/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://simplemath.centromariapolis.cl/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://readyreading.centromariapolis.cl/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://mightymath.centromariapolis.cl/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🧑‍🧒‍🧒 Soul
 > [!NOTE]
@@ -2628,7 +2892,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 2 |
+> | pending | pending | pending | 9 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -2637,6 +2901,13 @@ You can now share links globally using the new folder system. It can be accessed
 | - | - | - | - | - | - |
 | | https://duckduckgoose.tokeslaszlo.ro/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://weqweqw.meshtastic.hu | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://vfbiewaenxc.erbilek.com.tr/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://periodic-table.techmax.hk/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://duck.classroom-community.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://duck.classroomgeometry.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://duck.freezenova.chat/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://duck.scienceunblocked.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://duck.revenuegames.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # 🌴 aspen
 > [!NOTE]
@@ -2782,6 +3053,20 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://learn.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://mathxl.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
+# 🧭 Axis
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | Proxy/Games | unknown | unknown | 6 |
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+| | https://ax7.lervs.ro | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://axismath.braumach.com.au/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://axisfrench.cazaresulina.ro/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://axischurch.ldeazevedo.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://axiscoding.e50nyc.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://axisbio.e50nyc.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 # 🌊 Splash
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -2905,7 +3190,7 @@ You can now share links globally using the new folder system. It can be accessed
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 45 |
+> | Proxy/Games | unknown | unknown | 60 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -2954,7 +3239,21 @@ You can now share links globally using the new folder system. It can be accessed
 | | https://cmadf.newkingdomglobal.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://science.experiment.anostudio.info | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://meals.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-
+| | https://xylora.god.domain.2660010.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://xylora.nigelupchurch.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://xylora.scrapitsoftware.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://xylora.sismonda.com.ar/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://xylora.d3.ro/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://xylora.hkieca.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://xylora.hjshop.net/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://xylora.barkinseducationlearning.cfd/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://xylora.orbitnetworkss.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://muffin.bakeryos.net/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://muffins.eilong.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://muffin.learn.justinsteiger.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://muffin.best.romppais.ca/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://muffi.n.tire.is/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://choc.mutfin.greenbaynz.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 # 👟 Nikehub
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -3051,3 +3350,140 @@ You can now share links globally using the new folder system. It can be accessed
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://pale-dawn.thenme.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+
+# Holy Unblocker
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | pending | pending | pending | 1 |
+
+> [!IMPORTANT]
+> This section has not been categorized or checked for protocol(s) and capabilities.
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+| | https://kosebonniler.realisation.org/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
+# Demon
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | pending | pending | pending | 1 |
+
+> [!IMPORTANT]
+> This section has not been categorized or checked for protocol(s) and capabilities.
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+| | https://nowciscoisntworkingaswell.fuck.turbo-education.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
+# Strongdog
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | pending | pending | pending | 1 |
+
+> [!IMPORTANT]
+> This section has not been categorized or checked for protocol(s) and capabilities.
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+| | https://kingvonprime.boiso.ar/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
+# Wilway
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | pending | pending | pending | 1 |
+
+> [!IMPORTANT]
+> This section has not been categorized or checked for protocol(s) and capabilities.
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+| | https://mdafexc.rhyno-audio.net/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
+# The Pizza Edition
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | pending | pending | pending | 1 |
+
+> [!IMPORTANT]
+> This section has not been categorized or checked for protocol(s) and capabilities.
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+| | https://zoo.rhyno-audio.net/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
+# Parcoil
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | pending | pending | pending | 5 |
+> [!IMPORTANT]
+> This section has not been categorized or checked for protocol(s) and capabilities.
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+| | https://greatest.sismonda.com.ar | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://learning.2660010.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://neatenglish.hjshop.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://smartstudy.2660010.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://cleanenglish.hjshop.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
+
+# Secured V3
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | pending | pending | pending | 1 |
+> [!IMPORTANT]
+> This section has not been categorized or checked for protocol(s) and capabilities.
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+| | https://madebyplyrnationforsk.hjshop.net/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
+
+# Dll
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | pending | pending | pending | 8 |
+> [!IMPORTANT]
+> This section has not been categorized or checked for protocol(s) and capabilities.
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+| | https://worksheet-lanyard-2479.dllontop.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://bookshelf-bell-schedule-2264.dllontop.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://chalkboard-locker-magnet-8413.dllontop.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://paintbrush-journal-8500.dllontop.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://chalk-eraser-metronome-3426.dllontop.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://skibidirizz.delectare.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://learnspanish.kwgranitecountertops.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://mathtextbook314.kwgranitecountertops.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
+
+# Horizon
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | pending | pending | pending | 10 |
+> [!IMPORTANT]
+> This section has not been categorized or checked for protocol(s) and capabilities.
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+| | https://hxht.2to1agri.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://axw.etsang.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://zpau.giswebservice.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://paoae.zhanwenhan.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://tgf.518oak.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://vrux.malmo.cl/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://ojg.parcomunica.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://oynvd.chocolatespicacho.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://mcud.comit.com.ar/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://jdu.record-point.com.au/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+

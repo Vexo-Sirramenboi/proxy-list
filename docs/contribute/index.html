@@ -141,6 +141,16 @@
       font-weight: 700;
       white-space: nowrap;
     }
+    td.count a.count-link {
+      color: inherit;
+      font-weight: inherit;
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(62, 207, 142, 0.5);
+    }
+    td.count a.count-link:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
     .contributor-you {
       margin-left: 0.35rem;
       font-size: 0.72rem;
@@ -272,6 +282,16 @@
       return !!(user && (user.providerData || []).some((p) => p.providerId === "github.com"));
     }
 
+    function mainListSearchHrefForContributor(name) {
+      try {
+        const u = new URL("../", window.location.href);
+        u.searchParams.set("q", String(name || "").trim());
+        return u.pathname + u.search + u.hash;
+      } catch (_) {
+        return "../?q=" + encodeURIComponent(String(name || "").trim());
+      }
+    }
+
     function contributorMatchesViewer(row) {
       if (!viewersGithubLogin) return false;
       const login = viewersGithubLogin.toLowerCase();
@@ -291,7 +311,14 @@
           const nameCell = r.href
             ? '<a href="' + escapeHtml(r.href) + '" rel="noopener noreferrer" target="_blank">' + label + "</a>" + youMark
             : label + youMark;
-          return "<tr><td>" + nameCell + '</td><td class="count">' + r.count + "</td></tr>";
+          const listHref = escapeHtml(mainListSearchHrefForContributor(r.name));
+          const countCell =
+            '<a class="count-link" href="' +
+            listHref +
+            '" title="Open the main list filtered to this contributor&#39;s links">' +
+            r.count +
+            "</a>";
+          return "<tr><td>" + nameCell + '</td><td class="count">' + countCell + "</td></tr>";
         })
         .join("");
     }

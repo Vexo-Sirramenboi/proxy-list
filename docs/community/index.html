@@ -204,7 +204,7 @@
   <header>
     <h1>Community folders</h1>
     <p class="sub">
-      Public link folders shared by list visitors (same folders as <code>?folder=…</code> when marked public).
+      Public link folders shared by list visitors (folders set to <strong>Public</strong> visibility appear here; Unlisted folders are open by link only, Private folders are owner-only).
       <strong>Most popular</strong> ranks by how many links are in each folder.
       Use <strong>Highest rated</strong> to sort by community thumbs (net score). Ratings are stored in Firestore; voting requires signing in on the main site (not anonymous).
       Creator is the site username if set, otherwise the sign-in name from when the folder was created or last saved in settings.
@@ -591,7 +591,7 @@
               (code ? " (" + code + ")" : "") +
               ". " +
               msg +
-              " If this is permission-denied, deploy rules that allow reading documents where isPublic is true."
+              ". If this is permission-denied, deploy Firestore rules that allow reading savedFolders documents with Public visibility."
           );
           return;
         }
