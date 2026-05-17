@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "v5.0",
-    "revision": "r112",
-    "last_updated": "May 16, 2026",
+    "revision": "r113",
+    "last_updated": "May 17, 2026",
     "unsorted_total": 1970,
     "important_notices": "### Link ratings back up\nLink ratings are now working as intended, feel free to rate any link you choose! More info in the update notice, which can be accessed from the sidebar to your left (or above you if you're viewing on mobile).\n\n### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
     "update_notice": "### Accounts and Connections\nYou can now make an account on the site and even connect using GitHub and Google. Making an account gives you access to community features such as link ratings, saving links, sharing link folders, and more.\n### Saving Links\nOnce you create an account and sign in, you can now save links and access them by going to your account name and going to \"Saved links\". This is where you can also make link folders and share your favorite links with the community.\n### Community - Rating Links\nLink ratings are working again — you can thumbs-up or thumbs-down links and sort by highest rated or most saved.\nYou can now upvote/downvote links and sort by most favorable links by rated by the community. You will no longer have to keep trying links until you find one that's actually good.\n### Community - Sharing Links\nYou can now share links globally using the new folder system. It can be accessed the same way you access saved links, and clicking \"New Folder\". Add your links, then check the \"Public\" checkmark, and you are all set! You can also copy the direct link to your folder to share with others. Community shared link folders also support community ratings.",
@@ -103,43 +103,33 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-16T18:57:02Z",
-    "checked_at_display": "2026-05-16 18:57 UTC",
+    "checked_at": "2026-05-17T02:35:57Z",
+    "checked_at_display": "2026-05-17 02:35 UTC",
     "added_count": 0,
-    "removed_count": 11,
+    "removed_count": 8,
     "added_links": [],
     "removed_links": [
-      "https://dfdfsdfs.rinet.ai/onboarding",
-      "https://aside.segurosdepersonas.cl",
-      "https://winter.snow.coldness.frostbite.frozen.christmas.japan.is",
-      "https://writing.english.assignment.technology.classroom.japan.is",
-      "https://greenfn.beerporn.org",
-      "https://belt-frog.beltfrog.com",
-      "https://belt.beltfrog.com",
-      "https://programming.grammar.drama.biology.physics.glenoriebakery.com.au",
-      "https://classroom.library.chemistry.learning.music.glenoriebakery.com.au",
-      "https://geography.seminar.campus.engineering.learning.easternstamps.com",
-      "https://moreinfo.wikidelia.net"
+      "https://shopnow.womenclothingtoday.com",
+      "https://player-nation.kellerzahnarzt.ch",
+      "https://realvcsa.fineone.ru",
+      "https://vseesa-yt.machophd.org",
+      "https://cherri.lalitakc.com.np",
+      "https://playernation.darkroom-lang.org",
+      "https://realvcsa.castemag.com",
+      "https://youtube.com.vcsa.lalitakc.com.np"
     ]
   },
   "failing_links": {
-    "https://clever.com.rodzinnawiez.pl": 1,
-    "https://clever.com.eastcountywireless.com": 1,
-    "https://player-nation.kellerzahnarzt.ch": 2,
-    "https://realvcsa.fineone.ru": 2,
-    "https://vseesa-yt.machophd.org": 2,
-    "https://photoshoot.estudiodebiaggi.com.ar": 1,
-    "https://cherri.lalitakc.com.np": 2,
-    "https://playernation.darkroom-lang.org": 2,
-    "https://realvcsa.castemag.com": 2,
-    "https://youtube.com.vcsa.lalitakc.com.np": 2,
-    "https://clever.com.dmc219.com": 1,
-    "https://clever.com.londonwhiteeagles.ca": 1,
-    "https://clever.com.srijanakhadka.com.np": 1,
-    "https://cdn.jsdelivr.net/gh/TwiLabs/art/dist/index.svg": 1,
-    "https://vikvippro-canlitev2.geobattery.com": 1,
-    "https://computers.recepist.fi": 1,
-    "https://shopnow.womenclothingtoday.com": 2
+    "https://clever.com.rodzinnawiez.pl": 2,
+    "https://clever.com.eastcountywireless.com": 2,
+    "https://photoshoot.estudiodebiaggi.com.ar": 2,
+    "https://clever.com.dmc219.com": 2,
+    "https://clever.com.londonwhiteeagles.ca": 2,
+    "https://clever.com.srijanakhadka.com.np": 2,
+    "https://vikvippro-canlitev2.geobattery.com": 2,
+    "https://computers.recepist.fi": 2,
+    "https://vcsa-zone.esdata.info": 1,
+    "https://velara.my": 1
   },
   "links": [
     {
@@ -25330,25 +25320,6 @@
         "ultraviolet"
       ],
       "locked": "",
-      "link": "https://shopnow.womenclothingtoday.com/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
       "link": "https://darkchocolateisbetterthanmilkchocolate.chocolatespicacho.com/",
       "found": "5/15/2026",
       "username": "N/A",
@@ -26479,25 +26450,6 @@
         "scramjet"
       ],
       "locked": "",
-      "link": "https://player-nation.kellerzahnarzt.ch/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🤍 Lucide",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
       "link": "https://pub-bc82e2ed41754dc4b80c6d83a173f04b.r2.dev/index.html#/",
       "found": "4/25/2026",
       "username": "N/A",
@@ -26517,45 +26469,7 @@
         "scramjet"
       ],
       "locked": "",
-      "link": "https://realvcsa.fineone.ru/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🤍 Lucide",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
       "link": "https://s3.amazonaws.com/lucidestatic/index.html",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🤍 Lucide",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://vseesa-yt.machophd.org/",
       "found": "4/25/2026",
       "username": "N/A",
       "password": "N/A",
@@ -32179,82 +32093,6 @@
       "password": "N/A",
       "contributor": "1NobleCyber",
       "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://cherri.lalitakc.com.np/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://playernation.darkroom-lang.org/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://realvcsa.castemag.com/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌸 Cherri",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://youtube.com.vcsa.lalitakc.com.np/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
       "provider": "🌸 Cherri",
