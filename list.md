@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.1 | Released: May 17, 2026
-> r116 | Last Updated: May 17, 2026
+> r117 | Last Updated: May 17, 2026
 > Total onsite links: 4348 (2390 sorted + 1958 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -63,7 +63,7 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 7 |
+> | Proxy/Games | captcha | Scramjet | 6 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -72,7 +72,6 @@ Link folders can now be shared as unlisted, allowing only people with the link t
 | | https://bulls.eat.grass.klrmowse.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://vcsa-zone.esdata.info/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://securelyplsspeedineedthis8weudidhske.suwal.com.np/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://velara.my/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://quick-learning.gorich.hk/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # ➗ gn-math
