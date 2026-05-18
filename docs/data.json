@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "v5.1",
-    "revision": "r117",
-    "last_updated": "May 17, 2026",
+    "revision": "r118",
+    "last_updated": "May 18, 2026",
     "unsorted_total": 1961,
     "important_notices": "### Link ratings back up\nLink ratings are now working as intended, feel free to rate any link you choose! More info in the update notice, which can be accessed from the sidebar to your left (or above you if you're viewing on mobile).\n\n### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
     "update_notice": "### UI Redesign\nI've updated the UI with icons and better formatting for people on mobile so that full links are actually visible on mobile.\n### Unlisted Folders\nLink folders can now be shared as unlisted, allowing only people with the link to view the folder. If the link is private, no one except for the owner can view it. Public functionality was unchanged. Unlisted links do not show up publicly.\n### Fixes\n- Fixed a bug that caused accounts to be repeatedly signed out (this was fixed 5/15 with a remote hotfix).\n- Fixed a bug that caused link ratings to not work (this was automatically fixed 5/15).\n- Fixed a bug that caused extremely long load times when sorting by highest rated links.\n- Fixed a bug that caused contributed links to be incorrectly counted.\n- Fixed a bug that caused some sections to have inaccurate data.\n- Fixed a bug with Google Form link contributions that caused contributor names to not be hyperlinked properly.\n- Fixed a bug that caused links to show vertically instead of horizontally on mobile, making links very hard to read.\n- Fixed a bug where saving links would not save them properly (this seems to have been mostly fixed after the remote hotfix on 5/15).\n- Fixed a bug where saving links would not make the star yellow, making it hard to differentiate saved from unsaved links.\n- Fixed a bug that caused proxied users to have long load times. Optimizations have been made to lower loading.\n- Fixed a bug with the link checker bot not removing links.",
@@ -103,27 +103,21 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-17T19:01:14Z",
-    "checked_at_display": "2026-05-17 19:01 UTC",
+    "checked_at": "2026-05-18T02:46:18Z",
+    "checked_at_display": "2026-05-18 02:46 UTC",
     "added_count": 0,
-    "removed_count": 1,
+    "removed_count": 2,
     "added_links": [],
     "removed_links": [
-      "https://velara.my"
+      "https://winer.wine-software.com",
+      "https://canliteistuff.chickenkiller.com"
     ]
   },
   "failing_links": {
-    "https://1929.lervs.ro": 1,
-    "https://mrchiaisgoated.lervs.ro": 1,
-    "https://oiplslahguys.lervs.ro": 1,
-    "https://winer.wine-software.com": 2,
-    "https://canliteistuff.chickenkiller.com": 2,
-    "https://everestishigh.wikidelia.net": 1,
-    "https://mteverest.wikidelia.net": 1,
-    "https://everest3.klrmowse.com": 1,
-    "https://securelyplsspeedineedthis8weudidhske.suwal.com.np": 1,
-    "https://bulls.eat.grass.klrmowse.com": 1,
-    "https://quick-learning.gorich.hk": 1
+    "https://sainttech.techmaxasia.com/#home": 1,
+    "https://ciaworldfactbook.daybits.net": 1,
+    "https://learnaboutbillclinton.bisblick.org": 1,
+    "https://pale-dawn.thenme.net": 1
   },
   "links": [
     {
@@ -19856,25 +19850,6 @@
         "scramjet"
       ],
       "locked": "",
-      "link": "https://winer.wine-software.com",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🎮 Rosin",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
       "link": "https://slayers.e-c-h-o.tw",
       "found": "5/2/2026",
       "username": "N/A",
@@ -32091,25 +32066,6 @@
       ],
       "locked": "",
       "link": "https://math.questions.mfontcuberta.es",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "📡 CanLite",
-      "category": "Proxy",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://canliteistuff.chickenkiller.com",
       "found": "5/2/2026",
       "username": "N/A",
       "password": "N/A",
