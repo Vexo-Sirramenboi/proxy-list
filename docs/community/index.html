@@ -71,6 +71,22 @@
       font: inherit;
       font-size: 0.88rem;
     }
+    .toolbar input[type="search"] {
+      flex: 1 1 14rem;
+      min-width: 10rem;
+      max-width: 28rem;
+      padding: 0.45rem 0.65rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: #121920;
+      color: var(--text);
+      font: inherit;
+      font-size: 0.88rem;
+    }
+    .toolbar input[type="search"]:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 1px;
+    }
     .meta-line {
       margin: 0;
       font-size: 0.82rem;
@@ -213,6 +229,13 @@
   </header>
   <main>
     <div class="toolbar">
+      <input
+        type="search"
+        id="folderSearch"
+        placeholder="Search folder name or creator…"
+        autocomplete="off"
+        aria-label="Search folder name or creator"
+      />
       <label>
         Sort by
         <select id="sortSelect" aria-label="Sort folders">
@@ -242,12 +265,11 @@
     </div>
     <div class="empty" id="loadingState">Loading public folders…</div>
     <div class="empty" id="emptyState" hidden>No public folders yet. Create one from the list while signed in, then turn on “Public” in folder settings.</div>
+    <div class="empty" id="noSearchState" hidden>No folders match your search. Try another folder name or creator.</div>
     <div class="err" id="errorState" hidden></div>
 
     <p class="back-row">
-      <a href="../">← Back to proxy list</a>
-      ·
-      <a href="../login/">Sign in</a>
+      <a href="../">← Back to proxy list</a><span id="backRowSignInWrap"> · <a href="../login/">Sign in</a></span>
       ·
       <a href="../contribute/">Contribute</a>
     </p>
@@ -268,10 +290,13 @@
       const tableCard = document.getElementById("tableCard");
       const folderBody = document.getElementById("folderBody");
       const loadingState = document.getElementById("loadingState");
+      const folderSearch = document.getElementById("folderSearch");
       const emptyState = document.getElementById("emptyState");
+      const noSearchState = document.getElementById("noSearchState");
       const errorState = document.getElementById("errorState");
 
       let rawRows = [];
+      let folderCountSuffix = "";
       let fireDb = null;
       const folderRatingAgg = new Map();
       const folderRatingSelf = new Map();
@@ -496,10 +521,53 @@
         return out;
       }
 
+      function searchQuery() {
+        return folderSearch && folderSearch.value ? folderSearch.value.trim().toLowerCase() : "";
+      }
+
+      function matchesSearch(row, q) {
+        if (!q) return true;
+        const title = String(row.title || "").toLowerCase();
+        const owner = String(row.ownerLabel || "").toLowerCase();
+        return title.includes(q) || owner.includes(q);
+      }
+
       function render() {
         const mode = sortSelect && sortSelect.value ? sortSelect.value : "newest";
-        const sorted = sortRows(mode, rawRows);
+        const q = searchQuery();
+        const filtered = q ? rawRows.filter((r) => matchesSearch(r, q)) : rawRows;
+        const sorted = sortRows(mode, filtered);
         if (!folderBody) return;
+
+        if (rawRows.length && q && !filtered.length) {
+          setVisible(tableCard, false);
+          setVisible(noSearchState, true);
+          setVisible(emptyState, false);
+        } else if (rawRows.length) {
+          setVisible(tableCard, true);
+          setVisible(noSearchState, false);
+          setVisible(emptyState, false);
+        }
+
+        if (countLine && rawRows.length) {
+          if (q && filtered.length !== rawRows.length) {
+            countLine.textContent =
+              "Showing " +
+              filtered.length +
+              " of " +
+              rawRows.length +
+              " public folder" +
+              (rawRows.length === 1 ? "" : "s");
+          } else {
+            countLine.textContent =
+              rawRows.length +
+              " public folder" +
+              (rawRows.length === 1 ? "" : "s") +
+              folderCountSuffix;
+          }
+          setVisible(countLine, true);
+        }
+
         folderBody.innerHTML = sorted
           .map((r) => {
             const title = escapeHtml(r.title || "(untitled)");
@@ -535,10 +603,20 @@
         if (el) el.hidden = !on;
       }
 
+      function isSignedInUser(user) {
+        return !!(user && !user.isAnonymous);
+      }
+
+      function updateBackRowSignIn(user) {
+        const wrap = document.getElementById("backRowSignInWrap");
+        if (wrap) wrap.hidden = isSignedInUser(user);
+      }
+
       function showError(msg) {
         setVisible(loadingState, false);
         setVisible(tableCard, false);
         setVisible(emptyState, false);
+        setVisible(noSearchState, false);
         setVisible(errorState, true);
         if (errorState) errorState.textContent = msg;
       }
@@ -573,6 +651,9 @@
           showError("Sign-in failed (anonymous). Check Auth is enabled and API key referrer rules: " + (e && e.message ? e.message : String(e)));
           return;
         }
+
+        updateBackRowSignIn(auth.currentUser);
+        auth.onAuthStateChanged(updateBackRowSignIn);
 
         const db = firebase.firestore();
         fireDb = db;
@@ -620,9 +701,13 @@
 
         await prefetchFolderRatings(rawRows);
 
+        folderCountSuffix =
+          snap.size >= QUERY_LIMIT ? " (showing first " + QUERY_LIMIT + " by query limit)" : "";
+
         setVisible(loadingState, false);
         if (!rawRows.length) {
           setVisible(tableCard, false);
+          setVisible(noSearchState, false);
           setVisible(emptyState, true);
           setVisible(countLine, false);
           return;
@@ -630,15 +715,7 @@
 
         setVisible(emptyState, false);
         setVisible(errorState, false);
-        setVisible(tableCard, true);
-        setVisible(countLine, true);
-        if (countLine) {
-          countLine.textContent =
-            rawRows.length +
-            " public folder" +
-            (rawRows.length === 1 ? "" : "s") +
-            (snap.size >= QUERY_LIMIT ? " (showing first " + QUERY_LIMIT + " by query limit)" : "");
-        }
+        setVisible(noSearchState, false);
         render();
       }
 
@@ -665,6 +742,11 @@
           try {
             localStorage.setItem(SORT_LS, sortSelect.value);
           } catch (_) {}
+          render();
+        });
+      }
+      if (folderSearch) {
+        folderSearch.addEventListener("input", () => {
           render();
         });
       }

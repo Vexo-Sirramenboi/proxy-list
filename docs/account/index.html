@@ -233,9 +233,7 @@
     <p class="status" id="accountStatus" hidden></p>
 
     <p class="back-row">
-      <a href="../">← Back to proxy list</a>
-      ·
-      <a href="../login/">Sign in</a>
+      <a href="../">← Back to proxy list</a><span id="backRowSignInWrap"> · <a href="../login/">Sign in</a></span>
     </p>
   </main>
 
@@ -257,6 +255,7 @@
       const deleteSavedDataBtn = document.getElementById("deleteSavedDataBtn");
       const createAccountBtn = document.getElementById("createAccountBtn");
       const deleteAccountBtn = document.getElementById("deleteAccountBtn");
+      const backRowSignInWrap = document.getElementById("backRowSignInWrap");
       const profileLimitNote = document.getElementById("profileLimitNote");
       const profileUsernameInput = document.getElementById("profileUsernameInput");
       const profilePreviewImg = document.getElementById("profilePreviewImg");
@@ -471,6 +470,7 @@
 
       function updatePanels(user) {
         const signedIn = isSignedInUser(user);
+        if (backRowSignInWrap) backRowSignInWrap.hidden = signedIn;
         signedOutPanel.hidden = signedIn;
         signedInPanel.hidden = !signedIn;
         profilePanel.hidden = !signedIn;

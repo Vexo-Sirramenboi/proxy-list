@@ -1688,9 +1688,13 @@
     let useFirebaseClicks = false;
     let firebaseDb = null;
     /** Realtime DB: session nodes under presence/ for approximate “active now” count. */
+    const PRESENCE_STALE_MS = 5 * 60 * 1000;
+    const PRESENCE_HEARTBEAT_MS = 60 * 1000;
     let firebasePresenceDb = null;
     let activeSessionsCount = null;
     let presenceListenerAttached = false;
+    let presenceSessionRef = null;
+    let presenceHeartbeatTimer = null;
 
     const GITHUB_REPO_OWNER = "yourworstnightmare1";
     const GITHUB_REPO_NAME = "proxy-list";
@@ -3301,8 +3305,31 @@
       );
     }
 
+    function countActivePresenceSessions(snap) {
+      const val = snap && typeof snap.val === "function" ? snap.val() : null;
+      if (!val || typeof val !== "object") return 0;
+      const now = Date.now();
+      let n = 0;
+      for (const key of Object.keys(val)) {
+        const row = val[key];
+        if (!row || typeof row !== "object") continue;
+        const ts = Number(row.ts);
+        if (!Number.isFinite(ts) || ts > now + 60000) continue;
+        if (now - ts <= PRESENCE_STALE_MS) n++;
+      }
+      return n;
+    }
+
+    function presenceHeartbeat() {
+      if (!presenceSessionRef) return;
+      presenceSessionRef
+        .update({ ts: firebase.database.ServerValue.TIMESTAMP })
+        .catch(function () {});
+    }
+
     function startPresenceTracking() {
       if (!useFirebaseClicks || typeof firebase === "undefined" || !firebase.auth().currentUser) return;
+      if (presenceSessionRef) return;
       if (typeof firebase.database !== "function") {
         console.warn("[proxy-list] firebase-database-compat.js not loaded; skipping presence.");
         return;
@@ -3313,6 +3340,7 @@
         }
         const uid = firebase.auth().currentUser.uid;
         const sessRef = firebasePresenceDb.ref("presence").push();
+        presenceSessionRef = sessRef;
         sessRef
           .set({
             uid: uid,
@@ -3325,11 +3353,13 @@
             );
           });
         sessRef.onDisconnect().remove();
+        if (presenceHeartbeatTimer) clearInterval(presenceHeartbeatTimer);
+        presenceHeartbeatTimer = setInterval(presenceHeartbeat, PRESENCE_HEARTBEAT_MS);
 
         if (!presenceListenerAttached) {
           presenceListenerAttached = true;
           firebasePresenceDb.ref("presence").on("value", function (snap) {
-            activeSessionsCount = snap.numChildren();
+            activeSessionsCount = countActivePresenceSessions(snap);
             updateActiveUsersDisplay();
           });
         }

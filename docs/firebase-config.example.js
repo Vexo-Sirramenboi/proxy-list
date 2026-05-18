@@ -29,7 +29,9 @@
    Enable Authentication → Sign-in method → Anonymous, GitHub (OAuth app in Firebase Console),
    Google, and Email/Password.
 
-   Active user count uses Realtime Database (not Firestore). In Firebase Console:
+   Active user count uses Realtime Database (not Firestore): each tab writes
+   presence/{sessionId} with uid + ts; only sessions updated in the last ~5 minutes
+   count as active (stale nodes from crashed tabs are ignored). In Firebase Console:
    Build → Realtime Database → Create database. If the SDK cannot connect, add
    databaseURL from that screen to the config object below, e.g.:
    databaseURL: "https://<projectId>-default-rtdb.firebaseio.com"
