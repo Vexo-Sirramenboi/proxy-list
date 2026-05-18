@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
-> v5.1.1 | Released: May 17, 2026
-> r119 | Last Updated: May 17, 2026
+> v5.1.2 | Released: May 17, 2026
+> r120 | Last Updated: May 17, 2026
 > Total onsite links: 4348 (2390 sorted + 1958 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -29,7 +29,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 ## Update Notice
 
 ### Fixes
-- Fixed a bug that caused the update notice message to appear every time the revision string was updated.
+- Fixed a bug that caused the refresh to update notice only appear when the version it requests is already active.
 
 # 💜 Selenite
 > [!NOTE]

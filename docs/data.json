@@ -1,11 +1,11 @@
 {
   "meta": {
-    "version": "v5.1.1",
-    "revision": "r119",
+    "version": "v5.1.2",
+    "revision": "r120",
     "last_updated": "May 17, 2026",
     "unsorted_total": 1961,
     "important_notices": "### Link ratings back up\nLink ratings are now working as intended, feel free to rate any link you choose! More info in the update notice, which can be accessed from the sidebar to your left (or above you if you're viewing on mobile).\n\n### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
-    "update_notice": "### Fixes\n- Fixed a bug that caused the update notice message to appear every time the revision string was updated.",
+    "update_notice": "### Fixes\n- Fixed a bug that caused the refresh to update notice only appear when the version it requests is already active.",
     "fail_threshold": 3,
     "popular_note": "Hand-picked links that tend to work well — not ranked by site traffic (this page has no analytics). Edit docs/popular_links.json and run scripts/convert_list_to_json.py.",
     "popular_links": [

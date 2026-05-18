@@ -5873,6 +5873,7 @@
     }
 
     const UPDATE_SEEN_KEY = "proxylist:last-seen-version";
+    const UPDATE_SEEN_BANNER_KEY = "proxylist:last-seen-banner-stamp";
     const BANNER_DISMISS_SESSION_KEY = "proxylist:banner-dismiss-stamp";
 
     function versionOnly(meta) {
@@ -5920,15 +5921,46 @@
       }
     }
 
+    function readSeenBannerStamp() {
+      try {
+        let raw = localStorage.getItem(UPDATE_SEEN_BANNER_KEY);
+        if (raw === null) {
+          const legacy = localStorage.getItem(UPDATE_SEEN_KEY);
+          if (legacy && String(legacy).includes("|")) {
+            raw = legacy;
+            writeSeenBannerStamp(legacy);
+          }
+        }
+        return raw;
+      } catch (_) {
+        return null;
+      }
+    }
+
+    function writeSeenBannerStamp(value) {
+      try {
+        localStorage.setItem(UPDATE_SEEN_BANNER_KEY, value);
+      } catch (_) {
+        /* storage may be disabled; ignore */
+      }
+    }
+
     function maybeShowSiteUpdateBanner(meta) {
       const stamp = versionStamp(meta);
-      const stored = readSeenVersion();
+      const stored = readSeenBannerStamp();
+      const curVer = versionOnly(meta);
+      const seenVer = readSeenVersion();
       const textEl = $("siteUpdateBannerText");
       if (textEl && stamp) {
         textEl.textContent =
           "A new site update is available (" + humanStamp(stamp) + "). Refresh to load the latest list and scripts.";
       }
       if (!stamp) {
+        setSiteUpdateBannerVisible(false);
+        return;
+      }
+      // Version bump is handled by the update notice modal — avoid both at once.
+      if (curVer && seenVer && seenVer !== curVer) {
         setSiteUpdateBannerVisible(false);
         return;
       }
@@ -6006,6 +6038,8 @@
     function closeUpdateModal(meta) {
       const ver = versionOnly(meta);
       if (ver) writeSeenVersion(ver);
+      const stamp = versionStamp(meta);
+      if (stamp) writeSeenBannerStamp(stamp);
       $("updateBackdrop").classList.remove("open");
       $("updateBackdrop").setAttribute("aria-hidden", "true");
       setSiteUpdateBannerVisible(false);
@@ -6019,6 +6053,8 @@
       if (stored === null) {
         // First-time visitor: mark current version so the modal only auto-opens on a version bump.
         writeSeenVersion(current);
+        const stamp = versionStamp(meta);
+        if (stamp) writeSeenBannerStamp(stamp);
         return;
       }
       openUpdateModal(meta, stored);
@@ -6353,7 +6389,10 @@
         if (siteUpdateRefreshBtn) {
           siteUpdateRefreshBtn.addEventListener("click", () => {
             const m = pageContext && pageContext.meta;
-            if (m) writeSeenVersion(versionStamp(m));
+            if (m) {
+              const stamp = versionStamp(m);
+              if (stamp) writeSeenBannerStamp(stamp);
+            }
             hardReloadBypassCache();
           });
         }
@@ -6362,7 +6401,13 @@
           siteUpdateDismissBtn.addEventListener("click", () => {
             try {
               const m = pageContext && pageContext.meta;
-              if (m) sessionStorage.setItem(BANNER_DISMISS_SESSION_KEY, versionStamp(m));
+              if (m) {
+                const stamp = versionStamp(m);
+                if (stamp) {
+                  writeSeenBannerStamp(stamp);
+                  sessionStorage.setItem(BANNER_DISMISS_SESSION_KEY, stamp);
+                }
+              }
             } catch (_) {}
             setSiteUpdateBannerVisible(false);
           });
