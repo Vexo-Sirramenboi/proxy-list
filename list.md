@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
-> v5.1 | Released: May 17, 2026
-> r118 | Last Updated: May 18, 2026
+> v5.1.1 | Released: May 17, 2026
+> r119 | Last Updated: May 17, 2026
 > Total onsite links: 4348 (2390 sorted + 1958 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -28,24 +28,8 @@ The owner has announced that Selenite is here to stay! The changes made to those
 
 ## Update Notice
 
-### UI Redesign
-I've updated the UI with icons and better formatting for people on mobile so that full links are actually visible on mobile.
-
-### Unlisted Folders
-Link folders can now be shared as unlisted, allowing only people with the link to view the folder. If the link is private, no one except for the owner can view it. Public functionality was unchanged. Unlisted links do not show up publicly.
-
 ### Fixes
-- Fixed a bug that caused accounts to be repeatedly signed out (this was fixed 5/15 with a remote hotfix).
-- Fixed a bug that caused link ratings to not work (this was automatically fixed 5/15).
-- Fixed a bug that caused extremely long load times when sorting by highest rated links.
-- Fixed a bug that caused contributed links to be incorrectly counted.
-- Fixed a bug that caused some sections to have inaccurate data.
-- Fixed a bug with Google Form link contributions that caused contributor names to not be hyperlinked properly.
-- Fixed a bug that caused links to show vertically instead of horizontally on mobile, making links very hard to read.
-- Fixed a bug where saving links would not save them properly (this seems to have been mostly fixed after the remote hotfix on 5/15).
-- Fixed a bug where saving links would not make the star yellow, making it hard to differentiate saved from unsaved links.
-- Fixed a bug that caused proxied users to have long load times. Optimizations have been made to lower loading.
-- Fixed a bug with the link checker bot not removing links.
+- Fixed a bug that caused the update notice message to appear every time the revision string was updated.
 
 # 💜 Selenite
 > [!NOTE]

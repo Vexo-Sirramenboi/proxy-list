@@ -5954,7 +5954,11 @@
 
     function readSeenVersion() {
       try {
-        return localStorage.getItem(UPDATE_SEEN_KEY);
+        const raw = localStorage.getItem(UPDATE_SEEN_KEY);
+        if (raw === null) return null;
+        // Legacy values were version|revision|date — only the version triggers the notice.
+        const v = String(raw).split("|")[0].trim();
+        return v || raw;
       } catch (_) {
         return null;
       }
@@ -5973,16 +5977,15 @@
       const introEl = $("updateIntro");
       const bodyEl = $("updateNoticesBody");
       const current = versionOnly(meta) || "the latest version";
-      const curStamp = versionStamp(meta);
+      const prevVer =
+        fromVersion && String(fromVersion).trim()
+          ? String(fromVersion).split("|")[0].trim() || String(fromVersion).trim()
+          : "";
       if (titleEl) titleEl.textContent = "What's new in " + current;
       if (introEl) {
-        if (fromVersion && fromVersion !== curStamp) {
+        if (prevVer && prevVer !== current) {
           introEl.textContent =
-            "The proxy list was updated from " +
-            humanStamp(fromVersion) +
-            " to " +
-            humanStamp(curStamp) +
-            ".";
+            "The proxy list was updated from " + prevVer + " to " + current + ".";
         } else {
           introEl.textContent = "Currently on " + current + ".";
         }
@@ -6001,20 +6004,20 @@
     }
 
     function closeUpdateModal(meta) {
-      const stamp = versionStamp(meta);
-      if (stamp) writeSeenVersion(stamp);
+      const ver = versionOnly(meta);
+      if (ver) writeSeenVersion(ver);
       $("updateBackdrop").classList.remove("open");
       $("updateBackdrop").setAttribute("aria-hidden", "true");
       setSiteUpdateBannerVisible(false);
     }
 
     function maybeShowUpdateModal(meta) {
-      const current = versionStamp(meta);
+      const current = versionOnly(meta);
       if (!current) return;
       const stored = readSeenVersion();
       if (stored === current) return;
       if (stored === null) {
-        // First-time visitor: silently mark current stamp so the modal only auto-triggers on real updates.
+        // First-time visitor: mark current version so the modal only auto-opens on a version bump.
         writeSeenVersion(current);
         return;
       }
