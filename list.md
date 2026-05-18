@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.1.2 | Released: May 17, 2026
-> r120 | Last Updated: May 17, 2026
+> r121 | Last Updated: May 18, 2026
 > Total onsite links: 4348 (2390 sorted + 1958 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -3211,16 +3211,6 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | - | - | - | - | - | - |
 | | https://tungtung.vcsa.alalalal.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://vcsacontent.anostudio.info | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-
-# 🕊️ Freebird
-> [!NOTE]
-> | Category | Capabilities | Protocol(s) | Links |
-> | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 1 |
-
-| Locked | Link | Found Date | Username | Password | Contributor |
-| - | - | - | - | - | - |
-| | https://pale-dawn.thenme.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # Parcoil
 > [!NOTE]
