@@ -279,7 +279,6 @@ Move links from here into `list.md` once sorted.
 - https://learntoday.liceotajamar.cl
 - https://luminal.lol
 - https://maddox.games
-- https://main.dh7legjxmt1f4.amplifyapp.com
 - https://math-edu.dinprima.ro
 - https://mkplaza.github.io
 - https://nebulo.bostoncareercounselor.com
@@ -1121,7 +1120,6 @@ Move links from here into `list.md` once sorted.
 - https://outerspace.realisation.org
 - https://outerspace.regu.ch
 - https://outerspace.tomashirsch.cl
-- https://over.sulevkivastik.ee
 - https://overcloaked.vcsa.creographix.at
 - https://oz96krcc.beanweb.qzz.io.cdn.cloudflare.net
 - https://pickmysubdomaininchat.studyschooltoday.eu.org
@@ -1132,14 +1130,12 @@ Move links from here into `list.md` once sorted.
 - https://player-nation.bayworld.net
 - https://playernation.blackonstuff.com
 - https://playernation.goodfox.com.br
-- https://playernation.superportret.ru
 - https://pluralsight.ga
 - https://pn.goodfox.com.br
 - https://pneumonoultramicroscopicsilicovolcanoconiosis-67-17245612.codehs.me
 - https://poki-v2.global.ssl.fastly.net/en/crazy-games
 - https://pooooof.latinliturgy.com
 - https://portal.karjase.ee
-- https://powers.superportret.ru
 - https://prices.gpu74.ru
 - https://prism.global.ssl.fastly.net
 - https://prismboi.clicksoftware.co.uk
@@ -1963,4 +1959,3 @@ Move links from here into `list.md` once sorted.
 - https://lecture.history.biology.science.writing.arxeiokin.gr
 - https://clever.com.rodzinnawiez.pl
 - https://clever.com.eastcountywireless.com
-- https://wearerhebeat9e48373.knowhowit.com.au
