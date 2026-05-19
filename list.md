@@ -1,8 +1,8 @@
 # Proxy List
 > [!NOTE]
 > v5.1.2 | Released: May 17, 2026
-> r122 | Last Updated: May 19, 2026
-> Total onsite links: 4348 (2390 sorted + 1958 unsorted)\
+> r123 | Last Updated: May 19, 2026
+> Total onsite links: 4246 (2290 sorted + 1956 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
 Welcome to the official Proxy List! This has a running list of hundreds of unblocked websites and games that anyone is free to use. We have the most popular and reliable sites here, so you'll never run out!
@@ -35,19 +35,21 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | N/A | N/A | 3 |
+> | Games | N/A | N/A | 5 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://supplies.artsineducation.net/ | 1/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://account.englishbridalcouture.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://mail.adriapartners.net/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://computer-textbooks.eclipsecastellon.com/ | 5/12/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://jesus.churchinhuntsville.org/ | 5/13/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # 🌙 Velara
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 5 |
+> | Proxy/Games | captcha | Scramjet | 8 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -56,6 +58,9 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://bulls.eat.grass.klrmowse.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://vcsa-zone.esdata.info/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://securelyplsspeedineedthis8weudidhske.suwal.com.np/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://svp.reformarchive.com | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://jyg.fritsche.org | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://hvtzw.reformarchive.com | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # ➗ gn-math
 > [!NOTE]
@@ -539,7 +544,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 37 |
+> | Proxy/Games | unknown | Scramjet | 38 |
 
 > [!IMPORTANT]
 > Boredom does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -583,6 +588,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://vps-ac2179fd.vps.ovh.ca/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://docs.remiosenifoundation.org/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://cool67.allisons.org/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://wearerhebeat9e48373.knowhowit.com.au/ | 5/12/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # 💨 Vapor
 > [!NOTE]
@@ -675,7 +681,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 93 |
+> | Proxy/Games | unknown | unknown | 94 |
 
 > [!IMPORTANT]
 > Shadow does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -776,6 +782,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://rapidcalc.hotelconsuladoinn.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://brightcoding.hotelconsuladoinn.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://lightpoems.hotelconsuladoinn.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://hyperhistory.pjfox.xyz | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # 🐶 dogeub
 > [!NOTE]
@@ -884,7 +891,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 43 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 44 |
 
 > [!IMPORTANT]
 > Lunar does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -937,6 +944,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://learning.hkieca.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://studying.nigelupchurch.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://freelessons.sismonda.com.ar/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://mushroomvita.blog/ | 5/12/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # 👻 Ghost
 > [!NOTE]
@@ -1089,7 +1097,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp | Scramjet | 24 |
+> | Proxy/Games | epoxy, libcurl, wisp | Scramjet | 28 |
 
 > [!IMPORTANT]
 > OverCloaked does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1120,6 +1128,10 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://s3.amazonaws.com/elliotslinks-tnjavxyp/exam45879/index.html | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://s3.amazonaws.com/elliotslinks-tnjavxyp/essay71679/index.html | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://s3.amazonaws.com/elliotslinks-tnjavxyp/quiz10430/index.html | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://powers.superportret.ru/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://over.sulevkivastik.ee/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://playernation.superportret.ru/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://paukenschlag-blog.org/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # 😈 Imp Proxy
 > [!NOTE]
@@ -1283,7 +1295,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | Unknown | Scramjet | 109 |
+> | Proxy/Games | Unknown | Scramjet | 110 |
 
 > [!IMPORTANT]
 > Rosin does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1399,6 +1411,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://stillaintcall.callcentercuritiba.com.br | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://stillchasing.thuexetaxi.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://lastweekbaby.tozsugianto.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://hellnah.lecorps.ar/ | 5/12/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # ⬡ TGLSC Density 4
 > [!NOTE]
@@ -1435,7 +1448,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | libcurl, epoxy, wisp | Scramjet, Ultraviolet | 97 |
+> | Proxy/Games | libcurl, epoxy, wisp | Scramjet, Ultraviolet | 98 |
 
 > [!IMPORTANT]
 > Galaxy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1539,6 +1552,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://japan2026fieldtrip.goon.hkmedal.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://tracks.empleosonora.gob.mx/onboarding/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://galaxy.fortbendisd.cc/onboarding/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://techno.tecnosilver.net/ | 5/12/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # ♈ Zodiac
 > [!NOTE]
@@ -1559,7 +1573,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 46 |
+> | Proxy/Games | unknown | unknown | 65 |
 
 > [!IMPORTANT]
 > StudyHub does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1612,12 +1626,31 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://united.scrapitsoftware.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cipherop.2660010.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://learning.sismonda.com.ar | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://healthislife.peperepara.com/ | 5/12/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://lanschool.thenme.net/ | 5/12/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://cooking.vipinsagar.net/ | 5/12/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://termsofuse.imagetemplate.com/ | 5/12/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://highschoolteacher.reasonman.com/ | 5/12/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://pictures.selugallery.com.np/ | 5/12/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://houses.epusara.com/ | 5/12/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://asap.g-osap.com/ | 5/12/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://pneducation.org/ | 5/12/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://vcsa.srivaishnavam.org.au | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://vcsa.grahammurryinsuranceagency.com | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://vcsagoat.notariamelipilla.cl/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://smart.vta-international.com/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://easycoding.recreatinganew.com/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://study.geckobungalow.com/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://data.scrapitsoftware.com/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://vcsa.reformarchive.com/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://vcsa.callowell.com/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://vcsa.thongthaitextile.com/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # 🍓 Strawberry
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 85 |
+> | Proxy/Games | unknown | unknown | 87 |
 
 > [!IMPORTANT]
 > Strawberry does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1709,6 +1742,8 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://learning.colloky.com.pe/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://cipher.alalalal.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://ford.klrmowse.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://vcsaontop.renaca.com/ | 5/18/2026 | N/A | N/A | Anonymous Contributor
+| | https://learning.vta-international.com/ | 5/18/2026 | N/A | N/A | Anonymous Contributor
 
 # 🧱 Noblocc
 > [!NOTE]
@@ -1945,7 +1980,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 11 |
+> | Proxy/Games | captcha | Scramjet | 12 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -1960,6 +1995,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://unpkg.com/browselucide@latest/logo.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://cdn.jsdelivr.net/gh/coinbaselarper/svg@latest/logo.svg | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://gawd.rcdx93.net | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
+| | https://main.dh7legjxmt1f4.amplifyapp.com/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # 🔷 Celestial
 > [!NOTE]
@@ -2369,7 +2405,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 38 |
+> | pending | pending | pending | 43 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -2414,16 +2450,22 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://pv7bg8m.exotic-test.kesug.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://we1trg0.exotic-test.kesug.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://lqvponc.exotic-test.kesug.com/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://cherri.totallyeducation.info/onboarding/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://cherri.altonhabitat.store/onboarding/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://cherri.altonhabitat.online/onboarding/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://cherri.altonhabitat.info/onboarding/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://cherri.cc/onboarding/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # 🌙 LuminalOS
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 1 |
+> | Proxy/Games | captcha | Scramjet | 2 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://scramupdate.cfd/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://luminal.click/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
 # ❤️ BloxCraft Games
 > [!NOTE]
@@ -3253,3 +3295,29 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://chalkboard-locker-magnet-8413.dllontop.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://paintbrush-journal-8500.dllontop.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://chalk-eraser-metronome-3426.dllontop.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
+# Rammerhead
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | pending | pending | pending | 3 |
+> [!IMPORTANT]
+> This section has not been categorized or checked for protocol(s) and capabilities.
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+| | https://rammer.nana.vpspure.cf/ | 5/12/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://rc-1140.germlab.ca/ | 5/12/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+| | https://papertutor.azseguros.cl/ | 5/12/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
+
+# ES Network
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | pending | pending | pending | 1 |
+> [!IMPORTANT]
+> This section has not been categorized or checked for protocol(s) and capabilities.
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+| | https://script.google.com/a/macros/stu.bisd.us/s/AKfycbxz-BCde8U322S74ntjDZl9OHx1TXSqh-YyYbIZ2p6dx42ATbCUgBnJ7kIwPsQV8CzKcQ/exec | 5/18/2026 | N/A | N/A | Anonymous Contributor
