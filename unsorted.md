@@ -1959,3 +1959,13 @@ Move links from here into `list.md` once sorted.
 - https://lecture.history.biology.science.writing.arxeiokin.gr
 - https://clever.com.rodzinnawiez.pl
 - https://clever.com.eastcountywireless.com
+- https://over.sulevkivastik.ee
+- https://playernation.superportret.ru
+- https://powers.superportret.ru
+- https://wearerhebeat9e48373.knowhowit.com.au
+- https://bh3om2enegua.kompaniet.nu
+- https://2p0iv6mlokvj.hana.web.id/proxe
+- https://wxxp5796wwsw.pbdjarum.info/games
+- https://macczrbwv9hm.commwebworks.com/proxe
+- https://xlx17ih9jjxe.pjabbari.com/proxe
+- https://otofa2e9co5s.toconline.ch/proxe
