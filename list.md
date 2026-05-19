@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.1.2 | Released: May 17, 2026
-> r121 | Last Updated: May 18, 2026
+> r122 | Last Updated: May 19, 2026
 > Total onsite links: 4348 (2390 sorted + 1958 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -47,7 +47,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 6 |
+> | Proxy/Games | captcha | Scramjet | 5 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -56,13 +56,12 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://bulls.eat.grass.klrmowse.com | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://vcsa-zone.esdata.info/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://securelyplsspeedineedthis8weudidhske.suwal.com.np/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://quick-learning.gorich.hk/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # ➗ gn-math
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | N/A | N/A | 64 |
+> | Games | N/A | N/A | 63 |
 
 > [!IMPORTANT]
 > View importance notices section if link is broken.
@@ -71,7 +70,6 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | - | - | - | - | - | - |
 | | https://prageru-server.s3.amazonaws.com/mathematics.html | 2/19/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://s3.amazonaws.com/prageru-server/mathematics.html | 2/19/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | http://galaxy.xenopoem.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://shindoisbest.s3.amazonaws.com/index.html | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://s3.amazonaws.com/shindoisbest/index.html | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | http://pullupmath.2nx.org/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
