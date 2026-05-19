@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.1.2 | Released: May 17, 2026
-> r124 | Last Updated: May 19, 2026
+> r125 | Last Updated: May 19, 2026
 > Total onsite links: 4246 (2290 sorted + 1956 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -3035,11 +3035,10 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Ultraviolet | 10 |
+> | Proxy/Games | unknown | Ultraviolet | 9 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
-| | https://gabrielultrakill.bestar.sg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://sunny-day.global.ssl.fastly.net/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://suntree.alex.rf.gd | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://focus-and-learn.2gfkitchen.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
