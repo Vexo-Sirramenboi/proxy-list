@@ -1969,3 +1969,6 @@ Move links from here into `list.md` once sorted.
 - https://macczrbwv9hm.commwebworks.com/proxe
 - https://xlx17ih9jjxe.pjabbari.com/proxe
 - https://otofa2e9co5s.toconline.ch/proxe
+- https://edu.myt0.info
+- https://learningcomesfirst.madhavkhanal.com.np
+- https://tuffle.infotechnology.com
