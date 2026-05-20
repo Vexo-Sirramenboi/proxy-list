@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "v5.1.2",
-    "revision": "r128",
-    "last_updated": "May 19, 2026",
+    "revision": "r129",
+    "last_updated": "May 20, 2026",
     "unsorted_total": 1966,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).\n\n### Link ratings back up\nLink ratings are now working as intended, feel free to rate any link you choose! More info in the update notice, which can be accessed from the sidebar to your left (or above you if you're viewing on mobile).\n\n### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
     "update_notice": "### Fixes\n- Fixed a bug that caused the refresh to update notice only appear when the version it requests is already active.",
@@ -103,23 +103,61 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-19T19:47:18Z",
-    "checked_at_display": "2026-05-19 19:47 UTC",
+    "checked_at": "2026-05-20T02:44:36Z",
+    "checked_at_display": "2026-05-20 02:44 UTC",
     "added_count": 0,
     "removed_count": 2,
     "added_links": [],
     "removed_links": [
-      "https://extralearning.mvs.com.ve",
-      "https://spurssuck.fotocorp.com"
+      "https://securelyplsspeedineedthis8weudidhske.suwal.com.np",
+      "https://jyg.fritsche.org"
     ]
   },
   "failing_links": {
-    "https://choppahouse.acmys.cl": 1,
-    "https://vcsa-zone.esdata.info": 2,
-    "https://securelyplsspeedineedthis8weudidhske.suwal.com.np": 2,
-    "https://svp.reformarchive.com": 1,
-    "https://jyg.fritsche.org": 2,
-    "https://hvtzw.reformarchive.com": 1
+    "https://utopia.forkfront.com": 1,
+    "https://ciaworldfactbook.daybits.net": 1,
+    "https://imsovainthatinamelinksaftermyself.tjarba.com": 1,
+    "https://learnaboutbillclinton.scrapitsoftware.com": 1,
+    "https://cdn.jsdelivr.net/gh/coinbaselarper/svg@latest/logo.svg": 1,
+    "https://choppahouse.acmys.cl": 2,
+    "https://exyfnlk.exotic-test.kesug.com": 1,
+    "https://jgn0xqo.exotic-test.kesug.com": 1,
+    "https://cudzgkr.exotic-test.kesug.com": 1,
+    "https://xmxoghw.exotic-test.kesug.com": 1,
+    "https://6v3f6so.exotic-test.kesug.com": 1,
+    "https://ph85wiw.exotic-test.kesug.com": 1,
+    "https://wzmnm71.exotic-test.kesug.com": 1,
+    "https://p86simk.exotic-test.kesug.com": 1,
+    "https://tpvn0xw.exotic-test.kesug.com": 1,
+    "https://gcy4br7.exotic-test.kesug.com": 1,
+    "https://67evjnx.exotic-test.kesug.com": 1,
+    "https://7xp0fhr.exotic-test.kesug.com": 1,
+    "https://lc9ki4p.exotic-test.kesug.com": 1,
+    "https://asmqtbp.exotic-test.kesug.com": 1,
+    "https://9j19vui.exotic-test.kesug.com": 1,
+    "https://xbcblcq.exotic-test.kesug.com": 1,
+    "https://z8fydct.exotic-test.kesug.com": 1,
+    "https://psuewtd.exotic-test.kesug.com": 1,
+    "https://vxnan5i.exotic-test.kesug.com": 1,
+    "https://et6ovdn.exotic-test.kesug.com": 1,
+    "https://5fpdpew.exotic-test.kesug.com": 1,
+    "https://5ttc01p.exotic-test.kesug.com": 1,
+    "https://xqhjh6g.exotic-test.kesug.com": 1,
+    "https://b5xpefz.exotic-test.kesug.com": 1,
+    "https://idmvbku.exotic-test.kesug.com": 1,
+    "https://uy0q4li.exotic-test.kesug.com": 1,
+    "https://vqalqkb.exotic-test.kesug.com": 1,
+    "https://bcvt0j4.exotic-test.kesug.com": 1,
+    "https://yfnaid3.exotic-test.kesug.com": 1,
+    "https://tvu6sdy.exotic-test.kesug.com": 1,
+    "https://oj0flrn.exotic-test.kesug.com": 1,
+    "https://h90pgak.exotic-test.kesug.com": 1,
+    "https://6wrun7u.exotic-test.kesug.com": 1,
+    "https://u3ppiux.exotic-test.kesug.com": 1,
+    "https://jsu5hqi.exotic-test.kesug.com": 1,
+    "https://pv7bg8m.exotic-test.kesug.com": 1,
+    "https://we1trg0.exotic-test.kesug.com": 1,
+    "https://lqvponc.exotic-test.kesug.com": 1
   },
   "links": [
     {
@@ -236,45 +274,7 @@
         "scramjet"
       ],
       "locked": "",
-      "link": "https://securelyplsspeedineedthis8weudidhske.suwal.com.np/",
-      "found": "5/14/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌙 Velara",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
       "link": "https://svp.reformarchive.com",
-      "found": "5/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "Vexo Sirramenboi",
-      "contributor_url": "https://github.com/Vexo-Sirramenboi"
-    },
-    {
-      "provider": "🌙 Velara",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://jyg.fritsche.org",
       "found": "5/18/2026",
       "username": "N/A",
       "password": "N/A",
