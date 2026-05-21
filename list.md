@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.1.2 | Released: May 17, 2026
-> r134 | Last Updated: May 21, 2026
+> r135 | Last Updated: May 21, 2026
 > Total onsite links: 4246 (2290 sorted + 1956 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -1761,7 +1761,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Ultraviolet | 84 |
+> | Proxy/Games | unknown | Ultraviolet | 82 |
 
 > [!IMPORTANT]
 > Void Network does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1790,7 +1790,6 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://kym.sulevkivastik.ee/?/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://lightspeedistrash.aayushbhandari.com.np/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://lightspeedistrash.archivomemoria-audiovisualcsb.org/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://lightspeedistrash.galtex.ca/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://lightspeedistrash.mybgarage.cl/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://lightspeedistrash.patriciachamudis.com.ar/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://lightspeedistrash.recepist.fi/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -1829,7 +1828,6 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://colds.recreatinganew.com | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://shakespeare-english.lervs.ro | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://voiddder.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://lightspeedistrash.galtex.ca | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://lightspeedistrash.recepist.fi | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://lightspeedistrash.patriciachamudis.com.ar | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://www.fvjmszwd.renaissance-go.de.com | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
@@ -2170,7 +2168,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 16 |
+> | Proxy/Games | captcha | Scramjet | 15 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -2190,7 +2188,6 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://chemistry.art.science.history.geography.cravat-club.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://history.science.math.geography.literature.colloky.com.pe | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://teacher.engineering.drama.english.student.enjoywalensee.ch | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://biology.student.assignment.algebra.history.galtex.ca | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://classroom.project.calculus.programming.music.recepist.fi | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://assignment.geometry.physics.lecture.drama.rusticrivergear.com | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
@@ -2541,7 +2538,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | N/A | unknown | 91 |
+> | Games | N/A | unknown | 88 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -2617,9 +2614,6 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://technology.student.geography.chemistry.drama.colloky.com.pe | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://mrsdukeclassboring.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://programming.english.reading.classroom.chemistry.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://assignment.classroom.teacher.technology.writing.galtex.ca | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://campus.engineering.programming.reading.library.galtex.ca | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://grammar.algebra.computer.science.campus.galtex.ca | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://library.seminar.vocabulary.drama.learning.recepist.fi | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://homework.learning.drama.lecture.grammar.dirtchicvt.com | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://drama.classroom.geography.seminar.lecture.coosemansla.com | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
