@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.1.2",
-    "revision": "r133",
+    "revision": "r134",
     "last_updated": "May 21, 2026",
     "unsorted_total": 1969,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).\n\n### Link ratings back up\nLink ratings are now working as intended, feel free to rate any link you choose! More info in the update notice, which can be accessed from the sidebar to your left (or above you if you're viewing on mobile).\n\n### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
@@ -103,31 +103,32 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-21T02:46:47Z",
-    "checked_at_display": "2026-05-21 02:46 UTC",
+    "checked_at": "2026-05-21T09:29:37Z",
+    "checked_at_display": "2026-05-21 09:29 UTC",
     "added_count": 0,
-    "removed_count": 1,
+    "removed_count": 8,
     "added_links": [],
     "removed_links": [
-      "https://qe1vo043fwin.ktx.ro"
+      "https://lightbull.klrmowse.com",
+      "https://everest1.klrmowse.com",
+      "https://everest2.klrmowse.com",
+      "https://everest3.klrmowse.com",
+      "https://everest4.klrmowse.com",
+      "https://everest5.klrmowse.com",
+      "https://studying.klrmowse.com",
+      "https://ford.klrmowse.com"
     ]
   },
   "failing_links": {
-    "https://lightspeedistrash.galtex.ca": 1,
-    "https://learnaboutbillclinton.daybits.net": 1,
-    "https://biology.student.assignment.algebra.history.galtex.ca": 1,
-    "https://assignment.classroom.teacher.technology.writing.galtex.ca": 1,
-    "https://campus.engineering.programming.reading.library.galtex.ca": 1,
-    "https://grammar.algebra.computer.science.campus.galtex.ca": 1,
-    "https://lightbull.klrmowse.com": 2,
-    "https://studying.klrmowse.com": 2,
-    "https://everest1.klrmowse.com": 2,
-    "https://everest2.klrmowse.com": 2,
-    "https://everest3.klrmowse.com": 2,
-    "https://everest4.klrmowse.com": 2,
-    "https://everest5.klrmowse.com": 2,
-    "https://ford.klrmowse.com": 2,
-    "https://hvtzw.reformarchive.com": 2
+    "https://lightspeedistrash.galtex.ca": 2,
+    "https://baconatorsmath.2nx.org": 1,
+    "https://aphistorytutoring.bisblick.org": 1,
+    "https://nkorea.dinocol.co.uk": 1,
+    "https://biology.student.assignment.algebra.history.galtex.ca": 2,
+    "https://assignment.classroom.teacher.technology.writing.galtex.ca": 2,
+    "https://campus.engineering.programming.reading.library.galtex.ca": 2,
+    "https://grammar.algebra.computer.science.campus.galtex.ca": 2,
+    "https://svp.reformarchive.com": 1
   },
   "links": [
     {
@@ -12903,26 +12904,6 @@
         "ultraviolet"
       ],
       "locked": "",
-      "link": "https://lightbull.klrmowse.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
       "link": "https://educationbull.asturkiters.es/",
       "found": "5/9/2026",
       "username": "N/A",
@@ -15431,106 +15412,6 @@
       "locked": "",
       "link": "https://everest6.asturkiters.es/",
       "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://everest1.klrmowse.com",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://everest2.klrmowse.com",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://everest3.klrmowse.com",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://everest4.klrmowse.com",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://everest5.klrmowse.com",
-      "found": "5/11/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "1NobleCyber",
@@ -23469,25 +23350,6 @@
         "unknown"
       ],
       "locked": "",
-      "link": "https://studying.klrmowse.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "📖 StudyHub",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
       "link": "https://learning.lastarria43.cl/",
       "found": "5/9/2026",
       "username": "N/A",
@@ -23622,25 +23484,6 @@
       ],
       "locked": "",
       "link": "https://www.naughty-haibt.152-53-246-17.plesk.page",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "📖 StudyHub",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://studying.klrmowse.com",
       "found": "5/11/2026",
       "username": "N/A",
       "password": "N/A",
@@ -25560,25 +25403,6 @@
       ],
       "locked": "",
       "link": "https://cipher.alalalal.com",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🍓 Strawberry",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://ford.klrmowse.com",
       "found": "5/11/2026",
       "username": "N/A",
       "password": "N/A",
