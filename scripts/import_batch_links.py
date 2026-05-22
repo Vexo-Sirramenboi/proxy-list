@@ -1,380 +1,363 @@
 #!/usr/bin/env python3
-"""Merge batch link lists into list.md: filters b-cdn.net & blooket.com, dedupes, updates counts."""
+"""Import batch link submissions into list.md with filtering rules."""
 
 from __future__ import annotations
 
-import argparse
-import json
 import re
-import sys
+from collections import OrderedDict
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-LIST_MD = ROOT / "list.md"
-BATCH_DIR = ROOT / "scripts" / "batch_link_batches"
-BATCH_JSON = ROOT / "scripts" / "batch_links_payload.json"
+MD_PATH = ROOT / "list.md"
+INPUT = Path(__file__).resolve().parent / "batch_links_may2026.txt"
 
-# Map batch folder name -> exact list.md heading line (without newline)
-SECTION_HEADINGS: dict[str, str] = {
-    "Studyhub": "# 📖 StudyHub",
-    "Strawberry": "# 🍓 Strawberry",
-    "AWP": "# 🔫 AWP",
-    "Velara": "# 🌙 Velara",
-    "Fern": "# 🪴 Fern",
-    "Korona": "# Korona",
-    "Frogies_arcade": "# 🐸 frogie's arcade",
-    "Only_lessons": "# OnlyLessons",
-    "DogeUB": "# 🐶 dogeub",
-    "55gms": "# 55gms",
-    "Utopia": "# 🦄 Utopia Education",
-    "Axiom": "# 🔼 Axiom",
-    "TGLSC": "# ⬡ TGLSC Density 4",
-    "Rosin": "# 🎮 Rosin",
-    "Overcloaked": "# 🏴 OverCloaked",
-    "Lucide": "# 🤍 Lucide",
-    "Vapor": "# 💨 Vapor",
-    "Lunar": "# 🌕 Lunar",
-    "Rammerhead": "# Rammerhead",
-    "Galaxy": "# 🪐 Galaxy",
-    "Void": "# 🖤 Void Network",
-    "DaydreamX": "# ⭐ DayDream X",
-    "Space": "# 🌑 Space",
-    "Petezah": "# 🍕 PetZah",
-    "Shadow": "# 👤 Shadow",
-    "Zen": "# Zen",
-    "Cherri": "# Cherri",
-    "Interstellar": "# Interstellar",
-    "GN-math": "# ➗ gn-math",
-    "SDXP": "# SDXP",
-    "Boredom": "# 🥱 Boredom",
-    "Truffled": "# 🍄 Truffled",
-    "Cheesy": "# 🧀 Cheesy",
-    "Canlite": "# 📡 CanLite",
-    "Splash": "# Splash",
-    "Infamous": "# Infamous",
-    "Celestial": "# 🔷 Celestial",
-    "Frosted": "# Frosted",
-    "Mist": "# Mist",
-    "Bromine": "# Bromine",
-    "Nebulo": "# 🚀 Nebulo",
-    "OneKey": "# 🗝️ 1Key",
-    "Platinum_UB": "# Platinum UB",
-    "Shuttle": "# Shuttle",
+DATE = "5/22/2026"
+CONTRIB = "Anonymous Contributor"
+
+# Map normalized section keys -> exact header title (without leading #)
+SECTION_ALIASES: dict[str, str] = {
+    "gn-math": "➗ gn-math",
+    "gn math": "➗ gn-math",
+    "overcloaked": "🏴 OverCloaked",
+    "over cloaked": "🏴 OverCloaked",
+    "splash": "🌊 Splash",
+    "cheesy": "🧀 Cheesy",
+    "seamless os": "Seamless OS",
+    "selenite": "💜 Selenite",
+    "vapor": "💨 Vapor",
+    "velera": "🌙 Velara",
+    "velara": "🌙 Velara",
+    "celestial": "🔷 Celestial",
+    "canlite": "📡 CanLite",
+    "can lite": "📡 CanLite",
+    "brunys": "🧮 BrunysIXLWork",
+    "bruny's": "🧮 BrunysIXLWork",
+    "brunysixlwork": "🧮 BrunysIXLWork",
+    "infamous": "✨ Infamous",
+    "rosin": "🎮 Rosin",
+    "koopbin": "Koopbin",
+    "holy unblocker": "Holy Unblocker",
+    "xylora": "✖️ Xylora",
+    "equinox": "✨ Equinox",
+    "fern": "🪴 Fern",
+    "nebulo": "🚀 Nebulo",
+    "lucide": "🤍 Lucide",
+    "luicide": "🤍 Lucide",
+    "tung tung": "🪵 Tung Tung",
+    "dogeub": "🐶 dogeub",
+    "dogub": "🐶 dogeub",
+    "dominium": "🏛️ Dominum",
+    "dominum": "🏛️ Dominum",
+    "sea bean": "🫘 Sea Bean",
+    "sea bean games": "🫘 Sea Bean",
+    "noahs tutoring": "🟨 Noahs Tutoring",
+    "noahs tutoring hub": "🟨 Noahs Tutoring",
+    "nike hub": "👟 Nikehub",
+    "nikehub": "👟 Nikehub",
+    "zodiac": "♈ Zodiac",
+    "yuki": "Yuki",
+    "onlylessons": "📚 OnlyLessons",
+    "t9": "T9",
+    "tglsc": "⬡ TGLSC Density 4",
+    "ford": "Ford",
+    "frogies arcade": "🐸 frogie's arcade",
+    "frogie arcade": "🐸 frogie's arcade",
+    "nettle web": "Nettle Web",
+    "korona": "💟 Korona",
+    "relic": "▶️ Relic Network",
+    "relic network": "▶️ Relic Network",
+    "ghost": "👻 Ghost",
+    "utopia": "🦄 Utopia Education",
+    "utopia education": "🦄 Utopia Education",
+    "rammerhead": "Rammerhead",
+    "duck": "🦆 Duckmath",
+    "duckmath": "🦆 Duckmath",
+    "z-kit": "Z-kit",
+    "z kit": "Z-kit",
+    "luminal": "Luminal",
+    "luminalos": "🌙 LuminalOS",
+    "parcoil": "Parcoil",
+    "strawberry": "🍓 Strawberry",
+    "zen": "🧘 Zen",
+    "studyhub": "📖 StudyHub",
+    "nowgg": "NowGG",
+    "interstellar": "Interstellar",
+    "sdxp": "❤️ SDXP",
+    "strongdogxp": "❤️ SDXP",
+    "shadow": "👤 Shadow",
+    "galaxy": "🪐 Galaxy",
+    "boredom": "🥱 Boredom",
+    "boredom v3": "🥱 Boredom",
+    "void network": "🖤 Void Network",
+    "void": "🖤 Void Network",
+    "frosted": "❄️ Frosted",
+    "frosted proxy": "❄️ Frosted",
+    "pizza edition": "Pizza Edition",
+    "space": "🌑 Space",
+    "daydreamx": "⭐ DayDream X",
+    "daydream x": "⭐ DayDream X",
+    "imp": "😈 Imp Proxy",
+    "imp proxy": "😈 Imp Proxy",
+    "axiom": "🔼 Axiom",
+    "cherri": "🌸 Cherri",
+    "everest": "⛰️ Everest",
+    "truffled": "🍄 Truffled",
+    "lunar": "🌕 Lunar",
+    "overcloaked": "🏴 OverCloaked",
 }
 
-# Sections we may create at EOF if missing (pending meta row)
-CREATABLE_SECTIONS = frozenset(
-    {"Only_lessons", "55gms", "Zen", "Frosted", "Shuttle"}
+URL_IN_LINE = re.compile(
+    r"https?://[^\s<>\"']+|(?:^|\s)((?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,}(?:/[^\s]*)?)",
+    re.IGNORECASE,
 )
 
-# Batch file section title -> internal key (folder / JSON key)
-BATCH_TITLE_TO_KEY: dict[str, str] = {
-    "Studyhub": "Studyhub",
-    "Strawberry": "Strawberry",
-    "AWP": "AWP",
-    "Velara": "Velara",
-    "Fern": "Fern",
-    "Korona": "Korona",
-    "Frogies arcade": "Frogies_arcade",
-    "Only lessons": "Only_lessons",
-    "DogeUB": "DogeUB",
-    "55gms": "55gms",
-    "Utopia": "Utopia",
-    "Axiom": "Axiom",
-    "TGLSC": "TGLSC",
-    "Rosin": "Rosin",
-    "Overcloaked": "Overcloaked",
-    "Lucide": "Lucide",
-    "Vapor": "Vapor",
-    "Lunar": "Lunar",
-    "Rammerhead": "Rammerhead",
-    "Galaxy": "Galaxy",
-    "Void": "Void",
-    "DaydreamX": "DaydreamX",
-    "Space": "Space",
-    "Petezah": "Petezah",
-    "Shadow": "Shadow",
-    "Zen": "Zen",
-    "Cherri": "Cherri",
-    "Interstellar": "Interstellar",
-    "GN-math": "GN-math",
-    "SDXP": "SDXP",
-    "Bordem": "Boredom",
-    "Truffled": "Truffled",
-    "Cheesy": "Cheesy",
-    "Canlite": "Canlite",
-    "Splach": "Splash",
-    "Infamous": "Infamous",
-    "Celestial": "Celestial",
-    "Frosted": "Frosted",
-    "Mist": "Mist",
-    "Bromine": "Bromine",
-    "Nebulo": "Nebulo",
-    "1Key": "OneKey",
-    "Platinum": "Platinum_UB",
-    "Shuttle": "Shuttle",
-}
 
-CONTRIBUTOR = "[yourworstnightmare1](https://github.com/yourworstnightmare1)"
-FOUND_DATE = "5/2/2026"
-ROW_TMPL = "| | {link} | {found} | N/A | N/A | {contrib}|\n"
+def norm_key(s: str) -> str:
+    s = re.sub(r"[^\w\s-]", " ", s.lower())
+    s = re.sub(r"\s+", " ", s).strip()
+    s = re.sub(r"\s*\([^)]*\)\s*", " ", s).strip()
+    return s
 
 
-def normalize_url(u: str) -> str:
-    u = (u or "").strip()
+def norm_url(u: str) -> str:
+    u = u.strip().rstrip(",.;)")
+    if u.startswith("vhttp"):
+        u = u[1:]
     if not u.startswith(("http://", "https://")):
+        u = "https://" + u
+    try:
+        p = urlsplit(u)
+    except Exception:
+        return u.lower()
+    host = (p.hostname or "").lower()
+    if host.startswith("www."):
+        host = host[4:]
+    path = p.path or ""
+    while path.endswith("/?/") or path.endswith("/?") or path.endswith("/"):
+        if path.endswith("/?/"):
+            path = path[:-3]
+        elif path.endswith("/?"):
+            path = path[:-2]
+        elif path.endswith("/"):
+            path = path[:-1]
+        else:
+            break
+    return host + path
+
+
+def host_of(u: str) -> str:
+    try:
+        h = urlsplit(u if "://" in u else "https://" + u).hostname or ""
+    except Exception:
         return ""
-    u = u.rstrip("/").strip()
-    return u
+    h = h.lower()
+    return h[4:] if h.startswith("www.") else h
 
 
-def norm_key(u: str) -> str:
-    return normalize_url(u).lower()
+def should_skip_url(u: str) -> str | None:
+    if not u or "chrome://" in u:
+        return "invalid"
+    h = host_of(u)
+    if not h or "." not in h:
+        return "invalid"
+    if h.endswith(".b-cdn.net") or h == "b-cdn.net":
+        return "bunnycdn"
+    if h.endswith(".blooket.com") or h == "blooket.com" or "blooket.com" in h:
+        return "blooket"
+    if h == "registry.npmjs.org":
+        return "npm-registry"
+    if "<" in u or "br<" in u:
+        return "garbage"
+    return None
 
 
-def url_allowed(u: str) -> bool:
-    nu = normalize_url(u)
-    if not nu:
-        return False
-    low = nu.lower()
-    if ".b-cdn.net" in low or low.endswith("b-cdn.net"):
-        return False
-    if "blooket.com" in low:
-        return False
-    return True
+def extract_urls(line: str) -> list[str]:
+    line = line.strip()
+    if not line:
+        return []
+    urls = []
+    for m in re.finditer(r"https?://[^\s<>\"']+", line, re.I):
+        urls.append(m.group(0).rstrip(",.;)"))
+    if not urls and re.search(r"[a-z0-9.-]+\.[a-z]{2,}", line, re.I):
+        # domain-only line
+        part = line.split()[0] if line.split() else line
+        if "." in part and not part.startswith("#"):
+            urls.append(part)
+    return urls
 
 
-def collect_existing_urls(text: str) -> set[str]:
-    seen: set[str] = set()
-    for m in re.finditer(r"\|\s*\|\s*(https?://[^\s|]+)", text):
-        seen.add(norm_key(m.group(1)))
-    return seen
-
-
-def count_links_in_section(body: str) -> int:
-    return len(re.findall(r"\|\s*\|\s*https?://", body))
-
-
-def replace_note_stat_row(section_block: str) -> str:
-    """Set the link-count cell in the stats row (Category | Capabilities | Protocols | N)."""
-    n = count_links_in_section(section_block)
-
-    def repl(m: re.Match[str]) -> str:
-        return m.group(1) + str(n) + m.group(3)
-
-    # Third data row under NOTE: > | Proxy/Games | ... | N |  OR pending row
-    out = re.sub(
-        r"(> \|[^\n|]+\|[^\n|]+\|[^\n|]+\|\s*)(\d+)(\s*\|\s*$)",
-        repl,
-        section_block,
-        count=1,
-        flags=re.MULTILINE,
-    )
-    return out
-
-
-def extract_section(text: str, heading_line: str) -> tuple[str, str, str] | None:
-    """Return (before, section_block_including_heading, after) or None."""
-    idx = text.find(heading_line)
-    if idx < 0:
+def map_section(line: str) -> str | None:
+    key = norm_key(line)
+    if not key or len(key) > 80:
         return None
-    before = text[:idx]
-    chunk_from_heading = text[idx + len(heading_line) :]
-    # Next H1-style provider heading: \n# <space> ... (not ##)
-    m = re.search(r"\n(?=# [^#])", chunk_from_heading)
-    if m:
-        end = idx + len(heading_line) + m.start()
-        section_block = text[idx:end]
-        after = text[end:]
+    if key in SECTION_ALIASES:
+        return SECTION_ALIASES[key]
+    # prefix match (GalaxyV6 -> galaxy)
+    for alias, title in sorted(SECTION_ALIASES.items(), key=lambda x: -len(x[0])):
+        if key == alias or key.startswith(alias + " "):
+            return title
+    # fuzzy: remove trailing version markers
+    key2 = re.sub(r"\s*v\d+$", "", key).strip()
+    if key2 in SECTION_ALIASES:
+        return SECTION_ALIASES[key2]
+    return None
+
+
+def load_existing_sections(md: str) -> set[str]:
+    return {line[2:].strip() for line in md.splitlines() if line.startswith("# ") and not line.startswith("# Proxy")}
+
+
+def parse_input(text: str) -> OrderedDict[str, list[str]]:
+    groups: OrderedDict[str, list[str]] = OrderedDict()
+    current: str | None = None
+    for raw in text.splitlines():
+        line = raw.strip()
+        if not line:
+            continue
+        if line.startswith("#"):
+            continue
+        if re.match(r"^[\U0001F300-\U0001FAFF\U00002600-\U000027BF]+\s*$", line):
+            continue
+        if re.match(r"^\d+\s+links?$", line, re.I):
+            continue
+        sec = map_section(line)
+        if sec and not extract_urls(line):
+            current = sec
+            groups.setdefault(current, [])
+            continue
+        urls = extract_urls(line)
+        if urls and current:
+            for u in urls:
+                groups[current].append(u)
+        elif urls and not current:
+            # orphan URLs — skip
+            pass
+    return groups
+
+
+def fmt_row(url: str) -> str:
+    if not url.startswith(("http://", "https://")):
+        url = "https://" + url
+    return f"| | {url} | {DATE} | N/A | N/A | {CONTRIB}"
+
+
+def insert_into_section(md: str, section_title: str, items: list[str]) -> tuple[str, bool]:
+    pattern = re.compile(r"^# " + re.escape(section_title) + r"\s*$", re.MULTILINE)
+    m = pattern.search(md)
+    if not m:
+        return md, False
+    section_start = m.start()
+    header_end = m.end()
+    next_h = re.search(r"^# ", md[header_end:], re.MULTILINE)
+    section_end = header_end + next_h.start() if next_h else len(md)
+    block = md[section_start:section_end]
+
+    def bump(match: re.Match) -> str:
+        cells = match.group(0).split("|")
+        try:
+            n = int(cells[-2].strip())
+        except Exception:
+            return match.group(0)
+        cells[-2] = f" {n + len(items)} "
+        return "|".join(cells)
+
+    new_block, n_sub = re.subn(
+        r"^>\s*\|[^\n]*\|\s*\d+\s*\|\s*$", bump, block, count=1, flags=re.MULTILINE
+    )
+    if n_sub == 0:
+        return md, False
+    rows_iter = list(re.finditer(r"^\|\s+\|\s+https?://[^\n]+$", new_block, re.MULTILINE))
+    addition = "\n" + "\n".join(fmt_row(u) for u in items)
+    if rows_iter:
+        insert_at = rows_iter[-1].end()
+        new_block = new_block[:insert_at] + addition + new_block[insert_at:]
     else:
-        section_block = text[idx:]
-        after = ""
-    return before, section_block, after
+        div = re.search(r"^\|\s*-\s*\|[^\n]*\|\s*$", new_block, re.MULTILINE)
+        if not div:
+            return md, False
+        new_block = new_block[: div.end()] + addition + new_block[div.end() :]
+    return md[:section_start] + new_block + md[section_end:], True
 
 
-def append_rows_to_section_block(section_block: str, new_urls: list[str]) -> str:
-    rows = ""
-    for u in new_urls:
-        rows += ROW_TMPL.format(link=u, found=FOUND_DATE, contrib=CONTRIBUTOR)
-    return section_block.rstrip() + "\n" + rows
-
-
-def new_section_block(heading_line: str, urls: list[str], *, all_pending: bool) -> str:
-    n = len(urls)
-    if all_pending:
-        note_row = f"> | pending | pending | pending | {n} |\n"
-    else:
-        note_row = f"> | Proxy/Games | pending | pending | {n} |\n"
-    block = (
-        f"{heading_line}\n"
+def make_pending_section(name: str, items: list[str]) -> str:
+    n = len(items)
+    rows_md = "\n".join(fmt_row(u) for u in items)
+    return (
+        f"\n# {name}\n"
         f"> [!NOTE]\n"
         f"> | Category | Capabilities | Protocol(s) | Links |\n"
         f"> | - | - | - | - |\n"
-        f"{note_row}"
+        f"> | pending | pending | pending | {n} |\n"
         f"> [!IMPORTANT]\n"
         f"> This section has not been categorized or checked for protocol(s) and capabilities.\n"
         f"\n"
         f"| Locked | Link | Found Date | Username | Password | Contributor |\n"
         f"| - | - | - | - | - | - |\n"
-    )
-    for u in urls:
-        block += ROW_TMPL.format(link=u, found=FOUND_DATE, contrib=CONTRIBUTOR)
-    return block + "\n"
-
-
-def load_batch_from_dir() -> dict[str, list[str]]:
-    out: dict[str, list[str]] = {}
-    if not BATCH_DIR.is_dir():
-        return out
-    for p in sorted(BATCH_DIR.glob("*.txt")):
-        key = p.stem
-        lines = [
-            normalize_url(x)
-            for x in p.read_text(encoding="utf-8").splitlines()
-            if x.strip()
-        ]
-        lines = [x for x in lines if x and url_allowed(x)]
-        if lines:
-            out[key] = lines
-    return out
-
-
-def load_batch_from_json() -> dict[str, list[str]]:
-    if not BATCH_JSON.is_file():
-        return {}
-    raw = json.loads(BATCH_JSON.read_text(encoding="utf-8"))
-    out: dict[str, list[str]] = {}
-    for k, v in raw.items():
-        if not isinstance(v, list):
-            continue
-        urls = [normalize_url(x) for x in v if isinstance(x, str)]
-        urls = [x for x in urls if x and url_allowed(x)]
-        if urls:
-            out[str(k)] = urls
-    return out
-
-
-def parse_batch_full_file(path: Path) -> dict[str, list[str]]:
-    """Section name line (no http) then URL lines; blank lines optional."""
-    raw_text = path.read_text(encoding="utf-8")
-    out: dict[str, list[str]] = {}
-    current_key: str | None = None
-    for line in raw_text.splitlines():
-        s = line.strip()
-        if not s:
-            continue
-        if re.match(r"^https?://", s, re.I):
-            if not current_key:
-                continue
-            u = normalize_url(s)
-            if u and url_allowed(u):
-                out.setdefault(current_key, []).append(u)
-        else:
-            title = s.strip()
-            key = BATCH_TITLE_TO_KEY.get(title)
-            if not key:
-                # Try case-insensitive / whitespace
-                low = title.casefold()
-                for k, v in BATCH_TITLE_TO_KEY.items():
-                    if k.casefold() == low:
-                        key = v
-                        break
-            if not key:
-                print(f"Warning: unknown batch section title {title!r}, skipping until known.", file=sys.stderr)
-                current_key = None
-                continue
-            current_key = key
-    return out
-
-
-def merge_lists(existing: dict[str, list[str]], present: set[str]) -> dict[str, list[str]]:
-    """Dedupe: drop URLs whose norm_key is in present."""
-    merged: dict[str, list[str]] = {}
-    for sec, urls in existing.items():
-        new_u: list[str] = []
-        for u in urls:
-            nk = norm_key(u)
-            if nk in present:
-                continue
-            new_u.append(u)
-            present.add(nk)
-        if new_u:
-            merged[sec] = new_u
-    return merged
-
-
-def update_total_line(text: str, total: int) -> str:
-    return re.sub(
-        r"(Total Links:\s*)(\d+)",
-        rf"\g<1>{total}",
-        text,
-        count=1,
-        flags=re.IGNORECASE,
+        f"{rows_md}\n"
     )
 
 
-def main() -> int:
-    ap = argparse.ArgumentParser(description="Import batch links into list.md")
-    ap.add_argument(
-        "--from",
-        dest="batch_file",
-        type=Path,
-        metavar="FILE",
-        help="Batch file: section name line then https URLs (see BATCH_TITLE_TO_KEY)",
-    )
-    args = ap.parse_args()
+def main() -> None:
+    text = INPUT.read_text(encoding="utf-8")
+    md = MD_PATH.read_text(encoding="utf-8")
+    existing_sections = load_existing_sections(md)
 
-    batch: dict[str, list[str]] = {}
-    if args.batch_file:
-        if not args.batch_file.is_file():
-            print(f"Missing {args.batch_file}", file=sys.stderr)
-            return 1
-        batch.update(parse_batch_full_file(args.batch_file))
-    batch.update(load_batch_from_json())
-    batch.update(load_batch_from_dir())
-    if not batch:
-        print("No batch data (add scripts/batch_links_payload.json or scripts/batch_link_batches/*.txt)", file=sys.stderr)
-        return 1
+    url_re = re.compile(r"https?://[^\s|]+", re.IGNORECASE)
+    existing = {norm_url(u) for u in url_re.findall(md)}
 
-    text = LIST_MD.read_text(encoding="utf-8")
-    present = collect_existing_urls(text)
+    groups = parse_input(text)
+    seen_batch: set[str] = set()
+    to_add: OrderedDict[str, list[str]] = OrderedDict()
+    pending_new: OrderedDict[str, list[str]] = OrderedDict()
+    stats = {"bunnycdn": 0, "blooket": 0, "dup-list": 0, "dup-batch": 0, "invalid": 0, "npm-registry": 0, "garbage": 0}
 
-    filtered = merge_lists(batch, present)
-    if not filtered:
-        print("Nothing new to add (all filtered or duplicates).")
-        return 0
+    for section, urls in groups.items():
+        for raw_u in urls:
+            reason = should_skip_url(raw_u)
+            if reason:
+                stats[reason] = stats.get(reason, 0) + 1
+                continue
+            if not raw_u.startswith(("http://", "https://")):
+                raw_u = "https://" + raw_u
+            n = norm_url(raw_u)
+            if n in existing:
+                stats["dup-list"] += 1
+                continue
+            if n in seen_batch:
+                stats["dup-batch"] += 1
+                continue
+            seen_batch.add(n)
+            if section in existing_sections:
+                to_add.setdefault(section, []).append(raw_u)
+            else:
+                pending_new.setdefault(section, []).append(raw_u)
 
-    added = 0
-    for sec_key, urls in filtered.items():
-        heading = SECTION_HEADINGS.get(sec_key)
-        if not heading:
-            print(f"Unknown section key: {sec_key}", file=sys.stderr)
-            return 1
-        ext = extract_section(text, heading)
-        if ext is None:
-            if sec_key not in CREATABLE_SECTIONS:
-                print(f"Missing section in list.md: {heading}", file=sys.stderr)
-                return 1
-            block = new_section_block(heading, urls, all_pending=True)
-            text = text.rstrip() + "\n\n" + block
-            added += len(urls)
-            print(f"Created {heading}: +{len(urls)}")
-            continue
+    print("=== Adding to existing sections ===")
+    for sec, items in to_add.items():
+        print(f"  {sec}: +{len(items)}")
+        md, ok = insert_into_section(md, sec, items)
+        if not ok:
+            print(f"    !! failed to insert into {sec}")
+            pending_new.setdefault(sec, []).extend(items)
 
-        before, section_block, after = ext
-        new_block = append_rows_to_section_block(section_block, urls)
-        new_block = replace_note_stat_row(new_block)
-        text = before + new_block + after
-        added += len(urls)
-        print(f"Updated {heading}: +{len(urls)}")
+    print("\n=== New pending sections ===")
+    md = md.rstrip() + "\n"
+    for sec, items in pending_new.items():
+        if sec in existing_sections:
+            md, ok = insert_into_section(md, sec, items)
+            if ok:
+                print(f"  {sec}: +{len(items)} (existing)")
+                continue
+        print(f"  {sec}: {len(items)} links (new pending)")
+        md += make_pending_section(sec, items)
+        existing_sections.add(sec)
 
-    total_links = len(re.findall(r"\|\s*\|\s*https?://", text))
-    text = update_total_line(text, total_links)
-
-    LIST_MD.write_text(text, encoding="utf-8")
-    print(f"Done. Added {added} links; Total Links header -> {total_links}")
-    return 0
+    MD_PATH.write_text(md, encoding="utf-8")
+    total = sum(len(v) for v in to_add.values()) + sum(len(v) for v in pending_new.values())
+    print(f"\nTotal new links added: {total}")
+    print("Skipped:", stats)
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    main()
