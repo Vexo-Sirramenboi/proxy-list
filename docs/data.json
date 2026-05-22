@@ -103,22 +103,20 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-22T08:54:05Z",
-    "checked_at_display": "2026-05-22 08:54 UTC",
+    "checked_at": "2026-05-22T14:27:27Z",
+    "checked_at_display": "2026-05-22 14:27 UTC",
     "added_count": 0,
-    "removed_count": 2,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://homeworkhelper6741.jumpingcrab.com",
-      "https://info-national.artmuseum.org"
-    ]
+    "removed_links": []
   },
   "failing_links": {
-    "https://vcsa-yt.blogspot.com/2026/02/82-new-websites.html": 1,
-    "https://duisburg.hoohaamelbourne.com.au": 1,
-    "https://hagia.gressvikbmx.no": 1,
-    "https://stockstuf.blogspot.com/2026/05/const-newscript-document.html": 1,
-    "https://hvtzw.reformarchive.com": 1
+    "https://sainttech.techmaxasia.com/#home": 1,
+    "https://aphistorytutoring.bisblick.org": 1,
+    "https://duisburg.hoohaamelbourne.com.au": 2,
+    "https://hagia.gressvikbmx.no": 2,
+    "https://nkorea.dinocol.co.uk": 1,
+    "https://svp.reformarchive.com": 1
   },
   "links": [
     {
