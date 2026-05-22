@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.1.2",
-    "revision": "r136",
+    "revision": "r137",
     "last_updated": "May 22, 2026",
     "unsorted_total": 1970,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).\n\n### Link ratings back up\nLink ratings are now working as intended, feel free to rate any link you choose! More info in the update notice, which can be accessed from the sidebar to your left (or above you if you're viewing on mobile).\n\n### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
@@ -103,77 +103,22 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-22T02:47:36Z",
-    "checked_at_display": "2026-05-22 02:47 UTC",
+    "checked_at": "2026-05-22T08:54:05Z",
+    "checked_at_display": "2026-05-22 08:54 UTC",
     "added_count": 0,
-    "removed_count": 60,
+    "removed_count": 2,
     "added_links": [],
     "removed_links": [
-      "https://vcsa-zone.esdata.info",
-      "https://hatisthemeaningofourexistenceinourlifeofourcurrentreality.xenopoem.com",
-      "https://icantbelieveitsnotbutter.teimporto.cl",
-      "https://info.stoke-park.co.uk",
-      "https://truffled.lol/?988lifeline.org",
-      "https://truffled.lol/?ixl.com",
-      "https://hi.wulabs.org",
-      "https://e.mza.com.ar",
-      "https://eee.krahl.com.br",
-      "https://uhidk.infotechnology.com",
-      "https://infoo.infotechnology.com",
-      "https://sneakers-otoole.lervs.ro",
-      "https://carp.teachmetofish.net",
-      "https://feel.lervs.ro",
-      "https://school.flextron.xyz",
-      "https://reading.astrodestin.ro",
-      "https://historyofdinosaurs.dinocol.co.uk",
-      "https://precalculus.textbook.beerporn.org",
-      "https://waguri.real3m.com",
-      "https://chance.bull.luck.poloniacruz.com",
-      "https://homeworkhelp.mb.doris-safety.com",
-      "https://somewhere.find.bull.doris-safety.com",
-      "https://mathematics1.lervs.ro",
-      "https://n8-math.dev",
-      "https://tutoring-services.org",
-      "https://doc8.themathdoctors.org",
-      "https://mathprep.calculuslessons.lol",
-      "https://hullos-pizza-restaurant.chanka.com",
-      "https://tung.tung.tung.tung.tung.tungtung.tung.sahur.settiermauro.com",
-      "https://info.callcentercuritiba.com.br",
-      "https://2026math.segurosdepersonas.cl",
-      "https://ohmb-iforgotsensocloud.blacknapkins.org",
-      "https://facility-dentistroof.primebuildings.bg",
-      "https://fizzlams.snbs.dk",
-      "https://fizzylams.skills-sims.com",
-      "https://newyork-newspaperprinter.socialistsushi.com",
-      "https://supermath.salavat.ru",
-      "https://history-geographytests.corporateadworld.com",
-      "https://edu-mathhelper-shop.neo-space.space",
-      "https://european-history.elmvp.cl",
-      "https://world-peace-volunteerformath.installgentoo.com",
-      "https://www.securly.com.intelligentscada.com",
-      "https://www.securly.com.fixbigoil.com",
-      "https://www.securly.com.phi-taiwan.com",
-      "https://classlink.com.de.cdn.cloudflare.net",
-      "https://idk.hldj.nl",
-      "https://i-havenojobbutidolinks.eastcountywireless.com",
-      "https://docs.hospedajemariafresia.cl",
-      "https://gooningfor-life.hospedajemariafresia.cl",
-      "https://ilovereading.blogmedoc.ru",
-      "https://eat-more.expensive-meals.fhdstdfffghg.airlinemeals.net",
-      "https://truffler24678.airlinemeals.net",
-      "https://waguri.pingoneando.me",
-      "https://truf.remiosenifoundation.org",
-      "https://mathsacademy.uk",
-      "https://truf.the-nest.at",
-      "https://truf.antispeciesism.org",
-      "https://truf.kshealthjobs.net",
-      "https://truf.ghadirfoods.com",
-      "https://locations.pro-kickboxing.org"
+      "https://homeworkhelper6741.jumpingcrab.com",
+      "https://info-national.artmuseum.org"
     ]
   },
   "failing_links": {
-    "https://homeworkhelper6741.jumpingcrab.com": 2,
-    "https://info-national.artmuseum.org": 2
+    "https://vcsa-yt.blogspot.com/2026/02/82-new-websites.html": 1,
+    "https://duisburg.hoohaamelbourne.com.au": 1,
+    "https://hagia.gressvikbmx.no": 1,
+    "https://stockstuf.blogspot.com/2026/05/const-newscript-document.html": 1,
+    "https://hvtzw.reformarchive.com": 1
   },
   "links": [
     {
@@ -6824,25 +6769,6 @@
       ],
       "locked": "",
       "link": "https://boredonasndkf.freetls.fastly.net/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🥱 Boredom",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://homeworkhelper6741.jumpingcrab.com/",
       "found": "5/9/2026",
       "username": "N/A",
       "password": "N/A",
@@ -26327,25 +26253,6 @@
       "password": "N/A",
       "contributor": "1NobleCyber",
       "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://info-national.artmuseum.org/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
       "provider": "🖤 Void Network",
