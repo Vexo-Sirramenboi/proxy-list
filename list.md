@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.1.2 | Released: May 17, 2026
-> r143 | Last Updated: May 24, 2026
+> r144 | Last Updated: May 24, 2026
 > Total onsite links: 4825 (2856 sorted + 1969 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -52,7 +52,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 13 |
+> | Proxy/Games | captcha | Scramjet | 12 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -65,7 +65,6 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | http://kpuk.educations.mytunnel.org | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://SweetCheers.freshmilk.co.za | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://HardBullets.skooliebuild.com | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://LikePhantomsForever.brandonsbench.net | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://BestRockBand.bangerade.us | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://TwinTowers.thelich.monster | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://SecretlyVampires.buffythevampslayer.co.uk | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -2500,7 +2499,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy | unknown | unknown | 119 |
+> | Proxy | unknown | unknown | 118 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -2540,7 +2539,6 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://math.questions.bibhutipoudel.com.np | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://h6aezidp9gq3.kang-fathur.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://awcqihoe.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://zmwbof7hj9pj.angels-net.in | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://admin.dev.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://us9c3f18mk34.010939.xyz | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://update.www.www.www.www.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
@@ -3824,7 +3822,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 5 |
+> | pending | pending | pending | 3 |
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
 
@@ -3832,6 +3830,4 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | - | - | - | - | - | - |
 | | https://reading.ultradec.com/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://velara.cc/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://algebra.seidocosmetics.com/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://awxkcn.glyphosateinfood.com/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://ojffgizg.94-16-31-161.anyip.dev | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
