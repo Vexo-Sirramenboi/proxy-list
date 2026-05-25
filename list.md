@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.1.2 | Released: May 17, 2026
-> r144 | Last Updated: May 24, 2026
+> r145 | Last Updated: May 25, 2026
 > Total onsite links: 4825 (2856 sorted + 1969 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -2305,7 +2305,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 49 |
+> | Proxy/Games | unknown | unknown | 46 |
 
 > [!IMPORTANT]
 > Utopia Education does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -2324,8 +2324,6 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://utipia.choco.rinet.ai/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://alexlol.mooo.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://this-is-the-future.casadotricolor.com.br/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://mathissofunicoulddoitfordaysonend.aber.ir/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://wyattrules.aber.ir/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://bum.education/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://www.youtube.com.dinocol.co.uk | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://theory.grade.bamastuff.com | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
@@ -2333,7 +2331,6 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://sub.to.square-hippo.fritsche.org | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://sub.to.square-hippo.meshtastic.hu | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://gov.usa.agmlabs.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://clapclapclapclapinthebed.aber.ir | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://utopia-da-best.310386.xyz | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://educationlessons.crabdance.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://grade.recap.europeserv.org | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
