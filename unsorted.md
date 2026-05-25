@@ -1972,3 +1972,4 @@ Move links from here into `list.md` once sorted.
 - https://learningcomesfirst.madhavkhanal.com.np
 - https://tuffle.infotechnology.com
 - https://infoo.infotechnology.com
+- https://careers.asistdoc.ar
