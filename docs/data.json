@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.1.2",
-    "revision": "r147",
+    "revision": "r148",
     "last_updated": "May 26, 2026",
     "unsorted_total": 1970,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).\n\n### Link ratings back up\nLink ratings are now working as intended, feel free to rate any link you choose! More info in the update notice, which can be accessed from the sidebar to your left (or above you if you're viewing on mobile).\n\n### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
@@ -103,60 +103,53 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-26T02:41:08Z",
-    "checked_at_display": "2026-05-26 02:41 UTC",
+    "checked_at": "2026-05-26T09:42:45Z",
+    "checked_at_display": "2026-05-26 09:42 UTC",
     "added_count": 0,
-    "removed_count": 4,
+    "removed_count": 5,
     "added_links": [],
     "removed_links": [
-      "http://kpuk.educations.mytunnel.org",
-      "https://duisburg.hoohaamelbourne.com.au",
-      "https://hagia.gressvikbmx.no",
-      "https://nkorea.dinocol.co.uk"
+      "https://light.mountain.whencloudsfail.org",
+      "https://pamson.pl.whencloudsfail.org",
+      "https://bull.there.whencloudsfail.org",
+      "https://storageforbulls.whencloudsfail.org",
+      "https://splashing.medscience.cl"
     ]
   },
   "failing_links": {
-    "https://light.everest.speed.gressvikbmx.no": 1,
-    "https://experiments.nasa.casadotricolor.com.br": 1,
-    "https://science.rules.aayushbhandari.com.np": 1,
-    "https://ciaworldfactbook.daybits.net": 1,
-    "https://learnaboutbillclinton.bisblick.org": 1,
-    "https://1928.lervs.ro": 1,
-    "https://1929.lervs.ro": 1,
-    "https://676767.lervs.ro": 1,
-    "https://everest-bot-is-being-verified-by-discord.lervs.ro": 1,
-    "https://gerthewths.lervs.ro": 1,
-    "https://mrchiaisgoated.lervs.ro": 1,
-    "https://oiplslahguys.lervs.ro": 1,
-    "https://pamson.pl.whencloudsfail.org": 2,
-    "https://chickenforsale.marki.my": 1,
-    "https://climboneverest.wikidelia.net": 1,
-    "https://everestiscold.wikidelia.net": 1,
-    "https://everestishigh.wikidelia.net": 1,
-    "https://mteverest.wikidelia.net": 1,
-    "https://whyeverestsotall.wikidelia.net": 1,
-    "https://scienceiskey.wikidelia.net": 1,
-    "https://biologicalhomework.wikidelia.net": 1,
-    "https://ip140.ip-15-204-150.us": 1,
-    "https://ckvgoated.wikidelia.net": 1,
-    "https://ilovechiken.wikidelia.net": 1,
-    "https://rrreally.wikidelia.net": 1,
-    "https://supermathwork.wikidelia.net": 1,
-    "https://everest6.asturkiters.es": 1,
-    "https://about.airlinemeals.net": 1,
-    "https://velara.trgstrixx.gettysburgmath.org": 1,
-    "https://SweetCheers.freshmilk.co.za": 1,
-    "https://HardBullets.skooliebuild.com": 1,
-    "https://TwinTowers.thelich.monster": 1,
-    "https://vote.bull.democrata.ar": 1,
-    "https://generate.ort.jyotsnapandey.com.np": 1,
-    "https://markiplier.pittentrepreneur.com": 1,
-    "https://generate.kal.naturalie.net": 1,
-    "https://light.mountain.whencloudsfail.org": 2,
-    "https://climb.bull.mountain.trottparkfencingclub.org.au": 1,
-    "https://bull.there.whencloudsfail.org": 2,
-    "https://storageforbulls.whencloudsfail.org": 2,
-    "https://splashing.medscience.cl": 2
+    "https://light.everest.speed.gressvikbmx.no": 2,
+    "https://aphistorytutoring.cencopro.cl": 1,
+    "https://1928.lervs.ro": 2,
+    "https://1929.lervs.ro": 2,
+    "https://676767.lervs.ro": 2,
+    "https://everest-bot-is-being-verified-by-discord.lervs.ro": 2,
+    "https://gerthewths.lervs.ro": 2,
+    "https://mrchiaisgoated.lervs.ro": 2,
+    "https://oiplslahguys.lervs.ro": 2,
+    "https://chickenforsale.marki.my": 2,
+    "https://climboneverest.wikidelia.net": 2,
+    "https://everestiscold.wikidelia.net": 2,
+    "https://everestishigh.wikidelia.net": 2,
+    "https://mteverest.wikidelia.net": 2,
+    "https://whyeverestsotall.wikidelia.net": 2,
+    "https://biologicalhomework.wikidelia.net": 2,
+    "https://ip140.ip-15-204-150.us": 2,
+    "https://ckvgoated.wikidelia.net": 2,
+    "https://ilovechiken.wikidelia.net": 2,
+    "https://rrreally.wikidelia.net": 2,
+    "https://supermathwork.wikidelia.net": 2,
+    "https://everest6.asturkiters.es": 2,
+    "https://about.airlinemeals.net": 2,
+    "https://svp.reformarchive.com": 1,
+    "https://hvtzw.reformarchive.com": 1,
+    "https://velara.trgstrixx.gettysburgmath.org": 2,
+    "https://HardBullets.skooliebuild.com": 2,
+    "https://vote.bull.democrata.ar": 2,
+    "https://generate.ort.jyotsnapandey.com.np": 2,
+    "https://markiplier.pittentrepreneur.com": 2,
+    "https://generate.kal.naturalie.net": 2,
+    "https://climb.bull.mountain.trottparkfencingclub.org.au": 2,
+    "https://vcsayt.thongthaitextile.com": 1
   },
   "links": [
     {
@@ -16015,26 +16008,6 @@
         "ultraviolet"
       ],
       "locked": "",
-      "link": "https://light.mountain.whencloudsfail.org/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
       "link": "https://climb.bull.mountain.trottparkfencingclub.org.au/",
       "found": "5/22/2026",
       "username": "N/A",
@@ -26167,25 +26140,6 @@
       ],
       "locked": "",
       "link": "https://oklahoma.bloomer.network.computer.bamastuff.com",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🎮 Rosin",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://pamson.pl.whencloudsfail.org",
       "found": "5/2/2026",
       "username": "N/A",
       "password": "N/A",
@@ -43566,25 +43520,6 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "🟨 Noahs Tutoring",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://bull.there.whencloudsfail.org",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
       "provider": "🧡 Nexora",
       "category": "Proxy/Games",
       "capabilities": "unknown",
@@ -45848,25 +45783,6 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "✨ Equinox",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://storageforbulls.whencloudsfail.org/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
       "provider": "💟 Korona",
       "category": "Proxy/Games",
       "capabilities": "captcha",
@@ -46967,25 +46883,6 @@
       "password": "N/A",
       "contributor": "1NobleCyber",
       "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://splashing.medscience.cl",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
       "provider": "🌊 Splash",
