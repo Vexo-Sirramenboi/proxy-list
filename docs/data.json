@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.1.2",
-    "revision": "r148",
+    "revision": "r149",
     "last_updated": "May 26, 2026",
     "unsorted_total": 1970,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).\n\n### Link ratings back up\nLink ratings are now working as intended, feel free to rate any link you choose! More info in the update notice, which can be accessed from the sidebar to your left (or above you if you're viewing on mobile).\n\n### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
@@ -103,53 +103,52 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-26T09:42:45Z",
-    "checked_at_display": "2026-05-26 09:42 UTC",
+    "checked_at": "2026-05-26T14:56:04Z",
+    "checked_at_display": "2026-05-26 14:56 UTC",
     "added_count": 0,
-    "removed_count": 5,
+    "removed_count": 29,
     "added_links": [],
     "removed_links": [
-      "https://light.mountain.whencloudsfail.org",
-      "https://pamson.pl.whencloudsfail.org",
-      "https://bull.there.whencloudsfail.org",
-      "https://storageforbulls.whencloudsfail.org",
-      "https://splashing.medscience.cl"
+      "https://velara.trgstrixx.gettysburgmath.org",
+      "https://HardBullets.skooliebuild.com",
+      "https://light.everest.speed.gressvikbmx.no",
+      "https://1928.lervs.ro",
+      "https://1929.lervs.ro",
+      "https://676767.lervs.ro",
+      "https://everest-bot-is-being-verified-by-discord.lervs.ro",
+      "https://gerthewths.lervs.ro",
+      "https://mrchiaisgoated.lervs.ro",
+      "https://oiplslahguys.lervs.ro",
+      "https://climboneverest.wikidelia.net",
+      "https://everestiscold.wikidelia.net",
+      "https://everestishigh.wikidelia.net",
+      "https://mteverest.wikidelia.net",
+      "https://whyeverestsotall.wikidelia.net",
+      "https://everest6.asturkiters.es",
+      "https://about.airlinemeals.net",
+      "https://vote.bull.democrata.ar",
+      "https://generate.ort.jyotsnapandey.com.np",
+      "https://markiplier.pittentrepreneur.com",
+      "https://generate.kal.naturalie.net",
+      "https://climb.bull.mountain.trottparkfencingclub.org.au",
+      "https://chickenforsale.marki.my",
+      "https://biologicalhomework.wikidelia.net",
+      "https://ip140.ip-15-204-150.us",
+      "https://ckvgoated.wikidelia.net",
+      "https://ilovechiken.wikidelia.net",
+      "https://rrreally.wikidelia.net",
+      "https://supermathwork.wikidelia.net"
     ]
   },
   "failing_links": {
-    "https://light.everest.speed.gressvikbmx.no": 2,
-    "https://aphistorytutoring.cencopro.cl": 1,
-    "https://1928.lervs.ro": 2,
-    "https://1929.lervs.ro": 2,
-    "https://676767.lervs.ro": 2,
-    "https://everest-bot-is-being-verified-by-discord.lervs.ro": 2,
-    "https://gerthewths.lervs.ro": 2,
-    "https://mrchiaisgoated.lervs.ro": 2,
-    "https://oiplslahguys.lervs.ro": 2,
-    "https://chickenforsale.marki.my": 2,
-    "https://climboneverest.wikidelia.net": 2,
-    "https://everestiscold.wikidelia.net": 2,
-    "https://everestishigh.wikidelia.net": 2,
-    "https://mteverest.wikidelia.net": 2,
-    "https://whyeverestsotall.wikidelia.net": 2,
-    "https://biologicalhomework.wikidelia.net": 2,
-    "https://ip140.ip-15-204-150.us": 2,
-    "https://ckvgoated.wikidelia.net": 2,
-    "https://ilovechiken.wikidelia.net": 2,
-    "https://rrreally.wikidelia.net": 2,
-    "https://supermathwork.wikidelia.net": 2,
-    "https://everest6.asturkiters.es": 2,
-    "https://about.airlinemeals.net": 2,
-    "https://svp.reformarchive.com": 1,
-    "https://hvtzw.reformarchive.com": 1,
-    "https://velara.trgstrixx.gettysburgmath.org": 2,
-    "https://HardBullets.skooliebuild.com": 2,
-    "https://vote.bull.democrata.ar": 2,
-    "https://generate.ort.jyotsnapandey.com.np": 2,
-    "https://markiplier.pittentrepreneur.com": 2,
-    "https://generate.kal.naturalie.net": 2,
-    "https://climb.bull.mountain.trottparkfencingclub.org.au": 2,
-    "https://vcsayt.thongthaitextile.com": 1
+    "https://aphistorytutoring.cencopro.cl": 2,
+    "https://svp.reformarchive.com": 2,
+    "https://hvtzw.reformarchive.com": 2,
+    "http://sni.educations.mytunnel.org": 1,
+    "https://BestRockBand.bangerade.us": 1,
+    "https://SecretlyVampires.buffythevampslayer.co.uk": 1,
+    "https://reading.ultradec.com": 1,
+    "https://velara.cc": 1
   },
   "links": [
     {
@@ -315,25 +314,6 @@
         "scramjet"
       ],
       "locked": "",
-      "link": "https://velara.trgstrixx.gettysburgmath.org",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌙 Velara",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
       "link": "http://sni.educations.mytunnel.org",
       "found": "5/22/2026",
       "username": "N/A",
@@ -354,25 +334,6 @@
       ],
       "locked": "",
       "link": "https://SweetCheers.freshmilk.co.za",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌙 Velara",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://HardBullets.skooliebuild.com",
       "found": "5/22/2026",
       "username": "N/A",
       "password": "N/A",
@@ -15616,406 +15577,6 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://light.everest.speed.gressvikbmx.no/",
-      "found": "4/21/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://1928.lervs.ro",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://1929.lervs.ro",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://676767.lervs.ro",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://everest-bot-is-being-verified-by-discord.lervs.ro",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://gerthewths.lervs.ro",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://mrchiaisgoated.lervs.ro",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://oiplslahguys.lervs.ro",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://climboneverest.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://everestiscold.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://everestishigh.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://mteverest.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://whyeverestsotall.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://everest6.asturkiters.es/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://about.airlinemeals.net",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://vote.bull.democrata.ar",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://generate.ort.jyotsnapandey.com.np/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://markiplier.pittentrepreneur.com/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://generate.kal.naturalie.net/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⛰️ Everest",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://climb.bull.mountain.trottparkfencingclub.org.au/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
       "provider": "🏴 OverCloaked",
       "category": "Proxy/Games",
       "capabilities": "epoxy, libcurl, wisp",
@@ -27154,30 +26715,6 @@
       ],
       "locked": "",
       "link": "https://tisd-lunch-department.kelownaembroidery.ca",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⬡ TGLSC Density 4",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, baremux, baremod, grammaray",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "baremux",
-        "baremod",
-        "grammaray"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://chickenforsale.marki.my",
       "found": "5/2/2026",
       "username": "N/A",
       "password": "N/A",
@@ -49106,96 +48643,6 @@
       "password": "N/A",
       "contributor": "yourworstnightmare1",
       "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐓 Chicken Kings Vault",
-      "category": "Games",
-      "capabilities": "N/A",
-      "capability_tags": [],
-      "protocols": "N/A",
-      "protocol_tags": [],
-      "locked": "",
-      "link": "https://biologicalhomework.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🐓 Chicken Kings Vault",
-      "category": "Games",
-      "capabilities": "N/A",
-      "capability_tags": [],
-      "protocols": "N/A",
-      "protocol_tags": [],
-      "locked": "",
-      "link": "https://ip140.ip-15-204-150.us",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🐓 Chicken Kings Vault",
-      "category": "Games",
-      "capabilities": "N/A",
-      "capability_tags": [],
-      "protocols": "N/A",
-      "protocol_tags": [],
-      "locked": "",
-      "link": "https://ckvgoated.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🐓 Chicken Kings Vault",
-      "category": "Games",
-      "capabilities": "N/A",
-      "capability_tags": [],
-      "protocols": "N/A",
-      "protocol_tags": [],
-      "locked": "",
-      "link": "https://ilovechiken.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🐓 Chicken Kings Vault",
-      "category": "Games",
-      "capabilities": "N/A",
-      "capability_tags": [],
-      "protocols": "N/A",
-      "protocol_tags": [],
-      "locked": "",
-      "link": "https://rrreally.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🐓 Chicken Kings Vault",
-      "category": "Games",
-      "capabilities": "N/A",
-      "capability_tags": [],
-      "protocols": "N/A",
-      "protocol_tags": [],
-      "locked": "",
-      "link": "https://supermathwork.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
     },
     {
       "provider": "🧘 Zen",
