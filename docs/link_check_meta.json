@@ -1,8 +1,13 @@
 {
-  "checked_at": "2026-05-25T19:22:18Z",
-  "checked_at_display": "2026-05-25 19:22 UTC",
+  "checked_at": "2026-05-26T02:41:08Z",
+  "checked_at_display": "2026-05-26 02:41 UTC",
   "added_count": 0,
-  "removed_count": 0,
+  "removed_count": 4,
   "added_links": [],
-  "removed_links": []
+  "removed_links": [
+    "http://kpuk.educations.mytunnel.org",
+    "https://duisburg.hoohaamelbourne.com.au",
+    "https://hagia.gressvikbmx.no",
+    "https://nkorea.dinocol.co.uk"
+  ]
 }

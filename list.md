@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.1.2 | Released: May 17, 2026
-> r146 | Last Updated: May 25, 2026
+> r147 | Last Updated: May 26, 2026
 > Total onsite links: 4825 (2856 sorted + 1969 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -52,7 +52,7 @@ The owner has announced that Selenite is here to stay! The changes made to those
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 12 |
+> | Proxy/Games | captcha | Scramjet | 11 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -62,7 +62,6 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://hvtzw.reformarchive.com | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://velara.trgstrixx.gettysburgmath.org | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | http://sni.educations.mytunnel.org | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | http://kpuk.educations.mytunnel.org | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://SweetCheers.freshmilk.co.za | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://HardBullets.skooliebuild.com | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://BestRockBand.bangerade.us | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -3197,21 +3196,6 @@ The owner has announced that Selenite is here to stay! The changes made to those
 | | https://english.seminar.lervs.ro | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://math.science.lervs.ro | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://rhodium.thenme.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-
-# 🌟 Starlight
-> [!NOTE]
-> | Category | Capabilities | Protocol(s) | Links |
-> | - | - | - | - |
-> | pending | pending | pending | 3 |
-
-> [!IMPORTANT]
-> This section has not been categorized or checked for protocol(s) and capabilities.
-
-| Locked | Link | Found Date | Username | Password | Contributor |
-| - | - | - | - | - | - |
-| | https://duisburg.hoohaamelbourne.com.au/ | 4/30/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://hagia.gressvikbmx.no/ | 4/30/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://nkorea.dinocol.co.uk | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 🧮 BrunysIXLWork
 > [!NOTE]
