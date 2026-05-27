@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "v5.1.2",
-    "revision": "r150",
-    "last_updated": "May 26, 2026",
+    "revision": "r151",
+    "last_updated": "May 27, 2026",
     "unsorted_total": 1970,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).\n\n### Link ratings back up\nLink ratings are now working as intended, feel free to rate any link you choose! More info in the update notice, which can be accessed from the sidebar to your left (or above you if you're viewing on mobile).\n\n### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
     "update_notice": "### Fixes\n- Fixed a bug that caused the refresh to update notice only appear when the version it requests is already active.",
@@ -103,19 +103,22 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-26T20:02:17Z",
-    "checked_at_display": "2026-05-26 20:02 UTC",
+    "checked_at": "2026-05-27T02:51:26Z",
+    "checked_at_display": "2026-05-27 02:51 UTC",
     "added_count": 0,
     "removed_count": 1,
     "added_links": [],
     "removed_links": [
-      "https://svp.reformarchive.com"
+      "https://SecretlyVampires.buffythevampslayer.co.uk"
     ]
   },
   "failing_links": {
-    "https://BestRockBand.bangerade.us": 2,
-    "https://SecretlyVampires.buffythevampslayer.co.uk": 2,
-    "https://vcsayt.thongthaitextile.com": 1
+    "https://helpmecheckthisout.help": 1,
+    "https://SweetCheers.freshmilk.co.za": 1,
+    "https://51.222.206.184.nar0.com": 1,
+    "https://15.204.247.166.nar0.com": 1,
+    "https://ali.zapier.app": 1,
+    "https://velara.cc": 1
   },
   "links": [
     {
@@ -320,25 +323,6 @@
       ],
       "locked": "",
       "link": "https://TwinTowers.thelich.monster",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌙 Velara",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://SecretlyVampires.buffythevampslayer.co.uk",
       "found": "5/22/2026",
       "username": "N/A",
       "password": "N/A",
