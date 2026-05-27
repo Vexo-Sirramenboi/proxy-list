@@ -103,22 +103,20 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-27T02:51:26Z",
-    "checked_at_display": "2026-05-27 02:51 UTC",
+    "checked_at": "2026-05-27T09:37:08Z",
+    "checked_at_display": "2026-05-27 09:37 UTC",
     "added_count": 0,
-    "removed_count": 1,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://SecretlyVampires.buffythevampslayer.co.uk"
-    ]
+    "removed_links": []
   },
   "failing_links": {
-    "https://helpmecheckthisout.help": 1,
-    "https://SweetCheers.freshmilk.co.za": 1,
-    "https://51.222.206.184.nar0.com": 1,
-    "https://15.204.247.166.nar0.com": 1,
-    "https://ali.zapier.app": 1,
-    "https://velara.cc": 1
+    "https://bobbydongschreinerus8.weebly.com/my-work.html": 1,
+    "https://helpmecheckthisout.help": 2,
+    "https://SweetCheers.freshmilk.co.za": 2,
+    "https://BestRockBand.bangerade.us": 1,
+    "https://51.222.206.184.nar0.com": 2,
+    "https://velara.cc": 2
   },
   "links": [
     {
