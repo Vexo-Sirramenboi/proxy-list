@@ -1973,3 +1973,4 @@ Move links from here into `list.md` once sorted.
 - https://tuffle.infotechnology.com
 - https://infoo.infotechnology.com
 - https://careers.asistdoc.ar
+- https://velara.cc
