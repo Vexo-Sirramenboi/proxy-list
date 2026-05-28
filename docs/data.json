@@ -103,21 +103,22 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-27T20:07:51Z",
-    "checked_at_display": "2026-05-27 20:07 UTC",
+    "checked_at": "2026-05-28T02:38:52Z",
+    "checked_at_display": "2026-05-28 02:38 UTC",
     "added_count": 0,
-    "removed_count": 1,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://BestRockBand.bangerade.us"
-    ]
+    "removed_links": []
   },
   "failing_links": {
-    "https://TwinTowers.thelich.monster": 1,
-    "https://changing.fire-change.com": 1,
-    "https://blowing.fire-change.com": 1,
-    "http://inasmuch.cryptparty.com": 1,
-    "http://behind.cryptparty.com": 1
+    "https://15.204.247.166.devns.me": 1,
+    "https://imsovainthatinamelinksaftermyself.tjarba.com": 1,
+    "https://aphistorytutoring.cencopro.cl": 1,
+    "https://cdn.jsdelivr.net/gh/TwiLabs/math/dist/index.svg": 1,
+    "https://quizizz.com/_media/uploadedFiles/7ec50a5e-fc28-4d08-9d60-0a8244d93e30-v2": 1,
+    "https://51.222.206.184.nar0.com": 1,
+    "https://changing.fire-change.com": 2,
+    "https://blowing.fire-change.com": 2
   },
   "links": [
     {
