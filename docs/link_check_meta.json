@@ -1,8 +1,11 @@
 {
-  "checked_at": "2026-05-28T02:38:52Z",
-  "checked_at_display": "2026-05-28 02:38 UTC",
+  "checked_at": "2026-05-28T09:53:28Z",
+  "checked_at_display": "2026-05-28 09:53 UTC",
   "added_count": 0,
-  "removed_count": 0,
+  "removed_count": 2,
   "added_links": [],
-  "removed_links": []
+  "removed_links": [
+    "https://changing.fire-change.com",
+    "https://blowing.fire-change.com"
+  ]
 }
