@@ -1,10 +1,8 @@
 {
-  "checked_at": "2026-05-28T20:12:34Z",
-  "checked_at_display": "2026-05-28 20:12 UTC",
+  "checked_at": "2026-05-29T02:42:40Z",
+  "checked_at_display": "2026-05-29 02:42 UTC",
   "added_count": 0,
-  "removed_count": 1,
+  "removed_count": 0,
   "added_links": [],
-  "removed_links": [
-    "https://cdn.jsdelivr.net/gh/deviceillusion-cyber/bca-redpara@main/new.svg"
-  ]
+  "removed_links": []
 }
