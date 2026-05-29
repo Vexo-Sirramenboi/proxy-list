@@ -103,45 +103,20 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-29T14:50:53Z",
-    "checked_at_display": "2026-05-29 14:50 UTC",
+    "checked_at": "2026-05-29T20:13:19Z",
+    "checked_at_display": "2026-05-29 20:13 UTC",
     "added_count": 0,
-    "removed_count": 4,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://axisfrench.cazaresulina.ro",
-      "https://axischurch.ldeazevedo.com",
-      "https://axiscoding.e50nyc.org",
-      "https://axisbio.e50nyc.org"
-    ]
+    "removed_links": []
   },
   "failing_links": {
-    "https://centexvolleyball.org": 2,
-    "https://ps279.org": 2,
-    "https://pn.org.savitaipaleenmusiikkikoulu.fi": 1,
-    "https://literacyadventures.com": 2,
-    "https://topenglish.savitaipaleenmusiikkikoulu.fi": 1,
-    "https://talesfiction.com": 2,
-    "https://snapclass.site": 2,
-    "https://siftfilter.com": 2,
-    "https://3e3c.org": 2,
-    "https://mrspechan.com": 2,
-    "https://creativefish.org": 2,
-    "https://f2fenglish.org": 2,
-    "https://iqia.org": 2,
-    "https://brooklyndancefestival.org": 2,
-    "https://motor-cycle-part.org": 2,
-    "https://buildmyplays.org": 2,
-    "https://msbabkiesclass.com": 2,
-    "https://scrapbooking-directory.com": 2,
-    "https://sfasoftballcamps.com": 2,
-    "https://superrunning.net": 2,
-    "https://investcollegiate.org": 2,
-    "https://propertydealersinindia.org": 2,
-    "https://eiym.org": 2,
-    "https://youretheblessed.com": 2,
-    "https://v4.glseries.net": 1,
-    "https://reading.ultradec.com": 1
+    "https://aphistorytutoring.tjarba.com": 1,
+    "https://pn.org.savitaipaleenmusiikkikoulu.fi": 2,
+    "https://topenglish.savitaipaleenmusiikkikoulu.fi": 2,
+    "http://sni.educations.mytunnel.org": 1,
+    "https://TwinTowers.thelich.monster": 1,
+    "https://reading.ultradec.com": 2
   },
   "links": [
     {
