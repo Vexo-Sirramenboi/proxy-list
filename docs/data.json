@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "v5.1.2",
-    "revision": "r158",
-    "last_updated": "May 29, 2026",
+    "revision": "r159",
+    "last_updated": "May 30, 2026",
     "unsorted_total": 1971,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).\n\n### Link ratings back up\nLink ratings are now working as intended, feel free to rate any link you choose! More info in the update notice, which can be accessed from the sidebar to your left (or above you if you're viewing on mobile).\n\n### Selenite\nThe owner has announced that Selenite is here to stay! The changes made to those links have been reverted and there is currently no plans to remove or change them. Enjoy!",
     "update_notice": "### Fixes\n- Fixed a bug that caused the refresh to update notice only appear when the version it requests is already active.",
@@ -103,20 +103,21 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-29T20:13:19Z",
-    "checked_at_display": "2026-05-29 20:13 UTC",
+    "checked_at": "2026-05-30T02:36:36Z",
+    "checked_at_display": "2026-05-30 02:36 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 2,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://topenglish.savitaipaleenmusiikkikoulu.fi",
+      "https://pn.org.savitaipaleenmusiikkikoulu.fi"
+    ]
   },
   "failing_links": {
-    "https://aphistorytutoring.tjarba.com": 1,
-    "https://pn.org.savitaipaleenmusiikkikoulu.fi": 2,
-    "https://topenglish.savitaipaleenmusiikkikoulu.fi": 2,
-    "http://sni.educations.mytunnel.org": 1,
-    "https://TwinTowers.thelich.monster": 1,
-    "https://reading.ultradec.com": 2
+    "https://frog.alex.rf.gd": 1,
+    "https://korona.alex.rf.gd": 1,
+    "https://suntree.alex.rf.gd": 1,
+    "https://vcsayt.thongthaitextile.com": 1
   },
   "links": [
     {
@@ -9404,25 +9405,6 @@
         "unknown"
       ],
       "locked": "",
-      "link": "https://topenglish.savitaipaleenmusiikkikoulu.fi/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "👤 Shadow",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
       "link": "https://rapidlogic.kiddphunk.com/",
       "found": "4/30/2026",
       "username": "N/A",
@@ -11752,26 +11734,6 @@
       ],
       "locked": "",
       "link": "https://ixl.vseesa.edujose.com/",
-      "found": "4/27/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://pn.org.savitaipaleenmusiikkikoulu.fi/",
       "found": "4/27/2026",
       "username": "N/A",
       "password": "N/A",
