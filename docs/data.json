@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "v5.1.3",
-    "revision": "r161",
-    "last_updated": "May 30, 2026",
+    "revision": "r162",
+    "last_updated": "May 31, 2026",
     "unsorted_total": 1971,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
     "update_notice": "Made maintenance fixes and updated outdated filter data.",
@@ -103,37 +103,29 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-31T02:53:24Z",
-    "checked_at_display": "2026-05-31 02:53 UTC",
+    "checked_at": "2026-05-31T08:38:47Z",
+    "checked_at_display": "2026-05-31 08:38 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 10,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://auth.nimbuseducation.online",
+      "https://some.nimbuseducation.online",
+      "https://browse.nimbuseducation.online",
+      "https://ls.nimbuseducation.online",
+      "https://dash.nimbuseducation.online",
+      "https://post.nimbuseducation.online",
+      "https://school.nimbuseducation.online",
+      "https://reading.nimbuseducation.online",
+      "https://writing.nimbuseducation.online",
+      "https://tech.nimbuseducation.online"
+    ]
   },
   "failing_links": {
-    "https://rapidbio.eclipsecastellon.net": 1,
-    "https://solidpoems.eclipsecastellon.net": 1,
-    "https://easygeo.eclipsecastellon.net": 1,
-    "https://neatliterature.mopszuchtzurhinterenaumueli.ch": 1,
-    "https://modernbio.tiatex.com": 1,
-    "https://classicbio.tiatex.com": 1,
-    "https://megaliterature.losarcos.us": 1,
-    "https://fastgeo.egevad.se": 1,
-    "https://palmwatches.store": 1,
-    "https://korona.alex.rf.gd": 1,
-    "https://suntree.alex.rf.gd": 1,
-    "https://cdn.statically.io/gh/snoopyeducation/securly.com@main/classlink.com/math.svg": 1,
-    "https://securly.com.154-12-247-42.anyip.dev": 1,
-    "https://auth.nimbuseducation.online": 2,
-    "https://some.nimbuseducation.online": 2,
-    "https://browse.nimbuseducation.online": 2,
-    "https://ls.nimbuseducation.online": 2,
-    "https://dash.nimbuseducation.online": 2,
-    "https://post.nimbuseducation.online": 2,
-    "https://school.nimbuseducation.online": 2,
-    "https://reading.nimbuseducation.online": 2,
-    "https://writing.nimbuseducation.online": 2,
-    "https://tech.nimbuseducation.online": 2
+    "https://learnaboutbillclinton.scrapitsoftware.com": 1,
+    "https://korona.alex.rf.gd": 2,
+    "https://suntree.alex.rf.gd": 2,
+    "https://cdn.statically.io/gh/snoopyeducation/securly.com@main/classlink.com/math.svg": 2
   },
   "links": [
     {
@@ -17764,196 +17756,6 @@
       "password": "N/A",
       "contributor": "Vexo Sirramenboi",
       "contributor_url": "https://github.com/Vexo-Sirramenboi"
-    },
-    {
-      "provider": "⚡ Epicway",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://auth.nimbuseducation.online/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⚡ Epicway",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://some.nimbuseducation.online/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⚡ Epicway",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://browse.nimbuseducation.online/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⚡ Epicway",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://ls.nimbuseducation.online/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⚡ Epicway",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://dash.nimbuseducation.online/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⚡ Epicway",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://post.nimbuseducation.online/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⚡ Epicway",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://school.nimbuseducation.online/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⚡ Epicway",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://reading.nimbuseducation.online/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⚡ Epicway",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://writing.nimbuseducation.online/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⚡ Epicway",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://tech.nimbuseducation.online/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
       "provider": "🏛️ Dominum",
