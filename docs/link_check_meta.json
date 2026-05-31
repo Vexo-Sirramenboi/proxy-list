@@ -1,12 +1,8 @@
 {
-  "checked_at": "2026-05-31T13:25:15Z",
-  "checked_at_display": "2026-05-31 13:25 UTC",
+  "checked_at": "2026-05-31T19:08:51Z",
+  "checked_at_display": "2026-05-31 19:08 UTC",
   "added_count": 0,
-  "removed_count": 3,
+  "removed_count": 0,
   "added_links": [],
-  "removed_links": [
-    "https://cdn.statically.io/gh/snoopyeducation/securly.com@main/classlink.com/math.svg",
-    "https://korona.alex.rf.gd",
-    "https://suntree.alex.rf.gd"
-  ]
+  "removed_links": []
 }
