@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.1.3 | Released: May 30, 2026
-> r162 | Last Updated: May 31, 2026
+> r163 | Last Updated: May 31, 2026
 > Total onsite links: 4825 (2856 sorted + 1969 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -54,7 +54,7 @@ Made maintenance fixes and updated outdated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | N/A | N/A | 81 |
+> | Games | N/A | N/A | 80 |
 
 > [!IMPORTANT]
 > View importance notices section if link is broken.
@@ -90,7 +90,6 @@ Made maintenance fixes and updated outdated filter data.
 | | https://securly.com.worldmicroscope.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://prageru-server.s3.amazonaws.com/science.html | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://cdn.jsdelivr.net/gh/snoopyeducation/securly.com@main/classlink.com/math.svg | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://cdn.statically.io/gh/snoopyeducation/securly.com@main/classlink.com/math.svg | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://math.refugiodelalma.cl | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://snoopy.education.airlinemeals.net | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://ddd.154-12-247-42.anyip.dev | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
@@ -3146,16 +3145,6 @@ Made maintenance fixes and updated outdated filter data.
 | | https://equal.bulls.ferrosider.com.ar/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://water.drinkingbull.naturalie.net | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 💟 Korona
-> [!NOTE]
-> | Category | Capabilities | Protocol(s) | Links |
-> | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 1 |
-
-| Locked | Link | Found Date | Username | Password | Contributor |
-| - | - | - | - | - | - |
-| | https://korona.alex.rf.gd | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-
 # ⚛️ Krypton
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -3266,12 +3255,11 @@ Made maintenance fixes and updated outdated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Ultraviolet | 10 |
+> | Proxy/Games | unknown | Ultraviolet | 9 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://sunny-day.global.ssl.fastly.net/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://suntree.alex.rf.gd | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://focus-and-learn.2gfkitchen.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://study-smart-daily.bigheadpromo.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://revise-and-succeed.sage.li/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
