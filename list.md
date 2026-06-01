@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.1.3 | Released: May 30, 2026
-> r163 | Last Updated: May 31, 2026
+> r164 | Last Updated: June 01, 2026
 > Total onsite links: 4825 (2856 sorted + 1969 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -54,7 +54,7 @@ Made maintenance fixes and updated outdated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | N/A | N/A | 80 |
+> | Games | N/A | N/A | 79 |
 
 > [!IMPORTANT]
 > View importance notices section if link is broken.
@@ -104,7 +104,6 @@ Made maintenance fixes and updated outdated filter data.
 | | https://tung.tung.netsec.pro | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://cdn.staticdelivr.com/gh/satucat/clippy/main/FreeBusinessEducation-Logo-Square | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://bobby.edu.boostmetabolism.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://cdn.statically.io/gh/daxcodesalt/x3@main/securly.com/classlink.com/FreeBusinessEducation-Logo-Square.svg | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://www.sololearn.com/en/compiler-playground/W6oaP0W77da1 | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://assets.editor.p5js.org/69f172b37dd32ec6b4fea8b3/6aa1d475-1de8-4fc9-9a68-9bec26e16dd8.svg | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://codehs.com/sandbox/id/html-ZhExDL/run | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
@@ -1882,7 +1881,7 @@ Made maintenance fixes and updated outdated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | N/A | 3 |
+> | Proxy/Games | wisp | N/A | 2 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -1890,7 +1889,6 @@ Made maintenance fixes and updated outdated filter data.
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://sites.google.com/view/psycholigy/home | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://cdn.statically.io/gh/darkdragonzxs/zd-pages@main/svg.svg | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdelivr.net/gh/darkdragonzxs/zd-pages@latest/svg.svg | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 📖 StudyHub
