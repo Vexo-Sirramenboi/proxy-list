@@ -103,30 +103,23 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-01T17:27:07Z",
-    "checked_at_display": "2026-06-01 17:27 UTC",
+    "checked_at": "2026-06-01T17:30:02Z",
+    "checked_at_display": "2026-06-01 17:30 UTC",
     "added_count": 0,
-    "removed_count": 6,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://forlightsped.egevad.se",
-      "https://gambing.egevad.se",
-      "https://cantwaitforlunarv3.egevad.se",
-      "https://uh.egevad.se",
-      "https://uhno.egevad.se",
-      "https://gawd.rcdx93.net"
-    ]
+    "removed_links": []
   },
   "failing_links": {
-    "https://yowsgyo.sinuabi.ee": 1,
-    "https://learnaboutbillclinton.scrapitsoftware.com": 1,
-    "https://mathematics.calculus.reformarchive.com": 1,
-    "https://english.seminar.lervs.ro": 1,
-    "https://math.science.lervs.ro": 1,
-    "https://rhodium.thenme.net": 1,
-    "https://TwinTowers.thelich.monster": 1,
-    "https://vcsayt.thongthaitextile.com": 1,
-    "https://reading.ultradec.com": 1
+    "https://yowsgyo.sinuabi.ee": 2,
+    "https://api.academinctools.pw": 1,
+    "https://educational-site.academinctools.pw": 1,
+    "https://mathematics.calculus.reformarchive.com": 2,
+    "https://english.seminar.lervs.ro": 2,
+    "https://math.science.lervs.ro": 2,
+    "https://golflefleur.tutoring.rest/actual.html": 1,
+    "https://rhodium.thenme.net": 2,
+    "https://15.204.247.166.nar0.com": 1
   },
   "links": [
     {
