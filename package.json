@@ -1,5 +1,14 @@
 {
+  "name": "proxy-list",
+  "private": true,
+  "scripts": {
+    "build": "node -e \"console.log('Static site: publish the docs/ folder (no compile step).')\"",
+    "deploy:cloudflare": "wrangler deploy"
+  },
   "dependencies": {
     "firebase": "^12.12.1"
+  },
+  "devDependencies": {
+    "wrangler": "^4.95.0"
   }
 }

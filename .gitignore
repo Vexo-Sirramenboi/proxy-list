@@ -4,3 +4,5 @@ __pycache__/
 node_modules/
 secrets
 vsce-debug.log
+.wrangler/
+.dev.vars

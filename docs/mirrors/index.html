@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mirror sites | Proxy list</title>
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a222d;
+      --border: #2d3a4d;
+      --text: #e7ecf3;
+      --muted: #8b9cb3;
+      --accent: #6cb3ff;
+      --font: "Segoe UI", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    header {
+      padding: 1.2rem 1.4rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    h1 { margin: 0 0 0.35rem; font-size: 1.35rem; }
+    .sub { margin: 0; color: var(--muted); font-size: 0.9rem; }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1rem 1.2rem 2rem;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin: 0 0 1rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 0.8rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--text);
+      background: #121920;
+      font-size: 0.85rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+    }
+    .btn:hover { border-color: var(--accent); color: var(--accent); }
+    .btn-primary {
+      border-color: #2d5588;
+      color: var(--accent);
+      background: #1e3a5f;
+    }
+    .btn-primary:hover {
+      border-color: var(--accent);
+      background: #254a75;
+    }
+    .mirror-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      margin-top: 0.75rem;
+    }
+    .mirror-stack .btn {
+      width: 100%;
+      min-height: 2.5rem;
+    }
+    .mirror-stack--pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.55rem;
+    }
+    @media (max-width: 520px) {
+      .mirror-stack--pair { grid-template-columns: 1fr; }
+    }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+      padding: 0.9rem 1rem;
+      margin-bottom: 1rem;
+    }
+    .card h2 {
+      margin: 0 0 0.35rem;
+      font-size: 1.05rem;
+    }
+    .muted { color: var(--muted); margin: 0; font-size: 0.9rem; }
+    .back-row {
+      margin-top: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mirror sites</h1>
+    <p class="sub">Alternate hosts that run the same proxy list. Pick a mirror if the main site is slow or blocked.</p>
+  </header>
+
+  <main>
+    <div class="actions">
+      <a class="btn" href="../">← Back to proxy list</a>
+    </div>
+
+    <section class="card" aria-labelledby="wix-heading">
+      <h2 id="wix-heading">Wix</h2>
+      <p class="muted">These have header ads because they are free domains.</p>
+      <div class="mirror-stack">
+        <a
+          class="btn btn-primary"
+          href="https://reblockprojections.wixsite.com/levelmathlearning"
+          rel="noopener noreferrer"
+          target="_blank"
+        >Wix — Mirror 1</a>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="cloudflare-heading">
+      <h2 id="cloudflare-heading">Cloudflare</h2>
+      <p class="muted">These are the fastest and best mirrors. Cloudflare links do not have access to community features.</p>
+      <div class="mirror-stack mirror-stack--pair">
+        <a
+          class="btn btn-primary"
+          href="https://ixl-backend-4298df-production.pages.dev/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >Cloudflare — Mirror 1</a>
+        <a
+          class="btn btn-primary"
+          href="https://classlink-login-saml2-9u32ghr9248yg.pages.dev/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >Cloudflare — Mirror 2</a>
+      </div>
+    </section>
+
+    <div class="back-row">
+      <a class="btn" href="../">Back to proxy list</a>
+    </div>
+  </main>
+</body>
+</html>

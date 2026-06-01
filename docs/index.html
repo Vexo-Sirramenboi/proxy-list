@@ -10,6 +10,16 @@
     crossorigin="anonymous"
   ></script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+    (function () {
+      try {
+        var p = new URLSearchParams(location.search);
+        if (p.get("embed") === "1" || p.get("embed") === "true") {
+          document.documentElement.classList.add("embed-mode");
+        }
+      } catch (_) {}
+    })();
+  </script>
   <title>Proxy list</title>
   <link rel="icon" type="image/png" href="favicon.png" />
   <style>
@@ -431,6 +441,10 @@
       width: 1.05rem;
       height: 1.05rem;
       display: block;
+    }
+    .sidebar-actions img.sidebar-btn-icon {
+      object-fit: contain;
+      filter: brightness(0) invert(0.91);
     }
     aside .sidebar-menu-fieldset {
       margin-bottom: 1rem;
@@ -1277,6 +1291,20 @@
         display: none !important;
       }
     }
+    /* Embedded in another site (?embed=1) */
+    html.embed-mode .orientation-warning { display: none !important; }
+    html.embed-mode body.orientation-locked > :not(.orientation-warning) {
+      display: revert !important;
+    }
+    html.embed-mode .page-bottom-ad,
+    html.embed-mode #siteUpdateBanner,
+    html.embed-mode .account-corner,
+    html.embed-mode .embed-hide { display: none !important; }
+    html.embed-mode header { padding: 0.65rem 1rem; }
+    html.embed-mode #headerSub { display: none; }
+    html.embed-mode .site-footer { padding: 0.65rem 1rem; font-size: 0.88rem; }
+    html.embed-mode .embed-only { display: inline-flex; }
+    .embed-only { display: none; }
   </style>
 </head>
 <body class="orientation-locked">
@@ -1362,6 +1390,18 @@
           <a class="btn" href="./community/">
             <svg class="sidebar-btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h11a2 2 0 0 1 2 2z"/></svg>
             Community folders
+          </a>
+          <a class="btn" href="./mirrors/">
+            <img class="sidebar-btn-icon" src="./chromecast-icon.png" width="18" height="18" alt="" aria-hidden="true" />
+            Mirror sites
+          </a>
+          <a class="btn embed-hide" href="./embed.html">
+            <svg class="sidebar-btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/><path d="M15 3v18"/></svg>
+            Embed on your site
+          </a>
+          <a class="btn embed-only" href="./" target="_blank" rel="noopener noreferrer">
+            <svg class="sidebar-btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Open full site
           </a>
         </nav>
         <p class="selected-filter-label" id="selectedFilterLabel">Selected web filter: Any / Not selected</p>
@@ -1783,6 +1823,62 @@
         return '<span class="folder-privacy-pill is-unlisted">Unlisted</span>';
       }
       return '<span class="folder-privacy-pill">Private</span>';
+    }
+
+    function isEmbedMode() {
+      return document.documentElement.classList.contains("embed-mode");
+    }
+
+    function withEmbedParam(url) {
+      if (!isEmbedMode() || !url) return url;
+      try {
+        const u = new URL(url, window.location.href);
+        if (u.origin !== window.location.origin) return url;
+        if (!u.searchParams.has("embed")) u.searchParams.set("embed", "1");
+        return u.pathname + u.search + u.hash;
+      } catch (_) {
+        return url;
+      }
+    }
+
+    let embedResizeObserver = null;
+
+    function notifyEmbedHeight() {
+      if (!isEmbedMode() || window.parent === window) return;
+      const h = Math.max(
+        document.documentElement.scrollHeight,
+        document.body ? document.body.scrollHeight : 0
+      );
+      try {
+        window.parent.postMessage({ type: "proxy-list-embed", height: h }, "*");
+      } catch (_) {}
+    }
+
+    function initEmbedMode() {
+      if (!isEmbedMode()) return;
+      document.body.classList.remove("orientation-locked");
+      document.querySelectorAll("a[href]").forEach((a) => {
+        const href = a.getAttribute("href");
+        if (!href || href.startsWith("#") || /^javascript:/i.test(href)) return;
+        const next = withEmbedParam(href);
+        if (next && next !== href) a.setAttribute("href", next);
+        if (a.classList.contains("embed-only")) return;
+        if (!a.target && /^https?:\/\//i.test(next || href)) {
+          try {
+            const u = new URL(next || href, window.location.href);
+            if (u.origin !== window.location.origin) a.target = "_blank";
+          } catch (_) {}
+        }
+      });
+      if (embedResizeObserver) embedResizeObserver.disconnect();
+      if (typeof ResizeObserver !== "undefined") {
+        embedResizeObserver = new ResizeObserver(() => notifyEmbedHeight());
+        embedResizeObserver.observe(document.documentElement);
+      }
+      window.addEventListener("resize", notifyEmbedHeight);
+      notifyEmbedHeight();
+      setTimeout(notifyEmbedHeight, 400);
+      setTimeout(notifyEmbedHeight, 1500);
     }
 
     function initSavedLinksView() {
@@ -4806,6 +4902,7 @@
       if (!filtered.length) {
         setHtml($("tableWrap"), emptyStateNoResultsHtml());
         reportContentLoadingProgress(100, "Done");
+        notifyEmbedHeight();
         return;
       }
 
@@ -4840,6 +4937,7 @@
         },
       });
       setupTableInfiniteScroll(filtered, initial);
+      notifyEmbedHeight();
     }
 
     function domainOf(link) {
@@ -6189,6 +6287,7 @@
 
     setContentLoading(true, { progress: 0, message: "Getting data..." });
     initSavedLinksView();
+    initEmbedMode();
     setupAccountUI();
 
     Promise.all([
