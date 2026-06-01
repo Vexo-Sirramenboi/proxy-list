@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.1.3",
-    "revision": "r164",
+    "revision": "r165",
     "last_updated": "June 01, 2026",
     "unsorted_total": 1971,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
@@ -103,25 +103,30 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-01T11:21:16Z",
-    "checked_at_display": "2026-06-01 11:21 UTC",
+    "checked_at": "2026-06-01T17:27:07Z",
+    "checked_at_display": "2026-06-01 17:27 UTC",
     "added_count": 0,
-    "removed_count": 2,
+    "removed_count": 6,
     "added_links": [],
     "removed_links": [
-      "https://cdn.statically.io/gh/daxcodesalt/x3@main/securly.com/classlink.com/FreeBusinessEducation-Logo-Square.svg",
-      "https://cdn.statically.io/gh/darkdragonzxs/zd-pages@main/svg.svg"
+      "https://forlightsped.egevad.se",
+      "https://gambing.egevad.se",
+      "https://cantwaitforlunarv3.egevad.se",
+      "https://uh.egevad.se",
+      "https://uhno.egevad.se",
+      "https://gawd.rcdx93.net"
     ]
   },
   "failing_links": {
-    "https://aphistorytutoring.tjarba.com": 1,
-    "https://bobbydongschreinerus8.weebly.com/my-work.html": 1,
-    "https://gawd.rcdx93.net": 2,
-    "https://forlightsped.egevad.se": 2,
-    "https://gambing.egevad.se": 2,
-    "https://cantwaitforlunarv3.egevad.se": 2,
-    "https://uh.egevad.se": 2,
-    "https://uhno.egevad.se": 2
+    "https://yowsgyo.sinuabi.ee": 1,
+    "https://learnaboutbillclinton.scrapitsoftware.com": 1,
+    "https://mathematics.calculus.reformarchive.com": 1,
+    "https://english.seminar.lervs.ro": 1,
+    "https://math.science.lervs.ro": 1,
+    "https://rhodium.thenme.net": 1,
+    "https://TwinTowers.thelich.monster": 1,
+    "https://vcsayt.thongthaitextile.com": 1,
+    "https://reading.ultradec.com": 1
   },
   "links": [
     {
@@ -13594,106 +13599,6 @@
       "password": "N/A",
       "contributor": "1NobleCyber",
       "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌕 Lunar",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://forlightsped.egevad.se/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌕 Lunar",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://gambing.egevad.se/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌕 Lunar",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://cantwaitforlunarv3.egevad.se/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌕 Lunar",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://uh.egevad.se/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌕 Lunar",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://uhno.egevad.se/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
       "provider": "🌕 Lunar",
@@ -34892,25 +34797,6 @@
       "locked": "",
       "link": "https://cdn.jsdelivr.net/gh/coinbaselarper/svg@latest/logo.svg",
       "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🤍 Lucide",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://gawd.rcdx93.net",
-      "found": "5/9/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "1NobleCyber",

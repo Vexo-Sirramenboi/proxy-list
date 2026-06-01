@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.1.3 | Released: May 30, 2026
-> r164 | Last Updated: June 01, 2026
+> r165 | Last Updated: June 01, 2026
 > Total onsite links: 4825 (2856 sorted + 1969 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -853,7 +853,7 @@ Made maintenance fixes and updated outdated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 43 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 38 |
 
 > [!IMPORTANT]
 > Lunar does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -894,11 +894,6 @@ Made maintenance fixes and updated outdated filter data.
 | | https://lunar.grahammurryinsuranceagency.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://math.babypos.hk/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://greater.triatlonpacense.es | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://forlightsped.egevad.se/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://gambing.egevad.se/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://cantwaitforlunarv3.egevad.se/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://uh.egevad.se/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://uhno.egevad.se/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://lectures.vta-international.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://smartbio.2660010.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://dear.d3.ro/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -2290,7 +2285,7 @@ Made maintenance fixes and updated outdated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 24 |
+> | Proxy/Games | captcha | Scramjet | 23 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -2304,7 +2299,6 @@ Made maintenance fixes and updated outdated filter data.
 | | https://lsrelay-l.s3.amazonaws.com/index.html | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://unpkg.com/browselucide@latest/logo.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://cdn.jsdelivr.net/gh/coinbaselarper/svg@latest/logo.svg | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://gawd.rcdx93.net | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://main.dh7legjxmt1f4.amplifyapp.com/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://zoomzoomzoom.zapier.app/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://bbbbbbbbbbb.zapier.app/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
