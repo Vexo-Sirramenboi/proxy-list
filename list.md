@@ -1,6 +1,6 @@
 # Proxy List
 > [!NOTE]
-> v5.1.3 | Released: May 30, 2026
+> v5.2 | Released: May 31, 2026
 > r165 | Last Updated: June 01, 2026
 > Total onsite links: 4825 (2856 sorted + 1969 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
@@ -20,7 +20,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 
 ## Update Notice
 
-Made maintenance fixes and updated outdated filter data.
+Added mirror links and embed support; maintenance fixes and updated filter data.
 
 # 💜 Selenite
 > [!NOTE]

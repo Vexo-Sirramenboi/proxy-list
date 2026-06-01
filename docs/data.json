@@ -1,11 +1,11 @@
 {
   "meta": {
-    "version": "v5.1.3",
+    "version": "v5.2",
     "revision": "r165",
     "last_updated": "June 01, 2026",
     "unsorted_total": 1971,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
-    "update_notice": "Made maintenance fixes and updated outdated filter data.",
+    "update_notice": "Added mirror links and embed support; maintenance fixes and updated filter data.",
     "fail_threshold": 3,
     "popular_note": "Hand-picked links that tend to work well — not ranked by site traffic (this page has no analytics). Edit docs/popular_links.json and run scripts/convert_list_to_json.py.",
     "popular_links": [
