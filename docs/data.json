@@ -103,19 +103,27 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-05-31T19:08:51Z",
-    "checked_at_display": "2026-05-31 19:08 UTC",
+    "checked_at": "2026-06-01T03:29:14Z",
+    "checked_at_display": "2026-06-01 03:29 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
   "failing_links": {
-    "https://cdn.statically.io/gh/darkdragonzxs/zd-pages@main/svg.svg": 1,
-    "https://cdn.statically.io/gh/daxcodesalt/x3@main/securly.com/classlink.com/FreeBusinessEducation-Logo-Square.svg": 1,
-    "http://sni.educations.mytunnel.org": 1,
-    "https://TwinTowers.thelich.monster": 1,
-    "https://51.222.206.184.nar0.com": 1
+    "https://cdn.statically.io/gh/darkdragonzxs/zd-pages@main/svg.svg": 2,
+    "https://aphistorytutoring.cencopro.cl": 1,
+    "https://cdn.statically.io/gh/daxcodesalt/x3@main/securly.com/classlink.com/FreeBusinessEducation-Logo-Square.svg": 2,
+    "https://gawd.rcdx93.net": 1,
+    "https://9772.duckdns.org": 1,
+    "https://www.manie-musicale.duckdns.org": 1,
+    "https://forlightsped.egevad.se": 1,
+    "https://gambing.egevad.se": 1,
+    "https://cantwaitforlunarv3.egevad.se": 1,
+    "https://uh.egevad.se": 1,
+    "https://uhno.egevad.se": 1,
+    "https://vcsayt.thongthaitextile.com": 1,
+    "https://reading.ultradec.com": 1
   },
   "links": [
     {
