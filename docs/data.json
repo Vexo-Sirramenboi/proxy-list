@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r165",
+    "revision": "r166",
     "last_updated": "June 01, 2026",
     "unsorted_total": 1971,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
@@ -103,23 +103,23 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-01T17:30:02Z",
-    "checked_at_display": "2026-06-01 17:30 UTC",
+    "checked_at": "2026-06-01T21:26:04Z",
+    "checked_at_display": "2026-06-01 21:26 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 1,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://yowsgyo.sinuabi.ee"
+    ]
   },
   "failing_links": {
-    "https://yowsgyo.sinuabi.ee": 2,
-    "https://api.academinctools.pw": 1,
-    "https://educational-site.academinctools.pw": 1,
-    "https://mathematics.calculus.reformarchive.com": 2,
-    "https://english.seminar.lervs.ro": 2,
-    "https://math.science.lervs.ro": 2,
-    "https://golflefleur.tutoring.rest/actual.html": 1,
-    "https://rhodium.thenme.net": 2,
-    "https://15.204.247.166.nar0.com": 1
+    "https://learnaboutbillclinton.daybits.net": 1,
+    "https://script.google.com/macros/s/AKfycbz_3CKzRKXyisc_WYcOIG6adYY2QUTS13-jO0XA70aPzmiNz23XNHGaU9LYBgRs8iZq/exec?url=https://originfastly.jsdelivr.net/gh/NoahsAmazingTutoringHelp/reimagined-octo-winner@main/blahblahblah.html": 1,
+    "https://panel.clever.com.bacon.com.ar": 1,
+    "https://TwinTowers.thelich.monster": 1,
+    "https://51.222.206.184.nar0.com": 1,
+    "https://15.204.247.166.nar0.com": 2,
+    "https://reading.ultradec.com": 1
   },
   "links": [
     {
@@ -14620,25 +14620,6 @@
       ],
       "locked": "",
       "link": "https://cdn.jsdelivr.net/gh/pineapple-petezah/homework@main/main.svg",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍕 PeteZah",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://yowsgyo.sinuabi.ee/",
       "found": "4/25/2026",
       "username": "N/A",
       "password": "N/A",
