@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r168",
+    "revision": "r169",
     "last_updated": "June 02, 2026",
     "unsorted_total": 1971,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
@@ -103,48 +103,54 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-02T10:13:08Z",
-    "checked_at_display": "2026-06-02 10:13 UTC",
+    "checked_at": "2026-06-02T16:11:28Z",
+    "checked_at_display": "2026-06-02 16:11 UTC",
     "added_count": 0,
-    "removed_count": 2,
+    "removed_count": 18,
     "added_links": [],
     "removed_links": [
-      "https://51.222.206.184.nar0.com",
-      "https://panel.clever.com.bacon.com.ar"
+      "http://cdn.bdyoutube.com",
+      "https://dcfvgbhjkh.unionvillelacrosse.com",
+      "https://fernunion12o3.unionvillelacrosse.com",
+      "https://fernunionana.unionvillelacrosse.com",
+      "https://localriverviewchurch.unionvillelacrosse.com",
+      "https://dihpopsickleishard.unionvillelacrosse.com",
+      "https://cbhbhdchb.unionvillelacrosse.com",
+      "https://diufiuvdubid.unionvillelacrosse.com",
+      "https://gnigfinsiu.unionvillelacrosse.com",
+      "https://ubwbiucbiua.unionvillelacrosse.com",
+      "https://wegibusiu.unionvillelacrosse.com",
+      "https://doggy.math57.wr.zdertis.net",
+      "https://watch.bdyoutube.com",
+      "https://utop1a.bdyoutube.com",
+      "https://edu.bdyoutube.com",
+      "https://inf74993.bdyoutube.com",
+      "https://xylora.muffin.bdyoutube.com",
+      "https://quiz.numbercraftacademy.com/page.html"
     ]
   },
   "failing_links": {
-    "https://51.222.206.184.ip.ipq.co": 1,
-    "https://shop.educationaltoys.store": 1,
-    "https://api.academinctools.pw": 1,
-    "https://educational-site.academinctools.pw": 1,
-    "https://math.schoolforlife.online": 1,
-    "https://golflefleur.tutoring.rest/actual.html": 1,
-    "https://quiz.numbercraftacademy.com/page.html": 2,
-    "https://edu.bdyoutube.com": 2,
-    "https://doggy.math57.wr.zdertis.net": 2,
-    "https://216.158.237.116.educationaltoys.store": 1,
-    "https://ajcekcs.educationaltoys.store": 1,
-    "https://wenwcincionw.educationaltoys.store": 1,
-    "https://ibwvinje.educationaltoys.store": 1,
-    "https://nvsinjswrwin.educationaltoys.store": 1,
-    "https://dcfvgbhjkh.unionvillelacrosse.com": 2,
-    "https://fernunion12o3.unionvillelacrosse.com": 2,
-    "https://fernunionana.unionvillelacrosse.com": 2,
-    "https://localriverviewchurch.unionvillelacrosse.com": 2,
-    "https://dihpopsickleishard.unionvillelacrosse.com": 2,
-    "https://cbhbhdchb.unionvillelacrosse.com": 2,
-    "https://diufiuvdubid.unionvillelacrosse.com": 2,
-    "https://gnigfinsiu.unionvillelacrosse.com": 2,
-    "https://ubwbiucbiua.unionvillelacrosse.com": 2,
-    "https://wegibusiu.unionvillelacrosse.com": 2,
-    "https://watch.bdyoutube.com": 2,
-    "https://hvtzw.reformarchive.com": 1,
-    "http://cdn.bdyoutube.com": 2,
-    "https://vcsayt.thongthaitextile.com": 1,
-    "https://utop1a.bdyoutube.com": 2,
-    "https://inf74993.bdyoutube.com": 2,
-    "https://xylora.muffin.bdyoutube.com": 2
+    "https://dwfo7z3f9nigf.cloudfront.net/index.html": 1,
+    "https://d1ks901xvjj2p6.cloudfront.net/index.html": 1,
+    "https://ciphernetwork.surak.kz": 1,
+    "https://div7ikqm4o515.cloudfront.net": 1,
+    "https://shop.educationaltoys.store": 2,
+    "https://learnaboutbillclinton.scrapitsoftware.com": 1,
+    "https://api.academinctools.pw": 2,
+    "https://educational-site.academinctools.pw": 2,
+    "https://cdn.jsdelivr.net/gh/TwiLabs/daydreaming/dist/index.svg": 1,
+    "https://math.schoolforlife.online": 2,
+    "https://golflefleur.tutoring.rest/actual.html": 2,
+    "https://codehs.com/sandbox/id/html-ZhExDL/run": 1,
+    "https://dlah6r0ddz4mx.cloudfront.net/index.html": 1,
+    "https://216.158.237.116.educationaltoys.store": 2,
+    "https://ajcekcs.educationaltoys.store": 2,
+    "https://wenwcincionw.educationaltoys.store": 2,
+    "https://ibwvinje.educationaltoys.store": 2,
+    "https://nvsinjswrwin.educationaltoys.store": 2,
+    "https://visitlittle.stjameskilolo.org": 1,
+    "https://TwinTowers.thelich.monster": 1,
+    "https://vcsayt.thongthaitextile.com": 2
   },
   "links": [
     {
@@ -1361,21 +1367,6 @@
       "protocol_tags": [],
       "locked": "",
       "link": "https://stock--019e268e1a04750e88877203769fa6b0.web.val.run/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "➗ gn-math",
-      "category": "Games",
-      "capabilities": "N/A",
-      "capability_tags": [],
-      "protocols": "N/A",
-      "protocol_tags": [],
-      "locked": "",
-      "link": "http://cdn.bdyoutube.com/",
       "found": "5/22/2026",
       "username": "N/A",
       "password": "N/A",
@@ -5565,206 +5556,6 @@
       ],
       "locked": "",
       "link": "https://nvsinjswrwin.educationaltoys.store/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://dcfvgbhjkh.unionvillelacrosse.com/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://fernunion12o3.unionvillelacrosse.com/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://fernunionana.unionvillelacrosse.com/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://localriverviewchurch.unionvillelacrosse.com/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://dihpopsickleishard.unionvillelacrosse.com/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://cbhbhdchb.unionvillelacrosse.com/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://diufiuvdubid.unionvillelacrosse.com/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://gnigfinsiu.unionvillelacrosse.com/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://ubwbiucbiua.unionvillelacrosse.com/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🪴 Fern",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://wegibusiu.unionvillelacrosse.com/",
       "found": "5/15/2026",
       "username": "N/A",
       "password": "N/A",
@@ -25538,25 +25329,6 @@
         "scramjet"
       ],
       "locked": "",
-      "link": "https://doggy.math57.wr.zdertis.net",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🎮 Rosin",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
       "link": "https://domain.airlinemeals.net",
       "found": "5/11/2026",
       "username": "N/A",
@@ -33447,25 +33219,6 @@
         "ultraviolet"
       ],
       "locked": "",
-      "link": "https://watch.bdyoutube.com/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
       "link": "https://math.numbercraftacademy.com/",
       "found": "5/15/2026",
       "username": "N/A",
@@ -34378,25 +34131,6 @@
         "unknown"
       ],
       "locked": "",
-      "link": "https://utop1a.bdyoutube.com/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🦄 Utopia Education",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
       "link": "https://approving.at.certified.cl/",
       "found": "5/22/2026",
       "username": "N/A",
@@ -35114,25 +34848,6 @@
       ],
       "locked": "",
       "link": "https://frosted.webinfo.tw/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://edu.bdyoutube.com/",
       "found": "5/9/2026",
       "username": "N/A",
       "password": "N/A",
@@ -39711,28 +39426,6 @@
       ],
       "locked": "",
       "link": "https://scholarsupport.cfd",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✨ Infamous",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, captcha",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://inf74993.bdyoutube.com",
       "found": "5/22/2026",
       "username": "N/A",
       "password": "N/A",
@@ -47453,25 +47146,6 @@
         "unknown"
       ],
       "locked": "",
-      "link": "https://xylora.muffin.bdyoutube.com/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
       "link": "https://xylora.huangqirui.xyz/",
       "found": "5/22/2026",
       "username": "N/A",
@@ -47744,25 +47418,6 @@
       "password": "N/A",
       "contributor": "yourworstnightmare1",
       "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "👟 Nikehub",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://quiz.numbercraftacademy.com/page.html",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
     },
     {
       "provider": "👟 Nikehub",
