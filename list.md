@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.2 | Released: May 31, 2026
-> r166 | Last Updated: June 01, 2026
+> r167 | Last Updated: June 02, 2026
 > Total onsite links: 4825 (2856 sorted + 1969 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -311,7 +311,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp | Scramjet, Ultraviolet | 41 |
+> | Proxy/Games | epoxy, libcurl, wisp | Scramjet, Ultraviolet | 40 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -355,7 +355,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://mathgames.quickaminos.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://english.neeb.wtf | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://spacing.bull.srivaishnavam.org.au | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://15.204.247.166.nar0.com | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🪴 Fern
 > [!NOTE]
