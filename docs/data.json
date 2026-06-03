@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r170",
-    "last_updated": "June 02, 2026",
+    "revision": "r171",
+    "last_updated": "June 03, 2026",
     "unsorted_total": 1971,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
     "update_notice": "Added mirror links and embed support; maintenance fixes and updated filter data.",
@@ -103,25 +103,19 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-02T20:39:56Z",
-    "checked_at_display": "2026-06-02 20:39 UTC",
+    "checked_at": "2026-06-03T03:34:20Z",
+    "checked_at_display": "2026-06-03 03:34 UTC",
     "added_count": 0,
-    "removed_count": 8,
+    "removed_count": 2,
     "added_links": [],
     "removed_links": [
-      "https://math.schoolforlife.online",
-      "https://216.158.237.116.educationaltoys.store",
-      "https://ajcekcs.educationaltoys.store",
-      "https://wenwcincionw.educationaltoys.store",
-      "https://ibwvinje.educationaltoys.store",
-      "https://nvsinjswrwin.educationaltoys.store",
-      "https://vcsayt.thongthaitextile.com",
-      "https://shop.educationaltoys.store"
+      "https://ciphernetwork.surak.kz",
+      "https://visitlittle.stjameskilolo.org"
     ]
   },
   "failing_links": {
-    "https://ciphernetwork.surak.kz": 2,
-    "https://visitlittle.stjameskilolo.org": 2
+    "https://aphistorytutoring.tjarba.com": 1,
+    "https://educationnyu.spacetechnology.net": 1
   },
   "links": [
     {
@@ -29211,25 +29205,6 @@
         "unknown"
       ],
       "locked": "",
-      "link": "https://ciphernetwork.surak.kz/",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍓 Strawberry",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
       "link": "https://vcsa-strawberry.eminescusm.ro/",
       "found": "4/18/2026",
       "username": "N/A",
@@ -32898,25 +32873,6 @@
       ],
       "locked": "",
       "link": "https://vng.lol/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://visitlittle.stjameskilolo.org/",
       "found": "5/15/2026",
       "username": "N/A",
       "password": "N/A",
