@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r172",
+    "revision": "r173",
     "last_updated": "June 03, 2026",
     "unsorted_total": 1971,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
@@ -103,38 +103,31 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-03T16:27:22Z",
-    "checked_at_display": "2026-06-03 16:27 UTC",
+    "checked_at": "2026-06-03T20:50:34Z",
+    "checked_at_display": "2026-06-03 20:50 UTC",
     "added_count": 0,
-    "removed_count": 1,
+    "removed_count": 7,
     "added_links": [],
     "removed_links": [
-      "https://educationnyu.spacetechnology.net"
+      "https://english.highschoolacademy.online",
+      "https://learn.mathnotes.online",
+      "https://k12learning.mathnotes.online",
+      "https://learning.mathnotes.online",
+      "https://golflefleur.tutoring.rest/actual.html",
+      "https://api.academinctools.pw",
+      "https://educational-site.academinctools.pw"
     ]
   },
   "failing_links": {
-    "https://15.204.247.166.ip.ipq.co": 1,
-    "https://dwfo7z3f9nigf.cloudfront.net/index.html": 1,
-    "https://d1ks901xvjj2p6.cloudfront.net/index.html": 1,
-    "https://div7ikqm4o515.cloudfront.net": 1,
-    "https://english.highschoolacademy.online": 2,
-    "https://sainttech.techmaxasia.com/#home": 2,
-    "https://imsovainthatinamelinksaftermyself.tjarba.com": 1,
-    "https://aphistorytutoring.cencopro.cl": 1,
-    "https://learnaboutbillclinton.cencopro.cl": 1,
-    "https://learnaboutbillclinton.bisblick.org": 1,
-    "https://learn.mathnotes.online": 2,
-    "https://k12learning.mathnotes.online": 2,
-    "https://learning.mathnotes.online": 2,
-    "https://learnaboutbillclinton.scrapitsoftware.com": 1,
-    "https://api.academinctools.pw": 2,
-    "https://educational-site.academinctools.pw": 2,
-    "https://golflefleur.tutoring.rest/actual.html": 2,
-    "https://codehs.com/sandbox/id/html-ZhExDL/run": 1,
-    "https://dlah6r0ddz4mx.cloudfront.net/index.html": 1,
-    "https://learningbiology.fpva.ru": 1,
-    "https://xy.lor.a.sumkiman.ru": 1,
-    "https://reading.ultradec.com": 1
+    "https://aphistorytutoring.tjarba.com": 1,
+    "https://imsovainthatinamelinksaftermyself.tjarba.com": 2,
+    "https://quizizz.com/_media/gn-math/3a218feb-8a3a-4d35-8022-6ac73d9f108e-v2": 1,
+    "https://wayground.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 1,
+    "https://quizizz.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 1,
+    "https://wayground.com/_media/quizzes/120166d9-62a4-4fcc-9b3c-9114f05336f9-v2": 1,
+    "https://learningbiology.fpva.ru": 2,
+    "https://xy.lor.a.sumkiman.ru": 2,
+    "https://reading.ultradec.com": 2
   },
   "links": [
     {
@@ -12619,26 +12612,6 @@
       ],
       "locked": "",
       "link": "https://energy.saladandgo-menu.info/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌕 Lunar",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://english.highschoolacademy.online/",
       "found": "4/25/2026",
       "username": "N/A",
       "password": "N/A",
@@ -30117,25 +30090,6 @@
         "unknown"
       ],
       "locked": "",
-      "link": "https://learn.mathnotes.online/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍓 Strawberry",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
       "link": "https://living.everything-cold.co.uk/",
       "found": "4/30/2026",
       "username": "N/A",
@@ -30156,44 +30110,6 @@
       ],
       "locked": "",
       "link": "https://climate.weatherpixel.com/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍓 Strawberry",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://k12learning.mathnotes.online/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍓 Strawberry",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://learning.mathnotes.online/",
       "found": "4/30/2026",
       "username": "N/A",
       "password": "N/A",
@@ -41931,25 +41847,6 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "Platinum UB",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://golflefleur.tutoring.rest/actual.html",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
       "provider": "❤️ SDXP",
       "category": "Games",
       "capabilities": "N/A",
@@ -43670,44 +43567,6 @@
       "password": "N/A",
       "contributor": "yourworstnightmare1",
       "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌴 aspen",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://api.academinctools.pw/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌴 aspen",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://educational-site.academinctools.pw/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
     },
     {
       "provider": "💉 Injex",
