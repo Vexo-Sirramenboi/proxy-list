@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.2 | Released: May 31, 2026
-> r173 | Last Updated: June 03, 2026
+> r174 | Last Updated: June 04, 2026
 > Total onsite links: 4825 (2856 sorted + 1969 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -592,7 +592,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 105 |
+> | Proxy/Games | unknown | unknown | 104 |
 
 > [!IMPORTANT]
 > Shadow does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -703,7 +703,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://learningquiz.pollsvspoly.com/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://smartlogic.bakeryos.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://clearreading.pollsvspoly.com/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://learningbiology.fpva.ru | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://simplegrammar.asturkiters.es | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🐶 dogeub
@@ -3259,7 +3258,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 77 |
+> | Proxy/Games | unknown | unknown | 76 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -3323,7 +3322,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://muffi.n.tire.is/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://xylora.cassanova.biz/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://v.meow.v.xylora.coosemansla.com/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://xy.lor.a.sumkiman.ru/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://muffinz.abogaciadigital.ar/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://xylora.huangqirui.xyz/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://muffin.love.grei-grei.lt/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
