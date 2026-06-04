@@ -103,17 +103,32 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-04T03:29:03Z",
-    "checked_at_display": "2026-06-04 03:29 UTC",
+    "checked_at": "2026-06-04T09:49:19Z",
+    "checked_at_display": "2026-06-04 09:49 UTC",
     "added_count": 0,
-    "removed_count": 2,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://learningbiology.fpva.ru",
-      "https://xy.lor.a.sumkiman.ru"
-    ]
+    "removed_links": []
   },
-  "failing_links": {},
+  "failing_links": {
+    "https://sainttech.techmaxasia.com/#home": 1,
+    "https://imsovainthatinamelinksaftermyself.tjarba.com": 1,
+    "https://learnaboutbillclinton.cencopro.cl": 1,
+    "https://frosted.webinfo.tw": 1,
+    "https://frosted.numbercraftacademy.com": 1,
+    "https://api.notariamelipilla.cl": 1,
+    "https://frosted.vta-international.com": 1,
+    "https://napoleon-wiki.2to1agri.com": 1,
+    "https://education.potomacriversafetycommittee.org": 1,
+    "https://frosted.vixenlights.com": 1,
+    "https://frosted.latine.ca": 1,
+    "https://frosted.japan.is": 1,
+    "https://info.alexanderthegreater.com": 1,
+    "https://frosted.valor.ar": 1,
+    "https://frosted.torontowestpsychotherapy.com": 1,
+    "https://frosted.tongllfoundation.org": 1,
+    "https://starr.bijayakilla.com": 1
+  },
   "links": [
     {
       "provider": "💜 Selenite",
