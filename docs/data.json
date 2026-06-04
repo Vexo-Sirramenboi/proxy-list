@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r174",
+    "revision": "r175",
     "last_updated": "June 04, 2026",
     "unsorted_total": 1971,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
@@ -103,36 +103,30 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-04T14:45:37Z",
-    "checked_at_display": "2026-06-04 14:45 UTC",
+    "checked_at": "2026-06-04T19:58:22Z",
+    "checked_at_display": "2026-06-04 19:58 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 14,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://api.notariamelipilla.cl",
+      "https://napoleon-wiki.2to1agri.com",
+      "https://education.potomacriversafetycommittee.org",
+      "https://frosted.webinfo.tw",
+      "https://frosted.vixenlights.com",
+      "https://frosted.latine.ca",
+      "https://frosted.japan.is",
+      "https://info.alexanderthegreater.com",
+      "https://frosted.valor.ar",
+      "https://frosted.torontowestpsychotherapy.com",
+      "https://frosted.tongllfoundation.org",
+      "https://starr.bijayakilla.com",
+      "https://frosted.numbercraftacademy.com",
+      "https://frosted.vta-international.com"
+    ]
   },
   "failing_links": {
-    "https://dwfo7z3f9nigf.cloudfront.net/index.html": 1,
-    "https://d1ks901xvjj2p6.cloudfront.net/index.html": 1,
-    "https://div7ikqm4o515.cloudfront.net": 1,
-    "https://frosted.webinfo.tw": 2,
-    "https://frosted.numbercraftacademy.com": 2,
-    "https://api.notariamelipilla.cl": 2,
-    "https://frosted.vta-international.com": 2,
-    "https://codehs.com/sandbox/id/html-ZhExDL/run": 1,
-    "https://napoleon-wiki.2to1agri.com": 2,
-    "https://education.potomacriversafetycommittee.org": 2,
-    "https://frosted.vixenlights.com": 2,
-    "https://frosted.latine.ca": 2,
-    "https://frosted.japan.is": 2,
-    "https://info.alexanderthegreater.com": 2,
-    "https://frosted.valor.ar": 2,
-    "https://frosted.torontowestpsychotherapy.com": 2,
-    "https://frosted.tongllfoundation.org": 2,
-    "https://starr.bijayakilla.com": 2,
-    "https://dlah6r0ddz4mx.cloudfront.net/index.html": 1,
-    "https://hvtzw.reformarchive.com": 1,
-    "https://sssssss.zapier.app": 1,
-    "https://ali.zapier.app": 1
+    "https://script.google.com/macros/s/AKfycbwqqo2qu8qT_KWNwhFRMIa-IzTs2S3vgH_7Rx14OCM8dSJU_u3TUCC7AMsrTtjo2oG-rQ/exec": 1
   },
   "links": [
     {
@@ -34459,234 +34453,6 @@
         "scramjet"
       ],
       "locked": "",
-      "link": "https://api.notariamelipilla.cl/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://napoleon-wiki.2to1agri.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://education.potomacriversafetycommittee.org/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://frosted.webinfo.tw/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://frosted.vixenlights.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://frosted.latine.ca/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://frosted.japan.is/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://info.alexanderthegreater.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://frosted.valor.ar/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://frosted.torontowestpsychotherapy.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://frosted.tongllfoundation.org/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://starr.bijayakilla.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
       "link": "https://contentkeepermaster3009.deltacompy.com.br/",
       "found": "5/14/2026",
       "username": "N/A",
@@ -45358,82 +45124,6 @@
       "password": "N/A",
       "contributor": "yourworstnightmare1",
       "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "❄️ Frosted",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://frosted.webinfo.tw",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "❄️ Frosted",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://frosted.numbercraftacademy.com",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "❄️ Frosted",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://api.notariamelipilla.cl",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "❄️ Frosted",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://frosted.vta-international.com",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
     },
     {
       "provider": "❄️ Frosted",
