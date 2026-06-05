@@ -1974,3 +1974,4 @@ Move links from here into `list.md` once sorted.
 - https://infoo.infotechnology.com
 - https://careers.asistdoc.ar
 - https://velara.cc
+- https://yesmath.kamenorezac-garic.rs
