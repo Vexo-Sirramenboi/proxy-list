@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r175",
-    "last_updated": "June 04, 2026",
+    "revision": "r176",
+    "last_updated": "June 05, 2026",
     "unsorted_total": 1971,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
     "update_notice": "Added mirror links and embed support; maintenance fixes and updated filter data.",
@@ -103,89 +103,91 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-05T09:37:37Z",
-    "checked_at_display": "2026-06-05 09:37 UTC",
+    "checked_at": "2026-06-05T14:36:19Z",
+    "checked_at_display": "2026-06-05 14:36 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 45,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://TwinTowers.thelich.monster",
+      "https://ynvvmnqz.94-16-31-161.anyip.dev",
+      "https://zurzosha.94-16-31-161.anyip.dev",
+      "https://vqqmkgzr.94-16-31-161.anyip.dev",
+      "https://xkfzqljo.94-16-31-161.anyip.dev",
+      "https://wypddlfu.94-16-31-161.anyip.dev",
+      "https://vflxhihe.94-16-31-161.anyip.dev",
+      "https://aroqxnqg.94-16-31-161.anyip.dev",
+      "https://soduaqdz.94-16-31-161.anyip.dev",
+      "https://vvxtsxyq.94-16-31-161.anyip.dev",
+      "https://hrkjeabk.94-16-31-161.anyip.dev",
+      "https://dqjqzuoe.94-16-31-161.anyip.dev",
+      "https://dkxfhytp.94-16-31-161.anyip.dev",
+      "https://rckagjgr.94-16-31-161.anyip.dev",
+      "https://ozqfyfjf.94-16-31-161.anyip.dev",
+      "https://uujeznek.94-16-31-161.anyip.dev",
+      "https://ccwgcqfl.94-16-31-161.anyip.dev",
+      "https://hwgnldem.94-16-31-161.anyip.dev",
+      "https://ppjylhje.94-16-31-161.anyip.dev",
+      "https://mykoxjji.94-16-31-161.anyip.dev",
+      "https://pkemqmws.94-16-31-161.anyip.dev",
+      "https://djfqjwoe.94-16-31-161.anyip.dev",
+      "https://dddnfmdl.94-16-31-161.anyip.dev",
+      "https://intarfzb.94-16-31-161.anyip.dev",
+      "https://ufoiolki.94-16-31-161.anyip.dev",
+      "https://wygrryxc.94-16-31-161.anyip.dev",
+      "https://kkmsodqo.94-16-31-161.anyip.dev",
+      "https://zpwkfcew.94-16-31-161.anyip.dev",
+      "https://rnpirrjg.94-16-31-161.anyip.dev",
+      "https://psgevnar.94-16-31-161.anyip.dev",
+      "https://ffgfcaet.94-16-31-161.anyip.dev",
+      "https://tjmihzif.94-16-31-161.anyip.dev",
+      "https://bnlpuhrp.94-16-31-161.anyip.dev",
+      "https://zcpnvzuy.94-16-31-161.anyip.dev",
+      "https://eslgyuis.94-16-31-161.anyip.dev",
+      "https://fmpqccpp.94-16-31-161.anyip.dev",
+      "https://fohebrpb.94-16-31-161.anyip.dev",
+      "https://dandiipoopii.wikidelia.net",
+      "https://finnbros.wikidelia.net",
+      "https://ilovemath.wikidelia.net",
+      "https://lightscameraaction.wikidelia.net",
+      "https://splassh.wikidelia.net",
+      "https://splashlearning.networkguru.com",
+      "https://splashmath.unibutton.com",
+      "https://ojffgizg.94-16-31-161.anyip.dev"
+    ]
   },
   "failing_links": {
-    "https://math.transrights.ip-logger.com": 1,
-    "https://ohmb-thecloudofmath.mooo.info": 1,
-    "https://www.securly.com.allisons.org": 1,
-    "https://happyhappy.kamenorezac-garic.rs": 1,
-    "https://hellomath.kamenorezac-garic.rs": 1,
-    "https://kamenmath.kamenorezac-garic.rs": 1,
-    "https://playernation.roseflame.com": 1,
-    "https://vseesa.roseflame.com": 1,
-    "https://canindia.lervs.ro": 1,
-    "https://mathscience.canvas-lms.22web.org": 1,
-    "https://independentschooldistrict.instructure.page.gd": 1,
-    "https://ynvvmnqz.94-16-31-161.anyip.dev": 2,
-    "https://zurzosha.94-16-31-161.anyip.dev": 2,
-    "https://vqqmkgzr.94-16-31-161.anyip.dev": 2,
-    "https://xkfzqljo.94-16-31-161.anyip.dev": 2,
-    "https://wypddlfu.94-16-31-161.anyip.dev": 2,
-    "https://vflxhihe.94-16-31-161.anyip.dev": 2,
-    "https://aroqxnqg.94-16-31-161.anyip.dev": 2,
-    "https://soduaqdz.94-16-31-161.anyip.dev": 2,
-    "https://vvxtsxyq.94-16-31-161.anyip.dev": 2,
-    "https://hrkjeabk.94-16-31-161.anyip.dev": 2,
-    "https://dqjqzuoe.94-16-31-161.anyip.dev": 2,
-    "https://dkxfhytp.94-16-31-161.anyip.dev": 2,
-    "https://rckagjgr.94-16-31-161.anyip.dev": 2,
-    "https://ozqfyfjf.94-16-31-161.anyip.dev": 2,
-    "https://uujeznek.94-16-31-161.anyip.dev": 2,
-    "https://ccwgcqfl.94-16-31-161.anyip.dev": 2,
-    "https://hwgnldem.94-16-31-161.anyip.dev": 2,
-    "https://ppjylhje.94-16-31-161.anyip.dev": 2,
-    "https://mykoxjji.94-16-31-161.anyip.dev": 2,
-    "https://pkemqmws.94-16-31-161.anyip.dev": 2,
-    "https://djfqjwoe.94-16-31-161.anyip.dev": 2,
-    "https://dddnfmdl.94-16-31-161.anyip.dev": 2,
-    "https://intarfzb.94-16-31-161.anyip.dev": 2,
-    "https://ufoiolki.94-16-31-161.anyip.dev": 2,
-    "https://wygrryxc.94-16-31-161.anyip.dev": 2,
-    "https://kkmsodqo.94-16-31-161.anyip.dev": 2,
-    "https://zpwkfcew.94-16-31-161.anyip.dev": 2,
-    "https://rnpirrjg.94-16-31-161.anyip.dev": 2,
-    "https://psgevnar.94-16-31-161.anyip.dev": 2,
-    "https://ffgfcaet.94-16-31-161.anyip.dev": 2,
-    "https://tjmihzif.94-16-31-161.anyip.dev": 2,
-    "https://bnlpuhrp.94-16-31-161.anyip.dev": 2,
-    "https://zcpnvzuy.94-16-31-161.anyip.dev": 2,
-    "https://eslgyuis.94-16-31-161.anyip.dev": 2,
-    "https://fmpqccpp.94-16-31-161.anyip.dev": 2,
-    "https://fohebrpb.94-16-31-161.anyip.dev": 2,
-    "https://snoopy.education.vta-international.com": 1,
-    "https://dandiipoopii.wikidelia.net": 2,
-    "https://finnbros.wikidelia.net": 2,
-    "https://ilovemath.wikidelia.net": 2,
-    "https://lightscameraaction.wikidelia.net": 2,
-    "https://splassh.wikidelia.net": 2,
-    "https://securly.com.worldmicroscope.com": 1,
-    "https://math.refugiodelalma.cl": 1,
-    "https://snoopy.education.airlinemeals.net": 1,
-    "https://ddd.154-12-247-42.anyip.dev": 1,
-    "https://education.154-12-247-42.anyip.dev": 1,
-    "https://bobby.154-12-247-42.anyip.dev": 1,
-    "https://securly.com.154-12-247-42.anyip.dev": 1,
-    "https://tung.tung.netsec.pro": 1,
-    "https://bobby.edu.boostmetabolism.com": 1,
-    "https://www.securly.com.stockable.elektrine.com": 1,
-    "https://gn23245349.airlinemeals.net": 1,
-    "https://readyreading.kamenorezac-garic.rs": 1,
-    "https://yesmath.kamenorezac-garic.rs": 1,
-    "https://TwinTowers.thelich.monster": 2,
-    "http://graduation.edu.fysiomotion.se": 1,
-    "http://snoopy-school.allseasons3dprinting.com": 1,
-    "http://snoopyuniversity.heidibranlund.com": 1,
-    "http://7516c3b35580b3490248629cff5e498c.heidibranlund.com": 1,
-    "https://splashlearning.networkguru.com": 2,
-    "https://splashmath.unibutton.com": 2,
-    "https://reading.ultradec.com": 2,
-    "https://ojffgizg.94-16-31-161.anyip.dev": 2
+    "https://51.222.206.184.ip.ipq.co": 1,
+    "https://byfronanticheattesting.jmultitechnology.com": 1,
+    "https://math.transrights.ip-logger.com": 2,
+    "https://ohmb-thecloudofmath.mooo.info": 2,
+    "https://www.securly.com.allisons.org": 2,
+    "https://happyhappy.kamenorezac-garic.rs": 2,
+    "https://hellomath.kamenorezac-garic.rs": 2,
+    "https://kamenmath.kamenorezac-garic.rs": 2,
+    "https://playernation.roseflame.com": 2,
+    "https://vseesa.roseflame.com": 2,
+    "https://canindia.lervs.ro": 2,
+    "https://mathscience.canvas-lms.22web.org": 2,
+    "https://independentschooldistrict.instructure.page.gd": 2,
+    "https://snoopy.education.vta-international.com": 2,
+    "https://securly.com.worldmicroscope.com": 2,
+    "https://math.refugiodelalma.cl": 2,
+    "https://snoopy.education.airlinemeals.net": 2,
+    "https://ddd.154-12-247-42.anyip.dev": 2,
+    "https://education.154-12-247-42.anyip.dev": 2,
+    "https://bobby.154-12-247-42.anyip.dev": 2,
+    "https://securly.com.154-12-247-42.anyip.dev": 2,
+    "https://tung.tung.netsec.pro": 2,
+    "https://bobby.edu.boostmetabolism.com": 2,
+    "https://www.securly.com.stockable.elektrine.com": 2,
+    "https://gn23245349.airlinemeals.net": 2,
+    "https://readyreading.kamenorezac-garic.rs": 2,
+    "https://yesmath.kamenorezac-garic.rs": 2,
+    "http://graduation.edu.fysiomotion.se": 2,
+    "http://snoopy-school.allseasons3dprinting.com": 2,
+    "http://snoopyuniversity.heidibranlund.com": 2,
+    "http://7516c3b35580b3490248629cff5e498c.heidibranlund.com": 2
   },
   "links": [
     {
@@ -333,25 +335,6 @@
       ],
       "locked": "",
       "link": "http://sni.educations.mytunnel.org",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌙 Velara",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://TwinTowers.thelich.monster",
       "found": "5/22/2026",
       "username": "N/A",
       "password": "N/A",
@@ -43988,823 +43971,6 @@
       "contributor_url": "https://github.com/1NobleCyber"
     },
     {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://ynvvmnqz.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://zurzosha.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://vqqmkgzr.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xkfzqljo.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://wypddlfu.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://vflxhihe.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://aroqxnqg.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://soduaqdz.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://vvxtsxyq.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://hrkjeabk.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://dqjqzuoe.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://dkxfhytp.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://rckagjgr.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://ozqfyfjf.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://uujeznek.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://ccwgcqfl.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://hwgnldem.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://ppjylhje.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://mykoxjji.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://pkemqmws.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://djfqjwoe.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://dddnfmdl.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://intarfzb.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://ufoiolki.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://wygrryxc.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://kkmsodqo.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://zpwkfcew.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://rnpirrjg.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://psgevnar.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://ffgfcaet.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://tjmihzif.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://bnlpuhrp.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://zcpnvzuy.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://eslgyuis.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://fmpqccpp.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://fohebrpb.94-16-31-161.anyip.dev",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://dandiipoopii.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://finnbros.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://ilovemath.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://lightscameraaction.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://splassh.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://splashlearning.networkguru.com",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌊 Splash",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://splashmath.unibutton.com",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
       "provider": "📚 OnlyLessons",
       "category": "Proxy/Games",
       "capabilities": "unknown",
@@ -47955,25 +47121,6 @@
       ],
       "locked": "",
       "link": "https://reading.ultradec.com/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Interstellar",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://ojffgizg.94-16-31-161.anyip.dev",
       "found": "5/22/2026",
       "username": "N/A",
       "password": "N/A",
