@@ -103,20 +103,20 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-06T13:19:58Z",
-    "checked_at_display": "2026-06-06 13:19 UTC",
+    "checked_at": "2026-06-06T19:12:42Z",
+    "checked_at_display": "2026-06-06 19:12 UTC",
     "added_count": 0,
-    "removed_count": 2,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://ixlwork.storage.googleapis.com/index.html",
-      "https://hellothereworld.storage.googleapis.com/index.html"
-    ]
+    "removed_links": []
   },
   "failing_links": {
-    "https://51.222.206.184.my.local-ip.co": 1,
-    "https://15.204.247.166.my.local-ip.co": 1,
-    "https://baconatorsmath.2nx.org": 1
+    "https://51.222.206.184.my.local-ip.co": 2,
+    "https://15.204.247.166.my.local-ip.co": 2,
+    "https://quizizz.com/_media/gn-math/3a218feb-8a3a-4d35-8022-6ac73d9f108e-v2": 1,
+    "https://wayground.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 1,
+    "https://quizizz.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 1,
+    "https://wayground.com/_media/quizzes/120166d9-62a4-4fcc-9b3c-9114f05336f9-v2": 1
   },
   "links": [
     {
