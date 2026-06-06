@@ -1975,3 +1975,11 @@ Move links from here into `list.md` once sorted.
 - https://careers.asistdoc.ar
 - https://velara.cc
 - https://yesmath.kamenorezac-garic.rs
+- https://aphistorytutoring.bisblick.org
+- https://aphistorytutoring.cencopro.cl
+- https://aphistorytutoring.tjarba.com
+- https://ciaworldfactbook.daybits.net
+- https://imsovainthatinamelinksaftermyself.tjarba.com
+- https://learnaboutbillclinton.bisblick.org
+- https://learnaboutbillclinton.cencopro.cl
+- https://learnaboutbillclinton.daybits.net
