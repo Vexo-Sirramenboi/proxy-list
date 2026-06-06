@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r178",
+    "revision": "r179",
     "last_updated": "June 06, 2026",
     "unsorted_total": 1980,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
@@ -103,57 +103,20 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-06T08:28:22Z",
-    "checked_at_display": "2026-06-06 08:28 UTC",
+    "checked_at": "2026-06-06T13:19:58Z",
+    "checked_at_display": "2026-06-06 13:19 UTC",
     "added_count": 0,
-    "removed_count": 31,
+    "removed_count": 2,
     "added_links": [],
     "removed_links": [
-      "https://supplies.artsineducation.net",
-      "https://wildcard.collegeessayexamples.net/#home",
-      "https://aphistorytutoring.tjarba.com",
-      "https://we.are.highdesertcoders.com",
-      "https://wildcard.grittytravel.com",
-      "https://sixseven.acphighschool.org/#home",
-      "https://jfd.schoolsandtravel.com",
-      "https://1.schoolsandtravel.com/#home",
-      "https://2.schoolsandtravel.com/#home",
-      "https://3.schoolsandtravel.com/#home",
-      "https://4.schoolsandtravel.com/#home",
-      "https://5.schoolsandtravel.com/#home",
-      "https://6.schoolsandtravel.com/#home",
-      "https://7.schoolsandtravel.com/#home",
-      "https://8.schoolsandtravel.com/#home",
-      "https://9.schoolsandtravel.com/#home",
-      "https://10.schoolsandtravel.com/#home",
-      "https://11.schoolsandtravel.com/#home",
-      "https://12.schoolsandtravel.com/#home",
-      "https://13.schoolsandtravel.com/#home",
-      "https://14.schoolsandtravel.com/#home",
-      "https://15.schoolsandtravel.com/#home",
-      "https://sainttech.techmaxasia.com/#home",
-      "https://ciaworldfactbook.daybits.net",
-      "https://learnaboutbillclinton.daybits.net",
-      "https://imsovainthatinamelinksaftermyself.tjarba.com",
-      "https://aphistorytutoring.cencopro.cl",
-      "https://learnaboutbillclinton.cencopro.cl",
-      "https://aphistorytutoring.bisblick.org",
-      "https://learnaboutbillclinton.bisblick.org",
-      "https://learnaboutbillclinton.scrapitsoftware.com"
+      "https://ixlwork.storage.googleapis.com/index.html",
+      "https://hellothereworld.storage.googleapis.com/index.html"
     ]
   },
   "failing_links": {
-    "https://ixlwork.storage.googleapis.com/index.html": 2,
-    "https://tharun9772-gaming.pages.dev": 1,
-    "https://novacs.letiatours.com": 1,
-    "https://virtualgeo.letiatours.com": 1,
-    "https://update.update.update.update.dev.bananaschool.duckdns.org": 1,
-    "https://update.www.www.dev.bananaschool.duckdns.org": 1,
-    "https://hellothereworld.storage.googleapis.com/index.html": 2,
-    "https://quizizz.com/_media/gn-math/3a218feb-8a3a-4d35-8022-6ac73d9f108e-v2": 1,
-    "https://wayground.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 1,
-    "https://quizizz.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 1,
-    "https://wayground.com/_media/quizzes/120166d9-62a4-4fcc-9b3c-9114f05336f9-v2": 1
+    "https://51.222.206.184.my.local-ip.co": 1,
+    "https://15.204.247.166.my.local-ip.co": 1,
+    "https://baconatorsmath.2nx.org": 1
   },
   "links": [
     {
@@ -6144,25 +6107,6 @@
         "scramjet"
       ],
       "locked": "",
-      "link": "https://ixlwork.storage.googleapis.com/index.html",
-      "found": "4/17/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "💨 Vapor",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
       "link": "https://ess-education.org/",
       "found": "4/21/2026",
       "username": "N/A",
@@ -7233,25 +7177,6 @@
       "password": "N/A",
       "contributor": "1NobleCyber",
       "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "💨 Vapor",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://hellothereworld.storage.googleapis.com/index.html",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "Vexo Sirramenboi",
-      "contributor_url": "https://github.com/Vexo-Sirramenboi"
     },
     {
       "provider": "💨 Vapor",
