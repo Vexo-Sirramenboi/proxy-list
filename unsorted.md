@@ -1979,3 +1979,7 @@ Move links from here into `list.md` once sorted.
 - https://learnaboutbillclinton.bisblick.org
 - https://learnaboutbillclinton.cencopro.cl
 - https://learnaboutbillclinton.daybits.net
+- https://s3.amazonaws.com/prageru-server/mathematics.html?id=556
+- https://dogsareamazing.chihuahua-hund.de
+- http://okvrlsgvsq.pcrage2000.com
+- http://welcome-to-learning.fredrikkivi.se
