@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r180",
+    "revision": "r181",
     "last_updated": "June 07, 2026",
     "unsorted_total": 1980,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
@@ -103,39 +103,26 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-07T08:51:27Z",
-    "checked_at_display": "2026-06-07 08:51 UTC",
+    "checked_at": "2026-06-07T13:30:22Z",
+    "checked_at_display": "2026-06-07 13:30 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 10,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://quizizz-static.s3.amazonaws.com/_media/uploadedFiles/9e0c0d18-c975-497c-b410-fc7dae5fafca-v2",
+      "https://quizizz-static.s3-accelerate.amazonaws.com/_media/uploadedFiles/9e0c0d18-c975-497c-b410-fc7dae5fafca-v2",
+      "https://ec2-3-19-68-202.us-east-2.compute.amazonaws.com",
+      "https://travel.travelhits.co.uk",
+      "https://muffin.learn.justinsteiger.com",
+      "https://firefighter.muffin.fire-change.com",
+      "https://albert.virtualmunch.com",
+      "https://great.virtualmunch.com",
+      "https://math.virtualmunch.com",
+      "https://xcloud.loremgroup.org"
+    ]
   },
   "failing_links": {
-    "https://jasonvisor.lervs.ro": 1,
-    "https://update.update.bananaschool.duckdns.org": 1,
-    "https://update.update.update.update.dev.bananaschool.duckdns.org": 1,
-    "https://update.update.www.www.admin.dev.bananaschool.duckdns.org": 1,
-    "https://www.bananaschool.duckdns.org": 1,
-    "https://admin.dev.bananaschool.duckdns.org": 1,
-    "https://update.www.www.www.www.bananaschool.duckdns.org": 1,
-    "https://qnewiatr.bananaschool.duckdns.org": 1,
-    "https://quizizz.com/_media/gn-math/3a218feb-8a3a-4d35-8022-6ac73d9f108e-v2": 1,
-    "https://wayground.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 1,
-    "https://quizizz.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 1,
-    "https://wayground.com/_media/quizzes/120166d9-62a4-4fcc-9b3c-9114f05336f9-v2": 1,
-    "https://quizizz-static.s3.amazonaws.com/_media/uploadedFiles/9e0c0d18-c975-497c-b410-fc7dae5fafca-v2": 2,
-    "https://quizizz.com/_media/uploadedFiles/9e0c0d18-c975-497c-b410-fc7dae5fafca-v2": 1,
-    "https://quizizz-static.s3-accelerate.amazonaws.com/_media/uploadedFiles/9e0c0d18-c975-497c-b410-fc7dae5fafca-v2": 2,
-    "https://ec2-3-19-68-202.us-east-2.compute.amazonaws.com": 2,
-    "https://travel.travelhits.co.uk": 2,
-    "https://muffin.learn.justinsteiger.com": 2,
-    "https://firefighter.muffin.fire-change.com": 2,
-    "https://albert.virtualmunch.com": 2,
-    "https://great.virtualmunch.com": 2,
-    "https://math.virtualmunch.com": 2,
-    "https://xcloud.loremgroup.org": 2,
-    "https://media.quizizz.com/_mdserver/main/media/resource/gs/quizizz-media/uploadedFiles/37839e85-49a0-4da0-ada9-092ff46f3f2e-v2": 1,
-    "https://wayground.com/_media/uploadedFiles/37839e85-49a0-4da0-ada9-092ff46f3f2e-v2": 1
+    "https://jasonvisor.lervs.ro": 2
   },
   "links": [
     {
@@ -1081,37 +1068,7 @@
       "protocols": "N/A",
       "protocol_tags": [],
       "locked": "",
-      "link": "https://quizizz-static.s3.amazonaws.com/_media/uploadedFiles/9e0c0d18-c975-497c-b410-fc7dae5fafca-v2",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "➗ gn-math",
-      "category": "Games",
-      "capabilities": "N/A",
-      "capability_tags": [],
-      "protocols": "N/A",
-      "protocol_tags": [],
-      "locked": "",
       "link": "https://quizizz.com/_media/uploadedFiles/9e0c0d18-c975-497c-b410-fc7dae5fafca-v2",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "➗ gn-math",
-      "category": "Games",
-      "capabilities": "N/A",
-      "capability_tags": [],
-      "protocols": "N/A",
-      "protocol_tags": [],
-      "locked": "",
-      "link": "https://quizizz-static.s3-accelerate.amazonaws.com/_media/uploadedFiles/9e0c0d18-c975-497c-b410-fc7dae5fafca-v2",
       "found": "6/7/2026",
       "username": "N/A",
       "password": "N/A",
@@ -37955,25 +37912,6 @@
         "scramjet"
       ],
       "locked": "",
-      "link": "https://ec2-3-19-68-202.us-east-2.compute.amazonaws.com/",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌙 LuminalOS",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
       "link": "https://omniman.cfd/",
       "found": "4/25/2026",
       "username": "N/A",
@@ -45217,44 +45155,6 @@
         "unknown"
       ],
       "locked": "",
-      "link": "https://travel.travelhits.co.uk/",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://muffin.learn.justinsteiger.com/",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
       "link": "https://choc.muffin.greenbaynz.com/",
       "found": "6/7/2026",
       "username": "N/A",
@@ -45275,25 +45175,6 @@
       ],
       "locked": "",
       "link": "https://xy.muffin.lora.thebrittainlawfirm.com/",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://firefighter.muffin.fire-change.com/",
       "found": "6/7/2026",
       "username": "N/A",
       "password": "N/A",
@@ -45906,63 +45787,6 @@
       "locked": "",
       "link": "https://redlight.greenbaynz.com/",
       "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Parcoil",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://albert.virtualmunch.com/",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Parcoil",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://great.virtualmunch.com/",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Parcoil",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://math.virtualmunch.com/",
-      "found": "6/7/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",
@@ -46760,25 +46584,6 @@
       ],
       "locked": "",
       "link": "https://www.loremgroup.org/",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Xcloud",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://xcloud.loremgroup.org/",
       "found": "6/7/2026",
       "username": "N/A",
       "password": "N/A",

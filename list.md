@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.2 | Released: May 31, 2026
-> r180 | Last Updated: June 07, 2026
+> r181 | Last Updated: June 07, 2026
 > Total onsite links: 4525 (2549 sorted + 1976 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -53,7 +53,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | N/A | N/A | 56 |
+> | Games | N/A | N/A | 54 |
 
 > [!IMPORTANT]
 > View importance notices section if link is broken.
@@ -112,9 +112,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://quizizz.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2 | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://wayground.com/_media/quizzes/120166d9-62a4-4fcc-9b3c-9114f05336f9-v2 | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://a2174-99533489.cluster40.canvas-user-content.com/users/2174~344930/files/2174~99533489/my%20files/gnmath.html?download=1&inline=1&sf_verifier=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJ1c2VyX2lkIjoiMjE3NDAwMDAwMDAzNDQ5MzAiLCJhdHRhY2htZW50X2lkIjoiMjE3NDAwMDAwOTk1MzM0ODkiLCJwZXJtaXNzaW9uIjpbInJlYWQiLCJkb3dubG9hZCJdLCJyb290X2FjY291bnRfaWQiOiIyMTc0MDAwMDAwMDAwMDAwMSIsIm9hdXRoX2hvc3QiOiJrYXR5aXNkLmluc3RydWN0dXJlLmNvbSIsInJldHVybl91cmwiOm51bGwsImZhbGxiYWNrX3VybCI6Imh0dHBzOi8va2F0eWlzZC5pbnN0cnVjdHVyZS5jb20vZmlsZXMvOTk1MzM0ODkvZG93bmxvYWQ_dmVyaWZpZXI9OTE4ZU5iaVdzR2dmMnN6c05KV2hLWTJRQ1RDTk4wZExJNkhiVDJZM1x1MDAyNmZhbGxiYWNrX3RzPTE3ODAxMTE3MzkiLCJqdGkiOiI3YThhYTJlZC0xMTc3LTQ3NWMtOTJiYS1hM2QzZDA0YmEzOTAiLCJleHAiOjE3ODAxMTIwMzl9.ctQD2ZCAPjhFE_i2GRc8dUkSDbHZesVgkLQko3R_0FQoalLYWu9BNwIWyBG_6gaR5VLjsswqieSxtWJoNfrv-Q&verifier=918eNbiWsGgf2szsNJWhKY2QCTCNN0dLI6HbT2Y3 | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://quizizz-static.s3.amazonaws.com/_media/uploadedFiles/9e0c0d18-c975-497c-b410-fc7dae5fafca-v2 | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://quizizz.com/_media/uploadedFiles/9e0c0d18-c975-497c-b410-fc7dae5fafca-v2 | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://quizizz-static.s3-accelerate.amazonaws.com/_media/uploadedFiles/9e0c0d18-c975-497c-b410-fc7dae5fafca-v2 | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | http://cdn.jsdelivr.net/gh/stockable/sites@main/gnmath.svg | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🐸 frogie's arcade
@@ -2573,14 +2571,13 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 6 |
+> | Proxy/Games | captcha | Scramjet | 5 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://scramupdate.cfd/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://luminal.click/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://dylanwantspay.cfd/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://ec2-3-19-68-202.us-east-2.compute.amazonaws.com/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://omniman.cfd/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://donut.muffin.glenoriebakery.com.au/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
@@ -3113,7 +3110,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 96 |
+> | Proxy/Games | unknown | unknown | 93 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -3207,11 +3204,8 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://content.keeper2.savenewport.com/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://xylora.expertdiagnoza.ro/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://expert.expertdiagnoza.ro/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://travel.travelhits.co.uk/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://muffin.learn.justinsteiger.com/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://choc.muffin.greenbaynz.com/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://xy.muffin.lora.thebrittainlawfirm.com/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://firefighter.muffin.fire-change.com/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://dentist.xylora.muffin.dentist4you.com.au/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 👟 Nikehub
@@ -3303,7 +3297,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 12 |
+> | pending | pending | pending | 9 |
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
 
@@ -3318,9 +3312,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://greatest.eilong.com/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://smartbio.bakeryos.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://redlight.greenbaynz.com/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://albert.virtualmunch.com/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://great.virtualmunch.com/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://math.virtualmunch.com/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # Secured V3
 > [!NOTE]
@@ -3502,7 +3493,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 22 |
+> | pending | pending | pending | 21 |
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
 
@@ -3517,7 +3508,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://cdn.jsdelivr.net/gh/Stockable/sites@main/xcloud.svg | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://loremgroup.org/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://www.loremgroup.org/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://xcloud.loremgroup.org/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://media.quizizz.com/_mdserver/main/media/resource/gs/quizizz-media/uploadedFiles/37839e85-49a0-4da0-ada9-092ff46f3f2e-v2 | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://wayground.com/_media/uploadedFiles/37839e85-49a0-4da0-ada9-092ff46f3f2e-v2 | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://vps-62802f97.vps.ovh.us/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
