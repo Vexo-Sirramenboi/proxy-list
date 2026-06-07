@@ -80,7 +80,6 @@ Move links from here into `list.md` once sorted.
 - https://epickfr.github.io/proxlinksandsuch
 - https://funni-steam-web-17246226.codehs.me
 - https://newestdestinationout.csproject.org
-- https://s3.amazonaws.com/prageru-server/mathematics.html?id=556
 - https://s9.mathissotufff.cbu.net
 - https://sites.google.com/view/studentportalv3/home?authuser=1
 - https://sites.google.com/view/super-ixl-math/gn-math
@@ -263,7 +262,6 @@ Move links from here into `list.md` once sorted.
 - https://czone-six.vercel.app
 - https://deltamath-demo.s3.amazonaws.com/index.html
 - https://dogeub.storage.googleapis.com/index.html
-- https://dogsareamazing.chihuahua-hund.de
 - https://doxwind.xyz
 - https://education.space.liceotajamar.cl
 - https://educationate.storage.googleapis.com/index.html
@@ -736,7 +734,6 @@ Move links from here into `list.md` once sorted.
 - https://ztube.glitch.me
 - https://d1r01tsqlv902b.cloudfront.net/index.html
 - https://sigeonpexisgood.yocelebro.cl
-- http://okvrlsgvsq.pcrage2000.com
 - http://brepsacodi.roostish.com
 - https://hostvcsa.fhoster.ru
 - https://robotictoi.lat
@@ -791,7 +788,6 @@ Move links from here into `list.md` once sorted.
 - http://quiz-70.pro
 - http://quiz25.live
 - http://venturehq.net
-- http://welcome-to-learning.fredrikkivi.se
 - http://wow.education.cellophaneslinger.net
 - https://2.asistdoc.ar
 - https://3.asistdoc.ar

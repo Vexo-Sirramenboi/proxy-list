@@ -12,8 +12,8 @@ ROOT = Path(__file__).resolve().parents[1]
 MD_PATH = ROOT / "list.md"
 INPUT = Path(__file__).resolve().parent / "batch_links_may2026.txt"
 
-DATE = "5/22/2026"
-CONTRIB = "Anonymous Contributor"
+DATE = "6/7/2026"
+CONTRIB = "[yourworstnightmare1](https://github.com/yourworstnightmare1)"
 
 # Map normalized section keys -> exact header title (without leading #)
 SECTION_ALIASES: dict[str, str] = {
@@ -75,8 +75,9 @@ SECTION_ALIASES: dict[str, str] = {
     "duckmath": "🦆 Duckmath",
     "z-kit": "Z-kit",
     "z kit": "Z-kit",
-    "luminal": "Luminal",
+    "luminal": "🌙 LuminalOS",
     "luminalos": "🌙 LuminalOS",
+    "aether": "Aether",
     "parcoil": "Parcoil",
     "strawberry": "🍓 Strawberry",
     "zen": "🧘 Zen",
