@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r181",
+    "revision": "r182",
     "last_updated": "June 07, 2026",
     "unsorted_total": 1980,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
@@ -103,26 +103,18 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-07T13:30:22Z",
-    "checked_at_display": "2026-06-07 13:30 UTC",
+    "checked_at": "2026-06-07T19:13:35Z",
+    "checked_at_display": "2026-06-07 19:13 UTC",
     "added_count": 0,
-    "removed_count": 10,
+    "removed_count": 1,
     "added_links": [],
     "removed_links": [
-      "https://quizizz-static.s3.amazonaws.com/_media/uploadedFiles/9e0c0d18-c975-497c-b410-fc7dae5fafca-v2",
-      "https://quizizz-static.s3-accelerate.amazonaws.com/_media/uploadedFiles/9e0c0d18-c975-497c-b410-fc7dae5fafca-v2",
-      "https://ec2-3-19-68-202.us-east-2.compute.amazonaws.com",
-      "https://travel.travelhits.co.uk",
-      "https://muffin.learn.justinsteiger.com",
-      "https://firefighter.muffin.fire-change.com",
-      "https://albert.virtualmunch.com",
-      "https://great.virtualmunch.com",
-      "https://math.virtualmunch.com",
-      "https://xcloud.loremgroup.org"
+      "https://jasonvisor.lervs.ro"
     ]
   },
   "failing_links": {
-    "https://jasonvisor.lervs.ro": 2
+    "https://boredom.chiangmaiorganics.com": 1,
+    "https://contact.maxmir-energy.ru": 1
   },
   "links": [
     {
@@ -42781,25 +42773,6 @@
       ],
       "locked": "",
       "link": "https://arctic.lervs.ro",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🧊 Arctic",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://jasonvisor.lervs.ro",
       "found": "5/1/2026",
       "username": "N/A",
       "password": "N/A",
