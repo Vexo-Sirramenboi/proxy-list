@@ -103,18 +103,23 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-07T19:13:35Z",
-    "checked_at_display": "2026-06-07 19:13 UTC",
+    "checked_at": "2026-06-08T02:59:36Z",
+    "checked_at_display": "2026-06-08 02:59 UTC",
     "added_count": 0,
-    "removed_count": 1,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://jasonvisor.lervs.ro"
-    ]
+    "removed_links": []
   },
   "failing_links": {
-    "https://boredom.chiangmaiorganics.com": 1,
-    "https://contact.maxmir-energy.ru": 1
+    "https://boredom.chiangmaiorganics.com": 2,
+    "https://contact.maxmir-energy.ru": 2,
+    "https://quizizz.com/_media/gn-math/3a218feb-8a3a-4d35-8022-6ac73d9f108e-v2": 1,
+    "https://wayground.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 1,
+    "https://quizizz.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 1,
+    "https://wayground.com/_media/quizzes/120166d9-62a4-4fcc-9b3c-9114f05336f9-v2": 1,
+    "https://quizizz.com/_media/uploadedFiles/9e0c0d18-c975-497c-b410-fc7dae5fafca-v2": 1,
+    "https://media.quizizz.com/_mdserver/main/media/resource/gs/quizizz-media/uploadedFiles/37839e85-49a0-4da0-ada9-092ff46f3f2e-v2": 1,
+    "https://wayground.com/_media/uploadedFiles/37839e85-49a0-4da0-ada9-092ff46f3f2e-v2": 1
   },
   "links": [
     {
