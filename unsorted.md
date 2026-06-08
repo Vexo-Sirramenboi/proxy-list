@@ -1983,3 +1983,4 @@ Move links from here into `list.md` once sorted.
 - https://dogsareamazing.chihuahua-hund.de
 - http://okvrlsgvsq.pcrage2000.com
 - http://welcome-to-learning.fredrikkivi.se
+- https://boredom.chiangmaiorganics.com

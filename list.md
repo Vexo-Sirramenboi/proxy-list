@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.2 | Released: May 31, 2026
-> r182 | Last Updated: June 07, 2026
+> r183 | Last Updated: June 08, 2026
 > Total onsite links: 4525 (2549 sorted + 1976 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -389,7 +389,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 36 |
+> | Proxy/Games | unknown | Scramjet | 35 |
 
 > [!IMPORTANT]
 > Boredom does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -408,7 +408,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://432www.update.update.76update.158-69-222-114.sslip.io/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://nmlkjmlkjihupdate.update.987298765432sdabhvaewukbcfjkaesk.152.53.136.204.nip.io/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://update.214321admin.api.en.v2202508297531378155.powersrv.de/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://boredom.chiangmaiorganics.com/ | 3/17/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://boringvcsa.beachlifeusa.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://vcsayt.skills-sims.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://pn.boredom.apertura.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -1670,7 +1669,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | libcurl, epoxy, wisp | Scramjet, Ultraviolet | 98 |
+> | Proxy/Games | libcurl, epoxy, wisp | Scramjet, Ultraviolet | 97 |
 
 > [!IMPORTANT]
 > Galaxy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1716,7 +1715,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://filterbrowser.tiatex.com/onboarding/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://start.pastorschwittay.com.ar/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://filter.pilatesfitness.co.uk/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://contact.maxmir-energy.ru/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://gfgfgfg.dnswish.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://dfgdfgdfg.maxmir-energy.ru/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://ghhgvgvgh.maxmir-energy.ru/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
