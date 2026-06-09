@@ -1,11 +1,8 @@
 {
-  "checked_at": "2026-06-09T14:38:14Z",
-  "checked_at_display": "2026-06-09 14:38 UTC",
+  "checked_at": "2026-06-09T20:01:52Z",
+  "checked_at_display": "2026-06-09 20:01 UTC",
   "added_count": 0,
-  "removed_count": 2,
+  "removed_count": 0,
   "added_links": [],
-  "removed_links": [
-    "https://bull.interluxvs.com",
-    "https://pls.speed.i.need.this.interluxvs.com"
-  ]
+  "removed_links": []
 }
