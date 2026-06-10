@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r187",
-    "last_updated": "June 09, 2026",
+    "revision": "r188",
+    "last_updated": "June 10, 2026",
     "unsorted_total": 1981,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
     "update_notice": "Added mirror links and embed support; maintenance fixes and updated filter data.",
@@ -103,16 +103,25 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-10T09:47:16Z",
-    "checked_at_display": "2026-06-10 09:47 UTC",
+    "checked_at": "2026-06-10T15:21:17Z",
+    "checked_at_display": "2026-06-10 15:21 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 2,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://bestspark.dynamic-dns.info",
+      "https://bestspark.dynamisches-dns.de"
+    ]
   },
   "failing_links": {
-    "https://bestspark.dynamic-dns.info": 2,
-    "https://bestspark.dynamisches-dns.de": 2
+    "https://life.dunia-artikel.com": 1,
+    "https://xca8u8nxci3l.lvcomponentes.com.br": 1,
+    "https://freelessons.sismonda.com.ar": 1,
+    "https://learning.sismonda.com.ar": 1,
+    "https://learning-canvas.fun.sismonda.com.ar": 1,
+    "https://xylora.sismonda.com.ar": 1,
+    "https://greatest.sismonda.com.ar": 1,
+    "https://relic-is.best.sismonda.com.ar": 1
   },
   "links": [
     {
@@ -46674,44 +46683,6 @@
       ],
       "locked": "",
       "link": "https://aspen-storage.cc.cd/actual.html",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Bestspark",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://bestspark.dynamic-dns.info/",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Bestspark",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://bestspark.dynamisches-dns.de/",
       "found": "6/7/2026",
       "username": "N/A",
       "password": "N/A",
