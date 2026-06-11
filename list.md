@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.2 | Released: May 31, 2026
-> r188 | Last Updated: June 10, 2026
+> r189 | Last Updated: June 11, 2026
 > Total onsite links: 4525 (2549 sorted + 1976 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -759,7 +759,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 37 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 35 |
 
 > [!IMPORTANT]
 > Lunar does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -783,7 +783,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://lectures.vta-international.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://frogs.beltfrog.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://mathew.recreatinganew.com | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://life.dunia-artikel.com | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://ramzankhanyt.lervs.ro | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://learning.academinctools.pw | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://best.choperascabodefrio.com.ar | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
@@ -805,7 +804,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://growth.hjshop.net/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://learning.hkieca.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://studying.nigelupchurch.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://freelessons.sismonda.com.ar/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 👻 Ghost
 > [!NOTE]
@@ -1789,7 +1787,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 55 |
+> | Proxy/Games | unknown | unknown | 54 |
 
 > [!IMPORTANT]
 > StudyHub does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1839,7 +1837,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://study.scrapitsoftware.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://united.scrapitsoftware.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cipherop.2660010.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://learning.sismonda.com.ar | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://vcsa.srivaishnavam.org.au | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://vcsa.grahammurryinsuranceagency.com | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://vcsagoat.notariamelipilla.cl/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
@@ -2280,7 +2277,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy | unknown | unknown | 116 |
+> | Proxy | unknown | unknown | 115 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -2300,7 +2297,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://hiqz3eb060c9.undergames.cl | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://canlite.mymcreditos.com.ar | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://update.update.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://xca8u8nxci3l.lvcomponentes.com.br | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://siky8osm1f6e.whatastupididea.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://update.update.update.admin.dev.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://update.update.update.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
@@ -2654,7 +2650,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | unknown | 31 |
+> | Proxy/Games | captcha | unknown | 29 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -2682,8 +2678,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://did-youknow-that-vacmadethislink.lol.rednutricional.cl | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://bomboclat-wallahi.urpalestinian.tokeslaszlo.eu | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://relic-summer.funmath.installgentoo.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://learning-canvas.fun.sismonda.com.ar | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://relic-is.best.sismonda.com.ar/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://education.fun-school.globalgeocad.ro/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://nirbytesrelic-sanadnm.blixtrader.com | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://iizadfpqhs.diyhomeadvisors.com | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -3088,7 +3082,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 93 |
+> | Proxy/Games | unknown | unknown | 92 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -3140,7 +3134,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://xylora.god.domain.2660010.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://xylora.nigelupchurch.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://xylora.scrapitsoftware.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://xylora.sismonda.com.ar/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://xylora.d3.ro/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://xylora.hkieca.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://xylora.hjshop.net/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -3275,13 +3268,12 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 9 |
+> | pending | pending | pending | 8 |
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
-| | https://greatest.sismonda.com.ar | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://learning.2660010.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://neatenglish.hjshop.net | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://smartstudy.2660010.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
