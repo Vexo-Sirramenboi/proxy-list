@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r190",
+    "revision": "r191",
     "last_updated": "June 11, 2026",
     "unsorted_total": 1989,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
@@ -103,100 +103,22 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-11T10:14:30Z",
-    "checked_at_display": "2026-06-11 10:14 UTC",
+    "checked_at": "2026-06-11T15:44:48Z",
+    "checked_at_display": "2026-06-11 15:44 UTC",
     "added_count": 0,
-    "removed_count": 79,
+    "removed_count": 5,
     "added_links": [],
     "removed_links": [
-      "https://trending.kutsenko.cc",
-      "https://byodisthebest.hobbygame.dev",
-      "https://educational.eclipsecastellon.net",
-      "https://subnirbytes.310386.xyz",
-      "https://nirbytesvapor.hr24.ro",
-      "https://climatechangeeducationexchange.org",
-      "https://happynewdestenation.pintravel.ro",
-      "https://10.tellurideeducationassociation.org",
-      "https://5.tellurideeducationassociation.org",
-      "https://8.tellurideeducationassociation.org",
-      "https://1.tellurideeducationassociation.org",
-      "https://ess-education.org",
-      "https://oil-america.lervs.ro",
-      "https://oil-america2.lervs.ro",
-      "https://lions.rome1.lervs.ro",
-      "https://pies.lol1.lervs.ro",
-      "https://pies.lol2.lervs.ro",
-      "https://1.useducationcenter.org",
-      "https://10.useducationcenter.org",
-      "https://2.useducationcenter.org",
-      "https://3.useducationcenter.org",
-      "https://4.useducationcenter.org",
-      "https://5.useducationcenter.org",
-      "https://6.useducationcenter.org",
-      "https://7.useducationcenter.org",
-      "https://8.useducationcenter.org",
-      "https://9.useducationcenter.org",
-      "https://dkfjdf.instructure.onl",
-      "https://educationexchangeltd.org",
-      "https://fdjkfjlk.useducationcenter.org",
-      "https://instructure.onl",
-      "https://joe.instructure.onl",
-      "https://kfjdkjfs.instructure.onl",
-      "https://tellurideeducationassociation.org",
-      "https://relaxedwater.goroshka.ru",
-      "https://jdfkdf.sealsareintelligent.lat",
-      "https://gmail.sealsareintelligent.lat",
-      "https://vapor.sealsareintelligent.lat",
-      "https://sheets.sealsareintelligent.lat",
-      "https://mgaacacdn.sealsareintelligent.lat",
-      "https://docs.pipseducationfund.org",
-      "https://pipseducationfund.org",
-      "https://sealsareintelligent.lat",
-      "https://watervapor.space",
-      "https://nahidontneed.help",
-      "https://grammar.techmaxasia.com",
-      "https://thealbanyfundforeducation.org",
-      "https://silver.dinocol.co.uk",
-      "https://lions.rome2.lervs.ro",
-      "https://lions.rome3.lervs.ro",
-      "https://oil-america3.lervs.ro",
-      "https://oil-america4.lervs.ro",
-      "https://oil-america5.lervs.ro",
-      "https://pies.lol3.lervs.ro",
-      "https://pies.lol4.lervs.ro",
-      "https://pies.lol5.lervs.ro",
-      "https://rocky.pionr.lervs.ro",
-      "https://rocky.pionr1.lervs.ro",
-      "https://ingredientsforeducation.org",
-      "https://ffa-school.easternstamps.com",
-      "https://ivanhasbigbuns.richz.createdthis.wikidelia.net",
-      "https://mathlessonsfork12.wikidelia.net",
-      "https://timer.wikidelia.net",
-      "https://water.zwanenwater48.nl",
-      "https://mededucation.org",
-      "https://alexlovedih.chickenkiller.com",
-      "https://159.195.59.55.local-ip.sh",
-      "https://yoko.wheels.for.tire.is",
-      "https://trucks.eemotors.uk",
-      "https://wildcard.vaporized.help",
-      "https://wildcard.mtviewbaptist.org",
-      "https://welcome-to-learning.fredrikkivi.se",
-      "https://ohgodplease.help",
-      "https://vapor.ropavaporopav.cyou",
-      "https://top-medical-schools.org",
-      "https://vapor.dmvdriverseducation.org",
-      "https://ropav.dmvdriverseducation.org",
-      "https://1.dmvdriverseducation.org",
-      "https://banana-web.asiaherewe.com"
+      "https://extralearning.murshed.xyz",
+      "https://zennedu.github.io/math",
+      "https://t9os.space/class",
+      "https://learn-to-program.thejeephellorip.workers.dev/class.html",
+      "https://aspen-storage.cc.cd/actual.html"
     ]
   },
   "failing_links": {
-    "https://cdn.jsdelivr.net/gh/carls-math-class/126849-science@main/doesn.svg": 1,
-    "https://extralearning.murshed.xyz": 2,
-    "https://zennedu.github.io/math": 2,
-    "https://t9os.space/class": 2,
-    "https://learn-to-program.thejeephellorip.workers.dev/class.html": 2,
-    "https://aspen-storage.cc.cd/actual.html": 2
+    "https://51.222.206.184.devns.me": 1,
+    "https://ahmadsgame.duckdns.org": 1
   },
   "links": [
     {
@@ -2625,30 +2547,6 @@
       ],
       "locked": "",
       "link": "https://extralearning.okilbahadurpun.com.np/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⭐ DayDream X",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp, captcha, reflux",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp",
-        "captcha",
-        "reflux"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://extralearning.murshed.xyz/",
       "found": "4/30/2026",
       "username": "N/A",
       "password": "N/A",
@@ -43470,21 +43368,6 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "🧘 Zen",
-      "category": "Games",
-      "capabilities": "N/A",
-      "capability_tags": [],
-      "protocols": "N/A",
-      "protocol_tags": [],
-      "locked": "",
-      "link": "https://zennedu.github.io/math",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
       "provider": "🔥 Flamed Lite",
       "category": "Games",
       "capabilities": "N/A",
@@ -44290,44 +44173,6 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "T9",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://t9os.space/class",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "T9",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://learn-to-program.thejeephellorip.workers.dev/class.html",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
       "provider": "Ford",
       "category": "pending",
       "capabilities": "pending",
@@ -45081,25 +44926,6 @@
       ],
       "locked": "",
       "link": "https://whiskermew73.bridgeportmath.org/",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Aspen",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://aspen-storage.cc.cd/actual.html",
       "found": "6/7/2026",
       "username": "N/A",
       "password": "N/A",
