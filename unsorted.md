@@ -1984,3 +1984,11 @@ Move links from here into `list.md` once sorted.
 - http://okvrlsgvsq.pcrage2000.com
 - http://welcome-to-learning.fredrikkivi.se
 - https://boredom.chiangmaiorganics.com
+- https://1.dmvdriverseducation.org
+- https://byodisthebest.hobbygame.dev
+- https://happynewdestenation.pintravel.ro
+- https://nahidontneed.help
+- https://ohgodplease.help
+- https://ropav.dmvdriverseducation.org
+- https://vapor.dmvdriverseducation.org
+- https://vapor.ropavaporopav.cyou
