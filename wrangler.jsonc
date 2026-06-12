@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "proxy-list",
+  "name": "clever-iwbh3-learning-extension",
   "compatibility_date": "2026-05-31",
   "assets": {
     "directory": "./docs"
