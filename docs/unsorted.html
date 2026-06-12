@@ -244,7 +244,7 @@
     function setHtml(el, html) {
       if (!el) return;
       const raw = html == null ? "" : String(html);
-      el.innerHTML = window.DOMPurify ? DOMPurify.sanitize(raw) : raw;
+      el.innerHTML = window.DOMPurify ? DOMPurify.sanitize(raw) : "";
     }
 
     function setContentLoadingProgress(percent, message) {

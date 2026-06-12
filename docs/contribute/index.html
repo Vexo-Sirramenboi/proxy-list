@@ -236,6 +236,11 @@
     </div>
   </main>
 
+  <script
+    src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"
+    integrity="sha384-+VfUPEb0PdtChMwmBcBmykRMDd+v6D/oFmB3rZM/puCMDYcIvF968OimRh4KQY9a"
+    crossorigin="anonymous"
+  ></script>
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
   <script src="../firebase-config.example.js"></script>
@@ -247,6 +252,16 @@
         .replace(/</g, "&lt;")
         .replace(/>/g, "&gt;")
         .replace(/"/g, "&quot;");
+    }
+
+    function escapeAttr(s) {
+      return escapeHtml(s).replace(/'/g, "&#39;");
+    }
+
+    function setHtml(el, html) {
+      if (!el) return;
+      const raw = html == null ? "" : String(html);
+      el.innerHTML = window.DOMPurify ? DOMPurify.sanitize(raw) : "";
     }
 
     function normalizeContributorName(raw) {
@@ -304,23 +319,26 @@
 
     function renderContributorRows(bodyEl, list) {
       cachedContributorList = list;
-      bodyEl.innerHTML = list
-        .map((r) => {
-          const label = escapeHtml(r.name);
-          const youMark = contributorMatchesViewer(r) ? ' <span class="contributor-you">YOU</span>' : "";
-          const nameCell = r.href
-            ? '<a href="' + escapeHtml(r.href) + '" rel="noopener noreferrer" target="_blank">' + label + "</a>" + youMark
-            : label + youMark;
-          const listHref = escapeHtml(mainListSearchHrefForContributor(r.name));
-          const countCell =
-            '<a class="count-link" href="' +
-            listHref +
-            '" title="Open the main list filtered to this contributor&#39;s links">' +
-            r.count +
-            "</a>";
-          return "<tr><td>" + nameCell + '</td><td class="count">' + countCell + "</td></tr>";
-        })
-        .join("");
+      setHtml(
+        bodyEl,
+        list
+          .map((r) => {
+            const label = escapeHtml(r.name);
+            const youMark = contributorMatchesViewer(r) ? ' <span class="contributor-you">YOU</span>' : "";
+            const nameCell = r.href
+              ? '<a href="' + escapeAttr(r.href) + '" rel="noopener noreferrer" target="_blank">' + label + "</a>" + youMark
+              : label + youMark;
+            const listHref = escapeAttr(mainListSearchHrefForContributor(r.name));
+            const countCell =
+              '<a class="count-link" href="' +
+              listHref +
+              '" title="Open the main list filtered to this contributor&#39;s links">' +
+              r.count +
+              "</a>";
+            return "<tr><td>" + nameCell + '</td><td class="count">' + countCell + "</td></tr>";
+          })
+          .join("")
+      );
     }
 
     function refreshContributorYouMarks() {
@@ -367,7 +385,7 @@
               .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
 
             if (!list.length) {
-              bodyEl.innerHTML = '<tr><td class="muted" colspan="2">No contributors found yet.</td></tr>';
+              setHtml(bodyEl, '<tr><td class="muted" colspan="2">No contributors found yet.</td></tr>');
               metaEl.textContent = "0 contributors";
               return;
             }
@@ -405,7 +423,7 @@
           .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
 
         if (!list.length) {
-          bodyEl.innerHTML = '<tr><td class="muted" colspan="2">No contributors found yet.</td></tr>';
+          setHtml(bodyEl, '<tr><td class="muted" colspan="2">No contributors found yet.</td></tr>');
           metaEl.textContent = "0 contributors";
           return;
         }
@@ -415,10 +433,12 @@
         metaEl.textContent =
           list.length + " contributors • " + totalRows + " links on the list (live count)";
       } catch (err) {
-        bodyEl.innerHTML =
+        setHtml(
+          bodyEl,
           '<tr><td class="muted" colspan="2">Failed to load contributors. ' +
-          escapeHtml(err && err.message ? err.message : String(err)) +
-          "</td></tr>";
+            escapeHtml(err && err.message ? err.message : String(err)) +
+            "</td></tr>"
+        );
         metaEl.textContent = "Could not load contributor summary";
       }
     }

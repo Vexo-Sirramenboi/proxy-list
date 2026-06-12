@@ -1659,7 +1659,7 @@
      */
     function sanitizeTheadInnerFragment(raw) {
       if (!raw) return "";
-      if (!window.DOMPurify) return raw;
+      if (!window.DOMPurify) return "";
       const clean = DOMPurify.sanitize("<table><thead>" + raw + "</thead></table>");
       const tpl = document.createElement("template");
       tpl.innerHTML = clean;
@@ -1669,7 +1669,7 @@
 
     function sanitizeTbodyInnerFragment(raw) {
       if (!raw) return "";
-      if (!window.DOMPurify) return raw;
+      if (!window.DOMPurify) return "";
       const clean = DOMPurify.sanitize("<table><tbody>" + raw + "</tbody></table>");
       const tpl = document.createElement("template");
       tpl.innerHTML = clean;
@@ -1681,7 +1681,7 @@
     function setHtml(el, html) {
       if (!el) return;
       const raw = html == null ? "" : String(html);
-      let out = raw;
+      let out = "";
       if (window.DOMPurify) {
         const tag = el.tagName;
         if (tag === "THEAD") {
@@ -1706,9 +1706,25 @@
           clean = DOMPurify.sanitize(raw);
         }
       } else {
-        clean = raw;
+        clean = "";
       }
       el.insertAdjacentHTML(position, clean);
+    }
+
+    function cssEscapeAttrValue(value) {
+      const s = String(value == null ? "" : value);
+      if (typeof CSS !== "undefined" && typeof CSS.escape === "function") return CSS.escape(s);
+      return escapeAttr(s);
+    }
+
+    function embedPostMessageTargetOrigin() {
+      try {
+        if (document.referrer) {
+          const ref = new URL(document.referrer);
+          if (ref.protocol === "https:" || ref.protocol === "http:") return ref.origin;
+        }
+      } catch (_) {}
+      return window.location.origin;
     }
     let linkLensData = {};
     /** Set true after linklens.json has been fetched at least once (lazy). */
@@ -1850,7 +1866,7 @@
         document.body ? document.body.scrollHeight : 0
       );
       try {
-        window.parent.postMessage({ type: "proxy-list-embed", height: h }, "*");
+        window.parent.postMessage({ type: "proxy-list-embed", height: h }, embedPostMessageTargetOrigin());
       } catch (_) {}
     }
 
@@ -1939,17 +1955,21 @@
         }
         if (subEl) {
           if (folderViewState === "loading") {
-            subEl.innerHTML = 'Loading folder… <a href="./">All links</a>';
+            setHtml(subEl, 'Loading folder… <a href="./">All links</a>');
           } else if (folderViewState === "denied") {
-            subEl.innerHTML =
-              'This folder is private — only the owner can open it. <a href="./login/">Sign in</a> as the owner or ask them to set it to Public / Unlisted. <a href="./">Full list</a>.';
+            setHtml(
+              subEl,
+              'This folder is private — only the owner can open it. <a href="./login/">Sign in</a> as the owner or ask them to set it to Public / Unlisted. <a href="./">Full list</a>.'
+            );
           } else if (folderViewState === "missing") {
-            subEl.innerHTML = 'No such folder. <a href="./">Back to the list</a>';
+            setHtml(subEl, 'No such folder. <a href="./">Back to the list</a>');
           } else {
             const pub = folderDocSnap ? folderPrivacyPillInnerHtml(folderDocSnap) : "";
-            subEl.innerHTML =
+            setHtml(
+              subEl,
               pub +
-              ' <span class="folder-live-pill">Live</span> — updates from the owner appear automatically. <a href="./">Show all links</a>';
+                ' <span class="folder-live-pill">Live</span> — updates from the owner appear automatically. <a href="./">Show all links</a>'
+            );
           }
         }
         const ft =
@@ -1961,14 +1981,16 @@
       } else if (savedLinksViewOnly) {
         if (titleEl) titleEl.textContent = "Saved links";
         if (subEl) {
-          subEl.innerHTML =
-            'Links you starred on the list. <a href="./">Show all links</a> · <span class="sub">Folders: use “Your folders” below when signed in.</span>';
+          setHtml(
+            subEl,
+            'Links you starred on the list. <a href="./">Show all links</a> · <span class="sub">Folders: use “Your folders” below when signed in.</span>'
+          );
         }
         document.title = "Saved links | Proxy list";
         hideMostOpenedSection();
       } else {
         if (titleEl) titleEl.textContent = "Proxy list";
-        if (subEl && headerSubDefaultHtml) subEl.innerHTML = headerSubDefaultHtml;
+        if (subEl && headerSubDefaultHtml) setHtml(subEl, headerSubDefaultHtml);
         document.title = "Proxy list";
       }
       const backMain = $("sidebarBackToMainList");
@@ -3135,12 +3157,12 @@
 
     function repaintLinkRatingCellsForHash(hash) {
       if (!hash) return;
-      const sel = 'td.link-rating-cell[data-rating-hash="' + hash.replace(/"/g, "") + '"]';
+      const sel = 'td.link-rating-cell[data-rating-hash="' + cssEscapeAttrValue(hash) + '"]';
       document.querySelectorAll(sel).forEach((td) => {
         const tr = td.closest("tr");
         const a = tr && tr.querySelector("a.js-link-summary[data-link]");
         const linkUrl = a ? a.getAttribute("data-link") : "";
-        td.innerHTML = ratingCellInnerHtmlForLinkUrl(linkUrl);
+        setHtml(td, ratingCellInnerHtmlForLinkUrl(linkUrl));
       });
     }
 
@@ -3204,7 +3226,7 @@
     async function refreshFolderRatingMount(folderId) {
       const mount = $("folderRatingMount");
       if (!mount || !folderId || !firebaseDb) return;
-      mount.innerHTML = '<span class="sub">…</span>';
+      setHtml(mount, '<span class="sub">…</span>');
       try {
         const aggSnap = await firebaseDb.collection("folderRatings").doc(folderId).get();
         if (aggSnap.exists) {
@@ -3222,10 +3244,10 @@
             folderViewRatingSelf = v === 1 ? 1 : v === -1 ? -1 : 0;
           }
         }
-        mount.innerHTML = folderRatingBarInnerHtml(folderId);
+        setHtml(mount, folderRatingBarInnerHtml(folderId));
       } catch (err) {
         console.warn("[proxy-list] Folder rating load failed", err);
-        mount.innerHTML = '<span class="sub">—</span>';
+        setHtml(mount, '<span class="sub">—</span>');
       }
     }
 
@@ -3288,7 +3310,7 @@
       folderViewRatingAgg = { up: finalUp, down: finalDown };
       folderViewRatingSelf = nextVote === 0 ? 0 : nextVote;
       const mount = $("folderRatingMount");
-      if (mount) mount.innerHTML = folderRatingBarInnerHtml(id);
+      if (mount) setHtml(mount, folderRatingBarInnerHtml(id));
     }
 
     async function handleFolderRatingButtonClick(folderId, clickedVal) {
@@ -3912,13 +3934,15 @@
     }
 
     function buildFolderShareUrl(folderId) {
+      const id = sanitizeFolderDocId(folderId);
+      if (!id) return "./";
       try {
         const u = new URL(window.location.href);
         u.search = "";
-        u.searchParams.set("folder", folderId);
+        u.searchParams.set("folder", id);
         return u.toString();
       } catch (_) {
-        return "./?folder=" + encodeURIComponent(folderId);
+        return "./?folder=" + encodeURIComponent(id);
       }
     }
 
@@ -4163,7 +4187,7 @@
       if (start >= end) return;
       const slice = folderTrustedPickerMatches.slice(start, end);
       folderTrustedPickerOffset = end;
-      inner.insertAdjacentHTML("beforeend", slice.map(folderTrustedPickerRowHtml).join(""));
+      insertAdjacentHtmlSafe(inner, "beforeend", slice.map(folderTrustedPickerRowHtml).join(""));
     }
 
     function updateFolderTrustedPickerMeta() {
