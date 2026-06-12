@@ -103,32 +103,24 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-12T14:47:50Z",
-    "checked_at_display": "2026-06-12 14:47 UTC",
+    "checked_at": "2026-06-12T20:02:25Z",
+    "checked_at_display": "2026-06-12 20:02 UTC",
     "added_count": 0,
-    "removed_count": 14,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://neatgeo.heidibranlund.com",
-      "https://hyperliterature.heidibranlund.com",
-      "https://sharpphysics.heidibranlund.com",
-      "https://alphareading.heidibranlund.com",
-      "https://quickwriting.heidibranlund.com",
-      "https://xylora.math.science.heidibranlund.com",
-      "https://learning.2660010.com",
-      "https://neatenglish.hjshop.net",
-      "https://smartstudy.2660010.com",
-      "https://cleanenglish.hjshop.net",
-      "https://clases.romppais.ca",
-      "https://greatest.eilong.com",
-      "https://smartbio.bakeryos.net",
-      "https://redlight.greenbaynz.com"
-    ]
+    "removed_links": []
   },
   "failing_links": {
-    "https://15.204.247.166.devns.me": 1,
-    "https://best-math-hub.pages.dev": 1,
-    "https://teachme.codeshs.org": 1
+    "https://hvtzw.reformarchive.com": 1,
+    "http://sni.educations.mytunnel.org": 1,
+    "https://quizizz.com/_media/gn-math/3a218feb-8a3a-4d35-8022-6ac73d9f108e-v2": 1,
+    "https://wayground.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 1,
+    "https://quizizz.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 1,
+    "https://wayground.com/_media/quizzes/120166d9-62a4-4fcc-9b3c-9114f05336f9-v2": 1,
+    "https://edu.worldplus-intl.org": 1,
+    "https://quizizz.com/_media/uploadedFiles/9e0c0d18-c975-497c-b410-fc7dae5fafca-v2": 1,
+    "https://media.quizizz.com/_mdserver/main/media/resource/gs/quizizz-media/uploadedFiles/37839e85-49a0-4da0-ada9-092ff46f3f2e-v2": 1,
+    "https://wayground.com/_media/uploadedFiles/37839e85-49a0-4da0-ada9-092ff46f3f2e-v2": 1
   },
   "links": [
     {
