@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r192",
+    "revision": "r193",
     "last_updated": "June 12, 2026",
     "unsorted_total": 1989,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
@@ -103,43 +103,32 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-12T10:02:10Z",
-    "checked_at_display": "2026-06-12 10:02 UTC",
+    "checked_at": "2026-06-12T14:47:50Z",
+    "checked_at_display": "2026-06-12 14:47 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 14,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://neatgeo.heidibranlund.com",
+      "https://hyperliterature.heidibranlund.com",
+      "https://sharpphysics.heidibranlund.com",
+      "https://alphareading.heidibranlund.com",
+      "https://quickwriting.heidibranlund.com",
+      "https://xylora.math.science.heidibranlund.com",
+      "https://learning.2660010.com",
+      "https://neatenglish.hjshop.net",
+      "https://smartstudy.2660010.com",
+      "https://cleanenglish.hjshop.net",
+      "https://clases.romppais.ca",
+      "https://greatest.eilong.com",
+      "https://smartbio.bakeryos.net",
+      "https://redlight.greenbaynz.com"
+    ]
   },
   "failing_links": {
-    "https://strawberry.eclipsecastellon.net": 1,
-    "https://vcsa-strawberry.eminescusm.ro": 1,
-    "https://living.vjason.com": 1,
-    "https://strawberry.vjason.com": 1,
-    "https://news.krishokbarta24.com": 1,
-    "https://guardian.trhd.ro": 1,
-    "https://ciphernetwork.rkimport.com": 1,
-    "https://flowcharts.monedita.cl": 1,
-    "https://contentkeep.browbar.ar": 1,
-    "https://strawberryiscool.aarikpokras.com": 1,
-    "https://strawberry.autos": 1,
-    "https://strawberry.chakadmap.ir": 1,
-    "https://climate.weatherpixel.com": 1,
-    "https://living.everything-cold.co.uk": 1,
-    "https://cdn.jsdelivr.net/gh/TwiLabs/daydreaming/dist/index.svg": 1,
-    "https://neatgeo.heidibranlund.com": 2,
-    "https://hyperliterature.heidibranlund.com": 2,
-    "https://sharpphysics.heidibranlund.com": 2,
-    "https://alphareading.heidibranlund.com": 2,
-    "https://quickwriting.heidibranlund.com": 2,
-    "https://xylora.math.science.heidibranlund.com": 2,
-    "https://learning.2660010.com": 2,
-    "https://neatenglish.hjshop.net": 2,
-    "https://smartstudy.2660010.com": 2,
-    "https://cleanenglish.hjshop.net": 2,
-    "https://clases.romppais.ca": 2,
-    "https://greatest.eilong.com": 2,
-    "https://smartbio.bakeryos.net": 2,
-    "https://redlight.greenbaynz.com": 2
+    "https://15.204.247.166.devns.me": 1,
+    "https://best-math-hub.pages.dev": 1,
+    "https://teachme.codeshs.org": 1
   },
   "links": [
     {
@@ -7138,101 +7127,6 @@
       "locked": "",
       "link": "https://kupno.wikidelia.net",
       "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "👤 Shadow",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://neatgeo.heidibranlund.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "👤 Shadow",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://hyperliterature.heidibranlund.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "👤 Shadow",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://sharpphysics.heidibranlund.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "👤 Shadow",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://alphareading.heidibranlund.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "👤 Shadow",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://quickwriting.heidibranlund.com/",
-      "found": "5/9/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "1NobleCyber",
@@ -42013,25 +41907,6 @@
         "unknown"
       ],
       "locked": "",
-      "link": "https://xylora.math.science.heidibranlund.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
       "link": "https://xylora.rust.rusticrivergear.com/",
       "found": "5/9/2026",
       "username": "N/A",
@@ -43712,158 +43587,6 @@
       ],
       "locked": "",
       "link": "https://upinlife.hadtea.com/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Parcoil",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://learning.2660010.com/",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Parcoil",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://neatenglish.hjshop.net",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Parcoil",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://smartstudy.2660010.com/",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Parcoil",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://cleanenglish.hjshop.net",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Parcoil",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://clases.romppais.ca/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Parcoil",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://greatest.eilong.com/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Parcoil",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://smartbio.bakeryos.net/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Parcoil",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://redlight.greenbaynz.com/",
       "found": "5/22/2026",
       "username": "N/A",
       "password": "N/A",
