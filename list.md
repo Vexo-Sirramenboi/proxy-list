@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.2 | Released: May 31, 2026
-> r193 | Last Updated: June 12, 2026
+> r194 | Last Updated: June 13, 2026
 > Total onsite links: 4525 (2549 sorted + 1976 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -3323,7 +3323,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 21 |
+> | pending | pending | pending | 20 |
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
 
@@ -3337,7 +3337,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://raw.githack.com/Justin-City-Games-And-More/Singlefile/main/index.html | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdelivr.net/gh/Stockable/sites@main/xcloud.svg | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://loremgroup.org/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://www.loremgroup.org/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://media.quizizz.com/_mdserver/main/media/resource/gs/quizizz-media/uploadedFiles/37839e85-49a0-4da0-ada9-092ff46f3f2e-v2 | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://wayground.com/_media/uploadedFiles/37839e85-49a0-4da0-ada9-092ff46f3f2e-v2 | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://vps-62802f97.vps.ovh.us/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
