@@ -103,17 +103,17 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-13T13:47:46Z",
-    "checked_at_display": "2026-06-13 13:47 UTC",
+    "checked_at": "2026-06-13T19:17:06Z",
+    "checked_at_display": "2026-06-13 19:17 UTC",
     "added_count": 0,
-    "removed_count": 1,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://www.loremgroup.org"
-    ]
+    "removed_links": []
   },
   "failing_links": {
-    "https://cdn.jsdelivr.net/gh/carls-math-class/160164-computerscience@main/doesn.svg": 1
+    "https://cdn.jsdelivr.net/gh/TwiLabs/art/dist/index.svg": 1,
+    "https://stillchasing.thuexetaxi.com": 1,
+    "https://cdn.jsdelivr.net/gh/avaisadev/github.com/index.svg": 1
   },
   "links": [
     {
