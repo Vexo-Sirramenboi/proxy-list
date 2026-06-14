@@ -103,17 +103,29 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-13T19:17:06Z",
-    "checked_at_display": "2026-06-13 19:17 UTC",
+    "checked_at": "2026-06-14T03:26:29Z",
+    "checked_at_display": "2026-06-14 03:26 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
   "failing_links": {
-    "https://cdn.jsdelivr.net/gh/TwiLabs/art/dist/index.svg": 1,
-    "https://stillchasing.thuexetaxi.com": 1,
-    "https://cdn.jsdelivr.net/gh/avaisadev/github.com/index.svg": 1
+    "https://stillchasing.thuexetaxi.com": 2,
+    "https://passport.easternstamps.com": 1,
+    "https://hantavirus.poloniacruz.com": 1,
+    "https://three.maths.paraclubtraisental.at": 1,
+    "https://loremgroup.org": 1,
+    "https://vps-62802f97.vps.ovh.us": 1,
+    "https://link.portek.net.au": 1,
+    "https://api.waterloomath.com": 1,
+    "https://loremgroup.onlidigital.com": 1,
+    "https://donttouch.my-ns.com": 1,
+    "https://earth.bentnailfarm4121.com": 1,
+    "https://ilovemath.online": 1,
+    "https://www.ilovemath.online": 1,
+    "https://inknetworks.site": 1,
+    "https://www.inknetworks.site": 1
   },
   "links": [
     {
