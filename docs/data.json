@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r194",
-    "last_updated": "June 13, 2026",
+    "revision": "r195",
+    "last_updated": "June 14, 2026",
     "unsorted_total": 1989,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
     "update_notice": "Added mirror links and embed support; maintenance fixes and updated filter data.",
@@ -103,29 +103,38 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-14T03:26:29Z",
-    "checked_at_display": "2026-06-14 03:26 UTC",
+    "checked_at": "2026-06-14T09:25:13Z",
+    "checked_at_display": "2026-06-14 09:25 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 1,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://stillchasing.thuexetaxi.com"
+    ]
   },
   "failing_links": {
-    "https://stillchasing.thuexetaxi.com": 2,
-    "https://passport.easternstamps.com": 1,
-    "https://hantavirus.poloniacruz.com": 1,
-    "https://three.maths.paraclubtraisental.at": 1,
-    "https://loremgroup.org": 1,
-    "https://vps-62802f97.vps.ovh.us": 1,
-    "https://link.portek.net.au": 1,
-    "https://api.waterloomath.com": 1,
-    "https://loremgroup.onlidigital.com": 1,
-    "https://donttouch.my-ns.com": 1,
-    "https://earth.bentnailfarm4121.com": 1,
-    "https://ilovemath.online": 1,
-    "https://www.ilovemath.online": 1,
-    "https://inknetworks.site": 1,
-    "https://www.inknetworks.site": 1
+    "https://cdn.jsdelivr.net/gh/NightProxy/DD-Static/dist/index.svg": 1,
+    "https://dwfo7z3f9nigf.cloudfront.net/index.html": 1,
+    "https://d1ks901xvjj2p6.cloudfront.net/index.html": 1,
+    "https://div7ikqm4o515.cloudfront.net": 1,
+    "https://cdn.jsdelivr.net/gh/PeteZah-G/copy-2/main.svg": 1,
+    "https://cdn.jsdelivr.net/gh/TwiLabs/daydreaming/dist/index.svg": 1,
+    "https://codehs.com/sandbox/id/html-ZhExDL/run": 1,
+    "https://dlah6r0ddz4mx.cloudfront.net/index.html": 1,
+    "https://passport.easternstamps.com": 2,
+    "https://hantavirus.poloniacruz.com": 2,
+    "https://three.maths.paraclubtraisental.at": 2,
+    "https://loremgroup.org": 2,
+    "https://vps-62802f97.vps.ovh.us": 2,
+    "https://link.portek.net.au": 2,
+    "https://api.waterloomath.com": 2,
+    "https://loremgroup.onlidigital.com": 2,
+    "https://donttouch.my-ns.com": 2,
+    "https://earth.bentnailfarm4121.com": 2,
+    "https://ilovemath.online": 2,
+    "https://www.ilovemath.online": 2,
+    "https://inknetworks.site": 2,
+    "https://www.inknetworks.site": 2
   },
   "links": [
     {
@@ -22390,25 +22399,6 @@
       ],
       "locked": "",
       "link": "https://stillaintcall.callcentercuritiba.com.br",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🎮 Rosin",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://stillchasing.thuexetaxi.com",
       "found": "N/A",
       "username": "N/A",
       "password": "N/A",
