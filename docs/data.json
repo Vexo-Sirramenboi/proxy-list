@@ -103,30 +103,25 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-14T13:50:01Z",
-    "checked_at_display": "2026-06-14 13:50 UTC",
+    "checked_at": "2026-06-14T19:17:28Z",
+    "checked_at_display": "2026-06-14 19:17 UTC",
     "added_count": 0,
-    "removed_count": 14,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://passport.easternstamps.com",
-      "https://hantavirus.poloniacruz.com",
-      "https://three.maths.paraclubtraisental.at",
-      "https://loremgroup.org",
-      "https://vps-62802f97.vps.ovh.us",
-      "https://link.portek.net.au",
-      "https://api.waterloomath.com",
-      "https://loremgroup.onlidigital.com",
-      "https://donttouch.my-ns.com",
-      "https://earth.bentnailfarm4121.com",
-      "https://ilovemath.online",
-      "https://www.ilovemath.online",
-      "https://inknetworks.site",
-      "https://www.inknetworks.site"
-    ]
+    "removed_links": []
   },
   "failing_links": {
-    "https://15.204.247.166.devns.me": 1
+    "https://ethostulsa.org": 1,
+    "https://canva.link/gn-math": 1,
+    "https://cdn.jsdelivr.net/gh/TwiLabs/math/dist/index.svg": 1,
+    "https://cool67.allisons.org": 1,
+    "https://quizizz.com/_media/gn-math/3a218feb-8a3a-4d35-8022-6ac73d9f108e-v2": 1,
+    "https://wayground.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 1,
+    "https://quizizz.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 1,
+    "https://wayground.com/_media/quizzes/120166d9-62a4-4fcc-9b3c-9114f05336f9-v2": 1,
+    "https://quizizz.com/_media/uploadedFiles/9e0c0d18-c975-497c-b410-fc7dae5fafca-v2": 1,
+    "https://media.quizizz.com/_mdserver/main/media/resource/gs/quizizz-media/uploadedFiles/37839e85-49a0-4da0-ada9-092ff46f3f2e-v2": 1,
+    "https://wayground.com/_media/uploadedFiles/37839e85-49a0-4da0-ada9-092ff46f3f2e-v2": 1
   },
   "links": [
     {
