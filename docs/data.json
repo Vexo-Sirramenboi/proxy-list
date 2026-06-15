@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r197",
+    "revision": "r198",
     "last_updated": "June 15, 2026",
     "unsorted_total": 1990,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
@@ -103,129 +103,245 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-15T11:54:04Z",
-    "checked_at_display": "2026-06-15 11:54 UTC",
+    "checked_at": "2026-06-15T17:08:40Z",
+    "checked_at_display": "2026-06-15 17:08 UTC",
     "added_count": 0,
-    "removed_count": 1,
+    "removed_count": 53,
     "added_links": [],
     "removed_links": [
-      "https://cool67.allisons.org"
+      "https://edu.nextcomm.com.ar",
+      "https://xylora.research.about.dogs.valor.ar",
+      "https://xylora.testout.repuestoslibertad.cl",
+      "https://xylora.asturkiters.es",
+      "https://xylora.alalalal.com",
+      "https://xylora.rodzinnawiez.pl",
+      "https://xylora.ucdcanoeclub.com",
+      "https://xylora.pilith.com",
+      "https://xylora.nurah.com.my",
+      "https://xylora.sudandulal.com.np",
+      "https://xylora.camaradellibro.cl",
+      "https://xylora.makeupbuzz.co.uk",
+      "https://xylora.k0a1a.net",
+      "https://help.science.co.clever.com.alalalal.com",
+      "https://lszx.alalalal.com",
+      "https://cmadf.newkingdomglobal.com",
+      "https://science.experiment.anostudio.info",
+      "https://meals.airlinemeals.net",
+      "https://xylora.god.domain.2660010.com",
+      "https://xylora.nigelupchurch.com",
+      "https://xylora.scrapitsoftware.com",
+      "https://xylora.d3.ro",
+      "https://xylora.hkieca.com",
+      "https://xylora.hjshop.net",
+      "https://xylora.barkinseducationlearning.cfd",
+      "https://xylora.orbitnetworkss.org",
+      "https://muffin.bakeryos.net",
+      "https://muffins.eilong.com",
+      "https://muffin.best.romppais.ca",
+      "https://muffi.n.tire.is",
+      "https://xylora.cassanova.biz",
+      "https://v.meow.v.xylora.coosemansla.com",
+      "https://muffinz.abogaciadigital.ar",
+      "https://xylora.huangqirui.xyz",
+      "https://muffin.love.grei-grei.lt",
+      "https://sploy.pollsvspoly.com",
+      "https://bake.bakeryos.net",
+      "https://xylora.rustyfoundation.com",
+      "https://buyingmo.buymojatom.com",
+      "https://xylora.rcdx93.net",
+      "https://imdoingmywork.bryankrawetz.com",
+      "https://myteacherhatesme.dnswish.com",
+      "https://igotallfs.hosts.name",
+      "https://mymomleftme.fppagos.com",
+      "https://manimsoslay.elmirador360.com",
+      "https://xylora.bostoncareercounselor.com",
+      "https://yofu.c.ck.taii.toysland.hk",
+      "https://system.math.teachmetofish.net",
+      "https://studenteducationfund.org.gamalabs.net",
+      "https://xylora.studenteducationfund.org",
+      "https://stay-at.nmhotels.cfd",
+      "https://xylora.nmhotels.cfd",
+      "https://xy.muffin.lora.thebrittainlawfirm.com"
     ]
   },
   "failing_links": {
-    "https://dwfo7z3f9nigf.cloudfront.net/index.html": 1,
-    "https://d1ks901xvjj2p6.cloudfront.net/index.html": 1,
-    "https://files.copytek.cl": 1,
-    "https://app.codewave.com.np": 1,
-    "https://learn.morso-si.dk": 1,
-    "https://act.savequeechylake.org": 1,
-    "https://download.s-engine.com": 1,
-    "https://documentation.7btech.com": 1,
-    "https://learn.botsev.eu": 1,
-    "https://hosting.biec.com.np": 1,
-    "https://storytime.goodguysav.com": 1,
-    "https://read.nationalit.ru": 1,
-    "https://family.nembahadurraskoti.com.np": 1,
-    "https://status.xcloud.ar": 1,
-    "https://travel.national-birdshow.com": 1,
-    "https://k12edu.duckdns.org": 1,
-    "https://div7ikqm4o515.cloudfront.net": 1,
-    "https://bllymartw.lekhnathfb.com.np": 1,
-    "https://us.grumpyoldmen.us": 1,
-    "https://wiki.wikidelia.net": 1,
-    "https://blog.succeed.cl": 1,
-    "https://family.jessicacadotte.com": 1,
-    "https://purchase.halftech.com": 1,
-    "https://dev.cyber-ag.com": 1,
-    "https://recipies.dalicias.cl": 1,
-    "https://null-code.codewave.com.np": 1,
-    "https://dev.apa89.com": 1,
-    "https://updownyt.ytconverter.it": 1,
-    "https://cdn.adworldlog.com": 1,
-    "https://learn.sharptutor.net": 1,
-    "https://dev.amq.li": 1,
-    "https://gitlab.amq.ro": 1,
-    "https://sjfynycm3mzn.manolovici.ro": 1,
-    "https://hydration.zwanenwater48.nl": 1,
-    "https://launch.umlach.org": 1,
-    "https://app.cmyk-studio.com": 1,
-    "https://zlty.europeserv.org": 1,
-    "https://codehs.com/sandbox/id/html-ZhExDL/run": 1,
-    "https://edu.nextcomm.com.ar": 2,
-    "http://ipv6.bestar.sg": 1,
-    "http://dns.dnda.com.np": 1,
-    "https://xylora.research.about.dogs.valor.ar": 2,
-    "https://fishes.colloky.com.pe": 1,
-    "https://testing.notariamelipilla.cl": 1,
-    "https://exam.grahammurryinsuranceagency.com": 2,
-    "https://xylora.testout.repuestoslibertad.cl": 2,
-    "https://xylora.countertops.kwgranitecountertops.com": 2,
-    "https://xylora.asturkiters.es": 2,
-    "https://xylora.elymbmx.com": 2,
-    "https://xylora.alalalal.com": 2,
-    "https://xylora.rodzinnawiez.pl": 2,
-    "https://xylora.ucdcanoeclub.com": 2,
-    "https://xylora.pilith.com": 2,
-    "https://xylora.nurah.com.my": 2,
-    "https://xylora.sudandulal.com.np": 2,
-    "https://xylora.camaradellibro.cl": 2,
-    "https://xylora.makeupbuzz.co.uk": 2,
-    "https://xylora.k0a1a.net": 2,
-    "https://dlah6r0ddz4mx.cloudfront.net/index.html": 1,
-    "https://help.science.co.clever.com.alalalal.com": 2,
-    "https://lszx.alalalal.com": 2,
-    "https://cmadf.newkingdomglobal.com": 2,
-    "https://science.experiment.anostudio.info": 2,
-    "https://meals.airlinemeals.net": 2,
-    "https://xylora.god.domain.2660010.com": 2,
-    "https://xylora.nigelupchurch.com": 2,
-    "https://xylora.scrapitsoftware.com": 2,
-    "https://xylora.d3.ro": 2,
-    "https://xylora.hkieca.com": 2,
-    "https://xylora.hjshop.net": 2,
-    "https://xylora.barkinseducationlearning.cfd": 2,
-    "https://xylora.orbitnetworkss.org": 2,
-    "https://muffin.bakeryos.net": 2,
-    "https://muffins.eilong.com": 2,
-    "https://muffin.best.romppais.ca": 2,
-    "https://muffi.n.tire.is": 2,
-    "https://xylora.cassanova.biz": 2,
-    "https://v.meow.v.xylora.coosemansla.com": 2,
-    "https://muffinz.abogaciadigital.ar": 2,
-    "https://xylora.huangqirui.xyz": 2,
-    "https://muffin.love.grei-grei.lt": 2,
-    "https://sploy.pollsvspoly.com": 2,
-    "https://bake.bakeryos.net": 2,
-    "https://xylora.rustyfoundation.com": 2,
-    "https://buyingmo.buymojatom.com": 2,
-    "https://xylora.rcdx93.net": 2,
-    "https://imdoingmywork.bryankrawetz.com": 2,
-    "https://myteacherhatesme.dnswish.com": 2,
-    "https://igotallfs.hosts.name": 2,
-    "https://mymomleftme.fppagos.com": 2,
-    "https://manimsoslay.elmirador360.com": 2,
-    "https://xylora.bostoncareercounselor.com": 2,
-    "https://yofu.c.ck.taii.toysland.hk": 2,
-    "https://system.math.teachmetofish.net": 2,
-    "https://acting.art-motel.com": 1,
-    "https://historical.eminescusm.ro": 1,
-    "https://studenteducationfund.org.gamalabs.net": 2,
-    "https://xylora.studenteducationfund.org": 2,
-    "https://stay-at.nmhotels.cfd": 2,
-    "https://xylora.nmhotels.cfd": 2,
-    "https://ck.gen1.srivaishnavam.org.au": 1,
-    "https://ck.gen2.art-motel.com": 1,
-    "https://ck.gen3.parcomunica.com": 1,
-    "https://ck.contentkeeper1.ekocleaner.ro": 1,
-    "https://ck.contentkeeper2.forever-20.com": 1,
-    "https://ck.contentkeeper3.radioimpactfm.ro": 1,
-    "https://content.keeper1.meridiano.com.br": 1,
-    "https://content.keeper2.savenewport.com": 1,
-    "https://xylora.expertdiagnoza.ro": 1,
-    "https://expert.expertdiagnoza.ro": 1,
-    "https://choc.muffin.greenbaynz.com": 1,
-    "https://xy.muffin.lora.thebrittainlawfirm.com": 2,
-    "https://dentist.xylora.muffin.dentist4you.com.au": 1
+    "https://pondering.is-a.software.cdn.cloudflare.net": 1,
+    "https://thinks.is-a.software.cdn.cloudflare.net": 1,
+    "https://planets.is-a.software.cdn.cloudflare.net": 1,
+    "https://earth.is-a.software.cdn.cloudflare.net": 1,
+    "https://matter.is-a.software.cdn.cloudflare.net": 1,
+    "https://edu-gov-k12-school-learn-study-api.is-a.software.cdn.cloudflare.net": 1,
+    "https://bagonmyhead.gyalsanglama.com.np": 1,
+    "https://isaidstayinside.gyalsanglama.com.np": 1,
+    "https://followmytiktok.centromariapolis.cl": 1,
+    "https://hotterthenmay8th.centromariapolis.cl": 1,
+    "https://sosa.centromariapolis.cl": 1,
+    "https://straight8.centromariapolis.cl": 1,
+    "https://weonhim.centromariapolis.cl": 1,
+    "https://cleanup.umardia.com.mx": 1,
+    "https://grab.umardia.com.mx": 1,
+    "https://interested.umardia.com.mx": 1,
+    "https://sub.umardia.com.mx": 1,
+    "https://edusuper.albrightscycling.com": 1,
+    "https://peter.eastcountywireless.com": 1,
+    "https://reviewing.luxuryroig.com": 1,
+    "https://been.myfdistribuidora.com.ar": 1,
+    "https://edulearner.tiatex.com": 1,
+    "https://soccergreen.gressvikbmx.no": 1,
+    "https://files.copytek.cl": 2,
+    "https://app.codewave.com.np": 2,
+    "https://learn.morso-si.dk": 2,
+    "https://act.savequeechylake.org": 2,
+    "https://download.s-engine.com": 2,
+    "https://documentation.7btech.com": 2,
+    "https://learn.botsev.eu": 2,
+    "https://hosting.biec.com.np": 2,
+    "https://storytime.goodguysav.com": 2,
+    "https://read.nationalit.ru": 2,
+    "https://family.nembahadurraskoti.com.np": 2,
+    "https://status.xcloud.ar": 2,
+    "https://travel.national-birdshow.com": 2,
+    "https://k12edu.duckdns.org": 2,
+    "https://comment.kelownaembroidery.ca": 1,
+    "https://consumer.xenopoem.com": 1,
+    "https://hope.takh.ee": 1,
+    "https://many.kelownaembroidery.ca": 1,
+    "https://moreso.xenopoem.com": 1,
+    "https://phonk.waiukuyoga.nz": 1,
+    "https://plan.xenopoem.com": 1,
+    "https://spell.kelownaembroidery.ca": 1,
+    "https://still.xenopoem.com": 1,
+    "https://ticking.takh.ee": 1,
+    "https://za.kelownaembroidery.ca": 1,
+    "https://bllymartw.lekhnathfb.com.np": 2,
+    "https://beendrippy.fxchinese.ca": 1,
+    "https://biology.echofx.com": 1,
+    "https://band.echofx.com": 1,
+    "https://education.echofx.com": 1,
+    "https://analytics.echofx.com": 1,
+    "https://quick.echofx.com": 1,
+    "https://vcsa-sub.fhoster.ru": 1,
+    "https://been-back.interluxvs.com": 1,
+    "https://education.4e4a.org": 1,
+    "https://playernation1.zoomzoomblooms.com": 1,
+    "https://vcsa-yt.allenbarnes.org": 1,
+    "https://hotelchoosing.hotelconsuladoinn.com": 1,
+    "https://learnhotels.hotelconsuladoinn.com": 1,
+    "https://motel.hotelconsuladoinn.com": 1,
+    "https://quick-education.hotelconsuladoinn.com": 1,
+    "https://travelaround.hotelconsuladoinn.com": 1,
+    "https://educationalmath.studyingsciencethemes.one": 1,
+    "https://superlit.hotelconsuladoinn.com": 1,
+    "https://superleaening.albrightscycling.com": 1,
+    "https://supereadertool.cyberninja.ie": 1,
+    "https://superbrr.warna.ch": 1,
+    "https://pickupdurk.maxmir-energy.ru": 1,
+    "https://ggaisucks.tejidosdedignidad.org/?fromEdu=1": 1,
+    "https://edulighrz.vixenlights.com/?fromEdu=1": 1,
+    "https://finallyworkinggoguardian.shakti.ug/?fromEdu=1": 1,
+    "https://us.grumpyoldmen.us": 2,
+    "https://wiki.wikidelia.net": 2,
+    "https://blog.succeed.cl": 2,
+    "https://family.jessicacadotte.com": 2,
+    "https://purchase.halftech.com": 2,
+    "https://dev.cyber-ag.com": 2,
+    "https://recipies.dalicias.cl": 2,
+    "https://null-code.codewave.com.np": 2,
+    "https://dev.apa89.com": 2,
+    "https://updownyt.ytconverter.it": 2,
+    "https://cdn.adworldlog.com": 2,
+    "https://todeepinthechoppahouse.recreatinganew.com": 1,
+    "https://shoottokiller.lervs.ro": 1,
+    "https://slayerbeensosa.lervs.ro": 1,
+    "https://slayerthehardest.lervs.ro": 1,
+    "https://touchdatbread.lervs.ro": 1,
+    "https://subtome.academinctools.pw": 1,
+    "https://biologyclasz.biocellerity.com": 1,
+    "https://education.honufon.com": 1,
+    "https://wsp.honufon.com": 1,
+    "https://lolskayer.hotelconsuladoinn.com": 1,
+    "https://allinks.pkdk-almuhammadi.com": 1,
+    "https://birdie.darkwolf.ca": 1,
+    "https://shopper.izu104.com": 1,
+    "https://slayers.e-c-h-o.tw": 1,
+    "https://wentup10.e-c-h-o.tw": 1,
+    "https://edu.honufon.com": 1,
+    "https://learner.honufon.com": 1,
+    "https://big50.joyitasparejas.com": 1,
+    "https://dinonuggets.dinocol.co.uk": 1,
+    "https://internalsrror.hotelconsuladoinn.com": 1,
+    "https://boomboom.kora.cl": 1,
+    "https://goingup.dinocol.co.uk": 1,
+    "https://ticketer.interluxvs.com": 1,
+    "https://ck1.triatlonpacense.es": 1,
+    "https://oklahoma.bloomer.network.computer.bamastuff.com": 1,
+    "https://learn.sharptutor.net": 2,
+    "https://dev.amq.li": 2,
+    "https://gitlab.amq.ro": 2,
+    "https://sjfynycm3mzn.manolovici.ro": 2,
+    "https://123numbers.numbercraftacademy.com": 1,
+    "https://babyboo.babypos.hk": 1,
+    "https://lmaobahy.babypos.hk": 1,
+    "https://supereading.babypos.hk": 1,
+    "https://airport.vta-international.com": 1,
+    "https://ohboy.triatlonpacense.es": 1,
+    "https://asga.recepist.fi": 1,
+    "https://bhhv.recepist.fi": 1,
+    "https://jync.recepist.fi": 1,
+    "https://qbxl.recepist.fi": 1,
+    "https://qmzkd.recepist.fi": 1,
+    "https://runningatrap.recepist.fi": 1,
+    "https://supereader.recepist.fi": 1,
+    "https://hydration.zwanenwater48.nl": 2,
+    "https://launch.umlach.org": 2,
+    "https://app.cmyk-studio.com": 2,
+    "https://zlty.europeserv.org": 2,
+    "https://tungtung.tongllfoundation.org": 1,
+    "https://inthebank.valor.ar": 1,
+    "https://eatcells.biocellerity.com": 1,
+    "https://callgobrr.callcentercuritiba.com.br": 1,
+    "https://indian.callcentercuritiba.com.br": 1,
+    "https://brrrchopa.esdata.info": 1,
+    "http://ipv6.bestar.sg": 2,
+    "http://dns.dnda.com.np": 2,
+    "https://repeating.xylora.webinfo.tw": 1,
+    "https://days.delia-derbyshire.net": 1,
+    "https://resting.cazaresulina.ro": 1,
+    "https://fishes.colloky.com.pe": 2,
+    "https://testing.notariamelipilla.cl": 2,
+    "https://domain.airlinemeals.net": 1,
+    "https://flyerprogram.airlinemeals.net": 1,
+    "https://whathappenedonstonie.airlinemeals.net": 1,
+    "https://stillaintcall.callcentercuritiba.com.br": 1,
+    "https://lastweekbaby.tozsugianto.com": 1,
+    "https://edu-gov-k12-school-learn-study.is-a.software.cdn.cloudflare.net": 1,
+    "https://sciencetools.agatab.com": 1,
+    "https://somany.gsxpress.com.my": 1,
+    "https://tomuchpotential.gsxpress.com.my": 1,
+    "https://weup.casadotricolor.com.br": 1,
+    "https://brosarookie.biocellerity.com": 1,
+    "https://alltalkgetyouhurt.nanobit.org": 1,
+    "https://likeame.bakeryos.net": 1,
+    "https://makingcheese.bakeryos.net": 1,
+    "https://sonny.bakeryos.net": 1,
+    "https://bank.pollsvspoly.com": 1,
+    "https://bees.pollsvspoly.com": 1,
+    "https://paint.sleep.bulls.art-motel.com": 1,
+    "https://rosin.bull.trottparkfencingclub.org.au": 1,
+    "https://acting.art-motel.com": 2,
+    "https://historical.eminescusm.ro": 2,
+    "https://ck.gen1.srivaishnavam.org.au": 2,
+    "https://ck.gen2.art-motel.com": 2,
+    "https://ck.gen3.parcomunica.com": 2,
+    "https://ck.contentkeeper1.ekocleaner.ro": 2,
+    "https://ck.contentkeeper2.forever-20.com": 2,
+    "https://ck.contentkeeper3.radioimpactfm.ro": 2,
+    "https://content.keeper1.meridiano.com.br": 2,
+    "https://content.keeper2.savenewport.com": 2,
+    "https://xylora.expertdiagnoza.ro": 2,
+    "https://expert.expertdiagnoza.ro": 2,
+    "https://choc.muffin.greenbaynz.com": 2,
+    "https://dentist.xylora.muffin.dentist4you.com.au": 2
   },
   "links": [
     {
@@ -9413,26 +9529,6 @@
       ],
       "locked": "",
       "link": "https://getaway.champagnewishesandrvdreams.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://edu.nextcomm.com.ar/",
       "found": "5/9/2026",
       "username": "N/A",
       "password": "N/A",
@@ -41833,25 +41929,6 @@
         "unknown"
       ],
       "locked": "",
-      "link": "https://xylora.research.about.dogs.valor.ar/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
       "link": "https://xy.lora.grahammurryinsuranceagency.com/",
       "found": "5/9/2026",
       "username": "N/A",
@@ -41985,25 +42062,6 @@
         "unknown"
       ],
       "locked": "",
-      "link": "https://xylora.testout.repuestoslibertad.cl/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
       "link": "https://xylora.countertops.kwgranitecountertops.com/",
       "found": "5/9/2026",
       "username": "N/A",
@@ -42042,962 +42100,12 @@
         "unknown"
       ],
       "locked": "",
-      "link": "https://xylora.asturkiters.es/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
       "link": "https://xylora.elymbmx.com/",
       "found": "5/9/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "1NobleCyber",
       "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.alalalal.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.rodzinnawiez.pl/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.ucdcanoeclub.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.pilith.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.nurah.com.my/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.sudandulal.com.np/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.camaradellibro.cl/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.makeupbuzz.co.uk/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.k0a1a.net/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://help.science.co.clever.com.alalalal.com",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://lszx.alalalal.com",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.alalalal.com",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://cmadf.newkingdomglobal.com",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://science.experiment.anostudio.info",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://meals.airlinemeals.net",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.god.domain.2660010.com/",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.nigelupchurch.com/",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.scrapitsoftware.com/",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.d3.ro/",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.hkieca.com/",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.hjshop.net/",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.barkinseducationlearning.cfd/",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.orbitnetworkss.org/",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://muffin.bakeryos.net/",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://muffins.eilong.com/",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://muffin.best.romppais.ca/",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://muffi.n.tire.is/",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.cassanova.biz/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://v.meow.v.xylora.coosemansla.com/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://muffinz.abogaciadigital.ar/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.huangqirui.xyz/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://muffin.love.grei-grei.lt/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://sploy.pollsvspoly.com/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://bake.bakeryos.net/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.rustyfoundation.com/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://buyingmo.buymojatom.com/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.rcdx93.net/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://imdoingmywork.bryankrawetz.com/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://myteacherhatesme.dnswish.com/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://igotallfs.hosts.name/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://mymomleftme.fppagos.com/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://manimsoslay.elmirador360.com/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.bostoncareercounselor.com",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://yofu.c.ck.taii.toysland.hk/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://system.math.teachmetofish.net/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://studenteducationfund.org.gamalabs.net/",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.studenteducationfund.org/",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://stay-at.nmhotels.cfd/",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.nmhotels.cfd/",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
       "provider": "✖️ Xylora",
@@ -43202,25 +42310,6 @@
       ],
       "locked": "",
       "link": "https://choc.muffin.greenbaynz.com/",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xy.muffin.lora.thebrittainlawfirm.com/",
       "found": "6/7/2026",
       "username": "N/A",
       "password": "N/A",
