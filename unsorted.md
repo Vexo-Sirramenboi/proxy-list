@@ -1992,3 +1992,4 @@ Move links from here into `list.md` once sorted.
 - https://ropav.dmvdriverseducation.org
 - https://vapor.dmvdriverseducation.org
 - https://vapor.ropavaporopav.cyou
+- https://cool67.allisons.org

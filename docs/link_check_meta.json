@@ -1,8 +1,10 @@
 {
-  "checked_at": "2026-06-15T03:36:41Z",
-  "checked_at_display": "2026-06-15 03:36 UTC",
+  "checked_at": "2026-06-15T11:54:04Z",
+  "checked_at_display": "2026-06-15 11:54 UTC",
   "added_count": 0,
-  "removed_count": 0,
+  "removed_count": 1,
   "added_links": [],
-  "removed_links": []
+  "removed_links": [
+    "https://cool67.allisons.org"
+  ]
 }
