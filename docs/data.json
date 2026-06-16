@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r200",
+    "revision": "r201",
     "last_updated": "June 16, 2026",
     "unsorted_total": 1992,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
@@ -103,63 +103,45 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-16T03:31:57Z",
-    "checked_at_display": "2026-06-16 03:31 UTC",
+    "checked_at": "2026-06-16T11:01:24Z",
+    "checked_at_display": "2026-06-16 11:01 UTC",
     "added_count": 0,
-    "removed_count": 8,
+    "removed_count": 3,
     "added_links": [],
     "removed_links": [
-      "https://pondering.is-a.software.cdn.cloudflare.net",
-      "https://thinks.is-a.software.cdn.cloudflare.net",
-      "https://planets.is-a.software.cdn.cloudflare.net",
-      "https://earth.is-a.software.cdn.cloudflare.net",
-      "https://matter.is-a.software.cdn.cloudflare.net",
-      "https://edu-gov-k12-school-learn-study-api.is-a.software.cdn.cloudflare.net",
-      "https://edu-gov-k12-school-learn-study.is-a.software.cdn.cloudflare.net",
-      "https://resting.cazaresulina.ro"
+      "https://xylora.read.about.willy.cat",
+      "https://xylora.countertops.kwgranitecountertops.com",
+      "https://xylora.elymbmx.com"
     ]
   },
   "failing_links": {
-    "https://xylora.grahammurryinsuranceagency.com": 1,
-    "https://xylora.notariamelipilla.cl": 1,
-    "https://sub.to.playernation.xylora.renaca.com": 1,
-    "https://join.mizumath.babypos.hk": 1,
-    "https://xylora.vta-international.com": 1,
-    "https://summer.hot.sun.longerdays.shorternights.japan.is": 1,
-    "https://xylora.triatlonpacense.es": 1,
-    "https://xylora.org": 1,
-    "https://xylora.beerporn.org": 1,
-    "https://play.nation.xylora.beltfrog.com": 1,
-    "https://xylora.co.ldeazevedo.com": 1,
-    "https://vcsa.easternstamps.com": 1,
-    "https://xylora.searching.dirtchicvt.com": 1,
-    "https://xylora.rust.rusticrivergear.com": 1,
-    "https://thyistof.page.gd/?i=1": 1,
-    "https://superdupereducationalsite.page.gd/?i=1": 1,
-    "https://securely-is-ahh.fwh.is/?i=1": 1,
-    "https://niche-site.nichesite.org/?i=1": 1,
-    "https://victor.is-great.org/?i=1": 1,
-    "https://let-us-have-our-phones-out-of-class.nichesite.org/?i=1": 1,
-    "https://free-money-here.gt.tc/?i=1": 1,
-    "https://spanish-4b-peak.page.gd/?i=2": 1,
-    "https://mathhomeworkhelperthingy.free.nf/?i=1": 1,
-    "https://securely-is-ahh.fwh.is": 1,
-    "https://repeating.xylora.webinfo.tw": 1,
-    "https://xylora.read.about.willy.cat": 2,
-    "https://xy.lora.grahammurryinsuranceagency.com": 1,
-    "https://days.delia-derbyshire.net": 1,
-    "https://testing.notariamelipilla.cl": 1,
-    "https://exam.grahammurryinsuranceagency.com": 1,
-    "https://xylora.countertops.kwgranitecountertops.com": 2,
-    "https://xylora.elymbmx.com": 2,
-    "https://quizizz.com/_media/gn-math/3a218feb-8a3a-4d35-8022-6ac73d9f108e-v2": 1,
-    "https://wayground.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 1,
-    "https://quizizz.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 1,
-    "https://wayground.com/_media/quizzes/120166d9-62a4-4fcc-9b3c-9114f05336f9-v2": 1,
-    "https://menist.free.nf/?i=1": 1,
-    "https://quizizz.com/_media/uploadedFiles/9e0c0d18-c975-497c-b410-fc7dae5fafca-v2": 1,
-    "https://media.quizizz.com/_mdserver/main/media/resource/gs/quizizz-media/uploadedFiles/37839e85-49a0-4da0-ada9-092ff46f3f2e-v2": 1,
-    "https://wayground.com/_media/uploadedFiles/37839e85-49a0-4da0-ada9-092ff46f3f2e-v2": 1
+    "https://shopper.izu104.com": 1,
+    "https://xylora.grahammurryinsuranceagency.com": 2,
+    "https://xylora.notariamelipilla.cl": 2,
+    "https://sub.to.playernation.xylora.renaca.com": 2,
+    "https://join.mizumath.babypos.hk": 2,
+    "https://xylora.vta-international.com": 2,
+    "https://summer.hot.sun.longerdays.shorternights.japan.is": 2,
+    "https://xylora.triatlonpacense.es": 2,
+    "https://xylora.org": 2,
+    "https://xylora.beerporn.org": 2,
+    "https://play.nation.xylora.beltfrog.com": 2,
+    "https://xylora.co.ldeazevedo.com": 2,
+    "https://vcsa.easternstamps.com": 2,
+    "https://xylora.searching.dirtchicvt.com": 2,
+    "https://xylora.rust.rusticrivergear.com": 2,
+    "https://repeating.xylora.webinfo.tw": 2,
+    "https://xy.lora.grahammurryinsuranceagency.com": 2,
+    "https://days.delia-derbyshire.net": 2,
+    "https://testing.notariamelipilla.cl": 2,
+    "https://exam.grahammurryinsuranceagency.com": 2,
+    "https://quizizz.com/_media/gn-math/3a218feb-8a3a-4d35-8022-6ac73d9f108e-v2": 2,
+    "https://wayground.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 2,
+    "https://quizizz.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 2,
+    "https://wayground.com/_media/quizzes/120166d9-62a4-4fcc-9b3c-9114f05336f9-v2": 2,
+    "https://quizizz.com/_media/uploadedFiles/9e0c0d18-c975-497c-b410-fc7dae5fafca-v2": 2,
+    "https://media.quizizz.com/_mdserver/main/media/resource/gs/quizizz-media/uploadedFiles/37839e85-49a0-4da0-ada9-092ff46f3f2e-v2": 2,
+    "https://wayground.com/_media/uploadedFiles/37839e85-49a0-4da0-ada9-092ff46f3f2e-v2": 2
   },
   "links": [
     {
@@ -40833,25 +40815,6 @@
         "unknown"
       ],
       "locked": "",
-      "link": "https://xylora.read.about.willy.cat/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
       "link": "https://xy.lora.grahammurryinsuranceagency.com/",
       "found": "5/9/2026",
       "username": "N/A",
@@ -40947,45 +40910,7 @@
         "unknown"
       ],
       "locked": "",
-      "link": "https://xylora.countertops.kwgranitecountertops.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
       "link": "https://xylora.searching.dirtchicvt.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://xylora.elymbmx.com/",
       "found": "5/9/2026",
       "username": "N/A",
       "password": "N/A",
