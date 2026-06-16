@@ -1993,3 +1993,5 @@ Move links from here into `list.md` once sorted.
 - https://vapor.dmvdriverseducation.org
 - https://vapor.ropavaporopav.cyou
 - https://cool67.allisons.org
+- https://pondering.is-a.software.cdn.cloudflare.net
+- https://thinks.is-a.software.cdn.cloudflare.net

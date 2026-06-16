@@ -1,9 +1,9 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r199",
-    "last_updated": "June 15, 2026",
-    "unsorted_total": 1990,
+    "revision": "r200",
+    "last_updated": "June 16, 2026",
+    "unsorted_total": 1992,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
     "update_notice": "Added mirror links and embed support; maintenance fixes and updated filter data.",
     "fail_threshold": 3,
@@ -103,77 +103,63 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-15T20:50:24Z",
-    "checked_at_display": "2026-06-15 20:50 UTC",
+    "checked_at": "2026-06-16T03:31:57Z",
+    "checked_at_display": "2026-06-16 03:31 UTC",
     "added_count": 0,
-    "removed_count": 51,
+    "removed_count": 8,
     "added_links": [],
     "removed_links": [
-      "https://files.copytek.cl",
-      "https://app.codewave.com.np",
-      "https://learn.morso-si.dk",
-      "https://act.savequeechylake.org",
-      "https://download.s-engine.com",
-      "https://documentation.7btech.com",
-      "https://learn.botsev.eu",
-      "https://hosting.biec.com.np",
-      "https://storytime.goodguysav.com",
-      "https://read.nationalit.ru",
-      "https://family.nembahadurraskoti.com.np",
-      "https://status.xcloud.ar",
-      "https://travel.national-birdshow.com",
-      "https://k12edu.duckdns.org",
-      "https://bllymartw.lekhnathfb.com.np",
-      "https://learn.sharptutor.net",
-      "https://dev.amq.li",
-      "https://us.grumpyoldmen.us",
-      "https://wiki.wikidelia.net",
-      "https://blog.succeed.cl",
-      "https://family.jessicacadotte.com",
-      "https://purchase.halftech.com",
-      "https://dev.cyber-ag.com",
-      "https://recipies.dalicias.cl",
-      "https://null-code.codewave.com.np",
-      "https://dev.apa89.com",
-      "https://updownyt.ytconverter.it",
-      "https://gitlab.amq.ro",
-      "https://cdn.adworldlog.com",
-      "https://hydration.zwanenwater48.nl",
-      "https://launch.umlach.org",
-      "https://app.cmyk-studio.com",
-      "https://zlty.europeserv.org",
-      "http://ipv6.bestar.sg",
-      "http://dns.dnda.com.np",
-      "https://acting.art-motel.com",
-      "https://historical.eminescusm.ro",
-      "https://sjfynycm3mzn.manolovici.ro",
-      "https://fishes.colloky.com.pe",
-      "https://ck.gen1.srivaishnavam.org.au",
-      "https://ck.gen2.art-motel.com",
-      "https://ck.gen3.parcomunica.com",
-      "https://ck.contentkeeper1.ekocleaner.ro",
-      "https://ck.contentkeeper2.forever-20.com",
-      "https://ck.contentkeeper3.radioimpactfm.ro",
-      "https://content.keeper1.meridiano.com.br",
-      "https://content.keeper2.savenewport.com",
-      "https://xylora.expertdiagnoza.ro",
-      "https://expert.expertdiagnoza.ro",
-      "https://choc.muffin.greenbaynz.com",
-      "https://dentist.xylora.muffin.dentist4you.com.au"
+      "https://pondering.is-a.software.cdn.cloudflare.net",
+      "https://thinks.is-a.software.cdn.cloudflare.net",
+      "https://planets.is-a.software.cdn.cloudflare.net",
+      "https://earth.is-a.software.cdn.cloudflare.net",
+      "https://matter.is-a.software.cdn.cloudflare.net",
+      "https://edu-gov-k12-school-learn-study-api.is-a.software.cdn.cloudflare.net",
+      "https://edu-gov-k12-school-learn-study.is-a.software.cdn.cloudflare.net",
+      "https://resting.cazaresulina.ro"
     ]
   },
   "failing_links": {
-    "https://pondering.is-a.software.cdn.cloudflare.net": 2,
-    "https://thinks.is-a.software.cdn.cloudflare.net": 2,
-    "https://planets.is-a.software.cdn.cloudflare.net": 2,
-    "https://earth.is-a.software.cdn.cloudflare.net": 2,
-    "https://matter.is-a.software.cdn.cloudflare.net": 2,
-    "https://edu-gov-k12-school-learn-study-api.is-a.software.cdn.cloudflare.net": 2,
-    "https://xylora.read.about.willy.cat": 1,
-    "https://resting.cazaresulina.ro": 2,
-    "https://xylora.countertops.kwgranitecountertops.com": 1,
-    "https://xylora.elymbmx.com": 1,
-    "https://edu-gov-k12-school-learn-study.is-a.software.cdn.cloudflare.net": 2
+    "https://xylora.grahammurryinsuranceagency.com": 1,
+    "https://xylora.notariamelipilla.cl": 1,
+    "https://sub.to.playernation.xylora.renaca.com": 1,
+    "https://join.mizumath.babypos.hk": 1,
+    "https://xylora.vta-international.com": 1,
+    "https://summer.hot.sun.longerdays.shorternights.japan.is": 1,
+    "https://xylora.triatlonpacense.es": 1,
+    "https://xylora.org": 1,
+    "https://xylora.beerporn.org": 1,
+    "https://play.nation.xylora.beltfrog.com": 1,
+    "https://xylora.co.ldeazevedo.com": 1,
+    "https://vcsa.easternstamps.com": 1,
+    "https://xylora.searching.dirtchicvt.com": 1,
+    "https://xylora.rust.rusticrivergear.com": 1,
+    "https://thyistof.page.gd/?i=1": 1,
+    "https://superdupereducationalsite.page.gd/?i=1": 1,
+    "https://securely-is-ahh.fwh.is/?i=1": 1,
+    "https://niche-site.nichesite.org/?i=1": 1,
+    "https://victor.is-great.org/?i=1": 1,
+    "https://let-us-have-our-phones-out-of-class.nichesite.org/?i=1": 1,
+    "https://free-money-here.gt.tc/?i=1": 1,
+    "https://spanish-4b-peak.page.gd/?i=2": 1,
+    "https://mathhomeworkhelperthingy.free.nf/?i=1": 1,
+    "https://securely-is-ahh.fwh.is": 1,
+    "https://repeating.xylora.webinfo.tw": 1,
+    "https://xylora.read.about.willy.cat": 2,
+    "https://xy.lora.grahammurryinsuranceagency.com": 1,
+    "https://days.delia-derbyshire.net": 1,
+    "https://testing.notariamelipilla.cl": 1,
+    "https://exam.grahammurryinsuranceagency.com": 1,
+    "https://xylora.countertops.kwgranitecountertops.com": 2,
+    "https://xylora.elymbmx.com": 2,
+    "https://quizizz.com/_media/gn-math/3a218feb-8a3a-4d35-8022-6ac73d9f108e-v2": 1,
+    "https://wayground.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 1,
+    "https://quizizz.com/_media/quizzes/c1d45af4-f6cf-40cd-a4e8-c4976a4b62c3-v2": 1,
+    "https://wayground.com/_media/quizzes/120166d9-62a4-4fcc-9b3c-9114f05336f9-v2": 1,
+    "https://menist.free.nf/?i=1": 1,
+    "https://quizizz.com/_media/uploadedFiles/9e0c0d18-c975-497c-b410-fc7dae5fafca-v2": 1,
+    "https://media.quizizz.com/_mdserver/main/media/resource/gs/quizizz-media/uploadedFiles/37839e85-49a0-4da0-ada9-092ff46f3f2e-v2": 1,
+    "https://wayground.com/_media/uploadedFiles/37839e85-49a0-4da0-ada9-092ff46f3f2e-v2": 1
   },
   "links": [
     {
@@ -2097,55 +2083,7 @@
         "ultraviolet"
       ],
       "locked": "",
-      "link": "https://pondering.is-a.software.cdn.cloudflare.net/",
-      "found": "4/17/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⭐ DayDream X",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp, captcha, reflux",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp",
-        "captcha",
-        "reflux"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
       "link": "https://cdn.jsdelivr.net/gh/NightProxy/DD-Static/dist/index.svg",
-      "found": "4/17/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⭐ DayDream X",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp, captcha, reflux",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp",
-        "captcha",
-        "reflux"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://thinks.is-a.software.cdn.cloudflare.net/",
       "found": "4/17/2026",
       "username": "N/A",
       "password": "N/A",
@@ -3904,72 +3842,6 @@
       ],
       "locked": "",
       "link": "https://area.vm4construction.uk/",
-      "found": "3/28/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌑 Space",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://planets.is-a.software.cdn.cloudflare.net/",
-      "found": "3/28/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌑 Space",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://earth.is-a.software.cdn.cloudflare.net/",
-      "found": "3/28/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌑 Space",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://matter.is-a.software.cdn.cloudflare.net/",
       "found": "3/28/2026",
       "username": "N/A",
       "password": "N/A",
@@ -8260,26 +8132,6 @@
         "ultraviolet"
       ],
       "locked": "",
-      "link": "https://edu-gov-k12-school-learn-study-api.is-a.software.cdn.cloudflare.net/",
-      "found": "4/17/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
       "link": "https://instructure.sylu.cc.cdn.cloudflare.net/",
       "found": "4/17/2026",
       "username": "N/A",
@@ -9521,26 +9373,6 @@
       ],
       "locked": "",
       "link": "https://script.google.com/a/macros/k12.ipsd.org/s/AKfycbxnbwF6Gs2_XnVzz_mBOInAp54aR2a7LLGyHn2AvEp-k765vSdQl5YnDfW6QT6zVU68/exec",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://edu-gov-k12-school-learn-study.is-a.software.cdn.cloudflare.net/",
       "found": "5/22/2026",
       "username": "N/A",
       "password": "N/A",
@@ -41040,25 +40872,6 @@
       ],
       "locked": "",
       "link": "https://days.delia-derbyshire.net/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✖️ Xylora",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://resting.cazaresulina.ro/",
       "found": "5/9/2026",
       "username": "N/A",
       "password": "N/A",
