@@ -1,0 +1,11 @@
+[Unit]
+Description=proxy-list nightly link check (pull, check, commit)
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/proxy-list
+EnvironmentFile=-%h/proxy-list/deploy/webhook/.env
+ExecStart=%h/proxy-list/.venv/bin/python %h/proxy-list/scripts/run_link_check_pipeline.py
+
+[Install]
+WantedBy=default.target

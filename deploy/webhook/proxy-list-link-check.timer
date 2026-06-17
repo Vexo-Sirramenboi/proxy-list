@@ -1,0 +1,10 @@
+[Unit]
+Description=Run proxy-list link check daily at 11:00 PM (local time)
+
+[Timer]
+# Edit the time here if needed (24h format, server local timezone).
+OnCalendar=*-*-* 23:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

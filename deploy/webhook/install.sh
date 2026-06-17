@@ -33,10 +33,14 @@ echo "==> systemd unit (user service, no sudo)"
 USER_UNIT_DIR="$HOME/.config/systemd/user"
 mkdir -p "$USER_UNIT_DIR"
 sed "s|%h|$HOME|g" "$REPO/deploy/webhook/proxy-list-webhook.user.service" > "$USER_UNIT_DIR/${SERVICE_NAME}.service"
+sed "s|%h|$HOME|g" "$REPO/deploy/webhook/proxy-list-link-check.service" > "$USER_UNIT_DIR/proxy-list-link-check.service"
+sed "s|%h|$HOME|g" "$REPO/deploy/webhook/proxy-list-link-check.timer" > "$USER_UNIT_DIR/proxy-list-link-check.timer"
 systemctl --user daemon-reload
 systemctl --user enable --now "$SERVICE_NAME"
+systemctl --user enable --now proxy-list-link-check.timer
 loginctl enable-linger "$USER" 2>/dev/null || true
 systemctl --user status "$SERVICE_NAME" --no-pager || true
+systemctl --user list-timers proxy-list-link-check.timer --no-pager || true
 
 echo ""
 echo "Done. Next steps:"
@@ -44,3 +48,4 @@ echo "  1. Expose port 8787 to the internet (Cloudflare Tunnel — see deploy/we
 echo "  2. Add GitHub webhook (see deploy/webhook/GITHUB_WEBHOOK.md)."
 echo "  3. Configure git push: ssh deploy key with write access to the repo."
 echo "  4. curl http://127.0.0.1:8787/health"
+echo "  5. Nightly link check runs at 11:00 PM local time (proxy-list-link-check.timer)."
