@@ -6,3 +6,5 @@ secrets
 vsce-debug.log
 .wrangler/
 .dev.vars
+deploy/webhook/.env
+.venv/

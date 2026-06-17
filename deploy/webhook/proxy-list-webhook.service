@@ -1,0 +1,17 @@
+[Unit]
+Description=proxy-list GitHub webhook (link checker)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=jason
+Group=jason
+WorkingDirectory=/home/jason/proxy-list
+Environment=WEBHOOK_ENV_FILE=/home/jason/proxy-list/deploy/webhook/.env
+ExecStart=/home/jason/proxy-list/.venv/bin/python /home/jason/proxy-list/scripts/github_webhook_server.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,14 @@
+# Example Cloudflare Tunnel config so GitHub can reach your LAN server.
+# Install: https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/
+#
+# 1. cloudflared tunnel create proxy-list-webhook
+# 2. Point a hostname (e.g. webhook.yourdomain.com) to http://127.0.0.1:8787
+# 3. Use https://webhook.yourdomain.com/github/webhook in GitHub webhook settings
+
+tunnel: proxy-list-webhook
+credentials-file: /home/jason/.cloudflared/proxy-list-webhook.json
+
+ingress:
+  - hostname: webhook.yourdomain.com
+    service: http://127.0.0.1:8787
+  - service: http_status:404
