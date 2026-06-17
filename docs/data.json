@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r203",
-    "last_updated": "June 16, 2026",
+    "revision": "r204",
+    "last_updated": "June 17, 2026",
     "unsorted_total": 1992,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
     "update_notice": "Added mirror links and embed support; maintenance fixes and updated filter data.",
@@ -103,20 +103,23 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-17T03:30:08Z",
-    "checked_at_display": "2026-06-17 03:30 UTC",
+    "checked_at": "2026-06-17T10:45:29Z",
+    "checked_at_display": "2026-06-17 10:45 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 3,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://studyguide.virtualmathnav.online",
+      "https://valoq.naturesciencenews.com",
+      "https://inf23563.cirruslaslenas.com.ar"
+    ]
   },
   "failing_links": {
-    "https://wlwzhyvbqn.bigriversoftware.au": 1,
-    "https://baconatorsmath.2nx.org": 1,
-    "http://pullupmath.2nx.org": 1,
-    "https://studyguide.virtualmathnav.online": 2,
-    "https://valoq.naturesciencenews.com": 2,
-    "https://inf23563.cirruslaslenas.com.ar": 2
+    "https://wlwzhyvbqn.bigriversoftware.au": 2,
+    "https://baconatorsmath.2nx.org": 2,
+    "http://pullupmath.2nx.org": 2,
+    "https://third-army.surge.sh": 1,
+    "https://classlink-redirect.surge.sh": 1
   },
   "links": [
     {
@@ -34841,28 +34844,6 @@
         "ultraviolet"
       ],
       "locked": "",
-      "link": "https://studyguide.virtualmathnav.online/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "✨ Infamous",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, captcha",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
       "link": "https://readingstudies.v6.rocks",
       "found": "5/9/2026",
       "username": "N/A",
@@ -34929,51 +34910,7 @@
         "ultraviolet"
       ],
       "locked": "",
-      "link": "https://valoq.naturesciencenews.com",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✨ Infamous",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, captcha",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
       "link": "https://scholarsupport.cfd",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✨ Infamous",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, captcha",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://inf23563.cirruslaslenas.com.ar",
       "found": "5/22/2026",
       "username": "N/A",
       "password": "N/A",

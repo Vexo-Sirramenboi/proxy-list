@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.2 | Released: May 31, 2026
-> r203 | Last Updated: June 16, 2026
+> r204 | Last Updated: June 17, 2026
 > Total onsite links: 4525 (2549 sorted + 1976 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -2371,7 +2371,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, captcha | Scramjet, Ultraviolet | 31 |
+> | Proxy/Games | epoxy, libcurl, captcha | Scramjet, Ultraviolet | 28 |
 
 
 | Locked | Link | Found Date | Username | Password | Contributor |
@@ -2400,13 +2400,10 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://inf68704.real3m.com | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://inf93381.real3m.com | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://inf85830.colloky.com.pe | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://studyguide.virtualmathnav.online/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://readingstudies.v6.rocks | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://inf69580.ecolefrancophone.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://inf24624.thenme.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://valoq.naturesciencenews.com | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://scholarsupport.cfd | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://inf23563.cirruslaslenas.com.ar | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🌙 LuminalOS
 > [!NOTE]
