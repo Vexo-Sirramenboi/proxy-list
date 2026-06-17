@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.2 | Released: May 31, 2026
-> r204 | Last Updated: June 17, 2026
+> r205 | Last Updated: June 17, 2026
 > Total onsite links: 4525 (2549 sorted + 1976 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -39,11 +39,10 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 5 |
+> | Proxy/Games | captcha | Scramjet | 4 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
-| | https://baconatorsmath.2nx.org/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://noterplus-157.firebaseapp.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://hvtzw.reformarchive.com | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | http://sni.educations.mytunnel.org | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -53,7 +52,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | N/A | N/A | 47 |
+> | Games | N/A | N/A | 46 |
 
 > [!IMPORTANT]
 > View importance notices section if link is broken.
@@ -64,7 +63,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://s3.amazonaws.com/prageru-server/mathematics.html | 2/19/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://shindoisbest.s3.amazonaws.com/index.html | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://s3.amazonaws.com/shindoisbest/index.html | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | http://pullupmath.2nx.org/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://stock95633.wixsite.com/content-fetcher/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://canva.link/gn-math | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://cdn.jsdelivr.net/gh/un-pkg/npm@main/bundle-min.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
@@ -112,7 +110,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Ultraviolet | 43 |
+> | Proxy/Games | captcha | Ultraviolet | 42 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -125,7 +123,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://frogsvseesa.contauditor.cl/ | 4/17/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://vcsa-yt.installgentoo.com/ | 4/17/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://vcsanewvideout.npoleninetz.ru/ | 4/17/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://wlwzhyvbqn.bigriversoftware.au/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://gegmbayzka.monedita.cl/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://tetosarcade.win/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://h2aihbtm.frogseducation.com/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
