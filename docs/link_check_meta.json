@@ -1,8 +1,10 @@
 {
-  "checked_at": "2026-06-17T20:07:12Z",
-  "checked_at_display": "2026-06-17 20:07 UTC",
+  "checked_at": "2026-06-18T02:58:19Z",
+  "checked_at_display": "2026-06-18 02:58 UTC",
   "added_count": 0,
-  "removed_count": 0,
+  "removed_count": 1,
   "added_links": [],
-  "removed_links": []
+  "removed_links": [
+    "https://d.sk1d-c0.de"
+  ]
 }
