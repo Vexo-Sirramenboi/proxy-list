@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r206",
+    "revision": "r207",
     "last_updated": "June 18, 2026",
     "unsorted_total": 1993,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
@@ -103,92 +103,208 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-18T10:13:44Z",
-    "checked_at_display": "2026-06-18 10:13 UTC",
+    "checked_at": "2026-06-18T14:56:58Z",
+    "checked_at_display": "2026-06-18 14:56 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 77,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://web.eclipsecastellon.net",
+      "https://deltafiancing.onesmallinstrument.net",
+      "https://infamouseducation.staglin.hr",
+      "https://bunnitutoring.nimux.eu",
+      "https://mythostesting.meteotodi.com",
+      "https://byfronanticheattesting.jmultitechnology.com",
+      "https://instrumentzone.unique-codes.com",
+      "https://recordtimeeating.seanvanderwier.com",
+      "https://solanatrades.clerticket.cl",
+      "https://bendover.doverly.com",
+      "https://web.asthaibangla.com/?",
+      "https://web.cyberninja.ie/?",
+      "https://acr.moldeo.org/?",
+      "https://coughmedicine.realkoff.ru/?",
+      "https://czq.lang.hm/?",
+      "https://dogsareamazing.chihuahua-hund.de/?",
+      "https://esolr.imagetemplate.com/?",
+      "https://findhomes.fllow.com.br",
+      "https://fly.ovie.gob.mx/?",
+      "https://kym.sulevkivastik.ee/?",
+      "https://lightspeedistrash.aayushbhandari.com.np",
+      "https://lightspeedistrash.archivomemoria-audiovisualcsb.org",
+      "https://lightspeedistrash.mybgarage.cl",
+      "https://lightspeedistrash.patriciachamudis.com.ar",
+      "https://lightspeedistrash.recepist.fi",
+      "https://lightspeedistrash.tec-parts.cl",
+      "https://odz.dpo.co.id/?",
+      "https://omafr.pjfox.xyz/?",
+      "https://qjqkq.reasonman.com/?",
+      "https://rsfe.sexualidadesrosario.com.ar/?",
+      "https://shop.aliexpress.nl",
+      "https://shop.aliexpress.nl/?",
+      "https://wjmi.true-woman.ru",
+      "https://vcsa-yt.ellegisladordigital.com",
+      "https://rules.fhoster.ru/?",
+      "https://llc.techmaxasia.com",
+      "https://learn-vcsa.martinwguy.net",
+      "https://vcsa.void.apertura.com",
+      "https://awesome.martinwguy.net",
+      "https://strange.martinwguy.net",
+      "https://sub-vcsa.martinwguy.net",
+      "https://e.chickenalert.camdvr.org",
+      "https://bluemoneyisbadaislop.axsetubal.pt",
+      "https://szf.gressvikbmx.no",
+      "https://ujlt.networkguru.com",
+      "https://muez.antakshari.com",
+      "https://etjyt.shatrughansingh.com.np",
+      "https://sfmp.budda.lv",
+      "https://pmq.sovnarkom.org",
+      "https://vfbq.academinctools.pw",
+      "https://ydisc.honufon.com",
+      "https://bqcqw.nondestructivetesting.ca",
+      "https://yudnh.hosteriafutaleufu.cl",
+      "https://igc.verandahotels.com",
+      "https://srndi.webinfo.tw",
+      "https://3.14159.dinocol.co.uk",
+      "https://colds.recreatinganew.com",
+      "https://shakespeare-english.lervs.ro",
+      "https://voiddder.wikidelia.net",
+      "https://www.fvjmszwd.renaissance-go.de.com",
+      "https://nez.alalalal.com",
+      "https://live.mmafrica.net",
+      "https://tuffestwebsite.jake.eu",
+      "https://scienceandmath-tuff.8bit.ca",
+      "https://modernart.isthmusportrait.com",
+      "https://learnyourwordschud.dicionar.io",
+      "https://vng.lol",
+      "https://darkchocolateisbetterthanmilkchocolate.chocolatespicacho.com",
+      "https://learntofight.teakwondo.one.pl",
+      "https://webhosting.e-cloud.ch",
+      "https://meditate.theyogaboutique.co.uk",
+      "https://learnvibecoding.hackquest.com",
+      "https://math.numbercraftacademy.com",
+      "https://bluemoneytuff.zayqan.com",
+      "https://learnagriculture.danfarm.ru",
+      "https://edu.ucecom-craiova.ro",
+      "https://diddylarpfoidnetwork.gamalabs.net"
+    ]
   },
   "failing_links": {
-    "https://web.eclipsecastellon.net": 2,
-    "https://deltafiancing.onesmallinstrument.net": 2,
-    "https://infamouseducation.staglin.hr": 2,
-    "https://bunnitutoring.nimux.eu": 2,
-    "https://mythostesting.meteotodi.com": 2,
-    "https://byfronanticheattesting.jmultitechnology.com": 2,
-    "https://instrumentzone.unique-codes.com": 2,
-    "https://recordtimeeating.seanvanderwier.com": 2,
-    "https://solanatrades.clerticket.cl": 2,
-    "https://bendover.doverly.com": 2,
-    "https://web.asthaibangla.com/?": 2,
-    "https://web.cyberninja.ie/?": 2,
-    "https://acr.moldeo.org/?": 2,
-    "https://coughmedicine.realkoff.ru/?": 2,
-    "https://czq.lang.hm/?": 2,
-    "https://dogsareamazing.chihuahua-hund.de/?": 2,
-    "https://esolr.imagetemplate.com/?": 2,
-    "https://findhomes.fllow.com.br": 2,
-    "https://fly.ovie.gob.mx/?": 2,
-    "https://kym.sulevkivastik.ee/?": 2,
-    "https://lightspeedistrash.aayushbhandari.com.np": 2,
-    "https://lightspeedistrash.archivomemoria-audiovisualcsb.org": 2,
-    "https://lightspeedistrash.mybgarage.cl": 2,
-    "https://lightspeedistrash.patriciachamudis.com.ar": 2,
-    "https://lightspeedistrash.recepist.fi": 2,
-    "https://lightspeedistrash.tec-parts.cl": 2,
-    "https://odz.dpo.co.id/?": 2,
-    "https://omafr.pjfox.xyz/?": 2,
-    "https://qjqkq.reasonman.com/?": 2,
-    "https://rsfe.sexualidadesrosario.com.ar/?": 2,
-    "https://shop.aliexpress.nl": 2,
-    "https://shop.aliexpress.nl/?": 2,
-    "https://wjmi.true-woman.ru": 2,
-    "https://vcsa-yt.ellegisladordigital.com": 2,
-    "https://rules.fhoster.ru/?": 2,
-    "https://szf.gressvikbmx.no": 2,
-    "https://legit.yfindustry.com": 1,
-    "https://llc.techmaxasia.com": 2,
-    "https://learn-vcsa.martinwguy.net": 2,
-    "https://vcsa.void.apertura.com": 2,
-    "https://awesome.martinwguy.net": 2,
-    "https://strange.martinwguy.net": 2,
-    "https://sub-vcsa.martinwguy.net": 2,
-    "https://e.chickenalert.camdvr.org": 2,
-    "https://bluemoneyisbadaislop.axsetubal.pt": 2,
-    "https://colds.recreatinganew.com": 2,
-    "https://shakespeare-english.lervs.ro": 2,
-    "https://ujlt.networkguru.com": 2,
-    "https://muez.antakshari.com": 2,
-    "https://etjyt.shatrughansingh.com.np": 2,
-    "https://sfmp.budda.lv": 2,
-    "https://pmq.sovnarkom.org": 2,
-    "https://vfbq.academinctools.pw": 2,
-    "https://ydisc.honufon.com": 2,
-    "https://bqcqw.nondestructivetesting.ca": 2,
-    "https://yudnh.hosteriafutaleufu.cl": 2,
-    "https://igc.verandahotels.com": 2,
-    "https://srndi.webinfo.tw": 2,
-    "https://3.14159.dinocol.co.uk": 2,
-    "https://voiddder.wikidelia.net": 2,
-    "https://www.fvjmszwd.renaissance-go.de.com": 2,
-    "https://nez.alalalal.com": 2,
-    "https://live.mmafrica.net": 2,
-    "https://tuffestwebsite.jake.eu": 2,
-    "https://scienceandmath-tuff.8bit.ca": 2,
-    "https://modernart.isthmusportrait.com": 2,
-    "https://learnyourwordschud.dicionar.io": 2,
-    "https://vng.lol": 2,
-    "https://darkchocolateisbetterthanmilkchocolate.chocolatespicacho.com": 2,
-    "https://learntofight.teakwondo.one.pl": 2,
-    "https://webhosting.e-cloud.ch": 2,
-    "https://meditate.theyogaboutique.co.uk": 2,
-    "https://learnvibecoding.hackquest.com": 2,
-    "https://math.numbercraftacademy.com": 2,
-    "https://bluemoneytuff.zayqan.com": 2,
-    "https://learnagriculture.danfarm.ru": 2,
-    "https://edu.ucecom-craiova.ro": 2,
-    "https://diddylarpfoidnetwork.gamalabs.net": 2
+    "https://bagonmyhead.gyalsanglama.com.np": 1,
+    "https://isaidstayinside.gyalsanglama.com.np": 1,
+    "https://followmytiktok.centromariapolis.cl": 1,
+    "https://hotterthenmay8th.centromariapolis.cl": 1,
+    "https://sosa.centromariapolis.cl": 1,
+    "https://straight8.centromariapolis.cl": 1,
+    "https://weonhim.centromariapolis.cl": 1,
+    "https://cleanup.umardia.com.mx": 1,
+    "https://grab.umardia.com.mx": 1,
+    "https://interested.umardia.com.mx": 1,
+    "https://sub.umardia.com.mx": 1,
+    "https://edusuper.albrightscycling.com": 1,
+    "https://peter.eastcountywireless.com": 1,
+    "https://reviewing.luxuryroig.com": 1,
+    "https://been.myfdistribuidora.com.ar": 1,
+    "https://edulearner.tiatex.com": 1,
+    "https://soccergreen.gressvikbmx.no": 1,
+    "https://comment.kelownaembroidery.ca": 1,
+    "https://consumer.xenopoem.com": 1,
+    "https://hope.takh.ee": 1,
+    "https://many.kelownaembroidery.ca": 1,
+    "https://moreso.xenopoem.com": 1,
+    "https://phonk.waiukuyoga.nz": 1,
+    "https://plan.xenopoem.com": 1,
+    "https://spell.kelownaembroidery.ca": 1,
+    "https://still.xenopoem.com": 1,
+    "https://ticking.takh.ee": 1,
+    "https://za.kelownaembroidery.ca": 1,
+    "https://bobbydongschreinerus8.weebly.com/my-work.html": 1,
+    "https://beendrippy.fxchinese.ca": 1,
+    "https://biology.echofx.com": 1,
+    "https://band.echofx.com": 1,
+    "https://education.echofx.com": 1,
+    "https://analytics.echofx.com": 1,
+    "https://quick.echofx.com": 1,
+    "https://vcsa-sub.fhoster.ru": 1,
+    "https://legit.yfindustry.com": 2,
+    "https://been-back.interluxvs.com": 1,
+    "https://education.4e4a.org": 1,
+    "https://playernation1.zoomzoomblooms.com": 1,
+    "https://vcsa-yt.allenbarnes.org": 1,
+    "https://hotelchoosing.hotelconsuladoinn.com": 1,
+    "https://learnhotels.hotelconsuladoinn.com": 1,
+    "https://motel.hotelconsuladoinn.com": 1,
+    "https://quick-education.hotelconsuladoinn.com": 1,
+    "https://travelaround.hotelconsuladoinn.com": 1,
+    "https://educationalmath.studyingsciencethemes.one": 1,
+    "https://superlit.hotelconsuladoinn.com": 1,
+    "https://superleaening.albrightscycling.com": 1,
+    "https://supereadertool.cyberninja.ie": 1,
+    "https://superbrr.warna.ch": 1,
+    "https://pickupdurk.maxmir-energy.ru": 1,
+    "https://ggaisucks.tejidosdedignidad.org/?fromEdu=1": 1,
+    "https://edulighrz.vixenlights.com/?fromEdu=1": 1,
+    "https://finallyworkinggoguardian.shakti.ug/?fromEdu=1": 1,
+    "https://todeepinthechoppahouse.recreatinganew.com": 1,
+    "https://shoottokiller.lervs.ro": 1,
+    "https://slayerbeensosa.lervs.ro": 1,
+    "https://slayerthehardest.lervs.ro": 1,
+    "https://touchdatbread.lervs.ro": 1,
+    "https://subtome.academinctools.pw": 1,
+    "https://biologyclasz.biocellerity.com": 1,
+    "https://education.honufon.com": 1,
+    "https://wsp.honufon.com": 1,
+    "https://lolskayer.hotelconsuladoinn.com": 1,
+    "https://allinks.pkdk-almuhammadi.com": 1,
+    "https://birdie.darkwolf.ca": 1,
+    "https://slayers.e-c-h-o.tw": 1,
+    "https://wentup10.e-c-h-o.tw": 1,
+    "https://edu.honufon.com": 1,
+    "https://learner.honufon.com": 1,
+    "https://big50.joyitasparejas.com": 1,
+    "https://dinonuggets.dinocol.co.uk": 1,
+    "https://internalsrror.hotelconsuladoinn.com": 1,
+    "https://boomboom.kora.cl": 1,
+    "https://goingup.dinocol.co.uk": 1,
+    "https://ticketer.interluxvs.com": 1,
+    "https://ck1.triatlonpacense.es": 1,
+    "https://oklahoma.bloomer.network.computer.bamastuff.com": 1,
+    "https://123numbers.numbercraftacademy.com": 1,
+    "https://babyboo.babypos.hk": 1,
+    "https://lmaobahy.babypos.hk": 1,
+    "https://supereading.babypos.hk": 1,
+    "https://airport.vta-international.com": 1,
+    "https://ohboy.triatlonpacense.es": 1,
+    "https://asga.recepist.fi": 1,
+    "https://bhhv.recepist.fi": 1,
+    "https://jync.recepist.fi": 1,
+    "https://qbxl.recepist.fi": 1,
+    "https://qmzkd.recepist.fi": 1,
+    "https://runningatrap.recepist.fi": 1,
+    "https://supereader.recepist.fi": 1,
+    "https://tungtung.tongllfoundation.org": 1,
+    "https://inthebank.valor.ar": 1,
+    "https://eatcells.biocellerity.com": 1,
+    "https://callgobrr.callcentercuritiba.com.br": 1,
+    "https://indian.callcentercuritiba.com.br": 1,
+    "https://brrrchopa.esdata.info": 1,
+    "https://domain.airlinemeals.net": 1,
+    "https://flyerprogram.airlinemeals.net": 1,
+    "https://whathappenedonstonie.airlinemeals.net": 1,
+    "https://stillaintcall.callcentercuritiba.com.br": 1,
+    "https://lastweekbaby.tozsugianto.com": 1,
+    "https://sciencetools.agatab.com": 1,
+    "https://somany.gsxpress.com.my": 1,
+    "https://tomuchpotential.gsxpress.com.my": 1,
+    "https://weup.casadotricolor.com.br": 1,
+    "https://brosarookie.biocellerity.com": 1,
+    "https://alltalkgetyouhurt.nanobit.org": 1,
+    "https://likeame.bakeryos.net": 1,
+    "https://makingcheese.bakeryos.net": 1,
+    "https://sonny.bakeryos.net": 1,
+    "https://bank.pollsvspoly.com": 1,
+    "https://bees.pollsvspoly.com": 1,
+    "https://paint.sleep.bulls.art-motel.com": 1,
+    "https://rosin.bull.trottparkfencingclub.org.au": 1
   },
   "links": [
     {
@@ -27629,1507 +27745,6 @@
       "password": "N/A",
       "contributor": "Vexo Sirramenboi",
       "contributor_url": "https://github.com/Vexo-Sirramenboi"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://web.eclipsecastellon.net",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://deltafiancing.onesmallinstrument.net",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://infamouseducation.staglin.hr",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://bunnitutoring.nimux.eu",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://mythostesting.meteotodi.com",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://byfronanticheattesting.jmultitechnology.com",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://instrumentzone.unique-codes.com",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://recordtimeeating.seanvanderwier.com",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://solanatrades.clerticket.cl",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://bendover.doverly.com",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://web.asthaibangla.com/?/",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://web.cyberninja.ie/?/",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://acr.moldeo.org/?/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://coughmedicine.realkoff.ru/?/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://czq.lang.hm/?/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://dogsareamazing.chihuahua-hund.de/?/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://esolr.imagetemplate.com/?/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://findhomes.fllow.com.br/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://fly.ovie.gob.mx/?/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://kym.sulevkivastik.ee/?/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://lightspeedistrash.aayushbhandari.com.np/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://lightspeedistrash.archivomemoria-audiovisualcsb.org/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://lightspeedistrash.mybgarage.cl/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://lightspeedistrash.patriciachamudis.com.ar/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://lightspeedistrash.recepist.fi/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://lightspeedistrash.tec-parts.cl/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://odz.dpo.co.id/?/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://omafr.pjfox.xyz/?/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://qjqkq.reasonman.com/?/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://rsfe.sexualidadesrosario.com.ar/?/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://shop.aliexpress.nl",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://shop.aliexpress.nl/?/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://wjmi.true-woman.ru/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://vcsa-yt.ellegisladordigital.com/",
-      "found": "4/26/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://rules.fhoster.ru/?/",
-      "found": "4/27/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://llc.techmaxasia.com/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://learn-vcsa.martinwguy.net/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://vcsa.void.apertura.com/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://awesome.martinwguy.net/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://strange.martinwguy.net/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://sub-vcsa.martinwguy.net/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://e.chickenalert.camdvr.org/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://bluemoneyisbadaislop.axsetubal.pt/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://szf.gressvikbmx.no/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://ujlt.networkguru.com",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://muez.antakshari.com",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://etjyt.shatrughansingh.com.np",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://sfmp.budda.lv",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://pmq.sovnarkom.org",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://vfbq.academinctools.pw",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://ydisc.honufon.com",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://bqcqw.nondestructivetesting.ca",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://yudnh.hosteriafutaleufu.cl",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://igc.verandahotels.com",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://srndi.webinfo.tw",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://3.14159.dinocol.co.uk",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://colds.recreatinganew.com",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://shakespeare-english.lervs.ro",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://voiddder.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://lightspeedistrash.recepist.fi",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://lightspeedistrash.patriciachamudis.com.ar",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://www.fvjmszwd.renaissance-go.de.com",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://nez.alalalal.com",
-      "found": "5/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://live.mmafrica.net/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://tuffestwebsite.jake.eu/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://scienceandmath-tuff.8bit.ca/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://modernart.isthmusportrait.com/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://learnyourwordschud.dicionar.io/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://vng.lol/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://darkchocolateisbetterthanmilkchocolate.chocolatespicacho.com/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://learntofight.teakwondo.one.pl/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://webhosting.e-cloud.ch/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://meditate.theyogaboutique.co.uk/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://learnvibecoding.hackquest.com/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://math.numbercraftacademy.com/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://bluemoneytuff.zayqan.com/",
-      "found": "5/15/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://learnagriculture.danfarm.ru/",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "Vexo Sirramenboi",
-      "contributor_url": "https://github.com/Vexo-Sirramenboi"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://edu.ucecom-craiova.ro/",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "Vexo Sirramenboi",
-      "contributor_url": "https://github.com/Vexo-Sirramenboi"
-    },
-    {
-      "provider": "🖤 Void Network",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://diddylarpfoidnetwork.gamalabs.net/",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
       "provider": "🦄 Utopia Education",
