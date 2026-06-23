@@ -103,17 +103,30 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-23T09:29:16Z",
-    "checked_at_display": "2026-06-23 09:29 UTC",
+    "checked_at": "2026-06-23T14:37:08Z",
+    "checked_at_display": "2026-06-23 14:37 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
   "failing_links": {
-    "https://filters.adventurersalmanac.com": 1,
-    "https://cdn.jsdelivr.net/gh/TwiLabs/daydreaming/dist/index.svg": 1,
-    "https://fastly.jsdelivr.net/gh/mrdavidzs/svgfrosted@A4/surgeray2343.svg": 1
+    "https://filters.adventurersalmanac.com": 2,
+    "https://update.update.update.admin.dev.bananaschool.duckdns.org": 1,
+    "https://update.update.update.update.dev.bananaschool.duckdns.org": 1,
+    "https://update.update.update.update.update.test.bananaschool.duckdns.org": 1,
+    "https://update.update.www.www.test.bananaschool.duckdns.org": 1,
+    "https://awcqihoe.bananaschool.duckdns.org": 1,
+    "https://update.www.www.www.www.bananaschool.duckdns.org": 1,
+    "https://qnewiatr.bananaschool.duckdns.org": 1,
+    "https://www.ijzaoxia.www.www.admin.dev.bananaschool.duckdns.org": 1,
+    "https://www.www.dev.bananaschool.duckdns.org": 1,
+    "https://www.update.update.update.www.www.dev.bananaschool.duckdns.org": 1,
+    "https://www.dgmikzon.bananaschool.duckdns.org": 1,
+    "https://fastly.jsdelivr.net/gh/mrdavidzs/svgfrosted@A4/surgeray2343.svg": 2,
+    "https://www.fluxunblocker.duckdns.org": 1,
+    "https://maniemusicale.duckdns.org": 1,
+    "https://www.jclsforp.bananaschool.duckdns.org": 1
   },
   "links": [
     {
