@@ -103,16 +103,18 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-23T02:42:29Z",
-    "checked_at_display": "2026-06-23 02:42 UTC",
+    "checked_at": "2026-06-23T09:29:16Z",
+    "checked_at_display": "2026-06-23 09:29 UTC",
     "added_count": 0,
-    "removed_count": 1,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://ixlpapi.logyca.com.mx"
-    ]
+    "removed_links": []
   },
-  "failing_links": {},
+  "failing_links": {
+    "https://filters.adventurersalmanac.com": 1,
+    "https://cdn.jsdelivr.net/gh/TwiLabs/daydreaming/dist/index.svg": 1,
+    "https://fastly.jsdelivr.net/gh/mrdavidzs/svgfrosted@A4/surgeray2343.svg": 1
+  },
   "links": [
     {
       "provider": "💜 Selenite",

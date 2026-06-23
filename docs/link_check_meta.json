@@ -1,10 +1,8 @@
 {
-  "checked_at": "2026-06-23T02:42:29Z",
-  "checked_at_display": "2026-06-23 02:42 UTC",
+  "checked_at": "2026-06-23T09:29:16Z",
+  "checked_at_display": "2026-06-23 09:29 UTC",
   "added_count": 0,
-  "removed_count": 1,
+  "removed_count": 0,
   "added_links": [],
-  "removed_links": [
-    "https://ixlpapi.logyca.com.mx"
-  ]
+  "removed_links": []
 }
