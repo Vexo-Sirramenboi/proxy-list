@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.2 | Released: May 31, 2026
-> r215 | Last Updated: June 23, 2026
+> r216 | Last Updated: June 24, 2026
 > Total onsite links: 4525 (2549 sorted + 1976 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -1381,123 +1381,14 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | Unknown | Scramjet | 110 |
+> | Proxy/Games | Unknown | Scramjet | 1 |
 
 > [!IMPORTANT]
 > Rosin does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
-| | https://bagonmyhead.gyalsanglama.com.np | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://isaidstayinside.gyalsanglama.com.np | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://followmytiktok.centromariapolis.cl/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://hotterthenmay8th.centromariapolis.cl/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://sosa.centromariapolis.cl/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://straight8.centromariapolis.cl/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://weonhim.centromariapolis.cl/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://cleanup.umardia.com.mx/ | 3/28/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://grab.umardia.com.mx/ | 3/28/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://interested.umardia.com.mx/ | 3/28/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://sub.umardia.com.mx/ | 3/28/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://math.free-dyndns.org/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://edusuper.albrightscycling.com/ | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://peter.eastcountywireless.com/ | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://reviewing.luxuryroig.com/ | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://been.myfdistribuidora.com.ar/ | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://edulearner.tiatex.com/ | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://soccergreen.gressvikbmx.no/ | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://comment.kelownaembroidery.ca/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://consumer.xenopoem.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://hope.takh.ee/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://many.kelownaembroidery.ca/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://moreso.xenopoem.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://phonk.waiukuyoga.nz/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://plan.xenopoem.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://spell.kelownaembroidery.ca/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://still.xenopoem.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://ticking.takh.ee/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://za.kelownaembroidery.ca/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://beendrippy.fxchinese.ca/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://biology.echofx.com/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://band.echofx.com/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://education.echofx.com/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://analytics.echofx.com/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://quick.echofx.com/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://vcsa-sub.fhoster.ru/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://been-back.interluxvs.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://education.4e4a.org/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://playernation1.zoomzoomblooms.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://vcsa-yt.allenbarnes.org/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://hotelchoosing.hotelconsuladoinn.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://learnhotels.hotelconsuladoinn.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://motel.hotelconsuladoinn.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://quick-education.hotelconsuladoinn.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://travelaround.hotelconsuladoinn.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://educationalmath.studyingsciencethemes.one/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://superlit.hotelconsuladoinn.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://superleaening.albrightscycling.com | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://supereadertool.cyberninja.ie | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://superbrr.warna.ch | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://pickupdurk.maxmir-energy.ru | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://ggaisucks.tejidosdedignidad.org/?fromEdu=1 | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://edulighrz.vixenlights.com/?fromEdu=1 | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://finallyworkinggoguardian.shakti.ug/?fromEdu=1 | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://subtome.academinctools.pw | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://education.honufon.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://wsp.honufon.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://lolskayer.hotelconsuladoinn.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://allinks.pkdk-almuhammadi.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://birdie.darkwolf.ca | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://slayers.e-c-h-o.tw | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://wentup10.e-c-h-o.tw | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://edu.honufon.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://learner.honufon.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://big50.joyitasparejas.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://dinonuggets.dinocol.co.uk | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://internalsrror.hotelconsuladoinn.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://boomboom.kora.cl | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://goingup.dinocol.co.uk | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://ticketer.interluxvs.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://ck1.triatlonpacense.es | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://oklahoma.bloomer.network.computer.bamastuff.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://123numbers.numbercraftacademy.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://babyboo.babypos.hk | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://lmaobahy.babypos.hk | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://supereading.babypos.hk | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://airport.vta-international.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://ohboy.triatlonpacense.es | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://todeepinthechoppahouse.recreatinganew.com | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://shoottokiller.lervs.ro | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://slayerbeensosa.lervs.ro | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://slayerthehardest.lervs.ro | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://touchdatbread.lervs.ro | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://asga.recepist.fi | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://bhhv.recepist.fi | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://jync.recepist.fi | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://qbxl.recepist.fi | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://qmzkd.recepist.fi | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://runningatrap.recepist.fi | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://supereader.recepist.fi | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://tungtung.tongllfoundation.org | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://inthebank.valor.ar | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://callgobrr.callcentercuritiba.com.br/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://indian.callcentercuritiba.com.br/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://brrrchopa.esdata.info/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://domain.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://flyerprogram.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://whathappenedonstonie.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://stillaintcall.callcentercuritiba.com.br | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://lastweekbaby.tozsugianto.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://sciencetools.agatab.com | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://somany.gsxpress.com.my | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://tomuchpotential.gsxpress.com.my | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://weup.casadotricolor.com.br | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://alltalkgetyouhurt.nanobit.org | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://likeame.bakeryos.net | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://makingcheese.bakeryos.net | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://sonny.bakeryos.net | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://bank.pollsvspoly.com | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://bees.pollsvspoly.com | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # ⬡ TGLSC Density 4
 > [!NOTE]
@@ -2515,7 +2406,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | N/A | unknown | 89 |
+> | Games | N/A | unknown | 87 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -2606,8 +2497,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://panel.clever.com.seimedical.com.mx/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://panel.clever.com.dex-online.ro/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://panel.clever.com.pantang.com.my/ | 5/15/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://paint.sleep.bulls.art-motel.com | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://rosin.bull.trottparkfencingclub.org.au | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🦆 Duckmath
 > [!NOTE]

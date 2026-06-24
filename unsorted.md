@@ -1998,3 +1998,13 @@ Move links from here into `list.md` once sorted.
 - http://pullupmath.2nx.org
 - https://member.electricpiano.xyz.cdn.cloudflare.net
 - https://l.global.ssl.fastly.net
+- https://hotelchoosing.hotelconsuladoinn.com
+- https://learnhotels.hotelconsuladoinn.com
+- https://motel.hotelconsuladoinn.com
+- https://quick-education.hotelconsuladoinn.com
+- https://travelaround.hotelconsuladoinn.com
+- https://followmytiktok.centromariapolis.cl
+- https://hotterthenmay8th.centromariapolis.cl
+- https://sosa.centromariapolis.cl
+- https://straight8.centromariapolis.cl
+- https://weonhim.centromariapolis.cl
