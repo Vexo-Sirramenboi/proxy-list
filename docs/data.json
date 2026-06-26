@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r220",
+    "revision": "r221",
     "last_updated": "June 26, 2026",
     "unsorted_total": 2006,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
@@ -103,23 +103,24 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-26T08:55:57Z",
-    "checked_at_display": "2026-06-26 08:55 UTC",
+    "checked_at": "2026-06-26T14:12:13Z",
+    "checked_at_display": "2026-06-26 14:12 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 7,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://inf0cd84e.fbsistemas.com.ar",
+      "https://inf3d0813.fbsistemas.com.ar",
+      "https://inf6170c4.fbsistemas.com.ar",
+      "https://inf29323.fbsistemas.com.ar",
+      "https://catnipclaw95.becasuniversitarias.org",
+      "https://mewcat23.becasuniversitarias.org",
+      "https://fluffhiss12.becasuniversitarias.org"
+    ]
   },
   "failing_links": {
-    "https://inf0cd84e.fbsistemas.com.ar": 2,
-    "https://inf3d0813.fbsistemas.com.ar": 2,
-    "https://inf6170c4.fbsistemas.com.ar": 2,
-    "https://inf29323.fbsistemas.com.ar": 2,
-    "https://firstwordithinkofisfish.stonestackstrategies.com": 1,
-    "https://zgdhgzrcjx.stonestackstrategies.com": 1,
-    "https://catnipclaw95.becasuniversitarias.org": 2,
-    "https://mewcat23.becasuniversitarias.org": 2,
-    "https://fluffhiss12.becasuniversitarias.org": 2
+    "https://firstwordithinkofisfish.stonestackstrategies.com": 2,
+    "https://zgdhgzrcjx.stonestackstrategies.com": 2
   },
   "links": [
     {
@@ -30276,51 +30277,7 @@
         "ultraviolet"
       ],
       "locked": "",
-      "link": "https://inf0cd84e.fbsistemas.com.ar/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✨ Infamous",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, captcha",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
       "link": "https://inf843535.mchini.com/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✨ Infamous",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, captcha",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://inf3d0813.fbsistemas.com.ar/",
       "found": "4/25/2026",
       "username": "N/A",
       "password": "N/A",
@@ -30408,28 +30365,6 @@
         "ultraviolet"
       ],
       "locked": "",
-      "link": "https://inf6170c4.fbsistemas.com.ar/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✨ Infamous",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, captcha",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
       "link": "https://inf63834.myfdistribuidora.com.ar",
       "found": "4/25/2026",
       "username": "N/A",
@@ -30453,28 +30388,6 @@
       ],
       "locked": "",
       "link": "https://inf33456.hookextender.com",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✨ Infamous",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, captcha",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://inf29323.fbsistemas.com.ar",
       "found": "4/25/2026",
       "username": "N/A",
       "password": "N/A",
@@ -37461,63 +37374,6 @@
       ],
       "locked": "",
       "link": "https://cdn.jsdelivr.net/gh/Stockable/sites@main/xcloud.svg",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Catclass",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://catnipclaw95.becasuniversitarias.org/",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Catclass",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://mewcat23.becasuniversitarias.org/",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "Catclass",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://fluffhiss12.becasuniversitarias.org/",
       "found": "6/7/2026",
       "username": "N/A",
       "password": "N/A",

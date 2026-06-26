@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.2 | Released: May 31, 2026
-> r220 | Last Updated: June 26, 2026
+> r221 | Last Updated: June 26, 2026
 > Total onsite links: 4525 (2549 sorted + 1976 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -2128,7 +2128,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, captcha | Scramjet, Ultraviolet | 28 |
+> | Proxy/Games | epoxy, libcurl, captcha | Scramjet, Ultraviolet | 24 |
 
 
 | Locked | Link | Found Date | Username | Password | Contributor |
@@ -2139,16 +2139,12 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://infb711dd.myfdistribuidora.com.ar/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://inf6bdb04.hookextender.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://infc1a664.mchini.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://inf0cd84e.fbsistemas.com.ar/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://inf843535.mchini.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://inf3d0813.fbsistemas.com.ar/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://inf0b8a4a.myfdistribuidora.com.ar/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://infb0d247.hookextender.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://inf1b4140.mchini.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://inf6170c4.fbsistemas.com.ar/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://inf63834.myfdistribuidora.com.ar | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://inf33456.hookextender.com | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://inf29323.fbsistemas.com.ar | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://inf31265.notinthearchives.net/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://infamous.qzz.io/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://inf59452.chrismccrory.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
@@ -2927,15 +2923,12 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 5 |
+> | pending | pending | pending | 2 |
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
-| | https://catnipclaw95.becasuniversitarias.org/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://mewcat23.becasuniversitarias.org/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://fluffhiss12.becasuniversitarias.org/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://kitcatnip36.bridgeportmath.org/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://whiskermew73.bridgeportmath.org/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
