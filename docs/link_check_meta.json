@@ -1,8 +1,10 @@
 {
-  "checked_at": "2026-06-25T19:51:14Z",
-  "checked_at_display": "2026-06-25 19:51 UTC",
+  "checked_at": "2026-06-26T02:47:53Z",
+  "checked_at_display": "2026-06-26 02:47 UTC",
   "added_count": 0,
-  "removed_count": 0,
+  "removed_count": 1,
   "added_links": [],
-  "removed_links": []
+  "removed_links": [
+    "https://potato.thehustlinhomesteader.com"
+  ]
 }
