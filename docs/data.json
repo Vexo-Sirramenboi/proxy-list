@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r221",
+    "revision": "r222",
     "last_updated": "June 26, 2026",
     "unsorted_total": 2006,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
@@ -103,24 +103,18 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-26T14:12:13Z",
-    "checked_at_display": "2026-06-26 14:12 UTC",
+    "checked_at": "2026-06-26T19:40:21Z",
+    "checked_at_display": "2026-06-26 19:40 UTC",
     "added_count": 0,
-    "removed_count": 7,
+    "removed_count": 2,
     "added_links": [],
     "removed_links": [
-      "https://inf0cd84e.fbsistemas.com.ar",
-      "https://inf3d0813.fbsistemas.com.ar",
-      "https://inf6170c4.fbsistemas.com.ar",
-      "https://inf29323.fbsistemas.com.ar",
-      "https://catnipclaw95.becasuniversitarias.org",
-      "https://mewcat23.becasuniversitarias.org",
-      "https://fluffhiss12.becasuniversitarias.org"
+      "https://firstwordithinkofisfish.stonestackstrategies.com",
+      "https://zgdhgzrcjx.stonestackstrategies.com"
     ]
   },
   "failing_links": {
-    "https://firstwordithinkofisfish.stonestackstrategies.com": 2,
-    "https://zgdhgzrcjx.stonestackstrategies.com": 2
+    "https://51.222.206.184.my.local-ip.sh": 1
   },
   "links": [
     {
@@ -33330,25 +33324,6 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
-      "provider": "🧪 Totally Science",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://firstwordithinkofisfish.stonestackstrategies.com/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
       "provider": "🧑‍🧒‍🧒 Soul",
       "category": "Proxy/Games",
       "capabilities": "unknown",
@@ -33412,23 +33387,6 @@
       ],
       "locked": "",
       "link": "https://okvrlsgvsq.pcrage2000.com/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "❤️ SDXP",
-      "category": "Games",
-      "capabilities": "N/A",
-      "capability_tags": [],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://zgdhgzrcjx.stonestackstrategies.com/",
       "found": "4/30/2026",
       "username": "N/A",
       "password": "N/A",
