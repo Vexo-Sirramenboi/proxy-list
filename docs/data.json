@@ -103,19 +103,19 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-27T08:30:29Z",
-    "checked_at_display": "2026-06-27 08:30 UTC",
+    "checked_at": "2026-06-27T13:21:18Z",
+    "checked_at_display": "2026-06-27 13:21 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
   "failing_links": {
-    "https://51.222.206.184.ip.ipq.co": 1,
-    "https://15.204.247.166.ip.ipq.co": 1,
-    "https://house-hunters.epusara.com": 1,
-    "https://your.early.cbcsystems.co.uk": 1,
-    "https://art.reading.biology.geometry.drama.renaca.com": 1
+    "https://51.222.206.184.ip.ipq.co": 2,
+    "https://15.204.247.166.ip.ipq.co": 2,
+    "https://cdn.jsdelivr.net/gh/darkdragonzxs/zd-pages@latest/svg.svg": 1,
+    "https://pub-bc82e2ed41754dc4b80c6d83a173f04b.r2.dev/index.html#": 1,
+    "https://cdn.jsdelivr.net/gh/TwiLabs/math/dist/index.svg": 1
   },
   "links": [
     {
