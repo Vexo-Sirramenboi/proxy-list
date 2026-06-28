@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r223",
-    "last_updated": "June 27, 2026",
+    "revision": "r224",
+    "last_updated": "June 28, 2026",
     "unsorted_total": 2006,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
     "update_notice": "Added mirror links and embed support; maintenance fixes and updated filter data.",
@@ -103,27 +103,19 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-27T19:11:52Z",
-    "checked_at_display": "2026-06-27 19:11 UTC",
+    "checked_at": "2026-06-28T02:53:19Z",
+    "checked_at_display": "2026-06-28 02:53 UTC",
     "added_count": 0,
-    "removed_count": 2,
+    "removed_count": 1,
     "added_links": [],
     "removed_links": [
-      "https://51.222.206.184.ip.ipq.co",
-      "https://15.204.247.166.ip.ipq.co"
+      "https://pub-bc82e2ed41754dc4b80c6d83a173f04b.r2.dev/index.html#"
     ]
   },
   "failing_links": {
-    "https://testinga.mooo.com": 1,
-    "https://testing.farted.net": 1,
-    "https://cdn.jsdelivr.net/gh/PeteZah-G/PeteZahStaticDone@main/english.svg": 1,
-    "https://pub-bc82e2ed41754dc4b80c6d83a173f04b.r2.dev/index.html#": 2,
-    "https://chemistry.axiomait.pro": 1,
-    "https://gcore.jsdelivr.net/gh/mrdavidsz/svgfrosted@main/deltarealm6357.svg": 1,
-    "https://gcore.jsdelivr.net/gh/mrdavidsz/svgfrosted@main/neonmesh6933.svg": 1,
-    "https://gcore.jsdelivr.net/gh/snoopyeducation/securly.com@main/classlink.com/math.svg": 1,
-    "https://testingcf.jsdelivr.net/gh/snoopyeducation/securly.com@main/classlink.com/math.svg": 1,
-    "https://rain.snow.hail.cloudy.heat.weatherpixel.com": 1
+    "https://vividdarkness.uk": 1,
+    "https://kitcatnip36.bridgeportmath.org": 1,
+    "https://whiskermew73.bridgeportmath.org": 1
   },
   "links": [
     {
@@ -26046,25 +26038,6 @@
       "locked": "",
       "link": "https://unpkg.com/browselucide@1.0.1/logo.svg#/",
       "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🤍 Lucide",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://pub-bc82e2ed41754dc4b80c6d83a173f04b.r2.dev/index.html#/",
-      "found": "4/25/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",
