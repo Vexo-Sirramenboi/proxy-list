@@ -103,21 +103,14 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-28T13:25:07Z",
-    "checked_at_display": "2026-06-28 13:25 UTC",
+    "checked_at": "2026-06-28T19:10:44Z",
+    "checked_at_display": "2026-06-28 19:10 UTC",
     "added_count": 0,
-    "removed_count": 2,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://kitcatnip36.bridgeportmath.org",
-      "https://whiskermew73.bridgeportmath.org"
-    ]
+    "removed_links": []
   },
-  "failing_links": {
-    "https://51.222.206.184.devns.me": 1,
-    "https://15.204.247.166.devns.me": 1,
-    "https://51.222.206.184.my.local-ip.sh": 1
-  },
+  "failing_links": {},
   "links": [
     {
       "provider": "💜 Selenite",
