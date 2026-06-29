@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r225",
-    "last_updated": "June 28, 2026",
+    "revision": "r226",
+    "last_updated": "June 29, 2026",
     "unsorted_total": 2006,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
     "update_notice": "Added mirror links and embed support; maintenance fixes and updated filter data.",
@@ -103,37 +103,20 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-29T10:46:44Z",
-    "checked_at_display": "2026-06-29 10:46 UTC",
+    "checked_at": "2026-06-29T15:36:27Z",
+    "checked_at_display": "2026-06-29 15:36 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 3,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://highschoolacademy.online",
+      "https://mathnotes.online",
+      "https://palmwatches.store"
+    ]
   },
   "failing_links": {
-    "https://fastgeo.eclipsecastellon.net": 1,
-    "https://rapidbio.eclipsecastellon.net": 1,
-    "https://solidpoems.eclipsecastellon.net": 1,
-    "https://alphageo.eclipsecastellon.net": 1,
-    "https://15.204.247.166.my.local-ip.sh": 1,
-    "https://chillmath.adcsurkhet.org.np": 1,
-    "https://englishpeoms.takh.ee": 1,
-    "https://megaliterature.losarcos.us": 1,
-    "https://highschoolacademy.online": 2,
-    "https://novalogic.tejidosdedignidad.org": 1,
-    "https://alphaenglish.warna.ch": 1,
-    "https://eladesceelasobe.lervs.ro": 1,
-    "https://zink.thongthaitextile.com": 1,
-    "https://keenenglish.bamastuff.com": 1,
-    "https://keengrammar.reformarchive.com": 1,
-    "https://mathnotes.online": 2,
-    "https://palmwatches.store": 2,
-    "https://coolscience.babypos.hk": 1,
-    "https://neatgeo.babypos.hk": 1,
-    "https://neatreading.babypos.hk": 1,
-    "https://market.thenookfactory.com": 1,
-    "https://corecs.babypos.hk": 1,
-    "https://truebio.camberleycricket.com": 1
+    "https://zink.thongthaitextile.com": 2,
+    "https://market.thenookfactory.com": 2
   },
   "links": [
     {
@@ -9357,26 +9340,6 @@
       ],
       "locked": "",
       "link": "https://energy.saladandgo-menu.info/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌕 Lunar",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://highschoolacademy.online/",
       "found": "4/25/2026",
       "username": "N/A",
       "password": "N/A",
@@ -22557,25 +22520,6 @@
         "unknown"
       ],
       "locked": "",
-      "link": "https://mathnotes.online",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "📖 StudyHub",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
       "link": "https://humble.eggerfamily.org",
       "found": "5/2/2026",
       "username": "N/A",
@@ -22596,25 +22540,6 @@
       ],
       "locked": "",
       "link": "https://legal.solos.gr",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "📖 StudyHub",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://palmwatches.store",
       "found": "5/2/2026",
       "username": "N/A",
       "password": "N/A",
@@ -25105,25 +25030,6 @@
       "locked": "",
       "link": "https://hondaispeak.hondascooterparts.com/",
       "found": "4/17/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🦄 Utopia Education",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://highschoolacademy.online/",
-      "found": "4/25/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",

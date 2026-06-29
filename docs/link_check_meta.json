@@ -1,8 +1,12 @@
 {
-  "checked_at": "2026-06-29T10:46:44Z",
-  "checked_at_display": "2026-06-29 10:46 UTC",
+  "checked_at": "2026-06-29T15:36:27Z",
+  "checked_at_display": "2026-06-29 15:36 UTC",
   "added_count": 0,
-  "removed_count": 0,
+  "removed_count": 3,
   "added_links": [],
-  "removed_links": []
+  "removed_links": [
+    "https://highschoolacademy.online",
+    "https://mathnotes.online",
+    "https://palmwatches.store"
+  ]
 }
