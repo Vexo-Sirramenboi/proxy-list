@@ -103,19 +103,37 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-06-29T02:53:43Z",
-    "checked_at_display": "2026-06-29 02:53 UTC",
+    "checked_at": "2026-06-29T10:46:44Z",
+    "checked_at_display": "2026-06-29 10:46 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
   "failing_links": {
-    "https://51.222.206.184.devns.me": 1,
-    "https://highschoolacademy.online": 1,
-    "https://mathnotes.online": 1,
-    "https://palmwatches.store": 1,
-    "https://historyislife.wikidelia.net": 1
+    "https://fastgeo.eclipsecastellon.net": 1,
+    "https://rapidbio.eclipsecastellon.net": 1,
+    "https://solidpoems.eclipsecastellon.net": 1,
+    "https://alphageo.eclipsecastellon.net": 1,
+    "https://15.204.247.166.my.local-ip.sh": 1,
+    "https://chillmath.adcsurkhet.org.np": 1,
+    "https://englishpeoms.takh.ee": 1,
+    "https://megaliterature.losarcos.us": 1,
+    "https://highschoolacademy.online": 2,
+    "https://novalogic.tejidosdedignidad.org": 1,
+    "https://alphaenglish.warna.ch": 1,
+    "https://eladesceelasobe.lervs.ro": 1,
+    "https://zink.thongthaitextile.com": 1,
+    "https://keenenglish.bamastuff.com": 1,
+    "https://keengrammar.reformarchive.com": 1,
+    "https://mathnotes.online": 2,
+    "https://palmwatches.store": 2,
+    "https://coolscience.babypos.hk": 1,
+    "https://neatgeo.babypos.hk": 1,
+    "https://neatreading.babypos.hk": 1,
+    "https://market.thenookfactory.com": 1,
+    "https://corecs.babypos.hk": 1,
+    "https://truebio.camberleycricket.com": 1
   },
   "links": [
     {
