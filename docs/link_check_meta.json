@@ -1,8 +1,11 @@
 {
-  "checked_at": "2026-06-30T09:24:15Z",
-  "checked_at_display": "2026-06-30 09:24 UTC",
+  "checked_at": "2026-06-30T14:07:49Z",
+  "checked_at_display": "2026-06-30 14:07 UTC",
   "added_count": 0,
-  "removed_count": 0,
+  "removed_count": 2,
   "added_links": [],
-  "removed_links": []
+  "removed_links": [
+    "https://h6aezidp9gq3.kang-fathur.com",
+    "https://cosmic-ubg-v-1--drunkenkermit.replit.app"
+  ]
 }
