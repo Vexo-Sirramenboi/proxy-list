@@ -103,21 +103,19 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-07-01T14:22:45Z",
-    "checked_at_display": "2026-07-01 14:22 UTC",
+    "checked_at": "2026-07-01T19:45:29Z",
+    "checked_at_display": "2026-07-01 19:45 UTC",
     "added_count": 0,
-    "removed_count": 2,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://auto.detect.math.work.tanenbaumchat.org",
-      "https://testingcf.jsdelivr.net/gh/mrdavidss-vgg/svgfrosted@main/voidlight5277.svg"
-    ]
+    "removed_links": []
   },
   "failing_links": {
-    "https://www.bananaschool.duckdns.org": 1,
-    "https://awcqihoe.bananaschool.duckdns.org": 1,
-    "https://toviqrwn.bananaschool.duckdns.org": 1,
-    "https://www.update.jguutivl.update.admin.dev.bananaschool.duckdns.org": 1
+    "https://hi1.raisingpro.com": 1,
+    "https://hi2.raisingpro.com": 1,
+    "https://hi3.raisingpro.com": 1,
+    "https://hi4.raisingpro.com": 1,
+    "https://geometry.studying.english.seminar.computer.megamor.com.br": 1
   },
   "links": [
     {
