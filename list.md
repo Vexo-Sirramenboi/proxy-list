@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.2 | Released: May 31, 2026
-> r228 | Last Updated: June 30, 2026
+> r229 | Last Updated: July 01, 2026
 > Total onsite links: 4525 (2549 sorted + 1976 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -1711,7 +1711,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 43 |
+> | Proxy/Games | unknown | unknown | 42 |
 
 > [!IMPORTANT]
 > Utopia Education does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1747,7 +1747,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://noahsproxy.smelly.cc | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://tatata12345678910e2.chickenkiller.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://proxyyourmom.jumpingcrab.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://auto.detect.math.work.tanenbaumchat.org/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://clever.data.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://qowerschool.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://4l3x19the562oh.twilightparadox.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -2597,7 +2596,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 8 |
+> | pending | pending | pending | 7 |
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
 
@@ -2607,7 +2606,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://fastly.jsdelivr.net/gh/mrdavidzs/svgfrosted@A4/surgeray2343.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://gcore.jsdelivr.net/gh/mrdavidsz/svgfrosted@main/deltarealm6357.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://gcore.jsdelivr.net/gh/mrdavidsz/svgfrosted@main/neonmesh6933.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://testingcf.jsdelivr.net/gh/mrdavidss-vgg/svgfrosted@main/voidlight5277.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://sites.google.com/view/frostedbrowserstatic/frosted | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://sites.google.com/view/rainbowsvg/chudding | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://sites.google.com/view/statichtmlsite/static | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
