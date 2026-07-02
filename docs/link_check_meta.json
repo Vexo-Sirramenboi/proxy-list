@@ -1,14 +1,8 @@
 {
-  "checked_at": "2026-07-02T08:48:42Z",
-  "checked_at_display": "2026-07-02 08:48 UTC",
+  "checked_at": "2026-07-02T13:46:06Z",
+  "checked_at_display": "2026-07-02 13:46 UTC",
   "added_count": 0,
-  "removed_count": 5,
+  "removed_count": 0,
   "added_links": [],
-  "removed_links": [
-    "https://hi1.raisingpro.com",
-    "https://hi2.raisingpro.com",
-    "https://hi3.raisingpro.com",
-    "https://hi4.raisingpro.com",
-    "https://geometry.studying.english.seminar.computer.megamor.com.br"
-  ]
+  "removed_links": []
 }
