@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r233",
+    "revision": "r234",
     "last_updated": "July 04, 2026",
     "unsorted_total": 2014,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
@@ -103,24 +103,17 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-07-04T02:23:52Z",
-    "checked_at_display": "2026-07-04 02:23 UTC",
+    "checked_at": "2026-07-04T08:29:11Z",
+    "checked_at_display": "2026-07-04 08:29 UTC",
     "added_count": 0,
     "removed_count": 1,
     "added_links": [],
     "removed_links": [
-      "https://testinga.mooo.com"
+      "https://booger.riteshp.com.np"
     ]
   },
   "failing_links": {
-    "https://booger.riteshp.com.np": 2,
-    "https://s3.amazonaws.com/elliotslinks-tnjavxyp/study81410/index.html": 1,
-    "https://russia.fllow.com.br": 1,
-    "https://eladesceelasobe.lervs.ro": 1,
-    "https://mathematics.calculus.reformarchive.com": 1,
-    "https://english.seminar.lervs.ro": 1,
-    "https://math.science.lervs.ro": 1,
-    "https://rhodium.thenme.net": 1
+    "https://russia.fllow.com.br": 2
   },
   "links": [
     {
@@ -2642,28 +2635,6 @@
       "password": "N/A",
       "contributor": "1NobleCyber",
       "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🚀 Nebulo",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl",
-      "capability_tags": [
-        "epoxy",
-        "libcurl"
-      ],
-      "protocols": "Scramjet, Ultraviolet, Eclipse",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet",
-        "eclipse"
-      ],
-      "locked": "",
-      "link": "https://booger.riteshp.com.np/",
-      "found": "2/19/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
       "provider": "🚀 Nebulo",
