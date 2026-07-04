@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r234",
+    "revision": "r235",
     "last_updated": "July 04, 2026",
     "unsorted_total": 2014,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
@@ -103,17 +103,21 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-07-04T08:29:11Z",
-    "checked_at_display": "2026-07-04 08:29 UTC",
+    "checked_at": "2026-07-04T13:11:12Z",
+    "checked_at_display": "2026-07-04 13:11 UTC",
     "added_count": 0,
     "removed_count": 1,
     "added_links": [],
     "removed_links": [
-      "https://booger.riteshp.com.np"
+      "https://russia.fllow.com.br"
     ]
   },
   "failing_links": {
-    "https://russia.fllow.com.br": 2
+    "https://tisd-student-portal.aayushbhandari.com.np": 1,
+    "https://fly.qantas.hoohaamelbourne.com.au": 1,
+    "https://update.update.update.update.dev.bananaschool.duckdns.org": 1,
+    "https://toviqrwn.bananaschool.duckdns.org": 1,
+    "https://math.lit.bio.bull.more.bvhoa.com": 1
   },
   "links": [
     {
@@ -31292,25 +31296,6 @@
       ],
       "locked": "",
       "link": "https://osap.g-osap.com/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🗝️ 1Key",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://russia.fllow.com.br/",
       "found": "4/25/2026",
       "username": "N/A",
       "password": "N/A",
