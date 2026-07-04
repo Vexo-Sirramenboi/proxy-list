@@ -103,21 +103,15 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-07-04T13:11:12Z",
-    "checked_at_display": "2026-07-04 13:11 UTC",
+    "checked_at": "2026-07-04T19:01:44Z",
+    "checked_at_display": "2026-07-04 19:01 UTC",
     "added_count": 0,
-    "removed_count": 1,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://russia.fllow.com.br"
-    ]
+    "removed_links": []
   },
   "failing_links": {
-    "https://tisd-student-portal.aayushbhandari.com.np": 1,
-    "https://fly.qantas.hoohaamelbourne.com.au": 1,
-    "https://update.update.update.update.dev.bananaschool.duckdns.org": 1,
-    "https://toviqrwn.bananaschool.duckdns.org": 1,
-    "https://math.lit.bio.bull.more.bvhoa.com": 1
+    "https://water.drinkingbull.naturalie.net": 1
   },
   "links": [
     {
