@@ -103,17 +103,24 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-07-05T08:45:49Z",
-    "checked_at_display": "2026-07-05 08:45 UTC",
+    "checked_at": "2026-07-05T13:19:32Z",
+    "checked_at_display": "2026-07-05 13:19 UTC",
     "added_count": 0,
-    "removed_count": 1,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://water.drinkingbull.naturalie.net"
-    ]
+    "removed_links": []
   },
   "failing_links": {
-    "https://bbbbbbbbbbb.zapier.app": 1
+    "https://where-da-hoes-at.medicalscience.academy": 1,
+    "https://appleseedchan-is-a-girl-trust.medicalscience.academy": 1,
+    "https://mommy.medicalscience.academy": 1,
+    "https://aetherontop.medicalscience.academy": 1,
+    "https://bob.medicalscience.academy": 1,
+    "https://cheese.medicalscience.academy": 1,
+    "https://sunburn.medicalscience.academy": 1,
+    "https://edu.medicalscience.academy": 1,
+    "https://sonion.medicalscience.academy": 1,
+    "https://Summerbreak.medicalscience.academy": 1
   },
   "links": [
     {
