@@ -2017,3 +2017,4 @@ Move links from here into `list.md` once sorted.
 - https://fastgeo.eclipsecastellon.net
 - https://solidpoems.eclipsecastellon.net
 - https://easygeo.eclipsecastellon.net
+- https://math.desmos.live.cdn.cloudflare.net
