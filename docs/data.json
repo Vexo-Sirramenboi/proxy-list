@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r238",
-    "last_updated": "July 06, 2026",
+    "revision": "r239",
+    "last_updated": "July 07, 2026",
     "unsorted_total": 2015,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
     "update_notice": "Added mirror links and embed support; maintenance fixes and updated filter data.",
@@ -79,18 +79,29 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-07-06T19:48:05Z",
-    "checked_at_display": "2026-07-06 19:48 UTC",
+    "checked_at": "2026-07-07T02:33:28Z",
+    "checked_at_display": "2026-07-07 02:33 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 2,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://grandemass.beachlifeusa.com",
+      "https://boringvcsa.beachlifeusa.com"
+    ]
   },
   "failing_links": {
-    "https://grandemass.beachlifeusa.com": 2,
-    "https://boringvcsa.beachlifeusa.com": 2,
-    "https://focus-discipline.earlyriserscoffeeshop.com": 1,
-    "https://revision-system.fiedleracres.com": 1
+    "https://nebulo.beat.nebula.recreatinganew.com": 1,
+    "https://study-pattern.jandjley.com": 1,
+    "https://revision-system.fiedleracres.com": 2,
+    "https://update.update.update.bananaschool.duckdns.org": 1,
+    "https://update.update.www.www.admin.dev.bananaschool.duckdns.org": 1,
+    "https://update.update.www.www.dev.bananaschool.duckdns.org": 1,
+    "https://www.bananaschool.duckdns.org": 1,
+    "https://qnewiatr.bananaschool.duckdns.org": 1,
+    "https://www.qzeptsbn.bananaschool.duckdns.org": 1,
+    "https://flux-unblocker.duckdns.org": 1,
+    "https://maniemusicale.duckdns.org": 1,
+    "https://fffffff.zapier.app": 1
   },
   "links": [
     {
@@ -2151,30 +2162,6 @@
       ],
       "locked": "",
       "link": "https://dreamingvcsa.skills-sims.com/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⭐ DayDream X",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp, captcha, reflux",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp",
-        "captcha",
-        "reflux"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://grandemass.beachlifeusa.com/",
       "found": "4/25/2026",
       "username": "N/A",
       "password": "N/A",
@@ -4917,25 +4904,6 @@
       "locked": "",
       "link": "https://update.214321admin.api.en.v2202508297531378155.powersrv.de/",
       "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🥱 Boredom",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "locked": "",
-      "link": "https://boringvcsa.beachlifeusa.com/",
-      "found": "4/25/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",

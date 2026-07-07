@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.2 | Released: May 31, 2026
-> r238 | Last Updated: July 06, 2026
+> r239 | Last Updated: July 07, 2026
 > Total onsite links: 4525 (2549 sorted + 1976 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -177,7 +177,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp, captcha, reflux | Scramjet, Ultraviolet | 33 |
+> | Proxy/Games | epoxy, libcurl, wisp, captcha, reflux | Scramjet, Ultraviolet | 32 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -196,7 +196,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://51.222.206.184.my.local-ip.sh | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://51.222.206.184.xip.lhjmmc.cn/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://dreamingvcsa.skills-sims.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://grandemass.beachlifeusa.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://grandemass.takh.ee/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://outerspace.boiso.ar | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://supitscameron.bisblick.org/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -363,7 +362,7 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 26 |
+> | Proxy/Games | unknown | Scramjet | 25 |
 
 > [!IMPORTANT]
 > Boredom does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -382,7 +381,6 @@ Added mirror links and embed support; maintenance fixes and updated filter data.
 | | https://432www.update.update.76update.158-69-222-114.sslip.io/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://nmlkjmlkjihupdate.update.987298765432sdabhvaewukbcfjkaesk.152.53.136.204.nip.io/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://update.214321admin.api.en.v2202508297531378155.powersrv.de/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://boringvcsa.beachlifeusa.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://vcsayt.skills-sims.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://pn.boredom.apertura.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://hello-vcsa.karjase.ee/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
