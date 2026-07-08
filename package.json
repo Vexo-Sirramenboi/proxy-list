@@ -9,7 +9,7 @@
     "firebase": "^12.12.1"
   },
   "devDependencies": {
-    "wrangler": "^4.101.0"
+    "wrangler": "^4.107.1"
   },
   "overrides": {
     "esbuild": "^0.28.1",
