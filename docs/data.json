@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "v5.2",
-    "revision": "r240",
-    "last_updated": "July 07, 2026",
+    "revision": "r241",
+    "last_updated": "July 08, 2026",
     "unsorted_total": 2015,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
     "update_notice": "Added mirror links and embed support; maintenance fixes and updated filter data.",
@@ -79,23 +79,25 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-07-08T13:49:47Z",
-    "checked_at_display": "2026-07-08 13:49 UTC",
+    "checked_at": "2026-07-08T19:15:37Z",
+    "checked_at_display": "2026-07-08 19:15 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 2,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://sbmowing.gressvikbmxklubb.com",
+      "https://north.pole.rain.deer.vixenlights.com"
+    ]
   },
   "failing_links": {
-    "https://kidsthesedaysbro.arxeiokin.gr": 1,
-    "https://revision-flow.maverickden.com": 1,
-    "https://brain-skills.ortonavarro.com": 1,
-    "https://focus-discipline.earlyriserscoffeeshop.com": 2,
-    "https://study-achievement.expedicionesytrekking.com": 1,
-    "https://study-control.wayner.ca": 1,
-    "https://sbmowing.gressvikbmxklubb.com": 2,
-    "https://travelcroatia.inzagreb.com": 2,
-    "https://north.pole.rain.deer.vixenlights.com": 2
+    "https://neatcalc.recreatinganew.com": 1,
+    "https://study-achievement.expedicionesytrekking.com": 2,
+    "https://alphagrammar.recreatinganew.com": 1,
+    "https://justin.jia.xingtong.tysm.japan.is": 1,
+    "https://bloxcraftubg.freetls.fastly.net": 1,
+    "https://unblocked-games.freetls.fastly.net": 1,
+    "https://clearcoding.pollsvspoly.com": 1,
+    "https://timmy.zapier.app": 1
   },
   "links": [
     {
@@ -3155,51 +3157,7 @@
         "eclipse"
       ],
       "locked": "",
-      "link": "https://sbmowing.gressvikbmxklubb.com",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🚀 Nebulo",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl",
-      "capability_tags": [
-        "epoxy",
-        "libcurl"
-      ],
-      "protocols": "Scramjet, Ultraviolet, Eclipse",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet",
-        "eclipse"
-      ],
-      "locked": "",
       "link": "https://travelcroatia.inzagreb.com",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🚀 Nebulo",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl",
-      "capability_tags": [
-        "epoxy",
-        "libcurl"
-      ],
-      "protocols": "Scramjet, Ultraviolet, Eclipse",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet",
-        "eclipse"
-      ],
-      "locked": "",
-      "link": "https://north.pole.rain.deer.vixenlights.com",
       "found": "5/22/2026",
       "username": "N/A",
       "password": "N/A",
