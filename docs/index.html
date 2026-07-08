@@ -24,11 +24,11 @@
   <link rel="icon" type="image/png" href="favicon.png" />
   <style>
     :root {
-      --bg: #0f1419;
-      --surface: #1a222d;
-      --border: #2d3a4d;
-      --text: #e7ecf3;
-      --muted: #8b9cb3;
+      --bg: #111111;
+      --surface: #1a1a1a;
+      --border: #2e2e2e;
+      --text: #e8e8e8;
+      --muted: #9a9a9a;
       --accent: #6cb3ff;
       --ok: #3ecf8e;
       --font: "Segoe UI", system-ui, sans-serif;
@@ -100,7 +100,7 @@
       padding: 0.35rem;
       border: 1px solid var(--border);
       border-radius: 8px;
-      background: #121920;
+      background: #141414;
       box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
     }
     .account-menu.open {
@@ -126,7 +126,7 @@
       cursor: pointer;
     }
     .account-menu-item:hover {
-      background: #1f2e42;
+      background: #222222;
       color: var(--accent);
     }
     .account-menu-item--link {
@@ -146,7 +146,7 @@
       padding: 0.55rem 0.7rem;
       border: 1px solid var(--border);
       border-radius: 8px;
-      background: #121920;
+      background: #141414;
       font-size: 0.82rem;
       color: var(--text);
     }
@@ -197,7 +197,7 @@
       padding: 0.1rem 0.32rem;
       border: 1px solid var(--border);
       border-radius: 4px;
-      background: #121920;
+      background: #141414;
       cursor: pointer;
       font-size: 0.78rem;
       line-height: 1.2;
@@ -210,7 +210,7 @@
     }
     .rating-vote-btn.is-active {
       border-color: #2d5588;
-      background: #1e3a5f;
+      background: #2a2a2a;
       color: var(--accent);
     }
     .rating-vote-btn img {
@@ -415,15 +415,15 @@
     }
     .btn:hover { border-color: var(--accent); color: var(--accent); }
     .btn-primary {
-      background: #1e3a5f;
+      background: #2a2a2a;
       border-color: #2d5588;
       color: var(--accent);
     }
-    .btn-primary:hover { background: #254a78; color: #9fd4ff; }
+    .btn-primary:hover { background: #333333; color: #9fd4ff; }
     .btn-active {
       border-color: #2d5588;
       color: #9fd4ff;
-      background: #1f2e42;
+      background: #222222;
     }
     .sidebar-actions {
       display: flex;
@@ -485,7 +485,7 @@
     aside {
       border-right: 1px solid var(--border);
       padding: 1rem 1.25rem;
-      background: #121920;
+      background: #141414;
       align-self: start;
     }
     @media (min-width: 841px) {
@@ -742,7 +742,7 @@
       font-size: 0.72rem;
       padding: 0.12rem 0.45rem;
       border-radius: 999px;
-      background: #243044;
+      background: #242424;
       color: var(--muted);
       margin-right: 0.25rem;
     }
@@ -755,7 +755,7 @@
     .site-footer {
       border-top: 1px solid var(--border);
       padding: 1.25rem 1.5rem 2rem;
-      background: #121920;
+      background: #141414;
       font-size: 0.85rem;
       color: var(--muted);
       line-height: 1.65;
@@ -776,7 +776,7 @@
       z-index: 50;
       align-items: center;
       justify-content: center;
-      background: rgba(15, 20, 25, 0.78);
+      background: rgba(17, 17, 17, 0.78);
       backdrop-filter: blur(2px);
     }
     #contentLoadingOverlay.open {
@@ -959,7 +959,7 @@
       max-height: 85vh;
       display: flex;
       flex-direction: column;
-      background: #121920;
+      background: #141414;
       border: 1px solid var(--border);
       border-radius: 10px;
       box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
@@ -975,7 +975,7 @@
       flex-shrink: 0;
       position: sticky;
       top: 0;
-      background: #121920;
+      background: #141414;
       z-index: 5;
       flex-wrap: wrap;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
@@ -998,7 +998,7 @@
     .summary-footer {
       padding: 0.75rem 1rem;
       border-top: 1px solid var(--border);
-      background: #0f161e;
+      background: #141414;
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
@@ -1039,7 +1039,7 @@
       border-radius: 999px;
       font-size: 0.75rem;
       border: 1px solid var(--border);
-      background: #1e2937;
+      background: #242424;
     }
     .status-pill.blocked { color: #ff8a8a; border-color: #60333e; }
     .status-pill.unblocked { color: #6be4a9; border-color: #305244; }
@@ -1077,7 +1077,7 @@
       padding: 0.35rem 0.65rem;
       border-radius: 999px;
       border: 1px solid var(--border);
-      background: rgba(18, 25, 32, 0.92);
+      background: rgba(20, 20, 20, 0.92);
       color: var(--muted);
       font-size: 0.78rem;
       line-height: 1.2;
@@ -1122,8 +1122,8 @@
     .removal-notice.severe { color: #ff8a8a; }
     .removal-notice.severe strong { color: #ffd2d2; }
     .important-notices {
-      border: 1px solid #2d5588;
-      background: #152030;
+      border: 1px solid #444444;
+      background: #1a1a1a;
       border-radius: 8px;
       padding: 0.85rem 1rem;
       margin-bottom: 1rem;
@@ -1163,7 +1163,7 @@
     }
     .important-notices .notice-alert-info {
       border: 1px solid #2d6aa8;
-      background: #132438;
+      background: #1f1f1f;
       border-radius: 6px;
       padding: 0.65rem 0.75rem;
       margin-bottom: 0.75rem;
@@ -1188,8 +1188,8 @@
       right: 0;
       z-index: 28;
       padding: 0.55rem 1rem;
-      background: linear-gradient(180deg, #1e3a5f 0%, #162a45 100%);
-      border-bottom: 1px solid #2d5588;
+      background: linear-gradient(180deg, #2a2a2a 0%, #1a1a1a 100%);
+      border-bottom: 1px solid #444444;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
     }
     body.has-site-update-banner .site-update-banner {
@@ -1217,12 +1217,12 @@
       flex-shrink: 0;
     }
     .site-update-banner .btn-primary {
-      background: #2d5588;
-      border-color: #4a7ab8;
-      color: #dbeafe;
+      background: #404040;
+      border-color: #555555;
+      color: #e8e8e8;
     }
     .site-update-banner .btn-primary:hover {
-      background: #35619c;
+      background: #3a3a3a;
       color: #fff;
     }
     #siteUpdateDismissBtn {
