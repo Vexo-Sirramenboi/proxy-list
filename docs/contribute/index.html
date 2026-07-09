@@ -258,6 +258,28 @@
       return escapeHtml(s).replace(/'/g, "&#39;");
     }
 
+    function importSanitizedNodes(nodes) {
+      return Array.from(nodes || []).map((node) => document.importNode(node, true));
+    }
+
+    function nodesFromSanitizedBodyHtml(raw) {
+      if (!raw || !window.DOMPurify) return [];
+      const clean = DOMPurify.sanitize(String(raw));
+      if (!clean) return [];
+      const doc = new DOMParser().parseFromString("<body>" + clean + "</body>", "text/html");
+      return importSanitizedNodes(doc.body.childNodes);
+    }
+
+    function nodesFromSanitizedTableSection(sectionTag, raw) {
+      const tag = String(sectionTag || "").toLowerCase();
+      if (!raw || !window.DOMPurify || (tag !== "thead" && tag !== "tbody")) return [];
+      const clean = DOMPurify.sanitize("<table><" + tag + ">" + String(raw) + "</" + tag + "></table>");
+      if (!clean) return [];
+      const doc = new DOMParser().parseFromString(clean, "text/html");
+      const section = doc.querySelector(tag);
+      return section ? importSanitizedNodes(section.childNodes) : [];
+    }
+
     function setHtml(el, html) {
       if (!el) return;
       if (!window.DOMPurify) {
@@ -265,13 +287,11 @@
         return;
       }
       const raw = html == null ? "" : String(html);
-      const clean = DOMPurify.sanitize(raw);
-      if (!clean) {
-        el.replaceChildren();
-        return;
-      }
-      const doc = new DOMParser().parseFromString("<body>" + clean + "</body>", "text/html");
-      const nodes = Array.from(doc.body.childNodes).map((node) => document.importNode(node, true));
+      const tag = el.tagName;
+      let nodes;
+      if (tag === "THEAD") nodes = nodesFromSanitizedTableSection("thead", raw);
+      else if (tag === "TBODY") nodes = nodesFromSanitizedTableSection("tbody", raw);
+      else nodes = nodesFromSanitizedBodyHtml(raw);
       el.replaceChildren(...nodes);
     }
 
