@@ -275,7 +275,9 @@
       <div id="submitSignInPrompt" class="signin-prompt muted">
         <a href="../login/?next=contribute/">Sign in</a> with GitHub, Google, or email to submit links.
       </div>
+      <div id="submitLoadingNotice" class="submit-status" hidden>Checking your account…</div>
       <div id="submitBannedNotice" class="submit-status err" hidden></div>
+      <div id="submitStatus" class="submit-status" hidden role="status"></div>
       <form id="linkSubmitForm" class="submit-form" hidden>
         <label for="submitUrl">Proxy URL</label>
         <input id="submitUrl" name="url" type="url" inputmode="url" autocomplete="off" placeholder="https://example.com/path" required />
@@ -299,7 +301,6 @@
         <div class="actions" style="margin-top:0.85rem;">
           <button class="btn btn-primary" type="submit" id="submitBtn">Submit for review</button>
         </div>
-        <div id="submitStatus" class="submit-status" hidden role="status"></div>
       </form>
       <div class="submit-history" id="submitHistoryWrap" hidden>
         <h3 style="margin:0.85rem 0 0.45rem;font-size:0.95rem;">Your recent submissions</h3>

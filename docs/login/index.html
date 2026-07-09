@@ -795,10 +795,25 @@
         }
       }
 
-      function redirectToList() {
+      function redirectAfterSignIn() {
         window.setTimeout(() => {
+          var nextParam = new URL(window.location.href).searchParams.get("next");
+          if (nextParam) {
+            try {
+              var target = new URL(nextParam, window.location.href);
+              var here = new URL(window.location.href);
+              if (target.origin === here.origin) {
+                window.location.href = target.href;
+                return;
+              }
+            } catch (_) {}
+          }
           window.location.href = new URL("../", window.location.href).href;
         }, 450);
+      }
+
+      function redirectToList() {
+        redirectAfterSignIn();
       }
 
       function ensureAnonymousSession(auth) {
