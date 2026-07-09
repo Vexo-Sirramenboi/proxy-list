@@ -20,6 +20,7 @@ POPULAR_LINKS = ROOT / "docs" / "popular_links.json"
 UNSORTED_INPUT = ROOT / "unsorted.md"
 UNSORTED_OUTPUT = ROOT / "docs" / "unsorted.json"
 SUBMISSION_URL_KEYS = ROOT / "docs" / "submission_url_keys.json"
+UPDATE_CHANGELOG = ROOT / "docs" / "update_changelog.json"
 
 LINK_CHECK_FAIL_THRESHOLD = 3
 
@@ -143,6 +144,53 @@ def parse_important_notices(text: str) -> str:
 
 def parse_update_notice(text: str) -> str:
     return _extract_md_section(text, _UPDATE_NOTICE_H2)
+
+
+def load_update_changelog() -> list[dict[str, str]]:
+    if not UPDATE_CHANGELOG.is_file():
+        return []
+    try:
+        payload = json.loads(UPDATE_CHANGELOG.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return []
+    entries = payload.get("entries")
+    return entries if isinstance(entries, list) else []
+
+
+def sync_update_changelog(entries: list[dict], meta: dict[str, str], update_notice: str) -> list[dict]:
+    """Ensure the current list.md update notice is archived at the top."""
+    notice = (update_notice or "").strip()
+    if not notice:
+        return entries
+    current = {
+        "version": meta.get("version", ""),
+        "revision": meta.get("revision", ""),
+        "released": meta.get("last_updated", ""),
+        "update_notice": notice,
+    }
+    out: list[dict] = []
+    for entry in entries:
+        if not isinstance(entry, dict):
+            continue
+        if (
+            str(entry.get("version", "")) == current["version"]
+            and str(entry.get("revision", "")) == current["revision"]
+            and str(entry.get("update_notice", "")).strip() == notice
+        ):
+            return entries
+        out.append(entry)
+    if out and str(out[0].get("update_notice", "")).strip() == notice:
+        out[0] = {**out[0], **current}
+        return out
+    return [current, *out]
+
+
+def write_update_changelog(entries: list[dict]) -> None:
+    body = {
+        "_note": "Archived site update notices. Regenerate history with: python3 scripts/build_update_changelog.py",
+        "entries": entries,
+    }
+    UPDATE_CHANGELOG.write_text(json.dumps(body, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
 def parse_list_meta(text: str) -> dict[str, str]:
@@ -468,6 +516,8 @@ def main() -> int:
     meta = parse_list_meta(raw)
     important = parse_important_notices(raw)
     update_notice = parse_update_notice(raw)
+    changelog_entries = sync_update_changelog(load_update_changelog(), meta, update_notice)
+    write_update_changelog(changelog_entries)
     links = parse_list_md(raw)
     sorted_keys = {_normalize_url_key(row.get("link", "")) for row in links if row.get("link")}
     unsorted_links = parse_unsorted_links(sorted_keys)
@@ -483,6 +533,7 @@ def main() -> int:
             "unsorted_total": len(unsorted_links),
             "important_notices": important,
             "update_notice": update_notice,
+            "update_changelog": changelog_entries,
             "fail_threshold": LINK_CHECK_FAIL_THRESHOLD,
             "popular_note": popular_note,
             "popular_links": popular_entries,
