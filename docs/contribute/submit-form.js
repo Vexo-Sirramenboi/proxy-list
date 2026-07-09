@@ -14,6 +14,7 @@
 
   var formEl = document.getElementById("linkSubmitForm");
   var signInPrompt = document.getElementById("submitSignInPrompt");
+  var loadingNotice = document.getElementById("submitLoadingNotice");
   var bannedNotice = document.getElementById("submitBannedNotice");
   var statusEl = document.getElementById("submitStatus");
   var historyWrap = document.getElementById("submitHistoryWrap");
@@ -24,17 +25,25 @@
   var newWrap = document.getElementById("newProviderWrap");
   var newProviderInput = document.getElementById("submitNewProvider");
 
+  function showNotice(el, msg, kind) {
+    if (!el) return;
+    el.hidden = false;
+    el.className = "submit-status" + (kind ? " " + kind : "");
+    el.textContent = msg;
+  }
+
+  function hideNotice(el) {
+    if (!el) return;
+    el.hidden = true;
+    el.textContent = "";
+  }
+
   function showStatus(msg, kind) {
-    if (!statusEl) return;
-    statusEl.hidden = false;
-    statusEl.className = "submit-status" + (kind ? " " + kind : "");
-    statusEl.textContent = msg;
+    showNotice(statusEl, msg, kind);
   }
 
   function clearStatus() {
-    if (!statusEl) return;
-    statusEl.hidden = true;
-    statusEl.textContent = "";
+    hideNotice(statusEl);
   }
 
   function setProviderMode(mode) {
@@ -180,27 +189,36 @@
     var url = SU.normalizeSubmissionUrl(rawUrl);
     var urlKey = SU.submissionUrlKey(url);
 
-    if (await isUserBanned(currentUser.uid)) {
-      showStatus("You are banned from submitting links.", "err");
-      return;
-    }
-
-    var stats = await getContributorStats(currentUser.uid);
-    if (stats.submitBlocked) {
-      showStatus("Submissions paused due to repeated duplicates or policy violations.", "err");
-      return;
-    }
-    if (!SU.rateLimitOk(stats)) {
-      showStatus("Rate limit reached. Try again later.", "warn");
-      return;
-    }
-
-    if (isDuplicateKey(urlKey)) {
-      try {
-        await recordDuplicateAttempt(currentUser.uid);
-      } catch (err) {
-        showStatus(err.message || "Duplicate URL.", "err");
+    try {
+      if (await isUserBanned(currentUser.uid)) {
+        showStatus("You are banned from submitting links.", "err");
+        return;
       }
+
+      var stats = await getContributorStats(currentUser.uid);
+      if (stats.submitBlocked) {
+        showStatus("Submissions paused due to repeated duplicates or policy violations.", "err");
+        return;
+      }
+      if (!SU.rateLimitOk(stats)) {
+        showStatus("Rate limit reached. Try again later.", "warn");
+        return;
+      }
+
+      if (isDuplicateKey(urlKey)) {
+        try {
+          await recordDuplicateAttempt(currentUser.uid);
+        } catch (err) {
+          showStatus(err.message || "Duplicate URL.", "err");
+        }
+        return;
+      }
+    } catch (err) {
+      showStatus(
+        (err && err.message) ||
+          "Could not verify your account (Firestore may need updated rules). Try again or use the Google Form.",
+        "err"
+      );
       return;
     }
 
@@ -226,6 +244,7 @@
       await firebaseDb.collection("linkSubmissions").add(payload);
       pendingUrlKeys.add(urlKey);
 
+      var stats = await getContributorStats(currentUser.uid);
       var nextStats = buildStatsPayload(currentUser.uid, stats, { countSubmission: true, touchTime: true });
       await firebaseDb.collection("contributorStats").doc(currentUser.uid).set(nextStats, { merge: true });
 
@@ -234,7 +253,12 @@
       showStatus("Submitted for review. Thank you!", "ok");
       await loadSubmitHistory(currentUser.uid);
     } catch (err) {
-      showStatus((err && err.message) || "Submission failed.", "err");
+      var msg = (err && err.message) || "Submission failed.";
+      if (/permission|insufficient/i.test(msg)) {
+        msg =
+          "Submission storage is not available yet (deploy the updated Firestore rules from docs/firestore.rules).";
+      }
+      showStatus(msg, "err");
     } finally {
       if (submitBtn) submitBtn.disabled = false;
     }
@@ -309,22 +333,40 @@
     }
   }
 
+  function showSignedOutUi() {
+    if (formEl) formEl.hidden = true;
+    if (signInPrompt) signInPrompt.hidden = false;
+    if (historyWrap) historyWrap.hidden = true;
+    if (adminLink) adminLink.hidden = true;
+    hideNotice(loadingNotice);
+    hideNotice(bannedNotice);
+    clearStatus();
+  }
+
   async function refreshAuthUi(user) {
     currentUser = user;
     var signedIn = SU.isSignedInNonAnonymous(user);
 
     if (!signedIn) {
-      if (formEl) formEl.hidden = true;
-      if (signInPrompt) signInPrompt.hidden = false;
-      if (historyWrap) historyWrap.hidden = true;
-      if (adminLink) adminLink.hidden = true;
-      if (bannedNotice) bannedNotice.hidden = true;
+      showSignedOutUi();
       return;
     }
 
     if (signInPrompt) signInPrompt.hidden = true;
+    showNotice(loadingNotice, "Checking your account…", "");
 
-    if (firebaseDb && user) {
+    if (!firebaseDb) {
+      hideNotice(loadingNotice);
+      showNotice(
+        bannedNotice,
+        "Submission service could not start. Refresh the page or try again later.",
+        "err"
+      );
+      if (formEl) formEl.hidden = true;
+      return;
+    }
+
+    try {
       try {
         var profSnap = await firebaseDb.collection("users").doc(user.uid).get();
         userProfile = profSnap.exists ? profSnap.data() : null;
@@ -332,34 +374,56 @@
         userProfile = null;
       }
 
-      var banned = await isUserBanned(user.uid);
+      var banned = false;
+      try {
+        banned = await isUserBanned(user.uid);
+      } catch (_) {
+        banned = false;
+      }
+
       if (banned) {
         var banSnap = await firebaseDb.collection("contributorBans").doc(user.uid).get();
         var reason = (banSnap.data() && banSnap.data().reason) || "Policy violation";
-        if (bannedNotice) {
-          bannedNotice.hidden = false;
-          bannedNotice.textContent = "You are banned from submitting links: " + reason;
-        }
+        hideNotice(loadingNotice);
+        showNotice(bannedNotice, "You are banned from submitting links: " + reason, "err");
         if (formEl) formEl.hidden = true;
         return;
       }
 
-      if (bannedNotice) bannedNotice.hidden = true;
+      hideNotice(bannedNotice);
 
-      var stats = await getContributorStats(user.uid);
-      if (stats.submitBlocked) {
-        if (bannedNotice) {
-          bannedNotice.hidden = false;
-          bannedNotice.textContent =
-            "Submissions paused after repeated duplicate URLs. Contact the list maintainer if you need this lifted.";
-        }
-        if (formEl) formEl.hidden = true;
-      } else if (formEl) {
-        formEl.hidden = false;
+      var stats = {};
+      try {
+        stats = await getContributorStats(user.uid);
+      } catch (_) {
+        stats = {};
       }
 
+      if (stats.submitBlocked) {
+        hideNotice(loadingNotice);
+        showNotice(
+          bannedNotice,
+          "Submissions paused after repeated duplicate URLs. Contact the list maintainer if you need this lifted.",
+          "warn"
+        );
+        if (formEl) formEl.hidden = true;
+        return;
+      }
+
+      hideNotice(loadingNotice);
+      if (formEl) formEl.hidden = false;
       if (adminLink) adminLink.hidden = !SU.isSubmissionAdminUser(user);
       await loadSubmitHistory(user.uid);
+      await loadPendingUrlKeys();
+    } catch (err) {
+      hideNotice(loadingNotice);
+      if (formEl) formEl.hidden = false;
+      showNotice(
+        bannedNotice,
+        "Could not fully verify your account, but you can try submitting. If it fails, the site maintainer may still be deploying submission support.",
+        "warn"
+      );
+      if (adminLink) adminLink.hidden = !SU.isSubmissionAdminUser(user);
     }
   }
 
@@ -376,10 +440,22 @@
     try {
       if (!firebase.apps.length) firebase.initializeApp(cfg);
       firebaseDb = firebase.firestore();
-      firebase.auth().onAuthStateChanged(function (user) {
-        refreshAuthUi(user);
+      var auth = firebase.auth();
+      var ready =
+        typeof auth.authStateReady === "function"
+          ? auth.authStateReady()
+          : Promise.resolve();
+      ready.then(function () {
+        auth.onAuthStateChanged(function (user) {
+          refreshAuthUi(user);
+        });
       });
-    } catch (_) {}
+    } catch (err) {
+      if (signInPrompt) {
+        signInPrompt.hidden = false;
+        signInPrompt.textContent = "Could not initialize submission service.";
+      }
+    }
   }
 
   document.querySelectorAll('input[name="providerMode"]').forEach(function (radio) {
@@ -391,6 +467,5 @@
   if (formEl) formEl.addEventListener("submit", handleSubmit);
 
   loadSubmissionIndex();
-  loadPendingUrlKeys();
   initFirebase();
 })();
