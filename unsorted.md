@@ -2018,3 +2018,10 @@ Move links from here into `list.md` once sorted.
 - https://solidpoems.eclipsecastellon.net
 - https://easygeo.eclipsecastellon.net
 - https://math.desmos.live.cdn.cloudflare.net
+- https://bigmoney.cc
+- https://businessschool.cc
+- https://crypto-college.cc
+- https://fulcrumtheatreinc.com
+- https://homeworkhelp.cc
+- https://info.videnom.com
+- https://sciencenews.cc
