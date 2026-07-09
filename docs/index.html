@@ -20,10 +20,23 @@
       } catch (_) {}
     })();
   </script>
+  <script>
+    (function () {
+      try {
+        var raw = localStorage.getItem("proxyList_app_settings_v1");
+        var s = raw ? JSON.parse(raw) : null;
+        var theme = s && s.theme ? String(s.theme) : "dark";
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (_) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
   <title>Proxy list</title>
   <link rel="icon" type="image/png" href="favicon.png" />
   <style>
-    :root {
+    :root,
+    html[data-theme="dark"] {
       --bg: #111111;
       --surface: #1a1a1a;
       --border: #2e2e2e;
@@ -32,6 +45,55 @@
       --accent: #6cb3ff;
       --ok: #3ecf8e;
       --font: "Segoe UI", system-ui, sans-serif;
+      color-scheme: dark;
+    }
+    html[data-theme="moonlight"] {
+      --bg: #0f1419;
+      --surface: #1a222d;
+      --border: #2d3a4d;
+      --text: #e7ecf3;
+      --muted: #8b9cb3;
+      --accent: #6cb3ff;
+      --ok: #3ecf8e;
+      --font: "Segoe UI", system-ui, sans-serif;
+      color-scheme: dark;
+    }
+    html[data-theme="light"] {
+      --bg: #f4f4f5;
+      --surface: #ffffff;
+      --border: #d4d4d8;
+      --text: #18181b;
+      --muted: #71717a;
+      --accent: #2563eb;
+      --ok: #16a34a;
+      --font: "Segoe UI", system-ui, sans-serif;
+      color-scheme: light;
+    }
+    @media (prefers-color-scheme: light) {
+      html[data-theme="auto"] {
+        --bg: #f4f4f5;
+        --surface: #ffffff;
+        --border: #d4d4d8;
+        --text: #18181b;
+        --muted: #71717a;
+        --accent: #2563eb;
+        --ok: #16a34a;
+        --font: "Segoe UI", system-ui, sans-serif;
+        color-scheme: light;
+      }
+    }
+    @media (prefers-color-scheme: dark) {
+      html[data-theme="auto"] {
+        --bg: #111111;
+        --surface: #1a1a1a;
+        --border: #2e2e2e;
+        --text: #e8e8e8;
+        --muted: #9a9a9a;
+        --accent: #6cb3ff;
+        --ok: #3ecf8e;
+        --font: "Segoe UI", system-ui, sans-serif;
+        color-scheme: dark;
+      }
     }
     * { box-sizing: border-box; }
     body {
@@ -1232,6 +1294,93 @@
       font-size: 1.1rem;
       font-weight: 600;
     }
+    .settings-modal {
+      max-width: min(42rem, 100%);
+      max-height: min(88vh, 52rem);
+      display: flex;
+      flex-direction: column;
+    }
+    .settings-body {
+      overflow: auto;
+      flex: 1 1 auto;
+      min-height: 0;
+    }
+    .settings-section {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+      padding: 0.85rem 0.95rem;
+      margin-bottom: 0.85rem;
+    }
+    .settings-section h3 {
+      margin: 0 0 0.65rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    .settings-field {
+      margin-bottom: 0.85rem;
+    }
+    .settings-field:last-child {
+      margin-bottom: 0;
+    }
+    .settings-field label,
+    .settings-field .settings-label {
+      display: block;
+      font-size: 0.86rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    .settings-field .settings-desc {
+      margin: 0 0 0.4rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    .settings-field select {
+      width: 100%;
+      max-width: 100%;
+      font: inherit;
+      padding: 0.45rem 0.55rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+    }
+    .settings-danger {
+      border-color: #8b3a3a;
+      background: rgba(180, 60, 60, 0.08);
+    }
+    html[data-theme="light"] .settings-danger {
+      border-color: #e57373;
+      background: #fff5f5;
+    }
+    .settings-warn-option {
+      color: #ffb86b;
+    }
+    html[data-theme="light"] .settings-warn-option {
+      color: #c2410c;
+    }
+    .app-toast {
+      position: fixed;
+      left: 50%;
+      bottom: 1.25rem;
+      transform: translateX(-50%) translateY(120%);
+      z-index: 80;
+      padding: 0.55rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      font-size: 0.88rem;
+      transition: transform 0.22s ease, opacity 0.22s ease;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .app-toast.visible {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
     body.has-site-update-banner header {
       margin-top: 2.85rem;
     }
@@ -1374,6 +1523,10 @@
           <button class="btn" id="selectFilterBtn" type="button">
             <svg class="sidebar-btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
             Select filter
+          </button>
+          <button class="btn" id="openSettingsBtn" type="button">
+            <svg class="sidebar-btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+            Settings
           </button>
           <button class="btn" id="updateNoticeBtn" type="button">
             <svg class="sidebar-btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 7-3 7h18s-3 0-3-7"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
@@ -1592,6 +1745,107 @@
       </div>
     </section>
   </div>
+  <div class="summary-backdrop" id="settingsBackdrop" aria-hidden="true">
+    <section class="summary-modal settings-modal" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+      <div class="summary-head">
+        <h2 class="summary-title" id="settingsTitle">Settings</h2>
+        <button class="btn" id="settingsCloseBtn" type="button">Close</button>
+      </div>
+      <div class="summary-body settings-body">
+        <div class="settings-section">
+          <h3>Appearance</h3>
+          <div class="settings-field">
+            <label for="settingsThemeSelect">Theme</label>
+            <p class="settings-desc">Choose the site color scheme. Auto follows your system light/dark preference.</p>
+            <select id="settingsThemeSelect" aria-label="Theme">
+              <option value="dark">Dark</option>
+              <option value="light">Light</option>
+              <option value="auto">Auto (system)</option>
+              <option value="moonlight">Moonlight</option>
+            </select>
+          </div>
+        </div>
+        <div class="settings-section">
+          <h3>Filters &amp; Links</h3>
+          <div class="settings-field">
+            <span class="settings-label">Web Filter Settings</span>
+            <p class="settings-desc">Choose the filter used on your network. Link summaries show a warning when this filter reports blocked or warning.</p>
+            <select id="settingsFilterSelect" class="most-opened-sort-select" aria-label="Web filter">
+              <option value="">Any / Not selected</option>
+            </select>
+            <p style="margin-top:0.65rem;">
+              <button class="btn" id="settingsHideBlockedBtn" type="button">Hide blocked links: Off</button>
+            </p>
+            <p style="margin-top:0.45rem;">
+              <button class="btn" id="settingsHideUncheckedBtn" type="button">Hide unchecked links: Off</button>
+            </p>
+            <p class="filter-powered-by">Powered by <span class="filter-powered-by-credit">gn-math discord bot</span></p>
+          </div>
+          <div class="settings-field">
+            <label for="settingsLinkActionSelect">Link Selection Action</label>
+            <p class="settings-desc">Choose what happens when you click on a link in a list.</p>
+            <select id="settingsLinkActionSelect" aria-label="Link selection action">
+              <option value="summary">Show summary (default)</option>
+              <option value="open">Open link</option>
+              <option value="copy">Copy link</option>
+            </select>
+          </div>
+        </div>
+        <div class="settings-section">
+          <h3>Performance</h3>
+          <div class="settings-field">
+            <label for="settingsRenderEmojisSelect">Render Emojis</label>
+            <p class="settings-desc">Renders emojis associated with their provider. Disabling may improve performance.</p>
+            <select id="settingsRenderEmojisSelect" aria-label="Render emojis">
+              <option value="enabled">Enabled</option>
+              <option value="disabled">Disabled</option>
+            </select>
+          </div>
+          <div class="settings-field">
+            <label for="settingsChunkSizeSelect">Render Load Per Chunk</label>
+            <p class="settings-desc" id="settingsChunkSizeDesc">Amount of links loaded each time you scroll the list. Lowering this can significantly improve performance and increase system memory available.</p>
+            <select id="settingsChunkSizeSelect" aria-label="Render load per chunk">
+              <option value="very_low">Very Low (10 links)</option>
+              <option value="low">Low (20 links)</option>
+              <option value="medium">Medium (80 links)</option>
+              <option value="high">High (160 links)</option>
+              <option value="very_high">Very High (320 links)</option>
+              <option value="unoptimized">Unoptimized (Not recommended)</option>
+            </select>
+          </div>
+          <div class="settings-field">
+            <label for="settingsClickLoadSelect">Grab Link Clicks Per Load Chunk</label>
+            <p class="settings-desc">Manages how link checks are loaded per scroll chunk.</p>
+            <select id="settingsClickLoadSelect" aria-label="Grab link clicks per load chunk">
+              <option value="none">Do Not Load</option>
+              <option value="per_chunk">Load Per Chunk</option>
+              <option value="preload">Preload Clicks Before Chunk Loaded</option>
+              <option value="all">Load All Clicks (not recommended)</option>
+            </select>
+          </div>
+        </div>
+        <div class="settings-section">
+          <h3>Data</h3>
+          <div class="settings-field">
+            <label for="settingsSaveLocalSelect">Save Settings Locally</label>
+            <p class="settings-desc">Saves your settings locally to your browser&apos;s IndexedDB. This prevents your settings being reset across block waves if they aren&apos;t synced through your account.</p>
+            <select id="settingsSaveLocalSelect" aria-label="Save settings locally">
+              <option value="disabled">Disabled</option>
+              <option value="enabled">Enabled</option>
+            </select>
+          </div>
+        </div>
+        <div class="settings-section settings-danger">
+          <h3>Danger Zone</h3>
+          <div class="settings-field">
+            <span class="settings-label">Reset Settings to Default</span>
+            <p class="settings-desc">Resets all your settings.</p>
+            <button class="btn" id="settingsResetBtn" type="button">Reset settings</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
   <div class="summary-backdrop" id="signInRequiredBackdrop" aria-hidden="true">
     <section class="summary-modal" role="dialog" aria-modal="true" aria-labelledby="signInRequiredTitle">
       <div class="summary-head">
@@ -1616,6 +1870,7 @@
     <p id="activeUsersFooterLine" aria-live="polite" hidden></p>
     <button class="btn" id="backToTopBtn" type="button" aria-label="Back to top">Back to top</button>
   </div>
+  <div id="appToast" class="app-toast" role="status" aria-live="polite" hidden></div>
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
@@ -1757,6 +2012,348 @@
     const GITHUB_REPO_SLUG = GITHUB_REPO_OWNER + "/" + GITHUB_REPO_NAME;
     const GITHUB_TOKEN_SESSION_KEY = "proxyList_github_access_token";
     const GITHUB_NOTIFICATIONS_SEEN_KEY = "proxyList_github_notifications_seen_v1";
+
+    const LS_APP_SETTINGS_KEY = "proxyList_app_settings_v1";
+    const IDB_APP_SETTINGS_DB = "proxyListSettings";
+    const IDB_APP_SETTINGS_STORE = "appSettings";
+    const TABLE_CHUNK_DEFAULT = 80;
+    const APP_SETTINGS_DEFAULTS = {
+      theme: "dark",
+      linkSelectionAction: "summary",
+      renderEmojis: true,
+      renderLoadPerChunk: "medium",
+      grabLinkClicksPerChunk: "per_chunk",
+      saveSettingsLocally: false,
+    };
+    let appSettings = Object.assign({}, APP_SETTINGS_DEFAULTS);
+    let appToastTimer = null;
+    let appSettingsIdbPromise = null;
+    let appSettingsLoadedFromIdb = false;
+
+    function normalizeAppSettings(raw) {
+      const out = Object.assign({}, APP_SETTINGS_DEFAULTS);
+      if (!raw || typeof raw !== "object") return out;
+      const theme = String(raw.theme || "");
+      if (theme === "dark" || theme === "light" || theme === "auto" || theme === "moonlight") {
+        out.theme = theme;
+      }
+      const action = String(raw.linkSelectionAction || "");
+      if (action === "summary" || action === "open" || action === "copy") out.linkSelectionAction = action;
+      if (typeof raw.renderEmojis === "boolean") out.renderEmojis = raw.renderEmojis;
+      const chunk = String(raw.renderLoadPerChunk || "");
+      if (
+        chunk === "very_low" ||
+        chunk === "low" ||
+        chunk === "medium" ||
+        chunk === "high" ||
+        chunk === "very_high" ||
+        chunk === "unoptimized"
+      ) {
+        out.renderLoadPerChunk = chunk;
+      }
+      const clickMode = String(raw.grabLinkClicksPerChunk || "");
+      if (clickMode === "none" || clickMode === "per_chunk" || clickMode === "preload" || clickMode === "all") {
+        out.grabLinkClicksPerChunk = clickMode;
+      }
+      if (typeof raw.saveSettingsLocally === "boolean") out.saveSettingsLocally = raw.saveSettingsLocally;
+      return out;
+    }
+
+    function getTableChunkSize() {
+      switch (appSettings.renderLoadPerChunk) {
+        case "very_low":
+          return 10;
+        case "low":
+          return 20;
+        case "high":
+          return TABLE_CHUNK_DEFAULT * 2;
+        case "very_high":
+          return TABLE_CHUNK_DEFAULT * 4;
+        case "unoptimized":
+          return Number.MAX_SAFE_INTEGER;
+        case "medium":
+        default:
+          return TABLE_CHUNK_DEFAULT;
+      }
+    }
+
+    function isUnoptimizedTableRender() {
+      return appSettings.renderLoadPerChunk === "unoptimized";
+    }
+
+    function shouldLoadLinkClicks() {
+      return appSettings.grabLinkClicksPerChunk !== "none";
+    }
+
+    function applyThemeSetting(theme) {
+      const t = theme || appSettings.theme || "dark";
+      document.documentElement.setAttribute("data-theme", t);
+    }
+
+    function stripEmojisFromText(text) {
+      return String(text || "")
+        .replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE00}-\u{FE0F}\u{200D}\u{20E3}\u{E0020}-\u{E007F}]/gu, "")
+        .replace(/\s{2,}/g, " ")
+        .trim();
+    }
+
+    function formatProviderCell(provider) {
+      const text = String(provider || "");
+      const shown = appSettings.renderEmojis === false ? stripEmojisFromText(text) : text;
+      return escapeHtml(shown);
+    }
+
+    function showAppToast(message) {
+      const el = $("appToast");
+      if (!el) return;
+      el.textContent = String(message || "");
+      el.hidden = false;
+      el.classList.add("visible");
+      if (appToastTimer) clearTimeout(appToastTimer);
+      appToastTimer = setTimeout(() => {
+        appToastTimer = null;
+        el.classList.remove("visible");
+        setTimeout(() => {
+          el.hidden = true;
+        }, 240);
+      }, 2200);
+    }
+
+    function openSettingsDb() {
+      if (!appSettings.saveSettingsLocally) return Promise.resolve(null);
+      if (appSettingsIdbPromise) return appSettingsIdbPromise;
+      appSettingsIdbPromise = new Promise((resolve) => {
+        if (!window.indexedDB) {
+          resolve(null);
+          return;
+        }
+        const req = indexedDB.open(IDB_APP_SETTINGS_DB, 1);
+        req.onupgradeneeded = () => {
+          const db = req.result;
+          if (!db.objectStoreNames.contains(IDB_APP_SETTINGS_STORE)) {
+            db.createObjectStore(IDB_APP_SETTINGS_STORE);
+          }
+        };
+        req.onsuccess = () => resolve(req.result);
+        req.onerror = () => resolve(null);
+      });
+      return appSettingsIdbPromise;
+    }
+
+    async function readAppSettingsFromIdb() {
+      const db = await openSettingsDb();
+      if (!db) return null;
+      return new Promise((resolve) => {
+        try {
+          const tx = db.transaction(IDB_APP_SETTINGS_STORE, "readonly");
+          const store = tx.objectStore(IDB_APP_SETTINGS_STORE);
+          const getReq = store.get("default");
+          getReq.onsuccess = () => resolve(getReq.result || null);
+          getReq.onerror = () => resolve(null);
+        } catch (_) {
+          resolve(null);
+        }
+      });
+    }
+
+    async function writeAppSettingsToIdb(settings) {
+      if (!appSettings.saveSettingsLocally) return;
+      const db = await openSettingsDb();
+      if (!db) return;
+      try {
+        const tx = db.transaction(IDB_APP_SETTINGS_STORE, "readwrite");
+        tx.objectStore(IDB_APP_SETTINGS_STORE).put(settings, "default");
+      } catch (_) {}
+    }
+
+    function writeAppSettingsToLocalStorage(settings) {
+      try {
+        localStorage.setItem(LS_APP_SETTINGS_KEY, JSON.stringify(settings));
+      } catch (_) {}
+    }
+
+    function readAppSettingsFromLocalStorage() {
+      try {
+        const raw = localStorage.getItem(LS_APP_SETTINGS_KEY);
+        return raw ? JSON.parse(raw) : null;
+      } catch (_) {
+        return null;
+      }
+    }
+
+    async function persistAppSettings() {
+      writeAppSettingsToLocalStorage(appSettings);
+      await writeAppSettingsToIdb(appSettings);
+      scheduleUserProfileWrite();
+    }
+
+    function applyAppSettings(raw, options) {
+      appSettings = normalizeAppSettings(raw);
+      applyThemeSetting(appSettings.theme);
+      if (!options || !options.skipUi) syncSettingsFormFromState();
+    }
+
+    async function loadAppSettings() {
+      let merged = null;
+      const fromLs = readAppSettingsFromLocalStorage();
+      if (fromLs) merged = fromLs;
+      if (fromLs && fromLs.saveSettingsLocally) {
+        const fromIdb = await readAppSettingsFromIdb();
+        if (fromIdb && typeof fromIdb === "object") {
+          merged = Object.assign({}, fromLs, fromIdb);
+          appSettingsLoadedFromIdb = true;
+        }
+      }
+      applyAppSettings(merged || APP_SETTINGS_DEFAULTS, { skipUi: true });
+    }
+
+    function collectAppSettingsSnapshot() {
+      return Object.assign({}, appSettings);
+    }
+
+    function syncSettingsFormFromState() {
+      const themeSel = $("settingsThemeSelect");
+      if (themeSel) themeSel.value = appSettings.theme || "dark";
+      const actionSel = $("settingsLinkActionSelect");
+      if (actionSel) actionSel.value = appSettings.linkSelectionAction || "summary";
+      const emojiSel = $("settingsRenderEmojisSelect");
+      if (emojiSel) emojiSel.value = appSettings.renderEmojis === false ? "disabled" : "enabled";
+      const chunkSel = $("settingsChunkSizeSelect");
+      if (chunkSel) chunkSel.value = appSettings.renderLoadPerChunk || "medium";
+      const clickSel = $("settingsClickLoadSelect");
+      if (clickSel) clickSel.value = appSettings.grabLinkClicksPerChunk || "per_chunk";
+      const saveSel = $("settingsSaveLocalSelect");
+      if (saveSel) saveSel.value = appSettings.saveSettingsLocally ? "enabled" : "disabled";
+      const chunkDesc = $("settingsChunkSizeDesc");
+      if (chunkDesc) {
+        chunkDesc.textContent =
+          "Amount of links loaded each time you scroll the list. The default number is " +
+          TABLE_CHUNK_DEFAULT +
+          ". Lowering this can significantly improve performance and increase system memory available.";
+      }
+      markSettingsWarnOptions();
+      syncFilterControlsToUi();
+    }
+
+    function markSettingsWarnOptions() {
+      const chunkSel = $("settingsChunkSizeSelect");
+      if (chunkSel) {
+        Array.from(chunkSel.options).forEach((opt) => {
+          opt.classList.toggle("settings-warn-option", opt.value === "unoptimized");
+        });
+      }
+      const clickSel = $("settingsClickLoadSelect");
+      if (clickSel) {
+        Array.from(clickSel.options).forEach((opt) => {
+          opt.classList.toggle("settings-warn-option", opt.value === "all");
+        });
+      }
+    }
+
+    function syncFilterControlsToUi() {
+      const filterSel = $("filterSelect");
+      const settingsFilterSel = $("settingsFilterSelect");
+      if (filterSel && settingsFilterSel && settingsFilterSel.value !== filterSel.value) {
+        settingsFilterSel.value = filterSel.value;
+      }
+      if (settingsFilterSel && filterSel && filterSel.value !== settingsFilterSel.value) {
+        filterSel.value = settingsFilterSel.value;
+      }
+      updateSelectedFilterUI();
+    }
+
+    function openSettingsModal() {
+      syncSettingsFormFromState();
+      const backdrop = $("settingsBackdrop");
+      if (!backdrop) return;
+      backdrop.classList.add("open");
+      backdrop.setAttribute("aria-hidden", "false");
+    }
+
+    function closeSettingsModal() {
+      const backdrop = $("settingsBackdrop");
+      if (!backdrop) return;
+      backdrop.classList.remove("open");
+      backdrop.setAttribute("aria-hidden", "true");
+    }
+
+    async function updateAppSetting(patch) {
+      appSettings = normalizeAppSettings(Object.assign({}, appSettings, patch || {}));
+      applyThemeSetting(appSettings.theme);
+      await persistAppSettings();
+      syncSettingsFormFromState();
+      if (pageContext) scheduleRenderFromPageContext();
+    }
+
+    async function resetAllAppAndFilterSettings() {
+      if (
+        !window.confirm(
+          "Reset all settings to their defaults? This includes theme, performance options, filters, and sort preferences."
+        )
+      ) {
+        return;
+      }
+      appSettings = Object.assign({}, APP_SETTINGS_DEFAULTS);
+      applyThemeSetting(appSettings.theme);
+      writeAppSettingsToLocalStorage(appSettings);
+      await writeAppSettingsToIdb(appSettings);
+      selectedGnMathFilter = "";
+      hideBlockedBySelectedFilter = false;
+      hideLinksWithoutLensCheck = false;
+      listSortMode = LINK_SORT_DEFAULT;
+      try {
+        localStorage.setItem(LS_LINK_LIST_SORT_KEY, listSortMode);
+      } catch (_) {}
+      const q = $("q");
+      if (q) q.value = "";
+      setCheckboxGroup("providerTags", []);
+      setCheckboxGroup("categoryTags", []);
+      setCheckboxGroup("protocolTags", []);
+      setCheckboxGroup("capTags", []);
+      const capAny = document.querySelector('input[name="capMode"][value="any"]');
+      if (capAny) capAny.checked = true;
+      const moSortSel = $("mostOpenedSortSelect");
+      if (moSortSel) moSortSel.value = "clicks";
+      persistMostOpenedSortMode("clicks");
+      const moProvSel = $("mostOpenedProviderSelect");
+      if (moProvSel) moProvSel.value = "";
+      persistMostOpenedProviderChoice("");
+      const linkSortSel = $("linkListSortSelect");
+      if (linkSortSel) linkSortSel.value = LINK_SORT_DEFAULT;
+      updateSelectedFilterUI();
+      syncSettingsFormFromState();
+      scheduleUserProfileWrite();
+      if (pageContext) {
+        scheduleRenderFromPageContext();
+        void renderMostOpenedForList(pageContext.links);
+      }
+    }
+
+    async function handleLinkListSelection(link) {
+      const action = appSettings.linkSelectionAction || "summary";
+      if (action === "open") {
+        if (!confirmMalwareAction(link, "open")) return;
+        if (isJsDelivrUrl(link)) {
+          openJsDelivrPicker(link);
+          return;
+        }
+        void recordLinkClick(link);
+        window.open(link, "_blank", "noopener,noreferrer");
+        return;
+      }
+      if (action === "copy") {
+        if (!confirmMalwareAction(link, "copy")) return;
+        if (isJsDelivrUrl(link)) {
+          openJsDelivrPicker(link, "copy");
+          return;
+        }
+        const ok = await copyPlainTextToClipboard(link);
+        if (ok) showAppToast("Link copied!");
+        void recordLinkClick(link);
+        return;
+      }
+      openSummary(link);
+    }
 
     let savedLinksViewOnly = false;
     let viewingFolderId = "";
@@ -2165,6 +2762,7 @@
         mostOpenedSort: getMostOpenedSortMode(),
         mostOpenedProvider: getMostOpenedProviderChoice(),
         linkListSort: listSortMode,
+        app: collectAppSettingsSnapshot(),
       };
     }
 
@@ -2224,6 +2822,9 @@
             localStorage.setItem(LS_LINK_LIST_SORT_KEY, listSortMode);
           } catch (_) {}
           if (linkSortSel) linkSortSel.value = listSortMode;
+        }
+        if (settings.app && typeof settings.app === "object") {
+          applyAppSettings(settings.app, { skipUi: true });
         }
       } finally {
         applyingUserSettings = false;
@@ -4169,7 +4770,7 @@
       return (
         '<div class="folder-trusted-row">' +
         '<span class="folder-trusted-row-main">' +
-        escapeHtml(String(r.provider || "")) +
+        formatProviderCell(r.provider) +
         '<span class="folder-trusted-row-url">' +
         escapeHtml(link) +
         "</span></span>" +
@@ -4530,12 +5131,12 @@
       el.textContent = formatListVersion(meta);
     }
 
-    const TABLE_CHUNK_SIZE = 80;
     /** Smaller batches so the main thread can paint skeleton rows between inserts. */
     const TABLE_ROW_APPEND_BATCH = 25;
     const TABLE_PREFETCH_PX = 400;
     let tableInfiniteObserver = null;
     let tableInfiniteState = null;
+    let bulkClickCountCache = null;
 
     function disconnectTableInfinite() {
       if (tableInfiniteObserver) {
@@ -4609,7 +5210,7 @@
       const ratingCell = ratingCellTdHtml(r.link);
       return (
         "<tr><td>" +
-        escapeHtml(r.provider) +
+        formatProviderCell(r.provider) +
         '</td><td class="link-cell">' +
         buildSaveLinkButtonHtml(r.link) +
         folderToolsHtml +
@@ -4635,6 +5236,7 @@
     }
 
     async function refreshClickCellsForSlice(rowsSlice, startIndex, options) {
+      if (!shouldLoadLinkClicks()) return;
       if (!rowsSlice || !rowsSlice.length) return;
       const tbody = $("linksTableBody");
       if (!tbody || !tbody.isConnected) return;
@@ -4651,7 +5253,16 @@
       }
       if (!targets.length) return;
       const onClickProgress = options && options.onClickProgress;
-      const map = await fetchClickCounts(targets.map((t) => t.link), onClickProgress);
+      let map;
+      if (bulkClickCountCache && appSettings.grabLinkClicksPerChunk === "all") {
+        map = bulkClickCountCache;
+        if (onClickProgress) onClickProgress(targets.length, targets.length);
+      } else {
+        map = await fetchClickCounts(
+          targets.map((t) => t.link),
+          onClickProgress
+        );
+      }
       if (!tbody.isConnected) return;
       for (const t of targets) {
         if (!t.td || !t.td.isConnected) continue;
@@ -4667,7 +5278,8 @@
       const tbody = st.tbody;
       try {
         const startIndex = st.rendered;
-        const next = Math.min(st.rendered + TABLE_CHUNK_SIZE, st.filtered.length);
+        const chunkSize = getTableChunkSize();
+        const next = Math.min(st.rendered + chunkSize, st.filtered.length);
         const slice = st.filtered.slice(st.rendered, next);
         await prefetchLinkRatingsForNorms(
           slice.map((r) => normalizeUrlKeyForClicks(r && r.link)),
@@ -4690,6 +5302,14 @@
         removeTableSkeletonRows(tbody);
         if (tableInfiniteState !== st) return;
         await refreshClickCellsForSlice(slice, startIndex);
+        if (appSettings.grabLinkClicksPerChunk === "preload" && tableInfiniteState === st) {
+          const preloadSize = getTableChunkSize() * 3;
+          const preloadEnd = Math.min(st.rendered + preloadSize, st.filtered.length);
+          if (preloadEnd > st.rendered) {
+            const preloadSlice = st.filtered.slice(st.rendered, preloadEnd);
+            await refreshClickCellsForSlice(preloadSlice, st.rendered, { silent: true });
+          }
+        }
         if (tableInfiniteState !== st || !st.tbody.isConnected) return;
         if (st.rendered >= st.filtered.length && st.sentinel && st.sentinel.parentNode) {
           st.sentinel.remove();
@@ -4816,6 +5436,7 @@
 
     async function render(rows, meta, linkCheck) {
       currentListVersionStamp = versionStamp(meta) || "";
+      bulkClickCountCache = null;
       disconnectTableInfinite();
       reportContentLoadingProgress(12, "Filtering links…");
       let filtered;
@@ -4841,7 +5462,7 @@
         });
       } else {
         reportContentLoadingProgress(22, "Preparing list…");
-        const quickCount = Math.min(TABLE_CHUNK_SIZE, filtered.length);
+        const quickCount = Math.min(getTableChunkSize(), filtered.length);
         const quickNorms = filtered.slice(0, quickCount).map((r) => normalizeUrlKeyForClicks(r && r.link));
         await prefetchLinkRatingsForNorms(quickNorms, { skipLinkSaveCounts: true });
       }
@@ -4918,7 +5539,7 @@
           ? "Firestore (shared across visitors)"
           : "this browser only — if you expected Firestore, enable Anonymous sign-in and reload; see browser console.") +
         "</strong></p>" +
-        (filtered.length > TABLE_CHUNK_SIZE
+        (filtered.length > getTableChunkSize() && !isUnoptimizedTableRender()
           ? '<p class="stat-line">More rows load in chunks as you scroll down.</p>'
           : "")
       );
@@ -4931,12 +5552,13 @@
       }
 
       reportContentLoadingProgress(45, "Building table…");
-      const initial = Math.min(TABLE_CHUNK_SIZE, filtered.length);
+      const chunkSize = getTableChunkSize();
+      const initial = isUnoptimizedTableRender() ? filtered.length : Math.min(chunkSize, filtered.length);
       const firstChunk = filtered.slice(0, initial);
       const firstHtml = firstChunk.map((r, i) => buildRowTrHtml(r, undefined, folderRowOptsAt(i))).join("");
       const theadRow = linkTableTheadRowHtml();
       const sentinelHtml =
-        filtered.length > TABLE_CHUNK_SIZE
+        !isUnoptimizedTableRender() && filtered.length > initial
           ? '<div id="tableLoadSentinel" class="table-load-sentinel" aria-hidden="true"></div>'
           : "";
 
@@ -4952,14 +5574,33 @@
       );
 
       reportContentLoadingProgress(90, "Loading open counts…");
-      await refreshClickCellsForSlice(firstChunk, 0, {
-        onClickProgress(done, total) {
-          if (!total) return;
-          const pct =
-            done >= total ? 99 : 90 + Math.min(9, Math.round((done / total) * 9));
-          reportContentLoadingProgress(pct, "Loading open counts…");
-        },
-      });
+      if (shouldLoadLinkClicks()) {
+        if (appSettings.grabLinkClicksPerChunk === "all") {
+          bulkClickCountCache = await fetchClickCounts(
+            filtered.map((r) => r && r.link),
+            (done, total) => {
+              if (!total) return;
+              const pct =
+                done >= total ? 99 : 90 + Math.min(9, Math.round((done / total) * 9));
+              reportContentLoadingProgress(pct, "Loading open counts…");
+            }
+          );
+          await refreshClickCellsForSlice(firstChunk, 0);
+        } else {
+          await refreshClickCellsForSlice(firstChunk, 0, {
+            onClickProgress(done, total) {
+              if (!total) return;
+              const pct =
+                done >= total ? 99 : 90 + Math.min(9, Math.round((done / total) * 9));
+              reportContentLoadingProgress(pct, "Loading open counts…");
+            },
+          });
+          if (appSettings.grabLinkClicksPerChunk === "preload" && filtered.length > initial) {
+            const preloadEnd = Math.min(initial + getTableChunkSize() * 3, filtered.length);
+            await refreshClickCellsForSlice(filtered.slice(initial, preloadEnd), initial, { silent: true });
+          }
+        }
+      }
       setupTableInfiniteScroll(filtered, initial);
       notifyEmbedHeight();
     }
@@ -5006,6 +5647,10 @@
       const btn = $("selectFilterBtn");
       const hideBtn = $("hideBlockedBtn");
       const hideUncheckedBtn = $("hideUncheckedBtn");
+      const settingsHideBtn = $("settingsHideBlockedBtn");
+      const settingsHideUncheckedBtn = $("settingsHideUncheckedBtn");
+      const settingsFilterSel = $("settingsFilterSelect");
+      const filterSel = $("filterSelect");
       const selected = selectedGnMathFilter ? cleanSummaryText(selectedGnMathFilter) : "Any / Not selected";
       if (label) label.textContent = "Selected web filter: " + selected;
       if (btn) {
@@ -5022,6 +5667,20 @@
           "Hide unchecked links: " + (hideLinksWithoutLensCheck ? "On" : "Off");
         if (hideLinksWithoutLensCheck) hideUncheckedBtn.classList.add("btn-active");
         else hideUncheckedBtn.classList.remove("btn-active");
+      }
+      if (settingsHideBtn) {
+        settingsHideBtn.textContent = "Hide blocked links: " + (hideBlockedBySelectedFilter ? "On" : "Off");
+        if (hideBlockedBySelectedFilter) settingsHideBtn.classList.add("btn-active");
+        else settingsHideBtn.classList.remove("btn-active");
+      }
+      if (settingsHideUncheckedBtn) {
+        settingsHideUncheckedBtn.textContent =
+          "Hide unchecked links: " + (hideLinksWithoutLensCheck ? "On" : "Off");
+        if (hideLinksWithoutLensCheck) settingsHideUncheckedBtn.classList.add("btn-active");
+        else settingsHideUncheckedBtn.classList.remove("btn-active");
+      }
+      if (filterSel && settingsFilterSel && settingsFilterSel.value !== filterSel.value) {
+        settingsFilterSel.value = filterSel.value;
       }
     }
 
@@ -5063,6 +5722,7 @@
 
     function populateKnownFilters() {
       const select = $("filterSelect");
+      const settingsSelect = $("settingsFilterSelect");
       if (!select) return;
       const byKey = new Map();
       for (const entry of Object.values(linkLensData || {})) {
@@ -5078,22 +5738,22 @@
         }
       }
       const sorted = [...byKey.values()].sort((a, b) => a.localeCompare(b));
-      setHtml(select, '<option value="">Any / Not selected</option>');
-      for (const name of sorted) {
-        const opt = document.createElement("option");
-        opt.value = name;
-        opt.textContent = name;
-        select.appendChild(opt);
-      }
+      const optionsHtml =
+        '<option value="">Any / Not selected</option>' +
+        sorted.map((name) => '<option value="' + escapeAttr(name) + '">' + escapeHtml(name) + "</option>").join("");
+      setHtml(select, optionsHtml);
+      if (settingsSelect) setHtml(settingsSelect, optionsHtml);
       if (selectedGnMathFilter) {
         const selKey = providerFilterKey(selectedGnMathFilter);
         const hit = sorted.find((x) => normalizeFilterKey(x) === selKey);
         if (hit) {
           selectedGnMathFilter = hit;
           select.value = hit;
+          if (settingsSelect) settingsSelect.value = hit;
         } else {
           selectedGnMathFilter = "";
           select.value = "";
+          if (settingsSelect) settingsSelect.value = "";
         }
       }
     }
@@ -6313,7 +6973,13 @@
     initSavedLinksView();
     initEmbedMode();
     setupAccountUI();
+    try {
+      window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+        if ((appSettings.theme || "dark") === "auto") applyThemeSetting("auto");
+      });
+    } catch (_) {}
 
+    loadAppSettings().then(() =>
     Promise.all([
       fetch("data.json").then((r) => {
         if (!r.ok) throw new Error("Could not load data.json (" + r.status + ")");
@@ -6447,7 +7113,7 @@
           ev.preventDefault();
           const href = linkEl.getAttribute("data-link") || linkEl.getAttribute("href");
           if (!href) return;
-          openSummary(href);
+          handleLinkListSelection(href);
         });
 
         $("summaryCloseBtn").addEventListener("click", closeSummary);
@@ -6518,6 +7184,89 @@
           void renderAfterHeavyFilter(links, meta, link_check);
           scheduleUserProfileWrite();
         });
+        const openSettingsBtn = $("openSettingsBtn");
+        if (openSettingsBtn) openSettingsBtn.addEventListener("click", () => openSettingsModal());
+        const settingsCloseBtn = $("settingsCloseBtn");
+        if (settingsCloseBtn) settingsCloseBtn.addEventListener("click", closeSettingsModal);
+        const settingsBackdrop = $("settingsBackdrop");
+        if (settingsBackdrop) {
+          settingsBackdrop.addEventListener("click", (ev) => {
+            if (ev.target === settingsBackdrop) closeSettingsModal();
+          });
+        }
+        const settingsThemeSelect = $("settingsThemeSelect");
+        if (settingsThemeSelect) {
+          settingsThemeSelect.addEventListener("change", () => {
+            void updateAppSetting({ theme: settingsThemeSelect.value || "dark" });
+          });
+        }
+        const settingsLinkActionSelect = $("settingsLinkActionSelect");
+        if (settingsLinkActionSelect) {
+          settingsLinkActionSelect.addEventListener("change", () => {
+            void updateAppSetting({ linkSelectionAction: settingsLinkActionSelect.value || "summary" });
+          });
+        }
+        const settingsRenderEmojisSelect = $("settingsRenderEmojisSelect");
+        if (settingsRenderEmojisSelect) {
+          settingsRenderEmojisSelect.addEventListener("change", () => {
+            void updateAppSetting({ renderEmojis: settingsRenderEmojisSelect.value !== "disabled" });
+          });
+        }
+        const settingsChunkSizeSelect = $("settingsChunkSizeSelect");
+        if (settingsChunkSizeSelect) {
+          settingsChunkSizeSelect.addEventListener("change", () => {
+            void updateAppSetting({ renderLoadPerChunk: settingsChunkSizeSelect.value || "medium" });
+          });
+        }
+        const settingsClickLoadSelect = $("settingsClickLoadSelect");
+        if (settingsClickLoadSelect) {
+          settingsClickLoadSelect.addEventListener("change", () => {
+            void updateAppSetting({ grabLinkClicksPerChunk: settingsClickLoadSelect.value || "per_chunk" });
+          });
+        }
+        const settingsSaveLocalSelect = $("settingsSaveLocalSelect");
+        if (settingsSaveLocalSelect) {
+          settingsSaveLocalSelect.addEventListener("change", () => {
+            appSettingsIdbPromise = null;
+            void updateAppSetting({ saveSettingsLocally: settingsSaveLocalSelect.value === "enabled" });
+          });
+        }
+        const settingsFilterSelect = $("settingsFilterSelect");
+        if (settingsFilterSelect) {
+          settingsFilterSelect.addEventListener("change", (ev) => {
+            selectedGnMathFilter = ev.target.value || "";
+            const filterSel = $("filterSelect");
+            if (filterSel) filterSel.value = selectedGnMathFilter;
+            updateSelectedFilterUI();
+            void renderAfterHeavyFilter(links, meta, link_check);
+            void renderMostOpenedForList(links);
+            scheduleUserProfileWrite();
+          });
+        }
+        const settingsHideBlockedBtn = $("settingsHideBlockedBtn");
+        if (settingsHideBlockedBtn) {
+          settingsHideBlockedBtn.addEventListener("click", () => {
+            hideBlockedBySelectedFilter = !hideBlockedBySelectedFilter;
+            updateSelectedFilterUI();
+            void renderAfterHeavyFilter(links, meta, link_check);
+            scheduleUserProfileWrite();
+          });
+        }
+        const settingsHideUncheckedBtn = $("settingsHideUncheckedBtn");
+        if (settingsHideUncheckedBtn) {
+          settingsHideUncheckedBtn.addEventListener("click", () => {
+            hideLinksWithoutLensCheck = !hideLinksWithoutLensCheck;
+            updateSelectedFilterUI();
+            void renderAfterHeavyFilter(links, meta, link_check);
+            scheduleUserProfileWrite();
+          });
+        }
+        const settingsResetBtn = $("settingsResetBtn");
+        if (settingsResetBtn) {
+          settingsResetBtn.addEventListener("click", () => {
+            void resetAllAppAndFilterSettings();
+          });
+        }
         $("summaryBackdrop").addEventListener("click", (ev) => {
           if (ev.target === $("summaryBackdrop")) closeSummary();
         });
@@ -6577,6 +7326,7 @@
             }
             closeSummary();
             closeFilterModal();
+            closeSettingsModal();
             closeUpdateModal(meta);
           }
         });
@@ -6586,7 +7336,7 @@
           if ($("folderTrustedResults")) refreshFolderTrustedSearchUI(folderTrustedSearchLastQuery);
         });
       });
-    })
+    }))
       .catch((e) => {
         setContentLoading(false);
         const msg = e && e.message ? String(e.message) : String(e);
