@@ -320,8 +320,19 @@
 
       function setHtml(el, html) {
         if (!el) return;
+        if (!window.DOMPurify) {
+          el.replaceChildren();
+          return;
+        }
         const raw = html == null ? "" : String(html);
-        el.innerHTML = window.DOMPurify ? DOMPurify.sanitize(raw) : "";
+        const clean = DOMPurify.sanitize(raw);
+        if (!clean) {
+          el.replaceChildren();
+          return;
+        }
+        const doc = new DOMParser().parseFromString("<body>" + clean + "</body>", "text/html");
+        const nodes = Array.from(doc.body.childNodes).map((node) => document.importNode(node, true));
+        el.replaceChildren(...nodes);
       }
 
       /** Persisted auth restores asynchronously; reading currentUser before this can falsely look signed out. */

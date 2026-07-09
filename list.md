@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
-> v5.2.1 | Released: July 08, 2026
-> r242 | Last Updated: July 08, 2026
+> v5.3 | Released: July 09, 2026
+> r243 | Last Updated: July 09, 2026
 > Total onsite links: 4525 (2549 sorted + 1976 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -20,7 +20,8 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 
 ## Update Notice
 
-- Changed background theme from dark blue/gray to black/gray for visibility
+- Added settings so you can save settings locally and improve performance
+- Added themes
 - Security fixes
 
 # 💜 Selenite
