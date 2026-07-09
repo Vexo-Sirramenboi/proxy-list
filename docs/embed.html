@@ -128,9 +128,10 @@
         "></iframe>";
       var resizeSnippet =
         "window.addEventListener(\"message\", function (e) {\n" +
+        "  if (e.origin !== location.origin) return;\n" +
         "  if (!e.data || e.data.type !== \"proxy-list-embed\") return;\n" +
         "  var iframe = document.getElementById(\"YOUR_IFRAME_ID\");\n" +
-        "  if (!iframe || typeof e.data.height !== \"number\") return;\n" +
+        "  if (!iframe || e.source !== iframe.contentWindow || typeof e.data.height !== \"number\") return;\n" +
         "  iframe.style.height = Math.max(480, e.data.height) + \"px\";\n" +
         "});";
       document.getElementById("embedSnippet").value = snippet;
@@ -150,9 +151,10 @@
         }, 2000);
       });
       window.addEventListener("message", function (e) {
+        if (e.origin !== location.origin) return;
         if (!e.data || e.data.type !== "proxy-list-embed") return;
         var frame = document.getElementById("previewFrame");
-        if (!frame || typeof e.data.height !== "number") return;
+        if (!frame || e.source !== frame.contentWindow || typeof e.data.height !== "number") return;
         frame.style.height = Math.max(480, e.data.height) + "px";
       });
     })();

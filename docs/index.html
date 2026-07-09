@@ -1910,60 +1910,56 @@
 
     /**
      * DOMPurify drops orphan <tr>/<th>/<td> (not under <table>), which broke "Most opened" rows.
-     * Wrap table child fragments, sanitize, then take the inner HTML of thead/tbody.
+     * Parse sanitized markup with DOMParser and apply nodes directly (no live innerHTML sinks).
      */
-    function sanitizeTheadInnerFragment(raw) {
-      if (!raw) return "";
-      if (!window.DOMPurify) return "";
-      const clean = DOMPurify.sanitize("<table><thead>" + raw + "</thead></table>");
-      const tpl = document.createElement("template");
-      tpl.innerHTML = clean;
-      const thead = tpl.content.querySelector("thead");
-      return thead ? thead.innerHTML : "";
+    function importSanitizedNodes(nodes) {
+      return Array.from(nodes || []).map((node) => document.importNode(node, true));
     }
 
-    function sanitizeTbodyInnerFragment(raw) {
-      if (!raw) return "";
-      if (!window.DOMPurify) return "";
-      const clean = DOMPurify.sanitize("<table><tbody>" + raw + "</tbody></table>");
-      const tpl = document.createElement("template");
-      tpl.innerHTML = clean;
-      const tbody = tpl.content.querySelector("tbody");
-      return tbody ? tbody.innerHTML : "";
+    function nodesFromSanitizedBodyHtml(raw) {
+      if (!raw || !window.DOMPurify) return [];
+      const clean = DOMPurify.sanitize(String(raw));
+      if (!clean) return [];
+      const doc = new DOMParser().parseFromString("<body>" + clean + "</body>", "text/html");
+      return importSanitizedNodes(doc.body.childNodes);
+    }
+
+    function nodesFromSanitizedTableSection(sectionTag, raw) {
+      const tag = String(sectionTag || "").toLowerCase();
+      if (!raw || !window.DOMPurify || (tag !== "thead" && tag !== "tbody")) return [];
+      const clean = DOMPurify.sanitize("<table><" + tag + ">" + String(raw) + "</" + tag + "></table>");
+      if (!clean) return [];
+      const doc = new DOMParser().parseFromString(clean, "text/html");
+      const section = doc.querySelector(tag);
+      return section ? importSanitizedNodes(section.childNodes) : [];
     }
 
     /** Assign HTML after sanitization so static analysis (e.g. CodeQL) sees a guarded DOM sink. */
     function setHtml(el, html) {
       if (!el) return;
-      const raw = html == null ? "" : String(html);
-      let out = "";
-      if (window.DOMPurify) {
-        const tag = el.tagName;
-        if (tag === "THEAD") {
-          out = sanitizeTheadInnerFragment(raw);
-        } else if (tag === "TBODY") {
-          out = sanitizeTbodyInnerFragment(raw);
-        } else {
-          out = DOMPurify.sanitize(raw);
-        }
+      if (!window.DOMPurify) {
+        el.replaceChildren();
+        return;
       }
-      el.innerHTML = out;
+      const raw = html == null ? "" : String(html);
+      const tag = el.tagName;
+      let nodes;
+      if (tag === "THEAD") nodes = nodesFromSanitizedTableSection("thead", raw);
+      else if (tag === "TBODY") nodes = nodesFromSanitizedTableSection("tbody", raw);
+      else nodes = nodesFromSanitizedBodyHtml(raw);
+      el.replaceChildren(...nodes);
     }
 
     function insertAdjacentHtmlSafe(el, position, html) {
-      if (!el) return;
+      if (!el || !window.DOMPurify) return;
       const raw = html == null ? "" : String(html);
-      let clean;
-      if (window.DOMPurify) {
-        if (el.tagName === "TBODY" && position === "beforeend") {
-          clean = sanitizeTbodyInnerFragment(raw);
-        } else {
-          clean = DOMPurify.sanitize(raw);
-        }
-      } else {
-        clean = "";
-      }
-      el.insertAdjacentHTML(position, clean);
+      const nodes =
+        el.tagName === "TBODY" && position === "beforeend"
+          ? nodesFromSanitizedTableSection("tbody", raw)
+          : nodesFromSanitizedBodyHtml(raw);
+      if (!nodes.length) return;
+      if (position === "beforeend") el.append(...nodes);
+      else if (position === "afterbegin") el.prepend(...nodes);
     }
 
     function cssEscapeAttrValue(value) {
@@ -1974,6 +1970,7 @@
 
     function embedPostMessageTargetOrigin() {
       try {
+        if (window.parent === window) return window.location.origin;
         if (document.referrer) {
           const ref = new URL(document.referrer);
           if (ref.protocol === "https:" || ref.protocol === "http:") return ref.origin;
@@ -2400,7 +2397,8 @@
     /** Set each main `render()` from `data.json` meta — used for Firestore aggregate disk cache. */
     let currentListVersionStamp = "";
 
-    let headerSubDefaultHtml = "";
+    const HEADER_SUB_DEFAULT_HTML =
+      'Multi-select provider, category, protocol, and capability tags (parsed from <code>list.md</code>). Nothing checked means no filter on that group.';
 
     function sanitizeFolderDocId(raw) {
       const s = String(raw || "").trim();
@@ -2508,7 +2506,6 @@
         folderViewState = "idle";
       }
       const subEl = $("headerSub");
-      if (subEl && !headerSubDefaultHtml) headerSubDefaultHtml = subEl.innerHTML;
       updateSavedViewUI();
     }
 
@@ -2587,7 +2584,7 @@
         hideMostOpenedSection();
       } else {
         if (titleEl) titleEl.textContent = "Proxy list";
-        if (subEl && headerSubDefaultHtml) setHtml(subEl, headerSubDefaultHtml);
+        if (subEl) setHtml(subEl, HEADER_SUB_DEFAULT_HTML);
         document.title = "Proxy list";
       }
       const backMain = $("sidebarBackToMainList");
@@ -3015,7 +3012,7 @@
       if (!wrap) return;
       if (!items.length) {
         wrap.hidden = true;
-        wrap.innerHTML = "";
+        wrap.replaceChildren();
         return;
       }
       wrap.hidden = false;
