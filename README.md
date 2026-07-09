@@ -48,6 +48,17 @@ View [CONTRIBUTING.md](https://github.com/yourworstnightmare1/proxy-list/blob/ma
 <br>
 **I am only accepting contributions to list.md, I am not taking contributions on any code present here.**
 
+# License
+
+This repository uses a dual license:
+
+| Scope | License | File |
+| --- | --- | --- |
+| **Site code** (HTML, scripts, tooling, config) | [MIT](LICENSE) | `LICENSE` |
+| **List data** (`list.md`, generated JSON, link datasets) | [CC BY 4.0](LICENSE-DATA) | `LICENSE-DATA` |
+
+You may copy, share, and remix the proxy list data with attribution. The website code is open under MIT with the usual permissions and warranty disclaimer.
+
 # How is CAPTCHA tested?
 CAPTCHA is tested using the official [Google ReCAPTCHA demo](https://www.google.com/recaptcha/api2/demo)
 
