@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.3 | Released: July 09, 2026
-> r244 | Last Updated: July 09, 2026
+> r245 | Last Updated: July 09, 2026
 > Total onsite links: 4525 (2549 sorted + 1976 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -219,7 +219,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl | Scramjet, Ultraviolet, Eclipse | 25 |
+> | Proxy/Games | epoxy, libcurl | Scramjet, Ultraviolet, Eclipse | 23 |
 
 > [!IMPORTANT]
 > Nebulo does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -247,10 +247,8 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://learning-tactics.ncknms.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://brain-skills.ortonavarro.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://learning-track.divvyboard.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://study-achievement.expedicionesytrekking.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://rain.snow.hail.cloudy.heat.weatherpixel.com | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://math.lit.bio.bull.more.bvhoa.com | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://travelcroatia.inzagreb.com | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🌑 Space
 > [!NOTE]
@@ -2550,25 +2548,20 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 17 |
+> | Proxy/Games | unknown | unknown | 12 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
-| | https://xylora.grahammurryinsuranceagency.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://xylora.notariamelipilla.cl | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://sub.to.playernation.xylora.renaca.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://join.mizumath.babypos.hk | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://xylora.vta-international.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://summer.hot.sun.longerdays.shorternights.japan.is | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://xylora.triatlonpacense.es | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://xylora.beerporn.org | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://play.nation.xylora.beltfrog.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://xylora.co.ldeazevedo.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://vcsa.easternstamps.com | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://xylora.searching.dirtchicvt.com | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://xylora.rust.rusticrivergear.com | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://repeating.xylora.webinfo.tw/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://xy.lora.grahammurryinsuranceagency.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://xylora.rust.rusticrivergear.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://xylora.searching.dirtchicvt.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
