@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Changelog | Proxy list</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    :root {
+      --bg: #111111;
+      --surface: #1a1a1a;
+      --border: #2e2e2e;
+      --text: #e8e8e8;
+      --muted: #9a9a9a;
+      --accent: #6cb3ff;
+      --font: "Segoe UI", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    header {
+      padding: 1.2rem 1.4rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    h1 { margin: 0 0 0.35rem; font-size: 1.35rem; }
+    .sub { margin: 0; color: var(--muted); font-size: 0.9rem; }
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 1rem 1.2rem 2.5rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 0.8rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--text);
+      background: #141414;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .btn:hover { border-color: var(--accent); color: var(--accent); }
+    .entry {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+      padding: 0.95rem 1rem;
+      margin-top: 1rem;
+    }
+    .entry-head {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.75rem;
+      align-items: baseline;
+      margin-bottom: 0.65rem;
+    }
+    .entry-version {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 0;
+    }
+    .entry-meta {
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+    .entry-body h3 {
+      margin: 0.85rem 0 0.35rem;
+      font-size: 0.95rem;
+    }
+    .entry-body h3:first-child { margin-top: 0; }
+    .entry-body p, .entry-body ul {
+      margin: 0.45rem 0;
+      color: var(--text);
+      font-size: 0.9rem;
+    }
+    .entry-body ul { padding-left: 1.2rem; }
+    .entry-body li { margin: 0.3rem 0; }
+    a { color: var(--accent); }
+    .err {
+      border: 1px solid #6b2d2d;
+      color: #ff9b9b;
+      background: #141414;
+      border-radius: 8px;
+      padding: 0.65rem 0.8rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Update changelog</h1>
+    <p class="sub">Archive of previous site update messages shown in the Update Notice.</p>
+  </header>
+  <main>
+    <a class="btn" href="./">← Back to proxy list</a>
+    <div id="changelogRoot"><p class="sub" style="margin-top:1rem;">Loading changelog…</p></div>
+  </main>
+  <script>
+    function escapeHtml(s) {
+      return String(s)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function renderMarkdownInline(text) {
+      var s = escapeHtml(String(text || ""));
+      s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, function (_, label, href) {
+        var h = String(href || "").trim();
+        if (!/^https?:\/\//i.test(h)) return label;
+        return '<a href="' + escapeHtml(h) + '" rel="noopener noreferrer" target="_blank">' + label + "</a>";
+      });
+      return s;
+    }
+
+    function renderNoticeMarkdown(md) {
+      var text = String(md || "").trim();
+      if (!text) return '<p class="sub">No update message recorded.</p>';
+      var chunks = [];
+      var sections = text.split(/(?=^### )/m);
+      sections.forEach(function (sec) {
+        var s = sec.trim();
+        if (!s) return;
+        if (s.indexOf("###") === 0) {
+          var rest = s.replace(/^###\s+/, "");
+          var nl = rest.indexOf("\n");
+          var title = (nl === -1 ? rest : rest.slice(0, nl)).trim();
+          var body = nl === -1 ? "" : rest.slice(nl + 1).trim();
+          chunks.push("<h3>" + renderMarkdownInline(title) + "</h3>");
+          if (body) {
+            body.split(/\n{2,}/).forEach(function (para) {
+              var p = para.trim();
+              if (!p) return;
+              if (/^[-*]\s/m.test(p)) {
+                chunks.push("<ul>" + p.split(/\n/).map(function (line) {
+                  return "<li>" + renderMarkdownInline(line.replace(/^[-*]\s+/, "")) + "</li>";
+                }).join("") + "</ul>");
+              } else {
+                chunks.push("<p>" + renderMarkdownInline(p.replace(/\n+/g, " ")) + "</p>");
+              }
+            });
+          }
+        } else if (/^[-*]\s/m.test(s)) {
+          chunks.push("<ul>" + s.split(/\n/).map(function (line) {
+            return "<li>" + renderMarkdownInline(line.replace(/^[-*]\s+/, "")) + "</li>";
+          }).join("") + "</ul>");
+        } else {
+          s.split(/\n{2,}/).forEach(function (para) {
+            var p = para.replace(/\n+/g, " ").trim();
+            if (p) chunks.push("<p>" + renderMarkdownInline(p) + "</p>");
+          });
+        }
+      });
+      return chunks.join("");
+    }
+
+    function renderEntry(entry) {
+      var version = escapeHtml(entry.version || "Unknown");
+      var revision = entry.revision ? " " + escapeHtml(entry.revision) : "";
+      var released = entry.released ? escapeHtml(entry.released) : "";
+      return (
+        '<article class="entry">' +
+        '<div class="entry-head">' +
+        '<h2 class="entry-version">' + version + revision + "</h2>" +
+        (released ? '<span class="entry-meta">Released ' + released + "</span>" : "") +
+        "</div>" +
+        '<div class="entry-body">' +
+        renderNoticeMarkdown(entry.update_notice) +
+        "</div></article>"
+      );
+    }
+
+    fetch("update_changelog.json")
+      .then(function (r) {
+        if (!r.ok) throw new Error("Could not load changelog (" + r.status + ")");
+        return r.json();
+      })
+      .then(function (payload) {
+        var entries = payload && payload.entries;
+        var root = document.getElementById("changelogRoot");
+        if (!Array.isArray(entries) || !entries.length) {
+          root.innerHTML = '<p class="sub">No archived update notices yet.</p>';
+          return;
+        }
+        root.innerHTML = entries.map(renderEntry).join("");
+      })
+      .catch(function (err) {
+        document.getElementById("changelogRoot").innerHTML =
+          '<div class="err">' + escapeHtml(err && err.message ? err.message : String(err)) + "</div>";
+      });
+  </script>
+</body>
+</html>

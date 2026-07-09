@@ -6,6 +6,104 @@
     "unsorted_total": 2015,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
     "update_notice": "- Added settings so you can save settings locally and improve performance\n- Added themes\n- Security fixes",
+    "update_changelog": [
+      {
+        "version": "v5.3",
+        "revision": "r245",
+        "released": "July 09, 2026",
+        "update_notice": "- Added settings so you can save settings locally and improve performance\n- Added themes\n- Security fixes"
+      },
+      {
+        "version": "v5.2.1",
+        "revision": "r242",
+        "released": "July 08, 2026",
+        "update_notice": "- Changed background theme from dark blue/gray to black/gray for visibility\n- Security fixes"
+      },
+      {
+        "version": "v5.2",
+        "revision": "r241",
+        "released": "May 31, 2026",
+        "update_notice": "Added mirror links and embed support; maintenance fixes and updated filter data."
+      },
+      {
+        "version": "v5.1.3",
+        "revision": "r165",
+        "released": "May 30, 2026",
+        "update_notice": "Made maintenance fixes and updated outdated filter data."
+      },
+      {
+        "version": "v5.1.2",
+        "revision": "r159",
+        "released": "May 17, 2026",
+        "update_notice": "### Fixes\n- Fixed a bug that caused the refresh to update notice only appear when the version it requests is already active."
+      },
+      {
+        "version": "v5.1.1",
+        "revision": "r119",
+        "released": "May 17, 2026",
+        "update_notice": "### Fixes\n- Fixed a bug that caused the update notice message to appear every time the revision string was updated."
+      },
+      {
+        "version": "v5.1",
+        "revision": "r118",
+        "released": "May 17, 2026",
+        "update_notice": "### UI Redesign\nI've updated the UI with icons and better formatting for people on mobile so that full links are actually visible on mobile.\n\n### Unlisted Folders\nLink folders can now be shared as unlisted, allowing only people with the link to view the folder. If the link is private, no one except for the owner can view it. Public functionality was unchanged. Unlisted links do not show up publicly.\n\n### Fixes\n- Fixed a bug that caused accounts to be repeatedly signed out (this was fixed 5/15 with a remote hotfix).\n- Fixed a bug that caused link ratings to not work (this was automatically fixed 5/15).\n- Fixed a bug that caused extremely long load times when sorting by highest rated links.\n- Fixed a bug that caused contributed links to be incorrectly counted.\n- Fixed a bug that caused some sections to have inaccurate data.\n- Fixed a bug with Google Form link contributions that caused contributor names to not be hyperlinked properly.\n- Fixed a bug that caused links to show vertically instead of horizontally on mobile, making links very hard to read.\n- Fixed a bug where saving links would not save them properly (this seems to have been mostly fixed after the remote hotfix on 5/15).\n- Fixed a bug where saving links would not make the star yellow, making it hard to differentiate saved from unsaved links.\n- Fixed a bug that caused proxied users to have long load times. Optimizations have been made to lower loading.\n- Fixed a bug with the link checker bot not removing links."
+      },
+      {
+        "version": "v5.0",
+        "revision": "r113",
+        "released": "May 15, 2026",
+        "update_notice": "### Accounts and Connections\nYou can now make an account on the site and even connect using GitHub and Google. Making an account gives you access to community features such as link ratings, saving links, sharing link folders, and more.\n\n### Saving Links\nOnce you create an account and sign in, you can now save links and access them by going to your account name and going to \"Saved links\". This is where you can also make link folders and share your favorite links with the community.\n\n### Community - Rating Links\nLink ratings are working again — you can thumbs-up or thumbs-down links and sort by highest rated or most saved.\nYou can now upvote/downvote links and sort by most favorable links by rated by the community. You will no longer have to keep trying links until you find one that's actually good.\n\n### Community - Sharing Links\nYou can now share links globally using the new folder system. It can be accessed the same way you access saved links, and clicking \"New Folder\". Add your links, then check the \"Public\" checkmark, and you are all set! You can also copy the direct link to your folder to share with others. Community shared link folders also support community ratings."
+      },
+      {
+        "version": "v5.0",
+        "revision": "r108",
+        "released": "May 15, 2026",
+        "update_notice": "### Accounts and Connections\nYou can now make an account on the site and even connect using GitHub and Google. Making an account gives you access to community features such as link ratings, saving links, sharing link folders, and more.\n\n### Saving Links\nOnce you create an account and sign in, you can now save links and access them by going to your account name and going to \"Saved links\". This is where you can also make link folders and share your favorite links with the community.\n\n### Community - Rating Links\n(At the time of writing, link ratings are currently down.)\nYou can now upvote/downvote links and sort by most favorable links by rated by the community. You will no longer have to keep trying links until you find one that's actually good.\n\n### Community - Sharing Links\nYou can now share links globally using the new folder system. It can be accessed the same way you access saved links, and clicking \"New Folder\". Add your links, then check the \"Public\" checkmark, and you are all set! You can also copy the direct link to your folder to share with others. Community shared link folders also support community ratings."
+      },
+      {
+        "version": "v4.4.1",
+        "revision": "r104",
+        "released": "May 12, 2026",
+        "update_notice": "### Info Update\nUpdated the info on a few sections to allow better sorting of links"
+      },
+      {
+        "version": "v4.4",
+        "revision": "r94",
+        "released": "May 12, 2026",
+        "update_notice": "### Bugfix\nFixed a bug where the contributed link count would decrease when a link was removed via the link removal script. Contributed link counts couldn't be restored from their previous values before the link removal bot took away links but the current link count is unchanged and cannot be changed by the link removal bot."
+      },
+      {
+        "version": "v4.2",
+        "revision": "r82",
+        "released": "May 07, 2026",
+        "update_notice": "### Better Contributions\nContributors, contribution rules, and ways to contribute are now all on the [Contribute page](https://yourworstnightmare1.github.io/proxy-list/contribute).\n\n### Sorting Unsorted Links\nLinks that are already on our main list are being automatically removed from the unsorted list to minimize the amount of unsorted links we have here. I am also working on moving unsorted links to the main list finally, it takes time as there is nearly 2000 links.\n\n### Security Patches\nFixed a security vulnerability."
+      },
+      {
+        "version": "v4.1",
+        "revision": "r71",
+        "released": "May 06, 2026",
+        "update_notice": "### Sort Popular Links\nYou can now sort most open links by providers, filters, and opens. This should make it easier for you to find working links faster.\n\n### UI Improvements\nAdded a back to top button, which takes you back to the top of the webpage\n\n### Bugfixes\n- Fixed an issue where scrolling did not load the next chunk properly, leading to the list to abruptly end\n- Fixed an issue where the dead link checker wasn't finding links properly\n- Fixed an issue where certain text/buttons were the incorrect font"
+      },
+      {
+        "version": "v4.0.1",
+        "revision": "r68",
+        "released": "May 05, 2026",
+        "update_notice": "### Bugfix\nQuick update to fix an issue causing links to not be checked and removed when dead."
+      },
+      {
+        "version": "v4.0",
+        "revision": "r67",
+        "released": "May 02, 2026",
+        "update_notice": "### Firebase Integration\nThe Proxy List is now fully integrated with Firebase, and you can now see the site's most popular links.\n\n### UI Changes\nThe UI has been slightly changed to make the site cleaner and more user-friendly. We have moved the top buttons to the side. Oh, and there's loading screens now.\n\n### Hide Unchecked Links\nYou can now hide links that have not been checked for blocked filters, giving a more accurate link count estimate when hiding blocked links and making it easier to actually find unblocked links.\n\n### New Filter Options\nI have added support for the following filters now:\n\n- CleanBrowsing\n\n- Control D\n\n- Gaggle\n\n- Hapara\n\n- Smoothwall\n\n- Zscaler\n\n(Smoothwall and Zscaler users: The link check bot has been having issues checking your filter for blocked/unblocked status, so most links will probably just show warning. This is a relatively new filter to the bot, so it is likely being fixed as of now.)\n\n### Performance Improvements\nMuch needed performance improvements were done, which has lowered the site's estimated memory usage from ~400MB to only ~150MB to allow breathing room for lower-end devices that will access the site.\n\n### More Links\nAs usual with most updates, we of course gave you some more links. This time we have 500+ links added, with the total onsite links (as of the time of writing this message) being 4,546."
+      },
+      {
+        "version": "v3.0.1",
+        "revision": "r66",
+        "released": "April 27, 2026",
+        "update_notice": "### Forget About Testing Links\nYou can now see if links are blocked/unblocked, making it way easier to find working links (there's a lot of them!) You can also select your web filter and get alerted if they are blocked, and hide links that may be blocked.\n\n### Always Be In The Know\nYou can now view important announcements from this page instead of having to go to the README.md to view them.\n\n### Sorted Links Don't Fit Your Needs?\nYou can always view [Unsorted Links](https://yourworstnightmare1.github.io/proxy-list/unsorted.html) to view a random assortment of nearly 2000+ links. Note that these links are not checked for filter blocks."
+      }
+    ],
     "fail_threshold": 3,
     "popular_note": "Hand-picked links that tend to work well — not ranked by site traffic (this page has no analytics). Edit docs/popular_links.json and run scripts/convert_list_to_json.py.",
     "popular_links": [
