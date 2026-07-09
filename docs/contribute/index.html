@@ -166,6 +166,63 @@
     }
     a { color: var(--accent); word-break: break-word; }
 
+    .submit-card { margin-top: 1rem; }
+    .submit-form label {
+      display: block;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin: 0.65rem 0 0.3rem;
+    }
+    .submit-form input[type="text"],
+    .submit-form input[type="url"],
+    .submit-form select,
+    .submit-form textarea {
+      width: 100%;
+      font: inherit;
+      font-size: 0.88rem;
+      background: #141414;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.5rem 0.65rem;
+    }
+    .submit-form textarea { min-height: 4.5rem; resize: vertical; }
+    .provider-mode {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin: 0.35rem 0 0.15rem;
+      font-size: 0.86rem;
+    }
+    .provider-mode label { display: inline-flex; align-items: center; gap: 0.35rem; margin: 0; color: var(--text); }
+    .submit-status {
+      margin-top: 0.75rem;
+      font-size: 0.86rem;
+      border-radius: 8px;
+      padding: 0.55rem 0.7rem;
+      border: 1px solid var(--border);
+      background: #141414;
+    }
+    .submit-status.ok { border-color: #2d6b4a; color: var(--ok); }
+    .submit-status.warn { border-color: #5f4b2d; color: var(--warn); }
+    .submit-status.err { border-color: #6b2d2d; color: #ff9b9b; }
+    .submit-history { margin-top: 1rem; }
+    .submit-history table { font-size: 0.8rem; }
+    .status-pill {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 0.1rem 0.45rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    .status-pill.pending { background: #2a2a15; color: var(--warn); border: 1px solid #5f4b2d; }
+    .status-pill.approved { background: #152a1f; color: var(--ok); border: 1px solid #2d6b4a; }
+    .status-pill.rejected { background: #2a1515; color: #ff9b9b; border: 1px solid #6b2d2d; }
+    .signin-prompt { margin: 0.5rem 0 0; }
+    .signin-prompt a { font-weight: 600; }
+
 
   </style>
 </head>
@@ -203,14 +260,58 @@
       <section class="card" aria-labelledby="howHeading">
         <h2 id="howHeading">How to contribute</h2>
         <ol class="rules">
+          <li>Sign in and use the submission form below for quick review.</li>
           <li>Use GitHub for direct edits and pull requests.</li>
-          <li>Use Google Form if you want a quick submission path.</li>
           <li>For GitHub, add rows in the existing table format under the right section.</li>
           <li>If you add a new section, include emoji + note table + links table.</li>
         </ol>
-        <p class="muted">Your entries sync to both <code>list.md</code> and the website data files.</p>
+        <p class="muted">Categories and capabilities are assigned during review — you only need the URL and provider.</p>
       </section>
     </div>
+
+    <section class="card submit-card" aria-labelledby="submitHeading">
+      <h2 id="submitHeading">Submit a link for review</h2>
+      <p class="muted">Submit a working proxy URL under an existing provider or propose a new one. Duplicate URLs (including ones already on the list) are rejected. We compare full URLs, not whole domains, so multiple proxies on the same domain with different paths or subdomains are allowed.</p>
+      <div id="submitSignInPrompt" class="signin-prompt muted" hidden>
+        <a href="../login/?next=contribute/">Sign in</a> with GitHub, Google, or email to submit links.
+      </div>
+      <div id="submitBannedNotice" class="submit-status err" hidden></div>
+      <form id="linkSubmitForm" class="submit-form" hidden>
+        <label for="submitUrl">Proxy URL</label>
+        <input id="submitUrl" name="url" type="url" inputmode="url" autocomplete="off" placeholder="https://example.com/path" required />
+        <fieldset style="border:0;margin:0;padding:0;">
+          <legend class="muted" style="font-size:0.82rem;margin-bottom:0.25rem;">Provider</legend>
+          <div class="provider-mode">
+            <label><input type="radio" name="providerMode" value="existing" checked /> Existing provider</label>
+            <label><input type="radio" name="providerMode" value="new" /> New provider</label>
+          </div>
+        </fieldset>
+        <div id="existingProviderWrap">
+          <label for="submitProviderSelect">Choose provider</label>
+          <select id="submitProviderSelect" aria-label="Existing provider"></select>
+        </div>
+        <div id="newProviderWrap" hidden>
+          <label for="submitNewProvider">New provider name</label>
+          <input id="submitNewProvider" type="text" maxlength="120" placeholder="e.g. 🌙 My Proxy" />
+        </div>
+        <label for="submitNote">Optional note for reviewers</label>
+        <textarea id="submitNote" maxlength="500" placeholder="Login details, region, or anything else helpful (no passwords unless the link is locked)."></textarea>
+        <div class="actions" style="margin-top:0.85rem;">
+          <button class="btn btn-primary" type="submit" id="submitBtn">Submit for review</button>
+        </div>
+        <div id="submitStatus" class="submit-status" hidden role="status"></div>
+      </form>
+      <div class="submit-history" id="submitHistoryWrap" hidden>
+        <h3 style="margin:0.85rem 0 0.45rem;font-size:0.95rem;">Your recent submissions</h3>
+        <table>
+          <thead>
+            <tr><th>URL</th><th>Provider</th><th>Status</th></tr>
+          </thead>
+          <tbody id="submitHistoryBody"></tbody>
+        </table>
+      </div>
+      <p class="muted" style="margin-top:0.75rem;font-size:0.8rem;" id="submitAdminLink" hidden><a href="../admin/submissions.html">Review submissions (admin)</a></p>
+    </section>
 
     <section class="card" aria-labelledby="contributorsHeading" style="margin-top:1rem;">
       <div class="contributors-head">
@@ -243,8 +344,10 @@
   ></script>
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
   <script src="../firebase-config.example.js"></script>
   <script src="../firebase-config.local.js"></script>
+  <script src="../submission-utils.js"></script>
   <script>
     function escapeHtml(s) {
       return String(s)
@@ -477,5 +580,6 @@
     initViewerAuth();
     loadContributors();
   </script>
+  <script src="./submit-form.js"></script>
 </body>
 </html>

@@ -20,6 +20,34 @@ service cloud.firestore {
         || (!(d.visibility is string) && d.isPublic is bool);
     }
 
+    function isSignedInNonAnonymous() {
+      return request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous';
+    }
+
+    function isSubmissionAdmin() {
+      return isSignedInNonAnonymous()
+        && exists(/databases/$(database)/documents/config/submissions)
+        && request.auth.uid in get(/databases/$(database)/documents/config/submissions).data.adminUids;
+    }
+
+    function notSubmissionBanned() {
+      return !exists(/databases/$(database)/documents/contributorBans/$(request.auth.uid));
+    }
+
+    function statsNotSubmitBlocked() {
+      return !exists(/databases/$(database)/documents/contributorStats/$(request.auth.uid))
+        || !('submitBlocked' in get(/databases/$(database)/documents/contributorStats/$(request.auth.uid)).data)
+        || get(/databases/$(database)/documents/contributorStats/$(request.auth.uid)).data.submitBlocked == false;
+    }
+
+    function validSubmissionUrl(u) {
+      return u is string
+        && u.size() >= 10
+        && u.size() <= 2048
+        && (u.matches('^https://.*') || u.matches('^http://.*'));
+    }
+
     match /link_clicks/{docId} {
       allow read: if true;
       allow create, update: if request.auth != null;
@@ -198,6 +226,68 @@ service cloud.firestore {
         && request.auth.token.firebase.sign_in_provider != 'anonymous'
         && resource.data.uid == request.auth.uid
         && voteId == request.auth.uid + '_' + resource.data.folderId;
+    }
+
+    // On-site link submissions (pending review). Admins review in docs/admin/submissions.html.
+    match /config/submissions {
+      allow read: if isSignedInNonAnonymous();
+      allow write: if false;
+    }
+
+    match /linkSubmissions/{submissionId} {
+      allow read: if isSubmissionAdmin()
+        || (isSignedInNonAnonymous() && resource.data.submitterUid == request.auth.uid);
+      allow create: if isSignedInNonAnonymous()
+        && notSubmissionBanned()
+        && statsNotSubmitBlocked()
+        && request.resource.data.submitterUid == request.auth.uid
+        && request.resource.data.status == 'pending'
+        && validSubmissionUrl(request.resource.data.url)
+        && request.resource.data.urlKey is string
+        && request.resource.data.urlKey.size() >= 10
+        && request.resource.data.urlKey.size() <= 2048
+        && request.resource.data.provider is string
+        && request.resource.data.provider.size() > 0
+        && request.resource.data.provider.size() <= 120
+        && request.resource.data.isNewProvider is bool
+        && request.resource.data.submitterLabel is string
+        && request.resource.data.submitterLabel.size() <= 120
+        && (!request.resource.data.keys().hasAny(['optionalNote'])
+            || (request.resource.data.optionalNote is string
+                && request.resource.data.optionalNote.size() <= 500));
+      allow update, delete: if isSubmissionAdmin();
+    }
+
+    match /contributorBans/{uid} {
+      allow read: if request.auth != null && (request.auth.uid == uid || isSubmissionAdmin());
+      allow create, update, delete: if isSubmissionAdmin();
+    }
+
+    match /contributorStats/{uid} {
+      allow read: if request.auth != null && (request.auth.uid == uid || isSubmissionAdmin());
+      allow create, update: if isSubmissionAdmin()
+        || (isSignedInNonAnonymous()
+            && request.auth.uid == uid
+            && request.resource.data.keys().hasOnly([
+              'uid', 'submissionsTotal', 'duplicatesAttempted', 'rejectedTotal',
+              'submitBlocked', 'recentHourCount', 'lastSubmissionAt', 'updated'
+            ])
+            && request.resource.data.uid == uid
+            && request.resource.data.submissionsTotal is int
+            && request.resource.data.duplicatesAttempted is int
+            && request.resource.data.rejectedTotal is int
+            && request.resource.data.submissionsTotal >= 0
+            && request.resource.data.duplicatesAttempted >= 0
+            && request.resource.data.rejectedTotal >= 0
+            && request.resource.data.submissionsTotal <= 10000
+            && request.resource.data.duplicatesAttempted <= 10000
+            && (!request.resource.data.keys().hasAny(['submitBlocked'])
+                || request.resource.data.submitBlocked is bool)
+            && (!request.resource.data.keys().hasAny(['recentHourCount'])
+                || (request.resource.data.recentHourCount is int
+                    && request.resource.data.recentHourCount >= 0
+                    && request.resource.data.recentHourCount <= 100)));
+      allow delete: if false;
     }
   }
 }

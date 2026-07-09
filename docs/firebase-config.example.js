@@ -26,6 +26,13 @@
    See docs/firestore.rules for the deployed username registry rules (collection usernames)
    and savedFolders (folder visibility: public / unlisted / private; isPublic is true only for public).
 
+   On-site link submissions (docs/contribute/, docs/admin/submissions.html):
+   - Deploy docs/firestore.rules (includes linkSubmissions, contributorBans, contributorStats).
+   - In Firestore, create document config/submissions with field adminUids (array of Firebase Auth UIDs
+     for accounts that may approve/reject/ban). Example: { "adminUids": ["abc123uid"] }.
+   - Set window.__SUBMISSION_ADMIN_GITHUB__ in this file for GitHub admins (UI access).
+   - Both the GitHub username AND adminUids entry are required for full admin actions.
+
    Enable Authentication → Sign-in method → Anonymous, GitHub (OAuth app in Firebase Console),
    Google, and Email/Password.
 
@@ -59,3 +66,9 @@ window.__FIREBASE_CONFIG__ = {
   appId: "1:31862303655:web:d3e93df7a86ce31cf1e482",
   measurementId: "G-P51BKTLW18",
 };
+
+/** GitHub usernames allowed to open docs/admin/submissions.html (UI gate). */
+window.__SUBMISSION_ADMIN_GITHUB__ = ["yourworstnightmare1"];
+
+/** Firebase Auth UIDs with Firestore write access for submissions (must match config/submissions.adminUids). */
+window.__SUBMISSION_ADMIN_UIDS__ = [];

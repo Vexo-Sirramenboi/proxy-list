@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Review submissions | Proxy list</title>
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <style>
+    :root {
+      --bg: #111111;
+      --surface: #1a1a1a;
+      --border: #2e2e2e;
+      --text: #e8e8e8;
+      --muted: #9a9a9a;
+      --accent: #6cb3ff;
+      --ok: #3ecf8e;
+      --warn: #ffd57e;
+      --danger: #ff9b9b;
+      --font: "Segoe UI", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.5; }
+    header { padding: 1.2rem 1.4rem; border-bottom: 1px solid var(--border); background: var(--surface); }
+    h1 { margin: 0 0 0.35rem; font-size: 1.35rem; }
+    .sub { margin: 0; color: var(--muted); font-size: 0.9rem; }
+    main { max-width: 1200px; margin: 0 auto; padding: 1rem 1.2rem 2rem; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 0.45rem 0.75rem; border-radius: 6px; border: 1px solid var(--border);
+      text-decoration: none; color: var(--text); background: #141414;
+      font-size: 0.82rem; font-weight: 600; cursor: pointer; font-family: inherit;
+    }
+    .btn:hover { border-color: var(--accent); color: var(--accent); }
+    .btn-ok { border-color: #2d6b4a; color: var(--ok); }
+    .btn-danger { border-color: #6b2d2d; color: var(--danger); }
+    .card { border: 1px solid var(--border); border-radius: 10px; background: var(--surface); padding: 0.9rem 1rem; margin-top: 1rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+    th, td { text-align: left; border-bottom: 1px solid var(--border); padding: 0.5rem 0.45rem; vertical-align: top; }
+    th { color: var(--muted); }
+    .muted { color: var(--muted); }
+    .actions { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    textarea.copybox {
+      width: 100%; min-height: 4rem; font-family: ui-monospace, monospace; font-size: 0.78rem;
+      background: #141414; color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 0.55rem;
+    }
+    .notice { border: 1px solid var(--border); border-radius: 8px; padding: 0.65rem 0.8rem; background: #141414; margin-top: 0.75rem; }
+    .notice.err { border-color: #6b2d2d; color: var(--danger); }
+    a { color: var(--accent); }
+    code { background: #141414; border: 1px solid var(--border); border-radius: 4px; padding: 0.1rem 0.35rem; font-size: 0.82em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Submission review</h1>
+    <p class="sub">Approve or reject on-site link submissions. Add approved rows to <code>list.md</code> under the listed provider.</p>
+  </header>
+  <main>
+    <div class="actions">
+      <a class="btn" href="../contribute/">← Contribute page</a>
+      <button class="btn" type="button" id="refreshBtn">Refresh</button>
+    </div>
+    <div id="gateNotice" class="notice err" hidden></div>
+
+    <section class="card" id="flaggedSection" hidden>
+      <h2 style="margin:0 0 0.5rem;font-size:1.05rem;">Flagged submitters</h2>
+      <p class="muted">Users with many duplicate attempts. Consider banning repeat offenders.</p>
+      <table>
+        <thead><tr><th>User</th><th>UID</th><th>Dupes</th><th>Submitted</th><th>Blocked</th><th></th></tr></thead>
+        <tbody id="flaggedBody"></tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2 style="margin:0 0 0.5rem;font-size:1.05rem;">Pending submissions</h2>
+      <p class="muted" id="pendingMeta">Loading…</p>
+      <table>
+        <thead>
+          <tr>
+            <th>URL</th>
+            <th>Provider</th>
+            <th>Submitter</th>
+            <th>Note</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="pendingBody">
+          <tr><td class="muted" colspan="5">Loading…</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card" id="copySection" hidden>
+      <h2 style="margin:0 0 0.5rem;font-size:1.05rem;">Approved row for list.md</h2>
+      <textarea class="copybox" id="copyBox" readonly></textarea>
+      <div class="actions" style="margin-top:0.5rem;">
+        <button class="btn btn-ok" type="button" id="copyBtn">Copy row</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+  <script src="../firebase-config.example.js"></script>
+  <script src="../firebase-config.local.js"></script>
+  <script src="../submission-utils.js"></script>
+  <script src="./submissions.js"></script>
+</body>
+</html>
