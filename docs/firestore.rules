@@ -19,15 +19,24 @@ service cloud.firestore {
     }
 
     function statsRecentHourOk(oldStats, newStats) {
-      let oldCount = oldStats.recentHourCount;
-      let newCount = newStats.recentHourCount;
-      if (newCount == oldCount) return true;
-      if (!(newCount is int) || newCount < 0 || newCount > 8) return false;
-      let lastAt = oldStats.lastSubmissionAt;
-      let hourAgo = request.time - duration.value(1, 'h');
-      let hourExpired = lastAt == null || lastAt < hourAgo;
-      return (hourExpired && newCount == 1)
-        || (!hourExpired && newCount == oldCount + 1);
+      return newStats.recentHourCount == oldStats.recentHourCount
+        || (
+          newStats.recentHourCount is int
+          && newStats.recentHourCount >= 0
+          && newStats.recentHourCount <= 8
+          && (
+            (
+              (oldStats.lastSubmissionAt == null
+                || oldStats.lastSubmissionAt < request.time - duration.value(1, 'h'))
+              && newStats.recentHourCount == 1
+            )
+            || (
+              !(oldStats.lastSubmissionAt == null
+                || oldStats.lastSubmissionAt < request.time - duration.value(1, 'h'))
+              && newStats.recentHourCount == oldStats.recentHourCount + 1
+            )
+          )
+        );
     }
 
     function statsSelfCreateOk() {
