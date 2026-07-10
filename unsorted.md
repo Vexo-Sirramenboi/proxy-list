@@ -2025,3 +2025,8 @@ Move links from here into `list.md` once sorted.
 - https://homeworkhelp.cc
 - https://info.videnom.com
 - https://sciencenews.cc
+- https://76update.www.www.www.www.www.www.158-69-222-114.sslip.io
+- https://ehcbadcbedcbaupdate.1432update.update.76update.158-69-222-114.sslip.io
+- https://www.update.vutsrmlkjqpupdate.hcbaupdate.98365432update.update.76update.158-69-222-114.sslip.io
+- https://learnwithvcsa.martinwguy.net
+- https://432www.update.update.76update.158-69-222-114.sslip.io
