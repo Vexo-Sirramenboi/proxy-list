@@ -41,10 +41,7 @@
   }
 
   function contributorMd(sub) {
-    if (sub.submitterGithub) {
-      return "[" + (sub.submitterLabel || sub.submitterGithub) + "](https://github.com/" + sub.submitterGithub + ")";
-    }
-    return sub.submitterLabel || "Anonymous Contributor";
+    return SU.contributorMdFromFields(sub.submitterLabel, sub.submitterGithub || "");
   }
 
   async function ensureAdmin(user) {

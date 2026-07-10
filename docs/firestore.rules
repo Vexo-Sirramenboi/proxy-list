@@ -251,7 +251,12 @@ service cloud.firestore {
         && request.resource.data.provider.size() <= 120
         && request.resource.data.isNewProvider is bool
         && request.resource.data.submitterLabel is string
+        && request.resource.data.submitterLabel.size() > 0
         && request.resource.data.submitterLabel.size() <= 120
+        && request.resource.data.submitterGithub is string
+        && request.resource.data.submitterGithub.size() > 0
+        && request.resource.data.submitterGithub.size() <= 39
+        && request.resource.data.submitterGithub.matches('^[a-zA-Z0-9]([a-zA-Z0-9-]{0,37}[a-zA-Z0-9])?$')
         && (!request.resource.data.keys().hasAny(['optionalNote'])
             || (request.resource.data.optionalNote is string
                 && request.resource.data.optionalNote.size() <= 500));

@@ -24,6 +24,10 @@
   var existingWrap = document.getElementById("existingProviderWrap");
   var newWrap = document.getElementById("newProviderWrap");
   var newProviderInput = document.getElementById("submitNewProvider");
+  var contributorNameInput = document.getElementById("submitContributorName");
+  var githubUrlInput = document.getElementById("submitGithubUrl");
+  var CREDIT_NAME_KEY = "pl_submit_contributor_name";
+  var CREDIT_GH_KEY = "pl_submit_github_url";
 
   function showNotice(el, msg, kind) {
     if (!el) return;
@@ -50,6 +54,43 @@
     var isNew = mode === "new";
     if (existingWrap) existingWrap.hidden = isNew;
     if (newWrap) newWrap.hidden = !isNew;
+  }
+
+  function readStoredCredit() {
+    try {
+      return {
+        name: localStorage.getItem(CREDIT_NAME_KEY) || "",
+        githubUrl: localStorage.getItem(CREDIT_GH_KEY) || "",
+      };
+    } catch (_) {
+      return { name: "", githubUrl: "" };
+    }
+  }
+
+  function writeStoredCredit(name, githubUrl) {
+    try {
+      localStorage.setItem(CREDIT_NAME_KEY, name);
+      localStorage.setItem(CREDIT_GH_KEY, githubUrl);
+    } catch (_) {}
+  }
+
+  function prefillContributorFields(user, profile) {
+    if (!contributorNameInput || !githubUrlInput) return;
+    if (contributorNameInput.value.trim() || githubUrlInput.value.trim()) return;
+
+    var stored = readStoredCredit();
+    var ghLogin = SU.githubLoginFromUser(user);
+    var name =
+      stored.name ||
+      (profile && profile.siteUsername) ||
+      (user && user.displayName) ||
+      ghLogin ||
+      "";
+    var ghUrl =
+      stored.githubUrl || (ghLogin ? SU.githubProfileUrlFromLogin(ghLogin) : "");
+
+    if (name) contributorNameInput.value = String(name).trim();
+    if (ghUrl) githubUrlInput.value = ghUrl;
   }
 
   function populateProviders(list) {
@@ -181,6 +222,32 @@
       showStatus(isNewProvider ? "Enter a name for the new provider." : "Choose a provider.", "err");
       return;
     }
+
+    var contributorName = contributorNameInput ? contributorNameInput.value.trim() : "";
+    var githubUrlRaw = githubUrlInput ? githubUrlInput.value.trim() : "";
+    if (!contributorName) {
+      showStatus("Enter your name so you can be credited on the list.", "err");
+      return;
+    }
+    if (contributorName.length > SU.MAX_CONTRIBUTOR_NAME_LEN) {
+      showStatus("Name is too long.", "err");
+      return;
+    }
+    if (!githubUrlRaw) {
+      showStatus("Enter your GitHub profile URL for list credit.", "err");
+      return;
+    }
+    if (githubUrlRaw.length > SU.MAX_GITHUB_URL_LEN) {
+      showStatus("GitHub profile URL is too long.", "err");
+      return;
+    }
+    var githubLogin = SU.githubLoginFromProfileUrl(githubUrlRaw);
+    if (!githubLogin) {
+      showStatus("Enter a valid GitHub profile URL (https://github.com/username).", "err");
+      return;
+    }
+    var githubUrl = SU.githubProfileUrlFromLogin(githubLogin);
+
     if (note.length > SU.MAX_NOTE_LEN) {
       showStatus("Note is too long.", "err");
       return;
@@ -226,15 +293,14 @@
     if (submitBtn) submitBtn.disabled = true;
 
     try {
-      var label = SU.submitterLabelFromUser(currentUser, userProfile);
       var payload = {
         url: url,
         urlKey: urlKey,
         provider: provider,
         isNewProvider: isNewProvider,
         submitterUid: currentUser.uid,
-        submitterLabel: label,
-        submitterGithub: SU.githubLoginFromUser(currentUser) || "",
+        submitterLabel: contributorName,
+        submitterGithub: githubLogin,
         status: "pending",
         optionalNote: note || "",
         created: firebase.firestore.FieldValue.serverTimestamp(),
@@ -243,6 +309,7 @@
 
       await firebaseDb.collection("linkSubmissions").add(payload);
       pendingUrlKeys.add(urlKey);
+      writeStoredCredit(contributorName, githubUrl);
 
       var stats = await getContributorStats(currentUser.uid);
       var nextStats = buildStatsPayload(currentUser.uid, stats, { countSubmission: true, touchTime: true });
@@ -250,6 +317,7 @@
 
       formEl.reset();
       setProviderMode("existing");
+      prefillContributorFields(currentUser, userProfile);
       showStatus("Submitted for review. Thank you!", "ok");
       await loadSubmitHistory(currentUser.uid);
     } catch (err) {
@@ -412,12 +480,14 @@
 
       hideNotice(loadingNotice);
       if (formEl) formEl.hidden = false;
+      prefillContributorFields(user, userProfile);
       if (adminLink) adminLink.hidden = !SU.isSubmissionAdminUser(user);
       await loadSubmitHistory(user.uid);
       await loadPendingUrlKeys();
     } catch (err) {
       hideNotice(loadingNotice);
       if (formEl) formEl.hidden = false;
+      prefillContributorFields(user, userProfile);
       showNotice(
         bannedNotice,
         "Could not fully verify your account, but you can try submitting. If it fails, the site maintainer may still be deploying submission support.",

@@ -8,6 +8,8 @@
   var DUPLICATE_BLOCK_THRESHOLD = 10;
   var RATE_LIMIT_PER_HOUR = 8;
   var MAX_NOTE_LEN = 500;
+  var MAX_CONTRIBUTOR_NAME_LEN = 120;
+  var MAX_GITHUB_URL_LEN = 200;
 
   function submissionUrlKey(url) {
     var u = String(url || "").trim();
@@ -69,6 +71,39 @@
     return email;
   }
 
+  function githubLoginFromProfileUrl(url) {
+    var raw = String(url || "").trim();
+    if (!raw) return "";
+    try {
+      var u = new URL(raw.indexOf("://") === -1 ? "https://" + raw : raw);
+      var host = u.hostname.toLowerCase();
+      if (host !== "github.com" && host !== "www.github.com") return "";
+      var parts = u.pathname.split("/").filter(Boolean);
+      if (!parts.length) return "";
+      var login = String(parts[0]).replace(/^@/, "").trim();
+      if (!/^[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,37}[a-zA-Z0-9])?$/.test(login)) return "";
+      return login;
+    } catch (_) {
+      return "";
+    }
+  }
+
+  function githubProfileUrlFromLogin(login) {
+    var gh = String(login || "").trim().replace(/^@/, "");
+    if (!githubLoginFromProfileUrl("https://github.com/" + gh)) return "";
+    return "https://github.com/" + gh;
+  }
+
+  function contributorMdFromFields(name, githubLoginOrUrl) {
+    var label = String(name || "").trim();
+    if (!label) label = "Contributor";
+    var gh = githubLoginFromProfileUrl(githubLoginOrUrl) || String(githubLoginOrUrl || "").trim().replace(/^@/, "");
+    if (gh && githubProfileUrlFromLogin(gh)) {
+      return "[" + label + "](https://github.com/" + gh + ")";
+    }
+    return label;
+  }
+
   function isSignedInNonAnonymous(user) {
     return !!(user && !user.isAnonymous);
   }
@@ -106,8 +141,7 @@
   function contributorMdFromUser(user, profileDoc) {
     var gh = githubLoginFromUser(user);
     var label = submitterLabelFromUser(user, profileDoc);
-    if (gh) return "[" + label + "](https://github.com/" + gh + ")";
-    return label;
+    return contributorMdFromFields(label, gh);
   }
 
   function formatListMdRow(url, contributorMd) {
@@ -129,12 +163,17 @@
     DUPLICATE_BLOCK_THRESHOLD: DUPLICATE_BLOCK_THRESHOLD,
     RATE_LIMIT_PER_HOUR: RATE_LIMIT_PER_HOUR,
     MAX_NOTE_LEN: MAX_NOTE_LEN,
+    MAX_CONTRIBUTOR_NAME_LEN: MAX_CONTRIBUTOR_NAME_LEN,
+    MAX_GITHUB_URL_LEN: MAX_GITHUB_URL_LEN,
     submissionUrlKey: submissionUrlKey,
     normalizeSubmissionUrl: normalizeSubmissionUrl,
     isBlockedDomain: isBlockedDomain,
     isValidHttpUrl: isValidHttpUrl,
     buildUrlKeySet: buildUrlKeySet,
     githubLoginFromUser: githubLoginFromUser,
+    githubLoginFromProfileUrl: githubLoginFromProfileUrl,
+    githubProfileUrlFromLogin: githubProfileUrlFromLogin,
+    contributorMdFromFields: contributorMdFromFields,
     isSignedInNonAnonymous: isSignedInNonAnonymous,
     isSubmissionAdminUser: isSubmissionAdminUser,
     submitterLabelFromUser: submitterLabelFromUser,
