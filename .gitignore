@@ -7,4 +7,4 @@ vsce-debug.log
 .wrangler/
 .dev.vars
 deploy/webhook/.env
-.venv/
+.venv/proxy-list/
