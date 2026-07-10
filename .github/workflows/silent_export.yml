@@ -1,0 +1,40 @@
+name: Silent data export
+
+# Regenerate docs/data.json when link filter/status metadata changes without a full link check.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "link_status.json"
+      - "docs/link_check_meta.json"
+      - "docs/submission_url_keys.json"
+      - "scripts/convert_list_to_json.py"
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Export web data
+        run: python scripts/convert_list_to_json.py
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "auto-link-bot"
+          git config --global user.email "bot@users.noreply.github.com"
+          git add docs/data.json docs/contributor_link_totals.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Silent maintenance | refresh exported web data"
+            git push
+          else
+            echo "No changes to commit"
+          fi

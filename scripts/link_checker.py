@@ -1,9 +1,16 @@
 import os
 import re
 import json
+import sys
 import requests
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
+from pathlib import Path
+
+_SCRIPTS = Path(__file__).resolve().parent
+if str(_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS))
+from release_schedule import should_publish_release
 
 INPUT_FILE = "list.md"
 STATUS_FILE = "link_status.json"
@@ -357,8 +364,9 @@ def main():
     after_sig = url_multiset_signature(content)
     links_changed = before_sig != after_sig
 
+    publish_release = should_publish_release()
     today = datetime.now().strftime("%B %d, %Y")
-    if links_changed:
+    if links_changed and publish_release:
         content = set_last_updated_line(content, today)
         content = set_revision_line(content, rev_num + 1)
 
@@ -370,14 +378,18 @@ def main():
     status = {k: v for k, v in status.items() if k in still_present}
     save_status(status)
 
-    update_changelog(removed, total)
+    if links_changed and publish_release:
+        update_changelog(removed, total)
 
     final_version, final_rev, _ = parse_list_version_revision(content)
+    release_published = links_changed and publish_release
     commit_meta = {
         "version": final_version,
         "revision": final_rev,
         "removed": removed,
         "total": total,
+        "links_changed": links_changed,
+        "release_published": release_published,
     }
     with open("commit_info.json", "w", encoding="utf-8") as f:
         json.dump(commit_meta, f, indent=2)

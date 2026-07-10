@@ -10,6 +10,10 @@ import subprocess
 import sys
 from pathlib import Path
 
+_SCRIPTS = Path(__file__).resolve().parent
+if str(_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS))
+from release_schedule import commit_message_for_run
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -32,16 +36,24 @@ def _run(cmd: list[str], *, cwd: Path, check: bool = True) -> subprocess.Complet
     return subprocess.run(cmd, cwd=cwd, check=check)
 
 
-def read_commit_info(repo_root: Path) -> dict[str, str]:
-    defaults = {"version": "v0.0.0", "revision": "r0", "removed": "0", "total": "0"}
+def read_commit_info(repo_root: Path) -> dict:
+    defaults = {
+        "version": "v0.0.0",
+        "revision": "r0",
+        "removed": "0",
+        "total": "0",
+        "release_published": False,
+    }
     jp = repo_root / "commit_info.json"
     if jp.is_file():
         meta = json.loads(jp.read_text(encoding="utf-8"))
         out = dict(defaults)
-        for key in defaults:
+        for key in ("version", "revision", "removed", "total"):
             val = meta.get(key)
             if val is not None:
                 out[key] = str(val)
+        if "release_published" in meta:
+            out["release_published"] = bool(meta["release_published"])
         return out
 
     tp = repo_root / "commit_info.txt"
@@ -54,6 +66,7 @@ def read_commit_info(repo_root: Path) -> dict[str, str]:
                 "revision": parts[1] or defaults["revision"],
                 "removed": parts[2] or defaults["removed"],
                 "total": parts[3] or defaults["total"],
+                "release_published": False,
             }
     return defaults
 
@@ -77,10 +90,7 @@ def git_commit_and_push(repo_root: Path, info: dict[str, str]) -> bool:
         print("[pipeline] No changes to commit", flush=True)
         return False
 
-    message = (
-        f"{info['version']} {info['revision']} | purged {info['removed']} dead links, "
-        f"link count: {info['total']}"
-    )
+    message = commit_message_for_run(info)
     _run(["git", "commit", "-m", message], cwd=repo_root)
     _run(["git", "push", "origin", "main"], cwd=repo_root)
     return True
@@ -121,7 +131,25 @@ def main() -> int:
     p.add_argument("--repo-root", type=Path, default=ROOT, help="Repository root (default: repo root).")
     p.add_argument("--no-pull", action="store_true", help="Skip git pull before running.")
     p.add_argument("--no-push", action="store_true", help="Skip git commit/push after running.")
+    p.add_argument(
+        "--publish-release",
+        action="store_true",
+        help="Bump revision and Last Updated in list.md (Sunday release).",
+    )
+    p.add_argument(
+        "--silent",
+        action="store_true",
+        help="Never bump revision/Last Updated (silent maintenance).",
+    )
     args = p.parse_args()
+
+    if args.publish_release and args.silent:
+        print("error: --publish-release and --silent are mutually exclusive", file=sys.stderr)
+        return 2
+    if args.publish_release:
+        os.environ["LINK_CHECK_PUBLISH_RELEASE"] = "true"
+    elif args.silent:
+        os.environ["LINK_CHECK_PUBLISH_RELEASE"] = "silent"
 
     if os.getenv("WEBHOOK_GIT_PUSH", "1").strip().lower() in {"0", "false", "no", "off"}:
         push = False

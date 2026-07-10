@@ -109,11 +109,17 @@ def run_pipeline_job(trigger: str, payload: dict[str, Any]) -> dict[str, Any]:
         result["sha"] = sha
         _last_result = result
 
-        msg = (
-            f"Link check finished (`{sha}`): purged **{result['removed']}** dead links, "
-            f"total **{result['total']}**"
-            + (" — changes pushed to `main`" if result.get("committed") else " — no commit needed")
-        )
+        if result.get("release_published"):
+            msg = (
+                f"Link check finished (`{sha}`): **{result['version']} {result['revision']}** — "
+                f"purged **{result['removed']}** dead links, total **{result['total']}**"
+            )
+        else:
+            msg = (
+                f"Silent link check finished (`{sha}`): purged **{result['removed']}** dead links, "
+                f"total **{result['total']}**"
+            )
+        msg += " — changes pushed to `main`" if result.get("committed") else " — no commit needed"
         notify_discord(os.getenv("DISCORD_WEBHOOK_URL", "").strip(), msg)
         print(f"[webhook] Pipeline done: {json.dumps(result)}", flush=True)
         return result

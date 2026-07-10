@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
+    inputs:
+      publish_release:
+        description: "Bump revision and Last Updated (user-facing Sunday release)"
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -14,6 +19,7 @@ on:
       - "scripts/convert_list_to_json.py"
       - "scripts/update_link_check_meta.py"
       - "scripts/update_unsorted_from_raw.py"
+      - "scripts/release_schedule.py"
 
 permissions:
   contents: write
@@ -44,6 +50,9 @@ jobs:
           pip install requests
 
       - name: Run link checker
+        env:
+          LINK_CHECK_NO_PURGE: ${{ vars.LINK_CHECK_NO_PURGE || 'true' }}
+          LINK_CHECK_PUBLISH_RELEASE: ${{ github.event_name == 'workflow_dispatch' && inputs.publish_release && 'true' || '' }}
         run: |
           echo "Running script..."
           set +e
@@ -82,9 +91,11 @@ jobs:
 
           defaults_version, defaults_revision = "v0.0.0", "r0"
           defaults_removed, defaults_total = "0", "0"
+          defaults_release = "false"
 
           version = revision = None
           removed_str = total_str = None
+          release_published = None
 
           jp = Path("commit_info.json")
           if jp.is_file():
@@ -96,7 +107,9 @@ jobs:
                   removed_str = str(r)
               if t is not None:
                   total_str = str(t)
-              print("commit_info.json:", version, revision, removed_str, total_str)
+              if "release_published" in meta:
+                  release_published = bool(meta["release_published"])
+              print("commit_info.json:", version, revision, removed_str, total_str, release_published)
 
           if version is None:
               tp = Path("commit_info.txt")
@@ -111,6 +124,11 @@ jobs:
           revision = revision or defaults_revision
           removed_str = removed_str if removed_str is not None else defaults_removed
           total_str = total_str if total_str is not None else defaults_total
+          release_flag = (
+              "true"
+              if release_published is True
+              else ("false" if release_published is False else defaults_release)
+          )
 
           out = Path(os.environ["GITHUB_OUTPUT"])
           with out.open("a", encoding="utf-8") as f:
@@ -118,6 +136,7 @@ jobs:
               f.write(f"revision={revision}\n")
               f.write(f"removed={removed_str}\n")
               f.write(f"total={total_str}\n")
+              f.write(f"release_published={release_flag}\n")
           PY
 
       - name: Commit changes
@@ -128,7 +147,11 @@ jobs:
           git add *.md docs/data.json docs/unsorted.json docs/contributor_link_totals.json docs/link_check_meta.json docs/link_check_snapshot.json link_status.json
 
           if ! git diff --cached --quiet; then
-            git commit -m "${{ steps.commitinfo.outputs.version }} ${{ steps.commitinfo.outputs.revision }} | purged ${{ steps.commitinfo.outputs.removed }} dead links, link count: ${{ steps.commitinfo.outputs.total }}"
+            if [ "${{ steps.commitinfo.outputs.release_published }}" = "true" ]; then
+              git commit -m "${{ steps.commitinfo.outputs.version }} ${{ steps.commitinfo.outputs.revision }} | purged ${{ steps.commitinfo.outputs.removed }} dead links, link count: ${{ steps.commitinfo.outputs.total }}"
+            else
+              git commit -m "Silent maintenance | link check (purged ${{ steps.commitinfo.outputs.removed }} dead links, link count: ${{ steps.commitinfo.outputs.total }})"
+            fi
             git push
           else
             echo "No changes to commit"
