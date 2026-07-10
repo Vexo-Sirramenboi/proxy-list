@@ -10,7 +10,6 @@
   var providers = [];
   var currentUser = null;
   var userProfile = null;
-  var pendingUrlKeys = new Set();
 
   var formEl = document.getElementById("linkSubmitForm");
   var signInPrompt = document.getElementById("submitSignInPrompt");
@@ -24,6 +23,10 @@
   var existingWrap = document.getElementById("existingProviderWrap");
   var newWrap = document.getElementById("newProviderWrap");
   var newProviderInput = document.getElementById("submitNewProvider");
+  var contributorNameInput = document.getElementById("submitContributorName");
+  var githubUrlInput = document.getElementById("submitGithubUrl");
+  var CREDIT_NAME_KEY = "pl_submit_contributor_name";
+  var CREDIT_GH_KEY = "pl_submit_github_url";
 
   function showNotice(el, msg, kind) {
     if (!el) return;
@@ -50,6 +53,43 @@
     var isNew = mode === "new";
     if (existingWrap) existingWrap.hidden = isNew;
     if (newWrap) newWrap.hidden = !isNew;
+  }
+
+  function readStoredCredit() {
+    try {
+      return {
+        name: localStorage.getItem(CREDIT_NAME_KEY) || "",
+        githubUrl: localStorage.getItem(CREDIT_GH_KEY) || "",
+      };
+    } catch (_) {
+      return { name: "", githubUrl: "" };
+    }
+  }
+
+  function writeStoredCredit(name, githubUrl) {
+    try {
+      localStorage.setItem(CREDIT_NAME_KEY, name);
+      localStorage.setItem(CREDIT_GH_KEY, githubUrl);
+    } catch (_) {}
+  }
+
+  function prefillContributorFields(user, profile) {
+    if (!contributorNameInput || !githubUrlInput) return;
+    if (contributorNameInput.value.trim() || githubUrlInput.value.trim()) return;
+
+    var stored = readStoredCredit();
+    var ghLogin = SU.githubLoginFromUser(user);
+    var name =
+      stored.name ||
+      (profile && profile.siteUsername) ||
+      (user && user.displayName) ||
+      ghLogin ||
+      "";
+    var ghUrl =
+      stored.githubUrl || (ghLogin ? SU.githubProfileUrlFromLogin(ghLogin) : "");
+
+    if (name) contributorNameInput.value = String(name).trim();
+    if (ghUrl) githubUrlInput.value = ghUrl;
   }
 
   function populateProviders(list) {
@@ -81,20 +121,19 @@
     }
   }
 
-  async function loadPendingUrlKeys() {
-    if (!firebaseDb) return;
-    pendingUrlKeys = new Set();
+  async function isPendingOnServer(urlKey) {
+    if (!firebaseDb || !urlKey) return false;
     try {
-      var snap = await firebaseDb.collection("linkSubmissions").where("status", "==", "pending").limit(250).get();
-      snap.forEach(function (doc) {
-        var key = doc.data() && doc.data().urlKey;
-        if (key) pendingUrlKeys.add(key);
-      });
-    } catch (_) {}
+      var urlKeyHash = await SU.sha256Hex(urlKey);
+      var snap = await firebaseDb.collection("pendingSubmissionKeys").doc(urlKeyHash).get();
+      return snap.exists;
+    } catch (_) {
+      return false;
+    }
   }
 
-  function isDuplicateKey(key) {
-    return urlKeySet.has(key) || pendingUrlKeys.has(key);
+  function isOnListKey(key) {
+    return urlKeySet.has(key);
   }
 
   async function getContributorStats(uid) {
@@ -181,6 +220,32 @@
       showStatus(isNewProvider ? "Enter a name for the new provider." : "Choose a provider.", "err");
       return;
     }
+
+    var contributorName = contributorNameInput ? contributorNameInput.value.trim() : "";
+    var githubUrlRaw = githubUrlInput ? githubUrlInput.value.trim() : "";
+    if (!contributorName) {
+      showStatus("Enter your name so you can be credited on the list.", "err");
+      return;
+    }
+    if (contributorName.length > SU.MAX_CONTRIBUTOR_NAME_LEN) {
+      showStatus("Name is too long.", "err");
+      return;
+    }
+    if (!githubUrlRaw) {
+      showStatus("Enter your GitHub profile URL for list credit.", "err");
+      return;
+    }
+    if (githubUrlRaw.length > SU.MAX_GITHUB_URL_LEN) {
+      showStatus("GitHub profile URL is too long.", "err");
+      return;
+    }
+    var githubLogin = SU.githubLoginFromProfileUrl(githubUrlRaw);
+    if (!githubLogin) {
+      showStatus("Enter a valid GitHub profile URL (https://github.com/username).", "err");
+      return;
+    }
+    var githubUrl = SU.githubProfileUrlFromLogin(githubLogin);
+
     if (note.length > SU.MAX_NOTE_LEN) {
       showStatus("Note is too long.", "err");
       return;
@@ -205,11 +270,19 @@
         return;
       }
 
-      if (isDuplicateKey(urlKey)) {
+      if (isOnListKey(urlKey)) {
         try {
           await recordDuplicateAttempt(currentUser.uid);
         } catch (err) {
           showStatus(err.message || "Duplicate URL.", "err");
+        }
+        return;
+      }
+      if (await isPendingOnServer(urlKey)) {
+        try {
+          await recordDuplicateAttempt(currentUser.uid);
+        } catch (err) {
+          showStatus(err.message || "This URL is already pending review.", "err");
         }
         return;
       }
@@ -226,23 +299,35 @@
     if (submitBtn) submitBtn.disabled = true;
 
     try {
-      var label = SU.submitterLabelFromUser(currentUser, userProfile);
+      var urlKeyHash = await SU.sha256Hex(urlKey);
       var payload = {
         url: url,
         urlKey: urlKey,
+        urlKeyHash: urlKeyHash,
         provider: provider,
         isNewProvider: isNewProvider,
         submitterUid: currentUser.uid,
-        submitterLabel: label,
-        submitterGithub: SU.githubLoginFromUser(currentUser) || "",
+        submitterLabel: contributorName,
+        submitterGithub: githubLogin,
         status: "pending",
         optionalNote: note || "",
         created: firebase.firestore.FieldValue.serverTimestamp(),
         updated: firebase.firestore.FieldValue.serverTimestamp(),
       };
 
-      await firebaseDb.collection("linkSubmissions").add(payload);
-      pendingUrlKeys.add(urlKey);
+      var batch = firebaseDb.batch();
+      var pendingRef = firebaseDb.collection("pendingSubmissionKeys").doc(urlKeyHash);
+      batch.set(pendingRef, {
+        urlKey: urlKey,
+        urlKeyHash: urlKeyHash,
+        submitterUid: currentUser.uid,
+        created: firebase.firestore.FieldValue.serverTimestamp(),
+      });
+      var subRef = firebaseDb.collection("linkSubmissions").doc();
+      batch.set(subRef, payload);
+      await batch.commit();
+
+      writeStoredCredit(contributorName, githubUrl);
 
       var stats = await getContributorStats(currentUser.uid);
       var nextStats = buildStatsPayload(currentUser.uid, stats, { countSubmission: true, touchTime: true });
@@ -250,6 +335,7 @@
 
       formEl.reset();
       setProviderMode("existing");
+      prefillContributorFields(currentUser, userProfile);
       showStatus("Submitted for review. Thank you!", "ok");
       await loadSubmitHistory(currentUser.uid);
     } catch (err) {
@@ -412,12 +498,13 @@
 
       hideNotice(loadingNotice);
       if (formEl) formEl.hidden = false;
+      prefillContributorFields(user, userProfile);
       if (adminLink) adminLink.hidden = !SU.isSubmissionAdminUser(user);
       await loadSubmitHistory(user.uid);
-      await loadPendingUrlKeys();
     } catch (err) {
       hideNotice(loadingNotice);
       if (formEl) formEl.hidden = false;
+      prefillContributorFields(user, userProfile);
       showNotice(
         bannedNotice,
         "Could not fully verify your account, but you can try submitting. If it fails, the site maintainer may still be deploying submission support.",

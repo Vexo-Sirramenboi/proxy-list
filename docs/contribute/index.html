@@ -273,7 +273,7 @@
       <h2 id="submitHeading">Submit a link for review</h2>
       <p class="muted">Submit a working proxy URL under an existing provider or propose a new one. Duplicate URLs (including ones already on the list) are rejected. We compare full URLs, not whole domains, so multiple proxies on the same domain with different paths or subdomains are allowed.</p>
       <div id="submitSignInPrompt" class="signin-prompt muted">
-        <a href="../login/?next=contribute/">Sign in</a> with GitHub, Google, or email to submit links.
+        <a href="../login/?next=../contribute/">Sign in</a> with GitHub, Google, or email to submit links.
       </div>
       <div id="submitLoadingNotice" class="submit-status" hidden>Checking your account…</div>
       <div id="submitBannedNotice" class="submit-status err" hidden></div>
@@ -281,6 +281,11 @@
       <form id="linkSubmitForm" class="submit-form" hidden>
         <label for="submitUrl">Proxy URL</label>
         <input id="submitUrl" name="url" type="url" inputmode="url" autocomplete="off" placeholder="https://example.com/path" required />
+        <label for="submitContributorName">Your name (for list credit)</label>
+        <input id="submitContributorName" name="contributorName" type="text" maxlength="120" autocomplete="name" placeholder="Display name or alias" required />
+        <label for="submitGithubUrl">GitHub profile URL</label>
+        <input id="submitGithubUrl" name="githubUrl" type="url" inputmode="url" maxlength="200" autocomplete="url" placeholder="https://github.com/yourusername" required />
+        <p class="muted" style="font-size:0.8rem;margin:-0.15rem 0 0.35rem">Required so approved links credit you on the list (not Anonymous Contributor).</p>
         <fieldset style="border:0;margin:0;padding:0;">
           <legend class="muted" style="font-size:0.82rem;margin-bottom:0.25rem;">Provider</legend>
           <div class="provider-mode">

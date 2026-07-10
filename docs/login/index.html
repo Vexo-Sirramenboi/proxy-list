@@ -821,6 +821,24 @@
         return auth.signInAnonymously().then((cred) => cred.user);
       }
 
+      const GITHUB_TOKEN_SESSION_KEY = "proxyList_github_access_token";
+
+      function captureGithubOAuthToken(result) {
+        if (!result || !result.credential) return;
+        const cred = result.credential;
+        if (cred.providerId === "github.com" && cred.accessToken) {
+          try {
+            sessionStorage.setItem(GITHUB_TOKEN_SESSION_KEY, cred.accessToken);
+          } catch (_) {}
+        }
+      }
+
+      function clearGithubAccessToken() {
+        try {
+          sessionStorage.removeItem(GITHUB_TOKEN_SESSION_KEY);
+        } catch (_) {}
+      }
+
       function authErrorMessage(err) {
         const code = err && err.code ? String(err.code) : "";
         if (code === "auth/popup-closed-by-user") return { message: "Sign-in was cancelled.", kind: "" };
@@ -852,7 +870,10 @@
             }
             return auth.signInWithPopup(provider);
           })
-          .then(() => afterSignIn(auth, db, true))
+          .then((result) => {
+            captureGithubOAuthToken(result);
+            return afterSignIn(auth, db, true);
+          })
           .catch((err) => {
             const info = authErrorMessage(err);
             setStatus(info.message, info.kind);
@@ -940,6 +961,7 @@
       if (profileSetupSignOutBtn) {
         profileSetupSignOutBtn.addEventListener("click", () => {
           profileSetupSignOutBtn.disabled = true;
+          clearGithubAccessToken();
           auth.signOut().finally(() => {
             profileSetupSignOutBtn.disabled = false;
             updatePanels(auth.currentUser);
