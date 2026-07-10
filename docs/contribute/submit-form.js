@@ -10,7 +10,6 @@
   var providers = [];
   var currentUser = null;
   var userProfile = null;
-  var pendingUrlKeys = new Set();
 
   var formEl = document.getElementById("linkSubmitForm");
   var signInPrompt = document.getElementById("submitSignInPrompt");
@@ -122,20 +121,19 @@
     }
   }
 
-  async function loadPendingUrlKeys() {
-    if (!firebaseDb) return;
-    pendingUrlKeys = new Set();
+  async function isPendingOnServer(urlKey) {
+    if (!firebaseDb || !urlKey) return false;
     try {
-      var snap = await firebaseDb.collection("linkSubmissions").where("status", "==", "pending").limit(250).get();
-      snap.forEach(function (doc) {
-        var key = doc.data() && doc.data().urlKey;
-        if (key) pendingUrlKeys.add(key);
-      });
-    } catch (_) {}
+      var urlKeyHash = await SU.sha256Hex(urlKey);
+      var snap = await firebaseDb.collection("pendingSubmissionKeys").doc(urlKeyHash).get();
+      return snap.exists;
+    } catch (_) {
+      return false;
+    }
   }
 
-  function isDuplicateKey(key) {
-    return urlKeySet.has(key) || pendingUrlKeys.has(key);
+  function isOnListKey(key) {
+    return urlKeySet.has(key);
   }
 
   async function getContributorStats(uid) {
@@ -272,11 +270,19 @@
         return;
       }
 
-      if (isDuplicateKey(urlKey)) {
+      if (isOnListKey(urlKey)) {
         try {
           await recordDuplicateAttempt(currentUser.uid);
         } catch (err) {
           showStatus(err.message || "Duplicate URL.", "err");
+        }
+        return;
+      }
+      if (await isPendingOnServer(urlKey)) {
+        try {
+          await recordDuplicateAttempt(currentUser.uid);
+        } catch (err) {
+          showStatus(err.message || "This URL is already pending review.", "err");
         }
         return;
       }
@@ -293,9 +299,11 @@
     if (submitBtn) submitBtn.disabled = true;
 
     try {
+      var urlKeyHash = await SU.sha256Hex(urlKey);
       var payload = {
         url: url,
         urlKey: urlKey,
+        urlKeyHash: urlKeyHash,
         provider: provider,
         isNewProvider: isNewProvider,
         submitterUid: currentUser.uid,
@@ -307,8 +315,18 @@
         updated: firebase.firestore.FieldValue.serverTimestamp(),
       };
 
-      await firebaseDb.collection("linkSubmissions").add(payload);
-      pendingUrlKeys.add(urlKey);
+      var batch = firebaseDb.batch();
+      var pendingRef = firebaseDb.collection("pendingSubmissionKeys").doc(urlKeyHash);
+      batch.set(pendingRef, {
+        urlKey: urlKey,
+        urlKeyHash: urlKeyHash,
+        submitterUid: currentUser.uid,
+        created: firebase.firestore.FieldValue.serverTimestamp(),
+      });
+      var subRef = firebaseDb.collection("linkSubmissions").doc();
+      batch.set(subRef, payload);
+      await batch.commit();
+
       writeStoredCredit(contributorName, githubUrl);
 
       var stats = await getContributorStats(currentUser.uid);
@@ -483,7 +501,6 @@
       prefillContributorFields(user, userProfile);
       if (adminLink) adminLink.hidden = !SU.isSubmissionAdminUser(user);
       await loadSubmitHistory(user.uid);
-      await loadPendingUrlKeys();
     } catch (err) {
       hideNotice(loadingNotice);
       if (formEl) formEl.hidden = false;

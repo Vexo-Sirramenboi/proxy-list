@@ -159,6 +159,21 @@
     return recent < RATE_LIMIT_PER_HOUR;
   }
 
+  function sha256Hex(text) {
+    if (typeof crypto !== "undefined" && crypto.subtle && crypto.subtle.digest) {
+      return crypto.subtle
+        .digest("SHA-256", new TextEncoder().encode(String(text)))
+        .then(function (buf) {
+          return Array.from(new Uint8Array(buf))
+            .map(function (b) {
+              return b.toString(16).padStart(2, "0");
+            })
+            .join("");
+        });
+    }
+    return Promise.reject(new Error("SHA-256 unavailable"));
+  }
+
   global.SubmissionUtils = {
     DUPLICATE_BLOCK_THRESHOLD: DUPLICATE_BLOCK_THRESHOLD,
     RATE_LIMIT_PER_HOUR: RATE_LIMIT_PER_HOUR,
@@ -180,5 +195,6 @@
     contributorMdFromUser: contributorMdFromUser,
     formatListMdRow: formatListMdRow,
     rateLimitOk: rateLimitOk,
+    sha256Hex: sha256Hex,
   };
 })(typeof window !== "undefined" ? window : globalThis);

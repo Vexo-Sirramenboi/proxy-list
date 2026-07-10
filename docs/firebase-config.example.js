@@ -12,22 +12,12 @@
    https://<projectId>.firebaseapp.com/* — Auth runs helper iframes from
    authDomain; without this, Identity Toolkit returns API_KEY_HTTP_REFERRER_BLOCKED.
 
-   For "Most opened", Firestore must allow authenticated clients, e.g.:
-
-   match /link_clicks/{id} {
-     allow read: if true;
-     allow create, update: if request.auth != null;
-   }
-
-   match /users/{userId} {
-     allow read, write: if request.auth != null && request.auth.uid == userId;
-   }
-
-   See docs/firestore.rules for the deployed username registry rules (collection usernames)
-   and savedFolders (folder visibility: public / unlisted / private; isPublic is true only for public).
+   For "Most opened", deploy docs/firestore.rules. link_clicks writes require a signed-in
+   (non-anonymous) account and increment by at most +1 per write.
 
    On-site link submissions (docs/contribute/, docs/admin/submissions.html):
-   - Deploy docs/firestore.rules (includes linkSubmissions, contributorBans, contributorStats).
+   - Deploy docs/firestore.rules (includes linkSubmissions, pendingSubmissionKeys,
+     contributorBans, contributorStats with strict client counter rules).
    - In Firestore, create document config/submissions with field adminUids (array of Firebase Auth UIDs
      for accounts that may approve/reject/ban). Example: { "adminUids": ["abc123uid"] }.
    - Set window.__SUBMISSION_ADMIN_GITHUB__ in this file for GitHub admins (UI access).

@@ -11,6 +11,67 @@ service cloud.firestore {
         && newV - oldV >= -1;
     }
 
+    function intDeltaAtMostOne(oldV, newV) {
+      return newV is int
+        && oldV is int
+        && newV >= oldV
+        && newV - oldV <= 1;
+    }
+
+    function statsRecentHourOk(oldStats, newStats) {
+      let oldCount = oldStats.recentHourCount;
+      let newCount = newStats.recentHourCount;
+      if (newCount == oldCount) return true;
+      if (!(newCount is int) || newCount < 0 || newCount > 8) return false;
+      let lastAt = oldStats.lastSubmissionAt;
+      let hourAgo = request.time - duration.value(1, 'h');
+      let hourExpired = lastAt == null || lastAt < hourAgo;
+      return (hourExpired && newCount == 1)
+        || (!hourExpired && newCount == oldCount + 1);
+    }
+
+    function statsSelfCreateOk() {
+      let d = request.resource.data;
+      return d.keys().hasOnly([
+              'uid', 'submissionsTotal', 'duplicatesAttempted', 'rejectedTotal',
+              'submitBlocked', 'recentHourCount', 'lastSubmissionAt', 'updated'
+            ])
+        && d.uid == request.auth.uid
+        && d.submissionsTotal is int
+        && d.duplicatesAttempted is int
+        && d.rejectedTotal is int
+        && d.submissionsTotal >= 0
+        && d.submissionsTotal <= 1
+        && d.duplicatesAttempted >= 0
+        && d.duplicatesAttempted <= 1
+        && d.rejectedTotal == 0
+        && d.submitBlocked == false
+        && d.recentHourCount is int
+        && d.recentHourCount >= 0
+        && d.recentHourCount <= 1;
+    }
+
+    function statsSelfUpdateOk() {
+      let d = request.resource.data;
+      let r = resource.data;
+      return d.keys().hasOnly([
+              'uid', 'submissionsTotal', 'duplicatesAttempted', 'rejectedTotal',
+              'submitBlocked', 'recentHourCount', 'lastSubmissionAt', 'updated'
+            ])
+        && d.uid == r.uid
+        && d.uid == request.auth.uid
+        && d.rejectedTotal == r.rejectedTotal
+        && intDeltaAtMostOne(r.submissionsTotal, d.submissionsTotal)
+        && intDeltaAtMostOne(r.duplicatesAttempted, d.duplicatesAttempted)
+        && (d.submitBlocked == r.submitBlocked
+            || (d.submitBlocked == true && r.submitBlocked == false))
+        && statsRecentHourOk(r, d);
+    }
+
+    function validUrlKeyHash(hash) {
+      return hash is string && hash.matches('^[a-f0-9]{64}$');
+    }
+
     /** New folders set visibility + isPublic; legacy docs may only have isPublic. */
     function savedFolderPrivacyPairOk(d) {
       return (d.visibility is string
@@ -50,7 +111,25 @@ service cloud.firestore {
 
     match /link_clicks/{docId} {
       allow read: if true;
-      allow create, update: if request.auth != null;
+      allow create: if isSignedInNonAnonymous()
+        && validUrlKeyHash(docId)
+        && request.resource.data.keys().hasOnly(['url', 'count', 'updated'])
+        && request.resource.data.url is string
+        && request.resource.data.url.size() >= 10
+        && request.resource.data.url.size() <= 2048
+        && request.resource.data.count is int
+        && request.resource.data.count >= 1
+        && request.resource.data.count <= 1;
+      allow update: if isSignedInNonAnonymous()
+        && validUrlKeyHash(docId)
+        && request.resource.data.keys().hasOnly(['url', 'count', 'updated'])
+        && request.resource.data.url is string
+        && request.resource.data.url.size() >= 10
+        && request.resource.data.url.size() <= 2048
+        && request.resource.data.count is int
+        && request.resource.data.count >= 0
+        && request.resource.data.count <= 500000
+        && ratingSmallDelta(resource.data.count, request.resource.data.count);
     }
     match /users/{userId} {
       allow read, create, update, delete: if request.auth != null && request.auth.uid == userId;
@@ -246,6 +325,10 @@ service cloud.firestore {
         && request.resource.data.urlKey is string
         && request.resource.data.urlKey.size() >= 10
         && request.resource.data.urlKey.size() <= 2048
+        && validUrlKeyHash(request.resource.data.urlKeyHash)
+        && exists(/databases/$(database)/documents/pendingSubmissionKeys/$(request.resource.data.urlKeyHash))
+        && get(/databases/$(database)/documents/pendingSubmissionKeys/$(request.resource.data.urlKeyHash)).data.submitterUid == request.auth.uid
+        && get(/databases/$(database)/documents/pendingSubmissionKeys/$(request.resource.data.urlKeyHash)).data.urlKey == request.resource.data.urlKey
         && request.resource.data.provider is string
         && request.resource.data.provider.size() > 0
         && request.resource.data.provider.size() <= 120
@@ -263,6 +346,23 @@ service cloud.firestore {
       allow update, delete: if isSubmissionAdmin();
     }
 
+    // One pending row per normalized URL; doc id is SHA-256(urlKey).
+    match /pendingSubmissionKeys/{urlKeyHash} {
+      allow read: if isSignedInNonAnonymous();
+      allow create: if isSignedInNonAnonymous()
+        && notSubmissionBanned()
+        && statsNotSubmitBlocked()
+        && validUrlKeyHash(urlKeyHash)
+        && !exists(/databases/$(database)/documents/pendingSubmissionKeys/$(urlKeyHash))
+        && request.resource.data.keys().hasOnly(['urlKey', 'urlKeyHash', 'submitterUid', 'created'])
+        && request.resource.data.urlKeyHash == urlKeyHash
+        && request.resource.data.submitterUid == request.auth.uid
+        && request.resource.data.urlKey is string
+        && request.resource.data.urlKey.size() >= 10
+        && request.resource.data.urlKey.size() <= 2048;
+      allow delete: if isSubmissionAdmin();
+    }
+
     match /contributorBans/{uid} {
       allow read: if request.auth != null && (request.auth.uid == uid || isSubmissionAdmin());
       allow create, update, delete: if isSubmissionAdmin();
@@ -270,28 +370,14 @@ service cloud.firestore {
 
     match /contributorStats/{uid} {
       allow read: if request.auth != null && (request.auth.uid == uid || isSubmissionAdmin());
-      allow create, update: if isSubmissionAdmin()
+      allow create: if isSubmissionAdmin()
         || (isSignedInNonAnonymous()
             && request.auth.uid == uid
-            && request.resource.data.keys().hasOnly([
-              'uid', 'submissionsTotal', 'duplicatesAttempted', 'rejectedTotal',
-              'submitBlocked', 'recentHourCount', 'lastSubmissionAt', 'updated'
-            ])
-            && request.resource.data.uid == uid
-            && request.resource.data.submissionsTotal is int
-            && request.resource.data.duplicatesAttempted is int
-            && request.resource.data.rejectedTotal is int
-            && request.resource.data.submissionsTotal >= 0
-            && request.resource.data.duplicatesAttempted >= 0
-            && request.resource.data.rejectedTotal >= 0
-            && request.resource.data.submissionsTotal <= 10000
-            && request.resource.data.duplicatesAttempted <= 10000
-            && (!request.resource.data.keys().hasAny(['submitBlocked'])
-                || request.resource.data.submitBlocked is bool)
-            && (!request.resource.data.keys().hasAny(['recentHourCount'])
-                || (request.resource.data.recentHourCount is int
-                    && request.resource.data.recentHourCount >= 0
-                    && request.resource.data.recentHourCount <= 100)));
+            && statsSelfCreateOk());
+      allow update: if isSubmissionAdmin()
+        || (isSignedInNonAnonymous()
+            && request.auth.uid == uid
+            && statsSelfUpdateOk());
       allow delete: if false;
     }
   }

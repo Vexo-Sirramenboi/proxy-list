@@ -4088,7 +4088,7 @@
     async function recordLinkClick(url) {
       const norm = normalizeUrlKeyForClicks(url);
       if (!norm) return;
-      if (useFirebaseClicks && firebaseDb) {
+      if (useFirebaseClicks && firebaseDb && isSignedInUser()) {
         try {
           const id = await sha256Hex(norm);
           await firebaseDb
@@ -4160,7 +4160,9 @@
     }
 
     function formatClickLineLabel() {
-      return useFirebaseClicks ? "Opens (all visitors)" : "Opens (this browser only)";
+      return useFirebaseClicks
+        ? "Opens (signed-in visitors)"
+        : "Opens (this browser only)";
     }
 
     const TOP_OPENS_DISPLAY = 10;
