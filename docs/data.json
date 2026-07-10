@@ -177,18 +177,23 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-07-10T03:48:14Z",
-    "checked_at_display": "2026-07-10 03:48 UTC",
+    "checked_at": "2026-07-10T05:30:01Z",
+    "checked_at_display": "2026-07-10 05:30 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
   "failing_links": {
-    "https://51.222.206.184.dyn.tcadmin.net": 1,
-    "https://15.204.247.166.dyn.tcadmin.net": 1,
-    "https://classlink.epic.c01.kr.cdn.cloudflare.net": 2,
-    "https://midterms.wrexham.cn": 2
+    "https://classlink.epic.c01.kr.cdn.cloudflare.net": 3,
+    "https://midterms.wrexham.cn": 3,
+    "https://update.bananaschool.duckdns.org": 1,
+    "https://update.update.update.test.bananaschool.duckdns.org": 1,
+    "https://www.update.update.update.www.www.dev.bananaschool.duckdns.org": 1,
+    "https://www.update.jguutivl.update.admin.dev.bananaschool.duckdns.org": 1,
+    "https://9772.duckdns.org": 1,
+    "https://maniemusicale.duckdns.org": 1,
+    "https://www.backend.e.cool.qzz.io.cdn.cloudflare.net": 1
   },
   "links": [
     {
