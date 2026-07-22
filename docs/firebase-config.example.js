@@ -12,12 +12,17 @@
    https://<projectId>.firebaseapp.com/* — Auth runs helper iframes from
    authDomain; without this, Identity Toolkit returns API_KEY_HTTP_REFERRER_BLOCKED.
 
-   For "Most opened", deploy docs/firestore.rules. link_clicks writes require a signed-in
-   (non-anonymous) account and increment by at most +1 per write.
+   For "Most opened", deploy docs/firestore.rules (client writes to link_clicks are denied).
+   Clicks go through the Cloudflare Worker at POST /api/link-click with a per-IP rate limit
+   (40/hour). Set Worker secrets for Firestore admin writes:
+     FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, FIREBASE_PRIVATE_KEY
+   (service account with Cloud Datastore User). Without secrets, the Worker still rate-limits
+   and stores edge counters (Cloudflare-only).
 
    On-site link submissions (docs/contribute/, docs/admin/submissions.html):
    - Deploy docs/firestore.rules (includes linkSubmissions, pendingSubmissionKeys,
      contributorBans, contributorStats with strict client counter rules).
+   - users/{uid} profile writes require non-anonymous auth and field size limits.
    - In Firestore, create document config/submissions with field adminUids (array of Firebase Auth UIDs
      for accounts that may approve/reject/ban). Example: { "adminUids": ["abc123uid"] }.
    - Set window.__SUBMISSION_ADMIN_GITHUB__ in this file for GitHub admins (UI access).

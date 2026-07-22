@@ -4088,25 +4088,28 @@
     async function recordLinkClick(url) {
       const norm = normalizeUrlKeyForClicks(url);
       if (!norm) return;
-      if (useFirebaseClicks && firebaseDb && isSignedInUser()) {
-        try {
-          const id = await sha256Hex(norm);
-          await firebaseDb
-            .collection("link_clicks")
-            .doc(id)
-            .set(
-              {
-                url: String(url).trim(),
-                count: firebase.firestore.FieldValue.increment(1),
-                updated: firebase.firestore.FieldValue.serverTimestamp(),
-              },
-              { merge: true }
-            );
+      const displayUrl = String(url || "").trim() || norm;
+
+      // Prefer Cloudflare Worker IP-rate-limited API (no account required).
+      try {
+        const res = await fetch("./api/link-click", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ url: displayUrl }),
+        });
+        if (res.status === 429) {
+          console.warn("[proxy-list] Click rate limit reached for this IP");
           return;
-        } catch (e) {
-          console.warn("Firebase click increment failed", e);
         }
+        if (res.ok) {
+          const data = await res.json().catch(() => ({}));
+          if (data && data.ok) return;
+        }
+      } catch (_) {
+        /* Worker unavailable (e.g. GitHub Pages) — fall back below */
       }
+
+      // Fallback: local-only counter when the IP-rate-limited API is not deployed.
       localClickInc(norm);
     }
 
@@ -4117,6 +4120,27 @@
         if (onProgress) onProgress(0, 0);
         return map;
       }
+
+      // Try Worker batch get first (same origin on Cloudflare).
+      try {
+        const displayUrls = norms.slice();
+        const res = await fetch("./api/link-clicks/get", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ urls: displayUrls }),
+        });
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data.ok && data.counts && typeof data.counts === "object") {
+            norms.forEach((n) => {
+              const v = data.counts[n];
+              map.set(n, Number.isFinite(v) ? v : 0);
+            });
+            if (onProgress) onProgress(norms.length, norms.length);
+            return map;
+          }
+        }
+      } catch (_) {}
 
       if (useFirebaseClicks && firebaseDb) {
         for (let i = 0; i < norms.length; i += 10) {
@@ -4161,7 +4185,7 @@
 
     function formatClickLineLabel() {
       return useFirebaseClicks
-        ? "Opens (signed-in visitors)"
+        ? "Opens (all visitors, IP rate-limited)"
         : "Opens (this browser only)";
     }
 

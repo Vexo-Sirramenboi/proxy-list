@@ -36,7 +36,17 @@ This site is static HTML in `docs/` — there is no compile step.
 
 Do **not** use `npx wrangler deploy` as the build command. Pages uploads the output folder automatically; Wrangler only needs an API token and is meant for Workers CLI deploys.
 
-**Optional (Wrangler CLI):** Commit includes `wrangler.jsonc`. Locally or in CI you can run `npm run deploy:cloudflare` only if `CLOUDFLARE_API_TOKEN` (and usually `CLOUDFLARE_ACCOUNT_ID`) are set — create a token at [Cloudflare API tokens](https://developers.cloudflare.com/fundamentals/api/get-started/create-token/) with **Account** → **Cloudflare Pages Edit** and **Workers Scripts Edit**.
+**Optional (Wrangler CLI):** Commit includes `wrangler.jsonc` and `workers/site.js` (static assets + `POST /api/link-click` IP rate limit). Locally or in CI you can run `npm run deploy:cloudflare` only if `CLOUDFLARE_API_TOKEN` (and usually `CLOUDFLARE_ACCOUNT_ID`) are set — create a token at [Cloudflare API tokens](https://developers.cloudflare.com/fundamentals/api/get-started/create-token/) with **Account** → **Cloudflare Pages Edit** and **Workers Scripts Edit**.
+
+For global click counts via the Worker, set these secrets on the Worker:
+
+```bash
+npx wrangler secret put FIREBASE_PROJECT_ID
+npx wrangler secret put FIREBASE_CLIENT_EMAIL
+npx wrangler secret put FIREBASE_PRIVATE_KEY
+```
+
+Use a Firebase service account with Datastore/Firestore access. Rate limit is **40 clicks/hour/IP**.
 
 # Versioning info
 The default version format is v[version]r[revision].

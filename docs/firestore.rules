@@ -81,6 +81,25 @@ service cloud.firestore {
       return hash is string && hash.matches('^[a-f0-9]{64}$');
     }
 
+    function userProfileFieldsOk(d) {
+      return (!('siteUsername' in d)
+            || (d.siteUsername is string
+                && d.siteUsername.matches('^[a-zA-Z0-9_]{3,20}$')))
+        && (!('profilePhotoDataUrl' in d)
+            || (d.profilePhotoDataUrl is string
+                && d.profilePhotoDataUrl.size() <= 140000))
+        && (!('usernameChangedAt' in d)
+            || d.usernameChangedAt is list)
+        && (!('linkListSort' in d)
+            || d.linkListSort is string)
+        && (!('githubLogin' in d)
+            || d.githubLogin == null
+            || (d.githubLogin is string && d.githubLogin.size() <= 39))
+        && (!('settings' in d) || d.settings is map)
+        && (!('savedLinks' in d)
+            || (d.savedLinks is list && d.savedLinks.size() <= 5000));
+    }
+
     /** New folders set visibility + isPublic; legacy docs may only have isPublic. */
     function savedFolderPrivacyPairOk(d) {
       return (d.visibility is string
@@ -119,42 +138,50 @@ service cloud.firestore {
     }
 
     match /link_clicks/{docId} {
+      // Public reads for "Most opened". Writes are Worker/Admin only (IP rate-limited API).
       allow read: if true;
-      allow create: if isSignedInNonAnonymous()
-        && validUrlKeyHash(docId)
-        && request.resource.data.keys().hasOnly(['url', 'count', 'updated'])
-        && request.resource.data.url is string
-        && request.resource.data.url.size() >= 10
-        && request.resource.data.url.size() <= 2048
-        && request.resource.data.count is int
-        && request.resource.data.count >= 1
-        && request.resource.data.count <= 1;
-      allow update: if isSignedInNonAnonymous()
-        && validUrlKeyHash(docId)
-        && request.resource.data.keys().hasOnly(['url', 'count', 'updated'])
-        && request.resource.data.url is string
-        && request.resource.data.url.size() >= 10
-        && request.resource.data.url.size() <= 2048
-        && request.resource.data.count is int
-        && request.resource.data.count >= 0
-        && request.resource.data.count <= 500000
-        && ratingSmallDelta(resource.data.count, request.resource.data.count);
+      allow create, update, delete: if false;
     }
     match /users/{userId} {
-      allow read, create, update, delete: if request.auth != null && request.auth.uid == userId;
+      allow read: if request.auth != null && request.auth.uid == userId;
+      allow create: if request.auth != null
+        && request.auth.uid == userId
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && request.resource.data.keys().hasOnly([
+          'siteUsername', 'profilePhotoDataUrl', 'usernameChangedAt', 'updated',
+          'settings', 'savedLinks', 'linkListSort', 'githubLogin'
+        ])
+        && userProfileFieldsOk(request.resource.data);
+      allow update: if request.auth != null
+        && request.auth.uid == userId
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'siteUsername', 'profilePhotoDataUrl', 'usernameChangedAt', 'updated',
+          'settings', 'savedLinks', 'linkListSort', 'githubLogin'
+        ])
+        && userProfileFieldsOk(request.resource.data);
+      allow delete: if request.auth != null
+        && request.auth.uid == userId
+        && request.auth.token.firebase.sign_in_provider != 'anonymous';
     }
     // Lowercase username → uid (claim on create; only owner may update/delete).
     match /usernames/{uname} {
       allow read: if true;
       allow create: if request.auth != null
-        && request.resource.data.keys().hasAll(["uid"])
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && uname.matches('^[a-z0-9_]{3,20}$')
+        && request.resource.data.keys().hasOnly(['uid', 'updated'])
         && request.resource.data.uid == request.auth.uid
-        && (!exists(/databases/$(database)/documents/usernames/$(uname))
-            || get(/databases/$(database)/documents/usernames/$(uname)).data.uid == request.auth.uid);
+        && !exists(/databases/$(database)/documents/usernames/$(uname));
       allow update: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && uname.matches('^[a-z0-9_]{3,20}$')
         && resource.data.uid == request.auth.uid
-        && request.resource.data.uid == request.auth.uid;
-      allow delete: if request.auth != null && resource.data.uid == request.auth.uid;
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.keys().hasOnly(['uid', 'updated']);
+      allow delete: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && resource.data.uid == request.auth.uid;
     }
 
     // Shared saved-link folders: owner edits sync live to all readers (onSnapshot).
