@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v5.4.1",
-    "revision": "r256",
+    "revision": "r257",
     "last_updated": "August 02, 2026",
     "unsorted_total": 342,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
@@ -9,7 +9,7 @@
     "update_changelog": [
       {
         "version": "v5.4.1",
-        "revision": "r256",
+        "revision": "r257",
         "released": "August 02, 2026",
         "update_notice": "Removed over 1.9K bad unsorted links. This should hopefully help with the clutter that was previously there with all the random links."
       },
@@ -189,15 +189,63 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-02T15:26:56Z",
-    "checked_at_display": "2026-08-02 15:26 UTC",
+    "checked_at": "2026-08-02T16:17:35Z",
+    "checked_at_display": "2026-08-02 16:17 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 1,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://utipia.choco.rinet.ai"
+    ]
   },
   "failing_links": {
-    "https://utipia.choco.rinet.ai": 2
+    "https://abba.edrivensports.com": 1,
+    "https://able.itlogistics.com.ar": 1,
+    "https://ably.surfnet.ca": 1,
+    "https://aces.paulkelly.org": 1,
+    "https://acid.contactme.cl": 1,
+    "https://acme.strongson.com": 1,
+    "https://acre.ftp.sh": 1,
+    "https://acyl.thesqueakandoilchart.com": 1,
+    "https://afro.ladatap.com": 1,
+    "https://agar.twilightparadox.com": 1,
+    "https://ager.pimp.co.za": 1,
+    "https://ages.serprise.com": 1,
+    "https://airs.crisdantas.com.br": 1,
+    "https://airy.familiamarinho.com.br": 1,
+    "https://ajar.jpleventos.cl": 1,
+    "https://akin.familiamarinho.com.br": 1,
+    "https://alas.noamank.com": 1,
+    "https://alfa.netmarket.gr": 1,
+    "https://alga.ohbah.com": 1,
+    "https://abbe.astraltech.org": 1,
+    "https://ably.7dejunio.com.ar": 1,
+    "https://acyl.4040.idv.tw": 1,
+    "https://aero.uitgavepatroon.nl": 1,
+    "https://acts.surreyquays.com": 1,
+    "https://afar.euasazic.ro": 1,
+    "https://afro.carcano.me": 1,
+    "https://agar.seprotec.net.br": 1,
+    "https://aida.manoahinvest.com": 1,
+    "https://adds.vaizer.cl": 1,
+    "https://airs.keybusinessconnection.com": 1,
+    "https://akin.1337.cx": 1,
+    "https://alma.fernando-botero-sculpture.com": 1,
+    "https://ames.agus-87.com.ar": 1,
+    "https://amir.johanson.ee": 1,
+    "https://ammo.demoteam.ch": 1,
+    "https://alto.seprotec.net.br": 1,
+    "https://anon.allisons.org": 1,
+    "https://amen.zabiasrl.com.ar": 1,
+    "https://amps.lovefilm.com.br": 1,
+    "https://arco.heliumcola.com": 1,
+    "https://arcs.largent.org": 1,
+    "https://ares.imexsac.com": 1,
+    "https://atom.fuckwikia.com": 1,
+    "https://asks.ftp.sh": 1,
+    "https://atop.pixelfucker.org": 1,
+    "https://aria.joeliriano.com": 1,
+    "https://aura.music-menges.si": 1
   },
   "links": [
     {
@@ -25065,25 +25113,6 @@
       ],
       "locked": "",
       "link": "https://playernation.tokeslaszlo.ro/",
-      "found": "4/30/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🦄 Utopia Education",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://utipia.choco.rinet.ai/",
       "found": "4/30/2026",
       "username": "N/A",
       "password": "N/A",
