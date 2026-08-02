@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.4 | Released: August 01, 2026
-> r253 | Last Updated: August 02, 2026
+> r254 | Last Updated: August 02, 2026
 > Total onsite links: 5714 (3851 sorted + 1863 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -288,13 +288,10 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://raw.esm.sh/gh/TwiLabs/art/dist/index.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://dy3.real3m.com | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://raw.esm.sh/gh/NightProxy/DD-Static@3775f24/dist/index.svg | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-|  | https://storage.googleapis.com/daydreaming/dist/index.html | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://daydreaming.arrowbases.com | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://daydreaming.boiso.ar | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://daydreaming.realisation.org | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://daydreaming.regu.ch | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://daydreaming.tomashirsch.cl | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://daydreaming.is-a.software.cdn.cloudflare.net | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🚀 Nebulo
 > [!NOTE]
@@ -1717,8 +1714,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://vividdarkness.uk/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 |  | https://nobloccstatus.pages.dev | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://nobloccstatus.mattle.uk | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://unblocc.uk | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://unblocc.co.uk | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🦄 Utopia Education
 > [!NOTE]
@@ -1775,13 +1770,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://approving.at.certified.cl/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://self.gcpservicios.cl | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://mood.cthulhu.li | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://utopia.seminaire-school.v6.rocks | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://skill.utopia.arts4x.com | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://eastomadeutopia.heronquays.com | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://utopia.choco.wifirange.org | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://r.utopiaworld.ink | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://historyofutopia.orekhov.space | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://utopia.eclipse.lol.pxi-fusion.com | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🌘 Lunaar
 > [!NOTE]
