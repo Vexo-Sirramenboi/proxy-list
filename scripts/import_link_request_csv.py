@@ -14,6 +14,7 @@ import csv
 import re
 import sys
 from pathlib import Path
+from urllib.parse import urlsplit
 
 REPO = Path(__file__).resolve().parents[1]
 LIST_MD = REPO / "list.md"
@@ -75,8 +76,15 @@ def parse_contributor_cell(raw: str) -> str:
         if ln.startswith("http"):
             prof = ln
             break
-    if prof and "github.com" in prof:
-        return f"[{name_line}]({prof})"
+    if prof:
+        try:
+            host = (urlsplit(prof).hostname or "").lower()
+        except Exception:
+            host = ""
+        if host.startswith("www."):
+            host = host[4:]
+        if host == "github.com" or host.endswith(".github.com"):
+            return f"[{name_line}]({prof})"
     return name_line
 
 

@@ -2328,6 +2328,8 @@
     }
 
     async function handleLinkListSelection(link) {
+      link = safeHttpUrl(link);
+      if (!link) return;
       const action = appSettings.linkSelectionAction || "summary";
       if (action === "open") {
         if (!confirmMalwareAction(link, "open")) return;
@@ -5637,6 +5639,19 @@
       }
     }
 
+    /** Only allow http(s) URLs from DOM attributes / untrusted strings (blocks javascript: etc.). */
+    function safeHttpUrl(raw) {
+      const s = String(raw == null ? "" : raw).trim();
+      if (!s) return "";
+      try {
+        const u = new URL(s, location.href);
+        if (u.protocol !== "http:" && u.protocol !== "https:") return "";
+        return u.href;
+      } catch (_) {
+        return "";
+      }
+    }
+
     function statusClass(status) {
       if (status === "blocked") return "blocked";
       if (status === "unblocked") return "unblocked";
@@ -5929,10 +5944,10 @@
     function setSummaryFooterLink(link) {
       const openBtn = $("summaryOpenBtn");
       const copyBtn = $("summaryCopyBtn");
-      const href = link || "#";
+      const href = safeHttpUrl(link) || "#";
       if (openBtn) openBtn.setAttribute("href", href);
       if (copyBtn) {
-        copyBtn.dataset.link = link || "";
+        copyBtn.dataset.link = href === "#" ? "" : href;
         copyBtn.classList.remove("copied");
         copyBtn.textContent = "Copy link";
       }
@@ -7135,15 +7150,17 @@
           const linkEl = target.closest("a.js-link-summary");
           if (!linkEl) return;
           ev.preventDefault();
-          const href = linkEl.getAttribute("data-link") || linkEl.getAttribute("href");
+          const href = safeHttpUrl(
+            linkEl.getAttribute("data-link") || linkEl.getAttribute("href")
+          );
           if (!href) return;
           handleLinkListSelection(href);
         });
 
         $("summaryCloseBtn").addEventListener("click", closeSummary);
         $("summaryOpenBtn").addEventListener("click", (ev) => {
-          const link = ev.currentTarget.getAttribute("href") || "";
-          if (!link || link === "#") return;
+          const link = safeHttpUrl(ev.currentTarget.getAttribute("href") || "");
+          if (!link) return;
           if (!confirmMalwareAction(link, "open")) {
             ev.preventDefault();
             return;
@@ -7155,7 +7172,7 @@
         });
         $("summaryCopyBtn").addEventListener("click", async (ev) => {
           const btn = ev.currentTarget;
-          const link = (btn && btn.dataset && btn.dataset.link) || "";
+          const link = safeHttpUrl((btn && btn.dataset && btn.dataset.link) || "");
           if (!link) return;
           if (!confirmMalwareAction(link, "copy")) return;
           if (isJsDelivrUrl(link)) {

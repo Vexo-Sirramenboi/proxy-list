@@ -6,7 +6,7 @@
 
   var firebaseDb = null;
   var urlKeySet = new Set();
-  var blockedPatterns = ["b-cdn.net", "blooket.com"];
+  var blockedPatterns = ["b-cdn.net"];
   var providers = [];
   var currentUser = null;
   var userProfile = null;

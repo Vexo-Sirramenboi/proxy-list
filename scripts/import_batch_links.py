@@ -79,7 +79,8 @@ SECTION_ALIASES: dict[str, str] = {
     "luminalos": "🌙 LuminalOS",
     "aether": "Aether",
     "parcoil": "Parcoil",
-    "strawberry": "🍓 Strawberry",
+    "strawberry": "🍓 Strawberri",
+    "strawberri": "🍓 Strawberri",
     "zen": "🧘 Zen",
     "studyhub": "📖 StudyHub",
     "nowgg": "NowGG",
@@ -162,10 +163,8 @@ def should_skip_url(u: str) -> str | None:
     h = host_of(u)
     if not h or "." not in h:
         return "invalid"
-    if h.endswith(".b-cdn.net") or h == "b-cdn.net":
+    if h == "b-cdn.net" or h.endswith(".b-cdn.net"):
         return "bunnycdn"
-    if h.endswith(".blooket.com") or h == "blooket.com" or "blooket.com" in h:
-        return "blooket"
     if h == "registry.npmjs.org":
         return "npm-registry"
     if "<" in u or "br<" in u:
@@ -311,7 +310,7 @@ def main() -> None:
     seen_batch: set[str] = set()
     to_add: OrderedDict[str, list[str]] = OrderedDict()
     pending_new: OrderedDict[str, list[str]] = OrderedDict()
-    stats = {"bunnycdn": 0, "blooket": 0, "dup-list": 0, "dup-batch": 0, "invalid": 0, "npm-registry": 0, "garbage": 0}
+    stats = {"bunnycdn": 0, "dup-list": 0, "dup-batch": 0, "invalid": 0, "npm-registry": 0, "garbage": 0}
 
     for section, urls in groups.items():
         for raw_u in urls:

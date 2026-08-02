@@ -29,7 +29,8 @@ _TABLE_LINK_ROW = re.compile(r"^\|\s*\|\s*(https?://[^\s|]+)", re.IGNORECASE)
 # Extract links
 # -----------------------
 def extract_links(content):
-    return re.findall(r"https?://[^\s|]+", content)
+    """Table-row proxy URLs only (not contributor / prose URLs)."""
+    return extract_table_urls(content)
 
 
 def normalize_url(url):
@@ -38,7 +39,7 @@ def normalize_url(url):
 
 def extract_table_urls(content):
     """Ordered list of normalized URLs from proxy table rows (| | https...)."""
-    found = re.findall(r"^\|\s\|\s*(https?://[^\s|]+)", content, re.MULTILINE)
+    found = re.findall(r"^\|\s*\|\s*(https?://[^\s|]+)", content, re.MULTILINE)
     return [normalize_url(u) for u in found]
 
 
@@ -116,10 +117,9 @@ def process(content, results, status):
     Uses normalized URLs for result lookup and for persistent failure counts so
     trailing slashes and duplicate rows behave consistently.
 
-    CI sets LINK_CHECK_NO_PURGE=true so flaky runner/network errors do not delete
-    table rows from list.md. Failure counts in link_status.json still advance each
-    run so a local run (or CI with purging enabled) can remove links after the
-    threshold is reached.
+    Failure counts in link_status.json advance each run. When purging is enabled
+    (default in CI unless LINK_CHECK_NO_PURGE=true), rows at or above
+    FAIL_THRESHOLD consecutive failures are removed from list.md.
     """
     no_purge = os.environ.get("LINK_CHECK_NO_PURGE", "").lower() in (
         "1",
@@ -157,7 +157,11 @@ def process(content, results, status):
                 kept += 1
                 keep_duplicate_row[norm] = True
             else:
-                status[norm] = status.get(norm, 0) + 1
+                prev = int(status.get(norm, 0) or 0)
+                status[norm] = prev + 1
+                # Purge once consecutive failures reach the threshold. Counts persist
+                # across earlier no-purge CI runs, so already-dead links drop on the
+                # next failing check after purging is re-enabled.
                 purge = (not no_purge) and status[norm] >= FAIL_THRESHOLD
 
                 if purge:
@@ -358,7 +362,7 @@ def main():
     content = remove_empty_provider_sections(content)
     content = sync_all_section_counts(content)
 
-    total = len(re.findall(r"^\|\s\|\s*https?://", content, re.MULTILINE))
+    total = len(re.findall(r"^\|\s*\|\s*https?://", content, re.MULTILINE))
     content = set_total_links_line(content, total)
 
     after_sig = url_multiset_signature(content)

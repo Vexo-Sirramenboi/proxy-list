@@ -101,7 +101,6 @@ Thanks for wanting to build our list and help the community! Here's how to reque
 ## Blocked Domains
 The following domains are not allowed to be submitted:
 - `b-cdn.net`
-- `blooket.com`
 
 ## Pull Request Edits
 I may edit the pull request if there is a mistake or small error, then push those edits to main. You will still be fully credited for contributing to the list.
@@ -111,7 +110,7 @@ I may edit the pull request if there is a mistake or small error, then push thos
 Yes, they are automatically synced.
 
 ### What if a link I submit no longer works?
-After three consecutive failed HTTP checks (runs every six hours), a link is eligible to be removed from `list.md`. The scheduled job usually keeps **purging** off on GitHub runners so temporary blocks do not delete working links; `link_status.json` still tracks failures. To drop dead rows from the repo, run `python scripts/link_checker.py` locally without `LINK_CHECK_NO_PURGE`, or set the Actions variable `LINK_CHECK_NO_PURGE` to `false`.
+After three consecutive failed HTTP checks (runs every six hours), a link is eligible to be removed from `list.md`. The scheduled job **purges** dead rows by default once that threshold is reached (`link_status.json` tracks consecutive failures). To keep failure counts without deleting rows (for debugging), set the Actions variable `LINK_CHECK_NO_PURGE` to `true`, or run `python scripts/link_checker.py` locally with `LINK_CHECK_NO_PURGE=true`.
 
 ### When do users see update banners?
 Link checks and filter metadata run every six hours **silently** (no revision bump). Users only get the refresh banner when **revision** and **Last Updated** change — on **Sundays** when the bot removes or adds links, or when a maintainer bumps **version** and `## Update Notice` for a weekly release.

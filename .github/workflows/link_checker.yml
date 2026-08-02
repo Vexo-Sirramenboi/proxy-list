@@ -51,7 +51,7 @@ jobs:
 
       - name: Run link checker
         env:
-          LINK_CHECK_NO_PURGE: ${{ vars.LINK_CHECK_NO_PURGE || 'true' }}
+          LINK_CHECK_NO_PURGE: ${{ vars.LINK_CHECK_NO_PURGE || 'false' }}
           LINK_CHECK_PUBLISH_RELEASE: ${{ github.event_name == 'workflow_dispatch' && inputs.publish_release && 'true' || '' }}
         run: |
           echo "Running script..."

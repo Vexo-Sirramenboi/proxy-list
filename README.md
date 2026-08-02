@@ -77,7 +77,7 @@ CAPTCHA is tested using the official [Google ReCAPTCHA demo](https://www.google.
 
 **Sunday releases (user-facing)**: Revision (`r###`) and `Last Updated` in `list.md` only bump when the link checker runs on **Sunday** (or when you manually run the workflow with **Bump revision and Last Updated** checked). That is when users see the “new site update” banner. For a full weekly release, also bump the **version** (`vX.Y`) and write `## Update Notice` in `list.md` on Sunday, then run `python scripts/convert_list_to_json.py`.
 
-After three consecutive failing runs for the same URL, that row is eligible to be removed from `list.md`. The scheduled workflow keeps purging **off** by default (`LINK_CHECK_NO_PURGE`, so flaky CI does not mass-delete working proxies); counters still advance. To have the bot purge dead links from the repo, set the Actions repository variable `LINK_CHECK_NO_PURGE` to `false`, or run `python scripts/link_checker.py` locally with that variable unset. Use `LINK_CHECK_PUBLISH_RELEASE=true` locally to force a revision bump, or `LINK_CHECK_PUBLISH_RELEASE=silent` to force silent mode.
+After three consecutive failing runs for the same URL, that row is removed from `list.md`. Failure counts live in `link_status.json`. To pause deletions while still recording failures (for debugging), set the Actions repository variable `LINK_CHECK_NO_PURGE` to `true`, or run `python scripts/link_checker.py` locally with `LINK_CHECK_NO_PURGE=true`. Use `LINK_CHECK_PUBLISH_RELEASE=true` locally to force a revision bump, or `LINK_CHECK_PUBLISH_RELEASE=silent` to force silent mode.
 
 **Manual**: I will periodically update the list if I find new proxies, or if someone makes a pull request and I approve.
 

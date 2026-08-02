@@ -367,7 +367,8 @@ async function handleRecordClick(request, env, ctx) {
       warning: "Firebase admin secrets not configured; using edge counter only.",
     });
   } catch (err) {
-    return json({ ok: false, error: String(err && err.message ? err.message : err) }, 500);
+    console.error("record_click_failed", err);
+    return json({ ok: false, error: "internal_error" }, 500);
   }
 }
 
@@ -389,6 +390,7 @@ async function handleGetClicks(request, env) {
     }
     return json({ ok: true, counts });
   } catch (err) {
-    return json({ ok: false, error: String(err && err.message ? err.message : err) }, 500);
+    console.error("get_clicks_failed", err);
+    return json({ ok: false, error: "internal_error" }, 500);
   }
 }

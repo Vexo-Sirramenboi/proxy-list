@@ -2,7 +2,6 @@
 """
 Merge bulk link contributions into list.md:
 - Skip BunnyCDN (hostname ends with b-cdn.net)
-- Skip blooket.com
 - Global dedupe vs existing rows + within submission order (first section wins)
 - Map section titles to existing # headers; unknown titles become pending sections
 """
@@ -20,7 +19,7 @@ ROW_TMPL = "| | {url} | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/
 
 # Canonical markdown heading line for insertion (must match list.md exactly)
 HEADER_LINE = {
-    "ford": "# 🍓 Strawberry",
+    "ford": "# 🍓 Strawberri",
     "studyhub": "# 📖 StudyHub",
     "fern": "# 🪴 Fern",
     "xylora": "# ✖️ Xylora",
@@ -97,9 +96,7 @@ def clean_url(raw: str) -> str | None:
     host = p.netloc.lower().split("@")[-1]
     if host.endswith(":443"):
         host = host[:-4]
-    if "b-cdn.net" in host or host.endswith(".b-cdn.net"):
-        return None
-    if host == "blooket.com" or host.endswith(".blooket.com"):
+    if host == "b-cdn.net" or host.endswith(".b-cdn.net"):
         return None
     # Normalize for dedupe
     path = p.path or ""

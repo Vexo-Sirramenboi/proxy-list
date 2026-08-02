@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import re
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 LIST_MD = ROOT / "list.md"
@@ -30,7 +31,13 @@ def extract_urls(text: str) -> list[str]:
 
 
 def is_bcdn(url: str) -> bool:
-    return ".b-cdn.net" in url.lower() or url.lower().startswith("https://b-cdn.net")
+    try:
+        host = (urlsplit(url).hostname or "").lower()
+    except Exception:
+        return False
+    if host.startswith("www."):
+        host = host[4:]
+    return host == "b-cdn.net" or host.endswith(".b-cdn.net")
 
 
 def load_existing_list_urls() -> set[str]:

@@ -38,7 +38,7 @@
   }
 
   function isBlockedDomain(url, patterns) {
-    var list = patterns || ["b-cdn.net", "blooket.com"];
+    var list = patterns || ["b-cdn.net"];
     var lower = String(url || "").toLowerCase();
     for (var i = 0; i < list.length; i++) {
       if (lower.indexOf(String(list[i]).toLowerCase()) !== -1) return true;
