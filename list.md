@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.4 | Released: August 01, 2026
-> r250 | Last Updated: August 01, 2026
+> r251 | Last Updated: August 02, 2026
 > Total onsite links: 5957 (4061 sorted + 1896 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -42,7 +42,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 145 |
+> | Proxy/Games | captcha | Scramjet | 140 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -196,7 +196,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | N/A | N/A | 73 |
+> | Games | N/A | N/A | 50 |
 
 > [!IMPORTANT]
 > View importance notices section if link is broken.
@@ -205,8 +205,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | - | - | - | - | - | - |
 | | https://prageru-server.s3.amazonaws.com/mathematics.html | 2/19/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://s3.amazonaws.com/prageru-server/mathematics.html | 2/19/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://shindoisbest.s3.amazonaws.com/index.html | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://s3.amazonaws.com/shindoisbest/index.html | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://stock95633.wixsite.com/content-fetcher/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://canva.link/gn-math | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://cdn.jsdelivr.net/gh/un-pkg/npm@main/bundle-min.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
@@ -227,7 +225,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://codehs.com/sandbox/id/html-ZhExDL/run | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://codehs.com/uploads/033846bd276f79816d02dc24efd7ee2c | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://www.blogger.com/blog/post/preview/2079605435882804026/7033451448351703127 | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://stockstuf.blogspot.com/2026/05/const-newscript-document.html | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://codehs.com/uploads/edf989a37aad2e8e728ece9cf58a778a | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://www.khanacademy.org/computer-programming/all-about-polar-bears-official/5536966650740736 | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://sethmightshoothimself.codehs.me/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
@@ -240,12 +237,10 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://classlink-redirect.surge.sh | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://797902fe-b3d7-4ad2-9527-1e67cf1372d1.filesusr.com/html/1ce7bc_50f948dc314c4525966a767f300ffa00.html | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://snoopydbb-wixsite-com.filesusr.com/html/1ce7bc_ee1a218e32897c5f18855c7a5f85c451.html | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://stocky.pythonanywhere.com/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://script.google.com/macros/s/AKfycbxISGMiKeaFqOx3Z9T8AB0tz-tiyteerO1DkaoB1FFaG-ghRJ_PtrHYEPWd0QrgvrY7Cg/exec | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://stock--019e268e1a04750e88877203769fa6b0.web.val.run/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://math.st0ck.deno.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://quizizz.com/_media/uploadedFiles/b5abc156-aa98-4eb1-81fa-b823bb67abd6-v2 | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://greenwood-valley.s3.amazonaws.com/main.html | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://assets.editor.p5js.org/69f1348cb0834230516405d0/b6e1c18e-b379-4e00-adf1-87602c4b9f5e.svg | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://a2174-99533489.cluster40.canvas-user-content.com/users/2174~344930/files/2174~99533489/my%20files/gnmath.html?download=1&inline=1&sf_verifier=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJ1c2VyX2lkIjoiMjE3NDAwMDAwMDAzNDQ5MzAiLCJhdHRhY2htZW50X2lkIjoiMjE3NDAwMDAwOTk1MzM0ODkiLCJwZXJtaXNzaW9uIjpbInJlYWQiLCJkb3dubG9hZCJdLCJyb290X2FjY291bnRfaWQiOiIyMTc0MDAwMDAwMDAwMDAwMSIsIm9hdXRoX2hvc3QiOiJrYXR5aXNkLmluc3RydWN0dXJlLmNvbSIsInJldHVybl91cmwiOm51bGwsImZhbGxiYWNrX3VybCI6Imh0dHBzOi8va2F0eWlzZC5pbnN0cnVjdHVyZS5jb20vZmlsZXMvOTk1MzM0ODkvZG93bmxvYWQ_dmVyaWZpZXI9OTE4ZU5iaVdzR2dmMnN6c05KV2hLWTJRQ1RDTk4wZExJNkhiVDJZM1x1MDAyNmZhbGxiYWNrX3RzPTE3ODAxMTE3MzkiLCJqdGkiOiI3YThhYTJlZC0xMTc3LTQ3NWMtOTJiYS1hM2QzZDA0YmEzOTAiLCJleHAiOjE3ODAxMTIwMzl9.ctQD2ZCAPjhFE_i2GRc8dUkSDbHZesVgkLQko3R_0FQoalLYWu9BNwIWyBG_6gaR5VLjsswqieSxtWJoNfrv-Q&verifier=918eNbiWsGgf2szsNJWhKY2QCTCNN0dLI6HbT2Y3 | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | http://cdn.jsdelivr.net/gh/stockable/sites@main/gnmath.svg | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -281,7 +276,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Ultraviolet | 43 |
+> | Proxy/Games | captcha | Ultraviolet | 41 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -293,7 +288,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://playernations.casadotricolor.com.br/ | 4/17/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://frogsvseesa.contauditor.cl/ | 4/17/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://vcsa-yt.installgentoo.com/ | 4/17/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://vcsanewvideout.npoleninetz.ru/ | 4/17/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://gegmbayzka.monedita.cl/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://tetosarcade.win/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://h2aihbtm.frogseducation.com/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -349,7 +343,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp, captcha, reflux | Scramjet, Ultraviolet | 31 |
+> | Proxy/Games | epoxy, libcurl, wisp, captcha, reflux | Scramjet, Ultraviolet | 30 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -369,7 +363,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://dreamingvcsa.skills-sims.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://grandemass.takh.ee/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://outerspace.boiso.ar | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://supitscameron.bisblick.org/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://extralearning.okilbahadurpun.com.np/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdelivr.net/gh/TwiLabs/math/dist/index.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://cdn.jsdelivr.net/gh/TwiLabs/history/dist/index.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
@@ -389,18 +382,13 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl | Scramjet, Ultraviolet, Eclipse | 18 |
+> | Proxy/Games | epoxy, libcurl | Scramjet, Ultraviolet, Eclipse | 9 |
 
 > [!IMPORTANT]
 > Nebulo does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
 > 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
-| | https://bull.yarnowl.com/ | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://nomorefortnige.bisblick.org/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://kidsthesedaysbro.arxeiokin.gr/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://weneedmorefhangbisbfo.camberleycricket.com/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://midterms.wrexham.cn/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://intelleducation.netlify.app/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://petezahaltsource.firebaseapp.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://4e5uwe.mimo.run/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -408,9 +396,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://third-army.surge.sh/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://www.msn.com/en-us/play | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://xigency.herokuapp.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://nebulo.beat.nebula.recreatinganew.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://revision-flow.maverickden.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://rain.snow.hail.cloudy.heat.weatherpixel.com | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://nebulo.bostoncareercounselor.com | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdelivr.net/gh/Nebuli-OS/Nebuli-OS.github.io@latest/assets/mini/index.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://script.google.com/macros/s/AKfycbyuXz7H4piCfX_T7FdY3uuWfQ3sVg1VWZrqE_FGsQusWmZ7btRhWVOAYk59hx4i5G_7ZQ/exec | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -419,19 +404,13 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp | Scramjet, Ultraviolet | 45 |
+> | Proxy/Games | epoxy, libcurl, wisp | Scramjet, Ultraviolet | 28 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://places.vjason.com/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://ilovenirbytes.savequeechylake.org/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://learn.hr24.ro/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://classroom.hkieca.com/ | 2/19/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://jobfinder.noamank.com/ | 2/19/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://welcome.primeent.in/ | 2/19/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://us-east-production-25671.rkimport.com/ | 2/19/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://manage.peakconsulting.com.au/ | 2/19/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://help.brynlewis.com/ | 2/19/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://area.forwardersoft.com/ | 3/28/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://area.vm4construction.uk/ | 3/28/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://edu.rawr.africa.com/ | 4/17/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -453,7 +432,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://eyes.lervs.ro | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://school.gressvikbmx.no | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://math.soyescalahumana.cl | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://mathgames.quickaminos.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://english.neeb.wtf | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://spacing.bull.srivaishnavam.org.au | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 |  | https://education.space.liceotajamar.cl | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -473,7 +451,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet, Ultraviolet | 38 |
+> | Proxy/Games | unknown | Scramjet, Ultraviolet | 36 |
 
 > [!IMPORTANT]
 > Fern does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -523,7 +501,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 129 |
+> | Proxy/Games | unknown | Scramjet | 128 |
 
 > [!IMPORTANT]
 > Truffled does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -531,7 +509,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://script.google.com/macros/s/AKfycbwqqo2qu8qT_KWNwhFRMIa-IzTs2S3vgH_7Rx14OCM8dSJU_u3TUCC7AMsrTtjo2oG-rQ/exec | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://vcsa-yt.blogspot.com/2026/02/82-new-websites.html | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://iloveschool.regularitz.ch/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://bias.gcpservicios.cl/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://blob.lakeboundtech.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -664,7 +641,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 8 |
+> | Proxy/Games | unknown | Scramjet | 6 |
 
 > [!IMPORTANT]
 > Boredom does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -684,7 +661,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 4 |
+> | Proxy/Games | unknown | Scramjet | 1 |
 
 > [!IMPORTANT]
 > Vapor does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -700,7 +677,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 44 |
+> | Proxy/Games | unknown | unknown | 39 |
 
 > [!IMPORTANT]
 > Shadow does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -714,9 +691,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://virtualgeo.letiatours.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://fastgeo.egevad.se/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://fastbio.egevad.se/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://novalogic.tejidosdedignidad.org/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://solidchem.tejidosdedignidad.org/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://prophysics.tomaszu.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://neatgeo.babypos.hk | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://neatreading.babypos.hk | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://solidcoding.babypos.hk | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
@@ -757,7 +731,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 109 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 83 |
 
 > [!IMPORTANT]
 > dogeub does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -769,12 +743,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://n.schoology.lat/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://f.schoology.lat/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://fontonwonton.github.io/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://apis.nolathedogtherapist.com/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://api.nolathedogtherapist.com/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://computers.maya24.com.np/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://mint.ploteando.com/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://travel.taniadomena.eu/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://politics.tomashirsch.cl/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://dogeub.github.io/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://j16ab7ri.darkroom-lang.org/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://447fl1g9.darkroom-lang.org/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -802,20 +770,12 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://access.studyhub.cam/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://calculator.rdt2.co/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdelivr.net/gh/dogeub/-/index.svg | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://classlink.epic.c01.kr.cdn.cloudflare.net/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://dd-student-dash.educationate.space.cdn.cloudflare.net/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://math.studyhub.cam/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://mathtools.rdt2.co/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://s3.amazonaws.com/educationate/index.html#/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://api.rdocart.com/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://subscribevcsa.barrelofmakers.org/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://ixl.vseesa.edujose.com/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://dogeub.vseesa.martinwguy.net/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://learnwithplayernation.martinwguy.net/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://buy.aeroantenna.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://learn.vseesa.gpu74.ru/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://tickets.blackbearshow.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://listening.chinapoem.org/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://ixlmath-67.web.app/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://ixl-signin.onrender.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://schoology-alt.onrender.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -861,24 +821,13 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://google-apis.sylu.net.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://iboss-api.sylu.net.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://login-google.sylu.net.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://www.app.www.e.cool.qzz.io.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://www.as.e.cool.qzz.io.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://www.as.eeee.cool.qzz.io.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://www.assets.e.cool.qzz.io.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://www.au.backend.e.cool.qzz.io.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://www.au.e.cool.qzz.io.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://www.au.eeee.cool.qzz.io.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://www.backend.e.cool.qzz.io.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://www.backend.www.e.cool.qzz.io.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://www.beta.e.cool.qzz.io.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://www.dey.e.cool.qzz.io.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://dogeub.storage.googleapis.com/index.html | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🌕 Lunar
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 40 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 34 |
 
 > [!IMPORTANT]
 > Lunar does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -933,15 +882,13 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 22 |
+> | Proxy/Games | unknown | Scramjet | 19 |
 
 > [!IMPORTANT]
 > Ghost does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
 > 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
-| | https://main.d39joesfd55qkg.amplifyapp.com/ | 3/17/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://s3.amazonaws.com/ghst/index.html | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://thyistof.page.gd/?i=1 | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://superdupereducationalsite.page.gd/?i=1 | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://securely-is-ahh.fwh.is/?i=1 | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
@@ -993,7 +940,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | N/A | N/A | 2 |
+> | Games | N/A | N/A | 1 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -1008,7 +955,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp | Scramjet | 42 |
+> | Proxy/Games | epoxy, libcurl, wisp | Scramjet | 24 |
 
 > [!IMPORTANT]
 > OverCloaked does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1062,7 +1009,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | Unknown | Scramjet | 87 |
+> | Proxy/Games | Unknown | Scramjet | 86 |
 
 > [!IMPORTANT]
 > Imp Proxy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1074,7 +1021,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://g305-2.karjase.ee | 3/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://g305-3.karjase.ee | 3/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://g305-4.karjase.ee | 3/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://cbysk.fxchinese.ca/ | 4/17/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://aivu.losarcos.us/ | 4/17/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://esyk.monedita.cl/ | 4/17/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://dpsgy.albrightscycling.com/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -1161,7 +1107,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, captcha, wisp | Scramjet, Ultraviolet, Rammerhead | 5 |
+> | Proxy/Games | epoxy, libcurl, captcha, wisp | Scramjet, Ultraviolet, Rammerhead | 2 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -1175,7 +1121,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | N/A | N/A | 404 |
+> | Proxy/Games | N/A | N/A | 403 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -1604,7 +1550,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, baremux, baremod, grammaray | Scramjet, Ultraviolet | 19 |
+> | Proxy/Games | epoxy, libcurl, baremux, baremod, grammaray | Scramjet, Ultraviolet | 18 |
 
 > [!IMPORTANT]
 > TGLSC Density 4 does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1613,7 +1559,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | - | - | - | - | - | - |
 | | https://tglsceducation.nanobit.org/ | 3/28/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://science.rules.sgigestion.com/ | 3/28/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://auto.dinprima.ro/ | 3/28/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://aerospace.solarorbit.webs.vc/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://experiments.nasa.casadotricolor.com.br/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://ixl.host.safe.delystigemusikanter.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -1635,7 +1580,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | libcurl, epoxy, wisp | Scramjet, Ultraviolet | 134 |
+> | Proxy/Games | libcurl, epoxy, wisp | Scramjet, Ultraviolet | 96 |
 
 > [!IMPORTANT]
 > Galaxy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1730,7 +1675,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://green.greenmilesev.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://hand.hand-und-herz.at/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://hubert.hubretro.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
-| | https://hyper.hypersas.com/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://geography.indormost.ru/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://gold.goldmanconsulting.com.au/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://algo.algodenada.com.ar/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
@@ -1804,7 +1748,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 167 |
+> | Proxy/Games | unknown | unknown | 165 |
 
 > [!IMPORTANT]
 > StudyHub does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1818,7 +1762,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://youth.gressvikbmx.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://physics.bluntgang.info/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://shopping.gandhinagar.com | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://education.jrshark.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://humble.eggerfamily.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://legal.solos.gr | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://study.academinctools.pw | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
@@ -1861,7 +1804,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://vcsa.reformarchive.com/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://vcsa.callowell.com/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://vcsa.thongthaitextile.com/ | 5/18/2026 | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
-| | https://playernation.chroniclesoftimes.com/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://felt.cthulhu.li | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://good.gcpservicios.cl | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://studymath.eclipsecastellon.net/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -1983,7 +1925,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 130 |
+> | Proxy/Games | unknown | unknown | 129 |
 
 > [!IMPORTANT]
 > Strawberri does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1996,7 +1938,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://strawberry.vjason.com/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://news.krishokbarta24.com/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://school.agreca.com.ar/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://speedlight.asthaibangla.com/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://search.botanicaltech.com/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://spider.bringmespiderman.pictures/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://strawberry.eminescusm.ro/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -2125,7 +2066,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 8 |
+> | Proxy/Games | unknown | unknown | 5 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -2215,7 +2156,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 25 |
+> | Proxy/Games | captcha | Scramjet | 22 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -2249,7 +2190,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | libcurl, epoxy | Scramjet, Ultraviolet | 3 |
+> | Proxy/Games | libcurl, epoxy | Scramjet, Ultraviolet | 1 |
 
 > [!IMPORTANT]
 > Celestial does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -2257,14 +2198,13 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://celestialdevsalot.github.io/celestialisbest/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://celestial.press | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://celestialreadytoroll.statetestingstudies.com | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # ✨ Quasar
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 3 |
+> | Proxy/Games | captcha | Scramjet | 2 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -2279,7 +2219,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 11 |
+> | Proxy/Games | unknown | Scramjet | 8 |
 
 > [!IMPORTANT]
 > Cheesy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -2409,123 +2349,15 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy | unknown | unknown | 110 |
+> | Proxy | unknown | unknown | 2 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
-| | https://nzltavxzreim.orgic.cc/proxe | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://j7yq0hxpvm1z.blueprintdigital.ca/proxe | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://01s86gjvslsk.frazzydee.ca/proxe | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://wpp6g1pnw9ob.stremar.cl/proxe | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://francium.canlite.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://za3asxq8w921.cisua.tk | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://x8n1ncwfy66u.kitayori.cl | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://update.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://ujd4053nu5vr.delcarmen.cl | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://hiqz3eb060c9.undergames.cl | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://update.update.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://siky8osm1f6e.whatastupididea.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://update.update.update.admin.dev.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://update.update.update.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://update.update.update.test.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://update.update.update.update.dev.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://update.update.update.update.update.test.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://update.update.www.www.admin.dev.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://update.update.www.www.dev.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://update.update.www.www.test.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://www.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://hgevpoq7p3i3.veles-crimea.ru | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://3elt4zyxscws.blossomdeariemusicpublishing.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://update.www.www.dev.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://olfa8b2x4e2h.pandatropical.com.br | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://math.questions.manakamanafancystores.com.np | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://fdsagnoj2m80.macgyver.cf | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://math.questions.bibhutipoudel.com.np | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://awcqihoe.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://admin.dev.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://us9c3f18mk34.010939.xyz | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://update.www.www.www.www.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://math.questions.optimist-baleares.net | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://private1.free-web-proxy.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://ot1w5lc6kixc.freridein.nl | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://qgdzlhben51y.rymconstrucciones.cl | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://93qerddx7mp2.ciderspace.ch | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://nq5lwvsqxug9.kfa.cl | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://ourngyj1o3fq.avenuecarriagecrossing.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://y8dw994jchfa.warblerwings.com.np | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://storage.googleapis.com-10dtzncmy27fh8c.frcg.uk | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://d12tq8q68brx.keshabkafle.com.np | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://qnewiatr.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://math.questions.pyopt.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://z8gb37inhoeb.tribeoftwo.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://firefox.global.ssl.fastly.net | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://ye57yk04iovj.grupopilar.cl | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://rd1b0l8zusxi.extremelyorange.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://nwq64iho8wai.matijego.ar | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://test-wl.easterndns.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://v8w6guwfx4z3.cafemeridiano.com.br | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://g3yv7afxndo2.aifos.cl | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://www.qzeptsbn.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://math.questions.noviolencia.com.ar | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://www.ijzaoxia.www.www.admin.dev.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://uclj0e8p5af3.tvcana.com.br | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://n03d8yxoo7fh.suaf.com.ve | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://o8sotz5zxa9n.tclemons.me | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://e6d8ksc1d0vz.estudioladigan.com.ar | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://z3b1398o0qgu.blueprintdigital.ca | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://rhb68u3359bu.keejuan.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://01s86gjvslsk.frazzydee.ca | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://air9pgg10khj.mdanyel.xyz | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://math.questions.fishinwater.ru | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://xrln78eo8in7.sundardham.org.np | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://canlite.flamepass.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://0vrj7m9xb2y7.estudioindij.com.ar | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://math.questions.mfontcuberta.es | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://math.questions.pagangeek.net | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://canlite.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://k23hx11dk1id.playersdiner.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://lhc4ays7znuu.auntieplanty.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://7lfoctubzx38.matijego.ar | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://www.www.dev.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://math.questions.binou.eu | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://www.update.update.update.update.update.test.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://www.update.update.update.www.www.dev.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://0seeiux4mdsk.baumgardner.us | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://jljpqm7ldnb0.allintime.space | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://s08bxqtm58yo.yodetergente.cl | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://toviqrwn.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://08cysqvy17kq.virtopia.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://www.dgmikzon.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://fuhccs0gaqsi.eminescusm.ro | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://proxy-proxy-02.easterndns.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://math.questions.penandpiper.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://math.questions.ayvaparmar.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://o82l7brcr3tb.dayspringeugene.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://math.questions.viv.id.lv | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://canlite.org.cdn.cloudflare.net | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://math.questions.avicolapoiana.ro | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://j7yq0hxpvm1z.blueprintdigital.ca | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://1wdquo87alws.truckoccasion.ch | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://7f5bijuvfm3q.sebastianleyton.cl | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://9uss9tf0wzyd.fasoclash.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://www.update.jguutivl.update.admin.dev.bananaschool.duckdns.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://b39fo5en2baa.dynreisser.ch | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://0qzw2inz3ksa.mc3024.com.ve | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://w1cbjbk9zgny.gangashrestha.com.np | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://m50uebdtfypj.muvcomercial.com.ar | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://in7t75onpdfp.apexdoyak.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://sbbkmkib5tx2.oportuna.cl | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://math.questions.agreca.com.ar | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://script.google.com/macros/s/AKfycbxFgc6eMlC97epFZSuIWDjGvJ-q--hrqPJB_KrFIDazL1iKDfoosQ2w_5jWOxLMi5HndA/exec | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://script.google.com/macros/s/AKfycby0904KOR73LkC1iymAOSjOpkLfuDLfvaTvICEgc78AsPofM4qn2e-3Y4UA_5prDTFhpQ/exec | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
-| | https://nzltavxzreim.orgic.cc | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://mjwqj5kcqrzf.blossomdeariemusicpublishing.com | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://btib9o374vzn.notici.as | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://parkwaycentral.chc.ninja | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://www.jclsforp.bananaschool.duckdns.org/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🔺 Vertix
 > [!NOTE]
@@ -2616,40 +2448,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/transcendental-theorem-8966@main/INVADDEX.SVG | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/prime-fibonacci-6187@main/INVADDEX.SVG | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ✨ Infamous
-> [!NOTE]
-> | Category | Capabilities | Protocol(s) | Links |
-> | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, captcha | Scramjet, Ultraviolet | 24 |
-
-
-| Locked | Link | Found Date | Username | Password | Contributor |
-| - | - | - | - | - | - |
-| | https://inf34268.cyberninja.ie | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://inf55076.cyberninja.ie | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://inf90954.cyberninja.ie | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://infb711dd.myfdistribuidora.com.ar/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://inf6bdb04.hookextender.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://infc1a664.mchini.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://inf843535.mchini.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://inf0b8a4a.myfdistribuidora.com.ar/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://infb0d247.hookextender.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://inf1b4140.mchini.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://inf63834.myfdistribuidora.com.ar | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://inf33456.hookextender.com | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://inf31265.notinthearchives.net/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://infamous.qzz.io/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://inf59452.chrismccrory.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://inf50537.nutrait.co.kr | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://inf65982.real3m.com | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://inf68704.real3m.com | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://inf93381.real3m.com | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://inf85830.colloky.com.pe | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://readingstudies.v6.rocks | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://inf69580.ecolefrancophone.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://inf24624.thenme.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://scholarsupport.cfd | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-
 # 🌙 LuminalOS
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -2739,49 +2537,11 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://unstable-smp.vercel.app | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://tharun9772gaming.vercel.app | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
-# ▶️ Relic Network
-> [!NOTE]
-> | Category | Capabilities | Protocol(s) | Links |
-> | - | - | - | - |
-> | Proxy/Games | captcha | unknown | 29 |
-
-| Locked | Link | Found Date | Username | Password | Contributor |
-| - | - | - | - | - | - |
-| | https://starrlearning.txtlet.org/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://ilove.codeshs.org/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://api.cacmath.org/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://platform.codeshs.org/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://algebratests.skoolbuzz.net/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://teachme.codeshs.org/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://relicofficial.shop/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://relics.fritsche.org | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://platform.codeshs.org | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://anzo.codeshs.org | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://az.codeshs.org | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://coop.codeshs.org | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://cooper.codeshs.org | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://ide.codeshs.org | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://ilove.codeshs.org | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://lessons.codeshs.org | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://linewize.codeshs.org | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://products.codeshs.org | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://teachme.codeshs.org | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://codeshs.org | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://asknmefgd.panel-laboralcj.gob.mx | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://did-youknow-that-vacmadethislink.lol.rednutricional.cl | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://bomboclat-wallahi.urpalestinian.tokeslaszlo.eu | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://relic-summer.funmath.installgentoo.com | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://education.fun-school.globalgeocad.ro/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://nirbytesrelic-sanadnm.blixtrader.com | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://iizadfpqhs.diyhomeadvisors.com | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://zgfrjlllnk.funvenet.org.ve | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://67data.1337.cx/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-
 # 🗝️ 1Key
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 21 |
+> | Proxy/Games | unknown | unknown | 20 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -2800,7 +2560,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://practice-routine.isfacat.net | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://knowledge-flow.maverickden.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://focus-system.ncknms.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://study-performance.wayner.ca | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://think-learn-improve.bo-kite.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://plan-focus-succeed.carcano.me | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://study-hard-smart.derekcturner.net | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
@@ -2867,11 +2626,10 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | - | - | 816 |
+> | Games | - | - | 815 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
-| | https://duckduckgoose.tokeslaszlo.ro/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://weqweqw.meshtastic.hu | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://vfbiewaenxc.erbilek.com.tr/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://periodic-table.techmax.hk/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
@@ -3702,19 +3460,6 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://rhodium.thenme.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://edu.paschools.cfd/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🧮 BrunysIXLWork
-> [!NOTE]
-> | Category | Capabilities | Protocol(s) | Links |
-> | - | - | - | - |
-> | Proxy/Games | unknown | Ultraviolet | 4 |
-
-| Locked | Link | Found Date | Username | Password | Contributor |
-| - | - | - | - | - | - |
-| | https://8q09mjmdh229.academinctools.pw/ | 4/30/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://wayclock.pathfinderhh.de | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://perksofall.drsick.xyz | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://slideshowtemplates.vasyanproject21.pro | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-
 # ✨ Equinox
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -3850,35 +3595,12 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Ultraviolet | 4 |
+> | Proxy/Games | unknown | Ultraviolet | 2 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
-| | https://trigonometry.scientificsense.org | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://salsa.bellydancenetwork.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://warm-cloud.k12biology.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://h.shuttlemath.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-
-# ✖️ Xylora
-> [!NOTE]
-> | Category | Capabilities | Protocol(s) | Links |
-> | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 12 |
-
-| Locked | Link | Found Date | Username | Password | Contributor |
-| - | - | - | - | - | - |
-| | https://xylora.notariamelipilla.cl | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://sub.to.playernation.xylora.renaca.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://join.mizumath.babypos.hk | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://xylora.vta-international.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://summer.hot.sun.longerdays.shorternights.japan.is | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://play.nation.xylora.beltfrog.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://xylora.co.ldeazevedo.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://vcsa.easternstamps.com | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://xylora.searching.dirtchicvt.com | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://xylora.rust.rusticrivergear.com | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://xylora.rust.rusticrivergear.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://xylora.searching.dirtchicvt.com/ | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
 # 👟 Nikehub
 > [!NOTE]
@@ -3905,7 +3627,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 7 |
+> | Proxy/Games | unknown | unknown | 1 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -4070,7 +3792,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 22 |
+> | pending | pending | pending | 21 |
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
 
@@ -4166,7 +3888,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 2 |
+> | pending | pending | pending | 1 |
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
 
@@ -4197,13 +3919,12 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 79 |
+> | pending | pending | pending | 78 |
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
-| | https://cdn.jsdelivr.net/gh/AetherGamesOfficial/Aetherstatic@0ad1abf/studyhub.svg | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdelivr.net/gh/AetherGamesOfficial/math@0ad1abf/studyhub.svg | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://food.aliceluhu67.workers.dev/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://html.aliceluhu67.workers.dev/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
