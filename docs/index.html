@@ -588,6 +588,10 @@
       border-radius: 8px;
     }
     label[for="q"] { display: block; font-size: 0.75rem; color: var(--muted); margin-bottom: 0.35rem; text-transform: uppercase; letter-spacing: 0.04em; }
+    .search-wrap {
+      position: relative;
+      margin-bottom: 1rem;
+    }
     input[type="search"] {
       width: 100%;
       padding: 0.5rem 0.65rem;
@@ -596,11 +600,61 @@
       background: var(--surface);
       color: var(--text);
       font-size: 0.9rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0;
     }
     input[type="search"]:focus {
       outline: 2px solid var(--accent);
       outline-offset: 1px;
+    }
+    .search-suggest {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: calc(100% + 4px);
+      z-index: 40;
+      margin: 0;
+      padding: 0.25rem 0;
+      list-style: none;
+      max-height: 14rem;
+      overflow-y: auto;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--surface);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+    .search-suggest[hidden] { display: none; }
+    .search-suggest-item {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      width: 100%;
+      margin: 0;
+      padding: 0.45rem 0.65rem;
+      border: 0;
+      background: transparent;
+      color: var(--text);
+      font: inherit;
+      font-size: 0.85rem;
+      text-align: left;
+      cursor: pointer;
+    }
+    .search-suggest-item:hover,
+    .search-suggest-item[aria-selected="true"] {
+      background: var(--border);
+    }
+    .search-suggest-kind {
+      flex: 0 0 auto;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+    }
+    .search-suggest-value {
+      flex: 1 1 auto;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     .filter-reset {
       margin: 0.25rem 0 0;
@@ -1563,7 +1617,20 @@
       </fieldset>
 
       <label for="q">Search</label>
-      <input type="search" id="q" placeholder="URL, provider, contributor…" autocomplete="off" />
+      <div class="search-wrap">
+        <input
+          type="search"
+          id="q"
+          placeholder="URL, provider, contributor…"
+          autocomplete="off"
+          spellcheck="false"
+          role="combobox"
+          aria-autocomplete="list"
+          aria-controls="qSuggest"
+          aria-expanded="false"
+        />
+        <ul id="qSuggest" class="search-suggest" role="listbox" hidden></ul>
+      </div>
 
       <fieldset>
         <legend>Link order</legend>
@@ -2304,6 +2371,7 @@
       } catch (_) {}
       const q = $("q");
       if (q) q.value = "";
+      hideSearchSuggestions();
       setCheckboxGroup("providerTags", []);
       setCheckboxGroup("categoryTags", []);
       setCheckboxGroup("protocolTags", []);
@@ -4432,6 +4500,221 @@
         row.contributor_url || "",
         row.found,
       ].join(" ").toLowerCase();
+    }
+
+    const SEARCH_SUGGEST_LIMIT = 8;
+    let searchSuggestItems = [];
+    let searchSuggestActive = -1;
+    let searchSuggestIndex = null;
+
+    function providerSuggestLabel(provider) {
+      const s = String(provider || "");
+      // Drop leading emoji / symbols so typing "Selenite" matches "💜 Selenite".
+      return s.replace(/^[^A-Za-z0-9#]+/, "").trim() || s;
+    }
+
+    function buildSearchSuggestIndex(rows) {
+      const providers = new Map();
+      const links = [];
+      const seenLinks = new Set();
+      for (const row of rows || []) {
+        const provider = String((row && row.provider) || "").trim();
+        if (provider) {
+          const key = provider.toLowerCase();
+          if (!providers.has(key)) {
+            providers.set(key, {
+              kind: "provider",
+              value: provider,
+              label: provider,
+              match: (provider + " " + providerSuggestLabel(provider)).toLowerCase(),
+            });
+          }
+        }
+        const link = String((row && row.link) || "").trim();
+        if (!link) continue;
+        const nk = link.toLowerCase();
+        if (seenLinks.has(nk)) continue;
+        seenLinks.add(nk);
+        links.push({
+          kind: "url",
+          value: link,
+          label: link,
+          match: nk,
+        });
+      }
+      searchSuggestIndex = {
+        providers: [...providers.values()].sort((a, b) => a.label.localeCompare(b.label)),
+        links,
+      };
+    }
+
+    function rankSuggestMatch(item, q) {
+      const m = item.match || "";
+      if (m === q) return 0;
+      if (m.startsWith(q)) return 1;
+      const bare = item.kind === "provider" ? providerSuggestLabel(item.value).toLowerCase() : m;
+      if (bare.startsWith(q)) return 2;
+      if (m.includes(q)) return 3;
+      return 9;
+    }
+
+    function collectSearchSuggestions(query) {
+      const q = String(query || "").trim().toLowerCase();
+      if (!q || q.length < 1 || !searchSuggestIndex) return [];
+      const scored = [];
+      for (const item of searchSuggestIndex.providers) {
+        const rank = rankSuggestMatch(item, q);
+        if (rank < 9) scored.push({ item, rank, tie: 0 });
+      }
+      for (const item of searchSuggestIndex.links) {
+        const rank = rankSuggestMatch(item, q);
+        if (rank < 9) scored.push({ item, rank, tie: 1 });
+      }
+      scored.sort((a, b) => a.rank - b.rank || a.tie - b.tie || a.item.label.localeCompare(b.item.label));
+      return scored.slice(0, SEARCH_SUGGEST_LIMIT).map((x) => x.item);
+    }
+
+    function hideSearchSuggestions() {
+      const list = $("qSuggest");
+      const input = $("q");
+      searchSuggestItems = [];
+      searchSuggestActive = -1;
+      if (list) {
+        list.hidden = true;
+        setHtml(list, "");
+      }
+      if (input) input.setAttribute("aria-expanded", "false");
+    }
+
+    function paintSearchSuggestActive() {
+      const list = $("qSuggest");
+      if (!list) return;
+      const buttons = list.querySelectorAll(".search-suggest-item");
+      buttons.forEach((btn, i) => {
+        btn.setAttribute("aria-selected", i === searchSuggestActive ? "true" : "false");
+      });
+      const active = buttons[searchSuggestActive];
+      if (active && typeof active.scrollIntoView === "function") {
+        active.scrollIntoView({ block: "nearest" });
+      }
+    }
+
+    function renderSearchSuggestions(query) {
+      const list = $("qSuggest");
+      const input = $("q");
+      if (!list || !input) return;
+      const items = collectSearchSuggestions(query);
+      searchSuggestItems = items;
+      if (!items.length) {
+        hideSearchSuggestions();
+        return;
+      }
+      if (searchSuggestActive >= items.length) searchSuggestActive = items.length - 1;
+      if (searchSuggestActive < 0) searchSuggestActive = 0;
+      setHtml(
+        list,
+        items
+          .map((item, i) => {
+            const kind = item.kind === "provider" ? "Provider" : "URL";
+            return (
+              '<li role="presentation">' +
+              '<button type="button" class="search-suggest-item" role="option" id="qSuggestOpt' +
+              i +
+              '" data-suggest-index="' +
+              i +
+              '" aria-selected="' +
+              (i === searchSuggestActive ? "true" : "false") +
+              '">' +
+              '<span class="search-suggest-kind">' +
+              escapeHtml(kind) +
+              "</span>" +
+              '<span class="search-suggest-value">' +
+              escapeHtml(item.label) +
+              "</span>" +
+              "</button></li>"
+            );
+          })
+          .join("")
+      );
+      list.hidden = false;
+      input.setAttribute("aria-expanded", "true");
+      input.setAttribute("aria-activedescendant", "qSuggestOpt" + searchSuggestActive);
+    }
+
+    function applySearchSuggestion(item) {
+      const input = $("q");
+      if (!input || !item) return;
+      input.value = item.value;
+      hideSearchSuggestions();
+      if (pageContext) {
+        render(pageContext.links, pageContext.meta, pageContext.link_check);
+        scheduleUserProfileWrite();
+      }
+      input.focus();
+    }
+
+    function wireSearchAutocomplete(rows) {
+      buildSearchSuggestIndex(rows);
+      const input = $("q");
+      const list = $("qSuggest");
+      if (!input || !list || input.dataset.suggestWired === "1") return;
+      input.dataset.suggestWired = "1";
+
+      input.addEventListener("input", () => {
+        renderSearchSuggestions(input.value);
+      });
+      input.addEventListener("keydown", (ev) => {
+        const open = list && !list.hidden && searchSuggestItems.length > 0;
+        if (ev.key === "ArrowDown") {
+          if (!open) {
+            renderSearchSuggestions(input.value);
+            if (!searchSuggestItems.length) return;
+          }
+          ev.preventDefault();
+          searchSuggestActive = Math.min(searchSuggestItems.length - 1, searchSuggestActive + 1);
+          if (searchSuggestActive < 0) searchSuggestActive = 0;
+          paintSearchSuggestActive();
+          input.setAttribute("aria-activedescendant", "qSuggestOpt" + searchSuggestActive);
+          return;
+        }
+        if (ev.key === "ArrowUp") {
+          if (!open) return;
+          ev.preventDefault();
+          searchSuggestActive = Math.max(0, searchSuggestActive - 1);
+          paintSearchSuggestActive();
+          input.setAttribute("aria-activedescendant", "qSuggestOpt" + searchSuggestActive);
+          return;
+        }
+        if (ev.key === "Escape") {
+          if (open) {
+            ev.preventDefault();
+            hideSearchSuggestions();
+          }
+          return;
+        }
+        if ((ev.key === "Tab" || ev.key === "Enter") && open) {
+          const idx = searchSuggestActive >= 0 ? searchSuggestActive : 0;
+          const item = searchSuggestItems[idx];
+          if (!item) return;
+          ev.preventDefault();
+          applySearchSuggestion(item);
+        }
+      });
+      input.addEventListener("blur", () => {
+        // Allow click on a suggestion to register before hiding.
+        setTimeout(() => {
+          if (document.activeElement && list.contains(document.activeElement)) return;
+          hideSearchSuggestions();
+        }, 120);
+      });
+      list.addEventListener("mousedown", (ev) => {
+        const btn = ev.target && ev.target.closest ? ev.target.closest(".search-suggest-item") : null;
+        if (!btn) return;
+        ev.preventDefault();
+        const idx = Number(btn.getAttribute("data-suggest-index"));
+        const item = searchSuggestItems[idx];
+        if (item) applySearchSuggestion(item);
+      });
     }
 
     function trustedListRowsByNorm() {
@@ -7096,6 +7379,7 @@
         function resetAllFilters() {
           const q = $("q");
           if (q) q.value = "";
+          hideSearchSuggestions();
           for (const id of ["providerTags", "categoryTags", "protocolTags", "capTags"]) {
             const wrap = $(id);
             if (!wrap) continue;
@@ -7120,6 +7404,7 @@
           scheduleUserProfileWrite();
         }
 
+        wireSearchAutocomplete(links);
         $("q").addEventListener("input", () => {
           render(links, meta, link_check);
           scheduleUserProfileWrite();
