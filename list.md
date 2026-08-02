@@ -22,7 +22,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 
 Removed over 1.9K bad unsorted links. This should hopefully help with the clutter that was previously there with all the random links.
 
-# ≡ƒÆ£ Selenite
+# 💜 Selenite
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -36,7 +36,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://slnt.frenchchurch.org/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://learn.englishbridalcouture.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒîÖ Velara
+# 🌙 Velara
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -116,7 +116,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://rate.papillon.cl/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://rear.frhumannet.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# Γ₧ù gn-math
+# ➗ gn-math
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -181,7 +181,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://quizizz-static.s3-accelerate.amazonaws.com/_media/uploadedFiles/3593eb84-f05f-46bf-96d6-9a44f70d1114-v2 | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://albin.tabulasync.com | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒÉ╕ frogie's arcade
+# 🐸 frogie's arcade
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -232,7 +232,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://frogieone.theworkpc.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://frogiesarcade.firebaseapp.com | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒìî Jordan's Math Work
+# 🍌 Jordan's Math Work
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -248,7 +248,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://amd74.gpu74.ru/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://limto.riesgocrediticio.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# Γ¡É DayDream X
+# ⭐ DayDream X
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -291,7 +291,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 |  | https://daydreaming.realisation.org | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://daydreaming.tomashirsch.cl | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒÜÇ Nebulo
+# 🚀 Nebulo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -312,7 +312,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://cdn.jsdelivr.net/gh/Nebuli-OS/Nebuli-OS.github.io@latest/assets/mini/index.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://script.google.com/macros/s/AKfycbyuXz7H4piCfX_T7FdY3uuWfQ3sVg1VWZrqE_FGsQusWmZ7btRhWVOAYk59hx4i5G_7ZQ/exec | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒîæ Space
+# 🌑 Space
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -352,7 +352,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 |  | https://outerspace.tomashirsch.cl | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://science.cthulhu.li | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒ¬┤ Fern
+# 🪴 Fern
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -400,7 +400,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://fern.buf2.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://fern.krepche.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒìä Truffled
+# 🍄 Truffled
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -498,7 +498,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://bids.topmoto.pl/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://berg.ptgrowthasia.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒÑ▒ Boredom
+# 🥱 Boredom
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -517,7 +517,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://api.en.v2202508297531378155.powersrv.de/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://boredomss.a.ssl.fastly.net | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒÆ¿ Vapor
+# 💨 Vapor
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -530,7 +530,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | - | - | - | - | - | - |
 | | https://ixlwork.storage.googleapis.com/ | 3/17/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒæñ Shadow
+# 👤 Shadow
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -584,7 +584,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://curiousscience.garoli.com.mx/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://curiousphysics.paken.net/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒÉ╢ dogeub
+# 🐶 dogeub
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -680,7 +680,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://login-google.sylu.net.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://dogeub.storage.googleapis.com/index.html | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒîò Lunar
+# 🌕 Lunar
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -729,7 +729,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 |  | https://gowith.lunar.eminescusm.ro | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://deend.gcpservicios.cl | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒæ╗ Ghost
+# 👻 Ghost
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -760,7 +760,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://ydtjut.67lol.fwh.is | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://edu.67lol.fwh.is | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒìò PeteZah
+# 🍕 PeteZah
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -786,7 +786,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://petezah.tribumaternate.cl/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://science.doingtechnology.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒò│∩╕Å Rift
+# 🕳️ Rift
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -800,7 +800,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://firefrog6710.firebaseapp.com/games | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |
 
-# ≡ƒÅ┤ OverCloaked
+# 🏴 OverCloaked
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -836,7 +836,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://s3.amazonaws.com/elliotslinks-tnjavxyp/essay71679/index.html | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://s3.amazonaws.com/elliotslinks-tnjavxyp/quiz10430/index.html | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒÿê Imp Proxy
+# 😈 Imp Proxy
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -934,7 +934,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://qxkct.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://ypqsc.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
-# ≡ƒì½ Endis
+# 🍫 Endis
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -946,7 +946,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://classroom.reformdecor.org/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 |  | https://endis.it.com | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒÅ¢∩╕Å Dominum
+# 🏛️ Dominum
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1362,7 +1362,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://unpkg.com/secure-test-browser-2o7y1f6z/index.html | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://sites.google.com/view/dominumnetworkv2 | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒÄ« Rosin
+# 🎮 Rosin
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1375,7 +1375,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | - | - | - | - | - | - |
 | | https://math.free-dyndns.org/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# Γ¼í TGLSC Density 4
+# ⬡ TGLSC Density 4
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1405,7 +1405,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://twistedgocrazy26.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://v4.glseries.net | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ΓÖê Zodiac
+# ♈ Zodiac
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1428,7 +1428,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://tundra-network-ontop.publicvm.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://zod.frozen-zodiac.dedyn.io/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒôû StudyHub
+# 📖 StudyHub
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1577,7 +1577,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://allow.krepche.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://lesson.glamourfreaks.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒìô Strawberri
+# 🍓 Strawberri
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1694,7 +1694,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://area.mantavyagajjar.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://mathsri.krepche.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒº▒ Noblocc
+# 🧱 Noblocc
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1713,7 +1713,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 |  | https://nobloccstatus.pages.dev | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://nobloccstatus.mattle.uk | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒªä Utopia Education
+# 🦄 Utopia Education
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1769,7 +1769,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://self.gcpservicios.cl | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://mood.cthulhu.li | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒîÿ Lunaar
+# 🌘 Lunaar
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1783,7 +1783,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://src.sixorizon.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://viper.thevideobay.org/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒñì Lucide
+# 🤍 Lucide
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1815,7 +1815,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://timmy.zapier.app/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://storage.googleapis.com/lucide/index.html | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒö╖ Celestial
+# 🔷 Celestial
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1829,7 +1829,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://celestialdevsalot.github.io/celestialisbest/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://celestialreadytoroll.statetestingstudies.com | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# Γ£¿ Quasar
+# ✨ Quasar
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1843,7 +1843,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://contentkeepermaster3009.deltacompy.com.br/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://wearecharliekirkman.daybits.net/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒºÇ Cheesy
+# 🧀 Cheesy
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1863,7 +1863,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://tuffmango.grahammurryinsuranceagency.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://cheesyweb.tech | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
-# ≡ƒö½ AWP
+# 🔫 AWP
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1876,7 +1876,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | - | - | - | - | - | - |
 | | https://shop.seidocosmetics.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 
-# ≡ƒæÑ InvisiProxy
+# 👥 InvisiProxy
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1965,7 +1965,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://hauntbanjo.org/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://videovideoplayer.org/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒôí CanLite
+# 📡 CanLite
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1979,7 +1979,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://script.google.com/macros/s/AKfycbxFgc6eMlC97epFZSuIWDjGvJ-q--hrqPJB_KrFIDazL1iKDfoosQ2w_5jWOxLMi5HndA/exec | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://script.google.com/macros/s/AKfycby0904KOR73LkC1iymAOSjOpkLfuDLfvaTvICEgc78AsPofM4qn2e-3Y4UA_5prDTFhpQ/exec | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
-# ≡ƒö║ Vertix
+# 🔺 Vertix
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1992,7 +1992,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | - | - | - | - | - | - |
 | | https://div7ikqm4o515.cloudfront.net/ | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒ½ÿ Sea Bean
+# 🫘 Sea Bean
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -2068,7 +2068,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/transcendental-theorem-8966@main/INVADDEX.SVG | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/prime-fibonacci-6187@main/INVADDEX.SVG | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒîÖ LuminalOS
+# 🌙 LuminalOS
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -2083,7 +2083,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://donut.muffin.glenoriebakery.com.au/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://luminal.lol | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# Γ¥ñ∩╕Å BloxCraft Games
+# ❤️ BloxCraft Games
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -2158,7 +2158,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://unstable-smp.vercel.app | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://tharun9772gaming.vercel.app | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
-# ≡ƒù¥∩╕Å 1Key
+# 🗝️ 1Key
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -2187,7 +2187,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://learn-build-grow.findelschnecke.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://focus-train-achieve.horizonpublishingllc.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
-# ≡ƒƒ¿ Noahs Tutoring
+# 🟨 Noahs Tutoring
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -2212,7 +2212,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://bulls.are.better.than.noah.lehtikangas.fi/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://nonoski.web.app/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒºí Nexora
+# 🧡 Nexora
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -2222,7 +2222,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | - | - | - | - | - | - |
 | | https://noterplusfire02.web.app/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒÿ╝ Marz
+# 😼 Marz
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -2233,7 +2233,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://trim.barberduck.ro/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://trimmer.barberduck.ro/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒºæΓÇì≡ƒºÆΓÇì≡ƒºÆ Soul
+# 🧑‍🧒‍🧒 Soul
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -2243,7 +2243,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | - | - | - | - | - | - |
 | | https://mathtutors4school.firebaseapp.com/index.html | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒªå Duckmath
+# 🦆 Duckmath
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3064,7 +3064,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://media.blooket.com/raw/upload/h5d7sjzcdk228iiwytyl.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://media.blooket.com/raw/upload/ztzl8ggy8mv6x5wii5fh.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ΓÜ¢∩╕Å Rhodium
+# ⚛️ Rhodium
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3078,7 +3078,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://rhodium.thenme.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://edu.paschools.cfd/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# Γ£¿ Equinox
+# ✨ Equinox
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3095,7 +3095,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://mathbull.democrata.ar | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://equal.bulls.ferrosider.com.ar/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒîò Luna
+# 🌕 Luna
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3105,7 +3105,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | - | - | - | - | - | - |
 | | https://finleyisabum.vixenlights.com/ | 4/30/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
-# ≡ƒºè Arctic
+# 🧊 Arctic
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3140,7 +3140,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://codewith.it/p/7P5slc | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://sites.google.com/view/dailysealfacts | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒôÜ OnlyLessons
+# 📚 OnlyLessons
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3157,7 +3157,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://education.math.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://martnullscapeacademy.lisd.net.galaxysoft.ro | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# Γ¥ä∩╕Å Frosted
+# ❄️ Frosted
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3173,7 +3173,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://sites.google.com/view/rainbowsvg/chudding | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://sites.google.com/view/statichtmlsite/static | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒÜÇ Shuttle
+# 🚀 Shuttle
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3184,7 +3184,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://salsa.bellydancenetwork.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://h.shuttlemath.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 
-# ≡ƒæƒ Nikehub
+# 👟 Nikehub
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3195,7 +3195,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://cdn.jsdelivr.net/gh/avaisadev/github.com/index.svg | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdelivr.net/gh/avaisadev/how-to-use-linux@main/index.svg | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒîò MoonPie
+# 🌕 MoonPie
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3205,7 +3205,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | - | - | - | - | - | - |
 | | https://business-worldwide-solutions.notariamelipilla.cl | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
-# ≡ƒÆ½ Orbit
+# 💫 Orbit
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3215,7 +3215,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | - | - | - | - | - | - |
 | | https://poki-boyy.firebaseapp.com/browser.html | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒöÑ Flamed Lite
+# 🔥 Flamed Lite
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3226,7 +3226,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://fastly.jsdelivr.net/gh/Flamed-Games/Flamed-Lite@main/index.svg | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://quantil.jsdelivr.net/gh/Flamed-Games/Flamed-Lite@main/index.svg | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
-# ≡ƒæ╛ Zyron
+# 👾 Zyron
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3236,7 +3236,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | - | - | - | - | - | - |
 | | https://ixlmathteacherpanel.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
-# ≡ƒ¬╡ Tung Tung
+# 🪵 Tung Tung
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3293,7 +3293,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://ttpscience.mantavyagajjar.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://formula.glamourfreaks.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒîî Secured V3
+# 🌌 Secured V3
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3304,7 +3304,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://madebyplyrnationforsk.hjshop.net/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://sites.google.com/view/oldsecuredweb | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒôä Dll
+# 📄 Dll
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3318,7 +3318,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://paintbrush-journal-8500.dllontop.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://chalk-eraser-metronome-3426.dllontop.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒô▒ ES Network
+# 📱 ES Network
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3402,7 +3402,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | - | - | - | - | - | - |
 | | https://nike.global.ssl.fastly.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒî╕ Cherri
+# 🌸 Cherri
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3562,7 +3562,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://originfastly.jsdelivr.net/gh/AetherGamesOfficial/AetherEducationStatic@26b0f7c/index.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://testingcf.jsdelivr.net/gh/AetherGamesOfficial/AetherEducationStatic@26b0f7c/index.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒÄ» Snipershot
+# 🎯 Snipershot
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3587,7 +3587,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://medevmadethistufflink.medicalscience.academy | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://mickerino.medicalscience.academy | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒöù Nexus
+# 🔗 Nexus
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3645,7 +3645,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://aria.joeliriano.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://aura.music-menges.si/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# Γ£¿ BestSpark
+# ✨ BestSpark
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3671,7 +3671,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://bestspark.oxsec.com.mx | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://bestspark.windowpublication.com.np | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒöô Unblockedzone
+# 🔓 Unblockedzone
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3811,7 +3811,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://jsd.onmicrosoft.cn/combine/gh/googleaccountuser/myfirstrepo/windows10background.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdmirror.com/combine/gh/googleaccountuser/myfirstrepo/windows10background.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒÜó Voya
+# 🚢 Voya
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3833,7 +3833,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://voya.krepche.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://voya.worldmicroscope.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒÉ▒ Cat Class
+# 🐱 Cat Class
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -4004,7 +4004,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://lunar-tiger81.learninghub.fit/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://lunar-runner41.ssquatch.lol/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒºè C00lkidtech
+# 🧊 C00lkidtech
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -4030,7 +4030,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://quizizz-static.s3-accelerate.amazonaws.com/_media/c00lkiddtech/202e1619-3a7e-457b-b81a-431ae9dde942-v2 | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://media.blooket.com/raw/upload/ztgon1dzdqwrsrbyryxe.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒôÿ Zaka EDU
+# 📘 Zaka EDU
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -4046,7 +4046,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://zaka13.web.app/v5.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://zc13.pages.dev/v5.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ≡ƒîÖ Nocturne
+# 🌙 Nocturne
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -4058,7 +4058,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | - | - | - | - | - | - |
 | | https://cdn.imageurlgenerator.com/uploads/ca803644-49df-4030-81fc-6fe1748033c6.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# Γ¡É Polaris
+# ⭐ Polaris
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
