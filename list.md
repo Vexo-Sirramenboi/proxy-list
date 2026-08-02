@@ -1,8 +1,8 @@
 # Proxy List
 > [!NOTE]
-> v5.4 | Released: August 01, 2026
-> r254 | Last Updated: August 02, 2026
-> Total onsite links: 5714 (3851 sorted + 1863 unsorted)\
+> v5.4.1 | Released: August 02, 2026
+> r255 | Last Updated: August 02, 2026
+> Total onsite links: 3533 (3191 sorted + 342 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
 Welcome to the official Proxy List! This has a running list of hundreds of unblocked websites and games that anyone is free to use. We have the most popular and reliable sites here, so you'll never run out!
@@ -20,11 +20,9 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 
 ## Update Notice
 
-- Added over 2,000 links (some have incomplete data).
-- Fixed a bug causing link checks to fail and accumulate instead of removing after 3 fails
-- Security fixes
+Removed over 1.9K bad unsorted links. This should hopefully help with the clutter that was previously there with all the random links.
 
-# 💜 Selenite
+# ≡ƒÆ£ Selenite
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -38,7 +36,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://slnt.frenchchurch.org/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://learn.englishbridalcouture.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🌙 Velara
+# ≡ƒîÖ Velara
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -118,7 +116,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://rate.papillon.cl/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://rear.frhumannet.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ➗ gn-math
+# Γ₧ù gn-math
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -183,7 +181,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://quizizz-static.s3-accelerate.amazonaws.com/_media/uploadedFiles/3593eb84-f05f-46bf-96d6-9a44f70d1114-v2 | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://albin.tabulasync.com | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🐸 frogie's arcade
+# ≡ƒÉ╕ frogie's arcade
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -234,7 +232,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://frogieone.theworkpc.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://frogiesarcade.firebaseapp.com | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🍌 Jordan's Math Work
+# ≡ƒìî Jordan's Math Work
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -250,7 +248,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://amd74.gpu74.ru/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://limto.riesgocrediticio.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ⭐ DayDream X
+# Γ¡É DayDream X
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -293,7 +291,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 |  | https://daydreaming.realisation.org | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://daydreaming.tomashirsch.cl | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🚀 Nebulo
+# ≡ƒÜÇ Nebulo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -314,7 +312,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://cdn.jsdelivr.net/gh/Nebuli-OS/Nebuli-OS.github.io@latest/assets/mini/index.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://script.google.com/macros/s/AKfycbyuXz7H4piCfX_T7FdY3uuWfQ3sVg1VWZrqE_FGsQusWmZ7btRhWVOAYk59hx4i5G_7ZQ/exec | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🌑 Space
+# ≡ƒîæ Space
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -354,7 +352,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 |  | https://outerspace.tomashirsch.cl | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://science.cthulhu.li | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🪴 Fern
+# ≡ƒ¬┤ Fern
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -402,7 +400,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://fern.buf2.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://fern.krepche.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🍄 Truffled
+# ≡ƒìä Truffled
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -500,7 +498,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://bids.topmoto.pl/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://berg.ptgrowthasia.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🥱 Boredom
+# ≡ƒÑ▒ Boredom
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -519,7 +517,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://api.en.v2202508297531378155.powersrv.de/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://boredomss.a.ssl.fastly.net | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 💨 Vapor
+# ≡ƒÆ¿ Vapor
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -532,7 +530,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | - | - | - | - | - | - |
 | | https://ixlwork.storage.googleapis.com/ | 3/17/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 👤 Shadow
+# ≡ƒæñ Shadow
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -586,7 +584,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://curiousscience.garoli.com.mx/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://curiousphysics.paken.net/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🐶 dogeub
+# ≡ƒÉ╢ dogeub
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -682,7 +680,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://login-google.sylu.net.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://dogeub.storage.googleapis.com/index.html | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🌕 Lunar
+# ≡ƒîò Lunar
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -731,7 +729,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 |  | https://gowith.lunar.eminescusm.ro | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://deend.gcpservicios.cl | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 👻 Ghost
+# ≡ƒæ╗ Ghost
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -762,7 +760,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://ydtjut.67lol.fwh.is | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://edu.67lol.fwh.is | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🍕 PeteZah
+# ≡ƒìò PeteZah
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -788,7 +786,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://petezah.tribumaternate.cl/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://science.doingtechnology.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🕳️ Rift
+# ≡ƒò│∩╕Å Rift
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -802,7 +800,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://firefrog6710.firebaseapp.com/games | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |
 
-# 🏴 OverCloaked
+# ≡ƒÅ┤ OverCloaked
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -838,7 +836,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://s3.amazonaws.com/elliotslinks-tnjavxyp/essay71679/index.html | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://s3.amazonaws.com/elliotslinks-tnjavxyp/quiz10430/index.html | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 😈 Imp Proxy
+# ≡ƒÿê Imp Proxy
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -936,7 +934,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://qxkct.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://ypqsc.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
-# 🍫 Endis
+# ≡ƒì½ Endis
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -948,7 +946,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://classroom.reformdecor.org/ | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 |  | https://endis.it.com | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🏛️ Dominum
+# ≡ƒÅ¢∩╕Å Dominum
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1364,7 +1362,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://unpkg.com/secure-test-browser-2o7y1f6z/index.html | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://sites.google.com/view/dominumnetworkv2 | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🎮 Rosin
+# ≡ƒÄ« Rosin
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1377,7 +1375,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | - | - | - | - | - | - |
 | | https://math.free-dyndns.org/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ⬡ TGLSC Density 4
+# Γ¼í TGLSC Density 4
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1407,7 +1405,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://twistedgocrazy26.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://v4.glseries.net | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ♈ Zodiac
+# ΓÖê Zodiac
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1430,7 +1428,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://tundra-network-ontop.publicvm.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://zod.frozen-zodiac.dedyn.io/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 📖 StudyHub
+# ≡ƒôû StudyHub
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1579,7 +1577,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://allow.krepche.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://lesson.glamourfreaks.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🍓 Strawberri
+# ≡ƒìô Strawberri
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1696,7 +1694,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://area.mantavyagajjar.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://mathsri.krepche.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🧱 Noblocc
+# ≡ƒº▒ Noblocc
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1715,7 +1713,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 |  | https://nobloccstatus.pages.dev | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://nobloccstatus.mattle.uk | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🦄 Utopia Education
+# ≡ƒªä Utopia Education
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1771,7 +1769,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://self.gcpservicios.cl | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://mood.cthulhu.li | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🌘 Lunaar
+# ≡ƒîÿ Lunaar
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1785,7 +1783,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://src.sixorizon.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://viper.thevideobay.org/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🤍 Lucide
+# ≡ƒñì Lucide
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1817,7 +1815,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://timmy.zapier.app/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://storage.googleapis.com/lucide/index.html | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🔷 Celestial
+# ≡ƒö╖ Celestial
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1831,7 +1829,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://celestialdevsalot.github.io/celestialisbest/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://celestialreadytoroll.statetestingstudies.com | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ✨ Quasar
+# Γ£¿ Quasar
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1845,7 +1843,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://contentkeepermaster3009.deltacompy.com.br/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://wearecharliekirkman.daybits.net/ | 5/14/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🧀 Cheesy
+# ≡ƒºÇ Cheesy
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1865,7 +1863,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://tuffmango.grahammurryinsuranceagency.com | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://cheesyweb.tech | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
-# 🔫 AWP
+# ≡ƒö½ AWP
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1878,7 +1876,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | - | - | - | - | - | - |
 | | https://shop.seidocosmetics.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 
-# 👥 InvisiProxy
+# ≡ƒæÑ InvisiProxy
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1967,7 +1965,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://hauntbanjo.org/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://videovideoplayer.org/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 📡 CanLite
+# ≡ƒôí CanLite
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1981,7 +1979,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://script.google.com/macros/s/AKfycbxFgc6eMlC97epFZSuIWDjGvJ-q--hrqPJB_KrFIDazL1iKDfoosQ2w_5jWOxLMi5HndA/exec | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://script.google.com/macros/s/AKfycby0904KOR73LkC1iymAOSjOpkLfuDLfvaTvICEgc78AsPofM4qn2e-3Y4UA_5prDTFhpQ/exec | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 
-# 🔺 Vertix
+# ≡ƒö║ Vertix
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -1994,7 +1992,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | - | - | - | - | - | - |
 | | https://div7ikqm4o515.cloudfront.net/ | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🫘 Sea Bean
+# ≡ƒ½ÿ Sea Bean
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -2070,7 +2068,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/transcendental-theorem-8966@main/INVADDEX.SVG | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/prime-fibonacci-6187@main/INVADDEX.SVG | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🌙 LuminalOS
+# ≡ƒîÖ LuminalOS
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -2085,7 +2083,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://donut.muffin.glenoriebakery.com.au/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://luminal.lol | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ❤️ BloxCraft Games
+# Γ¥ñ∩╕Å BloxCraft Games
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -2160,7 +2158,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://unstable-smp.vercel.app | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://tharun9772gaming.vercel.app | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
-# 🗝️ 1Key
+# ≡ƒù¥∩╕Å 1Key
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -2189,7 +2187,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://learn-build-grow.findelschnecke.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://focus-train-achieve.horizonpublishingllc.com | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
-# 🟨 Noahs Tutoring
+# ≡ƒƒ¿ Noahs Tutoring
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -2214,7 +2212,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://bulls.are.better.than.noah.lehtikangas.fi/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://nonoski.web.app/ | 6/7/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🧡 Nexora
+# ≡ƒºí Nexora
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -2224,7 +2222,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | - | - | - | - | - | - |
 | | https://noterplusfire02.web.app/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 😼 Marz
+# ≡ƒÿ╝ Marz
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -2235,7 +2233,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://trim.barberduck.ro/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://trimmer.barberduck.ro/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🧑‍🧒‍🧒 Soul
+# ≡ƒºæΓÇì≡ƒºÆΓÇì≡ƒºÆ Soul
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -2245,7 +2243,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | - | - | - | - | - | - |
 | | https://mathtutors4school.firebaseapp.com/index.html | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🦆 Duckmath
+# ≡ƒªå Duckmath
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3066,7 +3064,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://media.blooket.com/raw/upload/h5d7sjzcdk228iiwytyl.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://media.blooket.com/raw/upload/ztzl8ggy8mv6x5wii5fh.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ⚛️ Rhodium
+# ΓÜ¢∩╕Å Rhodium
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3080,7 +3078,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://rhodium.thenme.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://edu.paschools.cfd/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ✨ Equinox
+# Γ£¿ Equinox
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3097,7 +3095,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://mathbull.democrata.ar | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://equal.bulls.ferrosider.com.ar/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🌕 Luna
+# ≡ƒîò Luna
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3107,7 +3105,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | - | - | - | - | - | - |
 | | https://finleyisabum.vixenlights.com/ | 4/30/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
-# 🧊 Arctic
+# ≡ƒºè Arctic
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3142,7 +3140,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://codewith.it/p/7P5slc | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://sites.google.com/view/dailysealfacts | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 📚 OnlyLessons
+# ≡ƒôÜ OnlyLessons
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3159,7 +3157,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://education.math.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://martnullscapeacademy.lisd.net.galaxysoft.ro | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ❄️ Frosted
+# Γ¥ä∩╕Å Frosted
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3175,7 +3173,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://sites.google.com/view/rainbowsvg/chudding | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://sites.google.com/view/statichtmlsite/static | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🚀 Shuttle
+# ≡ƒÜÇ Shuttle
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3186,7 +3184,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://salsa.bellydancenetwork.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://h.shuttlemath.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 
-# 👟 Nikehub
+# ≡ƒæƒ Nikehub
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3197,7 +3195,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://cdn.jsdelivr.net/gh/avaisadev/github.com/index.svg | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdelivr.net/gh/avaisadev/how-to-use-linux@main/index.svg | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🌕 MoonPie
+# ≡ƒîò MoonPie
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3207,7 +3205,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | - | - | - | - | - | - |
 | | https://business-worldwide-solutions.notariamelipilla.cl | 5/4/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
-# 💫 Orbit
+# ≡ƒÆ½ Orbit
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3217,7 +3215,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | - | - | - | - | - | - |
 | | https://poki-boyy.firebaseapp.com/browser.html | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🔥 Flamed Lite
+# ≡ƒöÑ Flamed Lite
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3228,7 +3226,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://fastly.jsdelivr.net/gh/Flamed-Games/Flamed-Lite@main/index.svg | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://quantil.jsdelivr.net/gh/Flamed-Games/Flamed-Lite@main/index.svg | 5/9/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
-# 👾 Zyron
+# ≡ƒæ╛ Zyron
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3238,7 +3236,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | - | - | - | - | - | - |
 | | https://ixlmathteacherpanel.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 
-# 🪵 Tung Tung
+# ≡ƒ¬╡ Tung Tung
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3295,7 +3293,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://ttpscience.mantavyagajjar.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://formula.glamourfreaks.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🌌 Secured V3
+# ≡ƒîî Secured V3
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3306,7 +3304,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://madebyplyrnationforsk.hjshop.net/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://sites.google.com/view/oldsecuredweb | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 📄 Dll
+# ≡ƒôä Dll
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3320,7 +3318,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://paintbrush-journal-8500.dllontop.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://chalk-eraser-metronome-3426.dllontop.org/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 📱 ES Network
+# ≡ƒô▒ ES Network
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3404,7 +3402,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | - | - | - | - | - | - |
 | | https://nike.global.ssl.fastly.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🌸 Cherri
+# ≡ƒî╕ Cherri
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3564,7 +3562,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://originfastly.jsdelivr.net/gh/AetherGamesOfficial/AetherEducationStatic@26b0f7c/index.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://testingcf.jsdelivr.net/gh/AetherGamesOfficial/AetherEducationStatic@26b0f7c/index.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🎯 Snipershot
+# ≡ƒÄ» Snipershot
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3589,7 +3587,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://medevmadethistufflink.medicalscience.academy | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://mickerino.medicalscience.academy | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🔗 Nexus
+# ≡ƒöù Nexus
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3647,7 +3645,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://aria.joeliriano.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://aura.music-menges.si/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ✨ BestSpark
+# Γ£¿ BestSpark
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3673,7 +3671,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://bestspark.oxsec.com.mx | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://bestspark.windowpublication.com.np | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🔓 Unblockedzone
+# ≡ƒöô Unblockedzone
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3813,7 +3811,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://jsd.onmicrosoft.cn/combine/gh/googleaccountuser/myfirstrepo/windows10background.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdmirror.com/combine/gh/googleaccountuser/myfirstrepo/windows10background.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🚢 Voya
+# ≡ƒÜó Voya
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -3835,7 +3833,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://voya.krepche.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://voya.worldmicroscope.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🐱 Cat Class
+# ≡ƒÉ▒ Cat Class
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -4006,7 +4004,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://lunar-tiger81.learninghub.fit/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://lunar-runner41.ssquatch.lol/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🧊 C00lkidtech
+# ≡ƒºè C00lkidtech
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -4032,7 +4030,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://quizizz-static.s3-accelerate.amazonaws.com/_media/c00lkiddtech/202e1619-3a7e-457b-b81a-431ae9dde942-v2 | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://media.blooket.com/raw/upload/ztgon1dzdqwrsrbyryxe.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 📘 Zaka EDU
+# ≡ƒôÿ Zaka EDU
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -4048,7 +4046,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | | https://zaka13.web.app/v5.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://zc13.pages.dev/v5.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🌙 Nocturne
+# ≡ƒîÖ Nocturne
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
@@ -4060,7 +4058,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 | - | - | - | - | - | - |
 | | https://cdn.imageurlgenerator.com/uploads/ca803644-49df-4030-81fc-6fe1748033c6.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ⭐ Polaris
+# Γ¡É Polaris
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
