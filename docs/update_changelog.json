@@ -3,7 +3,7 @@
   "entries": [
     {
       "version": "v5.4.1",
-      "revision": "r255",
+      "revision": "r256",
       "released": "August 02, 2026",
       "update_notice": "Removed over 1.9K bad unsorted links. This should hopefully help with the clutter that was previously there with all the random links."
     },

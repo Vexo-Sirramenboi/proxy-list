@@ -91,6 +91,14 @@ def main() -> int:
         out.append(n)
 
     UNSORTED_MD.write_text(build_unsorted(out), encoding="utf-8")
+    # Consume the raw dump so the next CI run does not re-merge already-imported
+    # (and later purged) links back into unsorted.md.
+    if raw_urls:
+        RAW_INPUT.write_text(
+            "# Processed — emptied after import into unsorted.md.\n",
+            encoding="utf-8",
+        )
+        print(f"Cleared {RAW_INPUT.name} after importing {len(raw_urls)} raw URL(s).")
     print(f"Wrote {len(out)} unsorted links to {UNSORTED_MD}")
     return 0
 
