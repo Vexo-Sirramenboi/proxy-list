@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v5.4.1 | Released: August 02, 2026
-> r255 | Last Updated: August 02, 2026
+> r256 | Last Updated: August 02, 2026
 > Total onsite links: 3533 (3191 sorted + 342 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -1827,7 +1827,6 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://celestialdevsalot.github.io/celestialisbest/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://celestialreadytoroll.statetestingstudies.com | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # ✨ Quasar
 > [!NOTE]
