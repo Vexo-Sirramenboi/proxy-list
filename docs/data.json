@@ -3,7 +3,7 @@
     "version": "v5.4",
     "revision": "r251",
     "last_updated": "August 02, 2026",
-    "unsorted_total": 1910,
+    "unsorted_total": 1863,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
     "update_notice": "- Added over 2,000 links (some have incomplete data).\n- Fixed a bug causing link checks to fail and accumulate instead of removing after 3 fails\n- Security fixes",
     "update_changelog": [
@@ -8704,6 +8704,174 @@
       "password": "N/A",
       "contributor": "1NobleCyber",
       "contributor_url": "https://github.com/1NobleCyber"
+    },
+    {
+      "provider": "⭐ DayDream X",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, wisp, captcha, reflux",
+      "capability_tags": [
+        "epoxy",
+        "libcurl",
+        "wisp",
+        "captcha",
+        "reflux"
+      ],
+      "protocols": "Scramjet, Ultraviolet",
+      "protocol_tags": [
+        "scramjet",
+        "ultraviolet"
+      ],
+      "locked": "",
+      "link": "https://storage.googleapis.com/daydreaming/dist/index.html",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "⭐ DayDream X",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, wisp, captcha, reflux",
+      "capability_tags": [
+        "epoxy",
+        "libcurl",
+        "wisp",
+        "captcha",
+        "reflux"
+      ],
+      "protocols": "Scramjet, Ultraviolet",
+      "protocol_tags": [
+        "scramjet",
+        "ultraviolet"
+      ],
+      "locked": "",
+      "link": "https://daydreaming.arrowbases.com",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "⭐ DayDream X",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, wisp, captcha, reflux",
+      "capability_tags": [
+        "epoxy",
+        "libcurl",
+        "wisp",
+        "captcha",
+        "reflux"
+      ],
+      "protocols": "Scramjet, Ultraviolet",
+      "protocol_tags": [
+        "scramjet",
+        "ultraviolet"
+      ],
+      "locked": "",
+      "link": "https://daydreaming.boiso.ar",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "⭐ DayDream X",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, wisp, captcha, reflux",
+      "capability_tags": [
+        "epoxy",
+        "libcurl",
+        "wisp",
+        "captcha",
+        "reflux"
+      ],
+      "protocols": "Scramjet, Ultraviolet",
+      "protocol_tags": [
+        "scramjet",
+        "ultraviolet"
+      ],
+      "locked": "",
+      "link": "https://daydreaming.realisation.org",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "⭐ DayDream X",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, wisp, captcha, reflux",
+      "capability_tags": [
+        "epoxy",
+        "libcurl",
+        "wisp",
+        "captcha",
+        "reflux"
+      ],
+      "protocols": "Scramjet, Ultraviolet",
+      "protocol_tags": [
+        "scramjet",
+        "ultraviolet"
+      ],
+      "locked": "",
+      "link": "https://daydreaming.regu.ch",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "⭐ DayDream X",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, wisp, captcha, reflux",
+      "capability_tags": [
+        "epoxy",
+        "libcurl",
+        "wisp",
+        "captcha",
+        "reflux"
+      ],
+      "protocols": "Scramjet, Ultraviolet",
+      "protocol_tags": [
+        "scramjet",
+        "ultraviolet"
+      ],
+      "locked": "",
+      "link": "https://daydreaming.tomashirsch.cl",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "⭐ DayDream X",
+      "category": "Proxy/Games",
+      "capabilities": "epoxy, libcurl, wisp, captcha, reflux",
+      "capability_tags": [
+        "epoxy",
+        "libcurl",
+        "wisp",
+        "captcha",
+        "reflux"
+      ],
+      "protocols": "Scramjet, Ultraviolet",
+      "protocol_tags": [
+        "scramjet",
+        "ultraviolet"
+      ],
+      "locked": "",
+      "link": "https://daydreaming.is-a.software.cdn.cloudflare.net",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
       "provider": "🚀 Nebulo",
@@ -35115,6 +35283,44 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
+      "provider": "🧱 Noblocc",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://unblocc.uk",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🧱 Noblocc",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://unblocc.co.uk",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
       "provider": "🦄 Utopia Education",
       "category": "Proxy/Games",
       "capabilities": "unknown",
@@ -35944,6 +36150,139 @@
       ],
       "locked": "",
       "link": "https://mood.cthulhu.li",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🦄 Utopia Education",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://utopia.seminaire-school.v6.rocks",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🦄 Utopia Education",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://skill.utopia.arts4x.com",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🦄 Utopia Education",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://eastomadeutopia.heronquays.com",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🦄 Utopia Education",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://utopia.choco.wifirange.org",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🦄 Utopia Education",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://r.utopiaworld.ink",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🦄 Utopia Education",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://historyofutopia.orekhov.space",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🦄 Utopia Education",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "unknown",
+      "protocol_tags": [
+        "unknown"
+      ],
+      "locked": "",
+      "link": "https://utopia.eclipse.lol.pxi-fusion.com",
       "found": "8/1/2026",
       "username": "N/A",
       "password": "N/A",
@@ -40144,6 +40483,25 @@
       "locked": "",
       "link": "https://donut.muffin.glenoriebakery.com.au/",
       "found": "5/22/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🌙 LuminalOS",
+      "category": "Proxy/Games",
+      "capabilities": "captcha",
+      "capability_tags": [
+        "captcha"
+      ],
+      "protocols": "Scramjet",
+      "protocol_tags": [
+        "scramjet"
+      ],
+      "locked": "",
+      "link": "https://luminal.lol",
+      "found": "8/1/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",
@@ -60755,6 +61113,26 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
+      "provider": "🌌 Secured V3",
+      "category": "Proxy/Games",
+      "capabilities": "wisp",
+      "capability_tags": [
+        "wisp"
+      ],
+      "protocols": "Scramjet, Ultraviolet",
+      "protocol_tags": [
+        "scramjet",
+        "ultraviolet"
+      ],
+      "locked": "",
+      "link": "https://sites.google.com/view/oldsecuredweb",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
       "provider": "📄 Dll",
       "category": "Games",
       "capabilities": "-",
@@ -63940,6 +64318,272 @@
       ],
       "locked": "",
       "link": "https://natesfroggie.mikailou.com/",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🐏 Rammerhead",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://adding-rammerhead-domains.iseasy.gq",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🐏 Rammerhead",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://cool.rammerheadproxies.gq",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🐏 Rammerhead",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://iheartrammerheadsite.ml",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🐏 Rammerhead",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://nana.rammerhead.polishmc.pl",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🐏 Rammerhead",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://nana.rammerhead.runolas.pl",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🐏 Rammerhead",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://nice.rammerheadproxies.gq",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🐏 Rammerhead",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://one.of.the.rammerheadproxies.gq",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🐏 Rammerhead",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://r.rammerheadnolongerforeverloading.ga",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🐏 Rammerhead",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://rammerhead.abcya.cf",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🐏 Rammerhead",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://rammerheadproxies.gq",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🐏 Rammerhead",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://rammerheadscience.dougtreadwell.com",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🐏 Rammerhead",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://shouldiboosttherammerheadserver.ml",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🐏 Rammerhead",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://shouldiboosttherammerheadserver.tk",
+      "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🐏 Rammerhead",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://www.mingyrammerhead.gq",
       "found": "8/1/2026",
       "username": "N/A",
       "password": "N/A",

@@ -320,10 +320,20 @@ class CollectorClient(discord.Client):
             return False
         if self.cfg.target_author_id is not None and msg.author.id != self.cfg.target_author_id:
             return False
-        if self.cfg.target_author_name and str(msg.author) != self.cfg.target_author_name:
-            return False
-        if self.cfg.target_author_names and str(msg.author) not in self.cfg.target_author_names:
-            return False
+        tag = str(msg.author)
+        uname = getattr(msg.author, "name", "") or ""
+        if self.cfg.target_author_name:
+            want = self.cfg.target_author_name
+            if tag != want and uname != want and uname != want.split("#", 1)[0]:
+                return False
+        if self.cfg.target_author_names:
+            bare_allowed = {a.split("#", 1)[0] for a in self.cfg.target_author_names}
+            if (
+                tag not in self.cfg.target_author_names
+                and uname not in self.cfg.target_author_names
+                and uname not in bare_allowed
+            ):
+                return False
         return True
 
     async def ingest_history(self) -> None:
@@ -504,6 +514,7 @@ def _discord_ssl_context():
 
 def _discord_api_json(method: str, path_with_query: str, token: str) -> Any:
     """Synchronous Discord REST call using stdlib + certifi (avoids broken aiohttp SSL on some Mac/Python installs)."""
+    import time
     import urllib.error
     import urllib.request
 
@@ -517,15 +528,28 @@ def _discord_api_json(method: str, path_with_query: str, token: str) -> Any:
         },
     )
     ctx = _discord_ssl_context()
-    try:
-        with urllib.request.urlopen(req, context=ctx, timeout=90) as resp:
-            body = resp.read().decode("utf-8")
-            if not body:
-                return None
-            return json.loads(body)
-    except urllib.error.HTTPError as exc:
-        err_body = exc.read().decode("utf-8", errors="replace")[:500]
-        raise SystemExit(f"Discord HTTP {exc.code}: {err_body}") from exc
+    last_err: Exception | None = None
+    for attempt in range(8):
+        try:
+            with urllib.request.urlopen(req, context=ctx, timeout=90) as resp:
+                body = resp.read().decode("utf-8")
+                if not body:
+                    return None
+                return json.loads(body)
+        except urllib.error.HTTPError as exc:
+            err_body = exc.read().decode("utf-8", errors="replace")[:500]
+            if exc.code == 429:
+                retry_after = 1.0
+                try:
+                    payload = json.loads(err_body)
+                    retry_after = float(payload.get("retry_after") or 1.0)
+                except Exception:
+                    pass
+                time.sleep(max(0.5, retry_after) + 0.25 * attempt)
+                last_err = exc
+                continue
+            raise SystemExit(f"Discord HTTP {exc.code}: {err_body}") from exc
+    raise SystemExit(f"Discord HTTP 429: rate limited after retries ({last_err})")
 
 
 def discord_bot_user_id(token: str) -> int | None:
@@ -601,13 +625,21 @@ def author_matches_api(author: dict[str, Any], cfg: Config, bot_user_id: int | N
         return False
     uname = str(author.get("username") or "").strip()
     disp = str(author.get("global_name") or "").strip()
+    disc = str(author.get("discriminator") or "").strip()
+    tag = f"{uname}#{disc}" if disc else uname
     if cfg.target_author_name:
         want = cfg.target_author_name.strip()
-        if uname != want and disp != want:
+        if uname != want and disp != want and tag != want:
             return False
     if cfg.target_author_names:
-        allowed = cfg.target_author_names
-        if uname not in allowed and disp not in allowed:
+        allowed = {s.strip() for s in cfg.target_author_names if s and s.strip()}
+        # Accept username, display name, or username#discriminator forms.
+        candidates = {uname, disp, tag}
+        if disc:
+            candidates.add(f"{uname}#{disc}")
+        # Also allow bare username when allow-list uses Tag#1234 form
+        bare_allowed = {a.split("#", 1)[0] for a in allowed if a}
+        if not (candidates & allowed) and uname not in bare_allowed and disp not in bare_allowed:
             return False
     return True
 

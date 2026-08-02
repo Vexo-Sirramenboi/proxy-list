@@ -3,8 +3,8 @@
   "entries": [
     {
       "version": "v5.4",
-      "revision": "r250",
-      "released": "August 01, 2026",
+      "revision": "r251",
+      "released": "August 02, 2026",
       "update_notice": "- Added over 2,000 links (some have incomplete data).\n- Fixed a bug causing link checks to fail and accumulate instead of removing after 3 fails\n- Security fixes"
     },
     {
