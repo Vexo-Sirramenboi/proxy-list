@@ -4515,6 +4515,7 @@
 
     function buildSearchSuggestIndex(rows) {
       const providers = new Map();
+      const contributors = new Map();
       const links = [];
       const seenLinks = new Set();
       for (const row of rows || []) {
@@ -4527,6 +4528,18 @@
               value: provider,
               label: provider,
               match: (provider + " " + providerSuggestLabel(provider)).toLowerCase(),
+            });
+          }
+        }
+        const contributor = String((row && row.contributor) || "").trim();
+        if (contributor && contributor.toLowerCase() !== "n/a") {
+          const key = contributor.toLowerCase();
+          if (!contributors.has(key)) {
+            contributors.set(key, {
+              kind: "contributor",
+              value: contributor,
+              label: contributor,
+              match: (contributor + " " + providerSuggestLabel(contributor)).toLowerCase(),
             });
           }
         }
@@ -4544,6 +4557,7 @@
       }
       searchSuggestIndex = {
         providers: [...providers.values()].sort((a, b) => a.label.localeCompare(b.label)),
+        contributors: [...contributors.values()].sort((a, b) => a.label.localeCompare(b.label)),
         links,
       };
     }
@@ -4552,7 +4566,10 @@
       const m = item.match || "";
       if (m === q) return 0;
       if (m.startsWith(q)) return 1;
-      const bare = item.kind === "provider" ? providerSuggestLabel(item.value).toLowerCase() : m;
+      const bare =
+        item.kind === "provider" || item.kind === "contributor"
+          ? providerSuggestLabel(item.value).toLowerCase()
+          : m;
       if (bare.startsWith(q)) return 2;
       if (m.includes(q)) return 3;
       return 9;
@@ -4566,9 +4583,13 @@
         const rank = rankSuggestMatch(item, q);
         if (rank < 9) scored.push({ item, rank, tie: 0 });
       }
-      for (const item of searchSuggestIndex.links) {
+      for (const item of searchSuggestIndex.contributors || []) {
         const rank = rankSuggestMatch(item, q);
         if (rank < 9) scored.push({ item, rank, tie: 1 });
+      }
+      for (const item of searchSuggestIndex.links) {
+        const rank = rankSuggestMatch(item, q);
+        if (rank < 9) scored.push({ item, rank, tie: 2 });
       }
       scored.sort((a, b) => a.rank - b.rank || a.tie - b.tie || a.item.label.localeCompare(b.item.label));
       return scored.slice(0, SEARCH_SUGGEST_LIMIT).map((x) => x.item);
@@ -4615,7 +4636,8 @@
         list,
         items
           .map((item, i) => {
-            const kind = item.kind === "provider" ? "Provider" : "URL";
+            const kind =
+              item.kind === "provider" ? "Provider" : item.kind === "contributor" ? "Contributor" : "URL";
             return (
               '<li role="presentation">' +
               '<button type="button" class="search-suggest-item" role="option" id="qSuggestOpt' +
