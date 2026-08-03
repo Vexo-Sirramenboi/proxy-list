@@ -52,7 +52,13 @@ def split_pipe_row(line: str) -> list[str]:
 def split_list_field(s: str) -> list[str]:
     if not s or s.upper() == "N/A":
         return []
-    return [t.strip().lower() for t in s.split(",") if t.strip()]
+    out: list[str] = []
+    for part in s.split(","):
+        tag = part.strip().lower()
+        if not tag or tag in {"-", "—", "–", "n/a"}:
+            continue
+        out.append(tag)
+    return out
 
 
 _CONTRIBUTOR_MD = re.compile(r"^\[([^\]]+)\]\(([^)]+)\)\s*$")

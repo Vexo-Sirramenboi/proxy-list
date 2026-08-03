@@ -2,6 +2,12 @@
   "_note": "Archived site update notices. Regenerate history with: python3 scripts/build_update_changelog.py",
   "entries": [
     {
+      "version": "v5.5",
+      "revision": "r258",
+      "released": "August 03, 2026",
+      "update_notice": "- Added an additional notes section in the link summaries\n- Added about section\n- Added setting to hide additional notes\n- Added lots of links\n- Fixed bug where \"-\" would show as an option in capabilities and protocols filters"
+    },
+    {
       "version": "v5.4.1",
       "revision": "r257",
       "released": "August 02, 2026",
