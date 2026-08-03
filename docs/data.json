@@ -189,22 +189,26 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-03T14:26:24Z",
-    "checked_at_display": "2026-08-03 14:26 UTC",
+    "checked_at": "2026-08-03T16:25:40Z",
+    "checked_at_display": "2026-08-03 16:25 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 4,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://sp6.arionskyclub.com",
+      "https://education.arionskyclub.com",
+      "https://studyhub.arionskyclub.com",
+      "https://strawberry.arionskyclub.com"
+    ]
   },
   "failing_links": {
-    "https://subscribevcsa.barrelofmakers.org": 1,
-    "https://ixl.vseesa.edujose.com": 1,
-    "https://sp6.arionskyclub.com": 2,
-    "https://education.arionskyclub.com": 2,
-    "https://studyhub.arionskyclub.com": 2,
-    "https://strawberry.arionskyclub.com": 2,
-    "https://classlink-redirect.surge.sh": 1,
-    "https://zaka13.firebaseapp.com/v5.svg": 1
+    "https://subscribevcsa.barrelofmakers.org": 2,
+    "https://ixl.vseesa.edujose.com": 2,
+    "https://classlink-redirect.surge.sh": 2,
+    "https://nobloccstatus.mattle.uk": 1,
+    "https://bestspark.moldeointeractive.com.ar": 1,
+    "https://fern.moldeointeractive.com.ar": 1,
+    "https://voya.moldeointeractive.com.ar": 1
   },
   "links": [
     {
@@ -4752,28 +4756,6 @@
       ],
       "locked": "",
       "link": "https://sp2.simplysweetcakesoc.com",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌑 Space",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://sp6.arionskyclub.com",
       "found": "5/2/2026",
       "username": "N/A",
       "password": "N/A",
@@ -10359,26 +10341,6 @@
       ],
       "locked": "",
       "link": "https://beautiful.japan.is",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌕 Lunar",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "locked": "",
-      "link": "https://education.arionskyclub.com",
       "found": "5/2/2026",
       "username": "N/A",
       "password": "N/A",
@@ -20515,25 +20477,6 @@
         "unknown"
       ],
       "locked": "",
-      "link": "https://studyhub.arionskyclub.com",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "📖 StudyHub",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
       "link": "https://goguard.budda.lv",
       "found": "5/2/2026",
       "username": "N/A",
@@ -23974,25 +23917,6 @@
       ],
       "locked": "",
       "link": "https://realistic.astrodestin.ro",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍓 Strawberri",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "unknown",
-      "protocol_tags": [
-        "unknown"
-      ],
-      "locked": "",
-      "link": "https://strawberry.arionskyclub.com",
       "found": "5/2/2026",
       "username": "N/A",
       "password": "N/A",
@@ -56170,329 +56094,6 @@
       ],
       "locked": "",
       "link": "https://voya.moldeointeractive.com.ar/",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "💎 Krypton",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://krypton.bielenberg.id.au/",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "💎 Krypton",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://krypton.buf2.com/",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "💎 Krypton",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://krypton.krepche.com/",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "💎 Krypton",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://krypton.moldeointeractive.com.ar/",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "💎 Krypton",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://krypton.worldmicroscope.com/",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐏 Rammerhead",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://rammer-yosshy.zapto.org/",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐏 Rammerhead",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://rammer.nana.chiqui.ar/",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐏 Rammerhead",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://rammer.nana.01.9dejulio.gob.ar/",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "➗ Diesmos",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://quizizz.com/_media/diesmos/b586cf8b-829c-489d-a6e6-7bb87c144a45-v2",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "➗ Diesmos",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://wayground.com/_media/diesmos/b586cf8b-829c-489d-a6e6-7bb87c144a45-v2",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "➗ Diesmos",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://quizizz-static.s3.amazonaws.com/_media/diesmos/b586cf8b-829c-489d-a6e6-7bb87c144a45-v2",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "➗ Diesmos",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://quizizz-static.s3-accelerate.amazonaws.com/_media/diesmos/b586cf8b-829c-489d-a6e6-7bb87c144a45-v2",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "➗ Diesmos",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://quizizz.com/_media/diesmos/47ffb88a-978e-47b4-b155-42d44d87c493-v2",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "➗ Diesmos",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://wayground.com/_media/diesmos/47ffb88a-978e-47b4-b155-42d44d87c493-v2",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "➗ Diesmos",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://quizizz-static.s3.amazonaws.com/_media/diesmos/47ffb88a-978e-47b4-b155-42d44d87c493-v2",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "➗ Diesmos",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://script.google.com/macros/s/AKfycbxZ1DefdL1temalJejiDY4dVWT7zDRV6eXWtz2VgqlSwPZIZTxH0JEGFoGXoNWxoZZQ/exec",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "➗ Diesmos",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "locked": "",
-      "link": "https://abbsgyagysgsaagygsy.oneapp.dev/",
       "found": "8/3/2026",
       "username": "N/A",
       "password": "N/A",
