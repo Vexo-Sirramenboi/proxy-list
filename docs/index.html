@@ -1071,7 +1071,7 @@
       flex-shrink: 0;
     }
     .summary-modal {
-      width: min(920px, 100%);
+      width: min(720px, 100%);
       max-height: 85vh;
       display: flex;
       flex-direction: column;
@@ -1085,9 +1085,9 @@
       padding: 0.9rem 1rem;
       border-bottom: 1px solid var(--border);
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
-      gap: 0.65rem;
+      gap: 0.85rem;
       flex-shrink: 0;
       position: sticky;
       top: 0;
@@ -1097,12 +1097,40 @@
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
     }
     .summary-title { font-size: 1rem; margin: 0; }
+    .summary-head-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.45rem;
+      margin-left: auto;
+      min-width: 0;
+      max-width: min(100%, 22rem);
+    }
+    .summary-provider-meta {
+      text-align: right;
+      min-width: 0;
+    }
+    .summary-provider-meta[hidden] { display: none; }
+    .summary-provider-name {
+      font-size: 1rem;
+      font-weight: 650;
+      line-height: 1.25;
+      color: var(--text);
+      overflow-wrap: anywhere;
+    }
+    .summary-provider-details {
+      margin-top: 0.2rem;
+      font-size: 0.75rem;
+      line-height: 1.4;
+      color: var(--muted);
+      overflow-wrap: anywhere;
+    }
     .summary-actions {
       display: flex;
       align-items: center;
       gap: 0.4rem;
       flex-wrap: wrap;
-      margin-left: auto;
+      justify-content: flex-end;
     }
     .summary-actions .btn { font-size: 0.85rem; }
     .summary-body {
@@ -1127,36 +1155,31 @@
       border-color: #305244;
     }
     .summary-muted { color: var(--muted); font-size: 0.84rem; margin: 0 0 0.7rem; }
-    .summary-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr);
+    .summary-panels {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       gap: 0.85rem;
-      align-items: start;
+      width: 100%;
     }
-    .summary-layout.has-notes {
-      grid-template-columns: minmax(0, 1.35fr) minmax(12rem, 0.85fr);
-    }
-    @media (max-width: 720px) {
-      .summary-layout.has-notes {
-        grid-template-columns: minmax(0, 1fr);
-      }
-    }
-    .summary-main { min-width: 0; }
-    .summary-notes {
+    .summary-panel {
+      width: min(100%, 34rem);
       border: 1px solid var(--border);
       border-radius: 8px;
       background: var(--surface);
-      padding: 0.7rem 0.8rem;
+      padding: 0.85rem 1rem;
+      box-sizing: border-box;
     }
-    .summary-notes h3 {
-      margin: 0 0 0.45rem;
+    .summary-panel h3 {
+      margin: 0 0 0.55rem;
       font-size: 0.78rem;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.04em;
       color: var(--muted);
     }
-    .summary-notes p {
+    .summary-panel .summary-muted:last-child { margin-bottom: 0; }
+    .summary-notes-body {
       margin: 0;
       font-size: 0.84rem;
       line-height: 1.45;
@@ -1788,10 +1811,16 @@
     <section class="summary-modal" role="dialog" aria-modal="true" aria-labelledby="summaryTitle">
       <div class="summary-head">
         <h2 class="summary-title" id="summaryTitle">Link summary</h2>
-        <div class="summary-actions">
-          <a class="btn btn-primary" id="summaryOpenBtn" href="#" target="_blank" rel="noopener noreferrer">Open link</a>
-          <button class="btn" id="summaryCopyBtn" type="button">Copy link</button>
-          <button class="btn" id="summaryCloseBtn" type="button">Close</button>
+        <div class="summary-head-right">
+          <div class="summary-provider-meta" id="summaryProviderMeta" hidden>
+            <div class="summary-provider-name" id="summaryProviderName"></div>
+            <div class="summary-provider-details" id="summaryProviderDetails"></div>
+          </div>
+          <div class="summary-actions">
+            <a class="btn btn-primary" id="summaryOpenBtn" href="#" target="_blank" rel="noopener noreferrer">Open link</a>
+            <button class="btn" id="summaryCopyBtn" type="button">Copy link</button>
+            <button class="btn" id="summaryCloseBtn" type="button">Close</button>
+          </div>
         </div>
       </div>
       <div class="summary-body" id="summaryBody"></div>
@@ -1892,6 +1921,14 @@
               <option value="summary">Show summary (default)</option>
               <option value="open">Open link</option>
               <option value="copy">Copy link</option>
+            </select>
+          </div>
+          <div class="settings-field">
+            <label for="settingsAdditionalNotesSelect">Additional notes section in summaries visibility</label>
+            <p class="settings-desc">Hides the additional notes shown when applicable on proxies that have them.</p>
+            <select id="settingsAdditionalNotesSelect" aria-label="Additional notes section in summaries visibility">
+              <option value="show">Show (default)</option>
+              <option value="hide">Hide</option>
             </select>
           </div>
         </div>
@@ -2121,6 +2158,7 @@
     const APP_SETTINGS_DEFAULTS = {
       theme: "dark",
       linkSelectionAction: "summary",
+      additionalNotesVisibility: "show",
       renderEmojis: true,
       renderLoadPerChunk: "medium",
       grabLinkClicksPerChunk: "per_chunk",
@@ -2140,6 +2178,8 @@
       }
       const action = String(raw.linkSelectionAction || "");
       if (action === "summary" || action === "open" || action === "copy") out.linkSelectionAction = action;
+      const notesVis = String(raw.additionalNotesVisibility || "");
+      if (notesVis === "show" || notesVis === "hide") out.additionalNotesVisibility = notesVis;
       if (typeof raw.renderEmojis === "boolean") out.renderEmojis = raw.renderEmojis;
       const chunk = String(raw.renderLoadPerChunk || "");
       if (
@@ -2317,6 +2357,8 @@
       if (themeSel) themeSel.value = appSettings.theme || "dark";
       const actionSel = $("settingsLinkActionSelect");
       if (actionSel) actionSel.value = appSettings.linkSelectionAction || "summary";
+      const notesSel = $("settingsAdditionalNotesSelect");
+      if (notesSel) notesSel.value = appSettings.additionalNotesVisibility === "hide" ? "hide" : "show";
       const emojiSel = $("settingsRenderEmojisSelect");
       if (emojiSel) emojiSel.value = appSettings.renderEmojis === false ? "disabled" : "enabled";
       const chunkSel = $("settingsChunkSizeSelect");
@@ -6190,16 +6232,49 @@
       return null;
     }
 
-    function additionalNotesHtml(link) {
+    function additionalNotesText(link) {
       const row = listRowForLink(link);
-      const notes = row && String(row.additional_notes || "").trim();
+      return row && String(row.additional_notes || "").trim() ? String(row.additional_notes).trim() : "";
+    }
+
+    function shouldShowAdditionalNotes() {
+      return appSettings.additionalNotesVisibility !== "hide";
+    }
+
+    function setSummaryProviderMeta(link) {
+      const wrap = $("summaryProviderMeta");
+      const nameEl = $("summaryProviderName");
+      const detailsEl = $("summaryProviderDetails");
+      if (!wrap || !nameEl || !detailsEl) return;
+      const row = listRowForLink(link);
+      if (!row) {
+        wrap.hidden = true;
+        nameEl.textContent = "";
+        detailsEl.textContent = "";
+        return;
+      }
+      const provider = String(row.provider || "").trim();
+      const shownProvider =
+        appSettings.renderEmojis === false ? stripEmojisFromText(provider) : provider;
+      const category = String(row.category || "").trim() || "—";
+      const capabilities = String(row.capabilities || "").trim() || "—";
+      const protocols = String(row.protocols || "").trim() || "—";
+      nameEl.textContent = shownProvider || "Unknown provider";
+      detailsEl.textContent =
+        "Category: " + category + " · Capabilities: " + capabilities + " · Protocols: " + protocols;
+      wrap.hidden = false;
+    }
+
+    function additionalNotesPanelHtml(link) {
+      if (!shouldShowAdditionalNotes()) return "";
+      const notes = additionalNotesText(link);
       if (!notes) return "";
       return (
-        '<aside class="summary-notes" aria-label="Additional notes">' +
+        '<section class="summary-panel" aria-label="Additional notes">' +
         "<h3>Additional Notes</h3>" +
-        "<p>" +
+        '<p class="summary-notes-body">' +
         escapeHtml(notes) +
-        "</p></aside>"
+        "</p></section>"
       );
     }
 
@@ -6333,33 +6408,24 @@
         const entry = summaryEntryFor(link);
         const body = $("summaryBody");
         setSummaryFooterLink(link);
+        setSummaryProviderMeta(link);
         const removalHtml = removalNoticeHtml(link);
-        const notesHtml = additionalNotesHtml(link);
-        const layoutOpen =
-          '<div class="summary-layout' + (notesHtml ? " has-notes" : "") + '"><div class="summary-main">';
-        const layoutClose = "</div>" + notesHtml + "</div>";
+        const notesPanel = additionalNotesPanelHtml(link);
         const clickStub = '<p class="summary-muted" id="summaryClickLine">…</p>';
+        let summaryInner = "";
+        let riskNoticeHtml = "";
         if (!entry) {
           const pendingText = hasCheckedDomain(link)
             ? "This link was checked, but no parsable gn-math summary message was captured yet."
             : "No gn-math data found for this link yet.";
-          setHtml(
-            body,
-            removalHtml +
-              layoutOpen +
-              clickStub +
-              '<p class="summary-muted">' +
-              escapeHtml(pendingText) +
-              "</p>" +
-              layoutClose
-          );
+          summaryInner =
+            clickStub + '<p class="summary-muted">' + escapeHtml(pendingText) + "</p>";
         } else {
           const summary = entry.summary || {};
           const providers = Array.isArray(entry.providers) ? entry.providers : [];
           const checkedAt = entry.checked_at || "—";
           const status = entry.status || "unknown";
           const selectedFilterKey = normalizeFilterKey(selectedGnMathFilter);
-          let riskNoticeHtml = "";
           if (selectedFilterKey) {
             const matches = providers.filter((p) => providerFilterKey(p.provider || "") === selectedFilterKey);
             const rank = (s) => (s === "blocked" ? 0 : s === "warning" ? 1 : 2);
@@ -6391,12 +6457,8 @@
                 .join("")
             : '<tr><td colspan="3" class="summary-muted">No provider lines parsed from source message.</td></tr>';
 
-          setHtml(
-            body,
-            removalHtml +
-              riskNoticeHtml +
-              layoutOpen +
-              clickStub +
+          summaryInner =
+            clickStub +
             '<p class="summary-muted">Domain: <strong>' +
             escapeHtml(entry.domain || domainOf(link) || "—") +
             '</strong> • Checked: <strong>' +
@@ -6415,11 +6477,22 @@
             escapeHtml(String(summary.total ?? providers.length)) +
             "</span></div></div>" +
             '<table class="provider-table"><thead><tr><th>Provider</th><th>Category</th><th>Result</th></tr></thead><tbody>' +
-              providerRows +
-              "</tbody></table>" +
-              layoutClose
-          );
+            providerRows +
+            "</tbody></table>";
         }
+
+        setHtml(
+          body,
+          removalHtml +
+            riskNoticeHtml +
+            '<div class="summary-panels">' +
+            '<section class="summary-panel" aria-label="Link summary details">' +
+            "<h3>Link Summary</h3>" +
+            summaryInner +
+            "</section>" +
+            notesPanel +
+            "</div>"
+        );
         $("summaryTitle").textContent = "Link summary";
         $("summaryBackdrop").classList.add("open");
         $("summaryBackdrop").setAttribute("aria-hidden", "false");
@@ -7623,6 +7696,14 @@
         if (settingsLinkActionSelect) {
           settingsLinkActionSelect.addEventListener("change", () => {
             void updateAppSetting({ linkSelectionAction: settingsLinkActionSelect.value || "summary" });
+          });
+        }
+        const settingsAdditionalNotesSelect = $("settingsAdditionalNotesSelect");
+        if (settingsAdditionalNotesSelect) {
+          settingsAdditionalNotesSelect.addEventListener("change", () => {
+            void updateAppSetting({
+              additionalNotesVisibility: settingsAdditionalNotesSelect.value === "hide" ? "hide" : "show",
+            });
           });
         }
         const settingsRenderEmojisSelect = $("settingsRenderEmojisSelect");
