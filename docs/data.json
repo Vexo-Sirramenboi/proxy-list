@@ -1,12 +1,18 @@
 {
   "meta": {
-    "version": "v5.5",
-    "revision": "r258",
+    "version": "v5.5.1",
+    "revision": "r259",
     "last_updated": "August 03, 2026",
     "unsorted_total": 342,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
-    "update_notice": "- Added an additional notes section in the link summaries\n- Added about section\n- Added setting to hide additional notes\n- Added lots of links\n- Fixed bug where \"-\" would show as an option in capabilities and protocols filters",
+    "update_notice": "Security fix",
     "update_changelog": [
+      {
+        "version": "v5.5.1",
+        "revision": "r259",
+        "released": "August 03, 2026",
+        "update_notice": "Security fix"
+      },
       {
         "version": "v5.5",
         "revision": "r258",

@@ -17,6 +17,7 @@ import sys
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from html import unescape
+from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
@@ -28,6 +29,33 @@ CONVERT_SCRIPT = ROOT / "scripts" / "convert_list_to_json.py"
 
 URL_RE = re.compile(r"https?://[^\s|)>\"]+")
 TITLE_RE = re.compile(r"<title[^>]*>(.*?)</title>", re.I | re.S)
+
+
+class _VisibleTextExtractor(HTMLParser):
+    """Collect visible text while skipping script/style content (stdlib, not regex)."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.parts: list[str] = []
+        self._skip_depth = 0
+
+    def handle_starttag(self, tag: str, attrs) -> None:  # noqa: ANN001
+        if tag.lower() in {"script", "style", "noscript"}:
+            self._skip_depth += 1
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag.lower() in {"script", "style", "noscript"} and self._skip_depth:
+            self._skip_depth -= 1
+
+    def handle_data(self, data: str) -> None:
+        if self._skip_depth:
+            return
+        if data and not data.isspace():
+            self.parts.append(data)
+
+    def text(self) -> str:
+        return " ".join(self.parts)
+
 
 # Skip slug hits that are only a short TLD-like suffix (e.g. provider "Space" vs host .space).
 TLD_LIKE_SLUGS = frozenset({"space", "cloud", "site", "live", "app", "dev", "net", "org", "com"})
@@ -348,11 +376,13 @@ def fetch_page_snippet(url: str, timeout: float = 8.0) -> str:
         html = raw.decode("utf-8", errors="ignore")
         m = TITLE_RE.search(html)
         title = unescape(re.sub(r"\s+", " ", m.group(1))).strip() if m else ""
-        # light text extract
-        text = re.sub(r"<script[\s\S]*?</script>", " ", html, flags=re.I)
-        text = re.sub(r"<style[\s\S]*?</style>", " ", text, flags=re.I)
-        text = re.sub(r"<[^>]+>", " ", text)
-        text = unescape(re.sub(r"\s+", " ", text))[:4000]
+        extractor = _VisibleTextExtractor()
+        try:
+            extractor.feed(html)
+            extractor.close()
+        except Exception:
+            extractor = _VisibleTextExtractor()
+        text = unescape(re.sub(r"\s+", " ", extractor.text()))[:4000]
         return f"{title} {text}"
     except Exception:
         return ""
