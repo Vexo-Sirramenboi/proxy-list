@@ -1,8 +1,8 @@
 # Proxy List
 > [!NOTE]
 > v5.4.1 | Released: August 02, 2026
-> r257 | Last Updated: August 02, 2026
-> Total onsite links: 3532 (3190 sorted + 342 unsorted)\
+> r257 | Last Updated: August 03, 2026
+> Total onsite links: 3539 (3197 sorted + 342 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
 Welcome to the official Proxy List! This has a running list of hundreds of unblocked websites and games that anyone is free to use. We have the most popular and reliable sites here, so you'll never run out!
@@ -40,7 +40,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 68 |
+> | Proxy/Games | captcha | Scramjet | 71 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -120,7 +120,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | N/A | N/A | 48 |
+> | Games | N/A | N/A | 53 |
 
 > [!IMPORTANT]
 > View importance notices section if link is broken.
@@ -185,7 +185,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Ultraviolet | 41 |
+> | Proxy/Games | captcha | Ultraviolet | 42 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -252,7 +252,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp, captcha, reflux | Scramjet, Ultraviolet | 30 |
+> | Proxy/Games | epoxy, libcurl, wisp, captcha, reflux | Scramjet, Ultraviolet | 34 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -316,7 +316,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp | Scramjet, Ultraviolet | 27 |
+> | Proxy/Games | epoxy, libcurl, wisp | Scramjet, Ultraviolet | 31 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -356,7 +356,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet, Ultraviolet | 35 |
+> | Proxy/Games | unknown | Scramjet, Ultraviolet | 40 |
 
 > [!IMPORTANT]
 > Fern does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -399,6 +399,10 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://fern.bielenberg.id.au/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://fern.buf2.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://fern.krepche.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fern.moldeointeractive.com.ar/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fern.worldmicroscope.com/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://s3.amazonaws.com/2027games/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://2027games.s3.amazonaws.com/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🍄 Truffled
 > [!NOTE]
@@ -502,7 +506,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 6 |
+> | Proxy/Games | unknown | Scramjet | 7 |
 
 > [!IMPORTANT]
 > Boredom does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -534,7 +538,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 39 |
+> | Proxy/Games | unknown | unknown | 41 |
 
 > [!IMPORTANT]
 > Shadow does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -588,7 +592,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 83 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 84 |
 
 > [!IMPORTANT]
 > dogeub does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -684,7 +688,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 33 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 34 |
 
 > [!IMPORTANT]
 > Lunar does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -938,7 +942,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, captcha, wisp | Scramjet, Ultraviolet, Rammerhead | 2 |
+> | Proxy/Games | epoxy, libcurl, captcha, wisp | Scramjet, Ultraviolet, Rammerhead | 3 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -950,7 +954,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | N/A | N/A | 403 |
+> | Proxy/Games | N/A | N/A | 404 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -1698,7 +1702,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 5 |
+> | Proxy/Games | unknown | unknown | 7 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -1786,7 +1790,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 22 |
+> | Proxy/Games | captcha | Scramjet | 23 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -2070,7 +2074,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 5 |
+> | Proxy/Games | captcha | Scramjet | 6 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -3295,7 +3299,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 1 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 2 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -3788,7 +3792,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 11 |
+> | pending | pending | pending | 12 |
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
 
@@ -3805,6 +3809,72 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://voya.buf2.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://voya.krepche.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://voya.worldmicroscope.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://voya.moldeointeractive.com.ar/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
+# 💎 Krypton
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | pending | pending | pending | 5 |
+
+> [!IMPORTANT]
+> This section has not been categorized or checked for protocol(s) and capabilities.
+
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+|  | https://krypton.bielenberg.id.au/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://krypton.buf2.com/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://krypton.krepche.com/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://krypton.moldeointeractive.com.ar/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://krypton.worldmicroscope.com/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+
+# 🐏 Rammerhead
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | pending | pending | pending | 3 |
+
+> [!IMPORTANT]
+> This section has not been categorized or checked for protocol(s) and capabilities.
+
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+|  | https://rammer-yosshy.zapto.org/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://rammer.nana.chiqui.ar/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://rammer.nana.01.9dejulio.gob.ar/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+
+# ➗ Diesmos
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | pending | pending | pending | 9 |
+
+> [!IMPORTANT]
+> This section has not been categorized or checked for protocol(s) and capabilities.
+
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+|  | https://quizizz.com/_media/diesmos/b586cf8b-829c-489d-a6e6-7bb87c144a45-v2 | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://wayground.com/_media/diesmos/b586cf8b-829c-489d-a6e6-7bb87c144a45-v2 | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quizizz-static.s3.amazonaws.com/_media/diesmos/b586cf8b-829c-489d-a6e6-7bb87c144a45-v2 | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quizizz-static.s3-accelerate.amazonaws.com/_media/diesmos/b586cf8b-829c-489d-a6e6-7bb87c144a45-v2 | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quizizz.com/_media/diesmos/47ffb88a-978e-47b4-b155-42d44d87c493-v2 | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://wayground.com/_media/diesmos/47ffb88a-978e-47b4-b155-42d44d87c493-v2 | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quizizz-static.s3.amazonaws.com/_media/diesmos/47ffb88a-978e-47b4-b155-42d44d87c493-v2 | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://script.google.com/macros/s/AKfycbxZ1DefdL1temalJejiDY4dVWT7zDRV6eXWtz2VgqlSwPZIZTxH0JEGFoGXoNWxoZZQ/exec | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://abbsgyagysgsaagygsy.oneapp.dev/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+
+
+
 
 # 🐱 Cat Class
 > [!NOTE]

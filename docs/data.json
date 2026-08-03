@@ -2,7 +2,7 @@
   "meta": {
     "version": "v5.4.1",
     "revision": "r257",
-    "last_updated": "August 02, 2026",
+    "last_updated": "August 03, 2026",
     "unsorted_total": 342,
     "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
     "update_notice": "Removed over 1.9K bad unsorted links. This should hopefully help with the clutter that was previously there with all the random links.",
@@ -5715,6 +5715,86 @@
       "locked": "",
       "link": "https://fern.krepche.com/",
       "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🪴 Fern",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "Scramjet, Ultraviolet",
+      "protocol_tags": [
+        "scramjet",
+        "ultraviolet"
+      ],
+      "locked": "",
+      "link": "https://fern.moldeointeractive.com.ar/",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🪴 Fern",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "Scramjet, Ultraviolet",
+      "protocol_tags": [
+        "scramjet",
+        "ultraviolet"
+      ],
+      "locked": "",
+      "link": "https://fern.worldmicroscope.com/",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🪴 Fern",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "Scramjet, Ultraviolet",
+      "protocol_tags": [
+        "scramjet",
+        "ultraviolet"
+      ],
+      "locked": "",
+      "link": "https://s3.amazonaws.com/2027games/index.html",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🪴 Fern",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "Scramjet, Ultraviolet",
+      "protocol_tags": [
+        "scramjet",
+        "ultraviolet"
+      ],
+      "locked": "",
+      "link": "https://2027games.s3.amazonaws.com/index.html",
+      "found": "8/3/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",
@@ -56072,6 +56152,348 @@
       "locked": "",
       "link": "https://voya.worldmicroscope.com/",
       "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🚢 Voya",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://voya.moldeointeractive.com.ar/",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "💎 Krypton",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://krypton.bielenberg.id.au/",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "💎 Krypton",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://krypton.buf2.com/",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "💎 Krypton",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://krypton.krepche.com/",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "💎 Krypton",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://krypton.moldeointeractive.com.ar/",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "💎 Krypton",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://krypton.worldmicroscope.com/",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🐏 Rammerhead",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://rammer-yosshy.zapto.org/",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🐏 Rammerhead",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://rammer.nana.chiqui.ar/",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🐏 Rammerhead",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://rammer.nana.01.9dejulio.gob.ar/",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "➗ Diesmos",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://quizizz.com/_media/diesmos/b586cf8b-829c-489d-a6e6-7bb87c144a45-v2",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "➗ Diesmos",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://wayground.com/_media/diesmos/b586cf8b-829c-489d-a6e6-7bb87c144a45-v2",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "➗ Diesmos",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://quizizz-static.s3.amazonaws.com/_media/diesmos/b586cf8b-829c-489d-a6e6-7bb87c144a45-v2",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "➗ Diesmos",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://quizizz-static.s3-accelerate.amazonaws.com/_media/diesmos/b586cf8b-829c-489d-a6e6-7bb87c144a45-v2",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "➗ Diesmos",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://quizizz.com/_media/diesmos/47ffb88a-978e-47b4-b155-42d44d87c493-v2",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "➗ Diesmos",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://wayground.com/_media/diesmos/47ffb88a-978e-47b4-b155-42d44d87c493-v2",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "➗ Diesmos",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://quizizz-static.s3.amazonaws.com/_media/diesmos/47ffb88a-978e-47b4-b155-42d44d87c493-v2",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "➗ Diesmos",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://script.google.com/macros/s/AKfycbxZ1DefdL1temalJejiDY4dVWT7zDRV6eXWtz2VgqlSwPZIZTxH0JEGFoGXoNWxoZZQ/exec",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "➗ Diesmos",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "locked": "",
+      "link": "https://abbsgyagysgsaagygsy.oneapp.dev/",
+      "found": "8/3/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",
