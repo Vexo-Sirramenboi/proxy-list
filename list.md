@@ -40,7 +40,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 71 |
+> | Proxy/Games | captcha | Scramjet | 68 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -120,7 +120,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | N/A | N/A | 59 |
+> | Games | N/A | N/A | 47 |
 
 > [!IMPORTANT]
 > View importance notices section if link is broken.
@@ -191,7 +191,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Ultraviolet | 42 |
+> | Proxy/Games | captcha | Ultraviolet | 41 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -258,7 +258,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp, captcha, reflux | Scramjet, Ultraviolet | 34 |
+> | Proxy/Games | epoxy, libcurl, wisp, captcha, reflux | Scramjet, Ultraviolet | 30 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -322,7 +322,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp | Scramjet, Ultraviolet | 30 |
+> | Proxy/Games | epoxy, libcurl, wisp | Scramjet, Ultraviolet | 26 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -361,7 +361,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet, Ultraviolet | 65 |
+> | Proxy/Games | unknown | Scramjet, Ultraviolet | 35 |
 
 > [!IMPORTANT]
 > Fern does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -536,7 +536,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 7 |
+> | Proxy/Games | unknown | Scramjet | 6 |
 
 > [!IMPORTANT]
 > Boredom does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -568,7 +568,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 41 |
+> | Proxy/Games | unknown | unknown | 39 |
 
 > [!IMPORTANT]
 > Shadow does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -622,7 +622,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 82 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 81 |
 
 > [!IMPORTANT]
 > dogeub does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -716,7 +716,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 33 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 32 |
 
 > [!IMPORTANT]
 > Lunar does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -969,7 +969,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, captcha, wisp | Scramjet, Ultraviolet, Rammerhead | 3 |
+> | Proxy/Games | epoxy, libcurl, captcha, wisp | Scramjet, Ultraviolet, Rammerhead | 2 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -981,7 +981,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | N/A | N/A | 404 |
+> | Proxy/Games | N/A | N/A | 403 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -1611,7 +1611,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy | Unknown | Ultraviolet | 124 |
+> | Proxy | Unknown | Ultraviolet | 104 |
 
 > [!IMPORTANT]
 > Strawberri does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1748,7 +1748,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 7 |
+> | Proxy/Games | unknown | unknown | 5 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -1836,7 +1836,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 23 |
+> | Proxy/Games | captcha | Scramjet | 22 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -2120,7 +2120,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 6 |
+> | Proxy/Games | captcha | Scramjet | 5 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -3236,7 +3236,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 38 |
+> | Proxy/Games | unknown | unknown | 2 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -3381,7 +3381,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 2 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 1 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -3425,7 +3425,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp, epoxy, libcurl | Scramjet, Tor | 10 |
+> | Proxy/Games | wisp, epoxy, libcurl | Scramjet, Tor | 8 |
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://yukios.edgeone.app | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -3664,7 +3664,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | Unknown | Scramjet, Ultraviolet | 15 |
+> | Proxy/Games | Unknown | Scramjet, Ultraviolet | 14 |
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://bestspark.indevs.in/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -3675,7 +3675,6 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://bestspark.bielenberg.id.au | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://bestspark.buf2.com | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://bestspark.krepche.com | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://bestspark.moldeointeractive.com.ar | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://bestspark.worldmicroscope.com | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://bestspark.cafemeridiano.com.br | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://bestspark.freshmilk.co.za | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -3687,7 +3686,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | - | - | 286 |
+> | Games | - | - | 129 |
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://quizizz.com/_media/unblockedzone/0daf5eb7-2d3d-47b1-b293-c9b226e24a15-v2 | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -3981,7 +3980,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | Unknown | Ultraviolet | 12 |
+> | Proxy/Games | Unknown | Ultraviolet | 11 |
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://quotes.gcpservicios.cl | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -3995,41 +3994,6 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://voya.buf2.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://voya.krepche.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://voya.worldmicroscope.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://voya.moldeointeractive.com.ar/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-
-# 🍈 Melonsoda
-> [!NOTE]
-> | Category | Capabilities | Protocol(s) | Links |
-> | - | - | - | - |
-> | Proxy/Games | Unknown | gust, sandstone | 18 |
-
-> [!IMPORTANT]
-> The gust/sandstone proxies are broken.
-
-
-| Locked | Link | Found Date | Username | Password | Contributor |
-| - | - | - | - | - | - |
-|  | https://assets.editor.p5js.org/69f62565e047d647146aca73/3db16b06-191d-4255-ba83-3b3a976e634f.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://meronsooda.netlify.app | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://raw.githack.com/linuxfandudeguy/melonsoda/main/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://unpkg.com/melonsoda@1.0.0/offline/selfupdating.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://cdn.jsdelivr.net/gh/linuxfandudeguy/classwork-chemistry@main/ixl.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://fastly.jsdelivr.net/gh/linuxfandudeguy/classwork-chemistry@main/ixl.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://gcore.jsdelivr.net/gh/linuxfandudeguy/classwork-chemistry@main/ixl.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://quantil.jsdelivr.net/gh/linuxfandudeguy/classwork-chemistry@main/ixl.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://originfastly.jsdelivr.net/gh/linuxfandudeguy/classwork-chemistry@main/ixl.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://testingcf.jsdelivr.net/gh/linuxfandudeguy/classwork-chemistry@main/ixl.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://learn-french-easy.wasmer.app/offline/selfupdating.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://educational-algebra-study-tutor.edgeone.app/offline/selfupdating.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://k12-algebra-tutoring-edu-us-resources.pages.dev/offline/selfupdating.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://esm.sh/melonsoda@1.0.0/offline/selfupdating.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://m3lon-ela-testprep.w3spaces.com | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://free-french-resources.web.app/offline/selfupdating.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://free-french-resources.firebaseapp.com/offline/selfupdating.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://unpkg.com/scientific-algebra-calculator@1.0.0/ixl.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| Locked | Link | Found Date | Username | Password | Contributor |
-| - | - | - | - | - | - |
-
 
 # 🐱 Cat Class
 > [!NOTE]

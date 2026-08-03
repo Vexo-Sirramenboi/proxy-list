@@ -192,42 +192,77 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-03T17:07:51Z",
-    "checked_at_display": "2026-08-03 17:07 UTC",
+    "checked_at": "2026-08-03T17:19:04Z",
+    "checked_at_display": "2026-08-03 17:19 UTC",
     "added_count": 0,
-    "removed_count": 24,
+    "removed_count": 1,
     "added_links": [],
     "removed_links": [
-      "https://classlink-redirect.surge.sh",
-      "https://subscribevcsa.barrelofmakers.org",
-      "https://ixl.vseesa.edujose.com",
-      "https://sweets.bakeryos.net",
-      "https://dear.eilong.com",
-      "https://ford.romppais.ca",
-      "https://heading.romppais.ca",
-      "https://strawberry.greenbaynz.com",
-      "https://chromebook.dentist4you.com.au",
-      "https://tungtung.avtosnoj.si",
-      "https://tungtungisw.caheobay.com",
-      "https://strawberry.avtosnoj.si",
-      "https://studyhub.avtosnoj.si",
-      "https://dude.cowin-eng.com",
-      "https://yellow.cowin-eng.com",
-      "https://hello.rusticrivergear.com",
-      "https://olivia.rusticrivergear.com",
-      "https://birds.bitds.eu",
-      "https://smartbio.cspcorp.com",
-      "https://greatest.lins2000.com",
-      "https://greatest.tribeoftwo.com",
-      "https://ford.setto.cl",
-      "https://ford.bumon.ar",
-      "https://cdn.imageurlgenerator.com/uploads/f255136f-ca13-474e-8b6b-7d20b24835de.svg#"
+      "https://bestspark.moldeointeractive.com.ar"
     ]
   },
   "failing_links": {
-    "https://bobbydongschreinerus8.weebly.com/my-work.html": 1,
-    "https://bestspark.moldeointeractive.com.ar": 2,
-    "https://voya.moldeointeractive.com.ar": 2
+    "https://intelleducation.netlify.app": 1,
+    "https://abba.edrivensports.com": 1,
+    "https://able.itlogistics.com.ar": 1,
+    "https://ably.surfnet.ca": 1,
+    "https://aces.paulkelly.org": 1,
+    "https://acid.contactme.cl": 1,
+    "https://acme.strongson.com": 1,
+    "https://acre.ftp.sh": 1,
+    "https://acyl.thesqueakandoilchart.com": 1,
+    "https://afro.ladatap.com": 1,
+    "https://agar.twilightparadox.com": 1,
+    "https://ager.pimp.co.za": 1,
+    "https://ages.serprise.com": 1,
+    "https://airs.crisdantas.com.br": 1,
+    "https://airy.familiamarinho.com.br": 1,
+    "https://ajar.jpleventos.cl": 1,
+    "https://akin.familiamarinho.com.br": 1,
+    "https://alas.noamank.com": 1,
+    "https://alfa.netmarket.gr": 1,
+    "https://alga.ohbah.com": 1,
+    "https://abbe.astraltech.org": 1,
+    "https://ably.7dejunio.com.ar": 1,
+    "https://acyl.4040.idv.tw": 1,
+    "https://aero.uitgavepatroon.nl": 1,
+    "https://acts.surreyquays.com": 1,
+    "https://afar.euasazic.ro": 1,
+    "https://afro.carcano.me": 1,
+    "https://agar.seprotec.net.br": 1,
+    "https://aida.manoahinvest.com": 1,
+    "https://adds.vaizer.cl": 1,
+    "https://airs.keybusinessconnection.com": 1,
+    "https://akin.1337.cx": 1,
+    "https://alma.fernando-botero-sculpture.com": 1,
+    "https://ames.agus-87.com.ar": 1,
+    "https://amir.johanson.ee": 1,
+    "https://ammo.demoteam.ch": 1,
+    "https://alto.seprotec.net.br": 1,
+    "https://anon.allisons.org": 1,
+    "https://amen.zabiasrl.com.ar": 1,
+    "https://amps.lovefilm.com.br": 1,
+    "https://arco.heliumcola.com": 1,
+    "https://arcs.largent.org": 1,
+    "https://ares.imexsac.com": 1,
+    "https://atom.fuckwikia.com": 1,
+    "https://asks.ftp.sh": 1,
+    "https://atop.pixelfucker.org": 1,
+    "https://aria.joeliriano.com": 1,
+    "https://aura.music-menges.si": 1,
+    "https://fern.moldeointeractive.com.ar": 1,
+    "https://cdn.statically.io/gh/avaisadev/how-to-use-linux@latest/index.svg": 1,
+    "https://raw.githubusercontent.com/avaisadev/how-to-use-linux/latest/index.svg": 1,
+    "https://cdn.statically.io/gh/avaisadev/github@latest/index.svg": 1,
+    "https://raw.githubusercontent.com/avaisadev/github/latest/index.svg": 1,
+    "https://cdn.statically.io/gh/reeyuki/YukiOsSingleHtml@main/yukios.svg": 1,
+    "https://padlet-uploads-usc1.storage.googleapis.com": 1,
+    "https://cdn.staticdelivr.com/combine/npm/ubzone@1.0.0/assets/index.svg": 1,
+    "https://cdn.staticdelivr.com/combine/npm/ubzone@2.0.0/assets/index.svg": 1,
+    "https://cdn.staticdelivr.com/combine/npm/ubzone@3.0.0/assets/index.svg": 1,
+    "https://cdn.staticdelivr.com/combine/npm/ubzone@latest/assets/index.svg": 1,
+    "https://cdn.staticdelivr.com/combine/npm/ubzone/assets/index.svg": 1,
+    "https://padlet.com/padlet-esk7ujq9dsouvtbu/wish/9kmlZVpzw6gEapgV": 1
   },
   "links": [
     {
@@ -57655,27 +57690,6 @@
       ],
       "additional_notes": "",
       "locked": "",
-      "link": "https://bestspark.moldeointeractive.com.ar",
-      "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✨ BestSpark",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "",
-      "locked": "",
       "link": "https://bestspark.worldmicroscope.com",
       "found": "8/1/2026",
       "username": "N/A",
@@ -63723,404 +63737,6 @@
       "locked": "",
       "link": "https://voya.worldmicroscope.com/",
       "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🚢 Voya",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://voya.moldeointeractive.com.ar/",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍈 Melonsoda",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "gust, sandstone",
-      "protocol_tags": [
-        "gust",
-        "sandstone"
-      ],
-      "additional_notes": "The gust/sandstone proxies are broken.",
-      "locked": "",
-      "link": "https://assets.editor.p5js.org/69f62565e047d647146aca73/3db16b06-191d-4255-ba83-3b3a976e634f.svg",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍈 Melonsoda",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "gust, sandstone",
-      "protocol_tags": [
-        "gust",
-        "sandstone"
-      ],
-      "additional_notes": "The gust/sandstone proxies are broken.",
-      "locked": "",
-      "link": "https://meronsooda.netlify.app",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍈 Melonsoda",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "gust, sandstone",
-      "protocol_tags": [
-        "gust",
-        "sandstone"
-      ],
-      "additional_notes": "The gust/sandstone proxies are broken.",
-      "locked": "",
-      "link": "https://raw.githack.com/linuxfandudeguy/melonsoda/main/index.html",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍈 Melonsoda",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "gust, sandstone",
-      "protocol_tags": [
-        "gust",
-        "sandstone"
-      ],
-      "additional_notes": "The gust/sandstone proxies are broken.",
-      "locked": "",
-      "link": "https://unpkg.com/melonsoda@1.0.0/offline/selfupdating.html",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍈 Melonsoda",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "gust, sandstone",
-      "protocol_tags": [
-        "gust",
-        "sandstone"
-      ],
-      "additional_notes": "The gust/sandstone proxies are broken.",
-      "locked": "",
-      "link": "https://cdn.jsdelivr.net/gh/linuxfandudeguy/classwork-chemistry@main/ixl.svg",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍈 Melonsoda",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "gust, sandstone",
-      "protocol_tags": [
-        "gust",
-        "sandstone"
-      ],
-      "additional_notes": "The gust/sandstone proxies are broken.",
-      "locked": "",
-      "link": "https://fastly.jsdelivr.net/gh/linuxfandudeguy/classwork-chemistry@main/ixl.svg",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍈 Melonsoda",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "gust, sandstone",
-      "protocol_tags": [
-        "gust",
-        "sandstone"
-      ],
-      "additional_notes": "The gust/sandstone proxies are broken.",
-      "locked": "",
-      "link": "https://gcore.jsdelivr.net/gh/linuxfandudeguy/classwork-chemistry@main/ixl.svg",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍈 Melonsoda",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "gust, sandstone",
-      "protocol_tags": [
-        "gust",
-        "sandstone"
-      ],
-      "additional_notes": "The gust/sandstone proxies are broken.",
-      "locked": "",
-      "link": "https://quantil.jsdelivr.net/gh/linuxfandudeguy/classwork-chemistry@main/ixl.svg",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍈 Melonsoda",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "gust, sandstone",
-      "protocol_tags": [
-        "gust",
-        "sandstone"
-      ],
-      "additional_notes": "The gust/sandstone proxies are broken.",
-      "locked": "",
-      "link": "https://originfastly.jsdelivr.net/gh/linuxfandudeguy/classwork-chemistry@main/ixl.svg",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍈 Melonsoda",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "gust, sandstone",
-      "protocol_tags": [
-        "gust",
-        "sandstone"
-      ],
-      "additional_notes": "The gust/sandstone proxies are broken.",
-      "locked": "",
-      "link": "https://testingcf.jsdelivr.net/gh/linuxfandudeguy/classwork-chemistry@main/ixl.svg",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍈 Melonsoda",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "gust, sandstone",
-      "protocol_tags": [
-        "gust",
-        "sandstone"
-      ],
-      "additional_notes": "The gust/sandstone proxies are broken.",
-      "locked": "",
-      "link": "https://learn-french-easy.wasmer.app/offline/selfupdating.html",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍈 Melonsoda",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "gust, sandstone",
-      "protocol_tags": [
-        "gust",
-        "sandstone"
-      ],
-      "additional_notes": "The gust/sandstone proxies are broken.",
-      "locked": "",
-      "link": "https://educational-algebra-study-tutor.edgeone.app/offline/selfupdating.html",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍈 Melonsoda",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "gust, sandstone",
-      "protocol_tags": [
-        "gust",
-        "sandstone"
-      ],
-      "additional_notes": "The gust/sandstone proxies are broken.",
-      "locked": "",
-      "link": "https://k12-algebra-tutoring-edu-us-resources.pages.dev/offline/selfupdating.html",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍈 Melonsoda",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "gust, sandstone",
-      "protocol_tags": [
-        "gust",
-        "sandstone"
-      ],
-      "additional_notes": "The gust/sandstone proxies are broken.",
-      "locked": "",
-      "link": "https://esm.sh/melonsoda@1.0.0/offline/selfupdating.html",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍈 Melonsoda",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "gust, sandstone",
-      "protocol_tags": [
-        "gust",
-        "sandstone"
-      ],
-      "additional_notes": "The gust/sandstone proxies are broken.",
-      "locked": "",
-      "link": "https://m3lon-ela-testprep.w3spaces.com",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍈 Melonsoda",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "gust, sandstone",
-      "protocol_tags": [
-        "gust",
-        "sandstone"
-      ],
-      "additional_notes": "The gust/sandstone proxies are broken.",
-      "locked": "",
-      "link": "https://free-french-resources.web.app/offline/selfupdating.html",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍈 Melonsoda",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "gust, sandstone",
-      "protocol_tags": [
-        "gust",
-        "sandstone"
-      ],
-      "additional_notes": "The gust/sandstone proxies are broken.",
-      "locked": "",
-      "link": "https://free-french-resources.firebaseapp.com/offline/selfupdating.html",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍈 Melonsoda",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "gust, sandstone",
-      "protocol_tags": [
-        "gust",
-        "sandstone"
-      ],
-      "additional_notes": "The gust/sandstone proxies are broken.",
-      "locked": "",
-      "link": "https://unpkg.com/scientific-algebra-calculator@1.0.0/ixl.svg",
-      "found": "8/3/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",
