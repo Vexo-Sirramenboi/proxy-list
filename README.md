@@ -65,9 +65,11 @@ This repository uses a dual license:
 | Scope | License | File |
 | --- | --- | --- |
 | **Site code** (HTML, scripts, tooling, config) | [MIT](LICENSE) | `LICENSE` |
-| **List data** (`list.md`, generated JSON, link datasets) | [CC BY 4.0](LICENSE-DATA) | `LICENSE-DATA` |
+| **List data** (`list.md`, generated JSON, link datasets) | [CC BY 4.0](LICENSE-CC-BY-4.0) | `LICENSE-CC-BY-4.0` |
 
 You may copy, share, and remix the proxy list data with attribution. The website code is open under MIT with the usual permissions and warranty disclaimer.
+
+CC BY 4.0 covers the list data and datasets derived from it, including `list.md`, `unsorted.md`, `link_status.json`, and the generated files under `docs/` such as `data.json`, `unsorted.json`, `link_check_meta.json`, `link_check_snapshot.json`, `contributor_link_totals.json`, `popular_links.json`, `linklens.json`, and `submission_url_keys.json`.
 
 # How is CAPTCHA tested?
 CAPTCHA is tested using the official [Google ReCAPTCHA demo](https://www.google.com/recaptcha/api2/demo)
