@@ -2,7 +2,7 @@
 > [!NOTE]
 > v5.4.1 | Released: August 02, 2026
 > r257 | Last Updated: August 03, 2026
-> Total onsite links: 3534 (3192 sorted + 342 unsorted)\
+> Total onsite links: 3759 (3417 sorted + 342 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
 Welcome to the official Proxy List! This has a running list of hundreds of unblocked websites and games that anyone is free to use. We have the most popular and reliable sites here, so you'll never run out!
@@ -40,7 +40,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 68 |
+> | Proxy/Games | captcha | Scramjet | 71 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -120,7 +120,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | N/A | N/A | 47 |
+> | Games | N/A | N/A | 59 |
 
 > [!IMPORTANT]
 > View importance notices section if link is broken.
@@ -179,12 +179,19 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://quizizz-static.s3-accelerate.amazonaws.com/_media/uploadedFiles/91a1408d-67fc-4bb0-bdd0-3e447c5e5b92-v2 | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://quizizz-static.s3-accelerate.amazonaws.com/_media/uploadedFiles/3593eb84-f05f-46bf-96d6-9a44f70d1114-v2 | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://albin.tabulasync.com | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://unpkg.com/snoopylearning@1.0.0/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://unpkg.com/snoopylearning@1.0.0/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/npm/snoopylearning@1.0.0/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://esm.sh/snoopylearning@1.0.0/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.statically.io/npm/snoopylearning@1.0.0/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.statically.io/gh/daxcodesalt/x3@main/securly.com/classlink.com/FreeBusinessEducation-Logo-Square.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://sololearn.com/en/compiler-playground/W6oaP0W77da1 | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🐸 frogie's arcade
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Ultraviolet | 41 |
+> | Proxy/Games | captcha | Ultraviolet | 42 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -251,7 +258,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp, captcha, reflux | Scramjet, Ultraviolet | 30 |
+> | Proxy/Games | epoxy, libcurl, wisp, captcha, reflux | Scramjet, Ultraviolet | 34 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -315,7 +322,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp | Scramjet, Ultraviolet | 26 |
+> | Proxy/Games | epoxy, libcurl, wisp | Scramjet, Ultraviolet | 30 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -354,7 +361,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet, Ultraviolet | 35 |
+> | Proxy/Games | unknown | Scramjet, Ultraviolet | 65 |
 
 > [!IMPORTANT]
 > Fern does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -401,6 +408,31 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 |  | https://fern.worldmicroscope.com/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://s3.amazonaws.com/2027games/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://2027games.s3.amazonaws.com/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://s3.amazonaws.com/classworks/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://s3.amazonaws.com/bull33/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://s3.amazonaws.com/bullbestyoutuber/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://s3.amazonaws.com/bullguardian/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://s3.amazonaws.com/bullisgoated/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://s3.amazonaws.com/bulllightspeed/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://s3.amazonaws.com/iloveliteratures/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://s3.amazonaws.com/ilovemaths/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://s3.amazonaws.com/lsrelay-extension-production/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://s3.amazonaws.com/macrolo/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://s3.amazonaws.com/macrologoat/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://s3.amazonaws.com/macrolomath/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://bullbestyoutuber.s3.amazonaws.com/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://bulledu.s3.amazonaws.com/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://bullguardian.s3.amazonaws.com/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://bullisgoated.s3.amazonaws.com/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://bulllightspeed.s3.amazonaws.com/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://bullmath.s3.amazonaws.com/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://bullubg.s3.amazonaws.com/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://iloveliteratures.s3.amazonaws.com/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://ilovemaths.s3.amazonaws.com/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://lsrelay-extension-production.s3.amazonaws.com/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://macrolo.s3.amazonaws.com/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://macrologoat.s3.amazonaws.com/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://macrolomath.s3.amazonaws.com/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🍄 Truffled
 > [!NOTE]
@@ -504,7 +536,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 6 |
+> | Proxy/Games | unknown | Scramjet | 7 |
 
 > [!IMPORTANT]
 > Boredom does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -536,7 +568,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 39 |
+> | Proxy/Games | unknown | unknown | 41 |
 
 > [!IMPORTANT]
 > Shadow does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -590,7 +622,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 81 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 82 |
 
 > [!IMPORTANT]
 > dogeub does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -684,7 +716,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 32 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 33 |
 
 > [!IMPORTANT]
 > Lunar does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -937,7 +969,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, captcha, wisp | Scramjet, Ultraviolet, Rammerhead | 2 |
+> | Proxy/Games | epoxy, libcurl, captcha, wisp | Scramjet, Ultraviolet, Rammerhead | 3 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -949,7 +981,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | N/A | N/A | 403 |
+> | Proxy/Games | N/A | N/A | 404 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -1579,7 +1611,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy | Unknown | Ultraviolet | 104 |
+> | Proxy | Unknown | Ultraviolet | 124 |
 
 > [!IMPORTANT]
 > Strawberri does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1716,7 +1748,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 5 |
+> | Proxy/Games | unknown | unknown | 7 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -1804,7 +1836,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 22 |
+> | Proxy/Games | captcha | Scramjet | 23 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -2088,7 +2120,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 5 |
+> | Proxy/Games | captcha | Scramjet | 6 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -3204,12 +3236,48 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 2 |
+> | Proxy/Games | unknown | unknown | 38 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://cdn.jsdelivr.net/gh/avaisadev/github.com/index.svg | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdelivr.net/gh/avaisadev/how-to-use-linux@main/index.svg | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/gh/NoseyGames/data@main/svgs/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/gh/NoseyGames/svg@main/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/gh/avaisadev/svg@main/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/gh/avaisadev/securly.com/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/gh/avaisadev/testing@main/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://esm.sh/gh/avaisadev/github.com@b9204eb/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://esm.sh/gh/avaisadev/securly.com@8a9e121/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://unpkg.com/@securlytestingscrape/diagnostics@1.0.0/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/gh/lilrtglock/github@main/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/gh/lilrtglock/github@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/gh/chillguyaQ-cmd/github.com@main/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/gh/chillguyaQ-cmd/github.com@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/gh/avaisadev/how-to-use-linux@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/gh/avaisadev/how-to-use-linux@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/gh/avaisadev/how-to-use-linux@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/gh/avaisadev/how-to-use-linux@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/gh/avaisadev/how-to-use-linux@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/gh/avaisadev/how-to-use-linux@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.statically.io/gh/avaisadev/how-to-use-linux@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://raw.githubusercontent.com/avaisadev/how-to-use-linux/latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/gh/avaisadev/github@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/gh/avaisadev/github@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/gh/avaisadev/github@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/gh/avaisadev/github@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/gh/avaisadev/github@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/gh/avaisadev/github@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.statically.io/gh/avaisadev/github@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://raw.githubusercontent.com/avaisadev/github/latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/gh/avaisadev/github.com@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/gh/avaisadev/github.com@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/gh/avaisadev/github.com@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/gh/avaisadev/github.com@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/gh/avaisadev/github.com@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/gh/avaisadev/github.com@latest/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.statically.io/gh/avaisadev/github.com@main/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://raw.githubusercontent.com/avaisadev/github.com/main/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🌕 MoonPie
 > [!NOTE]
@@ -3313,7 +3381,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 1 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 2 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -3357,7 +3425,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp, epoxy, libcurl | Scramjet, Tor | 8 |
+> | Proxy/Games | wisp, epoxy, libcurl | Scramjet, Tor | 10 |
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://yukios.edgeone.app | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -3368,6 +3436,8 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://gcore.jsdelivr.net/gh/reeyuki/YukiOsSingleHtml@main/yukios.svg | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.staticdelivr.com/gh/reeyuki/YukiOsSingleHtml/main/yukios.svg | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdelivr.net/gh/reeyuki/YukiOsSingleHtml@main/yukios.svg | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://esm.sh/gh/reeyuki/YukiOsSingleHtml@main/yukios.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.statically.io/gh/reeyuki/YukiOsSingleHtml@main/yukios.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # Nettle Web
 > [!NOTE]
@@ -3617,7 +3687,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | - | - | 129 |
+> | Games | - | - | 286 |
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://quizizz.com/_media/unblockedzone/0daf5eb7-2d3d-47b1-b293-c9b226e24a15-v2 | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -3749,12 +3819,169 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://originfastly.jsdelivr.net/combine/gh/googleaccountuser/myfirstrepo/windows10background.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://jsd.onmicrosoft.cn/combine/gh/googleaccountuser/myfirstrepo/windows10background.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdmirror.com/combine/gh/googleaccountuser/myfirstrepo/windows10background.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://jsd.onmicrosoft.cn/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdmirror.com/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.statically.io/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://jsd.onmicrosoft.cn/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdmirror.com/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.staticdelivr.com/gh/UNBL0CKEDZ0NE/ubassets/main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.statically.io/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://jsd.onmicrosoft.cn/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdmirror.com/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.staticdelivr.com/gh/UNBL0CKEDZ0NE/ubassets/master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://jsd.onmicrosoft.cn/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdmirror.com/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://jsd.onmicrosoft.cn/combine/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdmirror.com/combine/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://jsd.onmicrosoft.cn/combine/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdmirror.com/combine/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://jsd.onmicrosoft.cn/combine/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdmirror.com/combine/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://jsd.onmicrosoft.cn/combine/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdmirror.com/combine/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://bradarwhatisthis.web.app | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://padlet-uploads-usc1.storage.googleapis.com | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://raw.esm.sh/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://esm.sh/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://unpkg.com/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/npm/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/npm/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/npm/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/npm/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/npm/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/npm/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://jsd.onmicrosoft.cn/npm/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdmirror.com/npm/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.staticdelivr.com/npm/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://raw.esm.sh/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://esm.sh/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://unpkg.com/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/npm/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/npm/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/npm/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/npm/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/npm/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/npm/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://jsd.onmicrosoft.cn/npm/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdmirror.com/npm/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.staticdelivr.com/npm/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://raw.esm.sh/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://esm.sh/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://unpkg.com/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/npm/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/npm/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/npm/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/npm/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/npm/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/npm/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://jsd.onmicrosoft.cn/npm/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdmirror.com/npm/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.staticdelivr.com/npm/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/npm/ubzone@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/npm/ubzone@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/npm/ubzone@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/npm/ubzone@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/npm/ubzone@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/npm/ubzone@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://jsd.onmicrosoft.cn/npm/ubzone@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdmirror.com/npm/ubzone@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.staticdelivr.com/npm/ubzone@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/combine/npm/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/combine/npm/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/combine/npm/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/combine/npm/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/combine/npm/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/combine/npm/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://jsd.onmicrosoft.cn/combine/npm/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdmirror.com/combine/npm/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.staticdelivr.com/combine/npm/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/combine/npm/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/combine/npm/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/combine/npm/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/combine/npm/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/combine/npm/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/combine/npm/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://jsd.onmicrosoft.cn/combine/npm/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.staticdelivr.com/combine/npm/ubzone@2.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/combine/npm/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/combine/npm/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/combine/npm/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/combine/npm/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/combine/npm/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/combine/npm/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://jsd.onmicrosoft.cn/combine/npm/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.staticdelivr.com/combine/npm/ubzone@3.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/combine/npm/ubzone@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/combine/npm/ubzone@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/combine/npm/ubzone@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/combine/npm/ubzone@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/combine/npm/ubzone@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/combine/npm/ubzone@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://jsd.onmicrosoft.cn/combine/npm/ubzone@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.staticdelivr.com/combine/npm/ubzone@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/combine/npm/ubzone/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/combine/npm/ubzone/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/combine/npm/ubzone/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/combine/npm/ubzone/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/combine/npm/ubzone/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/combine/npm/ubzone/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://jsd.onmicrosoft.cn/combine/npm/ubzone/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.staticdelivr.com/combine/npm/ubzone/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://padlet.com/padlet-esk7ujq9dsouvtbu/wish/9kmlZVpzw6gEapgV | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🚢 Voya
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | Unknown | Ultraviolet | 11 |
+> | Proxy/Games | Unknown | Ultraviolet | 12 |
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://quotes.gcpservicios.cl | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -3769,6 +3996,40 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://voya.krepche.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://voya.worldmicroscope.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://voya.moldeointeractive.com.ar/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
+# 🍈 Melonsoda
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | Proxy/Games | Unknown | gust, sandstone | 18 |
+
+> [!IMPORTANT]
+> The gust/sandstone proxies are broken.
+
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+|  | https://assets.editor.p5js.org/69f62565e047d647146aca73/3db16b06-191d-4255-ba83-3b3a976e634f.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://meronsooda.netlify.app | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://raw.githack.com/linuxfandudeguy/melonsoda/main/index.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://unpkg.com/melonsoda@1.0.0/offline/selfupdating.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://cdn.jsdelivr.net/gh/linuxfandudeguy/classwork-chemistry@main/ixl.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://fastly.jsdelivr.net/gh/linuxfandudeguy/classwork-chemistry@main/ixl.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://gcore.jsdelivr.net/gh/linuxfandudeguy/classwork-chemistry@main/ixl.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://quantil.jsdelivr.net/gh/linuxfandudeguy/classwork-chemistry@main/ixl.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://originfastly.jsdelivr.net/gh/linuxfandudeguy/classwork-chemistry@main/ixl.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://testingcf.jsdelivr.net/gh/linuxfandudeguy/classwork-chemistry@main/ixl.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://learn-french-easy.wasmer.app/offline/selfupdating.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://educational-algebra-study-tutor.edgeone.app/offline/selfupdating.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://k12-algebra-tutoring-edu-us-resources.pages.dev/offline/selfupdating.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://esm.sh/melonsoda@1.0.0/offline/selfupdating.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://m3lon-ela-testprep.w3spaces.com | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://free-french-resources.web.app/offline/selfupdating.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://free-french-resources.firebaseapp.com/offline/selfupdating.html | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+|  | https://unpkg.com/scientific-algebra-calculator@1.0.0/ixl.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+
 
 # 🐱 Cat Class
 > [!NOTE]
