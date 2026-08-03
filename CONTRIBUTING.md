@@ -90,6 +90,9 @@ Thanks for wanting to build our list and help the community! Here's how to reque
 5. Open a pull request.
 
 # 2. Contribute through Google Forms
+> [!WARNING]
+> Google Forms is being deprecated and removed on August 31, 2026 in favor of our on-site form submission system, which is faster and allows for better moderation of requests.
+
 [Go to the form here and fill out the info](https://forms.gle/SMx9EUkBeiFuLwBa8), then submit. Your Google email and real name are not shared with us. Please make sure to give a name/alias so we can give you credit for your contribution, else I will just fill it in with "Anonymous Contributor".
 
 # Rules
@@ -104,6 +107,9 @@ The following domains are not allowed to be submitted:
 
 ## Pull Request Edits
 I may edit the pull request if there is a mistake or small error, then push those edits to main. You will still be fully credited for contributing to the list.
+
+# 3. Submit through the Proxy List (recommended)
+[You can submit through the Proxy List and view rules here](https://yourworstnightmare1.github.io/proxy-list/contribute). You must have a Proxy List account in order to submit requests.
 
 # Common Questions
 ### Will these links show on both `list.md` and the website?
