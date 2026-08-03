@@ -40,7 +40,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 68 |
+> | Proxy/Games | captcha | Scramjet | 71 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -120,10 +120,10 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | N/A | N/A | 47 |
+> | Games | N/A | N/A | 59 |
 
 > [!IMPORTANT]
-> View importance notices section if link is broken.
+> if the link loads a page saying "user gn-math is blocked" or no games appear on screen, you are using an old version of gn-math that no longer works, please use another link. i also recommend reporting this on our GitHub issues page to prevent other users from running into this issue -> https://github.com/yourworstnightmare1/proxy-list/issues
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -191,7 +191,10 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Ultraviolet | 41 |
+> | Proxy/Games | captcha | Ultraviolet | 42 |
+
+> [!IMPORTANT]
+> on some networks, the proxy will load a white screen or an ultraviolet error page, if this happens try using another link as that is known to fix this issue
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -258,7 +261,10 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp, captcha, reflux | Scramjet, Ultraviolet | 30 |
+> | Proxy/Games | epoxy, libcurl, wisp, captcha, reflux | Scramjet, Ultraviolet | 34 |
+
+> [!IMPORTANT]
+> this proxy seems to be very slow on some links. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -322,7 +328,10 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp | Scramjet, Ultraviolet | 26 |
+> | Proxy/Games | epoxy, libcurl, wisp | Scramjet, Ultraviolet | 30 |
+
+> [!IMPORTANT]
+> some space links have a similar problem like daydream where it will be very slow for some reason. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -361,11 +370,11 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet, Ultraviolet | 35 |
+> | Proxy/Games | unknown | Scramjet, Ultraviolet | 65 |
 
 > [!IMPORTANT]
-> Fern does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
-> 
+> site has a bunch of ad popup windows, you can close these. it's recommended you use uBlock Origin to view this site without those popups
+
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://s3.amazonaws.com/angelfern/index.html | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -441,8 +450,8 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > | Proxy/Games | unknown | Scramjet | 86 |
 
 > [!IMPORTANT]
-> Truffled does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
-> 
+> when visiting truffled on a google script (script.google.com) domain, the proxy likely won't work. most games are unaffected
+
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://script.google.com/macros/s/AKfycbwqqo2qu8qT_KWNwhFRMIa-IzTs2S3vgH_7Rx14OCM8dSJU_u3TUCC7AMsrTtjo2oG-rQ/exec | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -536,7 +545,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 6 |
+> | Proxy/Games | unknown | Scramjet | 7 |
 
 > [!IMPORTANT]
 > Boredom does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -568,7 +577,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 39 |
+> | Proxy/Games | unknown | unknown | 41 |
 
 > [!IMPORTANT]
 > Shadow does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -622,11 +631,11 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 81 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 82 |
 
 > [!IMPORTANT]
-> dogeub does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
-> 
+> when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected
+
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://dogeubnirb.azure-cost-estimator.se/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -716,7 +725,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 32 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 33 |
 
 > [!IMPORTANT]
 > Lunar does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -838,8 +847,10 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > | Proxy/Games | epoxy, libcurl, wisp | Scramjet | 24 |
 
 > [!IMPORTANT]
-> OverCloaked does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
-> 
+> some of these links load a black screen
+>
+> some of these links (such as the s3.amazonaws.com proxies) struggle loading sites through the proxy sometimes, you may have to wait a minute before a site loads
+
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://s3.amazonaws.com/elliotslinks-tnjavxyp/homework65988/index.html | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -969,7 +980,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, captcha, wisp | Scramjet, Ultraviolet, Rammerhead | 2 |
+> | Proxy/Games | epoxy, libcurl, captcha, wisp | Scramjet, Ultraviolet, Rammerhead | 3 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -981,7 +992,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | N/A | N/A | 403 |
+> | Proxy/Games | N/A | N/A | 404 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -1413,7 +1424,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > | Proxy/Games | epoxy, libcurl, baremux, baremod, grammaray | Scramjet, Ultraviolet | 18 |
 
 > [!IMPORTANT]
-> TGLSC Density 4 does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
+> the proxy doesnt work sometimes, idk why
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -1611,11 +1622,10 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy | Unknown | Ultraviolet | 104 |
+> | Proxy | Unknown | Ultraviolet | 124 |
 
 > [!IMPORTANT]
-> Strawberri does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
-
+> if you were looking for ford links, ford no longer exists and all of its links are now strawberri links
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -1748,10 +1758,18 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 5 |
+> | Proxy/Games | unknown | unknown | 7 |
 
 > [!IMPORTANT]
-> This section has not been categorized or checked for protocol(s) and capabilities.
+> for some reason the developers put a 4 tab limit on free users (3 if you have adblock, 8+ if you pay). if you need multitasking use another proxy
+>
+> opening a new tab sometimes closes the 1st tab or clears what you had on tab 1 with the homepage
+>
+> you may be placed in a queue if there's too many people on at the same time in your region
+>
+> make sure that if you're in the uk you select the uk server and if you're in the us you select the us server or the proxy is gonna be super slow to load
+>
+> blocked for 90% of you
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -1770,7 +1788,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > | Proxy/Games | unknown | unknown | 43 |
 
 > [!IMPORTANT]
-> Utopia Education does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
+> this site uses highly detectable domains, very likely all of these are blocked for you
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -1836,7 +1854,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 22 |
+> | Proxy/Games | captcha | Scramjet | 23 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -2120,7 +2138,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 5 |
+> | Proxy/Games | captcha | Scramjet | 6 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -2296,6 +2314,9 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
 > | Games | - | - | 812 |
+
+> [!IMPORTANT]
+> if you are prompted to download an svg/html file, download it as it contains the website since this site mainly uses singlefile over individual domains for distribution
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -3236,7 +3257,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 2 |
+> | Proxy/Games | unknown | unknown | 38 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -3381,7 +3402,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 1 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 2 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -3425,7 +3446,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp, epoxy, libcurl | Scramjet, Tor | 8 |
+> | Proxy/Games | wisp, epoxy, libcurl | Scramjet, Tor | 10 |
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://yukios.edgeone.app | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -3514,7 +3535,7 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > | - | - | - | - |
 > | pending | pending | pending | 7 |
 > [!IMPORTANT]
-> This section has not been categorized or checked for protocol(s) and capabilities.
+> making a new vm doesn't work 90% of the time, likely because its cdn is set to an expired b-cdn.net link
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -3665,6 +3686,9 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
 > | Proxy/Games | Unknown | Scramjet, Ultraviolet | 14 |
+> [!IMPORTANT]
+> proxies dont work
+
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://bestspark.indevs.in/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -3686,7 +3710,10 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | - | - | 129 |
+> | Games | - | - | 286 |
+> [!IMPORTANT]
+> if you see a block screen it's likely fake, wait a few seconds and it will disappear
+
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://quizizz.com/_media/unblockedzone/0daf5eb7-2d3d-47b1-b293-c9b226e24a15-v2 | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -4168,6 +4195,11 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
 > | Proxy/Games | Unknown | Scramjet, Ultraviolet, Tor | 15 |
+> [!IMPORTANT]
+> site has fake nasa popup, wait a few seconds and it should disappear
+>
+> using the proxy (jetstream) requires google login
+
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://15-204-116-29.my.local-ip.co/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
