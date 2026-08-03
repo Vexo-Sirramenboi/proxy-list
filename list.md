@@ -3560,31 +3560,6 @@ Removed over 1.9K bad unsorted links. This should hopefully help with the clutte
 | | https://originfastly.jsdelivr.net/gh/AetherGamesOfficial/AetherEducationStatic@26b0f7c/index.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://testingcf.jsdelivr.net/gh/AetherGamesOfficial/AetherEducationStatic@26b0f7c/index.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# 🎯 Snipershot
-> [!NOTE]
-> | Category | Capabilities | Protocol(s) | Links |
-> | - | - | - | - |
-> | pending | pending | pending | 14 |
-> [!IMPORTANT]
-> This section has not been categorized or checked for protocol(s) and capabilities.
-
-| Locked | Link | Found Date | Username | Password | Contributor |
-| - | - | - | - | - | - |
-| | https://link4.medicalscience.academy | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://link6.medicalscience.academy | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://link1.medicalscience.academy | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://link3.medicalscience.academy | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://bobberson.medicalscience.academy | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://link2.medicalscience.academy | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://hazbinhotelisgood.medicalscience.academy | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://link5.medicalscience.academy | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://summerbreakyippe.medicalscience.academy | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://puffer.medicalscience.academy | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://findajob.medicalscience.academy | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://hortymakesbadsongs.medicalscience.academy | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://medevmadethistufflink.medicalscience.academy | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://mickerino.medicalscience.academy | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-
 # 🔗 Nexus
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
