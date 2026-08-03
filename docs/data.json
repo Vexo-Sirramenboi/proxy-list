@@ -3492,6 +3492,26 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
+      "provider": "🐸 frogie's arcade",
+      "category": "Proxy/Games",
+      "capabilities": "captcha",
+      "capability_tags": [
+        "captcha"
+      ],
+      "protocols": "Ultraviolet",
+      "protocol_tags": [
+        "ultraviolet"
+      ],
+      "additional_notes": "on some networks, the proxy will load a white screen or an ultraviolet error page, if this happens try using another link as that is known to fix this issue",
+      "locked": "",
+      "link": "https://bit.frog.ac/",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
       "provider": "🍌 Jordan's Math Work",
       "category": "Proxy/Games",
       "capabilities": "unknown",
@@ -6660,6 +6680,27 @@
       "additional_notes": "site has a bunch of ad popup windows, you can close these. it's recommended you use uBlock Origin to view this site without those popups",
       "locked": "",
       "link": "https://macrolomath.s3.amazonaws.com/index.html",
+      "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🪴 Fern",
+      "category": "Proxy/Games",
+      "capabilities": "unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "Scramjet, Ultraviolet",
+      "protocol_tags": [
+        "scramjet",
+        "ultraviolet"
+      ],
+      "additional_notes": "site has a bunch of ad popup windows, you can close these. it's recommended you use uBlock Origin to view this site without those popups",
+      "locked": "",
+      "link": "https://fernvcsa.s3.us-east-1.amazonaws.com/index.html",
       "found": "8/3/2026",
       "username": "N/A",
       "password": "N/A",
