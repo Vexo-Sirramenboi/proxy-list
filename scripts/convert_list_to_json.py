@@ -315,12 +315,26 @@ def parse_list_md(text: str) -> list[dict]:
     section_category = ""
     section_capabilities = ""
     section_protocols = ""
+    section_additional_notes = ""
     in_note_header = False
+    in_important = False
+    important_lines: list[str] = []
+
+    def flush_important() -> None:
+        nonlocal section_additional_notes, in_important, important_lines
+        note = "\n".join(important_lines).strip()
+        # Skip boilerplate pending-section text.
+        if note and "has not been categorized" not in note.casefold():
+            section_additional_notes = note
+        important_lines = []
+        in_important = False
 
     for raw in text.splitlines():
         line = raw.rstrip("\n")
 
         if re.match(r"^#\s+[^#]", line) and not line.startswith("##"):
+            if in_important:
+                flush_important()
             title = re.sub(r"^#\s+", "", line).strip()
             if title.casefold() == "proxy list".casefold():
                 current_provider = None
@@ -329,16 +343,53 @@ def parse_list_md(text: str) -> list[dict]:
             section_category = ""
             section_capabilities = ""
             section_protocols = ""
+            section_additional_notes = ""
             in_note_header = False
+            in_important = False
+            important_lines = []
             continue
 
         inner = strip_blockquote_prefix(line)
-        if inner.strip().startswith("| Category | Capabilities |"):
+        inner_s = inner.strip()
+
+        if re.match(r"^\[!(IMPORTANT|WARNING|NOTE|TIP|CAUTION)\]\s*$", inner_s, re.I):
+            kind = re.match(r"^\[!(\w+)\]", inner_s, re.I)
+            # The category meta uses [!NOTE]; only treat other admonitions (and IMPORTANT) as notes.
+            # But some sections put IMPORTANT after the NOTE meta block.
+            if kind and kind.group(1).upper() == "NOTE":
+                # Could be the start of the category NOTE — leave for table parser below.
+                if in_important:
+                    flush_important()
+                continue
+            if in_important:
+                flush_important()
+            in_important = True
+            important_lines = []
+            continue
+
+        if in_important:
+            if not line.strip():
+                flush_important()
+                continue
+            if line.strip().startswith("|") and not line.strip().startswith(">|") and not line.strip().startswith("> |"):
+                flush_important()
+                # fall through to table parsing
+            elif inner_s.startswith("| Category |"):
+                flush_important()
+                # fall through
+            elif line.startswith(">") or line.startswith("> "):
+                if inner_s and not inner_s.startswith("[!"):
+                    important_lines.append(inner_s)
+                continue
+            else:
+                flush_important()
+
+        if inner_s.startswith("| Category | Capabilities |"):
             in_note_header = True
             continue
         if in_note_header and re.match(r"^\s*\|?\s*-\s*\|", inner):
             continue
-        if in_note_header and inner.strip().startswith("|"):
+        if in_note_header and inner_s.startswith("|"):
             cells = split_pipe_row(line)
             if (
                 len(cells) >= 4
@@ -381,6 +432,7 @@ def parse_list_md(text: str) -> list[dict]:
                 "capability_tags": cap_tags,
                 "protocols": section_protocols,
                 "protocol_tags": proto_tags,
+                "additional_notes": section_additional_notes,
                 "locked": locked,
                 "link": link,
                 "found": found,

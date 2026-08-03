@@ -1071,7 +1071,7 @@
       flex-shrink: 0;
     }
     .summary-modal {
-      width: min(760px, 100%);
+      width: min(920px, 100%);
       max-height: 85vh;
       display: flex;
       flex-direction: column;
@@ -1127,6 +1127,42 @@
       border-color: #305244;
     }
     .summary-muted { color: var(--muted); font-size: 0.84rem; margin: 0 0 0.7rem; }
+    .summary-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0.85rem;
+      align-items: start;
+    }
+    .summary-layout.has-notes {
+      grid-template-columns: minmax(0, 1.35fr) minmax(12rem, 0.85fr);
+    }
+    @media (max-width: 720px) {
+      .summary-layout.has-notes {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+    .summary-main { min-width: 0; }
+    .summary-notes {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+      padding: 0.7rem 0.8rem;
+    }
+    .summary-notes h3 {
+      margin: 0 0 0.45rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+    }
+    .summary-notes p {
+      margin: 0;
+      font-size: 0.84rem;
+      line-height: 1.45;
+      color: var(--text);
+      white-space: pre-wrap;
+    }
     .summary-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -6144,6 +6180,29 @@
       return out;
     }
 
+    function listRowForLink(link) {
+      const rows = pageContext && Array.isArray(pageContext.links) ? pageContext.links : [];
+      const norm = normalizeUrlKeyForClicks(link);
+      if (!norm) return null;
+      for (const row of rows) {
+        if (normalizeUrlKeyForClicks(row && row.link) === norm) return row;
+      }
+      return null;
+    }
+
+    function additionalNotesHtml(link) {
+      const row = listRowForLink(link);
+      const notes = row && String(row.additional_notes || "").trim();
+      if (!notes) return "";
+      return (
+        '<aside class="summary-notes" aria-label="Additional notes">' +
+        "<h3>Additional Notes</h3>" +
+        "<p>" +
+        escapeHtml(notes) +
+        "</p></aside>"
+      );
+    }
+
     /** True when linklens has a parsed gn-math summary (provider rows or totals), not only a stub. */
     function linkHasParsableLensCheck(link) {
       return lensHasSignal(summaryEntryFor(link));
@@ -6275,6 +6334,10 @@
         const body = $("summaryBody");
         setSummaryFooterLink(link);
         const removalHtml = removalNoticeHtml(link);
+        const notesHtml = additionalNotesHtml(link);
+        const layoutOpen =
+          '<div class="summary-layout' + (notesHtml ? " has-notes" : "") + '"><div class="summary-main">';
+        const layoutClose = "</div>" + notesHtml + "</div>";
         const clickStub = '<p class="summary-muted" id="summaryClickLine">…</p>';
         if (!entry) {
           const pendingText = hasCheckedDomain(link)
@@ -6282,7 +6345,13 @@
             : "No gn-math data found for this link yet.";
           setHtml(
             body,
-            removalHtml + clickStub + '<p class="summary-muted">' + escapeHtml(pendingText) + "</p>"
+            removalHtml +
+              layoutOpen +
+              clickStub +
+              '<p class="summary-muted">' +
+              escapeHtml(pendingText) +
+              "</p>" +
+              layoutClose
           );
         } else {
           const summary = entry.summary || {};
@@ -6326,6 +6395,7 @@
             body,
             removalHtml +
               riskNoticeHtml +
+              layoutOpen +
               clickStub +
             '<p class="summary-muted">Domain: <strong>' +
             escapeHtml(entry.domain || domainOf(link) || "—") +
@@ -6346,7 +6416,8 @@
             "</span></div></div>" +
             '<table class="provider-table"><thead><tr><th>Provider</th><th>Category</th><th>Result</th></tr></thead><tbody>' +
               providerRows +
-              "</tbody></table>"
+              "</tbody></table>" +
+              layoutClose
           );
         }
         $("summaryTitle").textContent = "Link summary";
