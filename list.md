@@ -44,7 +44,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 71 |
+> | Proxy/Games | captcha | Scramjet | 68 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -124,7 +124,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | N/A | N/A | 59 |
+> | Games | N/A | N/A | 47 |
 
 > [!IMPORTANT]
 > if the link loads a page saying "user gn-math is blocked" or no games appear on screen, you are using an old version of gn-math that no longer works, please use another link. i also recommend reporting this on our GitHub issues page to prevent other users from running into this issue -> https://github.com/yourworstnightmare1/proxy-list/issues
@@ -195,7 +195,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Ultraviolet | 43 |
+> | Proxy/Games | captcha | Ultraviolet | 41 |
 
 > [!IMPORTANT]
 > on some networks, the proxy will load a white screen or an ultraviolet error page, if this happens try using another link as that is known to fix this issue
@@ -266,7 +266,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp, captcha, reflux | Scramjet, Ultraviolet | 34 |
+> | Proxy/Games | epoxy, libcurl, wisp, captcha, reflux | Scramjet, Ultraviolet | 30 |
 
 > [!IMPORTANT]
 > this proxy seems to be very slow on some links. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.
@@ -333,7 +333,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp | Scramjet, Ultraviolet | 30 |
+> | Proxy/Games | epoxy, libcurl, wisp | Scramjet, Ultraviolet | 26 |
 
 > [!IMPORTANT]
 > some space links have a similar problem like daydream where it will be very slow for some reason. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.
@@ -375,7 +375,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet, Ultraviolet | 65 |
+> | Proxy/Games | unknown | Scramjet, Ultraviolet | 35 |
 
 > [!IMPORTANT]
 > site has a bunch of ad popup windows, you can close these. it's recommended you use uBlock Origin to view this site without those popups
@@ -550,7 +550,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 7 |
+> | Proxy/Games | unknown | Scramjet | 6 |
 
 > [!IMPORTANT]
 > Boredom does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -582,7 +582,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 41 |
+> | Proxy/Games | unknown | unknown | 39 |
 
 > [!IMPORTANT]
 > Shadow does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -636,7 +636,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 82 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 81 |
 
 > [!IMPORTANT]
 > when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected
@@ -730,7 +730,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 33 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 32 |
 
 > [!IMPORTANT]
 > Lunar does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -985,7 +985,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, captcha, wisp | Scramjet, Ultraviolet, Rammerhead | 3 |
+> | Proxy/Games | epoxy, libcurl, captcha, wisp | Scramjet, Ultraviolet, Rammerhead | 2 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -997,7 +997,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | N/A | N/A | 404 |
+> | Proxy/Games | N/A | N/A | 403 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -1413,7 +1413,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | Unknown | Scramjet | 11 |
+> | Proxy/Games | Unknown | Scramjet | 1 |
 
 > [!IMPORTANT]
 > Rosin does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1637,7 +1637,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy | Unknown | Ultraviolet | 124 |
+> | Proxy | Unknown | Ultraviolet | 104 |
 
 > [!IMPORTANT]
 > if you were looking for ford links, ford no longer exists and all of its links are now strawberri links
@@ -1773,7 +1773,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 7 |
+> | Proxy/Games | unknown | unknown | 5 |
 
 > [!IMPORTANT]
 > for some reason the developers put a 4 tab limit on free users (3 if you have adblock, 8+ if you pay). if you need multitasking use another proxy
@@ -1869,7 +1869,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 23 |
+> | Proxy/Games | captcha | Scramjet | 22 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -2153,7 +2153,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Scramjet | 6 |
+> | Proxy/Games | captcha | Scramjet | 5 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -3193,7 +3193,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 696 |
+> | Proxy/Games | unknown | unknown | 26 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -3942,7 +3942,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 34 |
+> | Proxy/Games | unknown | unknown | 2 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -4083,7 +4083,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 2 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 1 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -4127,7 +4127,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp, epoxy, libcurl | Scramjet, Tor | 9 |
+> | Proxy/Games | wisp, epoxy, libcurl | Scramjet, Tor | 8 |
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://yukios.edgeone.app | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -4156,7 +4156,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp, epoxy, libcurl, user-agent | Unknown | 40 |
+> | Proxy/Games | wisp, epoxy, libcurl, user-agent | Unknown | 37 |
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | http://inasmuch.cryptparty.com/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -4393,7 +4393,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | - | - | 279 |
+> | Games | - | - | 129 |
 > [!IMPORTANT]
 > if you see a block screen it's likely fake, wait a few seconds and it will disappear
 
@@ -4702,7 +4702,7 @@ Development of the Proxy List will be slowed down as this tool won't be needed a
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | libcurl, epoxy | Scramjet | 200 |
+> | Proxy/Games | libcurl, epoxy | Scramjet | 160 |
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://catclass.brtk.eu | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
