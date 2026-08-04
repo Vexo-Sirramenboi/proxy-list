@@ -204,42 +204,37 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-04T13:56:39Z",
-    "checked_at_display": "2026-08-04 13:56 UTC",
+    "checked_at": "2026-08-04T19:23:53Z",
+    "checked_at_display": "2026-08-04 19:23 UTC",
     "added_count": 0,
-    "removed_count": 1,
+    "removed_count": 11,
     "added_links": [],
     "removed_links": [
-      "https://edu-gov-k12-school-learn-study.sylu.cc.cdn.cloudflare.net"
+      "https://instructure-api.sylu.net.cdn.cloudflare.net",
+      "https://login-google.sylu.net.cdn.cloudflare.net",
+      "https://nirbyteslove.comaschitech.com",
+      "https://subnirbytesyt.comaschitech.com",
+      "https://ilovenirbytes.gerenna.com",
+      "https://nirbytescheesy.savequeechylake.org",
+      "https://nirbytesisback.thelich.monster",
+      "https://pr.evelynslost.party",
+      "https://tuffmango.grahammurryinsuranceagency.com",
+      "https://cheesyweb.tech",
+      "https://shop.seidocosmetics.com"
     ]
   },
   "failing_links": {
-    "https://instructure.sylu.cc.cdn.cloudflare.net": 1,
-    "https://instructure-api.sylu.net.cdn.cloudflare.net": 2,
-    "https://nirbyteslove.comaschitech.com": 2,
-    "https://subnirbytesyt.comaschitech.com": 2,
-    "https://ilovenirbytes.gerenna.com": 2,
-    "https://nirbytescheesy.savequeechylake.org": 2,
-    "https://nirbytesisback.thelich.monster": 2,
-    "https://third-army.surge.sh": 1,
-    "https://pr.evelynslost.party": 2,
-    "https://shop.seidocosmetics.com": 2,
-    "https://tuffmango.grahammurryinsuranceagency.com": 2,
-    "https://cheesyweb.tech": 2,
-    "http://eeeeeee.is-a.software.cdn.cloudflare.net": 1,
-    "https://login.is-a.software.cdn.cloudflare.net": 1,
-    "https://deltamath.is-a.software.cdn.cloudflare.net": 1,
-    "https://canvas-lms.sylu.cc.cdn.cloudflare.net": 1,
-    "https://login-google.sylu.net.cdn.cloudflare.net": 2,
-    "https://dull1.teakwondo.one.pl": 1,
-    "https://cdn.esm.sh/gh/samhines6969-dotcom/ada/here9.html": 1,
-    "https://raw.esm.sh/gh/samhines6969-dotcom/ada/here9.html": 1,
-    "https://esm.sh/gh/samhines6969-dotcom/hihihi/links.html": 1,
-    "https://raw.esm.sh/gh/samhines6969-dotcom/hihihi/links.html": 1,
-    "https://cdn.esm.sh/gh/samhines6969-dotcom/hihihi/links.html": 1,
-    "https://esm.sh/gh/samhines6969-dotcom/aawda/linksz.html": 1,
-    "https://raw.esm.sh/gh/samhines6969-dotcom/aawda/linksz.html": 1,
-    "https://cdn.jsdmirror.com/combine/gh/googleaccountuser/myfirstrepo@main/windows10background.svg": 1
+    "https://instructure.sylu.cc.cdn.cloudflare.net": 2,
+    "https://script.google.com/macros/s/AKfycbz_3CKzRKXyisc_WYcOIG6adYY2QUTS13-jO0XA70aPzmiNz23XNHGaU9LYBgRs8iZq/exec?url=https://originfastly.jsdelivr.net/gh/NoahsAmazingTutoringHelp/reimagined-octo-winner@main/blahblahblah.html": 1,
+    "http://eeeeeee.is-a.software.cdn.cloudflare.net": 2,
+    "https://login.is-a.software.cdn.cloudflare.net": 2,
+    "https://deltamath.is-a.software.cdn.cloudflare.net": 2,
+    "https://canvas-lms.sylu.cc.cdn.cloudflare.net": 2,
+    "https://canvas-k12-edu-gov-school.sylu.cc.cdn.cloudflare.net": 1,
+    "https://google-classroom-api.sylu.cc.cdn.cloudflare.net": 1,
+    "https://learn-math.sylu.net.cdn.cloudflare.net": 1,
+    "https://google-apis.sylu.net.cdn.cloudflare.net": 1,
+    "https://iboss-api.sylu.net.cdn.cloudflare.net": 1
   },
   "links": [
     {
@@ -9855,27 +9850,6 @@
       ],
       "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
       "locked": "",
-      "link": "https://instructure-api.sylu.net.cdn.cloudflare.net/",
-      "found": "4/17/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
-      "locked": "",
       "link": "https://s3.amazonaws.com/educationate/index.html",
       "found": "4/17/2026",
       "username": "N/A",
@@ -11095,27 +11069,6 @@
       "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
       "locked": "",
       "link": "https://iboss-api.sylu.net.cdn.cloudflare.net/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
-      "locked": "",
-      "link": "https://login-google.sylu.net.cdn.cloudflare.net/",
       "found": "5/22/2026",
       "username": "N/A",
       "password": "N/A",
@@ -29004,186 +28957,6 @@
       "locked": "",
       "link": "https://wearecharliekirkman.daybits.net/",
       "found": "5/14/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🧀 Cheesy",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "Cheesy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
-      "link": "https://nirbyteslove.comaschitech.com/",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🧀 Cheesy",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "Cheesy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
-      "link": "https://subnirbytesyt.comaschitech.com/",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🧀 Cheesy",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "Cheesy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
-      "link": "https://ilovenirbytes.gerenna.com/",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🧀 Cheesy",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "Cheesy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
-      "link": "https://nirbytescheesy.savequeechylake.org/",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🧀 Cheesy",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "Cheesy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
-      "link": "https://nirbytesisback.thelich.monster/",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🧀 Cheesy",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "Cheesy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
-      "link": "https://pr.evelynslost.party",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🧀 Cheesy",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "Cheesy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
-      "link": "https://tuffmango.grahammurryinsuranceagency.com",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🧀 Cheesy",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "Cheesy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
-      "link": "https://cheesyweb.tech",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🔫 AWP",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://shop.seidocosmetics.com",
-      "found": "5/2/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",
