@@ -204,24 +204,15 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-03T21:24:26Z",
-    "checked_at_display": "2026-08-03 21:24 UTC",
+    "checked_at": "2026-08-04T01:58:07Z",
+    "checked_at_display": "2026-08-04 01:58 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
   "failing_links": {
-    "https://nobloccstatus.mattle.uk": 2,
-    "https://15-204-116-29.my.local-ip.co": 1,
-    "https://api.15-204-116-29.my.local-ip.co": 1,
-    "https://c00lkiddtech.15-204-116-29.my.local-ip.co": 1,
-    "https://river.wave.bhimupadhyaya.com.np": 1,
-    "https://quartz.ember.moldeo.org": 1,
-    "https://sky.haze.bumon.ar": 1,
-    "https://grove.cloud.suliaotongwang.com": 1,
-    "https://miniworthysdrp.learningatschool.website": 1,
-    "https://education.despla.in": 1
+    "https://edu-gov-k12-school-learn-study.sylu.cc.cdn.cloudflare.net": 1
   },
   "links": [
     {
