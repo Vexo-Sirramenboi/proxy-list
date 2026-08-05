@@ -204,37 +204,26 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-04T19:23:53Z",
-    "checked_at_display": "2026-08-04 19:23 UTC",
+    "checked_at": "2026-08-05T01:57:32Z",
+    "checked_at_display": "2026-08-05 01:57 UTC",
     "added_count": 0,
-    "removed_count": 11,
+    "removed_count": 5,
     "added_links": [],
     "removed_links": [
-      "https://instructure-api.sylu.net.cdn.cloudflare.net",
-      "https://login-google.sylu.net.cdn.cloudflare.net",
-      "https://nirbyteslove.comaschitech.com",
-      "https://subnirbytesyt.comaschitech.com",
-      "https://ilovenirbytes.gerenna.com",
-      "https://nirbytescheesy.savequeechylake.org",
-      "https://nirbytesisback.thelich.monster",
-      "https://pr.evelynslost.party",
-      "https://tuffmango.grahammurryinsuranceagency.com",
-      "https://cheesyweb.tech",
-      "https://shop.seidocosmetics.com"
+      "https://instructure.sylu.cc.cdn.cloudflare.net",
+      "http://eeeeeee.is-a.software.cdn.cloudflare.net",
+      "https://login.is-a.software.cdn.cloudflare.net",
+      "https://deltamath.is-a.software.cdn.cloudflare.net",
+      "https://canvas-lms.sylu.cc.cdn.cloudflare.net"
     ]
   },
   "failing_links": {
-    "https://instructure.sylu.cc.cdn.cloudflare.net": 2,
-    "https://script.google.com/macros/s/AKfycbz_3CKzRKXyisc_WYcOIG6adYY2QUTS13-jO0XA70aPzmiNz23XNHGaU9LYBgRs8iZq/exec?url=https://originfastly.jsdelivr.net/gh/NoahsAmazingTutoringHelp/reimagined-octo-winner@main/blahblahblah.html": 1,
-    "http://eeeeeee.is-a.software.cdn.cloudflare.net": 2,
-    "https://login.is-a.software.cdn.cloudflare.net": 2,
-    "https://deltamath.is-a.software.cdn.cloudflare.net": 2,
-    "https://canvas-lms.sylu.cc.cdn.cloudflare.net": 2,
-    "https://canvas-k12-edu-gov-school.sylu.cc.cdn.cloudflare.net": 1,
-    "https://google-classroom-api.sylu.cc.cdn.cloudflare.net": 1,
-    "https://learn-math.sylu.net.cdn.cloudflare.net": 1,
-    "https://google-apis.sylu.net.cdn.cloudflare.net": 1,
-    "https://iboss-api.sylu.net.cdn.cloudflare.net": 1
+    "https://canvas-k12-edu-gov-school.sylu.cc.cdn.cloudflare.net": 2,
+    "https://google-classroom-api.sylu.cc.cdn.cloudflare.net": 2,
+    "https://learn-math.sylu.net.cdn.cloudflare.net": 2,
+    "https://google-apis.sylu.net.cdn.cloudflare.net": 2,
+    "https://iboss-api.sylu.net.cdn.cloudflare.net": 2,
+    "https://originfastly.jsdelivr.net/combine/npm/ubzone@latest/assets/index.svg": 1
   },
   "links": [
     {
@@ -9829,27 +9818,6 @@
       ],
       "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
       "locked": "",
-      "link": "https://instructure.sylu.cc.cdn.cloudflare.net/",
-      "found": "4/17/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
-      "locked": "",
       "link": "https://s3.amazonaws.com/educationate/index.html",
       "found": "4/17/2026",
       "username": "N/A",
@@ -10880,90 +10848,6 @@
       "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
       "locked": "",
       "link": "https://script.google.com/a/macros/k12.ipsd.org/s/AKfycbxnbwF6Gs2_XnVzz_mBOInAp54aR2a7LLGyHn2AvEp-k765vSdQl5YnDfW6QT6zVU68/exec",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
-      "locked": "",
-      "link": "http://eeeeeee.is-a.software.cdn.cloudflare.net/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
-      "locked": "",
-      "link": "https://login.is-a.software.cdn.cloudflare.net/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
-      "locked": "",
-      "link": "https://deltamath.is-a.software.cdn.cloudflare.net/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
-      "locked": "",
-      "link": "https://canvas-lms.sylu.cc.cdn.cloudflare.net/",
       "found": "5/22/2026",
       "username": "N/A",
       "password": "N/A",

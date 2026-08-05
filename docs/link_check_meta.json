@@ -1,20 +1,14 @@
 {
-  "checked_at": "2026-08-04T19:23:53Z",
-  "checked_at_display": "2026-08-04 19:23 UTC",
+  "checked_at": "2026-08-05T01:57:32Z",
+  "checked_at_display": "2026-08-05 01:57 UTC",
   "added_count": 0,
-  "removed_count": 11,
+  "removed_count": 5,
   "added_links": [],
   "removed_links": [
-    "https://instructure-api.sylu.net.cdn.cloudflare.net",
-    "https://login-google.sylu.net.cdn.cloudflare.net",
-    "https://nirbyteslove.comaschitech.com",
-    "https://subnirbytesyt.comaschitech.com",
-    "https://ilovenirbytes.gerenna.com",
-    "https://nirbytescheesy.savequeechylake.org",
-    "https://nirbytesisback.thelich.monster",
-    "https://pr.evelynslost.party",
-    "https://tuffmango.grahammurryinsuranceagency.com",
-    "https://cheesyweb.tech",
-    "https://shop.seidocosmetics.com"
+    "https://instructure.sylu.cc.cdn.cloudflare.net",
+    "http://eeeeeee.is-a.software.cdn.cloudflare.net",
+    "https://login.is-a.software.cdn.cloudflare.net",
+    "https://deltamath.is-a.software.cdn.cloudflare.net",
+    "https://canvas-lms.sylu.cc.cdn.cloudflare.net"
   ]
 }
