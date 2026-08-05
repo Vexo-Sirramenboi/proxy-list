@@ -1,21 +1,3 @@
- # Proxy List
-> [!NOTE]
-> v6.0 | Released: August 05, 2026
-> r260 | Last Updated: August 05, 2026
-> Total onsite links: 4479 (4137 sorted + 342 unsorted)\
-> https://yourworstnightmare1.github.io/proxy-list/
-<br>
-Welcome to the official Proxy List! This has a running list of hundreds of unblocked websites and games that anyone is free to use. We have the most popular and reliable sites here, so you'll never run out!
-<br>
-
-<br>
-
-
-<br>
-
-## Important Notices
-
-## Update Notice
 # 6.0 - Statistics and Systems Update
 With this update, lots of changes have been made to community features and also adding statistics, giving a birds-eye view over everything related to links.
 
@@ -658,7 +640,7 @@ When it is needed, I have added notes to several proxies and URLs to give the us
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | Scramjet, Ultraviolet | 73 |
+> | Proxy/Games | wisp | Scramjet, Ultraviolet | 68 |
 
 > [!IMPORTANT]
 > when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected
@@ -733,11 +715,6 @@ When it is needed, I have added notes to several proxies and URLs to give the us
 | | https://tasty.how-to-cook.airlinemeals.net | 5/11/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://storage.googleapis.com/instructure/index.html | N/A | N/A | N/A | [Vexo Sirramenboi](https://github.com/Vexo-Sirramenboi)
 | | https://script.google.com/a/macros/k12.ipsd.org/s/AKfycbxnbwF6Gs2_XnVzz_mBOInAp54aR2a7LLGyHn2AvEp-k765vSdQl5YnDfW6QT6zVU68/exec | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://canvas-k12-edu-gov-school.sylu.cc.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://google-classroom-api.sylu.cc.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://learn-math.sylu.net.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://google-apis.sylu.net.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://iboss-api.sylu.net.cdn.cloudflare.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://dogeub.storage.googleapis.com/index.html | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🌕 Lunar
@@ -1427,7 +1404,7 @@ When it is needed, I have added notes to several proxies and URLs to give the us
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | Unknown | Scramjet | 16 |
+> | Proxy/Games | Unknown | Scramjet | 6 |
 
 > [!IMPORTANT]
 > Rosin does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -4379,7 +4356,7 @@ When it is needed, I have added notes to several proxies and URLs to give the us
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | - | - | 282 |
+> | Games | - | - | 132 |
 > [!IMPORTANT]
 > if you see a block screen it's likely fake, wait a few seconds and it will disappear
 

@@ -1,11 +1,11 @@
 {
   "meta": {
-    "version": "v6.0",
-    "revision": "r260",
-    "last_updated": "August 05, 2026",
+    "version": "",
+    "revision": "",
+    "last_updated": "",
     "unsorted_total": 342,
     "important_notices": "",
-    "update_notice": "# 6.0 - Statistics and Systems Update\nWith this update, lots of changes have been made to community features and also adding statistics, giving a birds-eye view over everything related to links.\n\n# Statistics\nThe statistics page allows you to see clear stats on top providers, categories, domains, most common block reasons, most blocked domains, most popular domains, and much more. This gives a clear view into what filters most commonly block and also what is most popular in the list.\n\n# Community\nYou can now suggest bugfixes and feature requests directly through the Proxy List! Simply fill out the form and submit, and if we think it's good it will be implemented! (You must have an account in order to access this feature and other community features.)\n\n# Moderation\nThere is now a moderation system and users can be punished for their actions if they constantly submit garbage links/requests, have offensive usernames, and offensive folder names. You can report folders by clicking the \"Report\" button on any folder. If you feel your suspension was unfair or a mistake, you can even appeal by going to the Contribute page and submitting an appeal form. You can only fill this form out if your account is currently under suspension. (You must have an account in order to access these features and other community features.)\n\n# Additional Notes\nWhen it is needed, I have added notes to several proxies and URLs to give the user more info on specific quirks that the website has to keep you informed and help you make a choice on what proxy to use.\n\n# Misc Fixes\n- Fixed a bug where the Community Folder icon was slightly off center.\n- Fixed a bug where submitting a link request would fail due to a Firebase error.\n- Fixed a bug where link checks weren't being run ever.\n- Fixed a bug where mirror sites wouldn't have access to certain features or were broken.\n- Fixed a bug where open counts would load very slowly.\n- Fixed a bug where the string \"-\" would be shown as an option in the protocols and capabilities sort options.\n- Fixed a bug where emojis would show as corrupted text due to improper formatting.\n- Fixed a bug where liking a link would fail due to a Firebase error.\n- Fixed a bug where punished users could still access certain unprotected features.\n- Fixed an exploit that allowed a bot to inflate clicks on a specific URL.\n- Fixed a bug where users couldn't make a new folder because the site thought they weren't signed in.\n- Fixed a bug where changing a filter through the settings menu show no results other than the default.\n- Fixed a bug where the sign in button would still appear even if the user was signed in.\n- Fixed security bugs.\n- Cleaned up unsorted list.",
+    "update_notice": "",
     "update_changelog": [
       {
         "version": "v6.0",
@@ -210,26 +210,69 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-05T01:57:32Z",
-    "checked_at_display": "2026-08-05 01:57 UTC",
-    "added_count": 0,
+    "checked_at": "2026-08-05T07:52:43Z",
+    "checked_at_display": "2026-08-05 07:52 UTC",
+    "added_count": 45,
     "removed_count": 5,
-    "added_links": [],
+    "added_links": [
+      "https://durkio.maxmir-energy.ru",
+      "https://supereadertool.cyberninja.ie",
+      "https://readingwork.eclipsecastellon.net",
+      "https://beforewepickedupdurk.maxmir-energy.ru",
+      "https://pickupdurk.maxmir-energy.ru",
+      "https://jsdelivr.b-cdn.net/gh/googleaccountuser/myfirstrepo@main/windows10background.svg",
+      "https://jsdelivr.b-cdn.net/gh/googleaccountuser/myfirstrepo@master/windows10background.svg",
+      "https://jsdelivr.b-cdn.net/gh/googleaccountuser/myfirstrepo/windows10background.svg",
+      "https://keep.confiarriendo.cl",
+      "https://science.dj8.org",
+      "https://enter.agrointegral.cl",
+      "https://search.loveyourselfbeauty.au",
+      "https://location.ronginbari.com",
+      "https://enter.srivaishnavam.org.au",
+      "https://marksenergy.maxmir-energy.ru",
+      "https://api.iaconetti.com.ar",
+      "https://looking.loskks.org",
+      "https://secured.remiosenifoundation.org",
+      "https://chanka-stores.chanka.com",
+      "https://social.50friends.com.mx",
+      "https://apis.extratechsolutions.com",
+      "https://seize.mounthoodlodges.com",
+      "https://s.api.rabsacca.com",
+      "https://modern.moldeointeractive.com.ar",
+      "https://anyalizing.newtonanalytics.com",
+      "https://elephant.elprado.com.ar",
+      "https://gecko.geckobungalow.com",
+      "https://orchid.orchid-idea.com",
+      "https://gecko.lauriemillotte.com",
+      "https://vitrual-ideas.tippyturtle.com",
+      "https://leach.contraprivatizacao.com.br",
+      "https://junior.7dejunio.com.ar",
+      "https://bible.biblosconsulting.ru",
+      "https://believe.bijayakilla.com",
+      "https://hand-working.handfolding.com",
+      "https://watch.lavachamber.com",
+      "https://aven.avenuecarriagecrossing.com",
+      "https://igu.govt.hu",
+      "https://dot.mjureta.cl",
+      "https://short.shor.ch",
+      "https://fried.silvaharo.com",
+      "https://software.bsfa.info",
+      "https://software.cnstefancelmare.ro",
+      "https://gurdit.gurdit.com",
+      "https://software.sundby.com"
+    ],
     "removed_links": [
-      "https://instructure.sylu.cc.cdn.cloudflare.net",
-      "http://eeeeeee.is-a.software.cdn.cloudflare.net",
-      "https://login.is-a.software.cdn.cloudflare.net",
-      "https://deltamath.is-a.software.cdn.cloudflare.net",
-      "https://canvas-lms.sylu.cc.cdn.cloudflare.net"
+      "https://canvas-k12-edu-gov-school.sylu.cc.cdn.cloudflare.net",
+      "https://google-classroom-api.sylu.cc.cdn.cloudflare.net",
+      "https://learn-math.sylu.net.cdn.cloudflare.net",
+      "https://google-apis.sylu.net.cdn.cloudflare.net",
+      "https://iboss-api.sylu.net.cdn.cloudflare.net"
     ]
   },
   "failing_links": {
-    "https://canvas-k12-edu-gov-school.sylu.cc.cdn.cloudflare.net": 2,
-    "https://google-classroom-api.sylu.cc.cdn.cloudflare.net": 2,
-    "https://learn-math.sylu.net.cdn.cloudflare.net": 2,
-    "https://google-apis.sylu.net.cdn.cloudflare.net": 2,
-    "https://iboss-api.sylu.net.cdn.cloudflare.net": 2,
-    "https://originfastly.jsdelivr.net/combine/npm/ubzone@latest/assets/index.svg": 1
+    "https://science.dj8.org": 1,
+    "https://modern.moldeointeractive.com.ar": 1,
+    "https://gurdit.gurdit.com": 1
   },
   "links": [
     {
@@ -10854,111 +10897,6 @@
       "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
       "locked": "",
       "link": "https://script.google.com/a/macros/k12.ipsd.org/s/AKfycbxnbwF6Gs2_XnVzz_mBOInAp54aR2a7LLGyHn2AvEp-k765vSdQl5YnDfW6QT6zVU68/exec",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
-      "locked": "",
-      "link": "https://canvas-k12-edu-gov-school.sylu.cc.cdn.cloudflare.net/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
-      "locked": "",
-      "link": "https://google-classroom-api.sylu.cc.cdn.cloudflare.net/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
-      "locked": "",
-      "link": "https://learn-math.sylu.net.cdn.cloudflare.net/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
-      "locked": "",
-      "link": "https://google-apis.sylu.net.cdn.cloudflare.net/",
-      "found": "5/22/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
-      "locked": "",
-      "link": "https://iboss-api.sylu.net.cdn.cloudflare.net/",
       "found": "5/22/2026",
       "username": "N/A",
       "password": "N/A",
