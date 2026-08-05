@@ -210,19 +210,18 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-05T08:27:08Z",
-    "checked_at_display": "2026-08-05 08:27 UTC",
+    "checked_at": "2026-08-05T13:53:39Z",
+    "checked_at_display": "2026-08-05 13:53 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 3,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://science.dj8.org",
+      "https://modern.moldeointeractive.com.ar",
+      "https://gurdit.gurdit.com"
+    ]
   },
-  "failing_links": {
-    "https://videovideoplayer.org": 1,
-    "https://science.dj8.org": 2,
-    "https://modern.moldeointeractive.com.ar": 2,
-    "https://gurdit.gurdit.com": 2
-  },
+  "failing_links": {},
   "links": [
     {
       "provider": "💜 Selenite",
@@ -77069,26 +77068,6 @@
       ],
       "additional_notes": "",
       "locked": "",
-      "link": "https://science.dj8.org/",
-      "found": "8/5/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🔮 Xylora",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "additional_notes": "",
-      "locked": "",
       "link": "https://enter.agrointegral.cl/",
       "found": "8/5/2026",
       "username": "N/A",
@@ -77330,26 +77309,6 @@
       "additional_notes": "",
       "locked": "",
       "link": "https://s.api.rabsacca.com/",
-      "found": "8/5/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🔮 Xylora",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://modern.moldeointeractive.com.ar/",
       "found": "8/5/2026",
       "username": "N/A",
       "password": "N/A",
@@ -77730,26 +77689,6 @@
       "additional_notes": "",
       "locked": "",
       "link": "https://software.cnstefancelmare.ro/",
-      "found": "8/5/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🔮 Xylora",
-      "category": "pending",
-      "capabilities": "pending",
-      "capability_tags": [
-        "pending"
-      ],
-      "protocols": "pending",
-      "protocol_tags": [
-        "pending"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://gurdit.gurdit.com/",
       "found": "8/5/2026",
       "username": "N/A",
       "password": "N/A",

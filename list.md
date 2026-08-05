@@ -4926,14 +4926,13 @@ When it is needed, I have added notes to several proxies and URLs to give the us
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 37 |
+> | pending | pending | pending | 34 |
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://keep.confiarriendo.cl/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://science.dj8.org/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://enter.agrointegral.cl/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://search.loveyourselfbeauty.au/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://location.ronginbari.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -4947,7 +4946,6 @@ When it is needed, I have added notes to several proxies and URLs to give the us
 | | https://apis.extratechsolutions.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://seize.mounthoodlodges.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://s.api.rabsacca.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://modern.moldeointeractive.com.ar/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://anyalizing.newtonanalytics.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://elephant.elprado.com.ar/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://gecko.geckobungalow.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -4967,5 +4965,4 @@ When it is needed, I have added notes to several proxies and URLs to give the us
 | | https://fried.silvaharo.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://software.bsfa.info/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://software.cnstefancelmare.ro/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://gurdit.gurdit.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://software.sundby.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
