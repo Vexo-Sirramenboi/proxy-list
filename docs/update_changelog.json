@@ -2,6 +2,12 @@
   "_note": "Archived site update notices. Regenerate history with: python3 scripts/build_update_changelog.py",
   "entries": [
     {
+      "version": "v6.0.1",
+      "revision": "r261",
+      "released": "August 05, 2026",
+      "update_notice": "Security fixes"
+    },
+    {
       "version": "v6.0",
       "revision": "r260",
       "released": "August 05, 2026",

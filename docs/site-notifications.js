@@ -375,8 +375,7 @@
     if (!apiUrl) return "";
     return String(apiUrl)
       .replace("api.github.com/repos/", "github.com/")
-      .replace(/\/pulls\//, "/pull/")
-      .replace(/\/issues\//, "/issues/");
+      .replace(/\/pulls\//, "/pull/");
   }
 
   async function classifyGithubNote(note, token) {

@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
-> v6.0 | Released: August 05, 2026
-> r260 | Last Updated: August 05, 2026
+> v6.0.1 | Released: August 05, 2026
+> r261 | Last Updated: August 05, 2026
 > Total onsite links: 4471 (4129 sorted + 342 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -16,37 +16,7 @@ Welcome to the official Proxy List! This has a running list of hundreds of unblo
 ## Important Notices
 
 ## Update Notice
-# 6.0 - Statistics and Systems Update
-With this update, lots of changes have been made to community features and also adding statistics, giving a birds-eye view over everything related to links.
-
-# Statistics
-The statistics page allows you to see clear stats on top providers, categories, domains, most common block reasons, most blocked domains, most popular domains, and much more. This gives a clear view into what filters most commonly block and also what is most popular in the list.
-
-# Community
-You can now suggest bugfixes and feature requests directly through the Proxy List! Simply fill out the form and submit, and if we think it's good it will be implemented! (You must have an account in order to access this feature and other community features.)
-
-# Moderation
-There is now a moderation system and users can be punished for their actions if they constantly submit garbage links/requests, have offensive usernames, and offensive folder names. You can report folders by clicking the "Report" button on any folder. If you feel your suspension was unfair or a mistake, you can even appeal by going to the Contribute page and submitting an appeal form. You can only fill this form out if your account is currently under suspension. (You must have an account in order to access these features and other community features.)
-
-# Additional Notes
-When it is needed, I have added notes to several proxies and URLs to give the user more info on specific quirks that the website has to keep you informed and help you make a choice on what proxy to use.
-
-# Misc Fixes
-- Fixed a bug where the Community Folder icon was slightly off center.
-- Fixed a bug where submitting a link request would fail due to a Firebase error.
-- Fixed a bug where link checks weren't being run ever.
-- Fixed a bug where mirror sites wouldn't have access to certain features or were broken.
-- Fixed a bug where open counts would load very slowly.
-- Fixed a bug where the string "-" would be shown as an option in the protocols and capabilities sort options.
-- Fixed a bug where emojis would show as corrupted text due to improper formatting.
-- Fixed a bug where liking a link would fail due to a Firebase error.
-- Fixed a bug where punished users could still access certain unprotected features.
-- Fixed an exploit that allowed a bot to inflate clicks on a specific URL.
-- Fixed a bug where users couldn't make a new folder because the site thought they weren't signed in.
-- Fixed a bug where changing a filter through the settings menu show no results other than the default.
-- Fixed a bug where the sign in button would still appear even if the user was signed in.
-- Fixed security bugs.
-- Cleaned up unsorted list.
+Security fixes
 
 # 💜 Selenite
 > [!NOTE]
