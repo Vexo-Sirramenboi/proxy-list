@@ -180,12 +180,23 @@ def process(content, results, status):
 # -----------------------
 # Sections (split on top-level # headings)
 # -----------------------
+def _is_top_level_h1(line: str) -> bool:
+    """True for `# Title` (not `##` / `###`), ignoring leading BOM/whitespace."""
+    s = line.lstrip("\ufeff \t")
+    return s.startswith("# ") and not s.startswith("##")
+
+
 def split_sections(content: str) -> list[str]:
     lines = content.split("\n")
-    starts = [i for i, line in enumerate(lines) if line.startswith("# ")]
+    starts = [i for i, line in enumerate(lines) if _is_top_level_h1(line)]
     if not starts:
         return [content]
-    sections = []
+    sections: list[str] = []
+    # Keep any text before the first H1 (must not be dropped on rewrite).
+    if starts[0] > 0:
+        prefix = "\n".join(lines[: starts[0]]).strip("\n")
+        if prefix.strip():
+            sections.append(prefix)
     for i, start in enumerate(starts):
         end = starts[i + 1] if i + 1 < len(starts) else len(lines)
         chunk = "\n".join(lines[start:end])
@@ -199,7 +210,7 @@ def join_sections(sections: list[str]) -> str:
 
 
 def is_proxy_list_preamble(section: str) -> bool:
-    # UTF-8 BOM at file start breaks startswith("# ") unless stripped
+    # UTF-8 BOM / leading spaces at file start break naive startswith("# ")
     s = section.lstrip("\ufeff \t")
     return s.startswith("# Proxy List")
 
@@ -219,7 +230,11 @@ def remove_empty_provider_sections(content: str) -> str:
         if is_proxy_list_preamble(sec):
             kept.append(sec)
             continue
-        if section_has_locked_table(sec) and section_table_link_count(sec) == 0:
+        # Update-notice `#` subsections have no link table — always keep them.
+        if not section_has_locked_table(sec):
+            kept.append(sec)
+            continue
+        if section_table_link_count(sec) == 0:
             continue
         kept.append(sec)
     return join_sections(kept)
@@ -268,8 +283,8 @@ def extract_proxy_list_preamble(content: str) -> str:
     """
     lines_out: list[str] = []
     for line in content.splitlines():
-        if line.startswith("# ") and not line.startswith("##"):
-            if line.strip() != "# Proxy List":
+        if _is_top_level_h1(line):
+            if line.lstrip("\ufeff \t").strip() != "# Proxy List":
                 break
         lines_out.append(line)
     return "\n".join(lines_out)

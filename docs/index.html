@@ -6417,7 +6417,14 @@
       const checkedAt = linkCheck && linkCheck.checked_at_display ? linkCheck.checked_at_display : "—";
       const added = Number.isFinite(linkCheck && linkCheck.added_count) ? linkCheck.added_count : 0;
       const removed = Number.isFinite(linkCheck && linkCheck.removed_count) ? linkCheck.removed_count : 0;
-      const lastUpdated = (meta && meta.last_updated) || "—";
+      const changelog0 =
+        meta && Array.isArray(meta.update_changelog) && meta.update_changelog[0]
+          ? meta.update_changelog[0]
+          : null;
+      const lastUpdated =
+        ((meta && meta.last_updated) || "").trim() ||
+        (changelog0 && String(changelog0.released || "").trim()) ||
+        "—";
       const unsortedCount = Number.isFinite(meta && meta.unsorted_total) ? meta.unsorted_total : 0;
       const combinedTotal = rows.length + unsortedCount;
 
@@ -8007,8 +8014,19 @@
       if (Array.isArray(json)) {
         return { meta: {}, link_check: {}, links: json };
       }
+      const meta = Object.assign({}, json.meta || {});
+      const changelog = Array.isArray(meta.update_changelog) ? meta.update_changelog : [];
+      const latest = changelog[0] && typeof changelog[0] === "object" ? changelog[0] : null;
+      if (latest) {
+        if (!String(meta.version || "").trim() && latest.version) meta.version = latest.version;
+        if (!String(meta.revision || "").trim() && latest.revision) meta.revision = latest.revision;
+        if (!String(meta.last_updated || "").trim() && latest.released) meta.last_updated = latest.released;
+        if (!String(meta.update_notice || "").trim() && latest.update_notice) {
+          meta.update_notice = latest.update_notice;
+        }
+      }
       return {
-        meta: json.meta || {},
+        meta,
         link_check: json.link_check || {},
         links: json.links || [],
       };
