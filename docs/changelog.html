@@ -124,40 +124,62 @@
     }
 
     function renderNoticeMarkdown(md) {
-      var text = String(md || "").trim();
+      var text = String(md || "").replace(/\r\n/g, "\n").trim();
       if (!text) return '<p class="sub">No update message recorded.</p>';
       var chunks = [];
-      var sections = text.split(/(?=^### )/m);
+      var sections = text.split(/(?=^#{1,3} )/m);
       sections.forEach(function (sec) {
         var s = sec.trim();
         if (!s) return;
-        if (s.indexOf("###") === 0) {
-          var rest = s.replace(/^###\s+/, "");
-          var nl = rest.indexOf("\n");
-          var title = (nl === -1 ? rest : rest.slice(0, nl)).trim();
-          var body = nl === -1 ? "" : rest.slice(nl + 1).trim();
-          chunks.push("<h3>" + renderMarkdownInline(title) + "</h3>");
+        var hm = s.match(/^(#{1,3})\s+(.+?)(?:\n|$)([\s\S]*)$/);
+        if (hm) {
+          var level = hm[1].length;
+          var title = hm[2].trim();
+          var body = (hm[3] || "").trim();
+          var tag = level <= 2 ? "h3" : "h3";
+          chunks.push("<" + tag + ">" + renderMarkdownInline(title) + "</" + tag + ">");
           if (body) {
             body.split(/\n{2,}/).forEach(function (para) {
-              var p = para.trim();
-              if (!p) return;
-              if (/^[-*]\s/m.test(p)) {
-                chunks.push("<ul>" + p.split(/\n/).map(function (line) {
-                  return "<li>" + renderMarkdownInline(line.replace(/^[-*]\s+/, "")) + "</li>";
-                }).join("") + "</ul>");
+              var lines = para.split(/\n/).map(function (l) { return l.trim(); }).filter(Boolean);
+              if (!lines.length) return;
+              if (lines.every(function (l) { return /^[-*]\s/.test(l); })) {
+                chunks.push(
+                  "<ul>" +
+                    lines
+                      .map(function (line) {
+                        return "<li>" + renderMarkdownInline(line.replace(/^[-*]\s+/, "")) + "</li>";
+                      })
+                      .join("") +
+                    "</ul>"
+                );
               } else {
-                chunks.push("<p>" + renderMarkdownInline(p.replace(/\n+/g, " ")) + "</p>");
+                chunks.push(
+                  "<p>" +
+                    lines.map(function (line) { return renderMarkdownInline(line); }).join("<br>") +
+                    "</p>"
+                );
               }
             });
           }
         } else if (/^[-*]\s/m.test(s)) {
-          chunks.push("<ul>" + s.split(/\n/).map(function (line) {
-            return "<li>" + renderMarkdownInline(line.replace(/^[-*]\s+/, "")) + "</li>";
-          }).join("") + "</ul>");
+          chunks.push(
+            "<ul>" +
+              s
+                .split(/\n/)
+                .filter(function (line) { return /^[-*]\s/.test(line.trim()); })
+                .map(function (line) {
+                  return "<li>" + renderMarkdownInline(line.trim().replace(/^[-*]\s+/, "")) + "</li>";
+                })
+                .join("") +
+              "</ul>"
+          );
         } else {
           s.split(/\n{2,}/).forEach(function (para) {
-            var p = para.replace(/\n+/g, " ").trim();
-            if (p) chunks.push("<p>" + renderMarkdownInline(p) + "</p>");
+            var lines = para.split(/\n/).map(function (l) { return l.trim(); }).filter(Boolean);
+            if (!lines.length) return;
+            chunks.push(
+              "<p>" + lines.map(function (line) { return renderMarkdownInline(line); }).join("<br>") + "</p>"
+            );
           });
         }
       });

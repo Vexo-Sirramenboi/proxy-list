@@ -1,4 +1,6 @@
 .token
+# Accidental shell redirect / export dump (e.g. firebase auth:export -)
+/-
 .DS_Store
 __pycache__/
 node_modules/

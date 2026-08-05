@@ -66,7 +66,14 @@
       return p.providerId === "github.com";
     });
     if (!gh) return "";
-    if (gh.displayName) return String(gh.displayName).trim();
+    // Prefer GitHub username (login). Firebase often puts profile "name" in displayName.
+    if (gh.screenName) return String(gh.screenName).trim();
+    if (gh.username) return String(gh.username).trim();
+    // Known mapping: GitHub user id → login (Firebase provider uid is the numeric id).
+    if (String(gh.uid) === "134671973") return "yourworstnightmare1";
+    if (gh.displayName && /^[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,37}[a-zA-Z0-9])?$/.test(String(gh.displayName).trim())) {
+      return String(gh.displayName).trim();
+    }
     var email = gh.email ? String(gh.email).split("@")[0] : "";
     return email;
   }
@@ -122,11 +129,14 @@
 
   function isSubmissionAdminUser(user) {
     if (!isSignedInNonAnonymous(user)) return false;
+    // Firestore admin writes require UID in config/submissions.adminUids — match that for UI.
     var uids = submissionAdminUids();
-    if (uids.indexOf(user.uid) !== -1) return true;
-    var gh = githubLoginFromUser(user).toLowerCase();
-    if (!gh) return false;
-    return submissionAdminGithubLogins().indexOf(gh) !== -1;
+    if (uids.length && uids.indexOf(user.uid) !== -1) return true;
+    if (!uids.length) {
+      var gh = githubLoginFromUser(user).toLowerCase();
+      if (gh && submissionAdminGithubLogins().indexOf(gh) !== -1) return true;
+    }
+    return false;
   }
 
   function submitterLabelFromUser(user, profileDoc) {

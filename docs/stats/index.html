@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Statistics | Proxy list</title>
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <style>
+    :root {
+      --bg: #111111;
+      --surface: #1a1a1a;
+      --border: #2e2e2e;
+      --text: #e8e8e8;
+      --muted: #9a9a9a;
+      --accent: #6cb3ff;
+      --ok: #3ecf8e;
+      --warn: #ffd57e;
+      --danger: #ff8f8f;
+      --font: "Segoe UI", system-ui, sans-serif;
+      --sidebar-w: 15.5rem;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      min-height: 100vh;
+    }
+    .layout {
+      display: flex;
+      min-height: 100vh;
+      align-items: stretch;
+    }
+    .stats-sidebar {
+      width: var(--sidebar-w);
+      flex-shrink: 0;
+      border-right: 1px solid var(--border);
+      background: var(--surface);
+      padding: 1.1rem 0.85rem 1.5rem;
+      position: sticky;
+      top: 0;
+      align-self: flex-start;
+      max-height: 100vh;
+      overflow: auto;
+    }
+    .stats-sidebar .brand {
+      margin: 0 0.35rem 0.85rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+    .stats-sidebar .brand-sub {
+      margin: 0 0.35rem 1rem;
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.35;
+    }
+    .sidebar-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.45rem 0.75rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--text);
+      background: #141414;
+      font-size: 0.82rem;
+      font-weight: 600;
+      font: inherit;
+      cursor: pointer;
+    }
+    .btn:hover { border-color: var(--accent); color: var(--accent); }
+    .sidebar-actions .btn {
+      width: 100%;
+      justify-content: flex-start;
+      text-align: left;
+      gap: 0.55rem;
+    }
+    .sidebar-actions .btn.is-active {
+      border-color: #2d5588;
+      color: #9fd4ff;
+      background: #222222;
+    }
+    .sidebar-btn-icon {
+      flex-shrink: 0;
+      width: 1.05rem;
+      height: 1.05rem;
+      display: block;
+      overflow: visible;
+    }
+    img.sidebar-btn-icon {
+      object-fit: contain;
+      filter: brightness(0) invert(0.91);
+    }
+    .content {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    header.page-header {
+      padding: 1.25rem 1.4rem 1.1rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    header.page-header h1 {
+      margin: 0 0 0.35rem;
+      font-size: clamp(1.25rem, 3.5vw, 1.65rem);
+    }
+    header.page-header .sub {
+      margin: 0;
+      max-width: 48rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    main {
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 1.25rem 1.2rem 2.5rem;
+    }
+    .panel[hidden] { display: none !important; }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+      gap: 0.65rem;
+      margin: 0 0 1.25rem;
+    }
+    .stat {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.85rem 0.95rem;
+      background: var(--surface);
+    }
+    .stat .n {
+      font-size: 1.55rem;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+    .stat .l {
+      margin-top: 0.25rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+      padding: 0.95rem 1rem 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .card h2 {
+      margin: 0 0 0.35rem;
+      font-size: 1.05rem;
+    }
+    .card .hint {
+      margin: 0 0 0.85rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+    .chart-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      height: 280px;
+    }
+    .chart-wrap.tall { height: 340px; }
+    .chart-wrap.filter-tall { height: min(720px, 85vh); }
+    .chart-wrap.donut {
+      max-width: 22rem;
+      height: 260px;
+      margin: 0 auto;
+    }
+    .charts-row {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 800px) {
+      .charts-row { grid-template-columns: 1fr; }
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.86rem;
+    }
+    th, td {
+      padding: 0.5rem 0.55rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.78rem;
+    }
+    tr:last-child td { border-bottom: 0; }
+    .num {
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+      white-space: nowrap;
+    }
+    .muted { color: var(--muted); }
+    .notice {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.65rem 0.8rem;
+      background: #141414;
+      color: var(--muted);
+      font-size: 0.86rem;
+      margin-bottom: 1rem;
+    }
+    .notice.warn { border-color: #5a4a20; color: var(--warn); }
+    .notice.err { border-color: #6b2d2d; color: var(--danger); }
+    .notice[hidden] { display: none !important; }
+    a { color: var(--accent); }
+    .provider-search-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      align-items: center;
+      margin: 0 0 0.75rem;
+    }
+    .provider-search-row input[type="search"] {
+      flex: 1 1 16rem;
+      min-width: 12rem;
+      padding: 0.5rem 0.65rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: #141414;
+      color: var(--text);
+      font: inherit;
+      font-size: 0.88rem;
+    }
+    .provider-search-row input[type="search"]:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 1px;
+    }
+    .provider-suggest {
+      list-style: none;
+      margin: 0 0 0.75rem;
+      padding: 0;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #141414;
+      max-height: 12rem;
+      overflow: auto;
+    }
+    .provider-suggest[hidden] { display: none !important; }
+    .provider-suggest button {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 0.45rem 0.7rem;
+      border: 0;
+      border-bottom: 1px solid var(--border);
+      background: transparent;
+      color: var(--text);
+      font: inherit;
+      font-size: 0.86rem;
+      cursor: pointer;
+    }
+    .provider-suggest button:last-child { border-bottom: 0; }
+    .provider-suggest button:hover,
+    .provider-suggest button[aria-selected="true"] {
+      background: #222;
+      color: var(--accent);
+    }
+    .provider-table tr[data-provider] { cursor: pointer; }
+    .provider-table tr[data-provider]:hover td { background: #222; }
+    .provider-table tr.is-selected td {
+      background: #1e2a3a;
+      color: var(--accent);
+    }
+    .filter-table tr[data-filter] { cursor: pointer; }
+    .filter-table tr[data-filter]:hover td { background: #222; }
+    .filter-table tr.is-selected td {
+      background: #1e2a3a;
+      color: var(--accent);
+    }
+    #filterDetailCard[hidden],
+    #providerDetailCard[hidden] { display: none !important; }
+    .scroll-table {
+      max-height: 22rem;
+      overflow: auto;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .scroll-table table { margin: 0; }
+    .pill {
+      display: inline-block;
+      padding: 0.05rem 0.4rem;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      font-size: 0.72rem;
+      font-variant-numeric: tabular-nums;
+    }
+    .pill-blocked { color: var(--danger); border-color: #6b2d2d; }
+    .pill-unblocked { color: var(--ok); border-color: #2d6b4a; }
+    .pill-warning { color: var(--warn); border-color: #5a4a20; }
+    .filter-tags {
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.35;
+    }
+    .filter-tags strong { color: var(--text); font-weight: 600; }
+    .filter-more {
+      cursor: help;
+      text-decoration: underline dotted;
+      text-underline-offset: 0.15em;
+    }
+    .detail-stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+      gap: 0.5rem;
+      margin: 0 0 0.9rem;
+    }
+    .detail-stat {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.65rem 0.75rem;
+      background: #141414;
+    }
+    .detail-stat .n {
+      font-size: 1.2rem;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+    .detail-stat .l {
+      margin-top: 0.15rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+    .mobile-nav {
+      display: none;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      margin: 0 0 1rem;
+    }
+    @media (max-width: 860px) {
+      .layout { flex-direction: column; }
+      .stats-sidebar {
+        width: 100%;
+        position: static;
+        max-height: none;
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .sidebar-actions { display: none; }
+      .mobile-nav { display: flex; }
+      .mobile-nav .btn { flex: 1 1 auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="stats-sidebar" aria-label="Statistics navigation">
+      <p class="brand">Statistics</p>
+      <p class="brand-sub">Providers, domains, web filters, and contributor totals.</p>
+      <nav class="sidebar-actions" aria-label="Statistics sections">
+        <a class="btn" href="../">
+          <img class="sidebar-btn-icon" src="./icon-back.png" width="18" height="18" alt="" aria-hidden="true" />
+          Back to Proxy List
+        </a>
+        <button type="button" class="btn is-active" data-stats-panel="providers" id="navProviders">
+          <img class="sidebar-btn-icon" src="./icon-providers.png" width="18" height="18" alt="" aria-hidden="true" />
+          Providers &amp; Domains
+        </button>
+        <button type="button" class="btn" data-stats-panel="filters" id="navFilters">
+          <img class="sidebar-btn-icon" src="./icon-filters.png" width="18" height="18" alt="" aria-hidden="true" />
+          Filter Data
+        </button>
+        <button type="button" class="btn" data-stats-panel="contributions" id="navContributions">
+          <svg class="sidebar-btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          Contributions
+        </button>
+      </nav>
+    </aside>
+
+    <div class="content">
+      <header class="page-header">
+        <h1 id="pageTitle">Providers &amp; Domains</h1>
+        <p class="sub" id="pageSub">
+          Provider composition and domains from the sorted list, plus lifetime link-open totals from this site.
+          Opens are click counts, not unique visitors.
+        </p>
+      </header>
+
+      <main>
+        <nav class="mobile-nav" aria-label="Statistics sections (mobile)">
+          <a class="btn" href="../">Back</a>
+          <button type="button" class="btn is-active" data-stats-panel="providers">Providers</button>
+          <button type="button" class="btn" data-stats-panel="filters">Filters</button>
+          <button type="button" class="btn" data-stats-panel="contributions">Contributions</button>
+        </nav>
+
+        <div id="statusNotice" class="notice" hidden></div>
+
+        <div class="panel" id="panel-providers" data-panel="providers">
+          <div class="stat-grid" aria-label="Providers overview">
+            <div class="stat">
+              <div class="n" id="statSorted">—</div>
+              <div class="l">Sorted links</div>
+            </div>
+            <div class="stat">
+              <div class="n" id="statUnsorted">—</div>
+              <div class="l">Unsorted links</div>
+            </div>
+            <div class="stat">
+              <div class="n" id="statProviders">—</div>
+              <div class="l">Providers</div>
+            </div>
+            <div class="stat">
+              <div class="n" id="statOpens">—</div>
+              <div class="l">Tracked opens (top 100)</div>
+            </div>
+            <div class="stat">
+              <div class="n" id="statUniqueDomains">—</div>
+              <div class="l">Unique domains</div>
+            </div>
+            <div class="stat">
+              <div class="n" id="statTopDomain">—</div>
+              <div class="l">Top domain links</div>
+            </div>
+          </div>
+
+          <section class="card" id="providerExplorerCard">
+            <h2>Provider explorer</h2>
+            <p class="hint">
+              Search or click a provider to see link growth (from Found dates on the list) and daily opens
+              (recorded going forward when links are opened on this site).
+            </p>
+            <div class="provider-search-row">
+              <input
+                type="search"
+                id="providerSearch"
+                placeholder="Search providers…"
+                autocomplete="off"
+                aria-label="Search providers"
+                aria-controls="providerSuggest"
+              />
+              <button type="button" class="btn" id="providerClearBtn" hidden>Clear</button>
+            </div>
+            <ul class="provider-suggest" id="providerSuggest" role="listbox" hidden></ul>
+          </section>
+
+          <section class="card" id="providerDetailCard" hidden>
+            <h2 id="providerDetailTitle">Provider</h2>
+            <p class="hint" id="providerDetailHint"></p>
+            <div class="detail-stat-grid" aria-label="Provider summary">
+              <div class="detail-stat">
+                <div class="n" id="detailLinks">—</div>
+                <div class="l">Links on list</div>
+              </div>
+              <div class="detail-stat">
+                <div class="n" id="detailOpens">—</div>
+                <div class="l">Lifetime opens</div>
+              </div>
+              <div class="detail-stat">
+                <div class="n" id="detailCategories">—</div>
+                <div class="l">Categories</div>
+              </div>
+              <div class="detail-stat">
+                <div class="n" id="detailFirstFound">—</div>
+                <div class="l">Earliest found</div>
+              </div>
+            </div>
+            <div class="charts-row">
+              <div>
+                <h2 style="font-size:0.95rem;margin:0 0 0.35rem;">Links over time</h2>
+                <p class="hint">Cumulative links by Found date on the list.</p>
+                <div class="chart-wrap">
+                  <canvas id="providerLinksOverTimeChart" aria-label="Provider links over time"></canvas>
+                </div>
+              </div>
+              <div>
+                <h2 style="font-size:0.95rem;margin:0 0 0.35rem;">Opens over time</h2>
+                <p class="hint">Daily opens for this provider’s links (UTC days; empty until new opens are recorded).</p>
+                <div class="chart-wrap">
+                  <canvas id="providerOpensOverTimeChart" aria-label="Provider opens over time"></canvas>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="charts-row">
+            <section class="card">
+              <h2>Top providers by link count</h2>
+              <p class="hint">How many sorted links each provider has on the list. Click a bar to open that provider.</p>
+              <div class="chart-wrap tall">
+                <canvas id="providerLinksChart" aria-label="Providers by link count"></canvas>
+              </div>
+            </section>
+            <section class="card">
+              <h2>Categories</h2>
+              <p class="hint">Share of sorted links by category.</p>
+              <div class="chart-wrap donut">
+                <canvas id="categoryChart" aria-label="Links by category"></canvas>
+              </div>
+            </section>
+          </div>
+
+          <section class="card">
+            <h2>Top providers</h2>
+            <p class="hint">Largest provider sections on the sorted list. Click a row to explore.</p>
+            <table class="provider-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Provider</th>
+                  <th class="num">Links</th>
+                </tr>
+              </thead>
+              <tbody id="providerTableBody">
+                <tr><td class="muted" colspan="3">Loading…</td></tr>
+              </tbody>
+            </table>
+          </section>
+
+          <div class="charts-row">
+            <section class="card">
+              <h2>Most opened links</h2>
+              <p class="hint">Lifetime open counts from this site (top 15 of the top 100).</p>
+              <div class="chart-wrap tall">
+                <canvas id="topOpensChart" aria-label="Most opened links"></canvas>
+              </div>
+            </section>
+            <section class="card">
+              <h2>Opens by provider</h2>
+              <p class="hint">Open totals rolled up to providers for links in the top 100.</p>
+              <div class="chart-wrap tall">
+                <canvas id="opensByProviderChart" aria-label="Opens by provider"></canvas>
+              </div>
+            </section>
+          </div>
+
+          <div class="charts-row">
+            <section class="card">
+              <h2>Most used domains</h2>
+              <p class="hint">Hostnames that appear most often on the sorted list (many links can share one domain).</p>
+              <div class="chart-wrap tall">
+                <canvas id="domainsChart" aria-label="Most used domains"></canvas>
+              </div>
+            </section>
+            <section class="card">
+              <h2>Domain ranking</h2>
+              <p class="hint" id="domainsHint">Domains ranked by how many sorted links use that hostname.</p>
+              <div class="scroll-table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Domain</th>
+                      <th class="num">Links</th>
+                      <th class="num">Share</th>
+                    </tr>
+                  </thead>
+                  <tbody id="domainsTableBody">
+                    <tr><td class="muted" colspan="4">Loading…</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="panel" id="panel-filters" data-panel="filters" hidden>
+          <div class="stat-grid" aria-label="Filter overview">
+            <div class="stat">
+              <div class="n" id="statFilters">—</div>
+              <div class="l">Web filters tracked</div>
+            </div>
+            <div class="stat">
+              <div class="n" id="statFilterChecked">—</div>
+              <div class="l">Links with filter data</div>
+            </div>
+          </div>
+
+          <section class="card">
+            <h2>Web filters</h2>
+            <p class="hint" id="filterStatsHint">
+              Per-filter blocked / unblocked / warning counts across sorted links that have LinkLens data.
+              Click a filter for its top block reasons.
+            </p>
+            <div class="chart-wrap tall filter-tall">
+              <canvas id="filterStatusChart" aria-label="Filter blocked and unblocked counts"></canvas>
+            </div>
+            <div class="scroll-table" style="margin-top:0.85rem;">
+              <table class="filter-table">
+                <thead>
+                  <tr>
+                    <th>Filter</th>
+                    <th class="num">Blocked</th>
+                    <th class="num">Unblocked</th>
+                    <th class="num">Warning</th>
+                    <th class="num">Checked</th>
+                  </tr>
+                </thead>
+                <tbody id="filterTableBody">
+                  <tr><td class="muted" colspan="5">Loading…</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="card" id="filterDetailCard" hidden>
+            <h2 id="filterDetailTitle">Filter</h2>
+            <p class="hint" id="filterDetailHint"></p>
+            <div class="detail-stat-grid" aria-label="Filter summary">
+              <div class="detail-stat">
+                <div class="n" id="filterDetailBlocked">—</div>
+                <div class="l">Blocked</div>
+              </div>
+              <div class="detail-stat">
+                <div class="n" id="filterDetailUnblocked">—</div>
+                <div class="l">Unblocked</div>
+              </div>
+              <div class="detail-stat">
+                <div class="n" id="filterDetailWarning">—</div>
+                <div class="l">Warning</div>
+              </div>
+              <div class="detail-stat">
+                <div class="n" id="filterDetailTotal">—</div>
+                <div class="l">Links checked</div>
+              </div>
+            </div>
+            <h2 style="font-size:0.95rem;margin:0 0 0.35rem;">Top block reasons for this filter</h2>
+            <p class="hint">How often this filter blocks sorted links for each category/reason.</p>
+            <div class="chart-wrap">
+              <canvas id="filterReasonChart" aria-label="Block reasons for selected filter"></canvas>
+            </div>
+            <div class="scroll-table" style="margin-top:0.75rem;">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Reason</th>
+                    <th class="num">Blocked</th>
+                  </tr>
+                </thead>
+                <tbody id="filterReasonTableBody">
+                  <tr><td class="muted" colspan="2">Select a filter.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="card">
+            <h2>Top block reasons</h2>
+            <p class="hint">Most common block categories across all filters (a link can contribute once per filter).</p>
+            <div class="chart-wrap tall">
+              <canvas id="blockReasonsChart" aria-label="Top block reasons"></canvas>
+            </div>
+          </section>
+
+          <div class="charts-row">
+            <section class="card">
+              <h2>Most blocked domains</h2>
+              <p class="hint">
+                Domains ranked by total blocked filter matches across sorted links (one count per filter per link).
+              </p>
+              <div class="chart-wrap tall">
+                <canvas id="blockedDomainsChart" aria-label="Most blocked domains"></canvas>
+              </div>
+            </section>
+            <section class="card">
+              <h2>Blocked domains table</h2>
+              <p class="hint" id="blockedDomainsHint">
+                Hover “+ more” on Filters for the full list of filters that block that domain.
+              </p>
+              <div class="scroll-table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Domain</th>
+                      <th class="num">Blocked</th>
+                      <th class="num">Filters</th>
+                      <th>Blocking filters</th>
+                    </tr>
+                  </thead>
+                  <tbody id="blockedDomainsTableBody">
+                    <tr><td class="muted" colspan="5">Loading…</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+
+          <section class="card">
+            <h2>Block reasons</h2>
+            <p class="hint">
+              Block categories with originating filters. Counts are blocked provider matches on sorted links.
+            </p>
+            <div class="scroll-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Reason</th>
+                    <th>Filters</th>
+                    <th class="num">Blocked</th>
+                  </tr>
+                </thead>
+                <tbody id="blockReasonsTableBody">
+                  <tr><td class="muted" colspan="4">Loading…</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+        <div class="panel" id="panel-contributions" data-panel="contributions" hidden>
+          <section class="card">
+            <h2>Top contributors</h2>
+            <p class="hint">Cumulative link counts attributed to contributors on the sorted list.</p>
+            <div class="chart-wrap tall">
+              <canvas id="contributorsChart" aria-label="Top contributors"></canvas>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+  <script src="../firebase-config.example.js"></script>
+  <script src="../firebase-config.local.js"></script>
+  <script src="./stats.js"></script>
+</body>
+</html>

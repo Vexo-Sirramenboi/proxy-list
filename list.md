@@ -1,8 +1,8 @@
-# Proxy List
+ # Proxy List
 > [!NOTE]
-> v5.5.1 | Released: August 03, 2026
-> r259 | Last Updated: August 03, 2026
-> Total onsite links: 4451 (4109 sorted + 342 unsorted)\
+> v6.0 | Released: August 05, 2026
+> r260 | Last Updated: August 05, 2026
+> Total onsite links: 4496 (4154 sorted + 342 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
 Welcome to the official Proxy List! This has a running list of hundreds of unblocked websites and games that anyone is free to use. We have the most popular and reliable sites here, so you'll never run out!
@@ -15,11 +15,38 @@ Welcome to the official Proxy List! This has a running list of hundreds of unblo
 
 ## Important Notices
 
-### Slowing Down Development
-Development of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).
-
 ## Update Notice
-Security fix
+# 6.0 - Statistics and Systems Update
+With this update, lots of changes have been made to community features and also adding statistics, giving a birds-eye view over everything related to links.
+
+# Statistics
+The statistics page allows you to see clear stats on top providers, categories, domains, most common block reasons, most blocked domains, most popular domains, and much more. This gives a clear view into what filters most commonly block and also what is most popular in the list.
+
+# Community
+You can now suggest bugfixes and feature requests directly through the Proxy List! Simply fill out the form and submit, and if we think it's good it will be implemented! (You must have an account in order to access this feature and other community features.)
+
+# Moderation
+There is now a moderation system and users can be punished for their actions if they constantly submit garbage links/requests, have offensive usernames, and offensive folder names. You can report folders by clicking the "Report" button on any folder. If you feel your suspension was unfair or a mistake, you can even appeal by going to the Contribute page and submitting an appeal form. You can only fill this form out if your account is currently under suspension. (You must have an account in order to access these features and other community features.)
+
+# Additional Notes
+When it is needed, I have added notes to several proxies and URLs to give the user more info on specific quirks that the website has to keep you informed and help you make a choice on what proxy to use.
+
+# Misc Fixes
+- Fixed a bug where the Community Folder icon was slightly off center.
+- Fixed a bug where submitting a link request would fail due to a Firebase error.
+- Fixed a bug where link checks weren't being run ever.
+- Fixed a bug where mirror sites wouldn't have access to certain features or were broken.
+- Fixed a bug where open counts would load very slowly.
+- Fixed a bug where the string "-" would be shown as an option in the protocols and capabilities sort options.
+- Fixed a bug where emojis would show as corrupted text due to improper formatting.
+- Fixed a bug where liking a link would fail due to a Firebase error.
+- Fixed a bug where punished users could still access certain unprotected features.
+- Fixed an exploit that allowed a bot to inflate clicks on a specific URL.
+- Fixed a bug where users couldn't make a new folder because the site thought they weren't signed in.
+- Fixed a bug where changing a filter through the settings menu show no results other than the default.
+- Fixed a bug where the sign in button would still appear even if the user was signed in.
+- Fixed security bugs.
+- Cleaned up unsorted list.
 
 # 💜 Selenite
 > [!NOTE]
@@ -1400,7 +1427,7 @@ Security fix
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | Unknown | Scramjet | 1 |
+> | Proxy/Games | Unknown | Scramjet | 16 |
 
 > [!IMPORTANT]
 > Rosin does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1418,6 +1445,11 @@ Security fix
 |  | https://lackingonnanet.krepche.com/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://mulah.mundra.com/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://sneakdisser.zerinh.net/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://durkio.maxmir-energy.ru/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://supereadertool.cyberninja.ie/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://readingwork.eclipsecastellon.net/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://beforewepickedupdurk.maxmir-energy.ru/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://pickupdurk.maxmir-energy.ru/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # ⬡ TGLSC Density 4
 > [!NOTE]
@@ -4347,7 +4379,7 @@ Security fix
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Games | - | - | 129 |
+> | Games | - | - | 282 |
 > [!IMPORTANT]
 > if you see a block screen it's likely fake, wait a few seconds and it will disappear
 
@@ -4632,6 +4664,9 @@ Security fix
 |  | https://quantil.jsdelivr.net/combine/npm/ubzone/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://originfastly.jsdelivr.net/combine/npm/ubzone/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://jsd.onmicrosoft.cn/combine/npm/ubzone/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://jsdelivr.b-cdn.net/gh/googleaccountuser/myfirstrepo@main/windows10background.svg | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://jsdelivr.b-cdn.net/gh/googleaccountuser/myfirstrepo@master/windows10background.svg | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://jsdelivr.b-cdn.net/gh/googleaccountuser/myfirstrepo/windows10background.svg | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🚢 Voya
 > [!NOTE]
@@ -4909,3 +4944,51 @@ Security fix
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://cdn.imageurlgenerator.com/uploads/ca803644-49df-4030-81fc-6fe1748033c6.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
+# 🔮 Xylora
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | pending | pending | pending | 37 |
+> [!IMPORTANT]
+> This section has not been categorized or checked for protocol(s) and capabilities.
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+| | https://keep.confiarriendo.cl/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://science.dj8.org/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://enter.agrointegral.cl/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://search.loveyourselfbeauty.au/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://location.ronginbari.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://enter.srivaishnavam.org.au/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://marksenergy.maxmir-energy.ru/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://api.iaconetti.com.ar/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://looking.loskks.org/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://secured.remiosenifoundation.org/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://chanka-stores.chanka.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://social.50friends.com.mx/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://apis.extratechsolutions.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://seize.mounthoodlodges.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://s.api.rabsacca.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://modern.moldeointeractive.com.ar/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://anyalizing.newtonanalytics.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://elephant.elprado.com.ar/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://gecko.geckobungalow.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://orchid.orchid-idea.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://gecko.lauriemillotte.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://vitrual-ideas.tippyturtle.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://leach.contraprivatizacao.com.br/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://junior.7dejunio.com.ar/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://bible.biblosconsulting.ru/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://believe.bijayakilla.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://hand-working.handfolding.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://watch.lavachamber.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://aven.avenuecarriagecrossing.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://igu.govt.hu/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://dot.mjureta.cl/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://short.shor.ch/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://fried.silvaharo.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://software.bsfa.info/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://software.cnstefancelmare.ro/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://gurdit.gurdit.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+| | https://software.sundby.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)

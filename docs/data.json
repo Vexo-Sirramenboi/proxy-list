@@ -1,12 +1,18 @@
 {
   "meta": {
-    "version": "v5.5.1",
-    "revision": "r259",
-    "last_updated": "August 03, 2026",
+    "version": "v6.0",
+    "revision": "r260",
+    "last_updated": "August 05, 2026",
     "unsorted_total": 342,
-    "important_notices": "### Slowing Down Development\nDevelopment of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).",
-    "update_notice": "Security fix",
+    "important_notices": "",
+    "update_notice": "# 6.0 - Statistics and Systems Update\nWith this update, lots of changes have been made to community features and also adding statistics, giving a birds-eye view over everything related to links.\n\n# Statistics\nThe statistics page allows you to see clear stats on top providers, categories, domains, most common block reasons, most blocked domains, most popular domains, and much more. This gives a clear view into what filters most commonly block and also what is most popular in the list.\n\n# Community\nYou can now suggest bugfixes and feature requests directly through the Proxy List! Simply fill out the form and submit, and if we think it's good it will be implemented! (You must have an account in order to access this feature and other community features.)\n\n# Moderation\nThere is now a moderation system and users can be punished for their actions if they constantly submit garbage links/requests, have offensive usernames, and offensive folder names. You can report folders by clicking the \"Report\" button on any folder. If you feel your suspension was unfair or a mistake, you can even appeal by going to the Contribute page and submitting an appeal form. You can only fill this form out if your account is currently under suspension. (You must have an account in order to access these features and other community features.)\n\n# Additional Notes\nWhen it is needed, I have added notes to several proxies and URLs to give the user more info on specific quirks that the website has to keep you informed and help you make a choice on what proxy to use.\n\n# Misc Fixes\n- Fixed a bug where the Community Folder icon was slightly off center.\n- Fixed a bug where submitting a link request would fail due to a Firebase error.\n- Fixed a bug where link checks weren't being run ever.\n- Fixed a bug where mirror sites wouldn't have access to certain features or were broken.\n- Fixed a bug where open counts would load very slowly.\n- Fixed a bug where the string \"-\" would be shown as an option in the protocols and capabilities sort options.\n- Fixed a bug where emojis would show as corrupted text due to improper formatting.\n- Fixed a bug where liking a link would fail due to a Firebase error.\n- Fixed a bug where punished users could still access certain unprotected features.\n- Fixed an exploit that allowed a bot to inflate clicks on a specific URL.\n- Fixed a bug where users couldn't make a new folder because the site thought they weren't signed in.\n- Fixed a bug where changing a filter through the settings menu show no results other than the default.\n- Fixed a bug where the sign in button would still appear even if the user was signed in.\n- Fixed security bugs.\n- Cleaned up unsorted list.",
     "update_changelog": [
+      {
+        "version": "v6.0",
+        "revision": "r260",
+        "released": "August 05, 2026",
+        "update_notice": "# 6.0 - Statistics and Systems Update\nWith this update, lots of changes have been made to community features and also adding statistics, giving a birds-eye view over everything related to links.\n\n# Statistics\nThe statistics page allows you to see clear stats on top providers, categories, domains, most common block reasons, most blocked domains, most popular domains, and much more. This gives a clear view into what filters most commonly block and also what is most popular in the list.\n\n# Community\nYou can now suggest bugfixes and feature requests directly through the Proxy List! Simply fill out the form and submit, and if we think it's good it will be implemented! (You must have an account in order to access this feature and other community features.)\n\n# Moderation\nThere is now a moderation system and users can be punished for their actions if they constantly submit garbage links/requests, have offensive usernames, and offensive folder names. You can report folders by clicking the \"Report\" button on any folder. If you feel your suspension was unfair or a mistake, you can even appeal by going to the Contribute page and submitting an appeal form. You can only fill this form out if your account is currently under suspension. (You must have an account in order to access these features and other community features.)\n\n# Additional Notes\nWhen it is needed, I have added notes to several proxies and URLs to give the user more info on specific quirks that the website has to keep you informed and help you make a choice on what proxy to use.\n\n# Misc Fixes\n- Fixed a bug where the Community Folder icon was slightly off center.\n- Fixed a bug where submitting a link request would fail due to a Firebase error.\n- Fixed a bug where link checks weren't being run ever.\n- Fixed a bug where mirror sites wouldn't have access to certain features or were broken.\n- Fixed a bug where open counts would load very slowly.\n- Fixed a bug where the string \"-\" would be shown as an option in the protocols and capabilities sort options.\n- Fixed a bug where emojis would show as corrupted text due to improper formatting.\n- Fixed a bug where liking a link would fail due to a Firebase error.\n- Fixed a bug where punished users could still access certain unprotected features.\n- Fixed an exploit that allowed a bot to inflate clicks on a specific URL.\n- Fixed a bug where users couldn't make a new folder because the site thought they weren't signed in.\n- Fixed a bug where changing a filter through the settings menu show no results other than the default.\n- Fixed a bug where the sign in button would still appear even if the user was signed in.\n- Fixed security bugs.\n- Cleaned up unsorted list."
+      },
       {
         "version": "v5.5.1",
         "revision": "r259",
@@ -21351,6 +21357,106 @@
       "locked": "",
       "link": "https://sneakdisser.zerinh.net/",
       "found": "8/3/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🎮 Rosin",
+      "category": "Proxy/Games",
+      "capabilities": "Unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "Scramjet",
+      "protocol_tags": [
+        "scramjet"
+      ],
+      "additional_notes": "Rosin does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
+      "locked": "",
+      "link": "https://durkio.maxmir-energy.ru/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🎮 Rosin",
+      "category": "Proxy/Games",
+      "capabilities": "Unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "Scramjet",
+      "protocol_tags": [
+        "scramjet"
+      ],
+      "additional_notes": "Rosin does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
+      "locked": "",
+      "link": "https://supereadertool.cyberninja.ie/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🎮 Rosin",
+      "category": "Proxy/Games",
+      "capabilities": "Unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "Scramjet",
+      "protocol_tags": [
+        "scramjet"
+      ],
+      "additional_notes": "Rosin does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
+      "locked": "",
+      "link": "https://readingwork.eclipsecastellon.net/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🎮 Rosin",
+      "category": "Proxy/Games",
+      "capabilities": "Unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "Scramjet",
+      "protocol_tags": [
+        "scramjet"
+      ],
+      "additional_notes": "Rosin does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
+      "locked": "",
+      "link": "https://beforewepickedupdurk.maxmir-energy.ru/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🎮 Rosin",
+      "category": "Proxy/Games",
+      "capabilities": "Unknown",
+      "capability_tags": [
+        "unknown"
+      ],
+      "protocols": "Scramjet",
+      "protocol_tags": [
+        "scramjet"
+      ],
+      "additional_notes": "Rosin does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
+      "locked": "",
+      "link": "https://pickupdurk.maxmir-energy.ru/",
+      "found": "8/5/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",
@@ -72130,6 +72236,54 @@
       "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
+      "provider": "🔓 Unblockedzone",
+      "category": "Games",
+      "capabilities": "-",
+      "capability_tags": [],
+      "protocols": "-",
+      "protocol_tags": [],
+      "additional_notes": "if you see a block screen it's likely fake, wait a few seconds and it will disappear",
+      "locked": "",
+      "link": "https://jsdelivr.b-cdn.net/gh/googleaccountuser/myfirstrepo@main/windows10background.svg",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔓 Unblockedzone",
+      "category": "Games",
+      "capabilities": "-",
+      "capability_tags": [],
+      "protocols": "-",
+      "protocol_tags": [],
+      "additional_notes": "if you see a block screen it's likely fake, wait a few seconds and it will disappear",
+      "locked": "",
+      "link": "https://jsdelivr.b-cdn.net/gh/googleaccountuser/myfirstrepo@master/windows10background.svg",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔓 Unblockedzone",
+      "category": "Games",
+      "capabilities": "-",
+      "capability_tags": [],
+      "protocols": "-",
+      "protocol_tags": [],
+      "additional_notes": "if you see a block screen it's likely fake, wait a few seconds and it will disappear",
+      "locked": "",
+      "link": "https://jsdelivr.b-cdn.net/gh/googleaccountuser/myfirstrepo/windows10background.svg",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
       "provider": "🚢 Voya",
       "category": "Proxy/Games",
       "capabilities": "Unknown",
@@ -76990,6 +77144,746 @@
       "locked": "",
       "link": "https://cdn.imageurlgenerator.com/uploads/ca803644-49df-4030-81fc-6fe1748033c6.svg",
       "found": "8/1/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://keep.confiarriendo.cl/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://science.dj8.org/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://enter.agrointegral.cl/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://search.loveyourselfbeauty.au/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://location.ronginbari.com/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://enter.srivaishnavam.org.au/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://marksenergy.maxmir-energy.ru/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://api.iaconetti.com.ar/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://looking.loskks.org/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://secured.remiosenifoundation.org/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://chanka-stores.chanka.com/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://social.50friends.com.mx/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://apis.extratechsolutions.com/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://seize.mounthoodlodges.com/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://s.api.rabsacca.com/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://modern.moldeointeractive.com.ar/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://anyalizing.newtonanalytics.com/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://elephant.elprado.com.ar/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://gecko.geckobungalow.com/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://orchid.orchid-idea.com/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://gecko.lauriemillotte.com/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://vitrual-ideas.tippyturtle.com/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://leach.contraprivatizacao.com.br/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://junior.7dejunio.com.ar/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://bible.biblosconsulting.ru/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://believe.bijayakilla.com/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://hand-working.handfolding.com/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://watch.lavachamber.com/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://aven.avenuecarriagecrossing.com/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://igu.govt.hu/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://dot.mjureta.cl/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://short.shor.ch/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://fried.silvaharo.com/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://software.bsfa.info/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://software.cnstefancelmare.ro/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://gurdit.gurdit.com/",
+      "found": "8/5/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "yourworstnightmare1",
+      "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "🔮 Xylora",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://software.sundby.com/",
+      "found": "8/5/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",

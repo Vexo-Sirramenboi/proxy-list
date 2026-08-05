@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Review submissions | Proxy list</title>
+  <title>Link submissions | Proxy list</title>
   <link rel="icon" type="image/png" href="../favicon.png" />
   <style>
     :root {
@@ -33,6 +33,7 @@
     .btn:hover { border-color: var(--accent); color: var(--accent); }
     .btn-ok { border-color: #2d6b4a; color: var(--ok); }
     .btn-danger { border-color: #6b2d2d; color: var(--danger); }
+    .btn-current { border-color: var(--accent); color: var(--accent); }
     .card { border: 1px solid var(--border); border-radius: 10px; background: var(--surface); padding: 0.9rem 1rem; margin-top: 1rem; }
     table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
     th, td { text-align: left; border-bottom: 1px solid var(--border); padding: 0.5rem 0.45rem; vertical-align: top; }
@@ -47,31 +48,64 @@
     .notice.err { border-color: #6b2d2d; color: var(--danger); }
     a { color: var(--accent); }
     code { background: #141414; border: 1px solid var(--border); border-radius: 4px; padding: 0.1rem 0.35rem; font-size: 0.82em; }
+    .status-pill {
+      display: inline-block; padding: 0.1rem 0.4rem; border-radius: 999px;
+      font-size: 0.72rem; font-weight: 600; text-transform: lowercase;
+    }
+    .status-pill.pending { background: #2a2a15; color: var(--warn); border: 1px solid #5f4b2d; }
+    .status-pill.approved { background: #152a1f; color: var(--ok); border: 1px solid #2d6b4a; }
+    .status-pill.rejected { background: #2a1515; color: var(--danger); border: 1px solid #6b2d2d; }
+    .page-footer {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    .modal-backdrop {
+      position: fixed; inset: 0; z-index: 50; display: none;
+      align-items: center; justify-content: center; padding: 1rem; background: rgba(0, 0, 0, 0.65);
+    }
+    .modal-backdrop.open { display: flex; }
+    .modal {
+      width: min(28rem, 100%); background: var(--surface); border: 1px solid var(--border);
+      border-radius: 10px; padding: 1rem 1.1rem; max-height: calc(100vh - 2rem); overflow: auto;
+    }
+    .modal h2 { margin: 0 0 0.35rem; font-size: 1.1rem; }
+    .modal label { display: block; margin: 0.65rem 0 0.25rem; font-size: 0.82rem; color: var(--muted); }
+    .modal textarea, .modal input[type="number"], .modal select {
+      width: 100%; font: inherit; color: var(--text); background: #141414;
+      border: 1px solid var(--border); border-radius: 6px; padding: 0.45rem 0.55rem;
+    }
+    .modal textarea { min-height: 4.5rem; resize: vertical; }
+    .preset-row { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.35rem; }
+    .preset-row .btn { font-size: 0.75rem; padding: 0.35rem 0.55rem; }
+    .preset-row .btn.active { border-color: var(--danger); color: var(--danger); }
+    .custom-row { display: flex; gap: 0.4rem; align-items: center; }
+    .custom-row input { flex: 1; }
+    .custom-row select { width: 6.5rem; }
+    .modal-actions { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem; justify-content: flex-end; }
+    .check-row { display: flex; align-items: center; gap: 0.45rem; margin-top: 0.75rem; font-size: 0.85rem; }
+    .check-row input { width: auto; }
+    .check-row label { margin: 0; color: var(--text); }
   </style>
 </head>
 <body>
   <header>
-    <h1>Submission review</h1>
-    <p class="sub">Approve or reject on-site link submissions. Add approved rows to <code>list.md</code> under the listed provider.</p>
+    <h1>Link submissions</h1>
+    <p class="sub">Review proxy URLs submitted from the Contribute page. Approve rows for <code>list.md</code>, reject, or punish.</p>
   </header>
   <main>
     <div class="actions">
-      <a class="btn" href="../contribute/">← Contribute page</a>
+      <a class="btn" href="./">← Back</a>
+      <a class="btn" href="./">Summary</a>
+      <a class="btn btn-current" href="./submissions.html">Link submissions</a>
+      <a class="btn" href="./feedback.html">Feedback</a>
+      <a class="btn" href="./folder-reports.html">Folder reports</a>
       <button class="btn" type="button" id="refreshBtn">Refresh</button>
     </div>
     <div id="gateNotice" class="notice err" hidden></div>
 
-    <section class="card" id="flaggedSection" hidden>
-      <h2 style="margin:0 0 0.5rem;font-size:1.05rem;">Flagged submitters</h2>
-      <p class="muted">Users with many duplicate attempts. Consider banning repeat offenders.</p>
-      <table>
-        <thead><tr><th>User</th><th>UID</th><th>Dupes</th><th>Submitted</th><th>Blocked</th><th></th></tr></thead>
-        <tbody id="flaggedBody"></tbody>
-      </table>
-    </section>
-
     <section class="card">
-      <h2 style="margin:0 0 0.5rem;font-size:1.05rem;">Pending submissions</h2>
+      <h2 style="margin:0 0 0.5rem;font-size:1.05rem;">Pending link submissions</h2>
       <p class="muted" id="pendingMeta">Loading…</p>
       <table>
         <thead>
@@ -89,6 +123,25 @@
       </table>
     </section>
 
+    <section class="card">
+      <h2 style="margin:0 0 0.5rem;font-size:1.05rem;">Recent submissions</h2>
+      <p class="muted" id="recentMeta">Loading…</p>
+      <table>
+        <thead>
+          <tr>
+            <th>URL</th>
+            <th>Provider</th>
+            <th>Submitter</th>
+            <th>Status</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+        <tbody id="recentBody">
+          <tr><td class="muted" colspan="5">Loading…</td></tr>
+        </tbody>
+      </table>
+    </section>
+
     <section class="card" id="copySection" hidden>
       <h2 style="margin:0 0 0.5rem;font-size:1.05rem;">Approved row for list.md</h2>
       <textarea class="copybox" id="copyBox" readonly></textarea>
@@ -96,7 +149,58 @@
         <button class="btn btn-ok" type="button" id="copyBtn">Copy row</button>
       </div>
     </section>
+
+    <div class="page-footer">
+      <a class="btn" href="../contribute/">Return to contribute page</a>
+    </div>
   </main>
+
+  <div class="modal-backdrop" id="punishModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="punishTitle">
+      <h2 id="punishTitle">Punish / suspend user</h2>
+      <p class="muted" id="punishUserLabel" style="margin:0;font-size:0.85rem;"></p>
+      <p class="muted" id="punishHistory" style="margin:0.25rem 0 0;font-size:0.8rem;"></p>
+      <label for="punishReason">Reason (shown to the user)</label>
+      <textarea id="punishReason" maxlength="2000" placeholder="Why this account is being warned or suspended…"></textarea>
+      <label>Action / suspension length</label>
+      <div class="preset-row" id="punishPresets">
+        <button class="btn" type="button" data-ms="warning">Warning</button>
+        <button class="btn" type="button" data-ms="86400000">1 day</button>
+        <button class="btn" type="button" data-ms="259200000">3 days</button>
+        <button class="btn" type="button" data-ms="604800000">1 week</button>
+        <button class="btn" type="button" data-ms="1209600000">2 weeks</button>
+        <button class="btn" type="button" data-ms="2592000000">1 month</button>
+        <button class="btn" type="button" data-ms="31536000000">1 year</button>
+        <button class="btn" type="button" data-ms="permanent">Permanent</button>
+      </div>
+      <div id="punishDurationBlock">
+        <label>Or custom duration</label>
+        <div class="custom-row">
+          <input id="punishCustomAmount" type="number" min="1" step="1" placeholder="Amount" />
+          <select id="punishCustomUnit">
+            <option value="hours">hours</option>
+            <option value="days" selected>days</option>
+            <option value="weeks">weeks</option>
+            <option value="months">months</option>
+          </select>
+        </div>
+        <label for="punishScope">Scope</label>
+        <select id="punishScope">
+          <option value="both" selected>Account + form requests</option>
+          <option value="account">Account (community features)</option>
+          <option value="form">Form requests only</option>
+        </select>
+      </div>
+      <div class="check-row">
+        <input id="punishAlsoReject" type="checkbox" checked />
+        <label for="punishAlsoReject">Also reject this submission</label>
+      </div>
+      <div class="modal-actions">
+        <button class="btn" type="button" id="punishCancelBtn">Cancel</button>
+        <button class="btn btn-danger" type="button" id="punishConfirmBtn">Apply suspension</button>
+      </div>
+    </div>
+  </div>
 
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>

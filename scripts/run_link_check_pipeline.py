@@ -22,6 +22,7 @@ GIT_ADD_PATHS = [
     "docs/data.json",
     "docs/unsorted.json",
     "docs/contributor_link_totals.json",
+    "docs/filter_stats.json",
     "docs/link_check_meta.json",
     "docs/link_check_snapshot.json",
     "link_status.json",
@@ -112,6 +113,7 @@ def run_pipeline(
     _run([py, "scripts/update_unsorted_from_raw.py"], cwd=repo_root)
     _run([py, "scripts/update_link_check_meta.py"], cwd=repo_root)
     _run([py, "scripts/convert_list_to_json.py"], cwd=repo_root)
+    _run([py, "scripts/build_filter_stats.py"], cwd=repo_root)
 
     info = read_commit_info(repo_root)
     committed = False

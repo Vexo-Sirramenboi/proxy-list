@@ -10,6 +10,7 @@ on:
       - "docs/link_check_meta.json"
       - "docs/submission_url_keys.json"
       - "scripts/convert_list_to_json.py"
+      - "scripts/build_filter_stats.py"
 
 permissions:
   contents: write
@@ -25,13 +26,15 @@ jobs:
           python-version: "3.11"
 
       - name: Export web data
-        run: python scripts/convert_list_to_json.py
+        run: |
+          python scripts/convert_list_to_json.py
+          python scripts/build_filter_stats.py
 
       - name: Commit changes
         run: |
           git config --global user.name "auto-link-bot"
           git config --global user.email "bot@users.noreply.github.com"
-          git add docs/data.json docs/contributor_link_totals.json
+          git add docs/data.json docs/contributor_link_totals.json docs/filter_stats.json
           if ! git diff --cached --quiet; then
             git commit -m "Silent maintenance | refresh exported web data"
             git push

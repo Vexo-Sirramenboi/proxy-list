@@ -18,7 +18,8 @@
   var statusEl = document.getElementById("submitStatus");
   var historyWrap = document.getElementById("submitHistoryWrap");
   var historyBody = document.getElementById("submitHistoryBody");
-  var adminLink = document.getElementById("submitAdminLink");
+  var adminLinksBtn = document.getElementById("adminLinksBtn");
+  var adminFeedbackBtn = document.getElementById("adminFeedbackBtn");
   var providerSelect = document.getElementById("submitProviderSelect");
   var existingWrap = document.getElementById("existingProviderWrap");
   var newWrap = document.getElementById("newProviderWrap");
@@ -143,7 +144,28 @@
 
   async function isUserBanned(uid) {
     var snap = await firebaseDb.collection("contributorBans").doc(uid).get();
-    return snap.exists;
+    if (!snap.exists) return false;
+    var data = snap.data() || {};
+    if (data.until && typeof data.until.toMillis === "function") {
+      if (data.until.toMillis() <= Date.now()) {
+        try {
+          await firebaseDb.collection("contributorBans").doc(uid).delete();
+          await firebaseDb.collection("contributorStats").doc(uid).set(
+            { submitBlocked: false, updated: firebase.firestore.FieldValue.serverTimestamp() },
+            { merge: true }
+          );
+          await firebaseDb.collection("userNotifications").add({
+            uid: uid,
+            kind: "wait_lifted",
+            read: false,
+            created: firebase.firestore.FieldValue.serverTimestamp(),
+            dateMs: Date.now(),
+          });
+        } catch (_) {}
+        return false;
+      }
+    }
+    return true;
   }
 
   function buildStatsPayload(uid, stats, opts) {
@@ -175,6 +197,8 @@
       submissionsTotal: total,
       duplicatesAttempted: dup,
       rejectedTotal: Number(stats.rejectedTotal) || 0,
+      warningCount: Number(stats.warningCount) || 0,
+      suspensionCount: Number(stats.suspensionCount) || 0,
       submitBlocked: submitBlocked,
       recentHourCount: recent,
       lastSubmissionAt: opts.touchTime ? firebase.firestore.FieldValue.serverTimestamp() : stats.lastSubmissionAt || null,
@@ -309,6 +333,7 @@
         submitterUid: currentUser.uid,
         submitterLabel: contributorName,
         submitterGithub: githubLogin,
+        submitterEmail: currentUser.email ? String(currentUser.email).slice(0, 320) : "",
         status: "pending",
         optionalNote: note || "",
         created: firebase.firestore.FieldValue.serverTimestamp(),
@@ -339,10 +364,11 @@
       showStatus("Submitted for review. Thank you!", "ok");
       await loadSubmitHistory(currentUser.uid);
     } catch (err) {
+      console.warn("[proxy-list] link submission failed", err);
       var msg = (err && err.message) || "Submission failed.";
       if (/permission|insufficient/i.test(msg)) {
         msg =
-          "Submission storage is not available yet (deploy the updated Firestore rules from docs/firestore.rules).";
+          "Could not save submission (permission denied). If you were recently banned, wait for it to expire or ask an admin to lift it. Otherwise refresh and try again.";
       }
       showStatus(msg, "err");
     } finally {
@@ -419,11 +445,23 @@
     }
   }
 
+  function setAdminButtonsVisible(visible) {
+    var show = !!visible;
+    if (adminLinksBtn) {
+      adminLinksBtn.hidden = !show;
+      adminLinksBtn.style.display = show ? "" : "none";
+    }
+    if (adminFeedbackBtn) {
+      adminFeedbackBtn.hidden = !show;
+      adminFeedbackBtn.style.display = show ? "" : "none";
+    }
+  }
+
   function showSignedOutUi() {
     if (formEl) formEl.hidden = true;
     if (signInPrompt) signInPrompt.hidden = false;
     if (historyWrap) historyWrap.hidden = true;
-    if (adminLink) adminLink.hidden = true;
+    setAdminButtonsVisible(false);
     hideNotice(loadingNotice);
     hideNotice(bannedNotice);
     clearStatus();
@@ -440,6 +478,7 @@
 
     if (signInPrompt) signInPrompt.hidden = true;
     showNotice(loadingNotice, "Checking your account…", "");
+    setAdminButtonsVisible(SU.isSubmissionAdminUser(user));
 
     if (!firebaseDb) {
       hideNotice(loadingNotice);
@@ -499,7 +538,7 @@
       hideNotice(loadingNotice);
       if (formEl) formEl.hidden = false;
       prefillContributorFields(user, userProfile);
-      if (adminLink) adminLink.hidden = !SU.isSubmissionAdminUser(user);
+      setAdminButtonsVisible(SU.isSubmissionAdminUser(user));
       await loadSubmitHistory(user.uid);
     } catch (err) {
       hideNotice(loadingNotice);
@@ -510,7 +549,7 @@
         "Could not fully verify your account, but you can try submitting. If it fails, the site maintainer may still be deploying submission support.",
         "warn"
       );
-      if (adminLink) adminLink.hidden = !SU.isSubmissionAdminUser(user);
+      setAdminButtonsVisible(SU.isSubmissionAdminUser(user));
     }
   }
 

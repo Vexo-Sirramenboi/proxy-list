@@ -85,8 +85,29 @@ _IMPORTANT_NOTICES_H2 = re.compile(r"^##\s+Important Notices\s*$", re.IGNORECASE
 _UPDATE_NOTICE_H2 = re.compile(r"^##\s+Update Notice\s*$", re.IGNORECASE)
 
 
-def _extract_md_section(text: str, heading_re: re.Pattern[str]) -> str:
-    """Return markdown-lite body for a `## Heading` block until next H1/H2 heading."""
+def _looks_like_provider_h1(lines: list[str], h1_idx: int) -> bool:
+    """True if this H1 is a provider section (followed by Category/link tables)."""
+    for raw in lines[h1_idx + 1 : h1_idx + 24]:
+        if re.match(r"^#{1,2}\s+", raw) and not raw.strip().startswith("###"):
+            # Nested H1/H2 before a provider table → not a provider block.
+            if re.match(r"^#\s+", raw) and not raw.startswith("##"):
+                return False
+            if re.match(r"^##\s+", raw):
+                return False
+        inner = strip_blockquote_prefix(raw).strip().casefold()
+        if "category" in inner and "capabilities" in inner:
+            return True
+        if "locked" in inner and "link" in inner and "found date" in inner:
+            return True
+    return False
+
+
+def _extract_md_section(text: str, heading_re: re.Pattern[str], *, allow_h1: bool = False) -> str:
+    """Return markdown-lite body for a `## Heading` block until next H1/H2 heading.
+
+    When allow_h1 is True (Update Notice), keep `#` section headings and blank lines so
+    the site can render multi-section notices; stop only at the next provider H1 or H2.
+    """
     lines = text.splitlines()
     start = -1
     for i, raw in enumerate(lines):
@@ -97,19 +118,23 @@ def _extract_md_section(text: str, heading_re: re.Pattern[str]) -> str:
         return ""
 
     out_lines: list[str] = []
-    for raw in lines[start:]:
+    for i, raw in enumerate(lines[start:], start=start):
         if re.match(r"^##\s+", raw):
             break
         if re.match(r"^#\s+", raw) and not raw.startswith("##"):
-            break
-        inner = strip_blockquote_prefix(raw).strip()
-        if inner.startswith("[!") and inner.endswith("]"):
+            if not allow_h1 or _looks_like_provider_h1(lines, i):
+                break
+        inner = strip_blockquote_prefix(raw).rstrip()
+        stripped = inner.strip()
+        if stripped.startswith("[!") and stripped.endswith("]"):
             continue
-        if inner == "":
+        if stripped.casefold() == "<br>":
             continue
-        if inner.casefold() == "<br>":
+        if stripped == "":
+            if allow_h1:
+                out_lines.append("")
             continue
-        out_lines.append(inner)
+        out_lines.append(stripped)
 
     return "\n".join(out_lines).strip()
 
@@ -149,7 +174,7 @@ def parse_important_notices(text: str) -> str:
 
 
 def parse_update_notice(text: str) -> str:
-    return _extract_md_section(text, _UPDATE_NOTICE_H2)
+    return _extract_md_section(text, _UPDATE_NOTICE_H2, allow_h1=True)
 
 
 def load_update_changelog() -> list[dict[str, str]]:

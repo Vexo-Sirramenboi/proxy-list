@@ -5,6 +5,7 @@
  *   - Rate limit: 40 clicks / hour / IP (Cache API)
  *   - Increments Firestore link_clicks/{sha256(normUrl)} via Admin REST when
  *     FIREBASE_PROJECT_ID + FIREBASE_CLIENT_EMAIL + FIREBASE_PRIVATE_KEY are set.
+ *   - Also increments click_daily/{yyyy-mm-dd}.counts.{hash} for stats time-series.
  *   - Without Firebase secrets, increments an in-edge Cache counter (Cloudflare-only).
  *
  * POST /api/link-clicks/get  { "urls": ["https://..."] }
@@ -243,7 +244,12 @@ async function firestoreIncrementClick(env, docId, displayUrl) {
     }),
   });
 
-  if (commitRes.ok) return { created: false };
+  if (commitRes.ok) {
+    await firestoreIncrementDailyClick(env, token, project, docId, displayUrl).catch((err) => {
+      console.error("daily_click_failed", err);
+    });
+    return { created: false };
+  }
 
   const createRes = await fetch(
     `https://firestore.googleapis.com/v1/projects/${project}/databases/(default)/documents/link_clicks?documentId=${encodeURIComponent(docId)}`,
@@ -262,7 +268,12 @@ async function firestoreIncrementClick(env, docId, displayUrl) {
       }),
     }
   );
-  if (createRes.ok) return { created: true };
+  if (createRes.ok) {
+    await firestoreIncrementDailyClick(env, token, project, docId, displayUrl).catch((err) => {
+      console.error("daily_click_failed", err);
+    });
+    return { created: true };
+  }
 
   const retry = await fetch(commitUrl, {
     method: "POST",
@@ -276,7 +287,82 @@ async function firestoreIncrementClick(env, docId, displayUrl) {
     const t = await retry.text();
     throw new Error(`firestore write failed: ${createRes.status}/${retry.status} ${t}`);
   }
+  await firestoreIncrementDailyClick(env, token, project, docId, displayUrl).catch((err) => {
+    console.error("daily_click_failed", err);
+  });
   return { created: false };
+}
+
+function utcDateId(d = new Date()) {
+  return d.toISOString().slice(0, 10);
+}
+
+/** Lifetime totals stay on link_clicks; daily docs power provider time-series on /stats/. */
+async function firestoreIncrementDailyClick(env, token, project, docId, displayUrl) {
+  const day = utcDateId();
+  const dailyName = `projects/${project}/databases/(default)/documents/click_daily/${day}`;
+  const commitUrl = `https://firestore.googleapis.com/v1/projects/${project}/databases/(default)/documents:commit`;
+  const countPath = `counts.${docId}`;
+
+  const transformWrite = {
+    transform: {
+      document: dailyName,
+      fieldTransforms: [
+        { fieldPath: "total", increment: { integerValue: "1" } },
+        { fieldPath: countPath, increment: { integerValue: "1" } },
+        { fieldPath: "updated", setToServerValue: "REQUEST_TIME" },
+      ],
+    },
+  };
+
+  const commitRes = await fetch(commitUrl, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ writes: [transformWrite] }),
+  });
+  if (commitRes.ok) return;
+
+  const createRes = await fetch(
+    `https://firestore.googleapis.com/v1/projects/${project}/databases/(default)/documents/click_daily?documentId=${encodeURIComponent(day)}`,
+    {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        fields: {
+          date: { stringValue: day },
+          total: { integerValue: "1" },
+          counts: {
+            mapValue: {
+              fields: {
+                [docId]: { integerValue: "1" },
+              },
+            },
+          },
+          updated: { timestampValue: new Date().toISOString() },
+        },
+      }),
+    }
+  );
+  if (createRes.ok) return;
+
+  const retry = await fetch(commitUrl, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ writes: [transformWrite] }),
+  });
+  if (!retry.ok) {
+    const t = await retry.text();
+    throw new Error(`daily click write failed: ${createRes.status}/${retry.status} ${t}`);
+  }
 }
 
 async function edgeIncrement(norm, ctx) {

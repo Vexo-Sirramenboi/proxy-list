@@ -37,6 +37,12 @@ def run_once(cmd: list[str], env: dict[str, str]) -> int:
     print(f"[{now_utc()}] Running: {' '.join(cmd)}")
     proc = subprocess.run(cmd, cwd=ROOT, env=env)
     print(f"[{now_utc()}] Exit code: {proc.returncode}")
+    if proc.returncode == 0:
+        build = ROOT / "scripts" / "build_filter_stats.py"
+        if build.is_file():
+            print(f"[{now_utc()}] Rebuilding filter_stats.json…")
+            stats_proc = subprocess.run([cmd[0], str(build)], cwd=ROOT, env=env)
+            print(f"[{now_utc()}] filter_stats exit code: {stats_proc.returncode}")
     return proc.returncode
 
 

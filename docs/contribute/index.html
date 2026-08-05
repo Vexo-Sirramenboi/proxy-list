@@ -58,6 +58,11 @@
       font-size: 0.85rem;
       font-weight: 600;
     }
+    /* Author .btn { display } otherwise overrides the HTML hidden attribute. */
+    .btn[hidden],
+    [hidden] {
+      display: none !important;
+    }
     .btn:hover { border-color: var(--accent); color: var(--accent); }
     .btn-primary {
       border-color: #2d5588;
@@ -167,6 +172,21 @@
     a { color: var(--accent); word-break: break-word; }
 
     .submit-card { margin-top: 1rem; }
+    .card-heading-with-icon {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      margin: 0 0 0.6rem;
+    }
+    .card-heading-with-icon h2 {
+      margin: 0;
+    }
+    .card-heading-icon {
+      width: 1.35rem;
+      height: 1.35rem;
+      flex-shrink: 0;
+      color: var(--accent);
+    }
     .submit-form label {
       display: block;
       font-size: 0.82rem;
@@ -187,6 +207,21 @@
       padding: 0.5rem 0.65rem;
     }
     .submit-form textarea { min-height: 4.5rem; resize: vertical; }
+    .submit-form textarea.feedback-body { min-height: 7rem; }
+    .feedback-type-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem 0.85rem;
+      margin: 0.35rem 0 0.15rem;
+      font-size: 0.86rem;
+    }
+    .feedback-type-row label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin: 0;
+      color: var(--text);
+    }
     .provider-mode {
       display: flex;
       flex-wrap: wrap;
@@ -237,6 +272,8 @@
       <a class="btn btn-primary" href="https://github.com/yourworstnightmare1/proxy-list/fork" rel="noopener noreferrer" target="_blank">Fork on GitHub</a>
       <a class="btn" href="https://github.com/yourworstnightmare1/proxy-list/blob/main/CONTRIBUTING.md" rel="noopener noreferrer" target="_blank">Full CONTRIBUTING.md</a>
       <a class="btn" href="https://forms.gle/SMx9EUkBeiFuLwBa8" rel="noopener noreferrer" target="_blank">Submit via Google Form</a>
+      <a class="btn" href="../admin/submissions.html" id="adminLinksBtn" hidden style="display:none">Review link submissions</a>
+      <a class="btn" href="../admin/feedback.html" id="adminFeedbackBtn" hidden style="display:none">Review feedback</a>
     </div>
 
     <div class="grid">
@@ -315,7 +352,89 @@
           <tbody id="submitHistoryBody"></tbody>
         </table>
       </div>
-      <p class="muted" style="margin-top:0.75rem;font-size:0.8rem;" id="submitAdminLink" hidden><a href="../admin/submissions.html">Review submissions (admin)</a></p>
+    </section>
+
+    <section class="card submit-card" id="feedback" aria-labelledby="feedbackHeading">
+      <div class="card-heading-with-icon">
+        <svg class="card-heading-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 20h9"/>
+          <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/>
+        </svg>
+        <h2 id="feedbackHeading">Report a bug or request a feature</h2>
+      </div>
+      <p class="muted">
+        Found something broken, or want a quality-of-life improvement? Send a report here.
+        Bug reports and feature requests are stored for the maintainer to review (same Firebase project as link submissions).
+      </p>
+      <div id="feedbackSignInPrompt" class="signin-prompt muted">
+        <a href="../login/?next=../contribute/%23feedback">Sign in</a> with GitHub, Google, or email to send feedback.
+      </div>
+      <div id="feedbackLoadingNotice" class="submit-status" hidden>Checking your account…</div>
+      <div id="feedbackBannedNotice" class="submit-status err" hidden></div>
+      <div id="feedbackStatus" class="submit-status" hidden role="status"></div>
+      <form id="feedbackForm" class="submit-form" hidden>
+        <fieldset style="border:0;margin:0;padding:0;">
+          <legend class="muted" style="font-size:0.82rem;margin-bottom:0.25rem;">Request type</legend>
+          <div class="feedback-type-row">
+            <label><input type="radio" name="feedbackType" value="bug" checked /> Bug fix</label>
+            <label><input type="radio" name="feedbackType" value="feature" /> Feature request</label>
+            <label><input type="radio" name="feedbackType" value="qol" /> QoL improvement</label>
+          </div>
+        </fieldset>
+        <label for="feedbackTitle">Short title</label>
+        <input id="feedbackTitle" name="title" type="text" maxlength="200" required placeholder="e.g. Settings filter dropdown is empty" />
+        <label for="feedbackBody">Details</label>
+        <textarea
+          id="feedbackBody"
+          class="feedback-body"
+          name="body"
+          maxlength="2000"
+          required
+          placeholder="What happened, what you expected, steps to reproduce, or the feature idea…"
+        ></textarea>
+        <div class="actions" style="margin-top:0.85rem;">
+          <button class="btn btn-primary" type="submit" id="feedbackSubmitBtn">Send feedback</button>
+        </div>
+      </form>
+      <div class="submit-history" id="feedbackHistoryWrap" hidden>
+        <h3 style="margin:0.85rem 0 0.45rem;font-size:0.95rem;">Your recent feedback</h3>
+        <table>
+          <thead>
+            <tr><th>Type</th><th>Title</th><th>Status</th></tr>
+          </thead>
+          <tbody id="feedbackHistoryBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card submit-card" id="appeal" aria-labelledby="appealHeading">
+      <h2 id="appealHeading">Appeal suspension</h2>
+      <p class="muted">
+        If your account or form access is suspended, explain why it should be lifted. You may submit <strong>one appeal per suspension</strong>. Appeals are reviewed by the list maintainer.
+      </p>
+      <div id="appealSignInPrompt" class="signin-prompt muted">
+        <a href="../login/?next=../contribute/%23appeal">Sign in</a> to submit an appeal.
+      </div>
+      <div id="appealNotBannedNotice" class="submit-status" hidden>You are not currently suspended.</div>
+      <div id="appealLoadingNotice" class="submit-status" hidden>Checking your account…</div>
+      <div id="appealStatus" class="submit-status" hidden role="status"></div>
+      <form id="appealForm" class="submit-form" hidden>
+        <label for="appealBody">Why should your suspension be lifted?</label>
+        <textarea
+          id="appealBody"
+          name="body"
+          maxlength="2000"
+          required
+          placeholder="Explain what happened and why your access should be restored…"
+          style="min-height:7rem;"
+        ></textarea>
+        <div class="actions" style="margin-top:0.85rem;">
+          <button class="btn btn-primary" type="submit" id="appealSubmitBtn">Submit appeal</button>
+        </div>
+      </form>
+      <p class="muted" id="appealPendingNote" hidden style="margin-top:0.65rem;font-size:0.82rem;">
+        You already submitted an appeal for this suspension (one appeal per ban).
+      </p>
     </section>
 
     <section class="card" aria-labelledby="contributorsHeading" style="margin-top:1rem;">
@@ -586,5 +705,7 @@
     loadContributors();
   </script>
   <script src="./submit-form.js"></script>
+  <script src="./feedback-form.js"></script>
+  <script src="./appeal-form.js"></script>
 </body>
 </html>

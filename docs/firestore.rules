@@ -43,7 +43,8 @@ service cloud.firestore {
       let d = request.resource.data;
       return d.keys().hasOnly([
               'uid', 'submissionsTotal', 'duplicatesAttempted', 'rejectedTotal',
-              'submitBlocked', 'recentHourCount', 'lastSubmissionAt', 'updated'
+              'submitBlocked', 'recentHourCount', 'lastSubmissionAt', 'updated',
+              'warningCount', 'suspensionCount'
             ])
         && d.uid == request.auth.uid
         && d.submissionsTotal is int
@@ -57,7 +58,9 @@ service cloud.firestore {
         && d.submitBlocked == false
         && d.recentHourCount is int
         && d.recentHourCount >= 0
-        && d.recentHourCount <= 1;
+        && d.recentHourCount <= 1
+        && (!('warningCount' in d) || d.warningCount == 0)
+        && (!('suspensionCount' in d) || d.suspensionCount == 0);
     }
 
     function statsSelfUpdateOk() {
@@ -65,15 +68,23 @@ service cloud.firestore {
       let r = resource.data;
       return d.keys().hasOnly([
               'uid', 'submissionsTotal', 'duplicatesAttempted', 'rejectedTotal',
-              'submitBlocked', 'recentHourCount', 'lastSubmissionAt', 'updated'
+              'submitBlocked', 'recentHourCount', 'lastSubmissionAt', 'updated',
+              'warningCount', 'suspensionCount'
             ])
         && d.uid == r.uid
         && d.uid == request.auth.uid
         && d.rejectedTotal == r.rejectedTotal
+        && (!('warningCount' in d)
+            || (d.warningCount is int
+                && d.warningCount == (('warningCount' in r) ? r.warningCount : 0)))
+        && (!('suspensionCount' in d)
+            || (d.suspensionCount is int
+                && d.suspensionCount == (('suspensionCount' in r) ? r.suspensionCount : 0)))
         && intDeltaAtMostOne(r.submissionsTotal, d.submissionsTotal)
         && intDeltaAtMostOne(r.duplicatesAttempted, d.duplicatesAttempted)
         && (d.submitBlocked == r.submitBlocked
-            || (d.submitBlocked == true && r.submitBlocked == false))
+            || (d.submitBlocked == true && r.submitBlocked == false)
+            || (d.submitBlocked == false && r.submitBlocked == true && notSubmissionBanned()))
         && statsRecentHourOk(r, d);
     }
 
@@ -120,8 +131,27 @@ service cloud.firestore {
         && request.auth.uid in get(/databases/$(database)/documents/config/submissions).data.adminUids;
     }
 
+    function banDoc(uid) {
+      return get(/databases/$(database)/documents/contributorBans/$(uid)).data;
+    }
+
+    function banTimedOut(uid) {
+      return exists(/databases/$(database)/documents/contributorBans/$(uid))
+        && banDoc(uid).keys().hasAny(['until'])
+        && banDoc(uid).until is timestamp
+        && banDoc(uid).until < request.time;
+    }
+
     function notSubmissionBanned() {
-      return !exists(/databases/$(database)/documents/contributorBans/$(request.auth.uid));
+      return !exists(/databases/$(database)/documents/contributorBans/$(request.auth.uid))
+        || banTimedOut(request.auth.uid);
+    }
+
+    // Account / both suspensions block community features (ratings, etc). Form-only bans do not.
+    function notCommunityFeatureBanned() {
+      return !exists(/databases/$(database)/documents/contributorBans/$(request.auth.uid))
+        || banTimedOut(request.auth.uid)
+        || (('scope' in banDoc(request.auth.uid)) && banDoc(request.auth.uid).scope == 'form');
     }
 
     function statsNotSubmitBlocked() {
@@ -139,6 +169,11 @@ service cloud.firestore {
 
     match /link_clicks/{docId} {
       // Public reads for "Most opened". Writes are Worker/Admin only (IP rate-limited API).
+      allow read: if true;
+      allow create, update, delete: if false;
+    }
+    // Daily open aggregates for Statistics provider time-series (Worker writes only).
+    match /click_daily/{dayId} {
       allow read: if true;
       allow create, update, delete: if false;
     }
@@ -220,9 +255,10 @@ service cloud.firestore {
         && (!request.resource.data.keys().hasAny(['ownerLabel'])
             || (request.resource.data.ownerLabel is string
                 && request.resource.data.ownerLabel.size() <= 120));
-      allow delete: if request.auth != null
-        && request.auth.token.firebase.sign_in_provider != 'anonymous'
-        && resource.data.ownerUid == request.auth.uid;
+      allow delete: if isSubmissionAdmin()
+        || (request.auth != null
+            && request.auth.token.firebase.sign_in_provider != 'anonymous'
+            && resource.data.ownerUid == request.auth.uid);
     }
 
     // Community link thumbs (aggregate + one vote doc per signed-in user per link hash).
@@ -230,6 +266,7 @@ service cloud.firestore {
       allow read: if true;
       allow create: if request.auth != null
         && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && notCommunityFeatureBanned()
         && linkHash.matches('^[a-f0-9]{64}$')
         && request.resource.data.keys().hasOnly(['up', 'down', 'norm', 'updated'])
         && request.resource.data.up is int
@@ -242,6 +279,7 @@ service cloud.firestore {
             || (request.resource.data.up == 0 && request.resource.data.down == 1));
       allow update: if request.auth != null
         && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && notCommunityFeatureBanned()
         && linkHash.matches('^[a-f0-9]{64}$')
         && request.resource.data.keys().hasOnly(['up', 'down', 'norm', 'updated'])
         && request.resource.data.up is int
@@ -261,6 +299,7 @@ service cloud.firestore {
       allow list: if false;
       allow create, update: if request.auth != null
         && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && notCommunityFeatureBanned()
         && voteId == request.auth.uid + '_' + request.resource.data.linkHash
         && request.resource.data.uid == request.auth.uid
         && request.resource.data.linkHash is string
@@ -272,6 +311,7 @@ service cloud.firestore {
         && request.resource.data.keys().hasOnly(['uid', 'linkHash', 'norm', 'vote', 'updated']);
       allow delete: if request.auth != null
         && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && notCommunityFeatureBanned()
         && resource.data.uid == request.auth.uid
         && voteId == request.auth.uid + '_' + resource.data.linkHash;
     }
@@ -303,6 +343,7 @@ service cloud.firestore {
       allow read: if true;
       allow create: if request.auth != null
         && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && notCommunityFeatureBanned()
         && folderId.matches('^[a-zA-Z0-9_-]{1,700}$')
         && request.resource.data.keys().hasOnly(['up', 'down', 'updated'])
         && request.resource.data.up is int
@@ -313,6 +354,7 @@ service cloud.firestore {
             || (request.resource.data.up == 0 && request.resource.data.down == 1));
       allow update: if request.auth != null
         && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && notCommunityFeatureBanned()
         && folderId.matches('^[a-zA-Z0-9_-]{1,700}$')
         && request.resource.data.keys().hasOnly(['up', 'down', 'updated'])
         && request.resource.data.up is int
@@ -330,6 +372,7 @@ service cloud.firestore {
       allow list: if false;
       allow create, update: if request.auth != null
         && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && notCommunityFeatureBanned()
         && voteId == request.auth.uid + '_' + request.resource.data.folderId
         && request.resource.data.uid == request.auth.uid
         && request.resource.data.folderId is string
@@ -339,6 +382,7 @@ service cloud.firestore {
         && request.resource.data.keys().hasOnly(['uid', 'folderId', 'vote', 'updated']);
       allow delete: if request.auth != null
         && request.auth.token.firebase.sign_in_provider != 'anonymous'
+        && notCommunityFeatureBanned()
         && resource.data.uid == request.auth.uid
         && voteId == request.auth.uid + '_' + resource.data.folderId;
     }
@@ -362,9 +406,10 @@ service cloud.firestore {
         && request.resource.data.urlKey.size() >= 10
         && request.resource.data.urlKey.size() <= 2048
         && validUrlKeyHash(request.resource.data.urlKeyHash)
-        && exists(/databases/$(database)/documents/pendingSubmissionKeys/$(request.resource.data.urlKeyHash))
-        && get(/databases/$(database)/documents/pendingSubmissionKeys/$(request.resource.data.urlKeyHash)).data.submitterUid == request.auth.uid
-        && get(/databases/$(database)/documents/pendingSubmissionKeys/$(request.resource.data.urlKeyHash)).data.urlKey == request.resource.data.urlKey
+        // Use *After so a batched write of pendingSubmissionKeys + linkSubmissions can succeed.
+        && existsAfter(/databases/$(database)/documents/pendingSubmissionKeys/$(request.resource.data.urlKeyHash))
+        && getAfter(/databases/$(database)/documents/pendingSubmissionKeys/$(request.resource.data.urlKeyHash)).data.submitterUid == request.auth.uid
+        && getAfter(/databases/$(database)/documents/pendingSubmissionKeys/$(request.resource.data.urlKeyHash)).data.urlKey == request.resource.data.urlKey
         && request.resource.data.provider is string
         && request.resource.data.provider.size() > 0
         && request.resource.data.provider.size() <= 120
@@ -376,6 +421,9 @@ service cloud.firestore {
         && request.resource.data.submitterGithub.size() > 0
         && request.resource.data.submitterGithub.size() <= 39
         && request.resource.data.submitterGithub.matches('^[a-zA-Z0-9]([a-zA-Z0-9-]{0,37}[a-zA-Z0-9])?$')
+        && (!('submitterEmail' in request.resource.data)
+            || (request.resource.data.submitterEmail is string
+                && request.resource.data.submitterEmail.size() <= 320))
         && (!request.resource.data.keys().hasAny(['optionalNote'])
             || (request.resource.data.optionalNote is string
                 && request.resource.data.optionalNote.size() <= 500));
@@ -401,7 +449,18 @@ service cloud.firestore {
 
     match /contributorBans/{uid} {
       allow read: if request.auth != null && (request.auth.uid == uid || isSubmissionAdmin());
-      allow create, update, delete: if isSubmissionAdmin();
+      allow create: if isSubmissionAdmin();
+      // Admins can always update bans; suspended users may mark that they used their one appeal.
+      allow update: if isSubmissionAdmin()
+        || (isSignedInNonAnonymous()
+            && request.auth.uid == uid
+            && request.resource.data.diff(resource.data).affectedKeys()
+                .hasOnly(['appealSubmitted', 'appealSubmittedAt'])
+            && request.resource.data.appealSubmitted == true
+            && (!('appealSubmitted' in resource.data) || resource.data.appealSubmitted != true));
+      // Admins can always remove bans; users may clear their own after a timed ban expires.
+      allow delete: if isSubmissionAdmin()
+        || (isSignedInNonAnonymous() && request.auth.uid == uid && banTimedOut(uid));
     }
 
     match /contributorStats/{uid} {
@@ -415,6 +474,140 @@ service cloud.firestore {
             && request.auth.uid == uid
             && statsSelfUpdateOk());
       allow delete: if false;
+    }
+
+    // Bug reports / feature & QoL requests from the Contribute page.
+    match /siteFeedback/{feedbackId} {
+      allow read: if isSubmissionAdmin()
+        || (isSignedInNonAnonymous() && resource.data.submitterUid == request.auth.uid);
+      allow create: if isSignedInNonAnonymous()
+        && notSubmissionBanned()
+        && request.resource.data.submitterUid == request.auth.uid
+        && request.resource.data.status == 'pending'
+        && request.resource.data.type is string
+        && (request.resource.data.type == 'bug'
+            || request.resource.data.type == 'feature'
+            || request.resource.data.type == 'qol')
+        && request.resource.data.title is string
+        && request.resource.data.title.size() > 0
+        && request.resource.data.title.size() <= 200
+        && request.resource.data.body is string
+        && request.resource.data.body.size() > 0
+        && request.resource.data.body.size() <= 2000
+        && request.resource.data.submitterLabel is string
+        && request.resource.data.submitterLabel.size() > 0
+        && request.resource.data.submitterLabel.size() <= 120
+        && (!('submitterGithub' in request.resource.data)
+            || request.resource.data.submitterGithub == null
+            || (request.resource.data.submitterGithub is string
+                && request.resource.data.submitterGithub.size() <= 39))
+        && (!('submitterEmail' in request.resource.data)
+            || (request.resource.data.submitterEmail is string
+                && request.resource.data.submitterEmail.size() <= 320));
+      allow update, delete: if isSubmissionAdmin();
+    }
+
+    // Reports about community folder titles or creator display names.
+    match /folderReports/{reportId} {
+      allow read: if isSubmissionAdmin()
+        || (isSignedInNonAnonymous() && resource.data.reporterUid == request.auth.uid);
+      allow create: if isSignedInNonAnonymous()
+        && notCommunityFeatureBanned()
+        && request.resource.data.folderId is string
+        && request.resource.data.folderId.matches('^[a-zA-Z0-9_-]{1,700}$')
+        && reportId == request.auth.uid + '_' + request.resource.data.folderId
+        && exists(/databases/$(database)/documents/savedFolders/$(request.resource.data.folderId))
+        && get(/databases/$(database)/documents/savedFolders/$(request.resource.data.folderId)).data.ownerUid
+            != request.auth.uid
+        && request.resource.data.reporterUid == request.auth.uid
+        && request.resource.data.status == 'pending'
+        && request.resource.data.folderTitle is string
+        && request.resource.data.folderTitle.size() > 0
+        && request.resource.data.folderTitle.size() <= 200
+        && request.resource.data.folderOwnerUid is string
+        && request.resource.data.folderOwnerUid.size() > 0
+        && request.resource.data.folderOwnerUid.size() <= 128
+        && request.resource.data.folderOwnerLabel is string
+        && request.resource.data.folderOwnerLabel.size() <= 120
+        && request.resource.data.reportFolderName is bool
+        && request.resource.data.reportCreatorName is bool
+        && (request.resource.data.reportFolderName == true
+            || request.resource.data.reportCreatorName == true)
+        && request.resource.data.reason is string
+        && request.resource.data.reason.size() > 0
+        && request.resource.data.reason.size() <= 2000
+        && request.resource.data.reporterLabel is string
+        && request.resource.data.reporterLabel.size() > 0
+        && request.resource.data.reporterLabel.size() <= 120
+        && (!('reporterGithub' in request.resource.data)
+            || request.resource.data.reporterGithub == null
+            || (request.resource.data.reporterGithub is string
+                && request.resource.data.reporterGithub.size() <= 39));
+      allow update, delete: if isSubmissionAdmin();
+    }
+
+    // Per-user toast notifications (form outcomes, suspensions, etc.).
+    match /userNotifications/{notifId} {
+      allow read: if isSignedInNonAnonymous()
+        && resource.data.uid == request.auth.uid;
+      allow create: if (
+          isSubmissionAdmin()
+          || (
+            isSignedInNonAnonymous()
+            && request.resource.data.uid == request.auth.uid
+            && request.resource.data.kind == 'wait_lifted'
+          )
+        )
+        && request.resource.data.uid is string
+        && request.resource.data.uid.size() > 0
+        && request.resource.data.kind is string
+        && request.resource.data.kind.size() > 0
+        && request.resource.data.kind.size() <= 40
+        && request.resource.data.read == false
+        && (!('reason' in request.resource.data)
+            || (request.resource.data.reason is string
+                && request.resource.data.reason.size() <= 2000))
+        && (!('message' in request.resource.data)
+            || (request.resource.data.message is string
+                && request.resource.data.message.size() <= 500));
+      allow update: if isSignedInNonAnonymous()
+        && resource.data.uid == request.auth.uid
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['read', 'readAt'])
+        && request.resource.data.read == true
+        && request.resource.data.uid == resource.data.uid
+        && request.resource.data.kind == resource.data.kind;
+      allow delete: if isSubmissionAdmin()
+        || (isSignedInNonAnonymous() && resource.data.uid == request.auth.uid);
+    }
+
+    // Suspension appeals from Contribute.
+    match /suspensionAppeals/{appealId} {
+      allow read: if isSubmissionAdmin()
+        || (isSignedInNonAnonymous() && resource.data.submitterUid == request.auth.uid);
+      allow create: if isSignedInNonAnonymous()
+        && exists(/databases/$(database)/documents/contributorBans/$(request.auth.uid))
+        && !banTimedOut(request.auth.uid)
+        && (!('appealSubmitted' in banDoc(request.auth.uid))
+            || banDoc(request.auth.uid).appealSubmitted != true)
+        && request.resource.data.submitterUid == request.auth.uid
+        && request.resource.data.status == 'pending'
+        && request.resource.data.body is string
+        && request.resource.data.body.size() > 0
+        && request.resource.data.body.size() <= 2000
+        && request.resource.data.submitterLabel is string
+        && request.resource.data.submitterLabel.size() > 0
+        && request.resource.data.submitterLabel.size() <= 120
+        && (!('submitterGithub' in request.resource.data)
+            || request.resource.data.submitterGithub == null
+            || (request.resource.data.submitterGithub is string
+                && request.resource.data.submitterGithub.size() <= 39))
+        && (!('submitterEmail' in request.resource.data)
+            || (request.resource.data.submitterEmail is string
+                && request.resource.data.submitterEmail.size() <= 320))
+        && (!('banBannedAtMs' in request.resource.data)
+            || request.resource.data.banBannedAtMs is int
+            || request.resource.data.banBannedAtMs is float);
+      allow update, delete: if isSubmissionAdmin();
     }
   }
 }

@@ -199,22 +199,67 @@
       border: 0;
       border-top: 1px solid var(--border);
     }
-    .github-notifications {
-      margin: 0.75rem 0 0;
-      display: grid;
-      gap: 0.45rem;
+    .site-toast-stack {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 40;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      width: min(22rem, calc(100vw - 1.5rem));
+      max-height: calc(100vh - 2rem);
+      overflow: auto;
+      pointer-events: none;
     }
-    .github-notification {
-      padding: 0.55rem 0.7rem;
+    .site-toast {
+      pointer-events: auto;
+      display: flex;
+      gap: 0.65rem;
+      align-items: flex-start;
+      padding: 0.7rem 0.75rem;
       border: 1px solid var(--border);
-      border-radius: 8px;
-      background: #141414;
+      border-radius: 10px;
+      background: rgba(20, 20, 20, 0.96);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
       font-size: 0.82rem;
       color: var(--text);
     }
-    .github-notification a {
-      color: var(--accent);
+    .site-toast-icon {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      margin-top: 0.1rem;
     }
+    .site-toast-icon img {
+      display: block;
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+    html[data-theme="light"] .site-toast-icon img[src$=".svg"] {
+      filter: brightness(0.2);
+    }
+    .site-toast-body { min-width: 0; flex: 1; }
+    .site-toast-msg {
+      margin: 0 0 0.45rem;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+    .site-toast-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+    .site-toast-actions .btn {
+      font-size: 0.75rem;
+      padding: 0.28rem 0.5rem;
+    }
+    html[data-theme="light"] .site-toast {
+      background: rgba(255, 255, 255, 0.97);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+    }
+    .github-notifications { display: none !important; }
     .contributor-you {
       margin-left: 0.35rem;
       font-size: 0.72rem;
@@ -266,6 +311,10 @@
       vertical-align: middle;
       color: var(--text);
     }
+    .rating-vote-btn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
     .rating-vote-btn:hover {
       border-color: var(--accent);
       color: var(--accent);
@@ -315,6 +364,56 @@
     }
     .folder-chrome-row:first-of-type {
       margin-top: 0;
+    }
+    .folder-report-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 80;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.65);
+    }
+    .folder-report-backdrop.open { display: flex; }
+    .folder-report-modal {
+      width: min(26rem, 100%);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+      max-height: calc(100vh - 2rem);
+      overflow: auto;
+    }
+    .folder-report-modal h2 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+    .folder-report-modal .sub { margin: 0 0 0.75rem; font-size: 0.82rem; }
+    .folder-report-modal label.check {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.45rem;
+      margin: 0.45rem 0;
+      font-size: 0.88rem;
+      cursor: pointer;
+    }
+    .folder-report-modal label.check input { margin-top: 0.2rem; }
+    .folder-report-modal textarea {
+      width: 100%;
+      min-height: 4.5rem;
+      margin-top: 0.35rem;
+      font: inherit;
+      color: var(--text);
+      background: #141414;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.45rem 0.55rem;
+      resize: vertical;
+    }
+    .folder-report-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      justify-content: flex-end;
+      margin-top: 0.85rem;
     }
     .folder-live-pill {
       display: inline-flex;
@@ -498,11 +597,16 @@
       text-align: left;
       gap: 0.55rem;
     }
+    .sidebar-actions .btn[hidden],
+    .btn[hidden] {
+      display: none !important;
+    }
     .sidebar-actions .sidebar-btn-icon {
       flex-shrink: 0;
       width: 1.05rem;
       height: 1.05rem;
       display: block;
+      overflow: visible;
     }
     .sidebar-actions img.sidebar-btn-icon {
       object-fit: contain;
@@ -1373,6 +1477,29 @@
     #updateNoticesBody li {
       margin-bottom: 0.2rem;
     }
+    #updateNoticesBody h2 {
+      margin: 1rem 0 0.4rem;
+      font-size: 1.15rem;
+      color: var(--text);
+    }
+    #updateNoticesBody h2:first-child,
+    #updateNoticesBody h3:first-child {
+      margin-top: 0;
+    }
+    #updateNoticesBody h3 {
+      margin: 0.85rem 0 0.35rem;
+      font-size: 1.02rem;
+      color: var(--text);
+    }
+    #updateNoticesBody p {
+      margin: 0 0 0.55rem;
+      color: var(--text);
+      line-height: 1.5;
+      white-space: normal;
+    }
+    #updateNoticesBody p:last-child {
+      margin-bottom: 0;
+    }
     .important-notices a {
       word-break: break-all;
     }
@@ -1693,9 +1820,21 @@
             <svg class="sidebar-btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
             Contribute
           </a>
+          <a class="btn" href="./contribute/#appeal" id="sidebarAppealLink" hidden>
+            <svg class="sidebar-btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9.5 12.5l1.5 1.5 3.5-3.5"/></svg>
+            Appeal suspension
+          </a>
+          <a class="btn" href="./admin/" id="sidebarAdminLink" hidden>
+            <img class="sidebar-btn-icon" src="./admin-icon.png" width="18" height="18" alt="" aria-hidden="true" />
+            Admin
+          </a>
           <a class="btn" href="./community/">
-            <svg class="sidebar-btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h11a2 2 0 0 1 2 2z"/></svg>
+            <svg class="sidebar-btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a1 1 0 0 1-.85-.47l-.9-1.34A1 1 0 0 0 9.5 3.5H4a2 2 0 0 0-2 2v12.5A2 2 0 0 0 4 20z"/></svg>
             Community folders
+          </a>
+          <a class="btn" href="./stats/">
+            <svg class="sidebar-btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            Statistics
           </a>
           <a class="btn" href="./about/">
             <svg class="sidebar-btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
@@ -1816,6 +1955,20 @@
       </section>
       <div class="stats" id="stats"></div>
       <div class="folder-chrome" id="folderChromeHost" hidden></div>
+      <div class="folder-report-backdrop" id="folderReportModal" aria-hidden="true">
+        <div class="folder-report-modal" role="dialog" aria-labelledby="folderReportHeading">
+          <h2 id="folderReportHeading">Report folder</h2>
+          <p class="sub" id="folderReportSummary"></p>
+          <label class="check"><input type="checkbox" id="folderReportNameCb" /> Report the folder name</label>
+          <label class="check"><input type="checkbox" id="folderReportCreatorCb" /> Report the creator’s name</label>
+          <label for="folderReportReason" class="sub" style="display:block;margin-top:0.65rem;">Why are you reporting this?</label>
+          <textarea id="folderReportReason" maxlength="2000" placeholder="Explain the issue…"></textarea>
+          <div class="folder-report-actions">
+            <button type="button" class="btn" id="folderReportCancelBtn">Cancel</button>
+            <button type="button" class="btn btn-primary" id="folderReportSubmitBtn">Submit report</button>
+          </div>
+        </div>
+      </div>
       <div id="tableWrap"></div>
     </main>
   </div>
@@ -2051,6 +2204,7 @@
     <button class="btn" id="backToTopBtn" type="button" aria-label="Back to top">Back to top</button>
   </div>
   <div id="appToast" class="app-toast" role="status" aria-live="polite" hidden></div>
+  <div id="siteToastStack" class="site-toast-stack" aria-live="polite"></div>
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
@@ -2058,6 +2212,8 @@
   <!-- Example must load first: onerror+src swap is async, so the inline app could run before fallback executed. Local override is optional (404 on Pages is harmless). -->
   <script src="firebase-config.example.js"></script>
   <script src="firebase-config.local.js"></script>
+  <script src="submission-utils.js"></script>
+  <script src="site-notifications.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"
     integrity="sha384-+VfUPEb0PdtChMwmBcBmykRMDd+v6D/oFmB3rZM/puCMDYcIvF968OimRh4KQY9a"
@@ -2114,6 +2270,16 @@
       return section ? importSanitizedNodes(section.childNodes) : [];
     }
 
+    function nodesFromSanitizedSelectOptions(raw) {
+      if (!raw || !window.DOMPurify) return [];
+      // Orphan <option> nodes are dropped outside <select>, same class of issue as <tr>/<td>.
+      const clean = DOMPurify.sanitize("<select>" + String(raw) + "</select>");
+      if (!clean) return [];
+      const doc = new DOMParser().parseFromString(clean, "text/html");
+      const select = doc.querySelector("select");
+      return select ? importSanitizedNodes(select.childNodes) : [];
+    }
+
     /** Assign HTML after sanitization so static analysis (e.g. CodeQL) sees a guarded DOM sink. */
     function setHtml(el, html) {
       if (!el) return;
@@ -2126,6 +2292,7 @@
       let nodes;
       if (tag === "THEAD") nodes = nodesFromSanitizedTableSection("thead", raw);
       else if (tag === "TBODY") nodes = nodesFromSanitizedTableSection("tbody", raw);
+      else if (tag === "SELECT") nodes = nodesFromSanitizedSelectOptions(raw);
       else nodes = nodesFromSanitizedBodyHtml(raw);
       el.replaceChildren(...nodes);
     }
@@ -2444,12 +2611,16 @@
       updateSelectedFilterUI();
     }
 
-    function openSettingsModal() {
+    async function openSettingsModal() {
       syncSettingsFormFromState();
       const backdrop = $("settingsBackdrop");
       if (!backdrop) return;
       backdrop.classList.add("open");
       backdrop.setAttribute("aria-hidden", "false");
+      try {
+        await ensureLinkLensLoaded();
+      } catch (_) {}
+      syncFilterControlsToUi();
     }
 
     function closeSettingsModal() {
@@ -2784,6 +2955,7 @@
     }
 
     let authUser = null;
+    let communityFeaturesBlocked = false;
     let authDisplayName = "";
     let githubLogin = "";
     let githubRepoStarred = false;
@@ -2793,6 +2965,67 @@
     let userProfileWriteTimer = null;
     let accountMenuOpen = false;
     let githubNotificationsPollTimer = null;
+    let userNotificationsUnsub = null;
+
+    function mapFirestoreNotification(docSnap) {
+      const d = docSnap.data() || {};
+      return {
+        id: "fs-" + docSnap.id,
+        firestoreId: docSnap.id,
+        kind: d.kind || "contribution",
+        number: d.number || 0,
+        count: d.count || 0,
+        date: d.dateMs || (d.created && d.created.toMillis ? d.created.toMillis() : Date.now()),
+        until: d.until || null,
+        reason: d.reason || "",
+        url: d.url || "",
+        message: d.message || "",
+      };
+    }
+
+    function stopUserNotificationsListener() {
+      if (userNotificationsUnsub) {
+        try {
+          userNotificationsUnsub();
+        } catch (_) {}
+        userNotificationsUnsub = null;
+      }
+    }
+
+    function startUserNotificationsListener() {
+      stopUserNotificationsListener();
+      if (!firebaseDb || !isSignedInUser() || !authUser) return;
+      window.SiteNotificationsMarkRead = function (firestoreId) {
+        if (!firebaseDb || !firestoreId) return;
+        void firebaseDb
+          .collection("userNotifications")
+          .doc(firestoreId)
+          .update({ read: true, readAt: firebase.firestore.FieldValue.serverTimestamp() })
+          .catch(function () {});
+      };
+      try {
+        userNotificationsUnsub = firebaseDb
+          .collection("userNotifications")
+          .where("uid", "==", authUser.uid)
+          .limit(50)
+          .onSnapshot(
+            function (snap) {
+              const items = snap.docs
+                .map(mapFirestoreNotification)
+                .filter(function (_item, idx) {
+                  var d = snap.docs[idx].data() || {};
+                  return d.read !== true;
+                });
+              if (window.SiteNotifications) window.SiteNotifications.showMany(items);
+            },
+            function (err) {
+              console.warn("[proxy-list] userNotifications listener failed", err);
+            }
+          );
+      } catch (err) {
+        console.warn("[proxy-list] userNotifications setup failed", err);
+      }
+    }
     let authStateReady = false;
     let authStateReadyResolve = null;
     const authStateReadyPromise = new Promise((resolve) => {
@@ -2902,8 +3135,14 @@
       const btn = $("accountMenuBtn");
       const signInLink = $("headerSignInLink");
       const sidebarSignInLink = $("sidebarSignInLink");
+      const sidebarAdminLink = $("sidebarAdminLink");
+      const sidebarAppealLink = $("sidebarAppealLink");
       const cluster = $("accountSignedInCluster");
       if (!btn && !signInLink && !sidebarSignInLink) return;
+      const isAdmin =
+        !!(window.SubmissionUtils && window.SubmissionUtils.isSubmissionAdminUser(authUser));
+      if (sidebarAdminLink) sidebarAdminLink.hidden = !(isSignedInUser() && isAdmin);
+      if (sidebarAppealLink && !isSignedInUser()) sidebarAppealLink.hidden = true;
       if (isSignedInUser()) {
         if (btn) {
           btn.textContent = accountUsername();
@@ -2912,7 +3151,9 @@
         if (signInLink) signInLink.hidden = true;
         if (sidebarSignInLink) sidebarSignInLink.hidden = true;
         if (cluster) cluster.hidden = false;
+        void refreshSidebarAppealVisibility();
       } else {
+        communityFeaturesBlocked = false;
         if (btn) {
           btn.textContent = "Sign in";
           btn.classList.remove("account-trigger--repo-starred");
@@ -2920,9 +3161,73 @@
         if (signInLink) signInLink.hidden = false;
         if (sidebarSignInLink) sidebarSignInLink.hidden = false;
         if (cluster) cluster.hidden = true;
+        if (sidebarAppealLink) sidebarAppealLink.hidden = true;
         setAccountMenuOpen(false);
       }
       updateHeaderGreeting();
+    }
+
+    async function refreshSidebarAppealVisibility() {
+      const sidebarAppealLink = $("sidebarAppealLink");
+      communityFeaturesBlocked = false;
+      if (!isSignedInUser() || !firebaseDb || !authUser) {
+        if (sidebarAppealLink) sidebarAppealLink.hidden = true;
+        return;
+      }
+      try {
+        const snap = await firebaseDb.collection("contributorBans").doc(authUser.uid).get();
+        if (!snap.exists) {
+          if (sidebarAppealLink) sidebarAppealLink.hidden = true;
+          return;
+        }
+        const data = snap.data() || {};
+        if (data.until && typeof data.until.toMillis === "function" && data.until.toMillis() <= Date.now()) {
+          if (sidebarAppealLink) sidebarAppealLink.hidden = true;
+          return;
+        }
+        if (sidebarAppealLink) sidebarAppealLink.hidden = false;
+        const scope = String(data.scope || "both");
+        communityFeaturesBlocked = scope !== "form";
+        if (communityFeaturesBlocked) {
+          document.querySelectorAll("td.link-rating-cell").forEach((td) => {
+            const tr = td.closest("tr");
+            const a = tr && tr.querySelector("a.js-link-summary[data-link]");
+            const linkUrl = a ? a.getAttribute("data-link") : "";
+            if (linkUrl) setHtml(td, ratingCellInnerHtmlForLinkUrl(linkUrl));
+          });
+          const mount = $("folderRatingMount");
+          if (mount && viewingFolderId) setHtml(mount, folderRatingBarInnerHtml(viewingFolderId));
+        }
+      } catch (_) {
+        if (sidebarAppealLink) sidebarAppealLink.hidden = true;
+      }
+    }
+
+    function alertIfCommunityFeaturesBlocked() {
+      if (!communityFeaturesBlocked) return false;
+      window.alert("Your account is suspended from community features, so you cannot rate links or folders.");
+      return true;
+    }
+
+    async function ensureCommunityFeaturesAllowed() {
+      if (!isSignedInUser() || !firebaseDb || !authUser) return true;
+      try {
+        const snap = await firebaseDb.collection("contributorBans").doc(authUser.uid).get();
+        if (!snap.exists) {
+          communityFeaturesBlocked = false;
+          return true;
+        }
+        const data = snap.data() || {};
+        if (data.until && typeof data.until.toMillis === "function" && data.until.toMillis() <= Date.now()) {
+          communityFeaturesBlocked = false;
+          return true;
+        }
+        const scope = String(data.scope || "both");
+        communityFeaturesBlocked = scope !== "form";
+      } catch (_) {
+        /* keep cached flag */
+      }
+      return !alertIfCommunityFeaturesBlocked();
     }
 
     function contributorMatchesViewer(row) {
@@ -3196,6 +3501,11 @@
     }
 
     function renderGithubNotifications(items) {
+      if (window.SiteNotifications) {
+        if (!items || !items.length) return;
+        window.SiteNotifications.showMany(items);
+        return;
+      }
       const wrap = $("githubNotificationList");
       if (!wrap) return;
       if (!items.length) {
@@ -3210,7 +3520,7 @@
           .map(
             (item) =>
               '<div class="github-notification" role="status">' +
-              escapeHtml(item.title) +
+              escapeHtml(item.title || item.message || "") +
               (item.url
                 ? ' <a href="' + escapeAttr(item.url) + '" rel="noopener noreferrer" target="_blank">Open</a>'
                 : "") +
@@ -3223,7 +3533,6 @@
     async function refreshGithubExtras() {
       if (!isGithubSignedInUser()) {
         githubRepoStarred = false;
-        renderGithubNotifications([]);
         updateAccountUI();
         return;
       }
@@ -3257,25 +3566,31 @@
           const notifications = await notifRes.json();
           const seen = readGithubNotificationsSeen();
           const fresh = [];
-          (notifications || []).forEach((note) => {
+          for (const note of notifications || []) {
             const repo = note.repository && note.repository.full_name;
-            if (repo !== GITHUB_REPO_SLUG) return;
+            if (repo !== GITHUB_REPO_SLUG) continue;
             const subject = note.subject || {};
             const type = String(subject.type || "").toLowerCase();
-            if (type !== "pullrequest" && type !== "issue") return;
+            if (type !== "pullrequest" && type !== "issue" && type !== "commit") continue;
             const reason = String(note.reason || "").toLowerCase();
-            if (reason !== "state_change" && reason !== "author" && reason !== "subscribed") return;
-            const id = String(note.id || note.updated_at || note.last_read_at || "");
-            if (!id || seen[id]) return;
+            if (
+              reason !== "state_change" &&
+              reason !== "author" &&
+              reason !== "subscribed" &&
+              reason !== "comment" &&
+              reason !== "mention"
+            ) {
+              continue;
+            }
+            const id = String(note.id || note.updated_at || "");
+            if (!id || seen[id]) continue;
             seen[id] = Date.now();
-            fresh.push({
-              title:
-                (subject.title ? String(subject.title) : "Repository update") +
-                " was updated on " +
-                GITHUB_REPO_SLUG,
-              url: subject.url || note.repository.html_url || "",
-            });
-          });
+            let classified = null;
+            if (window.SiteNotifications && window.SiteNotifications.classifyGithubNote) {
+              classified = await window.SiteNotifications.classifyGithubNote(note, token);
+            }
+            if (classified) fresh.push(classified);
+          }
           writeGithubNotificationsSeen(seen);
           renderGithubNotifications(fresh);
         }
@@ -3324,7 +3639,8 @@
           img.removeAttribute("src");
           img.hidden = true;
         }
-        renderGithubNotifications([]);
+        if (window.SiteNotifications) window.SiteNotifications.clearAll();
+        stopUserNotificationsListener();
         if (githubNotificationsPollTimer) {
           clearInterval(githubNotificationsPollTimer);
           githubNotificationsPollTimer = null;
@@ -3333,6 +3649,7 @@
         applySavedLinks(readSavedLinksCache(authUser.uid));
         void loadUserProfile();
         scheduleGithubNotificationsPoll();
+        startUserNotificationsListener();
       }
       updateAccountUI();
       updateSavedViewUI();
@@ -3445,6 +3762,9 @@
 
     function firestoreRatingFailureUserHint(err) {
       if (isFirestorePermissionDenied(err)) {
+        if (communityFeaturesBlocked) {
+          return "Your account is suspended from community features, so ratings are blocked.";
+        }
         return "Firestore refused the request. Deploy the rules from docs/firestore.rules to the same Firebase project as this site.";
       }
       if (isFirestoreResourceExhausted(err)) {
@@ -3838,12 +4158,19 @@
       const dnOn = self === -1 ? " is-active" : "";
       const net = up - down;
       const netStr = net > 0 ? "+" + net : String(net);
+      const blocked = communityFeaturesBlocked;
+      const dis = blocked ? " disabled aria-disabled=\"true\"" : "";
+      const titleExtra = blocked ? " (suspended — ratings disabled)" : "";
       return (
         '<button type="button" class="rating-vote-btn' +
         upOn +
         '" data-link-rating-vote="1" data-link-rating-url="' +
         escapeAttr(link) +
-        '" title="Thumbs up" aria-label="Thumbs up"><img src="' +
+        '" title="Thumbs up' +
+        titleExtra +
+        '" aria-label="Thumbs up"' +
+        dis +
+        '><img src="' +
         escapeAttr(RATING_THUMB_UP_IMG) +
         '" alt="" width="18" height="18" decoding="async" /></button>' +
         '<span class="rating-score" title="Net score (up minus down)">' +
@@ -3853,7 +4180,11 @@
         dnOn +
         '" data-link-rating-vote="-1" data-link-rating-url="' +
         escapeAttr(link) +
-        '" title="Thumbs down" aria-label="Thumbs down"><img src="' +
+        '" title="Thumbs down' +
+        titleExtra +
+        '" aria-label="Thumbs down"' +
+        dis +
+        '><img src="' +
         escapeAttr(RATING_THUMB_DOWN_IMG) +
         '" alt="" width="18" height="18" decoding="async" /></button>' +
         '<span class="sub rating-count-hint" title="Up / down counts">' +
@@ -3882,6 +4213,7 @@
         openSignInRequiredModal("You need to be signed in to rate links.");
         return;
       }
+      if (!(await ensureCommunityFeaturesAllowed())) return;
       const hash = await sha256Hex(norm);
       normToHashCache.set(norm, hash);
       hashToNormMap.set(hash, norm);
@@ -3982,13 +4314,20 @@
       const netStr = net > 0 ? "+" + net : String(net);
       const upOn = self === 1 ? " is-active" : "";
       const dnOn = self === -1 ? " is-active" : "";
+      const blocked = communityFeaturesBlocked;
+      const dis = blocked ? " disabled aria-disabled=\"true\"" : "";
+      const titleExtra = blocked ? " (suspended — ratings disabled)" : "";
       return (
         '<span class="folder-rating-inline">' +
         '<button type="button" class="rating-vote-btn' +
         upOn +
         '" data-folder-rating-vote="1" data-folder-rating-id="' +
         escapeAttr(folderId) +
-        '" title="Thumbs up this folder" aria-label="Thumbs up folder"><img src="' +
+        '" title="Thumbs up this folder' +
+        titleExtra +
+        '" aria-label="Thumbs up folder"' +
+        dis +
+        '><img src="' +
         escapeAttr(RATING_THUMB_UP_IMG) +
         '" alt="" width="18" height="18" decoding="async" /></button>' +
         '<span class="rating-score" title="Net score">' +
@@ -3998,7 +4337,11 @@
         dnOn +
         '" data-folder-rating-vote="-1" data-folder-rating-id="' +
         escapeAttr(folderId) +
-        '" title="Thumbs down" aria-label="Thumbs down folder"><img src="' +
+        '" title="Thumbs down' +
+        titleExtra +
+        '" aria-label="Thumbs down folder"' +
+        dis +
+        '><img src="' +
         escapeAttr(RATING_THUMB_DOWN_IMG) +
         '" alt="" width="18" height="18" decoding="async" /></button>' +
         '<span class="sub rating-count-hint">' +
@@ -4045,6 +4388,7 @@
         openSignInRequiredModal("You need to be signed in to rate folders.");
         return;
       }
+      if (!(await ensureCommunityFeaturesAllowed())) return;
       const voteRef = firebaseDb.collection("folderRatingVotes").doc(user.uid + "_" + id);
       const aggRef = firebaseDb.collection("folderRatings").doc(id);
       let finalUp = 0;
@@ -4109,6 +4453,7 @@
       }
       const self = folderViewRatingSelf || 0;
       const nextVote = self === clickedVal ? 0 : clickedVal;
+      if (alertIfCommunityFeaturesBlocked()) return;
       await applyFolderRatingVote(id, nextVote);
     }
 
@@ -5394,6 +5739,18 @@
       if (saveMeta) saveMeta.onclick = () => void saveFolderMetaFromForm();
       const delBtn = $("folderDeleteBtn");
       if (delBtn) delBtn.onclick = () => void deleteFolderDoc();
+      const reportBtn = $("folderReportBtn");
+      if (reportBtn) {
+        reportBtn.onclick = () => {
+          if (!folderDocSnap || !viewingFolderId) return;
+          openFolderReportModal({
+            folderId: viewingFolderId,
+            title: String(folderDocSnap.title || "Folder"),
+            ownerUid: String(folderDocSnap.ownerUid || ""),
+            ownerLabel: String(folderDocSnap.ownerLabel || "—"),
+          });
+        };
+      }
       const searchIn = $("folderTrustedSearch");
       if (searchIn) {
         searchIn.value = folderTrustedSearchLastQuery;
@@ -5405,6 +5762,138 @@
       }
       const impBtn = $("folderImportSavedBtn");
       if (impBtn) impBtn.onclick = () => void importStarredIntoFolder();
+    }
+
+    let folderReportContext = null;
+
+    function closeFolderReportModal() {
+      folderReportContext = null;
+      const modal = $("folderReportModal");
+      if (modal) {
+        modal.classList.remove("open");
+        modal.setAttribute("aria-hidden", "true");
+      }
+    }
+
+    function openFolderReportModal(ctx) {
+      if (!ctx || !ctx.folderId) return;
+      if (!isSignedInUser()) {
+        openSignInRequiredModal("You need to be signed in to report a folder.");
+        return;
+      }
+      if (communityFeaturesBlocked) {
+        window.alert("Your account is suspended from community features, so you cannot submit reports.");
+        return;
+      }
+      if (authUser && ctx.ownerUid && authUser.uid === ctx.ownerUid) {
+        window.alert("You cannot report your own folder.");
+        return;
+      }
+      folderReportContext = ctx;
+      const summary = $("folderReportSummary");
+      if (summary) {
+        summary.textContent =
+          "Folder: “" +
+          String(ctx.title || "").slice(0, 200) +
+          "” · Creator: " +
+          String(ctx.ownerLabel || "—").slice(0, 120);
+      }
+      const nameCb = $("folderReportNameCb");
+      const creatorCb = $("folderReportCreatorCb");
+      const reason = $("folderReportReason");
+      if (nameCb) nameCb.checked = true;
+      if (creatorCb) creatorCb.checked = false;
+      if (reason) reason.value = "";
+      const modal = $("folderReportModal");
+      if (modal) {
+        modal.classList.add("open");
+        modal.setAttribute("aria-hidden", "false");
+      }
+    }
+
+    async function submitFolderReport() {
+      if (!folderReportContext || !firebaseDb) return;
+      const user = await ensureAuthForFirestore();
+      if (!user || user.isAnonymous) {
+        openSignInRequiredModal("You need to be signed in to report a folder.");
+        return;
+      }
+      if (!(await ensureCommunityFeaturesAllowed())) return;
+      const ctx = folderReportContext;
+      if (ctx.ownerUid && user.uid === ctx.ownerUid) {
+        window.alert("You cannot report your own folder.");
+        return;
+      }
+      const reportName = !!($("folderReportNameCb") && $("folderReportNameCb").checked);
+      const reportCreator = !!($("folderReportCreatorCb") && $("folderReportCreatorCb").checked);
+      if (!reportName && !reportCreator) {
+        window.alert("Select at least one: folder name or creator’s name.");
+        return;
+      }
+      const reason = String(($("folderReportReason") && $("folderReportReason").value) || "").trim();
+      if (!reason || reason.length > 2000) {
+        window.alert("Enter a reason (1–2000 characters).");
+        return;
+      }
+      const folderId = sanitizeFolderDocId(ctx.folderId);
+      if (!folderId) return;
+      const reportId = user.uid + "_" + folderId;
+      const label =
+        (window.SubmissionUtils && window.SubmissionUtils.submitterLabelFromUser
+          ? window.SubmissionUtils.submitterLabelFromUser(user)
+          : "") ||
+        (user.displayName && String(user.displayName).trim()) ||
+        "Signed-in user";
+      const gh =
+        (window.SubmissionUtils && window.SubmissionUtils.githubLoginFromUser
+          ? window.SubmissionUtils.githubLoginFromUser(user)
+          : "") || "";
+      const submitBtn = $("folderReportSubmitBtn");
+      if (submitBtn) submitBtn.disabled = true;
+      try {
+        await firebaseDb.collection("folderReports").doc(reportId).set({
+          folderId: folderId,
+          folderTitle: String(ctx.title || "Folder").slice(0, 200),
+          folderOwnerUid: String(ctx.ownerUid || "").slice(0, 128),
+          folderOwnerLabel: String(ctx.ownerLabel || "").slice(0, 120),
+          reportFolderName: reportName,
+          reportCreatorName: reportCreator,
+          reason: reason,
+          status: "pending",
+          reporterUid: user.uid,
+          reporterLabel: String(label).slice(0, 120),
+          reporterGithub: String(gh).slice(0, 39),
+          created: firebase.firestore.FieldValue.serverTimestamp(),
+          updated: firebase.firestore.FieldValue.serverTimestamp(),
+        });
+        closeFolderReportModal();
+        window.alert("Report submitted. The maintainer will review it.");
+      } catch (err) {
+        console.warn("[proxy-list] folder report failed", err);
+        const msg = (err && err.message) || "";
+        if (/already exists|permission/i.test(msg) || (err && err.code === "permission-denied")) {
+          window.alert(
+            "Could not submit report. You may have already reported this folder, or your account cannot report right now."
+          );
+        } else {
+          window.alert("Could not submit report. Try again.");
+        }
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+      }
+    }
+
+    function initFolderReportModal() {
+      const cancel = $("folderReportCancelBtn");
+      const submit = $("folderReportSubmitBtn");
+      const modal = $("folderReportModal");
+      if (cancel) cancel.onclick = () => closeFolderReportModal();
+      if (submit) submit.onclick = () => void submitFolderReport();
+      if (modal) {
+        modal.addEventListener("click", (ev) => {
+          if (ev.target === modal) closeFolderReportModal();
+        });
+      }
     }
 
     function renderFolderChromeIntoHost() {
@@ -5467,7 +5956,8 @@
               '<div class="folder-chrome-row"><code style="font-size:0.78rem;word-break:break-all">' +
               escapeHtml(shareUrl) +
               "</code> " +
-              '<button type="button" class="btn" id="folderCopyShareBtn">Copy link</button></div>';
+              '<button type="button" class="btn" id="folderCopyShareBtn">Copy link</button> ' +
+              '<button type="button" class="btn" id="folderReportBtn">Report</button></div>';
           }
         }
       } else if (savedLinksViewOnly && isSignedInUser()) {
@@ -7167,7 +7657,7 @@
       chunks.push(
         "<ul>" +
           bullets
-            .map((line) => "<li>" + renderMarkdownInline(line.replace(/^-\s+/, "")) + "</li>")
+            .map((line) => "<li>" + renderMarkdownInline(line.replace(/^[-*]\s+/, "")) + "</li>")
             .join("") +
           "</ul>"
       );
@@ -7176,23 +7666,24 @@
 
     function pushNoticeProseLines(chunks, proseLines) {
       if (!proseLines.length) return;
-      const t = proseLines.join(" ").trim();
-      if (t) chunks.push("<p>" + renderMarkdownInline(t) + "</p>");
+      // Preserve intentional single line breaks; blank lines make separate paragraphs upstream.
+      const html = proseLines.map((line) => renderMarkdownInline(line)).join("<br>");
+      if (html.trim()) chunks.push("<p>" + html + "</p>");
       proseLines.length = 0;
     }
 
     function renderNoticeSectionBody(chunks, body) {
-      for (const para of body.split(/\n{2,}/)) {
+      for (const para of String(body || "").replace(/\r\n/g, "\n").split(/\n{2,}/)) {
         const lines = para.split(/\n/).map((l) => l.trim()).filter(Boolean);
         if (!lines.length) continue;
-        if (lines.every((l) => /^-\s/.test(l))) {
+        if (lines.every((l) => /^[-*]\s/.test(l))) {
           pushNoticeListItems(chunks, lines);
           continue;
         }
         const prose = [];
         const bullets = [];
         for (const line of lines) {
-          if (/^-\s/.test(line)) {
+          if (/^[-*]\s/.test(line)) {
             pushNoticeProseLines(chunks, prose);
             bullets.push(line);
           } else {
@@ -7212,28 +7703,27 @@
     }
 
     function renderMarkdownLiteNotices(noticesText) {
-      const text = String(noticesText || "").trim();
+      const text = String(noticesText || "").replace(/\r\n/g, "\n").trim();
       if (!text) return "";
-      const sections = text.split(/(?=^### )/m);
+      // Support # / ## / ### headings so blank-line structure and section breaks render.
+      const sections = text.split(/(?=^#{1,3} )/m);
       const chunks = [];
       for (const sec of sections) {
         const s = sec.trim();
         if (!s) continue;
-        if (s.startsWith("###")) {
-          const rest = s.replace(/^###\s+/, "");
-          const nl = rest.indexOf("\n");
-          const title = (nl === -1 ? rest : rest.slice(0, nl)).trim();
-          const body = nl === -1 ? "" : rest.slice(nl + 1).trim();
+        const hm = s.match(/^(#{1,3})\s+(.+?)(?:\n|$)([\s\S]*)$/);
+        if (hm) {
+          const level = hm[1].length;
+          const title = hm[2].trim();
+          const body = (hm[3] || "").trim();
+          const tag = level <= 2 ? "h2" : "h3";
           const alertClass = importantNoticeAlertClass(title);
           if (alertClass) chunks.push('<div class="' + alertClass + '">');
-          chunks.push("<h3>" + renderMarkdownInline(title) + "</h3>");
+          chunks.push("<" + tag + ">" + renderMarkdownInline(title) + "</" + tag + ">");
           if (body) renderNoticeSectionBody(chunks, body);
           if (alertClass) chunks.push("</div>");
         } else {
-          for (const para of s.split(/\n{2,}/)) {
-            const p = para.replace(/\n+/g, " ").trim();
-            if (p) chunks.push("<p>" + renderMarkdownInline(p) + "</p>");
-          }
+          renderNoticeSectionBody(chunks, s);
         }
       }
       return chunks.join("");
@@ -7547,10 +8037,12 @@
       .then(([json, checkedDomainsText]) => {
         reportContentLoadingProgress(35, "Getting data...");
         return initClickTracking().then(() => {
+        initFolderReportModal();
         reportContentLoadingProgress(55, "Preparing list…");
         rebuildLinkLensIndexes();
         populateKnownFilters();
         updateSelectedFilterUI();
+        void ensureLinkLensLoaded();
         checkedDomains = new Set(
           String(checkedDomainsText || "")
             .split(/\r?\n/)
@@ -7894,6 +8386,7 @@
             closeSummary();
             closeFilterModal();
             closeSettingsModal();
+            closeFolderReportModal();
             closeUpdateModal(meta);
           }
         });

@@ -20,6 +20,7 @@ on:
       - "scripts/update_link_check_meta.py"
       - "scripts/update_unsorted_from_raw.py"
       - "scripts/release_schedule.py"
+      - "scripts/build_filter_stats.py"
 
 permissions:
   contents: write
@@ -69,6 +70,7 @@ jobs:
         run: |
           python scripts/update_link_check_meta.py
           python scripts/convert_list_to_json.py
+          python scripts/build_filter_stats.py
 
       - name: Debug commit_info
         run: |
@@ -144,7 +146,7 @@ jobs:
           git config --global user.name "auto-link-bot"
           git config --global user.email "bot@users.noreply.github.com"
 
-          git add *.md docs/data.json docs/unsorted.json docs/contributor_link_totals.json docs/link_check_meta.json docs/link_check_snapshot.json link_status.json
+          git add *.md docs/data.json docs/unsorted.json docs/contributor_link_totals.json docs/filter_stats.json docs/link_check_meta.json docs/link_check_snapshot.json link_status.json
 
           if ! git diff --cached --quiet; then
             if [ "${{ steps.commitinfo.outputs.release_published }}" = "true" ]; then
