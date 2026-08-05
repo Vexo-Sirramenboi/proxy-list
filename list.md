@@ -2,7 +2,7 @@
 > [!NOTE]
 > v6.0 | Released: August 05, 2026
 > r260 | Last Updated: August 05, 2026
-> Total onsite links: 4496 (4154 sorted + 342 unsorted)\
+> Total onsite links: 4479 (4137 sorted + 342 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
 Welcome to the official Proxy List! This has a running list of hundreds of unblocked websites and games that anyone is free to use. We have the most popular and reliable sites here, so you'll never run out!
