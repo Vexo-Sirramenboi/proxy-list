@@ -37,7 +37,6 @@
     dailyCache: null,
     presenceDaily: null,
     presenceMonthly: null,
-    presenceTopUsers: null,
     usersSpan: "7d",
     panel: "providers",
   };
@@ -60,7 +59,7 @@
     users: {
       title: "Users",
       sub:
-        "Active visitors over time from presence heartbeats, busiest UTC hours, monthly uniques, and top signed-in users.",
+        "Active visitors over time from presence heartbeats, busiest UTC hours, and monthly uniques.",
     },
   };
 
@@ -1616,49 +1615,6 @@
     return state.presenceMonthly;
   }
 
-  async function loadPresenceTopUsers(db) {
-    if (state.presenceTopUsers) return state.presenceTopUsers;
-    try {
-      var snap = await db.collection("presence_user_totals").orderBy("daysActive", "desc").limit(25).get();
-      state.presenceTopUsers = snap.docs.map(function (doc) {
-        var data = doc.data() || {};
-        return {
-          id: doc.id,
-          label: String(data.label || "User").trim() || "User",
-          heartbeats: Number(data.heartbeats) || 0,
-          daysActive: Number(data.daysActive) || 0,
-        };
-      });
-      // Stable tie-break by heartbeats when days match.
-      state.presenceTopUsers.sort(function (a, b) {
-        return b.daysActive - a.daysActive || b.heartbeats - a.heartbeats || a.label.localeCompare(b.label);
-      });
-    } catch (err) {
-      console.warn("[stats] presence_user_totals query failed", err);
-      // Older docs may lack a daysActive index; fall back to heartbeats then re-sort.
-      try {
-        var snap2 = await db.collection("presence_user_totals").orderBy("heartbeats", "desc").limit(25).get();
-        state.presenceTopUsers = snap2.docs
-          .map(function (doc) {
-            var data = doc.data() || {};
-            return {
-              id: doc.id,
-              label: String(data.label || "User").trim() || "User",
-              heartbeats: Number(data.heartbeats) || 0,
-              daysActive: Number(data.daysActive) || 0,
-            };
-          })
-          .sort(function (a, b) {
-            return b.daysActive - a.daysActive || b.heartbeats - a.heartbeats || a.label.localeCompare(b.label);
-          });
-      } catch (err2) {
-        console.warn("[stats] presence_user_totals fallback failed", err2);
-        state.presenceTopUsers = [];
-      }
-    }
-    return state.presenceTopUsers;
-  }
-
   function presenceSpanSeries(daily, span) {
     var now = new Date();
     if (span === "24h") {
@@ -1857,83 +1813,6 @@
       },
       userCharts
     );
-
-    var top = state.presenceTopUsers || [];
-    var topHave = top.length > 0;
-    makeChart(
-      $("usersTopChart"),
-      {
-        type: "bar",
-        data: {
-          labels: topHave
-            ? top.map(function (u) {
-                return u.label;
-              })
-            : ["No signed-in activity yet"],
-          datasets: [
-            {
-              label: "Days active (all-time)",
-              data: topHave
-                ? top.map(function (u) {
-                    return u.daysActive;
-                  })
-                : [0],
-              backgroundColor: CHART_COLORS[2],
-              borderRadius: 4,
-            },
-          ],
-        },
-        options: {
-          indexAxis: "y",
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: { display: false },
-            tooltip: {
-              callbacks: {
-                title: function (items) {
-                  var i = items && items[0] && items[0].dataIndex;
-                  return top[i] ? top[i].label : "";
-                },
-                afterBody: function (items) {
-                  var i = items && items[0] && items[0].dataIndex;
-                  if (!top[i]) return [];
-                  return ["Heartbeats: " + formatInt(top[i].heartbeats)];
-                },
-              },
-            },
-            subtitle: topHave ? undefined : emptySubtitle("Sign in on the main list to appear here."),
-          },
-          scales: {
-            x: { beginAtZero: true, ticks: { precision: 0 } },
-          },
-        },
-      },
-      userCharts
-    );
-
-    var body = $("usersTopTableBody");
-    if (body) {
-      if (!topHave) {
-        body.innerHTML = '<tr><td class="muted" colspan="4">No signed-in presence totals yet.</td></tr>';
-      } else {
-        body.innerHTML = top
-          .map(function (u, idx) {
-            return (
-              "<tr><td>" +
-              (idx + 1) +
-              "</td><td>" +
-              escapeHtml(u.label) +
-              '</td><td class="num">' +
-              formatInt(u.daysActive) +
-              '</td><td class="num">' +
-              formatInt(u.heartbeats) +
-              "</td></tr>"
-            );
-          })
-          .join("");
-      }
-    }
   }
 
   function updateUsersKpis() {
@@ -1979,7 +1858,7 @@
       return;
     }
     try {
-      await Promise.all([loadPresenceDaily(db), loadPresenceMonthly(db), loadPresenceTopUsers(db)]);
+      await Promise.all([loadPresenceDaily(db), loadPresenceMonthly(db)]);
       updateUsersKpis();
       renderUserStatsCharts();
     } catch (err) {
