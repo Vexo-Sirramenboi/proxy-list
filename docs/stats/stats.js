@@ -1619,7 +1619,7 @@
   async function loadPresenceTopUsers(db) {
     if (state.presenceTopUsers) return state.presenceTopUsers;
     try {
-      var snap = await db.collection("presence_user_totals").orderBy("heartbeats", "desc").limit(25).get();
+      var snap = await db.collection("presence_user_totals").orderBy("daysActive", "desc").limit(25).get();
       state.presenceTopUsers = snap.docs.map(function (doc) {
         var data = doc.data() || {};
         return {
@@ -1629,9 +1629,32 @@
           daysActive: Number(data.daysActive) || 0,
         };
       });
+      // Stable tie-break by heartbeats when days match.
+      state.presenceTopUsers.sort(function (a, b) {
+        return b.daysActive - a.daysActive || b.heartbeats - a.heartbeats || a.label.localeCompare(b.label);
+      });
     } catch (err) {
       console.warn("[stats] presence_user_totals query failed", err);
-      state.presenceTopUsers = [];
+      // Older docs may lack a daysActive index; fall back to heartbeats then re-sort.
+      try {
+        var snap2 = await db.collection("presence_user_totals").orderBy("heartbeats", "desc").limit(25).get();
+        state.presenceTopUsers = snap2.docs
+          .map(function (doc) {
+            var data = doc.data() || {};
+            return {
+              id: doc.id,
+              label: String(data.label || "User").trim() || "User",
+              heartbeats: Number(data.heartbeats) || 0,
+              daysActive: Number(data.daysActive) || 0,
+            };
+          })
+          .sort(function (a, b) {
+            return b.daysActive - a.daysActive || b.heartbeats - a.heartbeats || a.label.localeCompare(b.label);
+          });
+      } catch (err2) {
+        console.warn("[stats] presence_user_totals fallback failed", err2);
+        state.presenceTopUsers = [];
+      }
     }
     return state.presenceTopUsers;
   }
@@ -1849,10 +1872,10 @@
             : ["No signed-in activity yet"],
           datasets: [
             {
-              label: "Heartbeats",
+              label: "Days active (all-time)",
               data: topHave
                 ? top.map(function (u) {
-                    return u.heartbeats;
+                    return u.daysActive;
                   })
                 : [0],
               backgroundColor: CHART_COLORS[2],
@@ -1871,6 +1894,11 @@
                 title: function (items) {
                   var i = items && items[0] && items[0].dataIndex;
                   return top[i] ? top[i].label : "";
+                },
+                afterBody: function (items) {
+                  var i = items && items[0] && items[0].dataIndex;
+                  if (!top[i]) return [];
+                  return ["Heartbeats: " + formatInt(top[i].heartbeats)];
                 },
               },
             },
