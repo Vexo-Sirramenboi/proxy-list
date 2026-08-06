@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
-> v6.0.1 | Released: August 05, 2026
-> r261 | Last Updated: August 05, 2026
+> v6.1 | Released: August 05, 2026
+> r262 | Last Updated: August 05, 2026
 > Total onsite links: 4471 (4129 sorted + 342 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -16,7 +16,7 @@ Welcome to the official Proxy List! This has a running list of hundreds of unblo
 ## Important Notices
 
 ## Update Notice
-Security fixes
+Added user statistics where you can see most active times, active users over times, top users, and more.
 
 # 💜 Selenite
 > [!NOTE]

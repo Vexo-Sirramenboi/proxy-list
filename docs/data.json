@@ -1,12 +1,18 @@
 {
   "meta": {
-    "version": "v6.0.1",
-    "revision": "r261",
+    "version": "v6.1",
+    "revision": "r262",
     "last_updated": "August 05, 2026",
     "unsorted_total": 342,
     "important_notices": "",
-    "update_notice": "Security fixes",
+    "update_notice": "Added user statistics where you can see most active times, active users over times, top users, and more.",
     "update_changelog": [
+      {
+        "version": "v6.1",
+        "revision": "r262",
+        "released": "August 05, 2026",
+        "update_notice": "Added user statistics where you can see most active times, active users over times, top users, and more."
+      },
       {
         "version": "v6.0.1",
         "revision": "r261",
