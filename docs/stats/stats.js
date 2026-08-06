@@ -19,10 +19,13 @@
     "#a78bfa",
   ];
   var DAILY_LOOKBACK_DAYS = 90;
+  var PRESENCE_DAILY_LOOKBACK = 366;
+  var PRESENCE_MONTHLY_LOOKBACK = 18;
 
   var charts = [];
   var detailCharts = [];
   var filterDetailCharts = [];
+  var userCharts = [];
   var state = {
     links: [],
     providers: [],
@@ -32,6 +35,10 @@
     filterStats: null,
     db: null,
     dailyCache: null,
+    presenceDaily: null,
+    presenceMonthly: null,
+    presenceTopUsers: null,
+    usersSpan: "7d",
     panel: "providers",
   };
 
@@ -49,6 +56,11 @@
     contributions: {
       title: "Contributions",
       sub: "Cumulative link counts attributed to contributors on the sorted list.",
+    },
+    users: {
+      title: "Users",
+      sub:
+        "Active visitors over time from presence heartbeats, busiest UTC hours, monthly uniques, and top signed-in users.",
     },
   };
 
@@ -1544,19 +1556,428 @@
       });
   }
 
+  function utcMonthIds(lookback) {
+    var out = [];
+    var now = new Date();
+    for (var i = lookback - 1; i >= 0; i--) {
+      var d = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() - i, 1));
+      out.push(d.toISOString().slice(0, 7));
+    }
+    return out;
+  }
+
+  function emptySubtitle(text) {
+    return {
+      display: true,
+      text: text,
+      color: "#9a9a9a",
+      font: { size: 12 },
+    };
+  }
+
+  async function loadPresenceDaily(db) {
+    if (state.presenceDaily) return state.presenceDaily;
+    var days = utcDayIds(PRESENCE_DAILY_LOOKBACK);
+    var snaps = await Promise.all(
+      days.map(function (day) {
+        return db.collection("presence_daily").doc(day).get();
+      })
+    );
+    state.presenceDaily = snaps.map(function (snap, i) {
+      var data = snap.exists ? snap.data() || {} : {};
+      return {
+        date: days[i],
+        uniqueVisitors: Number(data.uniqueVisitors) || 0,
+        heartbeats: Number(data.heartbeats) || 0,
+        signedInUniques: Number(data.signedInUniques) || 0,
+        hourHeartbeats: data.hourHeartbeats && typeof data.hourHeartbeats === "object" ? data.hourHeartbeats : {},
+        hourUniques: data.hourUniques && typeof data.hourUniques === "object" ? data.hourUniques : {},
+      };
+    });
+    return state.presenceDaily;
+  }
+
+  async function loadPresenceMonthly(db) {
+    if (state.presenceMonthly) return state.presenceMonthly;
+    var months = utcMonthIds(PRESENCE_MONTHLY_LOOKBACK);
+    var snaps = await Promise.all(
+      months.map(function (month) {
+        return db.collection("presence_monthly").doc(month).get();
+      })
+    );
+    state.presenceMonthly = snaps.map(function (snap, i) {
+      var data = snap.exists ? snap.data() || {} : {};
+      return {
+        month: months[i],
+        uniqueVisitors: Number(data.uniqueVisitors) || 0,
+        heartbeats: Number(data.heartbeats) || 0,
+      };
+    });
+    return state.presenceMonthly;
+  }
+
+  async function loadPresenceTopUsers(db) {
+    if (state.presenceTopUsers) return state.presenceTopUsers;
+    try {
+      var snap = await db.collection("presence_user_totals").orderBy("heartbeats", "desc").limit(25).get();
+      state.presenceTopUsers = snap.docs.map(function (doc) {
+        var data = doc.data() || {};
+        return {
+          id: doc.id,
+          label: String(data.label || "User").trim() || "User",
+          heartbeats: Number(data.heartbeats) || 0,
+          daysActive: Number(data.daysActive) || 0,
+        };
+      });
+    } catch (err) {
+      console.warn("[stats] presence_user_totals query failed", err);
+      state.presenceTopUsers = [];
+    }
+    return state.presenceTopUsers;
+  }
+
+  function presenceSpanSeries(daily, span) {
+    var now = new Date();
+    if (span === "24h") {
+      var labels = [];
+      var values = [];
+      for (var h = 23; h >= 0; h--) {
+        var dt = new Date(now.getTime() - h * 3600 * 1000);
+        var day = dt.toISOString().slice(0, 10);
+        var hour = String(dt.getUTCHours()).padStart(2, "0");
+        var row = daily.find(function (d) {
+          return d.date === day;
+        });
+        var n = 0;
+        if (row) {
+          n = Number(row.hourUniques[hour] != null ? row.hourUniques[hour] : row.hourUniques[String(Number(hour))]) || 0;
+        }
+        labels.push(hour + ":00");
+        values.push(n);
+      }
+      return { labels: labels, values: values, yLabel: "Unique visitors / hour" };
+    }
+
+    var days =
+      span === "7d" ? 7 : span === "1m" ? 30 : span === "6m" ? 180 : 365;
+    var slice = daily.slice(Math.max(0, daily.length - days));
+    return {
+      labels: slice.map(function (d) {
+        return d.date.slice(5);
+      }),
+      values: slice.map(function (d) {
+        return d.uniqueVisitors;
+      }),
+      yLabel: "Unique visitors / day",
+    };
+  }
+
+  function averageHourActivity(daily, lookbackDays) {
+    var slice = daily.slice(Math.max(0, daily.length - lookbackDays));
+    var sums = [];
+    var counts = [];
+    var i;
+    for (i = 0; i < 24; i++) {
+      sums[i] = 0;
+      counts[i] = 0;
+    }
+    slice.forEach(function (day) {
+      var has = false;
+      for (i = 0; i < 24; i++) {
+        var key = String(i).padStart(2, "0");
+        var uniq = Number(day.hourUniques[key] != null ? day.hourUniques[key] : day.hourUniques[String(i)]) || 0;
+        var beats = Number(day.hourHeartbeats[key] != null ? day.hourHeartbeats[key] : day.hourHeartbeats[String(i)]) || 0;
+        var v = uniq > 0 ? uniq : beats > 0 ? beats : 0;
+        if (v > 0) {
+          sums[i] += v;
+          counts[i] += 1;
+          has = true;
+        }
+      }
+      if (!has && day.uniqueVisitors > 0) {
+        /* day exists but no hour breakdown yet */
+      }
+    });
+    var labels = [];
+    var values = [];
+    var peakHour = "—";
+    var peakVal = -1;
+    for (i = 0; i < 24; i++) {
+      var label = String(i).padStart(2, "0") + ":00";
+      var avg = counts[i] ? sums[i] / counts[i] : 0;
+      labels.push(label);
+      values.push(Math.round(avg * 10) / 10);
+      if (avg > peakVal) {
+        peakVal = avg;
+        peakHour = label + " UTC";
+      }
+    }
+    return { labels: labels, values: values, peakHour: peakVal > 0 ? peakHour : "—" };
+  }
+
+  function renderUsersOverTimeChart() {
+    var series = presenceSpanSeries(state.presenceDaily || [], state.usersSpan);
+    var hasData = series.values.some(function (v) {
+      return v > 0;
+    });
+    makeChart(
+      $("usersActiveOverTimeChart"),
+      {
+        type: "line",
+        data: {
+          labels: series.labels.length ? series.labels : ["No data"],
+          datasets: [
+            {
+              label: series.yLabel,
+              data: series.values.length ? series.values : [0],
+              borderColor: CHART_COLORS[0],
+              backgroundColor: "rgba(108, 179, 255, 0.15)",
+              fill: true,
+              tension: 0.25,
+              pointRadius: state.usersSpan === "24h" || state.usersSpan === "7d" ? 2 : 0,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            subtitle: hasData ? undefined : emptySubtitle("No presence data yet — visit the main list to start collecting."),
+          },
+          scales: {
+            x: { ticks: { maxRotation: 0, autoSkip: true, maxTicksLimit: 12 } },
+            y: { beginAtZero: true, ticks: { precision: 0 } },
+          },
+        },
+      },
+      userCharts
+    );
+  }
+
+  function renderUserStatsCharts() {
+    destroyChartList(userCharts);
+    renderUsersOverTimeChart();
+
+    var hours = averageHourActivity(state.presenceDaily || [], 30);
+    setText("statUsersPeakHour", hours.peakHour);
+    var hoursHave = hours.values.some(function (v) {
+      return v > 0;
+    });
+    makeChart(
+      $("usersActiveHoursChart"),
+      {
+        type: "bar",
+        data: {
+          labels: hours.labels,
+          datasets: [
+            {
+              label: "Avg activity",
+              data: hours.values,
+              backgroundColor: CHART_COLORS[1],
+              borderRadius: 4,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            subtitle: hoursHave ? undefined : emptySubtitle("Hourly activity appears after presence pings accumulate."),
+          },
+          scales: {
+            x: { ticks: { maxRotation: 0, autoSkip: true, maxTicksLimit: 12 } },
+            y: { beginAtZero: true },
+          },
+        },
+      },
+      userCharts
+    );
+
+    var monthly = state.presenceMonthly || [];
+    var mLabels = monthly.map(function (m) {
+      return m.month;
+    });
+    var mValues = monthly.map(function (m) {
+      return m.uniqueVisitors;
+    });
+    var mHave = mValues.some(function (v) {
+      return v > 0;
+    });
+    makeChart(
+      $("usersMonthlyChart"),
+      {
+        type: "bar",
+        data: {
+          labels: mLabels.length ? mLabels : ["No data"],
+          datasets: [
+            {
+              label: "Monthly unique visitors",
+              data: mValues.length ? mValues : [0],
+              backgroundColor: CHART_COLORS[4],
+              borderRadius: 4,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            subtitle: mHave ? undefined : emptySubtitle("Monthly uniques fill in as visitors return across days."),
+          },
+          scales: {
+            y: { beginAtZero: true, ticks: { precision: 0 } },
+          },
+        },
+      },
+      userCharts
+    );
+
+    var top = state.presenceTopUsers || [];
+    var topHave = top.length > 0;
+    makeChart(
+      $("usersTopChart"),
+      {
+        type: "bar",
+        data: {
+          labels: topHave
+            ? top.map(function (u) {
+                return u.label;
+              })
+            : ["No signed-in activity yet"],
+          datasets: [
+            {
+              label: "Heartbeats",
+              data: topHave
+                ? top.map(function (u) {
+                    return u.heartbeats;
+                  })
+                : [0],
+              backgroundColor: CHART_COLORS[2],
+              borderRadius: 4,
+            },
+          ],
+        },
+        options: {
+          indexAxis: "y",
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                title: function (items) {
+                  var i = items && items[0] && items[0].dataIndex;
+                  return top[i] ? top[i].label : "";
+                },
+              },
+            },
+            subtitle: topHave ? undefined : emptySubtitle("Sign in on the main list to appear here."),
+          },
+          scales: {
+            x: { beginAtZero: true, ticks: { precision: 0 } },
+          },
+        },
+      },
+      userCharts
+    );
+
+    var body = $("usersTopTableBody");
+    if (body) {
+      if (!topHave) {
+        body.innerHTML = '<tr><td class="muted" colspan="4">No signed-in presence totals yet.</td></tr>';
+      } else {
+        body.innerHTML = top
+          .map(function (u, idx) {
+            return (
+              "<tr><td>" +
+              (idx + 1) +
+              "</td><td>" +
+              escapeHtml(u.label) +
+              '</td><td class="num">' +
+              formatInt(u.daysActive) +
+              '</td><td class="num">' +
+              formatInt(u.heartbeats) +
+              "</td></tr>"
+            );
+          })
+          .join("");
+      }
+    }
+  }
+
+  function updateUsersKpis() {
+    var daily = state.presenceDaily || [];
+    var today = daily.length ? daily[daily.length - 1] : null;
+    setText("statUsersToday", today ? formatInt(today.uniqueVisitors) : "—");
+    var last7 = daily.slice(-7);
+    var sum7 = last7.reduce(function (s, d) {
+      return s + d.uniqueVisitors;
+    }, 0);
+    var avg7 = last7.length ? Math.round((sum7 / last7.length) * 10) / 10 : 0;
+    setText("statUsers7d", last7.some(function (d) { return d.uniqueVisitors > 0; }) ? formatInt(avg7) : "—");
+    var monthly = state.presenceMonthly || [];
+    var thisMonth = monthly.length ? monthly[monthly.length - 1] : null;
+    setText("statUsersMonth", thisMonth && thisMonth.uniqueVisitors ? formatInt(thisMonth.uniqueVisitors) : "—");
+  }
+
+  function wireUsersRangeToggle() {
+    var root = $("usersRangeToggle");
+    if (!root || root.getAttribute("data-wired") === "1") return;
+    root.setAttribute("data-wired", "1");
+    root.querySelectorAll("[data-users-span]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var span = btn.getAttribute("data-users-span") || "7d";
+        state.usersSpan = span;
+        root.querySelectorAll("[data-users-span]").forEach(function (b) {
+          b.classList.toggle("is-active", b.getAttribute("data-users-span") === span);
+        });
+        renderUserStatsCharts();
+        resizeVisibleCharts();
+      });
+    });
+  }
+
+  async function loadAndRenderUserStats(db) {
+    wireUsersRangeToggle();
+    if (!db) {
+      setText("statUsersToday", "—");
+      setText("statUsers7d", "—");
+      setText("statUsersMonth", "—");
+      setText("statUsersPeakHour", "—");
+      renderUserStatsCharts();
+      return;
+    }
+    try {
+      await Promise.all([loadPresenceDaily(db), loadPresenceMonthly(db), loadPresenceTopUsers(db)]);
+      updateUsersKpis();
+      renderUserStatsCharts();
+    } catch (err) {
+      console.warn("[stats] presence load failed", err);
+      setText("statUsersToday", "—");
+      setText("statUsers7d", "—");
+      setText("statUsersMonth", "—");
+      setText("statUsersPeakHour", "—");
+      renderUserStatsCharts();
+    }
+  }
+
   function panelFromHash() {
     var raw = String(window.location.hash || "")
       .replace(/^#/, "")
       .toLowerCase();
     if (raw === "filters" || raw === "filter" || raw === "filter-data") return "filters";
     if (raw === "contributions" || raw === "contribution" || raw === "contributors") return "contributions";
+    if (raw === "users" || raw === "user" || raw === "activity") return "users";
     if (raw === "providers" || raw === "domains" || raw === "providers-domains") return "providers";
     return "providers";
   }
 
   function resizeVisibleCharts() {
     requestAnimationFrame(function () {
-      [charts, detailCharts, filterDetailCharts].forEach(function (list) {
+      [charts, detailCharts, filterDetailCharts, userCharts].forEach(function (list) {
         list.forEach(function (c) {
           try {
             if (c && typeof c.resize === "function") c.resize();
@@ -1678,11 +2099,12 @@
     var clicks = [];
     if (!state.db) {
       setNotice(
-        "Firebase is not configured here, so open activity charts are empty. Provider and filter stats still work.",
+        "Firebase is not configured here, so open activity and user charts are empty. Provider and filter stats still work.",
         "warn"
       );
       setText("statOpens", "—");
       renderOpenCharts([], state.urlToProvider);
+      void loadAndRenderUserStats(null);
       return;
     }
 
@@ -1710,6 +2132,8 @@
       setNotice("Could not load open activity from Firestore. Provider stats still work.", "warn");
       renderOpenCharts([], state.urlToProvider);
     }
+
+    void loadAndRenderUserStats(state.db);
 
     try {
       var params = new URLSearchParams(window.location.search);

@@ -177,6 +177,19 @@ service cloud.firestore {
       allow read: if true;
       allow create, update, delete: if false;
     }
+    // Presence aggregates for Statistics → Users (Worker/Admin writes only).
+    match /presence_daily/{dayId} {
+      allow read: if true;
+      allow create, update, delete: if false;
+    }
+    match /presence_monthly/{monthId} {
+      allow read: if true;
+      allow create, update, delete: if false;
+    }
+    match /presence_user_totals/{uidHash} {
+      allow read: if true;
+      allow create, update, delete: if false;
+    }
     match /users/{userId} {
       allow read: if request.auth != null && request.auth.uid == userId;
       allow create: if request.auth != null

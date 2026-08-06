@@ -2212,6 +2212,7 @@
   <!-- Example must load first: onerror+src swap is async, so the inline app could run before fallback executed. Local override is optional (404 on Pages is harmless). -->
   <script src="firebase-config.example.js"></script>
   <script src="firebase-config.local.js"></script>
+  <script src="presence-client.js"></script>
   <script src="submission-utils.js"></script>
   <script src="site-notifications.js"></script>
   <script
@@ -4569,11 +4570,37 @@
       return n;
     }
 
+    function presencePingToWorker(force) {
+      if (!presenceSessionRef || typeof window.ProxyListPresence === "undefined") return;
+      const user = typeof firebase !== "undefined" && firebase.auth ? firebase.auth().currentUser : null;
+      const sessionId = presenceSessionRef.key || "";
+      if (!sessionId) return;
+      let anonymous = true;
+      let uid = "";
+      if (user) {
+        uid = user.uid || "";
+        try {
+          anonymous = !!(user.isAnonymous || (user.providerData || []).length === 0);
+        } catch (_) {
+          anonymous = !!user.isAnonymous;
+        }
+      }
+      const displayName = anonymous ? "" : accountUsername() || "";
+      void window.ProxyListPresence.ping({
+        sessionId: sessionId,
+        uid: uid,
+        anonymous: anonymous,
+        displayName: displayName,
+        force: !!force,
+      });
+    }
+
     function presenceHeartbeat() {
       if (!presenceSessionRef) return;
       presenceSessionRef
         .update({ ts: firebase.database.ServerValue.TIMESTAMP })
         .catch(function () {});
+      presencePingToWorker(false);
     }
 
     function startPresenceTracking() {
@@ -4604,6 +4631,7 @@
         sessRef.onDisconnect().remove();
         if (presenceHeartbeatTimer) clearInterval(presenceHeartbeatTimer);
         presenceHeartbeatTimer = setInterval(presenceHeartbeat, PRESENCE_HEARTBEAT_MS);
+        presencePingToWorker(true);
 
         if (!presenceListenerAttached) {
           presenceListenerAttached = true;

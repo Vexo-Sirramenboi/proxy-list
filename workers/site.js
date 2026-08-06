@@ -1,5 +1,5 @@
 /**
- * Cloudflare Worker: static assets + IP-rate-limited link click API.
+ * Cloudflare Worker: static assets + IP-rate-limited link click API + presence pings.
  *
  * POST /api/link-click  { "url": "https://..." }
  *   - Rate limit: 40 clicks / hour / IP (Cache API)
@@ -11,10 +11,20 @@
  * POST /api/link-clicks/get  { "urls": ["https://..."] }
  *   - Returns { counts: { [normUrl]: number } } from Firestore (public read) when
  *     project id is set; otherwise from edge cache counters.
+ *
+ * POST /api/presence-ping  { sessionId, uid?, anonymous?, displayName? }
+ *   - Rate limit: 90 pings / hour / IP
+ *   - Writes presence_daily / presence_monthly aggregates + optional user totals
+ *     for the Statistics → Users panel (unique visitors, hour buckets, top users).
  */
 const RATE_LIMIT_MAX = 40;
 const RATE_LIMIT_WINDOW_SEC = 3600;
+const PRESENCE_RATE_LIMIT_MAX = 90;
+const PRESENCE_RATE_LIMIT_WINDOW_SEC = 3600;
 const MAX_URL_LEN = 2048;
+const MAX_SESSION_ID_LEN = 128;
+const MAX_UID_LEN = 128;
+const MAX_DISPLAY_NAME_LEN = 32;
 
 export default {
   async fetch(request, env, ctx) {
@@ -30,6 +40,12 @@ export default {
       return handleGetClicks(request, env);
     }
     if (url.pathname === "/api/link-clicks/get" && request.method === "OPTIONS") {
+      return cors(new Response(null, { status: 204 }));
+    }
+    if (url.pathname === "/api/presence-ping" && request.method === "POST") {
+      return handlePresencePing(request, env, ctx);
+    }
+    if (url.pathname === "/api/presence-ping" && request.method === "OPTIONS") {
       return cors(new Response(null, { status: 204 }));
     }
 
@@ -87,9 +103,12 @@ async function sha256Hex(text) {
   return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
 }
 
-async function rateLimitOk(ip, ctx) {
-  const bucket = Math.floor(Date.now() / (RATE_LIMIT_WINDOW_SEC * 1000));
-  const keyUrl = `https://rate-limit.proxy-list.internal/click/${encodeURIComponent(ip)}/${bucket}`;
+async function rateLimitOk(ip, ctx, opts = {}) {
+  const max = opts.max != null ? opts.max : RATE_LIMIT_MAX;
+  const windowSec = opts.windowSec != null ? opts.windowSec : RATE_LIMIT_WINDOW_SEC;
+  const prefix = opts.prefix || "click";
+  const bucket = Math.floor(Date.now() / (windowSec * 1000));
+  const keyUrl = `https://rate-limit.proxy-list.internal/${prefix}/${encodeURIComponent(ip)}/${bucket}`;
   const cache = caches.default;
   const req = new Request(keyUrl);
   let count = 0;
@@ -97,18 +116,63 @@ async function rateLimitOk(ip, ctx) {
   if (hit) {
     count = Number(await hit.text()) || 0;
   }
-  if (count >= RATE_LIMIT_MAX) {
-    return { ok: false, count, limit: RATE_LIMIT_MAX };
+  if (count >= max) {
+    return { ok: false, count, limit: max };
   }
   count += 1;
   const res = new Response(String(count), {
     headers: {
-      "Cache-Control": `public, max-age=${RATE_LIMIT_WINDOW_SEC}`,
+      "Cache-Control": `public, max-age=${windowSec}`,
       "Content-Type": "text/plain",
     },
   });
   ctx.waitUntil(cache.put(req, res.clone()));
-  return { ok: true, count, limit: RATE_LIMIT_MAX };
+  return { ok: true, count, limit: max };
+}
+
+/** Returns true the first time this key is seen within maxAgeSec (edge Cache). */
+async function edgeFirstSeen(keyPath, maxAgeSec, ctx) {
+  const cache = caches.default;
+  const req = new Request(`https://presence-dedupe.proxy-list.internal/${keyPath}`);
+  const hit = await cache.match(req);
+  if (hit) return false;
+  const res = new Response("1", {
+    headers: {
+      "Cache-Control": `public, max-age=${Math.max(60, Math.min(maxAgeSec, 86400 * 40))}`,
+      "Content-Type": "text/plain",
+    },
+  });
+  ctx.waitUntil(cache.put(req, res.clone()));
+  return true;
+}
+
+function sanitizeDisplayName(raw) {
+  let s = String(raw || "")
+    .replace(/[\u0000-\u001f<>]/g, "")
+    .trim()
+    .slice(0, MAX_DISPLAY_NAME_LEN);
+  if (!s || /^anonymous$/i.test(s)) return "";
+  return s;
+}
+
+function secondsUntilNextUtcDay(now = new Date()) {
+  const next = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1);
+  return Math.max(60, Math.ceil((next - now.getTime()) / 1000));
+}
+
+function secondsUntilNextUtcHour(now = new Date()) {
+  const next = Date.UTC(
+    now.getUTCFullYear(),
+    now.getUTCMonth(),
+    now.getUTCDate(),
+    now.getUTCHours() + 1
+  );
+  return Math.max(60, Math.ceil((next - now.getTime()) / 1000));
+}
+
+function secondsUntilNextUtcMonth(now = new Date()) {
+  const next = Date.UTC(now.getUTCFullYear(), now.getUTCMonth() + 1, 1);
+  return Math.max(60, Math.ceil((next - now.getTime()) / 1000));
 }
 
 function hasFirebaseAdmin(env) {
@@ -477,6 +541,276 @@ async function handleGetClicks(request, env) {
     return json({ ok: true, counts });
   } catch (err) {
     console.error("get_clicks_failed", err);
+    return json({ ok: false, error: "internal_error" }, 500);
+  }
+}
+
+async function firestoreCommitOrCreate(env, token, project, collection, docId, transformWrite, createFields) {
+  const docName = `projects/${project}/databases/(default)/documents/${collection}/${docId}`;
+  const commitUrl = `https://firestore.googleapis.com/v1/projects/${project}/databases/(default)/documents:commit`;
+  const write = {
+    transform: {
+      document: docName,
+      fieldTransforms: transformWrite,
+    },
+  };
+  const commitRes = await fetch(commitUrl, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ writes: [write] }),
+  });
+  if (commitRes.ok) return;
+
+  const createRes = await fetch(
+    `https://firestore.googleapis.com/v1/projects/${project}/databases/(default)/documents/${collection}?documentId=${encodeURIComponent(docId)}`,
+    {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ fields: createFields }),
+    }
+  );
+  if (createRes.ok) return;
+
+  const retry = await fetch(commitUrl, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ writes: [write] }),
+  });
+  if (!retry.ok) {
+    const t = await retry.text();
+    throw new Error(`${collection} write failed: ${createRes.status}/${retry.status} ${t}`);
+  }
+}
+
+async function firestoreRecordPresence(env, opts) {
+  const token = await getGoogleAccessToken(env);
+  const project = env.FIREBASE_PROJECT_ID;
+  const now = opts.now || new Date();
+  const day = utcDateId(now);
+  const month = day.slice(0, 7);
+  const hour = String(now.getUTCHours()).padStart(2, "0");
+  const hourPath = `hourHeartbeats.${hour}`;
+  const hourUniquePath = `hourUniques.${hour}`;
+
+  const dailyTransforms = [
+    { fieldPath: "heartbeats", increment: { integerValue: "1" } },
+    { fieldPath: hourPath, increment: { integerValue: "1" } },
+    { fieldPath: "updated", setToServerValue: "REQUEST_TIME" },
+  ];
+  if (opts.firstDay) {
+    dailyTransforms.push({ fieldPath: "uniqueVisitors", increment: { integerValue: "1" } });
+  }
+  if (opts.firstHour) {
+    dailyTransforms.push({ fieldPath: hourUniquePath, increment: { integerValue: "1" } });
+  }
+  if (opts.firstSignedInDay) {
+    dailyTransforms.push({ fieldPath: "signedInUniques", increment: { integerValue: "1" } });
+  }
+
+  const dailyCreate = {
+    date: { stringValue: day },
+    heartbeats: { integerValue: "1" },
+    uniqueVisitors: { integerValue: opts.firstDay ? "1" : "0" },
+    signedInUniques: { integerValue: opts.firstSignedInDay ? "1" : "0" },
+    hourHeartbeats: {
+      mapValue: { fields: { [hour]: { integerValue: "1" } } },
+    },
+    hourUniques: {
+      mapValue: {
+        fields: { [hour]: { integerValue: opts.firstHour ? "1" : "0" } },
+      },
+    },
+    updated: { timestampValue: now.toISOString() },
+  };
+
+  await firestoreCommitOrCreate(env, token, project, "presence_daily", day, dailyTransforms, dailyCreate);
+
+  const monthlyTransforms = [
+    { fieldPath: "heartbeats", increment: { integerValue: "1" } },
+    { fieldPath: "updated", setToServerValue: "REQUEST_TIME" },
+  ];
+  if (opts.firstMonth) {
+    monthlyTransforms.push({ fieldPath: "uniqueVisitors", increment: { integerValue: "1" } });
+  }
+  const monthlyCreate = {
+    month: { stringValue: month },
+    heartbeats: { integerValue: "1" },
+    uniqueVisitors: { integerValue: opts.firstMonth ? "1" : "0" },
+    updated: { timestampValue: now.toISOString() },
+  };
+  await firestoreCommitOrCreate(
+    env,
+    token,
+    project,
+    "presence_monthly",
+    month,
+    monthlyTransforms,
+    monthlyCreate
+  );
+
+  if (opts.uidHash && opts.label) {
+    const userTransforms = [
+      { fieldPath: "heartbeats", increment: { integerValue: "1" } },
+      { fieldPath: "updated", setToServerValue: "REQUEST_TIME" },
+      { fieldPath: "lastSeen", setToServerValue: "REQUEST_TIME" },
+    ];
+    if (opts.firstUserDay) {
+      userTransforms.push({ fieldPath: "daysActive", increment: { integerValue: "1" } });
+    }
+    const userCreate = {
+      label: { stringValue: opts.label },
+      heartbeats: { integerValue: "1" },
+      daysActive: { integerValue: "1" },
+      lastSeen: { timestampValue: now.toISOString() },
+      updated: { timestampValue: now.toISOString() },
+    };
+    await firestoreCommitOrCreate(
+      env,
+      token,
+      project,
+      "presence_user_totals",
+      opts.uidHash,
+      userTransforms,
+      userCreate
+    );
+
+    // Keep label fresh when username changes (best-effort patch).
+    const patchUrl = `https://firestore.googleapis.com/v1/projects/${project}/databases/(default)/documents/presence_user_totals/${opts.uidHash}?updateMask.fieldPaths=label`;
+    await fetch(patchUrl, {
+      method: "PATCH",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ fields: { label: { stringValue: opts.label } } }),
+    }).catch(() => {});
+  }
+}
+
+async function handlePresencePing(request, env, ctx) {
+  let body;
+  try {
+    body = await request.json();
+  } catch (_) {
+    return json({ ok: false, error: "invalid_json" }, 400);
+  }
+
+  const sessionId = String((body && body.sessionId) || "")
+    .trim()
+    .slice(0, MAX_SESSION_ID_LEN)
+    .replace(/[^a-zA-Z0-9_-]/g, "");
+  if (!sessionId || sessionId.length < 8) {
+    return json({ ok: false, error: "invalid_session" }, 400);
+  }
+
+  const uid = String((body && body.uid) || "")
+    .trim()
+    .slice(0, MAX_UID_LEN)
+    .replace(/[^a-zA-Z0-9]/g, "");
+  const anonymous = !!(body && body.anonymous);
+  const displayName = sanitizeDisplayName(body && body.displayName);
+
+  const ip = clientIp(request);
+  const rate = await rateLimitOk(ip, ctx, {
+    max: PRESENCE_RATE_LIMIT_MAX,
+    windowSec: PRESENCE_RATE_LIMIT_WINDOW_SEC,
+    prefix: "presence",
+  });
+  if (!rate.ok) {
+    return json(
+      {
+        ok: false,
+        error: "rate_limited",
+        limit: rate.limit,
+        windowSec: PRESENCE_RATE_LIMIT_WINDOW_SEC,
+      },
+      429
+    );
+  }
+
+  const now = new Date();
+  const day = utcDateId(now);
+  const month = day.slice(0, 7);
+  const hour = String(now.getUTCHours()).padStart(2, "0");
+  const ipHash = (await sha256Hex(ip)).slice(0, 16);
+  const visitorKey = uid ? `u:${uid}` : `s:${sessionId}:${ipHash}`;
+
+  const firstDay = await edgeFirstSeen(
+    `day/${day}/${encodeURIComponent(visitorKey)}`,
+    secondsUntilNextUtcDay(now) + 3600,
+    ctx
+  );
+  const firstHour = await edgeFirstSeen(
+    `hour/${day}-${hour}/${encodeURIComponent(visitorKey)}`,
+    secondsUntilNextUtcHour(now) + 600,
+    ctx
+  );
+  const firstMonth = await edgeFirstSeen(
+    `month/${month}/${encodeURIComponent(visitorKey)}`,
+    secondsUntilNextUtcMonth(now) + 86400,
+    ctx
+  );
+
+  let uidHash = "";
+  let firstSignedInDay = false;
+  let firstUserDay = false;
+  let label = "";
+  if (uid && !anonymous) {
+    uidHash = (await sha256Hex(`presence-user:${uid}`)).slice(0, 40);
+    label = displayName || "Signed-in user";
+    firstSignedInDay = await edgeFirstSeen(
+      `signed/${day}/${uidHash}`,
+      secondsUntilNextUtcDay(now) + 3600,
+      ctx
+    );
+    firstUserDay = await edgeFirstSeen(
+      `userday/${day}/${uidHash}`,
+      secondsUntilNextUtcDay(now) + 3600,
+      ctx
+    );
+  }
+
+  try {
+    if (hasFirebaseAdmin(env)) {
+      await firestoreRecordPresence(env, {
+        now,
+        firstDay,
+        firstHour,
+        firstMonth,
+        firstSignedInDay,
+        firstUserDay,
+        uidHash: uidHash || "",
+        label,
+      });
+      return json({
+        ok: true,
+        via: "firestore",
+        day,
+        firstDay,
+        firstHour,
+        rate: { count: rate.count, limit: rate.limit },
+      });
+    }
+    return json({
+      ok: true,
+      via: "edge",
+      day,
+      firstDay,
+      firstHour,
+      warning: "Firebase admin secrets not configured; presence not persisted.",
+      rate: { count: rate.count, limit: rate.limit },
+    });
+  } catch (err) {
+    console.error("presence_ping_failed", err);
     return json({ ok: false, error: "internal_error" }, 500);
   }
 }
