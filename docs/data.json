@@ -222,19 +222,22 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-07T02:23:29Z",
-    "checked_at_display": "2026-08-07 02:23 UTC",
+    "checked_at": "2026-08-07T07:05:45Z",
+    "checked_at_display": "2026-08-07 07:05 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 5,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://j16ab7ri.darkroom-lang.org",
+      "https://447fl1g9.darkroom-lang.org",
+      "https://soqh41gy.darkroom-lang.org",
+      "https://zxgzmbkfogafegoaenus.supabase.co/storage/v1/object/public/test/PETEZAH/main.svg",
+      "https://mouse.shitteacher.com"
+    ]
   },
   "failing_links": {
-    "https://j16ab7ri.darkroom-lang.org": 2,
-    "https://447fl1g9.darkroom-lang.org": 2,
-    "https://soqh41gy.darkroom-lang.org": 2,
-    "https://mouse.shitteacher.com": 2,
-    "https://zxgzmbkfogafegoaenus.supabase.co/storage/v1/object/public/test/PETEZAH/main.svg": 2
+    "https://mason.zapier.app": 1,
+    "https://cdn.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg": 1
   },
   "links": [
     {
@@ -9556,69 +9559,6 @@
       ],
       "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
       "locked": "",
-      "link": "https://j16ab7ri.darkroom-lang.org/",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
-      "locked": "",
-      "link": "https://447fl1g9.darkroom-lang.org/",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
-      "locked": "",
-      "link": "https://soqh41gy.darkroom-lang.org/",
-      "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
-      "locked": "",
       "link": "https://edu.50friends.com.mx/",
       "found": "4/18/2026",
       "username": "N/A",
@@ -12131,26 +12071,6 @@
       ],
       "additional_notes": "PetZah does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
       "locked": "",
-      "link": "https://zxgzmbkfogafegoaenus.supabase.co/storage/v1/object/public/test/PETEZAH/main.svg",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍕 PeteZah",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "PetZah does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
       "link": "https://cdn.jsdelivr.net/gh/Eraclio28/PeteZahStaticDone@main/new.svg",
       "found": "5/1/2026",
       "username": "N/A",
@@ -12757,26 +12677,6 @@
       "locked": "",
       "link": "https://s3.amazonaws.com/elliotslinks-tnjavxyp/quiz10430/index.html",
       "found": "4/21/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "😈 Imp Proxy",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "Imp Proxy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
-      "link": "https://mouse.shitteacher.com/",
-      "found": "3/25/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",
