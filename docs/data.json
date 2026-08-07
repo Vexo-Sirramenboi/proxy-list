@@ -222,19 +222,19 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-06T23:53:46Z",
-    "checked_at_display": "2026-08-06 23:53 UTC",
+    "checked_at": "2026-08-07T02:23:29Z",
+    "checked_at_display": "2026-08-07 02:23 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
   "failing_links": {
-    "https://j16ab7ri.darkroom-lang.org": 1,
-    "https://447fl1g9.darkroom-lang.org": 1,
-    "https://soqh41gy.darkroom-lang.org": 1,
-    "https://mouse.shitteacher.com": 1,
-    "https://zxgzmbkfogafegoaenus.supabase.co/storage/v1/object/public/test/PETEZAH/main.svg": 1
+    "https://j16ab7ri.darkroom-lang.org": 2,
+    "https://447fl1g9.darkroom-lang.org": 2,
+    "https://soqh41gy.darkroom-lang.org": 2,
+    "https://mouse.shitteacher.com": 2,
+    "https://zxgzmbkfogafegoaenus.supabase.co/storage/v1/object/public/test/PETEZAH/main.svg": 2
   },
   "links": [
     {
