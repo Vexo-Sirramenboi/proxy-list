@@ -1,8 +1,5 @@
 # proxy-list
-This is a complete list of lots of well known and probably working proxies. Check Releases for new versions of the list.
-
-# Slowing Down Development
-Development of the Proxy List will be slowed down as this tool won't be needed as much by users over the next few months. I am doing this to prioritize releasing ReBlock v2.0 for both macOS and Windows. If you have an active pull request/issue/Google Forms submission, it will likely not be implemented for a while. View the [ReBlock GitHub repo here](https://github.com/yourworstnightmare1/reblock).
+The Proxy List is the best place to find unblocked links of all your favorite proxy and game sites. New links are added weekly with hundreds of links available.
 
 # Share the list
 Feel free to download the list and share it around! The list is also available at https://yourworstnightmare1.github.io/proxy-list/.
