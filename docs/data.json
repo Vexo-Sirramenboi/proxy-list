@@ -222,22 +222,24 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-07T07:05:45Z",
-    "checked_at_display": "2026-08-07 07:05 UTC",
+    "checked_at": "2026-08-07T12:50:32Z",
+    "checked_at_display": "2026-08-07 12:50 UTC",
     "added_count": 0,
-    "removed_count": 5,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://j16ab7ri.darkroom-lang.org",
-      "https://447fl1g9.darkroom-lang.org",
-      "https://soqh41gy.darkroom-lang.org",
-      "https://zxgzmbkfogafegoaenus.supabase.co/storage/v1/object/public/test/PETEZAH/main.svg",
-      "https://mouse.shitteacher.com"
-    ]
+    "removed_links": []
   },
   "failing_links": {
-    "https://mason.zapier.app": 1,
-    "https://cdn.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg": 1
+    "http://awesome.bacon447.messwithdns.com.": 1,
+    "http://zodiaccccc.bacon447.messwithdns.com.": 1,
+    "http://letsenslaveeveryone.bacon447.messwithdns.com.": 1,
+    "http://tundranetworkontopyo.bacon447.messwithdns.com.": 1,
+    "http://frozensubgsiteaura.bacon447.messwithdns.com.": 1,
+    "http://15isoldenough.bacon447.messwithdns.com.": 1,
+    "https://haha.frozen-zodiac.dedyn.io": 1,
+    "https://tundra-network-ontop.publicvm.com": 1,
+    "https://zod.frozen-zodiac.dedyn.io": 1,
+    "https://quartz.ember.moldeo.org": 1
   },
   "links": [
     {
