@@ -1398,36 +1398,6 @@ Added user statistics where you can see most active times, active users over tim
 | | https://beforewepickedupdurk.maxmir-energy.ru/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://pickupdurk.maxmir-energy.ru/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
-# ⬡ TGLSC Density 4
-> [!NOTE]
-> | Category | Capabilities | Protocol(s) | Links |
-> | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, baremux, baremod, grammaray | Scramjet, Ultraviolet | 18 |
-
-> [!IMPORTANT]
-> the proxy doesnt work sometimes, idk why
-
-| Locked | Link | Found Date | Username | Password | Contributor |
-| - | - | - | - | - | - |
-| | https://tglsceducation.nanobit.org/ | 3/28/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://science.rules.sgigestion.com/ | 3/28/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://aerospace.solarorbit.webs.vc/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://experiments.nasa.casadotricolor.com.br/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://ixl.host.safe.delystigemusikanter.com/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://science.rules.aayushbhandari.com.np/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://tisd-student-portal.aayushbhandari.com.np/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://tisd-lunch-department.kelownaembroidery.ca | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://glseries.net | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://eladesceelasobe.lervs.ro | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://anythingbutwork.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://dontlust.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://historyislife.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://ineedtolarpnow.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://scienceiskey.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://thestudyhelps.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://twistedgocrazy26.wikidelia.net | 5/6/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
-| | https://v4.glseries.net | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-
 # ♈ Zodiac
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
@@ -3116,7 +3086,7 @@ Added user statistics where you can see most active times, active users over tim
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 26 |
+> | Proxy/Games | unknown | unknown | 25 |
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -3141,7 +3111,6 @@ Added user statistics where you can see most active times, active users over tim
 | | https://html.cafe/xd9c46054 | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://2760150.playcode.site/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://4jzectooxtpdhjllj7zwm5bln.c2tnc2glllc7j0nxmvxtb4334.deno.net/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://tinyurl.com/38cbxh4t | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://f88xf1or4blxd767iq6p4tro9.web.app/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://f88xf1or4blxd767iq6p4tro9.firebaseapp.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://codewith.it/p/7P5slc | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
