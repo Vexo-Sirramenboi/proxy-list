@@ -222,37 +222,41 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-08T01:08:58Z",
-    "checked_at_display": "2026-08-08 01:08 UTC",
+    "checked_at": "2026-08-08T06:41:32Z",
+    "checked_at_display": "2026-08-08 06:41 UTC",
     "added_count": 0,
-    "removed_count": 10,
+    "removed_count": 5,
     "added_links": [],
     "removed_links": [
-      "http://awesome.bacon447.messwithdns.com.",
-      "http://zodiaccccc.bacon447.messwithdns.com.",
-      "http://letsenslaveeveryone.bacon447.messwithdns.com.",
-      "http://tundranetworkontopyo.bacon447.messwithdns.com.",
-      "http://frozensubgsiteaura.bacon447.messwithdns.com.",
-      "http://15isoldenough.bacon447.messwithdns.com.",
-      "https://haha.frozen-zodiac.dedyn.io",
-      "https://tundra-network-ontop.publicvm.com",
-      "https://zod.frozen-zodiac.dedyn.io",
-      "https://quartz.ember.moldeo.org"
+      "https://outerspace.boiso.ar",
+      "https://g305-1.karjase.ee",
+      "https://g305-2.karjase.ee",
+      "https://g305-3.karjase.ee",
+      "https://g305-4.karjase.ee"
     ]
   },
   "failing_links": {
-    "https://g305-1.karjase.ee": 2,
-    "https://g305-2.karjase.ee": 2,
-    "https://g305-3.karjase.ee": 2,
-    "https://g305-4.karjase.ee": 2,
-    "https://outerspace.boiso.ar": 2,
-    "https://outerspace.arrowbases.com": 2,
-    "https://outerspace.realisation.org": 2,
-    "https://outerspace.tomashirsch.cl": 2,
-    "https://daydreaming.arrowbases.com": 2,
-    "https://daydreaming.boiso.ar": 2,
-    "https://daydreaming.realisation.org": 2,
-    "https://daydreaming.tomashirsch.cl": 2
+    "https://tglsceducation.nanobit.org": 1,
+    "https://science.rules.sgigestion.com": 1,
+    "https://aerospace.solarorbit.webs.vc": 1,
+    "https://experiments.nasa.casadotricolor.com.br": 1,
+    "https://ixl.host.safe.delystigemusikanter.com": 1,
+    "https://science.rules.aayushbhandari.com.np": 1,
+    "https://tisd-student-portal.aayushbhandari.com.np": 1,
+    "https://eladesceelasobe.lervs.ro": 1,
+    "https://tisd-lunch-department.kelownaembroidery.ca": 1,
+    "https://glseries.net": 1,
+    "https://anythingbutwork.wikidelia.net": 1,
+    "https://dontlust.wikidelia.net": 1,
+    "https://historyislife.wikidelia.net": 1,
+    "https://ineedtolarpnow.wikidelia.net": 1,
+    "https://scienceiskey.wikidelia.net": 1,
+    "https://thestudyhelps.wikidelia.net": 1,
+    "https://twistedgocrazy26.wikidelia.net": 1,
+    "https://v4.glseries.net": 1,
+    "https://teamtomlin.com/index": 1,
+    "https://tinyurl.com/38cbxh4t": 1,
+    "https://cdn.jsdmirror.com/npm/ubzone@1.0.0/assets/index.svg": 1
   },
   "links": [
     {
@@ -4015,31 +4019,6 @@
       ],
       "additional_notes": "this proxy seems to be very slow on some links. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.",
       "locked": "",
-      "link": "https://outerspace.boiso.ar",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⭐ DayDream X",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp, captcha, reflux",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp",
-        "captcha",
-        "reflux"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "this proxy seems to be very slow on some links. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.",
-      "locked": "",
       "link": "https://extralearning.okilbahadurpun.com.np/",
       "found": "4/30/2026",
       "username": "N/A",
@@ -4371,106 +4350,6 @@
       "password": "N/A",
       "contributor": "1NobleCyber",
       "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "⭐ DayDream X",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp, captcha, reflux",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp",
-        "captcha",
-        "reflux"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "this proxy seems to be very slow on some links. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.",
-      "locked": "",
-      "link": "https://daydreaming.arrowbases.com",
-      "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⭐ DayDream X",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp, captcha, reflux",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp",
-        "captcha",
-        "reflux"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "this proxy seems to be very slow on some links. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.",
-      "locked": "",
-      "link": "https://daydreaming.boiso.ar",
-      "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⭐ DayDream X",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp, captcha, reflux",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp",
-        "captcha",
-        "reflux"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "this proxy seems to be very slow on some links. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.",
-      "locked": "",
-      "link": "https://daydreaming.realisation.org",
-      "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⭐ DayDream X",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp, captcha, reflux",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp",
-        "captcha",
-        "reflux"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "this proxy seems to be very slow on some links. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.",
-      "locked": "",
-      "link": "https://daydreaming.tomashirsch.cl",
-      "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
       "provider": "🚀 Nebulo",
@@ -5271,75 +5150,6 @@
       "additional_notes": "some space links have a similar problem like daydream where it will be very slow for some reason. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.",
       "locked": "",
       "link": "https://math-lessons-space-17244170.codehs.me/index.html",
-      "found": "7/10/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌑 Space",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "some space links have a similar problem like daydream where it will be very slow for some reason. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.",
-      "locked": "",
-      "link": "https://outerspace.arrowbases.com",
-      "found": "7/10/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌑 Space",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "some space links have a similar problem like daydream where it will be very slow for some reason. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.",
-      "locked": "",
-      "link": "https://outerspace.realisation.org",
-      "found": "7/10/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌑 Space",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "some space links have a similar problem like daydream where it will be very slow for some reason. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.",
-      "locked": "",
-      "link": "https://outerspace.tomashirsch.cl",
       "found": "7/10/2026",
       "username": "N/A",
       "password": "N/A",
@@ -12692,86 +12502,6 @@
       "locked": "",
       "link": "https://s3.amazonaws.com/elliotslinks-tnjavxyp/quiz10430/index.html",
       "found": "4/21/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "😈 Imp Proxy",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "Imp Proxy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
-      "link": "https://g305-1.karjase.ee",
-      "found": "3/26/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "😈 Imp Proxy",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "Imp Proxy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
-      "link": "https://g305-2.karjase.ee",
-      "found": "3/26/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "😈 Imp Proxy",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "Imp Proxy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
-      "link": "https://g305-3.karjase.ee",
-      "found": "3/26/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "😈 Imp Proxy",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [
-        "unknown"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "Imp Proxy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
-      "link": "https://g305-4.karjase.ee",
-      "found": "3/26/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",
