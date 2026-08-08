@@ -1444,7 +1444,7 @@ Added user statistics where you can see most active times, active users over tim
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | wisp | N/A | 11 |
+> | Proxy/Games | wisp | N/A | 2 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
@@ -1453,15 +1453,6 @@ Added user statistics where you can see most active times, active users over tim
 | - | - | - | - | - | - |
 | | https://sites.google.com/view/psycholigy/home | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdelivr.net/gh/darkdragonzxs/zd-pages@latest/svg.svg | 4/21/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | http://awesome.bacon447.messwithdns.com./ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | http://zodiaccccc.bacon447.messwithdns.com./ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | http://letsenslaveeveryone.bacon447.messwithdns.com./ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | http://tundranetworkontopyo.bacon447.messwithdns.com./ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | http://frozensubgsiteaura.bacon447.messwithdns.com./ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | http://15isoldenough.bacon447.messwithdns.com./ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://haha.frozen-zodiac.dedyn.io/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://tundra-network-ontop.publicvm.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://zod.frozen-zodiac.dedyn.io/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 📖 StudyHub
 > [!NOTE]
@@ -4802,7 +4793,7 @@ Added user statistics where you can see most active times, active users over tim
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | Unknown | Scramjet, Ultraviolet, Tor | 15 |
+> | Proxy/Games | Unknown | Scramjet, Ultraviolet, Tor | 14 |
 > [!IMPORTANT]
 > site has fake nasa popup, wait a few seconds and it should disappear
 >
@@ -4814,7 +4805,6 @@ Added user statistics where you can see most active times, active users over tim
 | | https://api.15-204-116-29.my.local-ip.co/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://c00lkiddtech.15-204-116-29.my.local-ip.co/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://river.wave.bhimupadhyaya.com.np/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://quartz.ember.moldeo.org/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://sky.haze.bumon.ar/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://grove.cloud.suliaotongwang.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://miniworthysdrp.learningatschool.website/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
