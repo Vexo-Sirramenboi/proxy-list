@@ -1,11 +1,8 @@
 {
-  "checked_at": "2026-08-09T06:45:04Z",
-  "checked_at_display": "2026-08-09 06:45 UTC",
+  "checked_at": "2026-08-09T12:38:26Z",
+  "checked_at_display": "2026-08-09 12:38 UTC",
   "added_count": 0,
-  "removed_count": 2,
+  "removed_count": 0,
   "added_links": [],
-  "removed_links": [
-    "https://fastgeo.egevad.se",
-    "https://fastbio.egevad.se"
-  ]
+  "removed_links": []
 }
