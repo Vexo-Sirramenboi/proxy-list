@@ -2104,6 +2104,9 @@
             <p style="margin-top:0.45rem;">
               <button class="btn" id="settingsHideUncheckedBtn" type="button">Hide unchecked links: Off</button>
             </p>
+            <p class="settings-desc" style="margin-top:0.35rem;">
+              When browsing, hides URLs with no filter check yet. Searches and provider checkboxes still show them (including new submissions).
+            </p>
             <p class="filter-powered-by">Powered by <span class="filter-powered-by-credit">gn-math discord bot</span></p>
           </div>
           <div class="settings-field">
@@ -6034,14 +6037,17 @@
         capTags: selectedCaps(),
       };
       const mode = capMode();
+      // Keep hide-unchecked for browsing, but never hide matches when the user is
+      // searching or has pinned specific providers (new submissions are unchecked).
+      const applyHideUnchecked =
+        hideLinksWithoutLensCheck &&
+        linkLensHydrated &&
+        !q &&
+        !selections.providerTags.length;
       return rows.filter((row) => {
         if (q && !haystack(row).includes(q)) return false;
         if (hideBlockedBySelectedFilter && isBlockedBySelectedFilter(row.link)) return false;
-        if (
-          hideLinksWithoutLensCheck &&
-          linkLensHydrated &&
-          !linkHasParsableLensCheck(row.link)
-        ) {
+        if (applyHideUnchecked && !linkHasParsableLensCheck(row.link)) {
           return false;
         }
         for (const group of ["providerTags", "categoryTags", "protocolTags", "capTags"]) {
