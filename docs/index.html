@@ -4982,14 +4982,16 @@
     function selectableFacetTags(arr) {
       return uniq(arr).filter((v) => {
         const s = String(v || "").trim().toLowerCase();
-        return s && s !== "-" && s !== "—" && s !== "–" && s !== "n/a";
+        return s && s !== "-" && s !== "—" && s !== "–" && s !== "n/a" && s !== "pending" && s !== "unknown";
       });
     }
 
     function haystack(row) {
+      const provider = String(row.provider || "");
       return [
         row.link,
-        row.provider,
+        provider,
+        providerSuggestLabel(provider),
         canonicalCategory(row.category),
         row.capabilities,
         row.protocols,
@@ -7618,7 +7620,11 @@
         escapeAttr(EMPTY_STATE_ICON_URL) +
         '" width="120" height="120" alt="" decoding="async" />' +
         '<h2 class="empty-state-title">No results found</h2>' +
-        '<p class="empty-state-desc">What you&#39;re searching may not exist, you likely have too many sort filters selected, or all links for your system&#39;s web filter are blocked.</p>' +
+        '<p class="empty-state-desc">' +
+        (hideLinksWithoutLensCheck
+          ? "Hide unchecked links is on, so new or unchecked URLs (including fresh submissions) are hidden. Turn it off or reset filters."
+          : "What you&#39;re searching may not exist, too many sort filters may be selected (including saved protocol/capability filters), or blocked links may be hidden.") +
+        "</p>" +
         '<button type="button" class="btn btn-primary empty-state-reset-btn">Reset filters</button>'
       );
     }

@@ -4842,9 +4842,9 @@ Added user statistics where you can see most active times, active users over tim
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 1 |
+> | Games | N/A | N/A | 1 |
 > [!IMPORTANT]
-> This section has not been categorized or checked for protocol(s) and capabilities. Submitter note: mainly games.
+> This section has not been fully categorized or checked for protocol(s) and capabilities. Submitter note: mainly games.
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
@@ -4854,9 +4854,9 @@ Added user statistics where you can see most active times, active users over tim
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | pending | pending | pending | 1 |
+> | Proxy/Games | N/A | N/A | 1 |
 > [!IMPORTANT]
-> This section has not been categorized or checked for protocol(s) and capabilities.
+> This section has not been fully categorized or checked for protocol(s) and capabilities.
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |

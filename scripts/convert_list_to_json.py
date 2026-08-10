@@ -55,7 +55,7 @@ def split_list_field(s: str) -> list[str]:
     out: list[str] = []
     for part in s.split(","):
         tag = part.strip().lower()
-        if not tag or tag in {"-", "—", "–", "n/a"}:
+        if not tag or tag in {"-", "—", "–", "n/a", "pending", "unknown"}:
             continue
         out.append(tag)
     return out
