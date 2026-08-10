@@ -2,7 +2,7 @@
 > [!NOTE]
 > v6.1 | Released: August 05, 2026
 > r263 | Last Updated: August 09, 2026
-> Total onsite links: 4471 (4129 sorted + 342 unsorted)\
+> Total onsite links: 4376 (4034 sorted + 342 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
 Welcome to the official Proxy List! This has a running list of hundreds of unblocked websites and games that anyone is free to use. We have the most popular and reliable sites here, so you'll never run out!
@@ -4837,3 +4837,27 @@ Added user statistics where you can see most active times, active users over tim
 | | https://software.bsfa.info/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://software.cnstefancelmare.ro/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://software.sundby.com/ | 8/5/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
+
+# ⚡ PGIS 3
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | pending | pending | pending | 1 |
+> [!IMPORTANT]
+> This section has not been categorized or checked for protocol(s) and capabilities. Submitter note: mainly games.
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+| | https://pgis3.vercel.app | 8/9/2026 | N/A | N/A | [0800](https://github.com/0800WebDev)
+
+# 🪨 Zinc
+> [!NOTE]
+> | Category | Capabilities | Protocol(s) | Links |
+> | - | - | - | - |
+> | pending | pending | pending | 1 |
+> [!IMPORTANT]
+> This section has not been categorized or checked for protocol(s) and capabilities.
+
+| Locked | Link | Found Date | Username | Password | Contributor |
+| - | - | - | - | - | - |
+| | https://zinc-browser.vercel.app/ | 8/9/2026 | N/A | N/A | [0800](https://github.com/0800WebDev)

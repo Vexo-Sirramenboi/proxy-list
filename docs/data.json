@@ -75705,6 +75705,46 @@
       "password": "N/A",
       "contributor": "yourworstnightmare1",
       "contributor_url": "https://github.com/yourworstnightmare1"
+    },
+    {
+      "provider": "⚡ PGIS 3",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://pgis3.vercel.app",
+      "found": "8/9/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "0800",
+      "contributor_url": "https://github.com/0800WebDev"
+    },
+    {
+      "provider": "🪨 Zinc",
+      "category": "pending",
+      "capabilities": "pending",
+      "capability_tags": [
+        "pending"
+      ],
+      "protocols": "pending",
+      "protocol_tags": [
+        "pending"
+      ],
+      "additional_notes": "",
+      "locked": "",
+      "link": "https://zinc-browser.vercel.app/",
+      "found": "8/9/2026",
+      "username": "N/A",
+      "password": "N/A",
+      "contributor": "0800",
+      "contributor_url": "https://github.com/0800WebDev"
     }
   ]
 }
