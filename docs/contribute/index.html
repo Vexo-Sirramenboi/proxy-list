@@ -230,6 +230,84 @@
       font-size: 0.86rem;
     }
     .provider-mode label { display: inline-flex; align-items: center; gap: 0.35rem; margin: 0; color: var(--text); }
+    .url-chip-list {
+      display: contents;
+    }
+    .url-chip-box {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.4rem;
+      min-height: 2.55rem;
+      width: 100%;
+      font: inherit;
+      font-size: 0.88rem;
+      background: #141414;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.35rem 0.45rem;
+      cursor: text;
+    }
+    .url-chip-box:focus-within {
+      border-color: var(--accent);
+      outline: none;
+    }
+    .url-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      max-width: 100%;
+      border: 1px solid #2d5588;
+      background: #1a2838;
+      color: #9fd4ff;
+      border-radius: 6px;
+      padding: 0.2rem 0.35rem 0.2rem 0.5rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      line-height: 1.25;
+      cursor: pointer;
+    }
+    .url-chip:hover,
+    .url-chip:focus {
+      border-color: #4a8fd4;
+      background: #203448;
+      outline: none;
+    }
+    .url-chip-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: min(22rem, 70vw);
+    }
+    .url-chip-remove {
+      flex-shrink: 0;
+      border: 0;
+      background: transparent;
+      color: #9fd4ff;
+      cursor: pointer;
+      font: inherit;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0 0.15rem;
+      border-radius: 4px;
+    }
+    .url-chip-remove:hover {
+      background: #243447;
+      color: #fff;
+    }
+    .url-chip-input {
+      flex: 1 1 10rem;
+      min-width: 8rem;
+      border: 0 !important;
+      background: transparent !important;
+      color: var(--text);
+      font: inherit;
+      font-size: 0.88rem;
+      padding: 0.25rem 0.2rem !important;
+      outline: none;
+      box-shadow: none;
+    }
     .submit-status {
       margin-top: 0.75rem;
       font-size: 0.86rem;
@@ -306,8 +384,8 @@
     </div>
 
     <section class="card submit-card" aria-labelledby="submitHeading">
-      <h2 id="submitHeading">Submit a link for review</h2>
-      <p class="muted">Submit a working proxy URL under an existing provider or propose a new one. Duplicate URLs (including ones already on the list) are rejected. We compare full URLs, not whole domains, so multiple proxies on the same domain with different paths or subdomains are allowed.</p>
+      <h2 id="submitHeading">Submit links for review</h2>
+      <p class="muted">Submit one or more working proxy URLs under an existing provider or propose a new one. Duplicate URLs (including ones already on the list) are rejected. We compare full URLs, not whole domains, so multiple proxies on the same domain with different paths or subdomains are allowed.</p>
       <div id="submitSignInPrompt" class="signin-prompt muted">
         <a href="../login/?next=../contribute/">Sign in</a> with GitHub, Google, or email to submit links.
       </div>
@@ -315,13 +393,19 @@
       <div id="submitBannedNotice" class="submit-status err" hidden></div>
       <div id="submitStatus" class="submit-status" hidden role="status"></div>
       <form id="linkSubmitForm" class="submit-form" hidden>
-        <label for="submitUrl">Proxy URL</label>
-        <input id="submitUrl" name="url" type="url" inputmode="url" autocomplete="off" placeholder="https://example.com/path" required />
-        <label for="submitContributorName">Your name (for list credit)</label>
-        <input id="submitContributorName" name="contributorName" type="text" maxlength="120" autocomplete="name" placeholder="Display name or alias" required />
-        <label for="submitGithubUrl">GitHub profile URL</label>
-        <input id="submitGithubUrl" name="githubUrl" type="url" inputmode="url" maxlength="200" autocomplete="url" placeholder="https://github.com/yourusername" required />
-        <p class="muted" style="font-size:0.8rem;margin:-0.15rem 0 0.35rem">Required so approved links credit you on the list (not Anonymous Contributor).</p>
+        <label for="submitUrlInput">Proxy URLs</label>
+        <p class="muted" style="font-size:0.8rem;margin:0 0 0.35rem">
+          Type a URL and press Space or Enter to add it as a chip. Click a chip to edit it, or × to remove. Paste several at once if you want.
+        </p>
+        <div id="submitUrlChipBox" class="url-chip-box" aria-label="Proxy URL list">
+          <div id="submitUrlChips" class="url-chip-list" aria-live="polite"></div>
+          <input id="submitUrlInput" name="urlDraft" type="text" inputmode="url" autocomplete="off" placeholder="https://example.com/path" />
+        </div>
+        <label for="submitContributorName">Your name (for list credit) <strong>It is strongly recommended you don't use your real name to protect your privacy.</strong></label>
+        <input id="submitContributorName" name="contributorName" type="text" maxlength="120" autocomplete="nickname" placeholder="Display name or alias" required />
+        <label for="submitGithubUrl">GitHub profile URL <span class="muted">(optional)</span></label>
+        <input id="submitGithubUrl" name="githubUrl" type="url" inputmode="url" maxlength="200" autocomplete="url" placeholder="https://github.com/yourusername" />
+        <p class="muted" style="font-size:0.8rem;margin:-0.15rem 0 0.35rem">Optional — must be a real https://github.com/username profile (we check that the account exists). Repo or other GitHub URLs are rejected.</p>
         <fieldset style="border:0;margin:0;padding:0;">
           <legend class="muted" style="font-size:0.82rem;margin-bottom:0.25rem;">Provider</legend>
           <div class="provider-mode">

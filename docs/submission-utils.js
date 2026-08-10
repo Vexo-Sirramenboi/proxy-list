@@ -85,8 +85,9 @@
       var u = new URL(raw.indexOf("://") === -1 ? "https://" + raw : raw);
       var host = u.hostname.toLowerCase();
       if (host !== "github.com" && host !== "www.github.com") return "";
+      // Profile URLs only: https://github.com/{username} (optional trailing slash)
       var parts = u.pathname.split("/").filter(Boolean);
-      if (!parts.length) return "";
+      if (parts.length !== 1) return "";
       var login = String(parts[0]).replace(/^@/, "").trim();
       if (!/^[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,37}[a-zA-Z0-9])?$/.test(login)) return "";
       return login;
@@ -99,6 +100,35 @@
     var gh = String(login || "").trim().replace(/^@/, "");
     if (!githubLoginFromProfileUrl("https://github.com/" + gh)) return "";
     return "https://github.com/" + gh;
+  }
+
+  /** Check that a GitHub username exists via the public Users API. */
+  function verifyGithubAccountExists(login) {
+    var gh = String(login || "").trim().replace(/^@/, "");
+    if (!gh || !githubLoginFromProfileUrl("https://github.com/" + gh)) {
+      return Promise.resolve({ ok: false, reason: "invalid" });
+    }
+    return fetch("https://api.github.com/users/" + encodeURIComponent(gh), {
+      method: "GET",
+      headers: {
+        Accept: "application/vnd.github+json",
+      },
+    })
+      .then(function (res) {
+        if (res.status === 404) return { ok: false, reason: "not_found" };
+        if (res.status === 403) return { ok: false, reason: "rate_limited" };
+        if (!res.ok) return { ok: false, reason: "http" };
+        return res.json().then(function (data) {
+          var actual = data && data.login ? String(data.login) : gh;
+          if (!githubLoginFromProfileUrl("https://github.com/" + actual)) {
+            return { ok: false, reason: "invalid" };
+          }
+          return { ok: true, login: actual };
+        });
+      })
+      .catch(function () {
+        return { ok: false, reason: "network" };
+      });
   }
 
   function contributorMdFromFields(name, githubLoginOrUrl) {
@@ -158,15 +188,19 @@
     return "| | " + url + " | N/A | N/A | N/A | " + contributorMd;
   }
 
-  function rateLimitOk(stats) {
-    if (!stats || !stats.lastSubmissionAt) return true;
+  function remainingRateSlots(stats) {
+    if (!stats || !stats.lastSubmissionAt) return RATE_LIMIT_PER_HOUR;
     var ts = stats.lastSubmissionAt;
     var ms = typeof ts.toMillis === "function" ? ts.toMillis() : typeof ts.seconds === "number" ? ts.seconds * 1000 : 0;
-    if (!ms) return true;
+    if (!ms) return RATE_LIMIT_PER_HOUR;
     var hourAgo = Date.now() - 60 * 60 * 1000;
+    if (ms < hourAgo) return RATE_LIMIT_PER_HOUR;
     var recent = Number(stats.recentHourCount) || 0;
-    if (ms < hourAgo) return true;
-    return recent < RATE_LIMIT_PER_HOUR;
+    return Math.max(0, RATE_LIMIT_PER_HOUR - recent);
+  }
+
+  function rateLimitOk(stats) {
+    return remainingRateSlots(stats) > 0;
   }
 
   function sha256Hex(text) {
@@ -198,12 +232,14 @@
     githubLoginFromUser: githubLoginFromUser,
     githubLoginFromProfileUrl: githubLoginFromProfileUrl,
     githubProfileUrlFromLogin: githubProfileUrlFromLogin,
+    verifyGithubAccountExists: verifyGithubAccountExists,
     contributorMdFromFields: contributorMdFromFields,
     isSignedInNonAnonymous: isSignedInNonAnonymous,
     isSubmissionAdminUser: isSubmissionAdminUser,
     submitterLabelFromUser: submitterLabelFromUser,
     contributorMdFromUser: contributorMdFromUser,
     formatListMdRow: formatListMdRow,
+    remainingRateSlots: remainingRateSlots,
     rateLimitOk: rateLimitOk,
     sha256Hex: sha256Hex,
   };

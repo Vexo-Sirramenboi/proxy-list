@@ -2,6 +2,12 @@
   "_note": "Archived site update notices. Regenerate history with: python3 scripts/build_update_changelog.py",
   "entries": [
     {
+      "version": "v6.2",
+      "revision": "r264",
+      "released": "August 10, 2026",
+      "update_notice": "- Users can now submit multiple links instead of having to submit one at a time.\n- Added check to GitHub URL when requesting a link to ensure that the URL is a github.com URL and that the account linked actually exists or not.\n- Fixed a bug where links wouldn't appear when they were added from the link request form.\n- Improved moderation tools.\n\nNew links will be added soon and all filter data will also be updated soon to prepare for the influx of users that the list will be seeing in the coming weeks."
+    },
+    {
       "version": "v6.1",
       "revision": "r263",
       "released": "August 09, 2026",

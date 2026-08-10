@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
-> v6.1 | Released: August 05, 2026
-> r263 | Last Updated: August 09, 2026
+> v6.2 | Released: August 10, 2026
+> r264 | Last Updated: August 10, 2026
 > Total onsite links: 4376 (4034 sorted + 342 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -16,7 +16,12 @@ Welcome to the official Proxy List! This has a running list of hundreds of unblo
 ## Important Notices
 
 ## Update Notice
-Added user statistics where you can see most active times, active users over times, top users, and more.
+- Users can now submit multiple links instead of having to submit one at a time.
+- Added check to GitHub URL when requesting a link to ensure that the URL is a github.com URL and that the account linked actually exists or not.
+- Fixed a bug where links wouldn't appear when they were added from the link request form.
+- Improved moderation tools.
+
+New links will be added soon and all filter data will also be updated soon to prepare for the influx of users that the list will be seeing in the coming weeks.
 
 # 💜 Selenite
 > [!NOTE]

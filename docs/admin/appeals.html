@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Admin summary | Proxy list</title>
+  <title>Appeals | Proxy list</title>
   <link rel="icon" type="image/png" href="../favicon.png" />
   <style>
     :root {
@@ -45,106 +45,68 @@
     .notice.err { border-color: #6b2d2d; color: var(--danger); }
     a { color: var(--accent); }
     code { background: #141414; border: 1px solid var(--border); border-radius: 4px; padding: 0.1rem 0.35rem; font-size: 0.82em; }
-    .stat-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-      gap: 0.65rem;
-      margin-top: 0.75rem;
-    }
-    .stat {
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 0.75rem 0.85rem;
-      background: #141414;
-    }
-    .stat .n { font-size: 1.45rem; font-weight: 700; line-height: 1.2; }
-    .stat .l { color: var(--muted); font-size: 0.8rem; margin-top: 0.2rem; }
     .body-cell { white-space: pre-wrap; max-width: 28rem; word-break: break-word; }
-    .status-pill {
-      display: inline-block;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      padding: 0.1rem 0.45rem;
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: lowercase;
-    }
-    .status-pill.approved, .status-pill.done, .status-pill.dismissed { border-color: #2d6b4a; color: var(--ok); }
-    .status-pill.rejected, .status-pill.denied, .status-pill.wontfix { border-color: #6b2d2d; color: var(--danger); }
-    .type-pill {
-      display: inline-block;
-      border: 1px solid #2d5588;
-      background: #1a2838;
-      color: #9fd4ff;
-      border-radius: 999px;
-      padding: 0.1rem 0.45rem;
-      font-size: 0.72rem;
-      font-weight: 700;
-    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Admin summary</h1>
-    <p class="sub">Queue overview and history of reviewed submissions, feedback, reports, and appeals.</p>
+    <h1>Appeals</h1>
+    <p class="sub">Pending suspension appeals, active suspensions, and flagged submitters.</p>
   </header>
   <main>
     <div class="actions">
       <a class="btn" href="../">Back to Proxy List</a>
-      <a class="btn btn-current" href="./">Summary</a>
+      <a class="btn" href="./">Summary</a>
       <a class="btn" href="./submissions.html">Link submissions</a>
       <a class="btn" href="./feedback.html">Feedback</a>
       <a class="btn" href="./folder-reports.html">Folder reports</a>
-      <a class="btn" href="./appeals.html">Appeals</a>
+      <a class="btn btn-current" href="./appeals.html">Appeals</a>
       <button class="btn" type="button" id="refreshBtn">Refresh</button>
       <a class="btn" href="../contribute/">Return to contribute page</a>
     </div>
     <div id="gateNotice" class="notice err" hidden></div>
 
     <section class="card">
-      <h2 style="margin:0;font-size:1.05rem;">Queue</h2>
-      <div class="stat-grid">
-        <div class="stat">
-          <div class="n" id="statLinks">—</div>
-          <div class="l">Pending link submissions</div>
-        </div>
-        <div class="stat">
-          <div class="n" id="statFeedback">—</div>
-          <div class="l">Pending feedback</div>
-        </div>
-        <div class="stat">
-          <div class="n" id="statFolderReports">—</div>
-          <div class="l">Pending folder reports</div>
-        </div>
-        <div class="stat">
-          <div class="n" id="statAppeals">—</div>
-          <div class="l">Pending appeals</div>
-        </div>
-      </div>
-      <div class="actions" style="margin-top:0.85rem;">
-        <a class="btn" href="./submissions.html">Open link submissions</a>
-        <a class="btn" href="./feedback.html">Open feedback</a>
-        <a class="btn" href="./folder-reports.html">Open folder reports</a>
-        <a class="btn" href="./appeals.html">Open appeals</a>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2 style="margin:0 0 0.5rem;font-size:1.05rem;">Review history</h2>
-      <p class="muted" id="historyMeta">Loading…</p>
+      <h2 style="margin:0 0 0.5rem;font-size:1.05rem;">Pending suspension appeals</h2>
+      <p class="muted" id="appealsMeta">Loading…</p>
       <table>
         <thead>
           <tr>
-            <th>When</th>
-            <th>Type</th>
-            <th>Status</th>
-            <th>Summary</th>
             <th>From</th>
+            <th>Appeal</th>
+            <th>Actions</th>
           </tr>
         </thead>
-        <tbody id="historyBody">
-          <tr><td class="muted" colspan="5">Loading…</td></tr>
+        <tbody id="appealsBody">
+          <tr><td class="muted" colspan="3">Loading…</td></tr>
         </tbody>
+      </table>
+    </section>
+
+    <section class="card" id="bansSection">
+      <h2 style="margin:0 0 0.5rem;font-size:1.05rem;">Active suspensions</h2>
+      <p class="muted" id="bansMeta">Loading…</p>
+      <table>
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>UID</th>
+            <th>Scope</th>
+            <th>Until</th>
+            <th>Reason</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="bansBody"></tbody>
+      </table>
+    </section>
+
+    <section class="card" id="flaggedSection" hidden>
+      <h2 style="margin:0 0 0.5rem;font-size:1.05rem;">Flagged submitters</h2>
+      <p class="muted">Users with many duplicate attempts.</p>
+      <table>
+        <thead><tr><th>UID</th><th>Dupes</th><th>Submitted</th><th>Blocked</th></tr></thead>
+        <tbody id="flaggedBody"></tbody>
       </table>
     </section>
   </main>
@@ -155,6 +117,6 @@
   <script src="../firebase-config.example.js"></script>
   <script src="../firebase-config.local.js"></script>
   <script src="../submission-utils.js"></script>
-  <script src="./summary.js"></script>
+  <script src="./appeals.js"></script>
 </body>
 </html>

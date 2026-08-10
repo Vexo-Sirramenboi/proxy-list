@@ -187,7 +187,11 @@
   }
 
   async function dismissReport(docId) {
-    await db.collection("folderReports").doc(docId).delete();
+    await db.collection("folderReports").doc(docId).update({
+      status: "dismissed",
+      reviewedByUid: currentUser ? currentUser.uid : "",
+      updated: firebase.firestore.FieldValue.serverTimestamp(),
+    });
   }
 
   async function deleteReportedFolder(folderId) {

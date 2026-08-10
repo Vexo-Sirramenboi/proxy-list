@@ -3,6 +3,7 @@
 
   var SU = window.SubmissionUtils;
   var MAIN_LIST_URL = "../";
+  var HISTORY_LIMIT = 120;
 
   function redirectToMainList() {
     window.location.replace(MAIN_LIST_URL);
@@ -17,18 +18,12 @@
   var currentUser = null;
 
   var gateNotice = document.getElementById("gateNotice");
-  var bansBody = document.getElementById("bansBody");
-  var bansMeta = document.getElementById("bansMeta");
-  var flaggedSection = document.getElementById("flaggedSection");
-  var flaggedBody = document.getElementById("flaggedBody");
   var statLinks = document.getElementById("statLinks");
   var statFeedback = document.getElementById("statFeedback");
   var statFolderReports = document.getElementById("statFolderReports");
-  var statBans = document.getElementById("statBans");
-  var statFlagged = document.getElementById("statFlagged");
   var statAppeals = document.getElementById("statAppeals");
-  var appealsBody = document.getElementById("appealsBody");
-  var appealsMeta = document.getElementById("appealsMeta");
+  var historyBody = document.getElementById("historyBody");
+  var historyMeta = document.getElementById("historyMeta");
 
   function esc(s) {
     return String(s)
@@ -48,14 +43,6 @@
       return document.importNode(n, true);
     });
     el.replaceChildren.apply(el, nodes);
-  }
-
-  function showGate(msg) {
-    if (gateNotice) {
-      gateNotice.hidden = false;
-      gateNotice.className = "notice err";
-      gateNotice.textContent = msg;
-    }
   }
 
   async function ensureAdmin(user) {
@@ -85,29 +72,24 @@
     }
   }
 
-  async function notifyUser(uid, payload) {
-    if (!uid) return;
-    await db.collection("userNotifications").add(
-      Object.assign(
-        {
-          uid: uid,
-          read: false,
-          created: firebase.firestore.FieldValue.serverTimestamp(),
-          dateMs: Date.now(),
-        },
-        payload || {}
-      )
-    );
+  function tsMillis(value) {
+    if (!value) return 0;
+    if (typeof value.toMillis === "function") return value.toMillis();
+    if (typeof value.seconds === "number") return value.seconds * 1000;
+    return 0;
   }
 
-  async function liftBan(uid, viaAppeal) {
-    if (!uid) return;
-    await db.collection("contributorBans").doc(uid).delete();
-    await db.collection("contributorStats").doc(uid).set(
-      { submitBlocked: false, updated: firebase.firestore.FieldValue.serverTimestamp() },
-      { merge: true }
-    );
-    await notifyUser(uid, { kind: viaAppeal ? "appeal_lifted" : "wait_lifted" });
+  function reviewedAtMs(data) {
+    return tsMillis(data.updated) || tsMillis(data.created) || Number(data.dateMs) || 0;
+  }
+
+  function formatWhen(ms) {
+    if (!ms) return "—";
+    try {
+      return new Date(ms).toLocaleString();
+    } catch (_) {
+      return "—";
+    }
   }
 
   async function loadCounts() {
@@ -118,12 +100,6 @@
       .where("status", "==", "pending")
       .limit(200)
       .get();
-    var bansSnap = await db.collection("contributorBans").limit(100).get();
-    var flaggedSnap = await db
-      .collection("contributorStats")
-      .where("duplicatesAttempted", ">=", 5)
-      .limit(50)
-      .get();
     var appealsSnap = await db
       .collection("suspensionAppeals")
       .where("status", "==", "pending")
@@ -132,233 +108,164 @@
     if (statLinks) statLinks.textContent = String(linksSnap.size);
     if (statFeedback) statFeedback.textContent = String(feedbackSnap.size);
     if (statFolderReports) statFolderReports.textContent = String(folderReportsSnap.size);
-    if (statBans) statBans.textContent = String(bansSnap.size);
-    if (statFlagged) statFlagged.textContent = String(flaggedSnap.size);
     if (statAppeals) statAppeals.textContent = String(appealsSnap.size);
-    return { bansSnap: bansSnap, flaggedSnap: flaggedSnap, appealsSnap: appealsSnap };
   }
 
-  async function loadBans(bansSnap) {
-    if (!bansBody) return;
-    var snap = bansSnap || (await db.collection("contributorBans").limit(100).get());
-    var rows = [];
+  async function fetchCollectionRecent(name) {
+    try {
+      return await db.collection(name).orderBy("created", "desc").limit(100).get();
+    } catch (_) {
+      return await db.collection(name).limit(100).get();
+    }
+  }
+
+  function pushReviewed(rows, kind, label, snap, mapRow) {
     snap.forEach(function (doc) {
-      rows.push({ id: doc.id, data: doc.data() });
-    });
-    rows.sort(function (a, b) {
-      var am = a.data.bannedAt && a.data.bannedAt.toMillis ? a.data.bannedAt.toMillis() : 0;
-      var bm = b.data.bannedAt && b.data.bannedAt.toMillis ? b.data.bannedAt.toMillis() : 0;
-      return bm - am;
-    });
-    if (bansMeta) {
-      bansMeta.textContent = rows.length ? rows.length + " active" : "No active suspensions.";
-    }
-    if (!rows.length) {
-      setTbodyHtml(bansBody, '<tr><td class="muted" colspan="6">No active suspensions.</td></tr>');
-      return;
-    }
-    setTbodyHtml(
-      bansBody,
-      rows
-        .map(function (row) {
-          var s = row.data;
-          var untilLabel = "Permanent";
-          if (s.until && s.until.toDate) untilLabel = s.until.toDate().toLocaleString();
-          return (
-            "<tr>" +
-            "<td>" +
-            esc(s.submitterLabel || "—") +
-            "</td>" +
-            "<td><code>" +
-            esc(row.id) +
-            "</code></td>" +
-            "<td>" +
-            esc(s.scope || "both") +
-            "</td>" +
-            "<td>" +
-            esc(untilLabel) +
-            "</td>" +
-            "<td>" +
-            esc(s.reason || "—") +
-            "</td>" +
-            '<td><div class="actions">' +
-            '<button class="btn btn-ok" type="button" data-lift-uid="' +
-            esc(row.id) +
-            '" data-lift-kind="appeal">Lift (appeal)</button>' +
-            '<button class="btn" type="button" data-lift-uid="' +
-            esc(row.id) +
-            '" data-lift-kind="wait">Lift (waited)</button>' +
-            "</div></td>" +
-            "</tr>"
-          );
-        })
-        .join("")
-    );
-    bansBody.querySelectorAll("[data-lift-uid]").forEach(function (btn) {
-      btn.addEventListener("click", async function () {
-        var uid = btn.getAttribute("data-lift-uid");
-        var viaAppeal = btn.getAttribute("data-lift-kind") === "appeal";
-        if (!uid || !confirm(viaAppeal ? "Lift after appeal review?" : "Lift after waiting out suspension?")) return;
-        btn.disabled = true;
-        try {
-          await liftBan(uid, viaAppeal);
-          await refreshAll();
-        } catch (err) {
-          alert((err && err.message) || "Lift failed");
-          btn.disabled = false;
-        }
+      var data = doc.data() || {};
+      var status = String(data.status || "pending");
+      if (status === "pending") return;
+      var mapped = mapRow(doc.id, data, status);
+      if (!mapped) return;
+      rows.push({
+        kind: kind,
+        typeLabel: label,
+        status: status,
+        ms: reviewedAtMs(data),
+        summary: mapped.summary,
+        from: mapped.from,
       });
     });
   }
 
-  async function loadFlagged(flaggedSnap) {
-    if (!flaggedBody || !flaggedSection) return;
-    var snap =
-      flaggedSnap ||
-      (await db.collection("contributorStats").where("duplicatesAttempted", ">=", 5).limit(50).get());
+  async function loadHistory() {
+    if (!historyBody) return;
     var rows = [];
-    snap.forEach(function (doc) {
-      rows.push({ id: doc.id, data: doc.data() });
-    });
-    if (!rows.length) {
-      flaggedSection.hidden = true;
-      return;
-    }
-    flaggedSection.hidden = false;
-    setTbodyHtml(
-      flaggedBody,
-      rows
-        .map(function (row) {
-          var s = row.data;
-          return (
-            "<tr>" +
-            "<td><code>" +
-            esc(row.id) +
-            "</code></td>" +
-            "<td>" +
-            esc(String(s.duplicatesAttempted || 0)) +
-            "</td>" +
-            "<td>" +
-            esc(String(s.submissionsTotal || 0)) +
-            "</td>" +
-            "<td>" +
-            (s.submitBlocked ? "yes" : "no") +
-            "</td>" +
-            "</tr>"
-          );
-        })
-        .join("")
-    );
-  }
+    var snaps = await Promise.all([
+      fetchCollectionRecent("linkSubmissions"),
+      fetchCollectionRecent("siteFeedback"),
+      fetchCollectionRecent("folderReports"),
+      fetchCollectionRecent("suspensionAppeals"),
+    ]);
 
-  async function loadAppeals(appealsSnap) {
-    if (!appealsBody) return;
-    var snap =
-      appealsSnap ||
-      (await db.collection("suspensionAppeals").where("status", "==", "pending").limit(100).get());
-    var rows = [];
-    snap.forEach(function (doc) {
-      rows.push({ id: doc.id, data: doc.data() });
+    pushReviewed(rows, "submission", "Link submission", snaps[0], function (id, data, status) {
+      return {
+        summary:
+          '<a href="' +
+          esc(data.url || "#") +
+          '" rel="noopener noreferrer" target="_blank">' +
+          esc(data.url || "—") +
+          "</a>" +
+          (data.provider
+            ? '<div class="muted" style="font-size:0.72rem;">Provider: ' + esc(data.provider) + "</div>"
+            : "") +
+          (data.reviewNote
+            ? '<div class="muted" style="font-size:0.72rem;">Note: ' + esc(data.reviewNote) + "</div>"
+            : ""),
+        from: esc(data.submitterLabel || data.submitterUid || "—"),
+      };
     });
+
+    pushReviewed(rows, "feedback", "Feedback", snaps[1], function (id, data) {
+      return {
+        summary:
+          "<strong>" +
+          esc(data.title || "—") +
+          "</strong>" +
+          '<div class="muted" style="font-size:0.72rem;">' +
+          esc(data.type || "") +
+          "</div>" +
+          '<div class="body-cell" style="margin-top:0.2rem;">' +
+          esc((data.body || "").slice(0, 280)) +
+          ((data.body || "").length > 280 ? "…" : "") +
+          "</div>",
+        from: esc(data.submitterLabel || data.submitterUid || "—"),
+      };
+    });
+
+    pushReviewed(rows, "report", "Folder report", snaps[2], function (id, data) {
+      return {
+        summary:
+          "<strong>" +
+          esc(data.folderTitle || "—") +
+          "</strong>" +
+          '<div class="muted" style="font-size:0.72rem;">Owner: ' +
+          esc(data.folderOwnerLabel || data.folderOwnerUid || "—") +
+          "</div>" +
+          '<div class="body-cell" style="margin-top:0.2rem;">' +
+          esc((data.reason || "").slice(0, 280)) +
+          ((data.reason || "").length > 280 ? "…" : "") +
+          "</div>",
+        from: esc(data.reporterLabel || data.reporterUid || "—"),
+      };
+    });
+
+    pushReviewed(rows, "appeal", "Appeal", snaps[3], function (id, data) {
+      return {
+        summary:
+          '<div class="body-cell">' +
+          esc((data.body || "").slice(0, 320)) +
+          ((data.body || "").length > 320 ? "…" : "") +
+          "</div>" +
+          (data.reviewNote
+            ? '<div class="muted" style="font-size:0.72rem;">Review: ' + esc(data.reviewNote) + "</div>"
+            : ""),
+        from: esc(data.submitterLabel || data.submitterUid || "—"),
+      };
+    });
+
     rows.sort(function (a, b) {
-      var am = a.data.created && a.data.created.toMillis ? a.data.created.toMillis() : 0;
-      var bm = b.data.created && b.data.created.toMillis ? b.data.created.toMillis() : 0;
-      return bm - am;
+      return b.ms - a.ms;
     });
-    if (appealsMeta) {
-      appealsMeta.textContent = rows.length ? rows.length + " pending" : "No pending appeals.";
+    if (rows.length > HISTORY_LIMIT) rows = rows.slice(0, HISTORY_LIMIT);
+
+    if (historyMeta) {
+      historyMeta.textContent = rows.length
+        ? "Showing " + rows.length + " most recently reviewed items."
+        : "No reviewed items yet.";
     }
     if (!rows.length) {
-      setTbodyHtml(appealsBody, '<tr><td class="muted" colspan="3">No pending appeals.</td></tr>');
+      setTbodyHtml(
+        historyBody,
+        '<tr><td class="muted" colspan="5">No reviewed feedback, submissions, reports, or appeals yet.</td></tr>'
+      );
       return;
     }
+
     setTbodyHtml(
-      appealsBody,
+      historyBody,
       rows
         .map(function (row) {
-          var s = row.data;
-          var who = esc(s.submitterLabel || "—");
-          if (s.submitterEmail) {
-            who += '<div class="muted" style="font-size:0.72rem;">' + esc(s.submitterEmail) + "</div>";
-          }
-          who += '<div class="muted" style="font-size:0.72rem;"><code>' + esc(s.submitterUid || row.id) + "</code></div>";
+          var statusClass = String(row.status || "").replace(/[^a-z]/gi, "");
           return (
             "<tr>" +
             "<td>" +
-            who +
+            esc(formatWhen(row.ms)) +
             "</td>" +
-            '<td class="body-cell">' +
-            esc(s.body || "") +
+            '<td><span class="type-pill">' +
+            esc(row.typeLabel) +
+            "</span></td>" +
+            '<td><span class="status-pill ' +
+            esc(statusClass) +
+            '">' +
+            esc(row.status) +
+            "</span></td>" +
+            "<td>" +
+            row.summary +
             "</td>" +
-            '<td><div class="actions">' +
-            '<button class="btn btn-ok" type="button" data-appeal-act="approve" data-appeal-id="' +
-            esc(row.id) +
-            '" data-appeal-uid="' +
-            esc(s.submitterUid || "") +
-            '">Approve &amp; lift</button>' +
-            '<button class="btn btn-danger" type="button" data-appeal-act="deny" data-appeal-id="' +
-            esc(row.id) +
-            '" data-appeal-uid="' +
-            esc(s.submitterUid || "") +
-            '">Deny</button>' +
-            "</div></td>" +
+            "<td>" +
+            row.from +
+            "</td>" +
             "</tr>"
           );
         })
         .join("")
     );
-    appealsBody.querySelectorAll("[data-appeal-act]").forEach(function (btn) {
-      btn.addEventListener("click", async function () {
-        var act = btn.getAttribute("data-appeal-act");
-        var id = btn.getAttribute("data-appeal-id");
-        var uid = btn.getAttribute("data-appeal-uid");
-        if (!id) return;
-        btn.disabled = true;
-        try {
-          if (act === "approve") {
-            if (!uid) throw new Error("Missing submitter UID");
-            await db.collection("suspensionAppeals").doc(id).update({
-              status: "approved",
-              reviewedByUid: currentUser.uid,
-              updated: firebase.firestore.FieldValue.serverTimestamp(),
-            });
-            await liftBan(uid, true);
-          } else if (act === "deny") {
-            var reason =
-              window.prompt("Reason for denying this appeal (shown to the user):", "") ||
-              "Appeal denied.";
-            await db.collection("suspensionAppeals").doc(id).update({
-              status: "denied",
-              reviewNote: reason,
-              reviewedByUid: currentUser.uid,
-              updated: firebase.firestore.FieldValue.serverTimestamp(),
-            });
-            if (uid) {
-              await notifyUser(uid, {
-                kind: "appeal_denied",
-                reason: reason,
-                dateMs: Date.now(),
-              });
-            }
-          }
-          await refreshAll();
-        } catch (err) {
-          alert((err && err.message) || "Appeal action failed");
-          btn.disabled = false;
-        }
-      });
-    });
   }
 
   async function refreshAll() {
     if (!(await ensureAdmin(currentUser))) return;
     if (!(await verifyFirestoreAdmin())) return;
-    var counts = await loadCounts();
-    await Promise.all([
-      loadBans(counts.bansSnap),
-      loadFlagged(counts.flaggedSnap),
-      loadAppeals(counts.appealsSnap),
-    ]);
+    await Promise.all([loadCounts(), loadHistory()]);
   }
 
   function init() {

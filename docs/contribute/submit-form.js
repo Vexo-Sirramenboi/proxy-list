@@ -26,8 +26,13 @@
   var newProviderInput = document.getElementById("submitNewProvider");
   var contributorNameInput = document.getElementById("submitContributorName");
   var githubUrlInput = document.getElementById("submitGithubUrl");
+  var urlChipBox = document.getElementById("submitUrlChipBox");
+  var urlChipsEl = document.getElementById("submitUrlChips");
+  var urlInput = document.getElementById("submitUrlInput");
   var CREDIT_NAME_KEY = "pl_submit_contributor_name";
   var CREDIT_GH_KEY = "pl_submit_github_url";
+  var MAX_URLS_PER_SUBMIT = SU.RATE_LIMIT_PER_HOUR;
+  var urlChips = [];
 
   function showNotice(el, msg, kind) {
     if (!el) return;
@@ -54,6 +59,203 @@
     var isNew = mode === "new";
     if (existingWrap) existingWrap.hidden = isNew;
     if (newWrap) newWrap.hidden = !isNew;
+  }
+
+  function clearUrlChips() {
+    urlChips = [];
+    renderUrlChips();
+    if (urlInput) urlInput.value = "";
+  }
+
+  function beginEditChip(idx) {
+    if (!urlInput) return;
+    var url = urlChips[idx];
+    if (!url) return;
+
+    if (urlInput.value.trim() && !commitUrlDraft({ quiet: true })) {
+      showStatus("Finish or clear the URL you're typing before editing another.", "warn");
+      urlInput.focus();
+      return;
+    }
+
+    urlChips.splice(idx, 1);
+    renderUrlChips();
+    urlInput.value = url;
+    urlInput.focus();
+    var len = urlInput.value.length;
+    try {
+      urlInput.setSelectionRange(len, len);
+    } catch (_) {}
+    clearStatus();
+  }
+
+  function renderUrlChips() {
+    if (!urlChipsEl) return;
+    urlChipsEl.replaceChildren();
+    urlChips.forEach(function (url, idx) {
+      var chip = document.createElement("span");
+      chip.className = "url-chip";
+      chip.title = "Click to edit";
+      chip.setAttribute("role", "button");
+      chip.tabIndex = 0;
+
+      var text = document.createElement("span");
+      text.className = "url-chip-text";
+      text.textContent = url;
+
+      var remove = document.createElement("button");
+      remove.type = "button";
+      remove.className = "url-chip-remove";
+      remove.setAttribute("aria-label", "Remove " + url);
+      remove.textContent = "×";
+      remove.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        urlChips.splice(idx, 1);
+        renderUrlChips();
+        if (urlInput) urlInput.focus();
+      });
+
+      chip.addEventListener("click", function (e) {
+        if (e.target && e.target.closest && e.target.closest(".url-chip-remove")) return;
+        e.preventDefault();
+        e.stopPropagation();
+        beginEditChip(idx);
+      });
+      chip.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          e.stopPropagation();
+          beginEditChip(idx);
+        }
+      });
+
+      chip.appendChild(text);
+      chip.appendChild(remove);
+      urlChipsEl.appendChild(chip);
+    });
+  }
+
+  function splitUrlTokens(text) {
+    return String(text || "")
+      .split(/[\s,;]+/)
+      .map(function (s) {
+        return s.trim();
+      })
+      .filter(Boolean);
+  }
+
+  function addUrlChip(raw, opts) {
+    opts = opts || {};
+    var quiet = !!opts.quiet;
+    var value = String(raw || "").trim();
+    if (!value) return false;
+
+    if (!SU.isValidHttpUrl(value)) {
+      if (!quiet) showStatus("Enter a valid http(s) URL.", "err");
+      return false;
+    }
+    if (SU.isBlockedDomain(value, blockedPatterns)) {
+      if (!quiet) showStatus("This domain is blocked from the list.", "err");
+      return false;
+    }
+
+    var url = SU.normalizeSubmissionUrl(value);
+    var key = SU.submissionUrlKey(url);
+    if (urlChips.some(function (existing) {
+      return SU.submissionUrlKey(existing) === key;
+    })) {
+      if (!quiet) showStatus("That URL is already in this submission.", "warn");
+      return false;
+    }
+    if (urlChips.length >= MAX_URLS_PER_SUBMIT) {
+      if (!quiet) {
+        showStatus(
+          "You can add up to " + MAX_URLS_PER_SUBMIT + " links per submission (hourly rate limit).",
+          "warn"
+        );
+      }
+      return false;
+    }
+
+    urlChips.push(url);
+    renderUrlChips();
+    clearStatus();
+    return true;
+  }
+
+  function commitUrlDraft(opts) {
+    if (!urlInput) return false;
+    var raw = urlInput.value.trim();
+    if (!raw) return false;
+    if (addUrlChip(raw, opts)) {
+      urlInput.value = "";
+      return true;
+    }
+    return false;
+  }
+
+  function bindUrlChipInput() {
+    if (!urlInput) return;
+
+    if (urlChipBox) {
+      urlChipBox.addEventListener("click", function (e) {
+        if (e.target && e.target.closest && e.target.closest(".url-chip-remove")) return;
+        if (e.target && e.target.closest && e.target.closest(".url-chip")) return;
+        urlInput.focus();
+      });
+    }
+
+    urlInput.addEventListener("keydown", function (e) {
+      if (e.key === " " || e.key === ",") {
+        e.preventDefault();
+        if (urlInput.value.trim()) commitUrlDraft();
+        return;
+      }
+      if (e.key === "Enter") {
+        if (urlInput.value.trim()) {
+          e.preventDefault();
+          commitUrlDraft();
+          return;
+        }
+        if (!urlChips.length) {
+          e.preventDefault();
+          showStatus("Add at least one proxy URL.", "err");
+        }
+        return;
+      }
+      if (e.key === "Backspace" && !urlInput.value && urlChips.length) {
+        e.preventDefault();
+        urlChips.pop();
+        renderUrlChips();
+      }
+    });
+
+    urlInput.addEventListener("paste", function (e) {
+      var pasted = "";
+      try {
+        pasted = (e.clipboardData || window.clipboardData).getData("text") || "";
+      } catch (_) {
+        return;
+      }
+      var tokens = splitUrlTokens(pasted);
+      if (tokens.length <= 1 && pasted.indexOf("\n") < 0 && pasted.indexOf(",") < 0) return;
+      e.preventDefault();
+      var added = 0;
+      tokens.forEach(function (token) {
+        if (addUrlChip(token, { quiet: true })) added += 1;
+      });
+      if (added) {
+        urlInput.value = "";
+        showStatus("Added " + added + " link" + (added === 1 ? "" : "s") + ".", "ok");
+      } else {
+        showStatus("Could not add pasted links. Check they are valid http(s) URLs.", "err");
+      }
+    });
+
+    urlInput.addEventListener("blur", function () {
+      commitUrlDraft({ quiet: true });
+    });
   }
 
   function readStoredCredit() {
@@ -226,20 +428,18 @@
       return;
     }
 
-    var rawUrl = document.getElementById("submitUrl").value;
+    commitUrlDraft({ quiet: true });
+    if (!urlChips.length) {
+      showStatus("Add at least one proxy URL.", "err");
+      if (urlInput) urlInput.focus();
+      return;
+    }
+
     var note = (document.getElementById("submitNote").value || "").trim();
     var mode = (document.querySelector('input[name="providerMode"]:checked') || {}).value || "existing";
     var isNewProvider = mode === "new";
     var provider = isNewProvider ? (newProviderInput.value || "").trim() : (providerSelect.value || "").trim();
 
-    if (!SU.isValidHttpUrl(rawUrl)) {
-      showStatus("Enter a valid http(s) URL.", "err");
-      return;
-    }
-    if (SU.isBlockedDomain(rawUrl, blockedPatterns)) {
-      showStatus("This domain is blocked from the list.", "err");
-      return;
-    }
     if (!provider) {
       showStatus(isNewProvider ? "Enter a name for the new provider." : "Choose a provider.", "err");
       return;
@@ -255,28 +455,56 @@
       showStatus("Name is too long.", "err");
       return;
     }
-    if (!githubUrlRaw) {
-      showStatus("Enter your GitHub profile URL for list credit.", "err");
-      return;
+    var githubLogin = "";
+    var githubUrl = "";
+    if (githubUrlRaw) {
+      if (githubUrlRaw.length > SU.MAX_GITHUB_URL_LEN) {
+        showStatus("GitHub profile URL is too long.", "err");
+        return;
+      }
+      githubLogin = SU.githubLoginFromProfileUrl(githubUrlRaw);
+      if (!githubLogin) {
+        showStatus(
+          "Enter a GitHub profile URL like https://github.com/username (not a repo or other page), or leave it blank.",
+          "err"
+        );
+        return;
+      }
+      showStatus("Checking that the GitHub account exists…");
+      var ghCheck = await SU.verifyGithubAccountExists(githubLogin);
+      if (!ghCheck.ok) {
+        if (ghCheck.reason === "not_found") {
+          showStatus("That GitHub account does not exist. Check the username, or leave the field blank.", "err");
+        } else if (ghCheck.reason === "rate_limited") {
+          showStatus("GitHub rate limit hit while verifying the profile. Wait a minute and try again.", "warn");
+        } else {
+          showStatus("Could not verify the GitHub profile right now. Try again, or leave it blank.", "err");
+        }
+        return;
+      }
+      githubLogin = ghCheck.login;
+      githubUrl = SU.githubProfileUrlFromLogin(githubLogin);
+      clearStatus();
     }
-    if (githubUrlRaw.length > SU.MAX_GITHUB_URL_LEN) {
-      showStatus("GitHub profile URL is too long.", "err");
-      return;
-    }
-    var githubLogin = SU.githubLoginFromProfileUrl(githubUrlRaw);
-    if (!githubLogin) {
-      showStatus("Enter a valid GitHub profile URL (https://github.com/username).", "err");
-      return;
-    }
-    var githubUrl = SU.githubProfileUrlFromLogin(githubLogin);
 
     if (note.length > SU.MAX_NOTE_LEN) {
       showStatus("Note is too long.", "err");
       return;
     }
 
-    var url = SU.normalizeSubmissionUrl(rawUrl);
-    var urlKey = SU.submissionUrlKey(url);
+    var urls = urlChips.slice();
+    var prepared = [];
+    for (var i = 0; i < urls.length; i++) {
+      var url = urls[i];
+      if (!SU.isValidHttpUrl(url) || SU.isBlockedDomain(url, blockedPatterns)) {
+        showStatus("Remove invalid or blocked URLs before submitting.", "err");
+        return;
+      }
+      prepared.push({
+        url: url,
+        urlKey: SU.submissionUrlKey(url),
+      });
+    }
 
     try {
       if (await isUserBanned(currentUser.uid)) {
@@ -289,26 +517,37 @@
         showStatus("Submissions paused due to repeated duplicates or policy violations.", "err");
         return;
       }
-      if (!SU.rateLimitOk(stats)) {
+      var remaining = SU.remainingRateSlots(stats);
+      if (remaining <= 0) {
         showStatus("Rate limit reached. Try again later.", "warn");
         return;
       }
-
-      if (isOnListKey(urlKey)) {
-        try {
-          await recordDuplicateAttempt(currentUser.uid);
-        } catch (err) {
-          showStatus(err.message || "Duplicate URL.", "err");
-        }
+      if (prepared.length > remaining) {
+        showStatus(
+          "You can submit " +
+            remaining +
+            " more link" +
+            (remaining === 1 ? "" : "s") +
+            " this hour. Remove some chips or submit fewer.",
+          "warn"
+        );
         return;
       }
-      if (await isPendingOnServer(urlKey)) {
-        try {
-          await recordDuplicateAttempt(currentUser.uid);
-        } catch (err) {
-          showStatus(err.message || "This URL is already pending review.", "err");
+
+      for (var d = 0; d < prepared.length; d++) {
+        var item = prepared[d];
+        if (isOnListKey(item.urlKey) || (await isPendingOnServer(item.urlKey))) {
+          try {
+            await recordDuplicateAttempt(currentUser.uid);
+          } catch (err) {
+            showStatus(
+              (err && err.message) ||
+                "Duplicate URL in batch: " + item.url + ". Remove it and try again.",
+              "err"
+            );
+          }
+          return;
         }
-        return;
       }
     } catch (err) {
       showStatus(
@@ -323,45 +562,59 @@
     if (submitBtn) submitBtn.disabled = true;
 
     try {
-      var urlKeyHash = await SU.sha256Hex(urlKey);
-      var payload = {
-        url: url,
-        urlKey: urlKey,
-        urlKeyHash: urlKeyHash,
-        provider: provider,
-        isNewProvider: isNewProvider,
-        submitterUid: currentUser.uid,
-        submitterLabel: contributorName,
-        submitterGithub: githubLogin,
-        submitterEmail: currentUser.email ? String(currentUser.email).slice(0, 320) : "",
-        status: "pending",
-        optionalNote: note || "",
-        created: firebase.firestore.FieldValue.serverTimestamp(),
-        updated: firebase.firestore.FieldValue.serverTimestamp(),
-      };
-
       var batch = firebaseDb.batch();
-      var pendingRef = firebaseDb.collection("pendingSubmissionKeys").doc(urlKeyHash);
-      batch.set(pendingRef, {
-        urlKey: urlKey,
-        urlKeyHash: urlKeyHash,
-        submitterUid: currentUser.uid,
-        created: firebase.firestore.FieldValue.serverTimestamp(),
-      });
-      var subRef = firebaseDb.collection("linkSubmissions").doc();
-      batch.set(subRef, payload);
+      for (var p = 0; p < prepared.length; p++) {
+        var entry = prepared[p];
+        var urlKeyHash = await SU.sha256Hex(entry.urlKey);
+        var payload = {
+          url: entry.url,
+          urlKey: entry.urlKey,
+          urlKeyHash: urlKeyHash,
+          provider: provider,
+          isNewProvider: isNewProvider,
+          submitterUid: currentUser.uid,
+          submitterLabel: contributorName,
+          submitterGithub: githubLogin,
+          submitterEmail: currentUser.email ? String(currentUser.email).slice(0, 320) : "",
+          status: "pending",
+          optionalNote: note || "",
+          created: firebase.firestore.FieldValue.serverTimestamp(),
+          updated: firebase.firestore.FieldValue.serverTimestamp(),
+        };
+        var pendingRef = firebaseDb.collection("pendingSubmissionKeys").doc(urlKeyHash);
+        batch.set(pendingRef, {
+          urlKey: entry.urlKey,
+          urlKeyHash: urlKeyHash,
+          submitterUid: currentUser.uid,
+          created: firebase.firestore.FieldValue.serverTimestamp(),
+        });
+        var subRef = firebaseDb.collection("linkSubmissions").doc();
+        batch.set(subRef, payload);
+      }
       await batch.commit();
 
       writeStoredCredit(contributorName, githubUrl);
 
-      var stats = await getContributorStats(currentUser.uid);
-      var nextStats = buildStatsPayload(currentUser.uid, stats, { countSubmission: true, touchTime: true });
-      await firebaseDb.collection("contributorStats").doc(currentUser.uid).set(nextStats, { merge: true });
+      for (var s = 0; s < prepared.length; s++) {
+        var latest = await getContributorStats(currentUser.uid);
+        var nextStats = buildStatsPayload(currentUser.uid, latest, {
+          countSubmission: true,
+          touchTime: true,
+        });
+        await firebaseDb.collection("contributorStats").doc(currentUser.uid).set(nextStats, { merge: true });
+      }
 
+      var count = prepared.length;
       formEl.reset();
+      clearUrlChips();
       setProviderMode("existing");
       prefillContributorFields(currentUser, userProfile);
-      showStatus("Submitted for review. Thank you!", "ok");
+      showStatus(
+        count === 1
+          ? "Submitted 1 link for review. Thank you!"
+          : "Submitted " + count + " links for review. Thank you!",
+        "ok"
+      );
       await loadSubmitHistory(currentUser.uid);
     } catch (err) {
       console.warn("[proxy-list] link submission failed", err);
@@ -591,6 +844,7 @@
   });
 
   if (formEl) formEl.addEventListener("submit", handleSubmit);
+  bindUrlChipInput();
 
   loadSubmissionIndex();
   initFirebase();
