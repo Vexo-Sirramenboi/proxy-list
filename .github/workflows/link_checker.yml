@@ -154,7 +154,17 @@ jobs:
             else
               git commit -m "Silent maintenance | link check (purged ${{ steps.commitinfo.outputs.removed }} dead links, link count: ${{ steps.commitinfo.outputs.total }})"
             fi
-            git push
+            # Concurrent main pushes (export / manual commits) often race this step.
+            for attempt in 1 2 3 4 5; do
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              echo "Push rejected (attempt ${attempt}); rebasing onto origin/main…"
+              git pull --rebase --autostash origin main
+              sleep $((attempt * 2))
+            done
+            echo "Failed to push after retries"
+            exit 1
           else
             echo "No changes to commit"
           fi

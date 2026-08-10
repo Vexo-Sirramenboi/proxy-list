@@ -37,7 +37,16 @@ jobs:
           git add docs/data.json docs/contributor_link_totals.json docs/filter_stats.json
           if ! git diff --cached --quiet; then
             git commit -m "Silent maintenance | refresh exported web data"
-            git push
+            for attempt in 1 2 3 4 5; do
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              echo "Push rejected (attempt ${attempt}); rebasing onto origin/main…"
+              git pull --rebase --autostash origin main
+              sleep $((attempt * 2))
+            done
+            echo "Failed to push after retries"
+            exit 1
           else
             echo "No changes to commit"
           fi
