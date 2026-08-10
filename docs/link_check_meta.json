@@ -1,8 +1,11 @@
 {
-  "checked_at": "2026-08-10T01:16:15Z",
-  "checked_at_display": "2026-08-10 01:16 UTC",
-  "added_count": 0,
+  "checked_at": "2026-08-10T07:19:53Z",
+  "checked_at_display": "2026-08-10 07:19 UTC",
+  "added_count": 2,
   "removed_count": 0,
-  "added_links": [],
+  "added_links": [
+    "https://pgis3.vercel.app",
+    "https://zinc-browser.vercel.app"
+  ],
   "removed_links": []
 }
