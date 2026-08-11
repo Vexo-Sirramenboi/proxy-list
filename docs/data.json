@@ -228,21 +228,39 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-11T06:57:02Z",
-    "checked_at_display": "2026-08-11 06:57 UTC",
+    "checked_at": "2026-08-11T12:51:57Z",
+    "checked_at_display": "2026-08-11 12:51 UTC",
     "added_count": 0,
-    "removed_count": 1,
+    "removed_count": 3,
     "added_links": [],
     "removed_links": [
-      "https://login.guide.hotelconsuladoinn.com"
+      "https://stravinsky-math.elhamstermistico.com",
+      "https://tung-science.elhamstermistico.com",
+      "https://coming.kylelemarbe.com"
     ]
   },
   "failing_links": {
-    "https://stravinsky-math.elhamstermistico.com": 2,
-    "https://tung-science.elhamstermistico.com": 2,
-    "https://fastly.jsdelivr.net/combine/gh/unblockedgamesupreme-cmd/ubzone@master/windows10background.svg": 1,
-    "https://cdn.jsdmirror.com/combine/gh/unblockedgamesupreme-cmd/ubzone@master/windows10background.svg": 1,
-    "https://coming.kylelemarbe.com": 2
+    "https://yukios.edgeone.app": 1,
+    "https://canuletmeeep.run/index": 1,
+    "https://needeep.org": 1,
+    "https://canisleeppls.dev": 1,
+    "https://filingcabinet.world": 1,
+    "https://imhigheffortsite.school": 1,
+    "https://funnyaisite.org": 1,
+    "https://canieep.org": 1,
+    "https://sleepsleepplease.org": 1,
+    "https://imstucknoooo.bio": 1,
+    "https://caveofmythicalseals.dev": 1,
+    "https://caveofmythicalseals.life": 1,
+    "https://aisleep.info": 1,
+    "https://hauntbanjo.org": 1,
+    "https://cdn.jsdmirror.com/gh/googleaccountuser/myfirstrepo@main/windows10background.svg": 1,
+    "https://cdn.jsdmirror.com/gh/googleaccountuser/myfirstrepo/windows10background.svg": 1,
+    "https://cdn.jsdmirror.com/combine/gh/googleaccountuser/myfirstrepo@master/windows10background.svg": 1,
+    "https://cdn.jsdmirror.com/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg": 1,
+    "https://cdn.jsdmirror.com/combine/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg": 1,
+    "https://cdn.jsdmirror.com/combine/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg": 1,
+    "https://cdn.jsdmirror.com/npm/ubzone@1.0.0/assets/index.svg": 1
   },
   "links": [
     {
@@ -24016,24 +24034,6 @@
       "additional_notes": "if you were looking for ford links, ford no longer exists and all of its links are now strawberri links",
       "locked": "",
       "link": "https://math-sch.inmobiliariamardelplata.com/",
-      "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🍓 Strawberri",
-      "category": "Proxy",
-      "capabilities": "Unknown",
-      "capability_tags": [],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "additional_notes": "if you were looking for ford links, ford no longer exists and all of its links are now strawberri links",
-      "locked": "",
-      "link": "https://stravinsky-math.elhamstermistico.com/",
       "found": "8/1/2026",
       "username": "N/A",
       "password": "N/A",
@@ -57031,27 +57031,6 @@
       ],
       "additional_notes": "",
       "locked": "",
-      "link": "https://tung-science.elhamstermistico.com/",
-      "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🪵 Tung Tung",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "",
-      "locked": "",
       "link": "https://chat.inmobiliariamardelplata.com/",
       "found": "8/1/2026",
       "username": "N/A",
@@ -64739,24 +64718,6 @@
       "additional_notes": "",
       "locked": "",
       "link": "https://zlami.unibutton.com/",
-      "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🚢 Voya",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://coming.kylelemarbe.com/",
       "found": "8/1/2026",
       "username": "N/A",
       "password": "N/A",
