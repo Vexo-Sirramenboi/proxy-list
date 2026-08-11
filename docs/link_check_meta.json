@@ -1,8 +1,10 @@
 {
-  "checked_at": "2026-08-11T01:14:43Z",
-  "checked_at_display": "2026-08-11 01:14 UTC",
+  "checked_at": "2026-08-11T06:57:02Z",
+  "checked_at_display": "2026-08-11 06:57 UTC",
   "added_count": 0,
-  "removed_count": 0,
+  "removed_count": 1,
   "added_links": [],
-  "removed_links": []
+  "removed_links": [
+    "https://login.guide.hotelconsuladoinn.com"
+  ]
 }

@@ -1726,7 +1726,7 @@ New links will be added soon and all filter data will also be updated soon to pr
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 42 |
+> | Proxy/Games | unknown | unknown | 41 |
 
 > [!IMPORTANT]
 > this site uses highly detectable domains, very likely all of these are blocked for you
@@ -1739,7 +1739,6 @@ New links will be added soon and all filter data will also be updated soon to pr
 | | https://burger.lain.ch/ | 4/18/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://hondaispeak.hondascooterparts.com/ | 4/17/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://mathstudy.hotelconsuladoinn.com/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://login.guide.hotelconsuladoinn.com/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://alexlol.mooo.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://this-is-the-future.casadotricolor.com.br/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://bum.education/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
