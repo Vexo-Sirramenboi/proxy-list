@@ -1024,6 +1024,30 @@
       color: var(--text);
       letter-spacing: 0.02em;
     }
+    .content-loading-slow {
+      max-width: min(26rem, 92vw);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0 0.5rem;
+    }
+    .content-loading-slow[hidden] {
+      display: none !important;
+    }
+    .content-loading-slow-msg {
+      margin: 0;
+      font-size: 0.92rem;
+      line-height: 1.45;
+      color: var(--text);
+    }
+    .content-loading-slow-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.45rem;
+    }
     .table-chunk-wrap {
       position: relative;
       overflow-x: auto;
@@ -2201,6 +2225,15 @@
     <img src="loading-spinner.gif" width="80" height="80" alt="" decoding="async" />
     <p class="content-loading-pct" id="contentLoadingPct" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">0%</p>
     <p class="content-loading-msg">Getting data...</p>
+    <div id="contentLoadingClickSlow" class="content-loading-slow" hidden>
+      <p class="content-loading-slow-msg">
+        This is taking longer than usual. Do you want to load the site anyways and have click counts load live instead?
+      </p>
+      <div class="content-loading-slow-actions">
+        <button class="btn btn-primary" type="button" id="contentLoadingSkipClicksBtn">Yes, skip loading</button>
+        <button class="btn" type="button" id="contentLoadingDisableClicksBtn">Disable click counts for this session</button>
+      </div>
+    </div>
   </div>
   <div class="floating-corner-actions" aria-label="Page tools">
     <p id="activeUsersFooterLine" aria-live="polite" hidden></p>
@@ -2336,6 +2369,12 @@
     /** Filled on main data load so we can re-render after lazy linklens arrives. */
     let pageContext = null;
     let contentLoadingHighWater = 0;
+    /** In-memory only: disables click counts until the tab is closed/reopened. */
+    let sessionDisableClickCounts = false;
+    /** When set (e.g. "per_chunk"), overrides settings for this tab session. */
+    let sessionClickLoadOverride = null;
+    let clickBootLoadToken = 0;
+    let clickBootSlowTimer = null;
     let summaryEntryCache = new Map();
     let lensDomainSignalFirst = new Map();
     let checkedDomains = new Set();
@@ -2432,8 +2471,16 @@
       return appSettings.renderLoadPerChunk === "unoptimized";
     }
 
+    function effectiveClickLoadMode() {
+      if (sessionDisableClickCounts) return "none";
+      if (sessionClickLoadOverride === "none" || sessionClickLoadOverride === "per_chunk") {
+        return sessionClickLoadOverride;
+      }
+      return appSettings.grabLinkClicksPerChunk || "per_chunk";
+    }
+
     function shouldLoadLinkClicks() {
-      return appSettings.grabLinkClicksPerChunk !== "none";
+      return effectiveClickLoadMode() !== "none";
     }
 
     function applyThemeSetting(theme) {
@@ -4676,9 +4723,11 @@
       localClickInc(norm);
     }
 
-    async function fetchClickCounts(urls, onProgress) {
+    async function fetchClickCounts(urls, onProgress, options) {
       const norms = [...new Set(urls.map((u) => normalizeUrlKeyForClicks(u)).filter(Boolean))];
       const map = new Map();
+      const shouldContinue = options && typeof options.shouldContinue === "function" ? options.shouldContinue : null;
+      const stillGoing = () => !shouldContinue || shouldContinue();
       if (!norms.length) {
         if (onProgress) onProgress(0, 0);
         return map;
@@ -4686,14 +4735,34 @@
 
       // Try Worker batch get first (same origin on Cloudflare).
       try {
+        if (!stillGoing()) return map;
         const displayUrls = norms.slice();
-        const res = await fetch("./api/link-clicks/get", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ urls: displayUrls }),
-        });
+        const controller = typeof AbortController !== "undefined" ? new AbortController() : null;
+        const abortTimer =
+          controller && shouldContinue
+            ? setInterval(() => {
+                if (!stillGoing()) {
+                  try {
+                    controller.abort();
+                  } catch (_) {}
+                }
+              }, 250)
+            : null;
+        let res;
+        try {
+          res = await fetch("./api/link-clicks/get", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ urls: displayUrls }),
+            signal: controller ? controller.signal : undefined,
+          });
+        } finally {
+          if (abortTimer) clearInterval(abortTimer);
+        }
+        if (!stillGoing()) return map;
         if (res.ok) {
           const data = await res.json();
+          if (!stillGoing()) return map;
           if (data && data.ok && data.counts && typeof data.counts === "object") {
             norms.forEach((n) => {
               const v = data.counts[n];
@@ -4703,16 +4772,23 @@
             return map;
           }
         }
-      } catch (_) {}
+      } catch (_) {
+        /* aborted or Worker unavailable — fall through */
+      }
+
+      if (!stillGoing()) return map;
 
       if (useFirebaseClicks && firebaseDb) {
         for (let i = 0; i < norms.length; i += 10) {
+          if (!stillGoing()) return map;
           const chunk = norms.slice(i, i + 10);
           try {
             const ids = await Promise.all(chunk.map((n) => sha256Hex(n)));
+            if (!stillGoing()) return map;
             const snaps = await Promise.all(
               ids.map((id) => firebaseDb.collection("link_clicks").doc(id).get())
             );
+            if (!stillGoing()) return map;
             snaps.forEach((snap, idx) => {
               const data = snap.data();
               const cnt = data && Number.isFinite(data.count) ? data.count : 0;
@@ -6187,7 +6263,9 @@
       const clickCell =
         fixedClickCount !== undefined
           ? '<td class="click-cell">' + escapeHtml(String(fixedClickCount)) + "</td>"
-          : '<td class="click-cell" data-click-url="' + escapeAttr(r.link) + '">…</td>';
+          : !shouldLoadLinkClicks()
+            ? '<td class="click-cell">—</td>'
+            : '<td class="click-cell" data-click-url="' + escapeAttr(r.link) + '">…</td>';
       const ratingCell = ratingCellTdHtml(r.link);
       return (
         "<tr><td>" +
@@ -6222,6 +6300,7 @@
       const tbody = $("linksTableBody");
       if (!tbody || !tbody.isConnected) return;
       const start = Number.isFinite(startIndex) ? Math.max(0, startIndex) : 0;
+      const shouldContinue = options && typeof options.shouldContinue === "function" ? options.shouldContinue : null;
       const targets = [];
       for (let i = 0; i < rowsSlice.length; i++) {
         const tr = tbody.children[start + i];
@@ -6235,15 +6314,17 @@
       if (!targets.length) return;
       const onClickProgress = options && options.onClickProgress;
       let map;
-      if (bulkClickCountCache && appSettings.grabLinkClicksPerChunk === "all") {
+      if (bulkClickCountCache && effectiveClickLoadMode() === "all") {
         map = bulkClickCountCache;
         if (onClickProgress) onClickProgress(targets.length, targets.length);
       } else {
         map = await fetchClickCounts(
           targets.map((t) => t.link),
-          onClickProgress
+          onClickProgress,
+          { shouldContinue }
         );
       }
+      if (shouldContinue && !shouldContinue()) return;
       if (!tbody.isConnected) return;
       for (const t of targets) {
         if (!t.td || !t.td.isConnected) continue;
@@ -6283,7 +6364,7 @@
         removeTableSkeletonRows(tbody);
         if (tableInfiniteState !== st) return;
         await refreshClickCellsForSlice(slice, startIndex);
-        if (appSettings.grabLinkClicksPerChunk === "preload" && tableInfiniteState === st) {
+        if (effectiveClickLoadMode() === "preload" && tableInfiniteState === st) {
           const preloadSize = getTableChunkSize() * 3;
           const preloadEnd = Math.min(st.rendered + preloadSize, st.filtered.length);
           if (preloadEnd > st.rendered) {
@@ -6366,6 +6447,94 @@
       setContentLoadingProgress(percent, message);
     }
 
+    function hideClickLoadSlowPrompt() {
+      const slow = $("contentLoadingClickSlow");
+      if (slow) slow.hidden = true;
+    }
+
+    function showClickLoadSlowPrompt() {
+      const overlay = $("contentLoadingOverlay");
+      if (!overlay || !overlay.classList.contains("open")) return;
+      const slow = $("contentLoadingClickSlow");
+      if (slow) slow.hidden = false;
+    }
+
+    function clearClickBootSlowTimer() {
+      if (clickBootSlowTimer) {
+        clearTimeout(clickBootSlowTimer);
+        clickBootSlowTimer = null;
+      }
+    }
+
+    function beginClickBootLoad() {
+      const token = ++clickBootLoadToken;
+      clearClickBootSlowTimer();
+      hideClickLoadSlowPrompt();
+      clickBootSlowTimer = setTimeout(() => {
+        clickBootSlowTimer = null;
+        if (token !== clickBootLoadToken) return;
+        showClickLoadSlowPrompt();
+      }, 10000);
+      return {
+        token,
+        isActive() {
+          return token === clickBootLoadToken;
+        },
+        done() {
+          if (token !== clickBootLoadToken) return;
+          clearClickBootSlowTimer();
+          hideClickLoadSlowPrompt();
+        },
+      };
+    }
+
+    function invalidateClickBootLoad() {
+      clickBootLoadToken += 1;
+      clearClickBootSlowTimer();
+      hideClickLoadSlowPrompt();
+    }
+
+    function blankVisibleClickCells(placeholder) {
+      const tbody = $("linksTableBody");
+      if (!tbody) return;
+      const text = placeholder == null ? "—" : String(placeholder);
+      tbody.querySelectorAll("td.click-cell").forEach((td) => {
+        td.textContent = text;
+        td.removeAttribute("data-click-url");
+      });
+    }
+
+    function skipClickBootLoadToScroll() {
+      sessionClickLoadOverride = "per_chunk";
+      bulkClickCountCache = null;
+      invalidateClickBootLoad();
+    }
+
+    function disableClickCountsForSession() {
+      sessionDisableClickCounts = true;
+      sessionClickLoadOverride = "none";
+      bulkClickCountCache = null;
+      invalidateClickBootLoad();
+      blankVisibleClickCells("—");
+    }
+
+    function bindClickLoadSlowPromptButtons() {
+      const skipBtn = $("contentLoadingSkipClicksBtn");
+      const disableBtn = $("contentLoadingDisableClicksBtn");
+      if (skipBtn && !skipBtn.dataset.bound) {
+        skipBtn.dataset.bound = "1";
+        skipBtn.addEventListener("click", function () {
+          skipClickBootLoadToScroll();
+        });
+      }
+      if (disableBtn && !disableBtn.dataset.bound) {
+        disableBtn.dataset.bound = "1";
+        disableBtn.addEventListener("click", function () {
+          disableClickCountsForSession();
+        });
+      }
+    }
+
     function setContentLoading(on, options) {
       const el = $("contentLoadingOverlay");
       if (!el) return;
@@ -6380,6 +6549,8 @@
         );
       } else {
         contentLoadingHighWater = 0;
+        clearClickBootSlowTimer();
+        hideClickLoadSlowPrompt();
         setContentLoadingProgress(0);
       }
     }
@@ -6563,29 +6734,54 @@
 
       reportContentLoadingProgress(90, "Loading open counts…");
       if (shouldLoadLinkClicks()) {
-        if (appSettings.grabLinkClicksPerChunk === "all") {
-          bulkClickCountCache = await fetchClickCounts(
-            filtered.map((r) => r && r.link),
-            (done, total) => {
-              if (!total) return;
-              const pct =
-                done >= total ? 99 : 90 + Math.min(9, Math.round((done / total) * 9));
-              reportContentLoadingProgress(pct, "Loading open counts…");
+        const boot = beginClickBootLoad();
+        const clickMode = effectiveClickLoadMode();
+        try {
+          if (clickMode === "all") {
+            const map = await fetchClickCounts(
+              filtered.map((r) => r && r.link),
+              (done, total) => {
+                if (!boot.isActive() || !total) return;
+                const pct =
+                  done >= total ? 99 : 90 + Math.min(9, Math.round((done / total) * 9));
+                reportContentLoadingProgress(pct, "Loading open counts…");
+              },
+              { shouldContinue: () => boot.isActive() }
+            );
+            if (boot.isActive()) {
+              bulkClickCountCache = map;
+              await refreshClickCellsForSlice(firstChunk, 0, {
+                shouldContinue: () => boot.isActive(),
+              });
             }
-          );
-          await refreshClickCellsForSlice(firstChunk, 0);
-        } else {
-          await refreshClickCellsForSlice(firstChunk, 0, {
-            onClickProgress(done, total) {
-              if (!total) return;
-              const pct =
-                done >= total ? 99 : 90 + Math.min(9, Math.round((done / total) * 9));
-              reportContentLoadingProgress(pct, "Loading open counts…");
-            },
-          });
-          if (appSettings.grabLinkClicksPerChunk === "preload" && filtered.length > initial) {
-            const preloadEnd = Math.min(initial + getTableChunkSize() * 3, filtered.length);
-            await refreshClickCellsForSlice(filtered.slice(initial, preloadEnd), initial, { silent: true });
+          } else {
+            await refreshClickCellsForSlice(firstChunk, 0, {
+              shouldContinue: () => boot.isActive(),
+              onClickProgress(done, total) {
+                if (!boot.isActive() || !total) return;
+                const pct =
+                  done >= total ? 99 : 90 + Math.min(9, Math.round((done / total) * 9));
+                reportContentLoadingProgress(pct, "Loading open counts…");
+              },
+            });
+            if (
+              boot.isActive() &&
+              effectiveClickLoadMode() === "preload" &&
+              filtered.length > initial
+            ) {
+              const preloadEnd = Math.min(initial + getTableChunkSize() * 3, filtered.length);
+              await refreshClickCellsForSlice(filtered.slice(initial, preloadEnd), initial, {
+                silent: true,
+                shouldContinue: () => boot.isActive(),
+              });
+            }
+          }
+        } finally {
+          const skipped = !boot.isActive();
+          boot.done();
+          if (skipped && shouldLoadLinkClicks()) {
+            // Fill the visible chunk in the background so counts appear without requiring scroll.
+            void refreshClickCellsForSlice(firstChunk, 0, { silent: true });
           }
         }
       }
@@ -8073,6 +8269,7 @@
     }
 
     setContentLoading(true, { progress: 0, message: "Getting data..." });
+    bindClickLoadSlowPromptButtons();
     initSavedLinksView();
     initEmbedMode();
     setupAccountUI();

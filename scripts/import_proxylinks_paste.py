@@ -11,9 +11,9 @@ from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 MD_PATH = ROOT / "list.md"
-INPUT = Path(r"c:\Users\jason\Documents\proxylinks-pasted.txt")
+INPUT = Path(__file__).resolve().parent / "batch_links_aug11_2026.txt"
 
-DATE = "8/1/2026"
+DATE = "8/11/2026"
 CONTRIB = "[yourworstnightmare1](https://github.com/yourworstnightmare1)"
 
 FILTER_LABELS = re.compile(
@@ -58,7 +58,17 @@ SECTION_ALIASES: dict[str, str] = {
     "invisi proxy": "👥 InvisiProxy",
     "duckmath": "🦆 Duckmath",
     "duck math": "🦆 Duckmath",
-    "aether": "Aether",
+    "duck": "🦆 Duckmath",
+    "aether": "🌬️ Aether",
+    "rosin": "🎮 Rosin",
+    "yuki": "❄️ Yuki",
+    "dogeub": "🐶 dogeub",
+    "doge ub": "🐶 dogeub",
+    "mist": "🌫️ Mist",
+    "kamat": "🥋 Kamat",
+    "solara": "☀️ Solara",
+    "ink": "🖋️ Ink",
+    "galaxy": "🪐 Galaxy",
     "snipershot": "🎯 Snipershot",
     "sniper shot": "🎯 Snipershot",
     "nexus": "🔗 Nexus",
