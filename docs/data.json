@@ -234,46 +234,35 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-12T12:55:55Z",
-    "checked_at_display": "2026-08-12 12:55 UTC",
+    "checked_at": "2026-08-12T18:54:52Z",
+    "checked_at_display": "2026-08-12 18:54 UTC",
     "added_count": 0,
-    "removed_count": 28,
+    "removed_count": 3,
     "added_links": [],
     "removed_links": [
-      "https://goschool.priestella.xyz",
-      "https://wowme.priestella.xyz",
-      "https://dropem.roje.com.br",
-      "https://person.priestella.xyz",
-      "https://manget.priestella.xyz",
-      "https://tellme.priestella.xyz",
-      "https://gummydummy.xyz/index",
-      "https://dummygummy.xyz",
-      "https://letmeoutletmeout.xyz",
-      "https://lockedintofan.xyz",
-      "https://ieatwaffles.xyz",
-      "https://iwanttosleep.xyz",
-      "https://caveofmythicalseals.xyz",
-      "https://howmanylions.xyz",
-      "https://thesleepineed.xyz",
-      "https://sleepyineedsleep.xyz",
-      "https://nonoski.web.app",
-      "https://cdn.imageurlgenerator.com/uploads/b1d82e6b-1a0a-43ed-8e73-8303855fdb2f.html",
-      "https://cdn.imageurlgenerator.com/uploads/08dcfc5e-e836-4b03-bc31-7aaade944ae7.html",
-      "https://cdn.imageurlgenerator.com/uploads/3ab861ec-f31c-4560-be7f-b4dd785b1c24.html",
-      "https://cdn.imageurlgenerator.com/uploads/3ccc9a95-b900-41c0-9317-062964c3570b.html",
-      "https://cdn.imageurlgenerator.com/uploads/73691bc0-9a5e-49f6-93d3-015355042a68.html",
-      "https://canwill.priestella.xyz",
-      "https://drive.google.com/file/d/1fdD7a_7wwESYYv3GYZ6MQ5WjwCpWgSGC/view?usp=drive_link",
-      "https://private.priestella.xyz",
-      "https://wouldget.priestella.xyz",
-      "https://notes.hiking.robdon.com/onboarding",
-      "https://research.robdon.com/onboarding"
+      "https://contentkeepermaster3009.deltacompy.com.br",
+      "https://wearecharliekirkman.daybits.net",
+      "https://lunar-tiger81.learninghub.fit"
     ]
   },
   "failing_links": {
-    "https://contentkeepermaster3009.deltacompy.com.br": 2,
-    "https://wearecharliekirkman.daybits.net": 2,
-    "https://lunar-tiger81.learninghub.fit": 2
+    "https://cdn.jsdelivr.net/combine/gh/googleaccountuser/myfirstrepo/windows10background.svg": 1,
+    "https://cdn.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg": 1,
+    "https://gcore.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg": 1,
+    "https://testingcf.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg": 1,
+    "https://cdn.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg": 1,
+    "https://cdn.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg": 1,
+    "https://testingcf.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg": 1,
+    "https://cdn.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg": 1,
+    "https://gcore.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg": 1,
+    "https://originfastly.jsdelivr.net/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg": 1,
+    "https://cdn.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg": 1,
+    "https://quantil.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg": 1,
+    "https://cdn.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg": 1,
+    "https://cdn.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg": 1,
+    "https://cdn.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg": 1,
+    "https://testingcf.jsdelivr.net/combine/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg": 1,
+    "https://aintveentry.medscience.cl": 1
   },
   "links": [
     {
@@ -27795,46 +27784,6 @@
       "locked": "",
       "link": "https://celestialdevsalot.github.io/celestialisbest/",
       "found": "4/18/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://contentkeepermaster3009.deltacompy.com.br/",
-      "found": "5/14/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "✨ Quasar",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://wearecharliekirkman.daybits.net/",
-      "found": "5/14/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",
@@ -72998,27 +72947,6 @@
       "additional_notes": "",
       "locked": "",
       "link": "https://upload.larp.ccwu.cc",
-      "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐱 Cat Class",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://lunar-tiger81.learninghub.fit/",
       "found": "8/1/2026",
       "username": "N/A",
       "password": "N/A",
