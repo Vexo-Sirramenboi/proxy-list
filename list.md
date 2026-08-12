@@ -303,14 +303,13 @@ Welcome to the official Proxy List! This has a running list of hundreds of unblo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet, Ultraviolet | 3 |
+> | Proxy/Games | unknown | Scramjet, Ultraviolet | 2 |
 
 > [!IMPORTANT]
 > This section has not been categorized or checked for protocol(s) and capabilities.
 
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
-| | https://sleepy.thakuraiarman.com.np/ | 4/27/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://amd74.gpu74.ru/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://limto.riesgocrediticio.com/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
@@ -672,7 +671,6 @@ Welcome to the official Proxy List! This has a running list of hundreds of unblo
 | | https://smartpoems.pollsvspoly.com/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://guidedenglish.bakeryos.net/ | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://simplegrammar.asturkiters.es | 5/22/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://shadow-void.gravityenergygenerator.com | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://shadow.isreallycool.lol | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://clearfacts.vidanimal.ar/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://simplescience.loveyourselfbeauty.au/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -842,7 +840,7 @@ Welcome to the official Proxy List! This has a running list of hundreds of unblo
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | Scramjet | 13 |
+> | Proxy/Games | unknown | Scramjet | 12 |
 
 > [!IMPORTANT]
 > PetZah does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -861,7 +859,6 @@ Welcome to the official Proxy List! This has a running list of hundreds of unblo
 | | https://cdn.jsdelivr.net/gh/Eraclio28/PeteZahStaticDone@main/new.svg | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)
 | | https://cdn.jsdelivr.net/gh/PeteZah-G/PeteZahStaticDone@main/new.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://petezah.tribumaternate.cl/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://science.doingtechnology.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🕳️ Rift
 > [!NOTE]
