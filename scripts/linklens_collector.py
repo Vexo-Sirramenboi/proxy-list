@@ -495,6 +495,18 @@ class CollectorClient(discord.Client):
                 "summary": {**summary, "total": total},
                 "raw_excerpt": text[:5000],
             }
+            if domain:
+                self.output["domain:" + domain] = {
+                    "url": link if link.startswith(("http://", "https://")) else "",
+                    "domain": domain,
+                    "checked_at": checked_at,
+                    "status": status,
+                    "source_message_id": str(reply.id),
+                    "source_author_id": str(reply.author.id),
+                    "providers": providers,
+                    "summary": {**summary, "total": total},
+                    "raw_excerpt": text[:5000],
+                }
             self.updated += 1
             write_output(OUTPUT_JSON, self.output)
             if status == "ok" and domain:
@@ -771,6 +783,11 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=int(os.getenv("GN_MATH_HISTORY_LIMIT", os.getenv("LINKLENS_HISTORY_LIMIT", "200"))),
     )
+    p.add_argument(
+        "--urls",
+        default="",
+        help="Comma-separated URLs/domains to check instead of all links from data.json.",
+    )
     p.add_argument("--ingest-history", action="store_true", help="Parse existing summary messages from channel history.")
     p.add_argument(
         "--ingest-history-rest",
@@ -826,11 +843,26 @@ def main() -> int:
         existing = load_existing(OUTPUT_JSON)
         run_history_ingest_rest(cfg, existing)
         return 0
-    if not DATA_JSON.is_file():
-        raise SystemExit(f"Missing {DATA_JSON}. Run scripts/convert_list_to_json.py first.")
-    links = load_links(DATA_JSON)
-    if not links:
-        raise SystemExit("No links found in docs/data.json")
+    urls_arg = str(getattr(args, "urls", "") or "").strip()
+    if urls_arg:
+        links = []
+        for part in urls_arg.split(","):
+            item = part.strip()
+            if not item:
+                continue
+            if item.startswith(("http://", "https://")):
+                links.append(item)
+            else:
+                # Treat bare domain as https URL so command template + domain lookup work.
+                links.append("https://" + normalize_domain_text(item))
+        if not links:
+            raise SystemExit("No valid URLs given via --urls")
+    else:
+        if not DATA_JSON.is_file():
+            raise SystemExit(f"Missing {DATA_JSON}. Run scripts/convert_list_to_json.py first.")
+        links = load_links(DATA_JSON)
+        if not links:
+            raise SystemExit("No links found in docs/data.json")
     existing = load_existing(OUTPUT_JSON)
     client = CollectorClient(cfg, links, existing)
     client.run(cfg.token)

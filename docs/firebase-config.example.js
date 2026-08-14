@@ -18,7 +18,12 @@
    (40/hour). Set Worker secrets for Firestore admin writes:
      FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, FIREBASE_PRIVATE_KEY
    (service account with Cloud Datastore User). Without secrets, the Worker still rate-limits
-   and stores edge counters (Cloudflare-only).
+   and stores edge counters (Cloudflare-only) — presence/stats will NOT update in Firestore.
+
+   GitHub Pages hosts the static site; the Worker lives at
+   https://proxy-list.jasonthegamer48.workers.dev
+   presence-client.js and click APIs fall back to that origin automatically on *.github.io.
+   Override with: window.__PROXY_LIST_API_BASE__ = "https://proxy-list.jasonthegamer48.workers.dev";
 
    On-site link submissions (docs/contribute/, docs/admin/submissions.html):
    - Deploy docs/firestore.rules (includes linkSubmissions, pendingSubmissionKeys,
@@ -34,22 +39,23 @@
    Enable Authentication → Sign-in method → Anonymous, GitHub (OAuth app in Firebase Console),
    Google, and Email/Password.
 
-   Active user count uses Realtime Database (not Firestore): each tab writes
-   presence/{sessionId} with uid + ts; only sessions updated in the last ~5 minutes
-   count as active (stale nodes from crashed tabs are ignored). In Firebase Console:
+   Active user count uses Realtime Database (not Firestore): each signed-in or anonymous
+   auth uid writes presence/{uid} with uid + ts (one node per user — not push IDs, so
+   in-site navigations do not stack duplicate sessions). Only sessions updated in the
+   last ~5 minutes count as active. In Firebase Console:
    Build → Realtime Database → Create database. If the SDK cannot connect, add
    databaseURL from that screen to the config object below, e.g.:
    databaseURL: "https://<projectId>-default-rtdb.firebaseio.com"
 
-   Example Realtime Database rules for path "presence/{sessionId}":
+   Example Realtime Database rules for path "presence/{uid}":
 
    {
      "rules": {
        "presence": {
          ".read": "auth != null",
-         "$key": {
-           ".write": "auth != null && ((!data.exists() && newData.child('uid').val() === auth.uid) || (data.exists() && !newData.exists() && data.child('uid').val() === auth.uid))",
-           ".validate": "!newData.exists() || newData.hasChildren(['uid', 'ts'])"
+         "$uid": {
+           ".write": "auth != null && auth.uid === $uid && ((!data.exists() && newData.child('uid').val() === auth.uid) || (data.exists() && !newData.exists() && data.child('uid').val() === auth.uid) || (data.exists() && newData.exists() && newData.child('uid').val() === auth.uid))",
+           ".validate": "!newData.exists() || (newData.hasChildren(['uid', 'ts']) && newData.child('uid').val() === $uid)"
          }
        }
      }

@@ -1,0 +1,407 @@
+{
+  "generated_at": "2026-08-13T23:59:53Z",
+  "mirrors": [
+    {
+      "id": "wix-1",
+      "label": "Wix — Mirror 1",
+      "group": "wix",
+      "url": "https://reblockprojections.wixsite.com/levelmathlearning",
+      "domain": "reblockprojections.wixsite.com",
+      "lens": {
+        "domain": "reblockprojections.wixsite.com",
+        "checked_at": "2026-08-13T23:59:53Z",
+        "status": "ok",
+        "summary": {
+          "blocked": 4,
+          "unblocked": 15,
+          "warning": 0,
+          "total": 19
+        },
+        "providers": [
+          {
+            "provider": "FortiGuard",
+            "category": "Web Hosting",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Lightspeed",
+            "category": "Mature",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "Palo Alto",
+            "category": "Personal-Sites-and-Blogs",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Blocksi Web",
+            "category": "Business: Web Hosting",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Blocksi AI",
+            "category": "Web Hosting",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Linewize",
+            "category": "webhosting",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Cisco Umbrella",
+            "category": "Computers and Internet",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Securly",
+            "category": "Educational",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "GoGuardian",
+            "category": "Uncategorized",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "LanSchool",
+            "category": "LanSchool",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "ContentKeeper",
+            "category": "ContentKeeper",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "AristotleK12",
+            "category": "! Allowed",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Senso Cloud",
+            "category": "Coding Tools, Server Hosting",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "Deledao",
+            "category": "Unclassified",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "iBoss",
+            "category": "Technology",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "Sophos",
+            "category": "INFORMATION_TECHNOLOGY",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Barracuda",
+            "category": "computing-technology",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Qustodio",
+            "category": "Technology",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "DNSFilter",
+            "category": "Business",
+            "status": "unblocked",
+            "icon": "✅"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cf-1",
+      "label": "Cloudflare — Mirror 1",
+      "group": "cloudflare",
+      "url": "https://ixl-backend-4298df-production.pages.dev/",
+      "domain": "ixl-backend-4298df-production.pages.dev",
+      "lens": {
+        "domain": "ixl-backend-4298df-production.pages.dev",
+        "checked_at": "2026-08-13T23:58:12Z",
+        "status": "ok",
+        "summary": {
+          "blocked": 8,
+          "unblocked": 11,
+          "warning": 0,
+          "total": 19
+        },
+        "providers": [
+          {
+            "provider": "FortiGuard",
+            "category": "Information Technology",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Lightspeed",
+            "category": "Security - Domain Sharing",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "Palo Alto",
+            "category": "Personal-Sites-and-Blogs",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Blocksi Web",
+            "category": "Business: Information Technology",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Blocksi AI",
+            "category": "Dynamic Content",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "Linewize",
+            "category": "blogging",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Cisco Umbrella",
+            "category": "Web Hosting",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "Securly",
+            "category": "Anonymous proxies",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "GoGuardian",
+            "category": "Uncategorized",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "LanSchool",
+            "category": "LanSchool",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "ContentKeeper",
+            "category": "Proxies:Filtering-Bypass (Global)",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "AristotleK12",
+            "category": "! Blocked",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "Senso Cloud",
+            "category": "Coding Tools",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Deledao",
+            "category": "Unclassified",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "iBoss",
+            "category": "Technology",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "Sophos",
+            "category": "INFORMATION_TECHNOLOGY",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Barracuda",
+            "category": "content-server",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Qustodio",
+            "category": "Technology",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "DNSFilter",
+            "category": "Information Technology",
+            "status": "unblocked",
+            "icon": "✅"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cf-2",
+      "label": "Cloudflare — Mirror 2",
+      "group": "cloudflare",
+      "url": "https://classlink-login-saml2-9u32ghr9248yg.pages.dev/",
+      "domain": "classlink-login-saml2-9u32ghr9248yg.pages.dev",
+      "lens": {
+        "domain": "classlink-login-saml2-9u32ghr9248yg.pages.dev",
+        "checked_at": "2026-08-13T23:58:20Z",
+        "status": "ok",
+        "summary": {
+          "blocked": 11,
+          "unblocked": 8,
+          "warning": 0,
+          "total": 19
+        },
+        "providers": [
+          {
+            "provider": "FortiGuard",
+            "category": "Information Technology",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Lightspeed",
+            "category": "Security - Domain Sharing",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "Palo Alto",
+            "category": "Phishing",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "Blocksi Web",
+            "category": "Business: Information Technology",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Blocksi AI",
+            "category": "Dynamic Content",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "Linewize",
+            "category": "blogging",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Cisco Umbrella",
+            "category": "Web Hosting",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "Securly",
+            "category": "Anonymous proxies",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "GoGuardian",
+            "category": "Uncategorized",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "LanSchool",
+            "category": "New URL",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "ContentKeeper",
+            "category": "Proxies:Filtering-Bypass (Global)",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "AristotleK12",
+            "category": "! Blocked",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "Senso Cloud",
+            "category": "Coding Tools",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Deledao",
+            "category": "Unclassified",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "iBoss",
+            "category": "Technology",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "Sophos",
+            "category": "INFORMATION_TECHNOLOGY",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Barracuda",
+            "category": "content-server",
+            "status": "unblocked",
+            "icon": "✅"
+          },
+          {
+            "provider": "Qustodio",
+            "category": "Uncategorized",
+            "status": "blocked",
+            "icon": "❌"
+          },
+          {
+            "provider": "DNSFilter",
+            "category": "Information Technology",
+            "status": "unblocked",
+            "icon": "✅"
+          }
+        ]
+      }
+    }
+  ]
+}

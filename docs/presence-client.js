@@ -1,6 +1,6 @@
 /**
  * Shared presence ping for User Statistics aggregates (Worker → Firestore).
- * Safe no-op when the Worker API is unavailable (e.g. plain GitHub Pages).
+ * Safe no-op when the Worker API is unavailable (e.g. plain GitHub Pages without fallback).
  */
 (function (global) {
   "use strict";
@@ -8,20 +8,87 @@
   var lastPingAt = 0;
   var MIN_PING_GAP_MS = 45 * 1000;
   var inFlight = false;
+  var SESSION_KEY = "proxyList_presence_session_v1";
+  var cachedSessionId = "";
+  /** Same-origin on Cloudflare Workers; cross-origin fallback for GitHub Pages. */
+  var DEFAULT_WORKER_ORIGIN = "https://proxy-list.jasonthegamer48.workers.dev";
 
-  function resolveApiUrl() {
+  function configuredApiOrigin() {
     try {
-      var path = String((global.location && global.location.pathname) || "");
-      if (/\/stats(\/|$)/i.test(path) || /\/contribute(\/|$)/i.test(path) || /\/community(\/|$)/i.test(path) || /\/about(\/|$)/i.test(path) || /\/account(\/|$)/i.test(path) || /\/login(\/|$)/i.test(path) || /\/admin(\/|$)/i.test(path)) {
-        return "../api/presence-ping";
+      var raw = global.__PROXY_LIST_API_BASE__;
+      if (raw == null || raw === false) return "";
+      var s = String(raw).trim().replace(/\/+$/, "");
+      return s;
+    } catch (_) {
+      return "";
+    }
+  }
+
+  function hostIsGitHubPages() {
+    try {
+      var host = String((global.location && global.location.hostname) || "").toLowerCase();
+      return host === "github.io" || host.endsWith(".github.io");
+    } catch (_) {
+      return false;
+    }
+  }
+
+  function resolveApiUrl(path) {
+    var p = path.charAt(0) === "/" ? path : "/" + path;
+    var configured = configuredApiOrigin();
+    if (configured) return configured + p;
+    if (hostIsGitHubPages()) return DEFAULT_WORKER_ORIGIN + p;
+    try {
+      var pathname = String((global.location && global.location.pathname) || "");
+      if (
+        /\/stats(\/|$)/i.test(pathname) ||
+        /\/contribute(\/|$)/i.test(pathname) ||
+        /\/community(\/|$)/i.test(pathname) ||
+        /\/about(\/|$)/i.test(pathname) ||
+        /\/account(\/|$)/i.test(pathname) ||
+        /\/login(\/|$)/i.test(pathname) ||
+        /\/admin(\/|$)/i.test(pathname)
+      ) {
+        return ".." + p;
       }
     } catch (_) {}
-    return "./api/presence-ping";
+    return "." + p;
+  }
+
+  function getSessionId() {
+    if (cachedSessionId && cachedSessionId.length >= 8) return cachedSessionId;
+    try {
+      var existing = global.sessionStorage && global.sessionStorage.getItem(SESSION_KEY);
+      if (existing && String(existing).length >= 8) {
+        cachedSessionId = String(existing).replace(/[^a-zA-Z0-9_-]/g, "").slice(0, 128);
+        if (cachedSessionId.length >= 8) return cachedSessionId;
+      }
+    } catch (_) {}
+    var id = "";
+    try {
+      if (global.crypto && typeof global.crypto.getRandomValues === "function") {
+        var bytes = new Uint8Array(16);
+        global.crypto.getRandomValues(bytes);
+        id = Array.prototype.map
+          .call(bytes, function (b) {
+            return ("0" + b.toString(16)).slice(-2);
+          })
+          .join("");
+      }
+    } catch (_) {}
+    if (!id || id.length < 8) {
+      id = "s" + String(Date.now()) + String(Math.floor(Math.random() * 1e9));
+    }
+    cachedSessionId = id.slice(0, 128);
+    try {
+      if (global.sessionStorage) global.sessionStorage.setItem(SESSION_KEY, cachedSessionId);
+    } catch (_) {}
+    return cachedSessionId;
   }
 
   function ping(opts) {
     opts = opts || {};
-    var sessionId = String(opts.sessionId || "").trim();
+    var sessionId = String(opts.sessionId || getSessionId() || "").trim();
     if (!sessionId || sessionId.length < 8) return Promise.resolve({ ok: false, error: "no_session" });
     var now = Date.now();
     if (!opts.force && (inFlight || now - lastPingAt < MIN_PING_GAP_MS)) {
@@ -37,11 +104,12 @@
       displayName: opts.displayName ? String(opts.displayName).slice(0, 32) : "",
     };
 
-    return fetch(resolveApiUrl(), {
+    return fetch(resolveApiUrl("/api/presence-ping"), {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
       keepalive: true,
+      mode: "cors",
     })
       .then(function (res) {
         return res.json().catch(function () {
@@ -56,5 +124,13 @@
       });
   }
 
-  global.ProxyListPresence = { ping: ping };
+  function apiUrl(path) {
+    return resolveApiUrl(path);
+  }
+
+  global.ProxyListPresence = {
+    ping: ping,
+    getSessionId: getSessionId,
+    apiUrl: apiUrl,
+  };
 })(typeof window !== "undefined" ? window : globalThis);

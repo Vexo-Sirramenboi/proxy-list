@@ -1,12 +1,18 @@
 {
   "meta": {
-    "version": "v6.2.1",
-    "revision": "r265",
-    "last_updated": "August 11, 2026",
+    "version": "v6.3",
+    "revision": "r266",
+    "last_updated": "August 13, 2026",
     "unsorted_total": 342,
     "important_notices": "",
-    "update_notice": "- Added a button that allows for skipping or temporarily disabling link click stats if it takes more than 10 seconds to load on the loading screen as I noticed it takes significantly longer to load, especially on slow or unreliable networks.\n- Added 452 links (currently have no filter data at the moment).",
+    "update_notice": "# Offline downloading\nYou can now save the Proxy List as an HTML, text, or markdown file for offline viewing when the list is blocked or not accessable. Note that the offline version has all online features stripped and is really just the bare bones of the list.\n\n# Random link\nYou can now choose a random link by clicking the \"Random link\" button highlighted in purple on the sidebar. It will go through every provider and once it lands on one, you will get a random link from that provider.\n\n# Developer/debug settings\nThere is now debug mode for developers and also to improve development. You can fire test notifications, view your user agent, see memory and CPU estimations, and console warnings, errors, and chunk loadtime data.\n\n# Manual resizing\nYou can now manually select the mode you want the site to format the site to (mobile, desktop, or auto detect).\n\n# Save data\nYou can now import and export your saved filter and settings data in the Settings menu.",
     "update_changelog": [
+      {
+        "version": "v6.3",
+        "revision": "r266",
+        "released": "August 13, 2026",
+        "update_notice": "# Offline downloading\nYou can now save the Proxy List as an HTML, text, or markdown file for offline viewing when the list is blocked or not accessable. Note that the offline version has all online features stripped and is really just the bare bones of the list.\n\n# Random link\nYou can now choose a random link by clicking the \"Random link\" button highlighted in purple on the sidebar. It will go through every provider and once it lands on one, you will get a random link from that provider.\n\n# Developer/debug settings\nThere is now debug mode for developers and also to improve development. You can fire test notifications, view your user agent, see memory and CPU estimations, and console warnings, errors, and chunk loadtime data.\n\n# Manual resizing\nYou can now manually select the mode you want the site to format the site to (mobile, desktop, or auto detect).\n\n# Save data\nYou can now import and export your saved filter and settings data in the Settings menu."
+      },
       {
         "version": "v6.2.1",
         "revision": "r265",

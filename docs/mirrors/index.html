@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" />
+    <script src="../debug-overlays.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mirror sites | Proxy list</title>
   <link rel="icon" type="image/png" href="../favicon.png" />
   <style>
@@ -13,6 +14,9 @@
       --text: #e8e8e8;
       --muted: #9a9a9a;
       --accent: #6cb3ff;
+      --ok: #3ecf8e;
+      --warn: #ffd57e;
+      --danger: #ff8f8f;
       --font: "Segoe UI", system-ui, sans-serif;
     }
     * { box-sizing: border-box; }
@@ -102,6 +106,82 @@
       flex-wrap: wrap;
       gap: 0.5rem;
     }
+    label { display: block; margin: 0 0 0.35rem; font-size: 0.82rem; color: var(--muted); }
+    select {
+      width: 100%;
+      max-width: 100%;
+      padding: 0.45rem 0.55rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: #141414;
+      color: var(--text);
+      font: inherit;
+      font-size: 0.85rem;
+    }
+    .filter-bar {
+      margin-bottom: 1rem;
+    }
+    .filter-powered-by {
+      margin: 0.45rem 0 0;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+    .filter-powered-by-credit { color: var(--accent); font-weight: 600; }
+    .mirror-btn-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .mirror-btn-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+    .status-pill {
+      display: inline-block;
+      padding: 0.12rem 0.45rem;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 650;
+      border: 1px solid var(--border);
+    }
+    .status-pill.blocked { color: var(--danger); border-color: #6b2d2d; }
+    .status-pill.unblocked { color: var(--ok); border-color: #2d6b4a; }
+    .status-pill.warning { color: var(--warn); border-color: #6b5a2d; }
+    .status-pill.unknown { color: var(--muted); }
+    .filter-category {
+      color: var(--muted);
+      font-size: 0.72rem;
+    }
+    details.mirror-details {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #141414;
+      padding: 0.45rem 0.65rem;
+    }
+    details.mirror-details summary {
+      cursor: pointer;
+      font-size: 0.8rem;
+      color: var(--muted);
+      user-select: none;
+    }
+    .provider-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.78rem;
+      margin-top: 0.45rem;
+    }
+    .provider-table th,
+    .provider-table td {
+      border-bottom: 1px solid var(--border);
+      padding: 0.3rem 0.35rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    .provider-table th { color: var(--muted); font-weight: 500; }
   </style>
 </head>
 <body>
@@ -115,41 +195,288 @@
       <a class="btn" href="../">← Back to proxy list</a>
     </div>
 
+    <section class="card filter-bar" aria-labelledby="filter-heading">
+      <h2 id="filter-heading">Web filter</h2>
+      <p class="muted">Select your school filter to see estimated block status for each mirror.</p>
+      <label for="filterSelect" style="margin-top:0.65rem">Selected filter</label>
+      <select id="filterSelect">
+        <option value="">Any / Not selected</option>
+      </select>
+      <p class="filter-powered-by">Powered by <span class="filter-powered-by-credit">gn-math discord bot</span></p>
+      <p class="muted" id="filterMeta" style="margin-top:0.45rem">Loading filter data…</p>
+    </section>
+
     <section class="card" aria-labelledby="wix-heading">
       <h2 id="wix-heading">Wix</h2>
       <p class="muted">These have header ads because they are free domains.</p>
-      <div class="mirror-stack">
-        <a
-          class="btn btn-primary"
-          href="https://reblockprojections.wixsite.com/levelmathlearning"
-          rel="noopener noreferrer"
-          target="_blank"
-        >Wix — Mirror 1</a>
-      </div>
+      <div class="mirror-stack" id="wixStack"></div>
     </section>
 
     <section class="card" aria-labelledby="cloudflare-heading">
       <h2 id="cloudflare-heading">Cloudflare</h2>
       <p class="muted">These are the fastest and best mirrors. Cloudflare links do not have access to community features.</p>
-      <div class="mirror-stack mirror-stack--pair">
-        <a
-          class="btn btn-primary"
-          href="https://ixl-backend-4298df-production.pages.dev/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >Cloudflare — Mirror 1</a>
-        <a
-          class="btn btn-primary"
-          href="https://classlink-login-saml2-9u32ghr9248yg.pages.dev/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >Cloudflare — Mirror 2</a>
-      </div>
+      <div class="mirror-stack mirror-stack--pair" id="cloudflareStack"></div>
     </section>
 
     <div class="back-row">
       <a class="btn" href="../">Back to proxy list</a>
     </div>
   </main>
+
+  <script>
+    (function () {
+      var LS_FILTER = "proxyList_app_settings_v1";
+      var selectedFilter = "";
+      var mirrors = [];
+
+      function $(id) {
+        return document.getElementById(id);
+      }
+
+      function escapeHtml(s) {
+        return String(s == null ? "" : s)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      function cleanSummaryText(value) {
+        return String(value == null ? "" : value).replace(/\*\*/g, "").replace(/\s{2,}/g, " ").trim();
+      }
+
+      function normalizeFilterKey(value) {
+        return cleanSummaryText(value).toLowerCase().replace(/[^a-z0-9]+/g, "");
+      }
+
+      function canonicalProviderLabel(raw) {
+        var s = cleanSummaryText(raw);
+        if (!s) return "";
+        s = s.replace(/[\s\uFEFF]*(?:\u26A0\uFE0F|\u26A0)\s*$/gu, "").trim();
+        while (/\([^)]*\)\s*$/.test(s)) {
+          s = s.replace(/\s*\([^)]*\)\s*$/, "").trim();
+        }
+        return s;
+      }
+
+      function providerFilterKey(raw) {
+        return normalizeFilterKey(canonicalProviderLabel(raw));
+      }
+
+      function statusClass(status) {
+        if (status === "blocked") return "blocked";
+        if (status === "unblocked") return "unblocked";
+        if (status === "warning") return "warning";
+        return "unknown";
+      }
+
+      function statusLabel(status) {
+        if (status === "blocked") return "Blocked";
+        if (status === "unblocked") return "Unblocked";
+        if (status === "warning") return "Warning";
+        return "No data";
+      }
+
+      function providerForFilter(lens, filterKey) {
+        if (!lens || !filterKey) return null;
+        var providers = Array.isArray(lens.providers) ? lens.providers : [];
+        for (var i = 0; i < providers.length; i++) {
+          var p = providers[i];
+          if (providerFilterKey(p && p.provider) === filterKey) return p;
+        }
+        return null;
+      }
+
+      function loadSavedFilter() {
+        try {
+          var raw = localStorage.getItem(LS_FILTER);
+          if (!raw) return "";
+          var parsed = JSON.parse(raw);
+          return parsed && parsed.webFilter ? String(parsed.webFilter) : "";
+        } catch (_) {
+          return "";
+        }
+      }
+
+      function populateFilters() {
+        var select = $("filterSelect");
+        var byKey = new Map();
+        mirrors.forEach(function (m) {
+          var providers = (m.lens && m.lens.providers) || [];
+          providers.forEach(function (p) {
+            var label = canonicalProviderLabel(p && p.provider);
+            var key = normalizeFilterKey(label);
+            if (!key || byKey.has(key)) return;
+            byKey.set(key, label);
+          });
+        });
+        var options = Array.from(byKey.values()).sort(function (a, b) {
+          return a.localeCompare(b);
+        });
+        select.innerHTML = '<option value="">Any / Not selected</option>';
+        options.forEach(function (label) {
+          var opt = document.createElement("option");
+          opt.value = label;
+          opt.textContent = label;
+          select.appendChild(opt);
+        });
+
+        var saved = loadSavedFilter();
+        var savedKey = providerFilterKey(saved);
+        if (savedKey && byKey.has(savedKey)) {
+          selectedFilter = byKey.get(savedKey);
+          select.value = selectedFilter;
+        }
+      }
+
+      function renderMirrors() {
+        var wix = $("wixStack");
+        var cf = $("cloudflareStack");
+        wix.innerHTML = "";
+        cf.innerHTML = "";
+        var filterKey = providerFilterKey(selectedFilter);
+
+        mirrors.forEach(function (m) {
+          var wrap = document.createElement("div");
+          wrap.className = "mirror-btn-row";
+
+          var a = document.createElement("a");
+          a.className = "btn btn-primary";
+          a.href = m.url;
+          a.target = "_blank";
+          a.rel = "noopener noreferrer";
+          a.textContent = m.label;
+
+          var meta = document.createElement("div");
+          meta.className = "mirror-btn-meta";
+
+          var pill = document.createElement("span");
+          pill.className = "status-pill";
+          var hit = filterKey ? providerForFilter(m.lens, filterKey) : null;
+          if (!filterKey) {
+            var sum = (m.lens && m.lens.summary) || {};
+            var total = Number(sum.total) || 0;
+            if (total > 0) {
+              pill.className = "status-pill unknown";
+              pill.textContent =
+                (sum.unblocked || 0) + " unblocked · " + (sum.blocked || 0) + " blocked";
+            } else {
+              pill.className = "status-pill unknown";
+              pill.textContent = "No filter data";
+            }
+          } else if (hit) {
+            pill.className = "status-pill " + statusClass(hit.status);
+            pill.textContent = statusLabel(hit.status);
+            if (hit.category) {
+              var cat = document.createElement("span");
+              cat.className = "filter-category";
+              cat.textContent = cleanSummaryText(hit.category);
+              meta.appendChild(pill);
+              meta.appendChild(cat);
+            } else {
+              meta.appendChild(pill);
+            }
+          } else {
+            pill.className = "status-pill unknown";
+            pill.textContent = "Not checked for this filter";
+            meta.appendChild(pill);
+          }
+          if (!meta.contains(pill)) meta.appendChild(pill);
+
+          var details = document.createElement("details");
+          details.className = "mirror-details";
+          var summary = document.createElement("summary");
+          summary.textContent = "All filter results";
+          details.appendChild(summary);
+
+          var table = document.createElement("table");
+          table.className = "provider-table";
+          table.innerHTML = "<thead><tr><th>Filter</th><th>Category</th><th>Result</th></tr></thead>";
+          var tbody = document.createElement("tbody");
+          var providers = (m.lens && m.lens.providers) || [];
+          if (!providers.length) {
+            tbody.innerHTML = '<tr><td colspan="3">No gn-math data yet.</td></tr>';
+          } else {
+            providers.forEach(function (p) {
+              var tr = document.createElement("tr");
+              tr.innerHTML =
+                "<td>" +
+                escapeHtml(canonicalProviderLabel(p.provider)) +
+                "</td><td>" +
+                escapeHtml(cleanSummaryText(p.category || "—")) +
+                '</td><td><span class="status-pill ' +
+                statusClass(p.status) +
+                '">' +
+                escapeHtml(statusLabel(p.status)) +
+                "</span></td>";
+              tbody.appendChild(tr);
+            });
+          }
+          table.appendChild(tbody);
+          details.appendChild(table);
+
+          wrap.appendChild(a);
+          wrap.appendChild(meta);
+          wrap.appendChild(details);
+
+          if (m.group === "wix") wix.appendChild(wrap);
+          else cf.appendChild(wrap);
+        });
+      }
+
+      fetch("./filter-data.json")
+        .then(function (r) {
+          if (!r.ok) throw new Error("Could not load filter-data.json (" + r.status + ")");
+          return r.json();
+        })
+        .then(function (json) {
+          mirrors = Array.isArray(json.mirrors) ? json.mirrors : [];
+          populateFilters();
+          var meta = $("filterMeta");
+          if (meta) {
+            meta.textContent = json.generated_at
+              ? "Filter data last checked: " + json.generated_at
+              : "Filter data loaded.";
+          }
+          renderMirrors();
+        })
+        .catch(function () {
+          mirrors = [
+            {
+              id: "wix-1",
+              label: "Wix — Mirror 1",
+              group: "wix",
+              url: "https://reblockprojections.wixsite.com/levelmathlearning",
+              domain: "reblockprojections.wixsite.com",
+              lens: { providers: [], summary: {} },
+            },
+            {
+              id: "cf-1",
+              label: "Cloudflare — Mirror 1",
+              group: "cloudflare",
+              url: "https://ixl-backend-4298df-production.pages.dev/",
+              domain: "ixl-backend-4298df-production.pages.dev",
+              lens: { providers: [], summary: {} },
+            },
+            {
+              id: "cf-2",
+              label: "Cloudflare — Mirror 2",
+              group: "cloudflare",
+              url: "https://classlink-login-saml2-9u32ghr9248yg.pages.dev/",
+              domain: "classlink-login-saml2-9u32ghr9248yg.pages.dev",
+              lens: { providers: [], summary: {} },
+            },
+          ];
+          $("filterMeta").textContent = "Filter data unavailable.";
+          populateFilters();
+          renderMirrors();
+        });
+
+      $("filterSelect").addEventListener("change", function () {
+        selectedFilter = $("filterSelect").value || "";
+        renderMirrors();
+      });
+    })();
+  </script>
 </body>
 </html>

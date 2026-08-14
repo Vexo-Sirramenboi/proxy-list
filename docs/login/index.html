@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="google-adsense-account" content="ca-pub-8449488085448128" />
+<meta charset="utf-8" />
+    <script src="../debug-overlays.js"></script>
+<meta name="google-adsense-account" content="ca-pub-8449488085448128" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8449488085448128" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sign in | Proxy list</title>
@@ -817,8 +818,12 @@
       }
 
       function ensureAnonymousSession(auth) {
-        if (auth.currentUser) return Promise.resolve(auth.currentUser);
-        return auth.signInAnonymously().then((cred) => cred.user);
+        const waitReady =
+          typeof auth.authStateReady === "function" ? auth.authStateReady() : Promise.resolve();
+        return waitReady.then(() => {
+          if (auth.currentUser) return auth.currentUser;
+          return auth.signInAnonymously().then((cred) => cred.user);
+        });
       }
 
       const GITHUB_TOKEN_SESSION_KEY = "proxyList_github_access_token";
@@ -828,12 +833,18 @@
         const cred = result.credential;
         if (cred.providerId === "github.com" && cred.accessToken) {
           try {
+            localStorage.setItem(GITHUB_TOKEN_SESSION_KEY, cred.accessToken);
+          } catch (_) {}
+          try {
             sessionStorage.setItem(GITHUB_TOKEN_SESSION_KEY, cred.accessToken);
           } catch (_) {}
         }
       }
 
       function clearGithubAccessToken() {
+        try {
+          localStorage.removeItem(GITHUB_TOKEN_SESSION_KEY);
+        } catch (_) {}
         try {
           sessionStorage.removeItem(GITHUB_TOKEN_SESSION_KEY);
         } catch (_) {}
@@ -930,6 +941,9 @@
       if (!firebase.apps.length) firebase.initializeApp(config);
       const auth = firebase.auth();
       const db = firebase.firestore();
+      try {
+        auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL);
+      } catch (_) {}
 
       auth.onAuthStateChanged((user) => {
         updatePanels(user);

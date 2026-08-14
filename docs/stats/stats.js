@@ -50,7 +50,7 @@
     filters: {
       title: "Filter Data",
       sub:
-        "Web-filter blocked / unblocked / warning coverage from LinkLens checks across sorted links, including block reasons by filter.",
+        "Web-filter blocked / unblocked / warning coverage from gn-math checks across sorted links, including block reasons by filter.",
     },
     contributions: {
       title: "Contributions",
@@ -918,7 +918,7 @@
       hint.textContent =
         "Per-filter blocked / unblocked / warning counts across " +
         formatInt(payload.links_with_filter_data || 0) +
-        " sorted links with LinkLens data (" +
+        " sorted links with gn-math data (" +
         formatInt(payload.links_without_filter_data || 0) +
         " unchecked)." +
         generated +
@@ -2041,6 +2041,43 @@
     }
 
     void loadAndRenderUserStats(state.db);
+
+    // Keep User Statistics aggregates fresh while this page is open.
+    (function startStatsPresencePings() {
+      if (typeof window.ProxyListPresence === "undefined") return;
+      function tick(force) {
+        var user = null;
+        try {
+          user = typeof firebase !== "undefined" && firebase.auth ? firebase.auth().currentUser : null;
+        } catch (_) {}
+        var anonymous = true;
+        var uid = "";
+        var displayName = "";
+        if (user) {
+          uid = user.uid || "";
+          try {
+            anonymous = !!(user.isAnonymous || (user.providerData || []).length === 0);
+          } catch (_) {
+            anonymous = !!user.isAnonymous;
+          }
+          if (!anonymous) {
+            try {
+              displayName = String((user.displayName || user.email || "").split("@")[0] || "").slice(0, 32);
+            } catch (_) {}
+          }
+        }
+        void window.ProxyListPresence.ping({
+          uid: uid,
+          anonymous: anonymous,
+          displayName: displayName,
+          force: !!force,
+        });
+      }
+      tick(true);
+      setInterval(function () {
+        tick(false);
+      }, 60 * 1000);
+    })();
 
     try {
       var params = new URLSearchParams(window.location.search);

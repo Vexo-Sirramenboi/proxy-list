@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  <!-- Isometric die outline (top / left / right) -->
+  <path
+    stroke="currentColor"
+    stroke-width="1.6"
+    stroke-linejoin="round"
+    d="M12 3.2 4.6 7.2v9.6L12 20.8l7.4-4V7.2L12 3.2Z"
+  />
+  <path stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M4.6 7.2 12 11.2l7.4-4" />
+  <path stroke="currentColor" stroke-width="1.6" d="M12 11.2V20.8" />
+  <!-- Top face: 1 -->
+  <circle cx="12" cy="7.2" r="1.05" fill="currentColor" />
+  <!-- Front-left: 2 (diagonal) -->
+  <circle cx="7.7" cy="12.3" r="0.95" fill="currentColor" />
+  <circle cx="9.6" cy="15.4" r="0.95" fill="currentColor" />
+  <!-- Front-right: 3 (diagonal) -->
+  <circle cx="14.4" cy="11.5" r="0.9" fill="currentColor" />
+  <circle cx="15.85" cy="13.55" r="0.9" fill="currentColor" />
+  <circle cx="17.3" cy="15.6" r="0.9" fill="currentColor" />
+</svg>

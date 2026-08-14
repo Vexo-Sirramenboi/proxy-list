@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-animations="enabled" data-device="auto">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proxy list (offline)</title>
+  <style>
+    :root {
+      --bg: #111111;
+      --surface: #1a1a1a;
+      --border: #2e2e2e;
+      --text: #e8e8e8;
+      --muted: #9a9a9a;
+      --accent: #6cb3ff;
+      --ok: #3ecf8e;
+      --warn: #ffd57e;
+      --danger: #ff8f8f;
+      --font: "Segoe UI", system-ui, sans-serif;
+    }
+    html[data-theme="light"] {
+      --bg: #f4f4f5;
+      --surface: #ffffff;
+      --border: #d4d4d8;
+      --text: #18181b;
+      --muted: #71717a;
+      --accent: #2563eb;
+    }
+    html[data-theme="moonlight"] {
+      --bg: #0b1220;
+      --surface: #121a2b;
+      --border: #243047;
+      --text: #e7eefc;
+      --muted: #93a4c3;
+      --accent: #8ab4ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .offline-banner {
+      padding: 0.55rem 1rem;
+      background: #3b1d6e;
+      color: #f3e8ff;
+      font-size: 0.82rem;
+      border-bottom: 1px solid #6d28d9;
+    }
+    html[data-theme="light"] .offline-banner {
+      background: #ede9fe;
+      color: #5b21b6;
+      border-bottom-color: #c4b5fd;
+    }
+    header {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+    h1 { margin: 0 0 0.25rem; font-size: 1.25rem; }
+    .sub { margin: 0; color: var(--muted); font-size: 0.88rem; }
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(240px, 290px) 1fr;
+      min-height: calc(100vh - 7rem);
+    }
+    @media (max-width: 840px) { .layout { grid-template-columns: 1fr; } }
+    aside {
+      border-right: 1px solid var(--border);
+      padding: 1rem;
+      background: #141414;
+      align-self: start;
+    }
+    html[data-theme="light"] aside { background: #fafafa; }
+    html[data-theme="moonlight"] aside { background: #0f1726; }
+    @media (min-width: 841px) {
+      aside { position: sticky; top: 0; max-height: 100vh; overflow-y: auto; }
+    }
+    main { padding: 1rem 1.15rem 2rem; min-width: 0; }
+    label, legend { display: block; font-size: 0.82rem; color: var(--muted); margin: 0.65rem 0 0.3rem; }
+    fieldset { border: 0; margin: 0 0 0.75rem; padding: 0; }
+    input[type="search"], select {
+      width: 100%;
+      padding: 0.45rem 0.55rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      font: inherit;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.45rem 0.75rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: #141414;
+      color: var(--text);
+      font: inherit;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    html[data-theme="light"] .btn { background: #fff; }
+    .btn:hover { border-color: var(--accent); color: var(--accent); }
+    .btn-primary { border-color: #2d5588; color: var(--accent); }
+    .btn-random-link {
+      border-color: #7c3aed;
+      background: #5b21b6;
+      color: #f5e8ff;
+      width: 100%;
+      justify-content: flex-start;
+    }
+    .btn-random-link:hover { background: #6d28d9; color: #fff; border-color: #a78bfa; }
+    .btn-active { border-color: #2d5588; color: #9fd4ff; background: #222; }
+    .sidebar-actions { display: flex; flex-direction: column; gap: 0.45rem; margin-bottom: 0.75rem; }
+    .tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.2rem 0.45rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      font-size: 0.75rem;
+      cursor: pointer;
+      user-select: none;
+    }
+    .tag input { margin: 0; }
+    .tag-count { color: var(--muted); }
+    .cap-mode { display: flex; gap: 0.75rem; font-size: 0.78rem; color: var(--muted); margin: 0.35rem 0; }
+    .meta-line { color: var(--muted); font-size: 0.85rem; margin: 0 0 0.75rem; }
+    .table-wrap { overflow: auto; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.82rem; display: table; }
+    thead { display: table-header-group; }
+    tbody { display: table-row-group; }
+    tr { display: table-row; }
+    th, td {
+      display: table-cell;
+      text-align: left;
+      padding: 0.45rem 0.5rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th { color: var(--muted); font-weight: 500; position: sticky; top: 0; background: var(--surface); }
+    .link-url { color: var(--accent); word-break: break-all; }
+    .status-pill {
+      display: inline-block;
+      padding: 0.1rem 0.4rem;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      border: 1px solid var(--border);
+    }
+    .status-pill.blocked { color: var(--danger); border-color: #6b2d2d; }
+    .status-pill.unblocked { color: var(--ok); border-color: #2d6b4a; }
+    .status-pill.warning { color: var(--warn); border-color: #6b5a2d; }
+    .summary-backdrop {
+      position: fixed; inset: 0; background: rgba(7,10,14,0.7);
+      display: none; align-items: center; justify-content: center; padding: 1rem; z-index: 30;
+    }
+    .summary-backdrop.open { display: flex; }
+    .summary-modal {
+      width: min(900px, 100%); max-height: 85vh; overflow: auto;
+      background: #141414; border: 1px solid var(--border); border-radius: 10px;
+    }
+    html[data-theme="light"] .summary-modal { background: #fff; }
+    .summary-head, .summary-footer {
+      display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;
+      padding: 0.85rem 1rem; border-bottom: 1px solid var(--border);
+    }
+    .summary-footer { border-bottom: 0; border-top: 1px solid var(--border); justify-content: flex-end; }
+    .summary-title { margin: 0; font-size: 1rem; }
+    .summary-body { padding: 0.85rem 1rem 1rem; }
+    .summary-muted { color: var(--muted); font-size: 0.85rem; }
+    .summary-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 0.5rem; margin: 0.75rem 0; }
+    @media (max-width: 640px) { .summary-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+    .summary-card {
+      border: 1px solid var(--border); border-radius: 8px; padding: 0.55rem 0.65rem; background: var(--surface);
+    }
+    .summary-k { display: block; color: var(--muted); font-size: 0.72rem; }
+    .summary-v { font-weight: 700; }
+    .provider-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+    .provider-table th, .provider-table td { border-bottom: 1px solid var(--border); padding: 0.4rem 0.45rem; }
+    .risk-notice {
+      margin: 0 0 0.75rem; padding: 0.55rem 0.65rem; border-radius: 8px;
+      border: 1px solid #8a6a20; background: rgba(120, 80, 10, 0.2); color: var(--warn);
+    }
+    .random-lootbox {
+      position: relative; height: 9.5rem; border-radius: 12px; overflow: hidden;
+      border: 1px solid #6b3fa0;
+      background: linear-gradient(180deg, rgba(91,33,182,0.35), rgba(20,12,32,0.92) 28%, rgba(20,12,32,0.92) 72%, rgba(91,33,182,0.35));
+    }
+    .random-lootbox-window {
+      position: absolute; left: 0.65rem; right: 0.65rem; top: 50%; height: 2.55rem; margin-top: -1.275rem;
+      border-radius: 8px; border: 1px solid #c4b5fd; z-index: 3; pointer-events: none;
+    }
+    .random-lootbox-reel { position: absolute; left: 0; right: 0; top: 0; will-change: transform; }
+    .random-lootbox-item {
+      height: 2.55rem; display: flex; align-items: center; justify-content: center;
+      padding: 0 1rem; font-weight: 650; color: #f5e8ff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .full-only[hidden], [hidden] { display: none !important; }
+    .empty { color: var(--muted); padding: 1rem; }
+    html[data-animations="disabled"] .random-lootbox-reel { transition: none !important; }
+    .about-view {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 1.25rem 1.2rem 2.5rem;
+    }
+    .about-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin: 0 0 1.25rem;
+    }
+    .about-brand {
+      margin: 0 0 0.85rem;
+      user-select: none;
+    }
+    .about-brand-text {
+      margin: 0;
+      font-size: 2.1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+    .about-tagline {
+      margin: 0 0 1.35rem;
+      font-size: 0.98rem;
+      line-height: 1.45;
+    }
+    .about-tagline strong { font-weight: 650; }
+    .about-info-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.84rem;
+      margin: 0 0 1.5rem;
+    }
+    .about-info-table th,
+    .about-info-table td {
+      border: 1px solid var(--border);
+      padding: 0.65rem 0.75rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    .about-info-table th {
+      color: var(--muted);
+      font-weight: 500;
+      background: #222222;
+      width: 38%;
+    }
+    html[data-theme="light"] .about-info-table th { background: #eee; }
+    .about-info-table td {
+      font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+      font-size: 0.8rem;
+      word-break: break-word;
+      background: var(--surface);
+    }
+    .about-info-table a { color: var(--accent); }
+    .faq {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+      padding: 0.95rem 1rem;
+    }
+    .faq-item h2 {
+      margin: 0 0 0.55rem;
+      font-size: 1.02rem;
+      line-height: 1.3;
+    }
+    .faq-item p {
+      margin: 0;
+      font-size: 0.92rem;
+    }
+    .faq-item p + p { margin-top: 0.7rem; }
+    .faq-item a { color: var(--accent); }
+    .about-back-row {
+      margin-top: 1.35rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .notice-body p {
+      margin: 0 0 0.85rem;
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+    .notice-body p:last-child { margin-bottom: 0; }
+    .notice-live-url {
+      display: block;
+      margin-top: 0.55rem;
+      color: var(--accent);
+      word-break: break-all;
+      font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+      font-size: 0.82rem;
+    }
+    .notice-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      justify-content: flex-end;
+      padding: 0.85rem 1rem;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <div class="offline-banner" id="offlineBanner">
+    Offline copy — sign-in, clicks, ratings, community, stats, mirrors, and embeds are unavailable.
+  </div>
+  <header id="listHeader">
+    <h1>Proxy list <span id="modeBadge"></span></h1>
+    <p class="sub" id="headerMeta">Loading offline bundle…</p>
+  </header>
+  <header id="aboutHeader" hidden>
+    <h1>About</h1>
+    <p class="sub">What this site is, how it started, and how it stays updated.</p>
+  </header>
+  <div class="layout" id="listView">
+    <aside>
+      <div class="sidebar-actions">
+        <button class="btn btn-random-link" id="randomLinkBtn" type="button">Random link</button>
+        <button class="btn full-only" id="selectFilterBtn" type="button" hidden>Select filter</button>
+        <button class="btn" id="openAboutBtn" type="button">About</button>
+        <button class="btn" id="openSettingsBtn" type="button">Settings</button>
+      </div>
+      <p class="sub full-only" id="selectedFilterLabel" hidden>Selected web filter: Any / Not selected</p>
+
+      <label for="q">Search</label>
+      <input type="search" id="q" placeholder="URL, provider, contributor…" autocomplete="off" spellcheck="false" />
+
+      <fieldset>
+        <legend>Providers</legend>
+        <div class="tags" id="providerTags"></div>
+      </fieldset>
+      <fieldset>
+        <legend>Categories</legend>
+        <div class="tags" id="categoryTags"></div>
+      </fieldset>
+      <fieldset>
+        <legend>Protocols</legend>
+        <div class="tags" id="protocolTags"></div>
+      </fieldset>
+      <fieldset>
+        <legend>Capabilities</legend>
+        <div class="cap-mode">
+          <label><input type="radio" name="capMode" value="any" checked /> Any</label>
+          <label><input type="radio" name="capMode" value="all" /> All</label>
+        </div>
+        <div class="tags" id="capTags"></div>
+      </fieldset>
+      <button class="btn" id="resetFiltersBtn" type="button" style="width:100%;margin-top:0.5rem">Reset filters</button>
+    </aside>
+    <main>
+      <p class="meta-line" id="resultMeta">—</p>
+      <div class="table-wrap" id="tableWrap">
+        <p class="empty">Waiting for offline data…</p>
+      </div>
+    </main>
+  </div>
+
+  <main class="about-view" id="aboutView" hidden>
+    <div class="about-actions">
+      <button class="btn" id="aboutBackBtn" type="button">← Back to proxy list</button>
+      <a class="btn" href="https://github.com/yourworstnightmare1/proxy-list" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+
+    <div class="about-brand" aria-label="Proxy list">
+      <h2 class="about-brand-text">Proxy list</h2>
+    </div>
+    <p class="about-tagline">
+      <strong>A sortable, filter-aware collection of proxy and game site links.</strong>
+    </p>
+
+    <table class="about-info-table" aria-label="Site version information">
+      <tbody>
+        <tr>
+          <th scope="row">Site name</th>
+          <td>Proxy list</td>
+        </tr>
+        <tr>
+          <th scope="row">Version</th>
+          <td id="aboutVersion">—</td>
+        </tr>
+        <tr>
+          <th scope="row">Revision</th>
+          <td id="aboutRevision">—</td>
+        </tr>
+        <tr>
+          <th scope="row">Last updated</th>
+          <td id="aboutLastUpdated">—</td>
+        </tr>
+        <tr>
+          <th scope="row">Sorted links</th>
+          <td id="aboutSortedCount">—</td>
+        </tr>
+        <tr>
+          <th scope="row">Unsorted links</th>
+          <td id="aboutUnsortedCount">—</td>
+        </tr>
+        <tr>
+          <th scope="row">Offline mode</th>
+          <td id="aboutOfflineMode">—</td>
+        </tr>
+        <tr>
+          <th scope="row">Source</th>
+          <td>
+            <a href="https://github.com/yourworstnightmare1/proxy-list" target="_blank" rel="noopener noreferrer"
+              >github.com/yourworstnightmare1/proxy-list</a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="faq">
+      <section class="faq-item" aria-labelledby="faq-created">
+        <h2 id="faq-created">How was the Proxy List created?</h2>
+        <p>
+          It was created around October 2025 and started as a non-public Google Doc, where links would be
+          added nearly every day that were all confirmed to be unblocked locally, and was shared with
+          others I knew. It lasted until December 4th, 2025 where the list was given to the wrong people and
+          had to be deleted to prevent getting into trouble. A v2 of the doc was made shortly after with a
+          new URL and links but was scrapped after I realized that Google Docs simply were no longer
+          sufficient for what I and others needed. On February 19, 2026, I created the Proxy List, which
+          started out as a simple .md file with a list of over 100+ links I gathered, new and old from
+          previous docs I made. It grew much larger much more quick and I found that the markdown was
+          cluttered and it was hard to find links that actually worked since there was so many, so I
+          decided to make it into a website where you can sort links and check if a link is blocked, which
+          is what you're viewing this text on now.
+        </p>
+      </section>
+
+      <section class="faq-item" aria-labelledby="faq-count">
+        <h2 id="faq-count">How many links are currently here?</h2>
+        <p>
+          There is currently <strong id="faqSortedCount">—</strong> sorted links here, with
+          <strong id="faqUnsortedCount">—</strong> unsorted links also available. Nearly all sorted links
+          also have filter data, so you'll know what's blocked and what's not without having to go on
+          individual sites and checking.
+        </p>
+      </section>
+
+      <section class="faq-item" aria-labelledby="faq-updated">
+        <h2 id="faq-updated">How often is this list updated?</h2>
+        <p>
+          The list has new links usually every week, and is auto-maintained by a bot that checks every link
+          every 8 hours to ensure no broken or dead links remain in the list. Filter data is also updated
+          every week manually by me using a macro, which checks every link existing in the list for data,
+          then gets auto-uploaded to GitHub, where it is then pushed and seen by the public.
+        </p>
+      </section>
+
+      <section class="faq-item" aria-labelledby="faq-copies">
+        <h2 id="faq-copies">Can I create copies of this site?</h2>
+        <p>
+          Yes, you can create copies and mirrors of this site on whatever domain you please, and
+          <a href="https://github.com/yourworstnightmare1/proxy-list" target="_blank" rel="noopener noreferrer"
+            >all of the list's source code is available on GitHub</a
+          >
+          so you have a near exact version of the list with the auto-check bot included.
+        </p>
+      </section>
+
+      <section class="faq-item" aria-labelledby="faq-add">
+        <h2 id="faq-add">How can I add sites?</h2>
+        <p>
+          You can add links or sections by either
+          <a href="https://github.com/yourworstnightmare1/proxy-list/pulls" target="_blank" rel="noopener noreferrer"
+            >going on GitHub and making a pull request with your desired links</a
+          >, or going to the
+          <a href="https://yourworstnightmare1.github.io/proxy-list/contribute/" target="_blank" rel="noopener noreferrer"
+            >Contribute page on the live Proxy List site and filling out the form</a>.
+        </p>
+      </section>
+
+      <section class="faq-item" aria-labelledby="faq-offline">
+        <h2 id="faq-offline">What is this offline copy?</h2>
+        <p>
+          This file is a self-contained snapshot of the proxy list you downloaded from the live site.
+          Lite includes all links and sorting. Full also includes gn-math filter estimates so you can
+          check blocked/unblocked status offline. Online features like sign-in, click counts, ratings,
+          community, stats, and mirrors are not available here.
+        </p>
+      </section>
+    </div>
+
+    <div class="about-back-row">
+      <button class="btn" id="aboutBackBtnFooter" type="button">Back to proxy list</button>
+    </div>
+  </main>
+
+  <div class="summary-backdrop" id="offlineNoticeBackdrop" aria-hidden="true">
+    <section class="summary-modal" role="dialog" aria-modal="true" aria-labelledby="offlineNoticeTitle" style="width:min(520px,100%)">
+      <div class="summary-head">
+        <h2 class="summary-title" id="offlineNoticeTitle">Offline list</h2>
+      </div>
+      <div class="summary-body notice-body">
+        <p>
+          This is the offline version of the Proxy List, designed to make it easy to access the list in
+          situations where it is hard to access. This does come with some limitations, with the removal of
+          all online features and some live site-exclusive features such as statistics to reduce filesize.
+        </p>
+        <p>
+          Want the best experience possible? Visit the live site now!
+          <a
+            class="notice-live-url"
+            id="offlineNoticeLiveLink"
+            href="https://yourworstnightmare1.github.io/proxy-list"
+            target="_blank"
+            rel="noopener noreferrer"
+            >https://yourworstnightmare1.github.io/proxy-list</a
+          >
+        </p>
+      </div>
+      <div class="notice-actions">
+        <button class="btn btn-primary" id="offlineNoticeAckBtn" type="button">Acknowledge</button>
+        <button class="btn" id="offlineNoticeCopyBtn" type="button">Copy Link</button>
+        <a
+          class="btn"
+          id="offlineNoticeOpenBtn"
+          href="https://yourworstnightmare1.github.io/proxy-list"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Open Link in Browser</a
+        >
+      </div>
+    </section>
+  </div>
+
+  <div class="summary-backdrop" id="summaryBackdrop" aria-hidden="true">
+    <section class="summary-modal" role="dialog" aria-modal="true" aria-labelledby="summaryTitle">
+      <div class="summary-head">
+        <h2 class="summary-title" id="summaryTitle">Link summary</h2>
+        <div style="display:flex;gap:0.4rem;flex-wrap:wrap">
+          <a class="btn btn-primary" id="summaryOpenBtn" href="#" target="_blank" rel="noopener noreferrer">Open link</a>
+          <button class="btn" id="summaryCopyBtn" type="button">Copy link</button>
+          <button class="btn" id="summaryCloseBtn" type="button">Close</button>
+        </div>
+      </div>
+      <div class="summary-body" id="summaryBody"></div>
+    </section>
+  </div>
+
+  <div class="summary-backdrop" id="filterBackdrop" aria-hidden="true">
+    <section class="summary-modal" role="dialog" aria-modal="true" aria-labelledby="filterTitle" style="width:min(420px,100%)">
+      <div class="summary-head">
+        <h2 class="summary-title" id="filterTitle">Select web filter</h2>
+        <button class="btn" id="filterCloseBtn" type="button">Close</button>
+      </div>
+      <div class="summary-body">
+        <p class="summary-muted">Choose the filter used on your network. Summaries show a warning when this filter reports blocked or warning.</p>
+        <select id="filterSelect"><option value="">Any / Not selected</option></select>
+        <p style="margin-top:0.75rem"><button class="btn" id="hideBlockedBtn" type="button">Hide blocked links: Off</button></p>
+        <p style="margin-top:0.5rem"><button class="btn" id="hideUncheckedBtn" type="button">Hide unchecked links: Off</button></p>
+      </div>
+    </section>
+  </div>
+
+  <div class="summary-backdrop" id="settingsBackdrop" aria-hidden="true">
+    <section class="summary-modal" role="dialog" aria-modal="true" aria-labelledby="settingsTitle" style="width:min(420px,100%)">
+      <div class="summary-head">
+        <h2 class="summary-title" id="settingsTitle">Settings</h2>
+        <button class="btn" id="settingsCloseBtn" type="button">Close</button>
+      </div>
+      <div class="summary-body">
+        <label for="settingsThemeSelect">Theme</label>
+        <select id="settingsThemeSelect">
+          <option value="dark">Dark</option>
+          <option value="light">Light</option>
+          <option value="moonlight">Moonlight</option>
+          <option value="auto">Auto</option>
+        </select>
+        <label for="settingsAnimationsSelect">Animations</label>
+        <select id="settingsAnimationsSelect">
+          <option value="enabled">Enabled</option>
+          <option value="disabled">Disabled</option>
+        </select>
+      </div>
+    </section>
+  </div>
+
+  <div class="summary-backdrop" id="randomLinkBackdrop" aria-hidden="true">
+    <section class="summary-modal" role="dialog" aria-modal="true" aria-labelledby="randomLinkTitle" style="width:min(420px,100%)">
+      <div class="summary-head">
+        <h2 class="summary-title" id="randomLinkTitle">Random link</h2>
+        <button class="btn" id="randomLinkCloseBtn" type="button">Close</button>
+      </div>
+      <div class="summary-body">
+        <p class="summary-muted">Uses your current search and filters. Spins providers, then picks a random link.</p>
+        <div class="random-lootbox" aria-hidden="true">
+          <div class="random-lootbox-window"></div>
+          <div class="random-lootbox-reel" id="randomLootboxReel"></div>
+        </div>
+        <p class="summary-muted" id="randomLinkStatus" style="text-align:center;margin-top:0.65rem">Ready</p>
+        <p class="summary-muted" id="randomLinkResult" hidden style="margin-top:0.5rem;padding:0.55rem;border:1px solid var(--border);border-radius:8px"></p>
+      </div>
+      <div class="summary-footer">
+        <button class="btn" id="randomLinkCancelBtn" type="button">Cancel</button>
+        <button class="btn btn-random-link" id="randomLinkSpinBtn" type="button" style="width:auto">Spin</button>
+        <button class="btn btn-primary" id="randomLinkOpenBtn" type="button" hidden>Open result</button>
+      </div>
+    </section>
+  </div>
+
+  <!--OFFLINE_PURIFY_INJECTION-->
+  <!--OFFLINE_BUNDLE_INJECTION-->
+  <script>
+(function () {
+  "use strict";
+
+  var $ = function (id) { return document.getElementById(id); };
+  var bundle = window.__OFFLINE_BUNDLE__ || null;
+  var mode = bundle && bundle.mode === "full" ? "full" : "lite";
+  var allLinks = [];
+  var meta = {};
+  var linkLensData = {};
+  var checkedDomains = new Set();
+  var summaryEntryCache = new Map();
+  var lensDomainSignalFirst = new Map();
+  var selectedGnMathFilter = "";
+  var hideBlockedBySelectedFilter = false;
+  var hideLinksWithoutLensCheck = false;
+  var linkLensHydrated = false;
+  var filteredCache = [];
+  var renderedCount = 0;
+  var chunkSize = 80;
+  var randomPending = null;
+  var randomSpinning = false;
+  var LS_THEME = "proxyList_offline_theme_v1";
+  var LS_ANIM = "proxyList_offline_anim_v1";
+  var LS_NOTICE = "proxyList_offline_notice_ack_v1";
+  var LIVE_SITE_URL = "https://yourworstnightmare1.github.io/proxy-list";
+
+  function escapeHtml(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  }
+  function escapeAttr(s) { return escapeHtml(s); }
+
+  function importSanitizedNodes(nodes) {
+    return Array.from(nodes || []).map(function (node) {
+      return document.importNode(node, true);
+    });
+  }
+
+  function nodesFromSanitizedBodyHtml(raw) {
+    if (!raw || !window.DOMPurify) return [];
+    var clean = DOMPurify.sanitize(String(raw));
+    if (!clean) return [];
+    var doc = new DOMParser().parseFromString("<body>" + clean + "</body>", "text/html");
+    return importSanitizedNodes(doc.body.childNodes);
+  }
+
+  function nodesFromSanitizedTableSection(sectionTag, raw) {
+    var tag = String(sectionTag || "").toLowerCase();
+    if (!raw || !window.DOMPurify || (tag !== "thead" && tag !== "tbody")) return [];
+    // Orphan <tr>/<td> are dropped outside <table>; wrap before sanitize.
+    var clean = DOMPurify.sanitize(
+      "<table><" + tag + ">" + String(raw) + "</" + tag + "></table>"
+    );
+    if (!clean) return [];
+    var doc = new DOMParser().parseFromString(clean, "text/html");
+    var section = doc.querySelector(tag);
+    return section ? importSanitizedNodes(section.childNodes) : [];
+  }
+
+  function nodesFromSanitizedSelectOptions(raw) {
+    if (!raw || !window.DOMPurify) return [];
+    var clean = DOMPurify.sanitize("<select>" + String(raw) + "</select>");
+    if (!clean) return [];
+    var doc = new DOMParser().parseFromString(clean, "text/html");
+    var select = doc.querySelector("select");
+    return select ? importSanitizedNodes(select.childNodes) : [];
+  }
+
+  function setHtml(el, html) {
+    if (!el) return;
+    if (!window.DOMPurify) {
+      el.replaceChildren();
+      return;
+    }
+    var raw = html == null ? "" : String(html);
+    var tag = el.tagName;
+    var nodes;
+    if (tag === "THEAD") nodes = nodesFromSanitizedTableSection("thead", raw);
+    else if (tag === "TBODY") nodes = nodesFromSanitizedTableSection("tbody", raw);
+    else if (tag === "SELECT") nodes = nodesFromSanitizedSelectOptions(raw);
+    else nodes = nodesFromSanitizedBodyHtml(raw);
+    el.replaceChildren.apply(el, nodes);
+  }
+
+  function appendHtml(el, html) {
+    if (!el || !window.DOMPurify) return;
+    var raw = html == null ? "" : String(html);
+    var nodes =
+      el.tagName === "TBODY"
+        ? nodesFromSanitizedTableSection("tbody", raw)
+        : nodesFromSanitizedBodyHtml(raw);
+    if (!nodes.length) return;
+    el.append.apply(el, nodes);
+  }
+
+  function safeHttpUrl(raw) {
+    var s = String(raw == null ? "" : raw).trim();
+    if (!s) return "";
+    try {
+      var u = new URL(s, location.href);
+      if (u.protocol !== "http:" && u.protocol !== "https:") return "";
+      return u.href;
+    } catch (_) { return ""; }
+  }
+
+  function domainOf(link) {
+    try { return new URL(link).hostname.toLowerCase(); } catch (_) { return ""; }
+  }
+
+  function canonicalCategory(value) {
+    var raw = String(value == null ? "" : value).trim();
+    var low = raw.toLowerCase();
+    if (low === "proxy/games") return "Proxy/Games";
+    if (low === "games") return "Games";
+    if (low === "proxy") return "Proxy";
+    if (low === "pending") return "pending";
+    return raw;
+  }
+
+  function uniq(arr) {
+    return Array.from(new Set(arr)).filter(Boolean).sort(function (a, b) { return a.localeCompare(b); });
+  }
+
+  function selectableFacetTags(arr) {
+    return uniq(arr).filter(function (v) {
+      var s = String(v || "").trim().toLowerCase();
+      return s && s !== "-" && s !== "—" && s !== "–" && s !== "n/a" && s !== "pending" && s !== "unknown";
+    });
+  }
+
+  function haystack(row) {
+    return [
+      row.link, row.provider, canonicalCategory(row.category),
+      row.capabilities, row.protocols, row.contributor, row.contributor_url || "", row.found
+    ].join(" ").toLowerCase();
+  }
+
+  function selectedIn(containerId) {
+    return Array.from(document.querySelectorAll("#" + containerId + " input:checked")).map(function (i) { return i.value; });
+  }
+  function selectedCaps() { return selectedIn("capTags"); }
+  function capMode() {
+    var m = document.querySelector('input[name="capMode"]:checked');
+    return m ? m.value : "any";
+  }
+
+  function rowMatchesGroup(row, group, selected, modeVal) {
+    if (!selected.length) return true;
+    if (group === "providerTags") return selected.indexOf(row.provider || "") !== -1;
+    if (group === "categoryTags") return selected.indexOf(canonicalCategory(row.category)) !== -1;
+    if (group === "protocolTags") {
+      var pt = row.protocol_tags || [];
+      return selected.some(function (p) { return pt.indexOf(p) !== -1; });
+    }
+    if (group === "capTags") {
+      var tags = new Set(row.capability_tags || []);
+      if (modeVal === "all") return selected.every(function (s) { return tags.has(s); });
+      return selected.some(function (s) { return tags.has(s); });
+    }
+    return true;
+  }
+
+  function cleanSummaryText(value) {
+    return String(value == null ? "" : value).replace(/\*\*/g, "").replace(/\s{2,}/g, " ").trim();
+  }
+  function normalizeFilterKey(value) {
+    return cleanSummaryText(value).toLowerCase().replace(/[^a-z0-9]+/g, "");
+  }
+  function canonicalProviderLabel(raw) {
+    var s = cleanSummaryText(raw);
+    if (!s) return "";
+    s = s.replace(/[\s\uFEFF]*(?:⚠️|⚠)\s*$/gu, "").trim();
+    while (/\([^)]*\)\s*$/.test(s)) s = s.replace(/\s*\([^)]*\)\s*$/, "").trim();
+    return s;
+  }
+  function providerFilterKey(raw) { return normalizeFilterKey(canonicalProviderLabel(raw)); }
+  function statusClass(status) {
+    if (status === "blocked") return "blocked";
+    if (status === "unblocked") return "unblocked";
+    return "warning";
+  }
+
+  function lensHasSignal(entry) {
+    if (!entry || typeof entry !== "object") return false;
+    var total = Number(entry.summary && entry.summary.total);
+    var providers = Array.isArray(entry.providers) ? entry.providers.length : 0;
+    return total > 0 || providers > 0 || entry.status === "ok";
+  }
+
+  function rebuildLinkLensIndexes() {
+    summaryEntryCache = new Map();
+    lensDomainSignalFirst = new Map();
+    Object.keys(linkLensData || {}).forEach(function (k) {
+      var v = linkLensData[k];
+      if (!v || typeof v !== "object") return;
+      var d = String(v.domain || "").toLowerCase();
+      if (!d || !lensHasSignal(v)) return;
+      if (!lensDomainSignalFirst.has(d)) lensDomainSignalFirst.set(d, v);
+    });
+  }
+
+  function summaryEntryFor(link) {
+    if (summaryEntryCache.has(link)) return summaryEntryCache.get(link);
+    var byExact = linkLensData[link];
+    if (lensHasSignal(byExact)) { summaryEntryCache.set(link, byExact); return byExact; }
+    var domain = domainOf(link);
+    if (!domain) { summaryEntryCache.set(link, byExact || null); return byExact || null; }
+    var byDomain = linkLensData["domain:" + domain] || linkLensData[domain];
+    if (lensHasSignal(byDomain)) { summaryEntryCache.set(link, byDomain); return byDomain; }
+    var fromScan = lensDomainSignalFirst.get(domain) || null;
+    var out = fromScan || byExact || byDomain || null;
+    summaryEntryCache.set(link, out);
+    return out;
+  }
+
+  function hasCheckedDomain(link) {
+    var d = domainOf(link);
+    return !!(d && checkedDomains.has(d));
+  }
+
+  function linkHasParsableLensCheck(link) {
+    return lensHasSignal(summaryEntryFor(link));
+  }
+
+  function isBlockedBySelectedFilter(link) {
+    var selectedFilterKey = normalizeFilterKey(selectedGnMathFilter);
+    if (!selectedFilterKey) return false;
+    var entry = summaryEntryFor(link);
+    if (!entry) return false;
+    var providers = Array.isArray(entry.providers) ? entry.providers : [];
+    return providers.some(function (p) {
+      return providerFilterKey(p.provider || "") === selectedFilterKey && p.status === "blocked";
+    });
+  }
+
+  function filterRows(rows) {
+    var q = ($("q") && $("q").value.trim().toLowerCase()) || "";
+    var selections = {
+      providerTags: selectedIn("providerTags"),
+      categoryTags: selectedIn("categoryTags"),
+      protocolTags: selectedIn("protocolTags"),
+      capTags: selectedCaps()
+    };
+    var modeVal = capMode();
+    var applyHideUnchecked =
+      mode === "full" &&
+      hideLinksWithoutLensCheck &&
+      linkLensHydrated &&
+      !q &&
+      !selections.providerTags.length;
+    return rows.filter(function (row) {
+      if (q && haystack(row).indexOf(q) === -1) return false;
+      if (mode === "full" && hideBlockedBySelectedFilter && isBlockedBySelectedFilter(row.link)) return false;
+      if (applyHideUnchecked && !linkHasParsableLensCheck(row.link)) return false;
+      var groups = ["providerTags", "categoryTags", "protocolTags", "capTags"];
+      for (var i = 0; i < groups.length; i++) {
+        if (!rowMatchesGroup(row, groups[i], selections[groups[i]], modeVal)) return false;
+      }
+      return true;
+    });
+  }
+
+  function formatTags(tags) {
+    if (!tags || !tags.length) return "—";
+    return escapeHtml(tags.join(", "));
+  }
+
+  function buildRowTrHtml(r) {
+    return (
+      "<tr><td>" + escapeHtml(r.provider || "—") +
+      '</td><td><a href="' + escapeAttr(r.link) + '" rel="noopener noreferrer" target="_blank" class="link-url js-link-summary" data-link="' +
+      escapeAttr(r.link) + '">' + escapeHtml(r.link) +
+      "</a></td><td>" + escapeHtml(canonicalCategory(r.category)) +
+      "</td><td>" + formatTags(r.capability_tags) +
+      "</td><td>" + formatTags(r.protocol_tags) +
+      "</td><td>" + escapeHtml(r.contributor || "—") +
+      "</td></tr>"
+    );
+  }
+
+  function fillTags(containerId, values) {
+    var wrap = $(containerId);
+    if (!wrap) return;
+    setHtml(
+      wrap,
+      values.map(function (v) {
+        return (
+          '<label class="tag"><input type="checkbox" value="' + escapeAttr(v) + '" />' +
+          '<span>' + escapeHtml(v) + '</span></label>'
+        );
+      }).join("")
+    );
+  }
+
+  function populateKnownFilters() {
+    var select = $("filterSelect");
+    if (!select || mode !== "full") return;
+    var byKey = new Map();
+    Object.keys(linkLensData || {}).forEach(function (k) {
+      var entry = linkLensData[k];
+      if (!entry || typeof entry !== "object") return;
+      var providers = Array.isArray(entry.providers) ? entry.providers : [];
+      providers.forEach(function (p) {
+        var raw = cleanSummaryText(p && p.provider ? p.provider : "");
+        if (!raw) return;
+        var canon = canonicalProviderLabel(raw);
+        if (!canon) return;
+        var key = normalizeFilterKey(canon);
+        if (!byKey.has(key)) byKey.set(key, canon);
+      });
+    });
+    var sorted = Array.from(byKey.values()).sort(function (a, b) { return a.localeCompare(b); });
+    setHtml(
+      select,
+      '<option value="">Any / Not selected</option>' +
+        sorted.map(function (name) {
+          return '<option value="' + escapeAttr(name) + '">' + escapeHtml(name) + "</option>";
+        }).join("")
+    );
+  }
+
+  function updateSelectedFilterUI() {
+    var label = $("selectedFilterLabel");
+    if (label) {
+      label.textContent =
+        "Selected web filter: " + (selectedGnMathFilter || "Any / Not selected");
+    }
+    var hb = $("hideBlockedBtn");
+    var hu = $("hideUncheckedBtn");
+    if (hb) {
+      hb.textContent = "Hide blocked links: " + (hideBlockedBySelectedFilter ? "On" : "Off");
+      hb.classList.toggle("btn-active", hideBlockedBySelectedFilter);
+    }
+    if (hu) {
+      hu.textContent = "Hide unchecked links: " + (hideLinksWithoutLensCheck ? "On" : "Off");
+      hu.classList.toggle("btn-active", hideLinksWithoutLensCheck);
+    }
+  }
+
+  function renderTable(reset) {
+    filteredCache = filterRows(allLinks);
+    var metaEl = $("resultMeta");
+    if (metaEl) {
+      metaEl.textContent =
+        filteredCache.length.toLocaleString() +
+        " / " +
+        allLinks.length.toLocaleString() +
+        " links" +
+        (mode === "full" && selectedGnMathFilter ? " · filter " + selectedGnMathFilter : "");
+    }
+    var wrap = $("tableWrap");
+    if (!wrap) return;
+    if (reset || !wrap.querySelector("tbody")) {
+      renderedCount = 0;
+      setHtml(
+        wrap,
+        '<table><thead><tr>' +
+          ["Provider", "Link", "Category", "Capabilities", "Protocols", "Contributor"]
+            .map(function (h) { return "<th>" + h + "</th>"; }).join("") +
+          '</tr></thead><tbody id="linksTableBody"></tbody></table>'
+      );
+    }
+    appendChunk();
+  }
+
+  function appendChunk() {
+    var tbody = $("linksTableBody");
+    if (!tbody) return;
+    if (renderedCount >= filteredCache.length) {
+      if (!filteredCache.length && !tbody.children.length) {
+        setHtml($("tableWrap"), '<p class="empty">No links match your filters.</p>');
+      }
+      return;
+    }
+    var next = Math.min(renderedCount + chunkSize, filteredCache.length);
+    var html = filteredCache.slice(renderedCount, next).map(buildRowTrHtml).join("");
+    appendHtml(tbody, html);
+    renderedCount = next;
+  }
+
+  function openBackdrop(id) {
+    var el = $(id);
+    if (!el) return;
+    el.classList.add("open");
+    el.setAttribute("aria-hidden", "false");
+  }
+  function closeBackdrop(id) {
+    var el = $(id);
+    if (!el) return;
+    el.classList.remove("open");
+    el.setAttribute("aria-hidden", "true");
+  }
+
+  function openSummary(link) {
+    link = safeHttpUrl(link);
+    if (!link) return;
+    var body = $("summaryBody");
+    var openBtn = $("summaryOpenBtn");
+    if (openBtn) openBtn.href = link;
+    var entry = mode === "full" ? summaryEntryFor(link) : null;
+    var html = "";
+    if (!entry) {
+      html =
+        '<p class="summary-muted">' +
+        escapeHtml(
+          mode === "lite"
+            ? "Filter/summary data is not included in the Lite offline copy."
+            : hasCheckedDomain(link)
+              ? "This link was checked, but no parsable gn-math summary was captured yet."
+              : "No gn-math data found for this link yet."
+        ) +
+        "</p><p class=\"summary-muted\">URL: <strong>" +
+        escapeHtml(link) +
+        "</strong></p>";
+    } else {
+      var summary = entry.summary || {};
+      var providers = Array.isArray(entry.providers) ? entry.providers : [];
+      var risk = "";
+      var selectedFilterKey = normalizeFilterKey(selectedGnMathFilter);
+      if (selectedFilterKey) {
+        var matches = providers.filter(function (p) {
+          return providerFilterKey(p.provider || "") === selectedFilterKey;
+        });
+        matches.sort(function (a, b) {
+          var rank = function (s) { return s === "blocked" ? 0 : s === "warning" ? 1 : 2; };
+          return rank(String(a.status)) - rank(String(b.status));
+        });
+        var match = matches[0];
+        if (match && (match.status === "blocked" || match.status === "warning")) {
+          risk =
+            '<div class="risk-notice">This link may be blocked on <strong>' +
+            escapeHtml(canonicalProviderLabel(match.provider || "") || selectedGnMathFilter) +
+            "</strong> for <strong>" +
+            escapeHtml(cleanSummaryText(match.category || "Unknown reason")) +
+            "</strong>.</div>";
+        }
+      }
+      var providerRows = providers.length
+        ? providers.map(function (p) {
+            return (
+              "<tr><td>" + escapeHtml(cleanSummaryText(p.provider || "—")) +
+              "</td><td>" + escapeHtml(cleanSummaryText(p.category || "—")) +
+              '</td><td><span class="status-pill ' + statusClass(p.status) + '">' +
+              escapeHtml(p.status || "warning") + "</span></td></tr>"
+            );
+          }).join("")
+        : '<tr><td colspan="3" class="summary-muted">No provider lines.</td></tr>';
+      html =
+        risk +
+        '<p class="summary-muted">Domain: <strong>' + escapeHtml(entry.domain || domainOf(link) || "—") +
+        "</strong> • Checked: <strong>" + escapeHtml(entry.checked_at || "—") +
+        "</strong> • Status: <strong>" + escapeHtml(entry.status || "unknown") +
+        "</strong></p>" +
+        '<div class="summary-grid">' +
+        '<div class="summary-card"><span class="summary-k">Blocked</span><span class="summary-v">' + escapeHtml(String(summary.blocked ?? 0)) + "</span></div>" +
+        '<div class="summary-card"><span class="summary-k">Unblocked</span><span class="summary-v">' + escapeHtml(String(summary.unblocked ?? 0)) + "</span></div>" +
+        '<div class="summary-card"><span class="summary-k">Warning</span><span class="summary-v">' + escapeHtml(String(summary.warning ?? 0)) + "</span></div>" +
+        '<div class="summary-card"><span class="summary-k">Total</span><span class="summary-v">' + escapeHtml(String(summary.total ?? providers.length)) + "</span></div>" +
+        "</div>" +
+        '<table class="provider-table"><thead><tr><th>Provider</th><th>Category</th><th>Result</th></tr></thead><tbody>' +
+        providerRows +
+        "</tbody></table>";
+    }
+    setHtml(body, html);
+    openBackdrop("summaryBackdrop");
+  }
+
+  async function copyLink(link) {
+    try {
+      await navigator.clipboard.writeText(link);
+      alert("Link copied.");
+    } catch (_) {
+      prompt("Copy link:", link);
+    }
+  }
+
+  function groupByProvider(rows) {
+    var map = new Map();
+    rows.forEach(function (row) {
+      var p = String((row && row.provider) || "").trim() || "(unknown)";
+      if (!map.has(p)) map.set(p, []);
+      map.get(p).push(row);
+    });
+    return map;
+  }
+
+  function runRandomSpin() {
+    if (randomSpinning) return;
+    var rows = filterRows(allLinks);
+    if (!rows.length) {
+      $("randomLinkStatus").textContent = "No links match your current filters.";
+      return;
+    }
+    var byProvider = groupByProvider(rows);
+    var providers = Array.from(byProvider.keys());
+    var winnerIndex = Math.floor(Math.random() * providers.length);
+    var winner = providers[winnerIndex];
+    var pool = byProvider.get(winner) || [];
+    var pick = pool[Math.floor(Math.random() * pool.length)];
+    randomSpinning = true;
+    randomPending = null;
+    $("randomLinkOpenBtn").hidden = true;
+    $("randomLinkResult").hidden = true;
+    $("randomLinkStatus").textContent = "Spinning providers…";
+    $("randomLinkSpinBtn").disabled = true;
+
+    var reel = $("randomLootboxReel");
+    reel.replaceChildren();
+    var sequence = [];
+    var loops = Math.min(8, Math.max(4, Math.ceil(24 / Math.max(1, providers.length))));
+    for (var L = 0; L < loops; L++) {
+      for (var i = 0; i < providers.length; i++) sequence.push(providers[i]);
+    }
+    sequence.push(winner);
+    sequence.forEach(function (name, idx) {
+      var item = document.createElement("div");
+      item.className = "random-lootbox-item";
+      item.textContent = name;
+      if (idx === sequence.length - 1) item.style.color = "#fff";
+      reel.appendChild(item);
+    });
+
+    var itemH = (reel.firstElementChild && reel.firstElementChild.getBoundingClientRect().height) || 40.8;
+    var boxH = reel.parentElement.getBoundingClientRect().height || 152;
+    var finalIndex = sequence.length - 1;
+    var offset = boxH / 2 - itemH / 2 - finalIndex * itemH;
+    var reduced =
+      document.documentElement.getAttribute("data-animations") === "disabled" ||
+      (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    reel.style.transition = "none";
+    reel.style.transform = "translateY(" + (boxH / 2 - itemH / 2) + "px)";
+    var duration = reduced ? 0 : 2800 + Math.floor(Math.random() * 900);
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        if (!reduced) {
+          reel.style.transition = "transform " + duration + "ms cubic-bezier(0.12, 0.75, 0.08, 1)";
+        }
+        reel.style.transform = "translateY(" + offset + "px)";
+      });
+    });
+    setTimeout(function () {
+      randomPending = pick;
+      $("randomLinkStatus").textContent = "Landed on " + winner + ".";
+      var res = $("randomLinkResult");
+      res.hidden = false;
+      res.textContent = winner + " → " + (pick && pick.link ? pick.link : "");
+      $("randomLinkOpenBtn").hidden = false;
+      $("randomLinkSpinBtn").disabled = false;
+      randomSpinning = false;
+    }, duration + 80);
+  }
+
+  function applyTheme(theme) {
+    var t = theme || "dark";
+    if (t === "auto") {
+      t = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", t);
+    } else {
+      document.documentElement.setAttribute("data-theme", t);
+    }
+    try { localStorage.setItem(LS_THEME, theme || "dark"); } catch (_) {}
+  }
+
+  function setAboutText(id, value) {
+    var el = $(id);
+    if (el) el.textContent = value;
+  }
+
+  function formatAboutCount(n) {
+    if (!Number.isFinite(n)) return "—";
+    return String(Math.max(0, Math.floor(n)));
+  }
+
+  function fillAboutPage() {
+    var unsorted = Number(meta && meta.unsorted_total);
+    if (!Number.isFinite(unsorted)) unsorted = 0;
+    setAboutText("aboutVersion", (meta && meta.version) || "—");
+    setAboutText("aboutRevision", (meta && meta.revision) || "—");
+    setAboutText("aboutLastUpdated", (meta && meta.last_updated) || "—");
+    setAboutText("aboutSortedCount", formatAboutCount(allLinks.length));
+    setAboutText("aboutUnsortedCount", formatAboutCount(unsorted));
+    setAboutText("aboutOfflineMode", mode === "full" ? "Full (with gn-math)" : "Lite");
+    setAboutText("faqSortedCount", formatAboutCount(allLinks.length));
+    setAboutText("faqUnsortedCount", formatAboutCount(unsorted));
+  }
+
+  function showAboutView() {
+    $("listHeader").hidden = true;
+    $("listView").hidden = true;
+    $("aboutHeader").hidden = false;
+    $("aboutView").hidden = false;
+    window.scrollTo(0, 0);
+  }
+
+  function showListView() {
+    $("aboutHeader").hidden = true;
+    $("aboutView").hidden = true;
+    $("listHeader").hidden = false;
+    $("listView").hidden = false;
+  }
+
+  function boot() {
+    if (!bundle || !bundle.data) {
+      $("headerMeta").textContent = "Missing offline bundle. Download again from the live site.";
+      return;
+    }
+    mode = bundle.mode === "full" ? "full" : "lite";
+    $("modeBadge").textContent = "(" + (mode === "full" ? "Full" : "Lite") + ")";
+    var generated = bundle.generatedAt ? " · generated " + bundle.generatedAt : "";
+    document.querySelectorAll(".full-only").forEach(function (el) {
+      el.hidden = mode !== "full";
+    });
+
+    var data = bundle.data;
+    meta = data.meta || {};
+    allLinks = Array.isArray(data.links) ? data.links : Array.isArray(data) ? data : [];
+    $("headerMeta").textContent =
+      (meta.version || "") +
+      (meta.revision || "") +
+      (meta.last_updated ? " · " + meta.last_updated : "") +
+      generated;
+
+    String(bundle.checkedDomainsText || "")
+      .split(/\r?\n/)
+      .forEach(function (line) {
+        var d = String(line || "").trim().toLowerCase();
+        if (d) checkedDomains.add(d);
+      });
+
+    if (mode === "full" && bundle.linklens && typeof bundle.linklens === "object") {
+      linkLensData = bundle.linklens;
+      rebuildLinkLensIndexes();
+      populateKnownFilters();
+      linkLensHydrated = true;
+    }
+
+    fillTags("providerTags", selectableFacetTags(allLinks.map(function (r) { return r.provider; })));
+    fillTags("categoryTags", selectableFacetTags(allLinks.map(function (r) { return canonicalCategory(r.category); })));
+    fillTags(
+      "protocolTags",
+      selectableFacetTags(allLinks.flatMap(function (r) { return r.protocol_tags || []; }))
+    );
+    fillTags(
+      "capTags",
+      selectableFacetTags(allLinks.flatMap(function (r) { return r.capability_tags || []; }))
+    );
+
+    try {
+      var theme = localStorage.getItem(LS_THEME) || "dark";
+      $("settingsThemeSelect").value = theme;
+      applyTheme(theme);
+      var anim = localStorage.getItem(LS_ANIM) || "enabled";
+      $("settingsAnimationsSelect").value = anim;
+      document.documentElement.setAttribute("data-animations", anim);
+    } catch (_) {}
+
+    renderTable(true);
+    updateSelectedFilterUI();
+    fillAboutPage();
+    try {
+      if (localStorage.getItem(LS_NOTICE) !== "1") {
+        openBackdrop("offlineNoticeBackdrop");
+      }
+    } catch (_) {
+      openBackdrop("offlineNoticeBackdrop");
+    }
+  }
+
+  function wire() {
+    ["providerTags", "categoryTags", "protocolTags", "capTags"].forEach(function (id) {
+      var wrap = $(id);
+      if (wrap) wrap.addEventListener("change", function () { renderTable(true); });
+    });
+    document.querySelectorAll('input[name="capMode"]').forEach(function (el) {
+      el.addEventListener("change", function () { renderTable(true); });
+    });
+    var q = $("q");
+    if (q) {
+      var t = null;
+      q.addEventListener("input", function () {
+        clearTimeout(t);
+        t = setTimeout(function () { renderTable(true); }, 120);
+      });
+    }
+    $("resetFiltersBtn").addEventListener("click", function () {
+      document.querySelectorAll(".tags input[type=checkbox]").forEach(function (i) { i.checked = false; });
+      if (q) q.value = "";
+      renderTable(true);
+    });
+
+    $("tableWrap").addEventListener("click", function (ev) {
+      var a = ev.target && ev.target.closest ? ev.target.closest("a.js-link-summary") : null;
+      if (!a) return;
+      ev.preventDefault();
+      openSummary(a.getAttribute("data-link"));
+    });
+
+    window.addEventListener("scroll", function () {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 600) appendChunk();
+    }, { passive: true });
+
+    $("summaryCloseBtn").addEventListener("click", function () { closeBackdrop("summaryBackdrop"); });
+    $("summaryBackdrop").addEventListener("click", function (ev) {
+      if (ev.target === $("summaryBackdrop")) closeBackdrop("summaryBackdrop");
+    });
+    $("summaryCopyBtn").addEventListener("click", function () {
+      var href = $("summaryOpenBtn") && $("summaryOpenBtn").href;
+      if (href) void copyLink(href);
+    });
+
+    $("openSettingsBtn").addEventListener("click", function () { openBackdrop("settingsBackdrop"); });
+    $("openAboutBtn").addEventListener("click", showAboutView);
+    $("aboutBackBtn").addEventListener("click", showListView);
+    $("aboutBackBtnFooter").addEventListener("click", showListView);
+    $("offlineNoticeAckBtn").addEventListener("click", function () {
+      try { localStorage.setItem(LS_NOTICE, "1"); } catch (_) {}
+      closeBackdrop("offlineNoticeBackdrop");
+    });
+    $("offlineNoticeCopyBtn").addEventListener("click", function () {
+      void copyLink(LIVE_SITE_URL);
+    });
+    $("settingsCloseBtn").addEventListener("click", function () { closeBackdrop("settingsBackdrop"); });
+    $("settingsThemeSelect").addEventListener("change", function () {
+      applyTheme($("settingsThemeSelect").value);
+    });
+    $("settingsAnimationsSelect").addEventListener("change", function () {
+      var v = $("settingsAnimationsSelect").value === "disabled" ? "disabled" : "enabled";
+      document.documentElement.setAttribute("data-animations", v);
+      try { localStorage.setItem(LS_ANIM, v); } catch (_) {}
+    });
+
+    $("randomLinkBtn").addEventListener("click", function () {
+      randomPending = null;
+      $("randomLinkResult").hidden = true;
+      $("randomLinkOpenBtn").hidden = true;
+      $("randomLinkStatus").textContent = "Press Spin to start.";
+      openBackdrop("randomLinkBackdrop");
+    });
+    $("randomLinkCloseBtn").addEventListener("click", function () {
+      if (!randomSpinning) closeBackdrop("randomLinkBackdrop");
+    });
+    $("randomLinkCancelBtn").addEventListener("click", function () {
+      if (!randomSpinning) closeBackdrop("randomLinkBackdrop");
+    });
+    $("randomLinkSpinBtn").addEventListener("click", runRandomSpin);
+    $("randomLinkOpenBtn").addEventListener("click", function () {
+      if (!randomPending || !randomPending.link) return;
+      closeBackdrop("randomLinkBackdrop");
+      openSummary(randomPending.link);
+    });
+
+    if (mode === "full") {
+      $("selectFilterBtn").addEventListener("click", function () { openBackdrop("filterBackdrop"); });
+      $("filterCloseBtn").addEventListener("click", function () { closeBackdrop("filterBackdrop"); });
+      $("filterSelect").addEventListener("change", function () {
+        selectedGnMathFilter = $("filterSelect").value || "";
+        updateSelectedFilterUI();
+        renderTable(true);
+      });
+      $("hideBlockedBtn").addEventListener("click", function () {
+        hideBlockedBySelectedFilter = !hideBlockedBySelectedFilter;
+        updateSelectedFilterUI();
+        renderTable(true);
+      });
+      $("hideUncheckedBtn").addEventListener("click", function () {
+        hideLinksWithoutLensCheck = !hideLinksWithoutLensCheck;
+        updateSelectedFilterUI();
+        renderTable(true);
+      });
+    }
+  }
+
+  wire();
+  boot();
+})();
+  </script>
+</body>
+</html>
