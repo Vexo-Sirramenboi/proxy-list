@@ -1,11 +1,8 @@
 {
-  "checked_at": "2026-08-14T01:23:23Z",
-  "checked_at_display": "2026-08-14 01:23 UTC",
+  "checked_at": "2026-08-14T07:16:28Z",
+  "checked_at_display": "2026-08-14 07:16 UTC",
   "added_count": 0,
-  "removed_count": 2,
+  "removed_count": 0,
   "added_links": [],
-  "removed_links": [
-    "https://learning.e-c-h-o.tw",
-    "https://mathlectures.e-c-h-o.tw"
-  ]
+  "removed_links": []
 }

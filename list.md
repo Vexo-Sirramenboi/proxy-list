@@ -822,7 +822,6 @@ Fixed a bug where the filter select dropdown box in the settings menu showed no 
 | | https://growth.hjshop.net/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://learning.hkieca.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://studying.nigelupchurch.com/ | N/A | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://gowith.lunar.eminescusm.ro | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://deend.gcpservicios.cl | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://hill.berugy.hu | 8/11/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
