@@ -16,6 +16,7 @@ Welcome to the official Proxy List! This has a running list of hundreds of unblo
 ## Important Notices
 
 ## Update Notice
+
 # Offline downloading
 You can now save the Proxy List as an HTML, text, or markdown file for offline viewing when the list is blocked or not accessable. Note that the offline version has all online features stripped and is really just the bare bones of the list.
 
@@ -40,7 +41,6 @@ Fixed a bug where the setting "Grab Link Clicks Per Chunk" had a description tha
 Fixed a bug where some users on mobile would see the "Rotate your device" message even when their device was already in landscape
 Fixed a bug where the filter select dropdown box was substantially larger than intended
 Fixed a bug where the filter select dropdown box in the settings menu showed no options other than any/none
-
 
 # 💜 Selenite
 > [!NOTE]
@@ -1539,7 +1539,7 @@ Fixed a bug where the filter select dropdown box in the settings menu showed no 
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | unknown | unknown | 137 |
+> | Proxy/Games | unknown | unknown | 135 |
 
 > [!IMPORTANT]
 > StudyHub does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.
@@ -1602,8 +1602,6 @@ Fixed a bug where the filter select dropdown box in the settings menu showed no 
 | | https://studyhub.vjason.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://alternate.2sh.tw/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://physics.dikpalkc.com.np/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://learning.e-c-h-o.tw/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://mathlectures.e-c-h-o.tw/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cipher.tejidosdedignidad.org/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://hello.tejidosdedignidad.org/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://filterbrowse.thenookfactory.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -4647,11 +4645,8 @@ Fixed a bug where the filter select dropdown box in the settings menu showed no 
 | | https://jsd.onmicrosoft.cn/combine/gh/googleaccountuser/myfirstrepo/windows10background.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdmirror.com/combine/gh/googleaccountuser/myfirstrepo/windows10background.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://jsd.onmicrosoft.cn/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://cdn.jsdmirror.com/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://cdn.statically.io/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://jsd.onmicrosoft.cn/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://cdn.staticdelivr.com/gh/UNBL0CKEDZ0NE/ubassets/main/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://cdn.statically.io/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://jsd.onmicrosoft.cn/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://cdn.staticdelivr.com/gh/UNBL0CKEDZ0NE/ubassets/master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://jsd.onmicrosoft.cn/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
