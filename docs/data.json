@@ -240,37 +240,17 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-14T18:49:36Z",
-    "checked_at_display": "2026-08-14 18:49 UTC",
+    "checked_at": "2026-08-15T01:03:03Z",
+    "checked_at_display": "2026-08-15 01:03 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
   "failing_links": {
-    "https://mathstudy.hotelconsuladoinn.com": 1,
-    "https://amd74.gpu74.ru": 1,
-    "https://limto.riesgocrediticio.com": 1,
-    "https://bestspark.indevs.in": 1,
-    "https://bestspark.sryze.cc": 1,
-    "https://studyready.ryzedns.org": 1,
-    "https://studyready.zone.id": 1,
-    "https://bestspark.nett.to": 1,
-    "https://bestspark.bielenberg.id.au": 1,
-    "https://bestspark.buf2.com": 1,
-    "https://bestspark.krepche.com": 1,
-    "https://bestspark.worldmicroscope.com": 1,
-    "https://bestspark.cafemeridiano.com.br": 1,
-    "https://bestspark.freshmilk.co.za": 1,
-    "https://bestspark.gparente.net.br": 1,
-    "https://bestspark.oxsec.com.mx": 1,
-    "https://bestspark.windowpublication.com.np": 1,
-    "https://catclass.brtk.eu": 1,
-    "https://catclass.msw.cl": 1,
-    "https://catclass.oucrunp.org.np": 1,
-    "https://catclass.prima-bel-canto.com": 1,
-    "https://catclass.tranhaihau.com": 1,
-    "https://aintveentry.medscience.cl": 1
+    "https://mathstudy.hotelconsuladoinn.com": 2,
+    "https://amd74.gpu74.ru": 2,
+    "https://limto.riesgocrediticio.com": 2
   },
   "links": [
     {
