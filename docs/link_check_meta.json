@@ -1,8 +1,10 @@
 {
-  "checked_at": "2026-08-16T12:33:30Z",
-  "checked_at_display": "2026-08-16 12:33 UTC",
+  "checked_at": "2026-08-16T18:23:41Z",
+  "checked_at_display": "2026-08-16 18:23 UTC",
   "added_count": 0,
-  "removed_count": 0,
+  "removed_count": 1,
   "added_links": [],
-  "removed_links": []
+  "removed_links": [
+    "https://fastly.jsdelivr.net/gh/mrdavidzs/svgfrosted@A4/surgeray2343.svg"
+  ]
 }

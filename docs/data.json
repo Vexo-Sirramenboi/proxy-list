@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "v6.3",
-    "revision": "r267",
+    "revision": "r268",
     "last_updated": "August 16, 2026",
     "unsorted_total": 342,
     "important_notices": "",
@@ -9,7 +9,7 @@
     "update_changelog": [
       {
         "version": "v6.3",
-        "revision": "r267",
+        "revision": "r268",
         "released": "August 16, 2026",
         "update_notice": "# Offline downloading\nYou can now save the Proxy List as an HTML, text, or markdown file for offline viewing when the list is blocked or not accessable. Note that the offline version has all online features stripped and is really just the bare bones of the list.\n\n# Random link\nYou can now choose a random link by clicking the \"Random link\" button highlighted in purple on the sidebar. It will go through every provider and once it lands on one, you will get a random link from that provider.\n\n# Developer/debug settings\nThere is now debug mode for developers and also to improve development. You can fire test notifications, view your user agent, see memory and CPU estimations, and console warnings, errors, and chunk loadtime data.\n\n# Manual resizing\nYou can now manually select the mode you want the site to format the site to (mobile, desktop, or auto detect).\n\n# Save data\nYou can now import and export your saved filter and settings data in the Settings menu."
       },
@@ -240,22 +240,25 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-16T12:33:30Z",
-    "checked_at_display": "2026-08-16 12:33 UTC",
+    "checked_at": "2026-08-16T18:23:41Z",
+    "checked_at_display": "2026-08-16 18:23 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 1,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://fastly.jsdelivr.net/gh/mrdavidzs/svgfrosted@A4/surgeray2343.svg"
+    ]
   },
   "failing_links": {
-    "https://account.englishbridalcouture.com": 1,
-    "https://mail.adriapartners.net": 1,
-    "https://cdn.jsdelivr.net/gh/mrdavidzs/svgfrosted@main/alphacore6840.svg": 1,
-    "https://fastly.jsdelivr.net/gh/mrdavidzs/svgfrosted@A4/surgeray2343.svg": 2,
-    "https://slnt.newlifesanctuarychurch.com": 1,
-    "https://slnt.frenchchurch.org": 1,
-    "https://learn.englishbridalcouture.com": 1,
-    "https://potatoesryummy.space": 1
+    "https://music.prep.zap3.net": 1,
+    "https://bobbydongschreinerus8.weebly.com/my-work.html": 1,
+    "https://account.englishbridalcouture.com": 2,
+    "https://mail.adriapartners.net": 2,
+    "https://cdn.jsdelivr.net/gh/mrdavidzs/svgfrosted@main/alphacore6840.svg": 2,
+    "https://slnt.newlifesanctuarychurch.com": 2,
+    "https://slnt.frenchchurch.org": 2,
+    "https://learn.englishbridalcouture.com": 2,
+    "https://aintveentry.medscience.cl": 1
   },
   "links": [
     {
@@ -58499,25 +58502,6 @@
       "additional_notes": "",
       "locked": "",
       "link": "https://cdn.jsdelivr.net/gh/mrdavidzs/svgfrosted@main/alphacore6840.svg",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "❄️ Frosted",
-      "category": "Proxy",
-      "capabilities": "unknown",
-      "capability_tags": [],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://fastly.jsdelivr.net/gh/mrdavidzs/svgfrosted@A4/surgeray2343.svg",
       "found": "5/2/2026",
       "username": "N/A",
       "password": "N/A",
