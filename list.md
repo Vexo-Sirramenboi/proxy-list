@@ -42,16 +42,6 @@ Fixed a bug where some users on mobile would see the "Rotate your device" messag
 Fixed a bug where the filter select dropdown box was substantially larger than intended
 Fixed a bug where the filter select dropdown box in the settings menu showed no options other than any/none
 
-# 💜 Selenite
-> [!NOTE]
-> | Category | Capabilities | Protocol(s) | Links |
-> | - | - | - | - |
-> | Games | N/A | N/A | 1 |
-
-| Locked | Link | Found Date | Username | Password | Contributor |
-| - | - | - | - | - | - |
-| | https://learn.englishbridalcouture.com/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-
 # 🌙 Velara
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
