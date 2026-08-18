@@ -240,17 +240,25 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-18T01:02:09Z",
-    "checked_at_display": "2026-08-18 01:02 UTC",
+    "checked_at": "2026-08-18T06:37:52Z",
+    "checked_at_display": "2026-08-18 06:37 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 1,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://bobbydongschreinerus8.weebly.com/my-work.html"
+    ]
   },
   "failing_links": {
-    "https://bobbydongschreinerus8.weebly.com/my-work.html": 2,
-    "https://unpkg.com/secure-test-browser-jau0u06f/index.html": 1,
-    "https://aintveentry.medscience.cl": 1
+    "https://cdn.jsdelivr.net/gh/carls-math-class/491171-physics@main/doesn.svg": 1,
+    "https://cdn.jsdelivr.net/gh/carls-math-class/669778-philosophy@main/doesn.svg": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/discrete-limits-2042@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/abstract-combinatorics-1766@main/INVADDEX.SVG": 1,
+    "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/exponential-calculus-6386@main/INVADDEX.SVG": 1,
+    "https://history.drama.classroom.technology.science.doris-safety.com": 1,
+    "https://yukios.edgeone.app": 1,
+    "https://nobloccstatus.mattle.uk": 1,
+    "https://aintveentry.medscience.cl": 2
   },
   "links": [
     {
@@ -29878,22 +29886,6 @@
       "locked": "",
       "link": "https://cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/real-theorem-2414@main/doesn.svg",
       "found": "4/21/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🫘 Sea Bean",
-      "category": "Games",
-      "capabilities": "N/A",
-      "capability_tags": [],
-      "protocols": "N/A",
-      "protocol_tags": [],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://bobbydongschreinerus8.weebly.com/my-work.html",
-      "found": "4/25/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",
