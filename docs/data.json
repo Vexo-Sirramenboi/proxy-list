@@ -240,22 +240,23 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-19T06:39:20Z",
-    "checked_at_display": "2026-08-19 06:39 UTC",
+    "checked_at": "2026-08-19T12:39:52Z",
+    "checked_at_display": "2026-08-19 12:39 UTC",
     "added_count": 0,
-    "removed_count": 2,
+    "removed_count": 3,
     "added_links": [],
     "removed_links": [
-      "https://beforewepickedupdurk.maxmir-energy.ru",
-      "https://seabeanixlmath.wikidelia.net"
+      "https://edu.italianish.beltfrog.com",
+      "https://frogs.beltfrog.com",
+      "https://studying.beltfrog.com"
     ]
   },
   "failing_links": {
-    "https://frogs.beltfrog.com": 2,
-    "https://edu.italianish.beltfrog.com": 2,
-    "https://studying.beltfrog.com": 2,
-    "https://masterstep.org": 1,
-    "https://cdn.staticdelivr.com/gh/UNBL0CKEDZ0NE/ubassets/master/assets/index.svg": 2
+    "https://catclass.brtk.eu": 1,
+    "https://catclass.msw.cl": 1,
+    "https://catclass.oucrunp.org.np": 1,
+    "https://catclass.prima-bel-canto.com": 1,
+    "https://catclass.tranhaihau.com": 1
   },
   "links": [
     {
@@ -10670,27 +10671,6 @@
       ],
       "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
       "locked": "",
-      "link": "https://edu.italianish.beltfrog.com",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
-      "locked": "",
       "link": "https://tub.wikidelia.net",
       "found": "5/6/2026",
       "username": "N/A",
@@ -10714,27 +10694,6 @@
       "locked": "",
       "link": "https://vlargestinks.wikidelia.net",
       "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🐶 dogeub",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "when visiting dogeub on a google script (script.google.com) domain, the proxy won't load and if it does it's just a white screen. most games are unaffected",
-      "locked": "",
-      "link": "https://edu.italianish.beltfrog.com/",
-      "found": "5/9/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "1NobleCyber",
@@ -11196,27 +11155,6 @@
       "additional_notes": "Lunar has performance issues and noticeably lags the whole browser when it's the current tab. If you have a lower-end device, you might experience problems. (tested on MacBook M1 Pro (2020), macOS 26.3.1)",
       "locked": "",
       "link": "https://lectures.vta-international.com",
-      "found": "5/4/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "🌕 Lunar",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "Lunar has performance issues and noticeably lags the whole browser when it's the current tab. If you have a lower-end device, you might experience problems. (tested on MacBook M1 Pro (2020), macOS 26.3.1)",
-      "locked": "",
-      "link": "https://frogs.beltfrog.com",
       "found": "5/4/2026",
       "username": "N/A",
       "password": "N/A",
@@ -22075,22 +22013,6 @@
       "locked": "",
       "link": "https://vcsa-yt.lervs.ro",
       "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "📖 StudyHub",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [],
-      "protocols": "unknown",
-      "protocol_tags": [],
-      "additional_notes": "StudyHub does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
-      "link": "https://studying.beltfrog.com/",
-      "found": "5/9/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "1NobleCyber",
@@ -66579,22 +66501,6 @@
       "additional_notes": "if you see a block screen it's likely fake, wait a few seconds and it will disappear",
       "locked": "",
       "link": "https://jsd.onmicrosoft.cn/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🔓 Unblockedzone",
-      "category": "Games",
-      "capabilities": "-",
-      "capability_tags": [],
-      "protocols": "-",
-      "protocol_tags": [],
-      "additional_notes": "if you see a block screen it's likely fake, wait a few seconds and it will disappear",
-      "locked": "",
-      "link": "https://cdn.staticdelivr.com/gh/UNBL0CKEDZ0NE/ubassets/master/assets/index.svg",
       "found": "8/3/2026",
       "username": "N/A",
       "password": "N/A",
