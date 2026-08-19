@@ -240,37 +240,22 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-19T01:03:29Z",
-    "checked_at_display": "2026-08-19 01:03 UTC",
+    "checked_at": "2026-08-19T06:39:20Z",
+    "checked_at_display": "2026-08-19 06:39 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 2,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://beforewepickedupdurk.maxmir-energy.ru",
+      "https://seabeanixlmath.wikidelia.net"
+    ]
   },
   "failing_links": {
-    "https://frogs.beltfrog.com": 1,
-    "https://edu.italianish.beltfrog.com": 1,
-    "https://seabeanixlmath.wikidelia.net": 2,
-    "https://studying.beltfrog.com": 1,
-    "https://teatime.hadtea.com": 1,
-    "https://byte-workshop40.becasuniversitarias.org": 2,
-    "https://diploma-journal78.bridgeportmath.org": 2,
-    "https://force-test59.fukushimastudy.org": 2,
-    "https://mew-logic14.task4z.dpdns.org": 2,
-    "https://school-force28.mathmatics.ccwu.cc": 2,
-    "https://faculty-yarn36.mathmatics.ccwu.cc": 2,
-    "https://leap-lab45.bridgeportmath.org": 2,
-    "https://matrix-integral40.fukushimastudy.org": 2,
-    "https://music-lab67.task4z.dpdns.org": 2,
-    "https://root-student38.becasuniversitarias.org": 2,
-    "https://cdn.staticdelivr.com/gh/UNBL0CKEDZ0NE/ubassets/master/assets/index.svg": 1,
-    "https://calc-prof69.fukushimastudy.org": 2,
-    "https://faculty-theory31.task4z.dpdns.org": 2,
-    "https://kit-algebra56.bridgeportmath.org": 2,
-    "https://seminar-homework52.becasuniversitarias.org": 2,
-    "https://theorem-fluff62.mathmatics.ccwu.cc": 2,
-    "https://beforewepickedupdurk.maxmir-energy.ru": 2,
-    "https://aintveentry.medscience.cl": 1
+    "https://frogs.beltfrog.com": 2,
+    "https://edu.italianish.beltfrog.com": 2,
+    "https://studying.beltfrog.com": 2,
+    "https://masterstep.org": 1,
+    "https://cdn.staticdelivr.com/gh/UNBL0CKEDZ0NE/ubassets/master/assets/index.svg": 2
   },
   "links": [
     {
@@ -21062,24 +21047,6 @@
       ],
       "additional_notes": "Rosin does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
       "locked": "",
-      "link": "https://beforewepickedupdurk.maxmir-energy.ru/",
-      "found": "8/5/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🎮 Rosin",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "Rosin does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
       "link": "https://pickupdurk.maxmir-energy.ru/",
       "found": "8/5/2026",
       "username": "N/A",
@@ -29902,22 +29869,6 @@
       "password": "N/A",
       "contributor": "yourworstnightmare1",
       "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🫘 Sea Bean",
-      "category": "Games",
-      "capabilities": "N/A",
-      "capability_tags": [],
-      "protocols": "N/A",
-      "protocol_tags": [],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://seabeanixlmath.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
     },
     {
       "provider": "🫘 Sea Bean",
