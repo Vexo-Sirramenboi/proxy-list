@@ -240,18 +240,22 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-19T18:30:36Z",
-    "checked_at_display": "2026-08-19 18:30 UTC",
+    "checked_at": "2026-08-20T01:02:47Z",
+    "checked_at_display": "2026-08-20 01:02 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
   "failing_links": {
-    "https://dogeub.github.io": 1,
-    "https://salsa.bellydancenetwork.com": 1,
-    "https://cdn.staticdelivr.com/gh/UNBL0CKEDZ0NE/ubassets/main/assets/index.svg": 1,
-    "https://aintveentry.medscience.cl": 1
+    "https://salsa.bellydancenetwork.com": 2,
+    "https://catclass.brtk.eu": 1,
+    "https://catclass.msw.cl": 1,
+    "https://catclass.oucrunp.org.np": 1,
+    "https://catclass.prima-bel-canto.com": 1,
+    "https://catclass.tranhaihau.com": 1,
+    "https://cdn.staticdelivr.com/gh/UNBL0CKEDZ0NE/ubassets/main/assets/index.svg": 2,
+    "https://aintveentry.medscience.cl": 2
   },
   "links": [
     {
