@@ -240,23 +240,17 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-20T01:02:47Z",
-    "checked_at_display": "2026-08-20 01:02 UTC",
+    "checked_at": "2026-08-20T06:40:17Z",
+    "checked_at_display": "2026-08-20 06:40 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 2,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://aintveentry.medscience.cl",
+      "https://salsa.bellydancenetwork.com"
+    ]
   },
-  "failing_links": {
-    "https://salsa.bellydancenetwork.com": 2,
-    "https://catclass.brtk.eu": 1,
-    "https://catclass.msw.cl": 1,
-    "https://catclass.oucrunp.org.np": 1,
-    "https://catclass.prima-bel-canto.com": 1,
-    "https://catclass.tranhaihau.com": 1,
-    "https://cdn.staticdelivr.com/gh/UNBL0CKEDZ0NE/ubassets/main/assets/index.svg": 2,
-    "https://aintveentry.medscience.cl": 2
-  },
+  "failing_links": {},
   "links": [
     {
       "provider": "🌙 Velara",
@@ -21255,24 +21249,6 @@
       "additional_notes": "Rosin does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
       "locked": "",
       "link": "https://broken.allez.la",
-      "found": "8/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🎮 Rosin",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "Rosin does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
-      "link": "https://aintveentry.medscience.cl",
       "found": "8/11/2026",
       "username": "N/A",
       "password": "N/A",
@@ -58261,24 +58237,6 @@
       ],
       "additional_notes": "",
       "locked": "",
-      "link": "https://salsa.bellydancenetwork.com",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🚀 Shuttle",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "additional_notes": "",
-      "locked": "",
       "link": "https://h.shuttlemath.com",
       "found": "5/2/2026",
       "username": "N/A",
@@ -66468,22 +66426,6 @@
       "additional_notes": "if you see a block screen it's likely fake, wait a few seconds and it will disappear",
       "locked": "",
       "link": "https://jsd.onmicrosoft.cn/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🔓 Unblockedzone",
-      "category": "Games",
-      "capabilities": "-",
-      "capability_tags": [],
-      "protocols": "-",
-      "protocol_tags": [],
-      "additional_notes": "if you see a block screen it's likely fake, wait a few seconds and it will disappear",
-      "locked": "",
-      "link": "https://cdn.staticdelivr.com/gh/UNBL0CKEDZ0NE/ubassets/main/assets/index.svg",
       "found": "8/3/2026",
       "username": "N/A",
       "password": "N/A",
