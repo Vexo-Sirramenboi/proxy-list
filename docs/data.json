@@ -240,24 +240,31 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-21T01:06:09Z",
-    "checked_at_display": "2026-08-21 01:06 UTC",
+    "checked_at": "2026-08-21T06:40:52Z",
+    "checked_at_display": "2026-08-21 06:40 UTC",
     "added_count": 0,
-    "removed_count": 4,
+    "removed_count": 3,
     "added_links": [],
     "removed_links": [
-      "https://neatgeo.babypos.hk",
-      "https://topgrammar.reformarchive.com",
-      "https://clearcoding.pollsvspoly.com",
-      "https://simplegrammar.asturkiters.es"
+      "https://edu.agatab.com",
+      "https://edu3.agatab.com",
+      "https://edu4.agatab.com"
     ]
   },
   "failing_links": {
-    "https://edu.agatab.com": 2,
-    "https://edu3.agatab.com": 2,
-    "https://edu4.agatab.com": 2,
-    "https://history.wikidelia.net": 1,
-    "https://believe.bijayakilla.com": 1
+    "https://arctic.lervs.ro": 1,
+    "https://d1v5dyshakfvq5.cloudfront.net/index.html": 1,
+    "https://d3k3w4kgudbm85.cloudfront.net/index.html": 1,
+    "https://d1jjmz8198xmlw.cloudfront.net/index.html": 1,
+    "https://dmssv188xbv87.cloudfront.net/index.html": 1,
+    "https://arctic.grahammurryinsuranceagency.com": 1,
+    "https://uhcontentkeeperhowlol.beerporn.org": 1,
+    "https://history.wikidelia.net": 2,
+    "https://ixlmathenglish.wikidelia.net": 1,
+    "https://learn.wikidelia.net": 1,
+    "https://mathxl.wikidelia.net": 1,
+    "https://nobloccstatus.mattle.uk": 1,
+    "https://mood.cthulhu.li": 1
   },
   "links": [
     {
@@ -12963,60 +12970,6 @@
       "locked": "",
       "link": "https://learningdash.edu-spark.top/",
       "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "😈 Imp Proxy",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "Imp Proxy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
-      "link": "https://edu.agatab.com/",
-      "found": "4/26/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "😈 Imp Proxy",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "Imp Proxy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
-      "link": "https://edu3.agatab.com/",
-      "found": "4/26/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "😈 Imp Proxy",
-      "category": "Proxy/Games",
-      "capabilities": "Unknown",
-      "capability_tags": [],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "Imp Proxy does not have CAPTCHA support. Websites that require human verification (like YouTube) will not work or display properly.",
-      "locked": "",
-      "link": "https://edu4.agatab.com/",
-      "found": "4/26/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",
