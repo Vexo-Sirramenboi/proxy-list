@@ -240,14 +240,16 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-22T06:34:20Z",
-    "checked_at_display": "2026-08-22 06:34 UTC",
+    "checked_at": "2026-08-22T12:32:52Z",
+    "checked_at_display": "2026-08-22 12:32 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
-  "failing_links": {},
+  "failing_links": {
+    "https://paloalto.oneuniversity.info": 1
+  },
   "links": [
     {
       "provider": "🌙 Velara",
