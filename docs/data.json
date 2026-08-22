@@ -240,16 +240,14 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-22T01:02:34Z",
-    "checked_at_display": "2026-08-22 01:02 UTC",
+    "checked_at": "2026-08-22T06:34:20Z",
+    "checked_at_display": "2026-08-22 06:34 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
-  "failing_links": {
-    "https://learning.gressvikbmx.no": 1
-  },
+  "failing_links": {},
   "links": [
     {
       "provider": "🌙 Velara",
