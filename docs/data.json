@@ -240,16 +240,14 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-24T06:52:29Z",
-    "checked_at_display": "2026-08-24 06:52 UTC",
+    "checked_at": "2026-08-24T12:42:37Z",
+    "checked_at_display": "2026-08-24 12:42 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
-  "failing_links": {
-    "https://script.google.com/macros/s/AKfycbwtcLyqYbkd0uE_nR39MUVatFVKXo1ZJaG_LoJ_pn2_MMSKn7Eq07endyAJGeWuA2j2Ww/exec": 1
-  },
+  "failing_links": {},
   "links": [
     {
       "provider": "🌙 Velara",
