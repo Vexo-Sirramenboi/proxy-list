@@ -240,31 +240,35 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-25T01:04:39Z",
-    "checked_at_display": "2026-08-25 01:04 UTC",
+    "checked_at": "2026-08-25T06:41:31Z",
+    "checked_at_display": "2026-08-25 06:41 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 11,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://mission.gap-peace.org",
+      "https://byte-workshop40.becasuniversitarias.org",
+      "https://diploma-journal78.bridgeportmath.org",
+      "https://force-test59.fukushimastudy.org",
+      "https://mew-logic14.task4z.dpdns.org",
+      "https://school-force28.mathmatics.ccwu.cc",
+      "https://faculty-yarn36.mathmatics.ccwu.cc",
+      "https://leap-lab45.bridgeportmath.org",
+      "https://matrix-integral40.fukushimastudy.org",
+      "https://music-lab67.task4z.dpdns.org",
+      "https://root-student38.becasuniversitarias.org"
+    ]
   },
   "failing_links": {
-    "https://mission.gap-peace.org": 2,
-    "https://catclass.msw.cl": 1,
-    "https://byte-workshop40.becasuniversitarias.org": 2,
-    "https://diploma-journal78.bridgeportmath.org": 2,
-    "https://force-test59.fukushimastudy.org": 2,
-    "https://mew-logic14.task4z.dpdns.org": 2,
-    "https://school-force28.mathmatics.ccwu.cc": 2,
-    "https://faculty-yarn36.mathmatics.ccwu.cc": 2,
-    "https://leap-lab45.bridgeportmath.org": 2,
-    "https://matrix-integral40.fukushimastudy.org": 2,
-    "https://music-lab67.task4z.dpdns.org": 2,
-    "https://root-student38.becasuniversitarias.org": 2,
-    "https://calc-prof69.fukushimastudy.org": 2,
-    "https://faculty-theory31.task4z.dpdns.org": 2,
-    "https://kit-algebra56.bridgeportmath.org": 2,
-    "https://seminar-homework52.becasuniversitarias.org": 2,
-    "https://theorem-fluff62.mathmatics.ccwu.cc": 2
+    "https://ethostulsa.org": 1,
+    "https://motor-cycle-part.org": 1,
+    "https://youretheblessed.com": 1,
+    "https://bums.edificare.cl": 1,
+    "https://careersandjobs.org": 1,
+    "https://catclass.msw.cl": 2,
+    "https://marksenergy.maxmir-energy.ru": 1,
+    "https://anyalizing.newtonanalytics.com": 1,
+    "https://elephant.elprado.com.ar": 1
   },
   "links": [
     {
@@ -5722,29 +5726,6 @@
       "additional_notes": "some space links have a similar problem like daydream where it will be very slow for some reason. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.",
       "locked": "",
       "link": "https://grandemass-yt.kellerzahnarzt.ch/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌑 Space",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "some space links have a similar problem like daydream where it will be very slow for some reason. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.",
-      "locked": "",
-      "link": "https://mission.gap-peace.org/",
       "found": "4/25/2026",
       "username": "N/A",
       "password": "N/A",
@@ -68254,27 +68235,6 @@
       ],
       "additional_notes": "",
       "locked": "",
-      "link": "https://byte-workshop40.becasuniversitarias.org/",
-      "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐱 Cat Class",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
       "link": "https://cdn.jsdelivr.net/gh/task4z/classroom-15x@main/images/2026-07-25/catclass-cloak/logo.svg",
       "found": "8/1/2026",
       "username": "N/A",
@@ -68338,27 +68298,6 @@
       ],
       "additional_notes": "",
       "locked": "",
-      "link": "https://diploma-journal78.bridgeportmath.org/",
-      "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐱 Cat Class",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
       "link": "https://fastly.jsdelivr.net/gh/task4z/classroom-15x@main/images/2026-07-25/catclass-cloak/logo.svg",
       "found": "8/1/2026",
       "username": "N/A",
@@ -68380,49 +68319,7 @@
       ],
       "additional_notes": "",
       "locked": "",
-      "link": "https://force-test59.fukushimastudy.org/",
-      "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐱 Cat Class",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
       "link": "https://gcore.jsdelivr.net/gh/task4z/classroom-15x@main/images/2026-07-25/catclass-cloak/logo.svg",
-      "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐱 Cat Class",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://mew-logic14.task4z.dpdns.org/",
       "found": "8/1/2026",
       "username": "N/A",
       "password": "N/A",
@@ -68528,27 +68425,6 @@
       "additional_notes": "",
       "locked": "",
       "link": "https://rawcdn.githack.com/task4z/classroom-15x/main/images/2026-07-25/catclass-cloak/logo.svg",
-      "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐱 Cat Class",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://school-force28.mathmatics.ccwu.cc/",
       "found": "8/1/2026",
       "username": "N/A",
       "password": "N/A",
@@ -69199,27 +69075,6 @@
       ],
       "additional_notes": "",
       "locked": "",
-      "link": "https://faculty-yarn36.mathmatics.ccwu.cc",
-      "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐱 Cat Class",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
       "link": "https://fastly.jsdelivr.net/gh/task4z/classroom-15x@main/images/4031eaaa36/catclass-cloak/logo.svg",
       "found": "8/1/2026",
       "username": "N/A",
@@ -69242,69 +69097,6 @@
       "additional_notes": "",
       "locked": "",
       "link": "https://gcore.jsdelivr.net/gh/task4z/classroom-15x@main/images/4031eaaa36/catclass-cloak/logo.svg",
-      "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐱 Cat Class",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://leap-lab45.bridgeportmath.org",
-      "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐱 Cat Class",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://matrix-integral40.fukushimastudy.org",
-      "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐱 Cat Class",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://music-lab67.task4z.dpdns.org",
       "found": "8/1/2026",
       "username": "N/A",
       "password": "N/A",
@@ -69410,27 +69202,6 @@
       "additional_notes": "",
       "locked": "",
       "link": "https://rawcdn.githack.com/task4z/classroom-15x/main/images/4031eaaa36/catclass-cloak/logo.svg",
-      "found": "8/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐱 Cat Class",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://root-student38.becasuniversitarias.org",
       "found": "8/1/2026",
       "username": "N/A",
       "password": "N/A",
@@ -69913,27 +69684,6 @@
       ],
       "additional_notes": "",
       "locked": "",
-      "link": "https://calc-prof69.fukushimastudy.org/",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐱 Cat Class",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
       "link": "https://cdn.esm.sh/gh/task4z/classroom-15x@main/images/a9652cb4cf/catclass-cloak/logo.svg",
       "found": "8/3/2026",
       "username": "N/A",
@@ -70039,27 +69789,6 @@
       ],
       "additional_notes": "",
       "locked": "",
-      "link": "https://faculty-theory31.task4z.dpdns.org/",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐱 Cat Class",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
       "link": "https://fastly.jsdelivr.net/gh/task4z/classroom-15x@main/images/a9652cb4cf/catclass-cloak/logo.svg",
       "found": "8/3/2026",
       "username": "N/A",
@@ -70082,27 +69811,6 @@
       "additional_notes": "",
       "locked": "",
       "link": "https://gcore.jsdelivr.net/gh/task4z/classroom-15x@main/images/a9652cb4cf/catclass-cloak/logo.svg",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐱 Cat Class",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://kit-algebra56.bridgeportmath.org/",
       "found": "8/3/2026",
       "username": "N/A",
       "password": "N/A",
@@ -70249,49 +69957,7 @@
       ],
       "additional_notes": "",
       "locked": "",
-      "link": "https://seminar-homework52.becasuniversitarias.org/",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐱 Cat Class",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
       "link": "https://testingcf.jsdelivr.net/gh/task4z/classroom-15x@main/images/a9652cb4cf/catclass-cloak/logo.svg",
-      "found": "8/3/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐱 Cat Class",
-      "category": "Proxy/Games",
-      "capabilities": "libcurl, epoxy",
-      "capability_tags": [
-        "libcurl",
-        "epoxy"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://theorem-fluff62.mathmatics.ccwu.cc/",
       "found": "8/3/2026",
       "username": "N/A",
       "password": "N/A",

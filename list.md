@@ -374,7 +374,7 @@ Fixed a bug where the filter select dropdown box in the settings menu showed no 
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp | Scramjet, Ultraviolet | 26 |
+> | Proxy/Games | epoxy, libcurl, wisp | Scramjet, Ultraviolet | 25 |
 
 > [!IMPORTANT]
 > some space links have a similar problem like daydream where it will be very slow for some reason. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.
@@ -396,7 +396,6 @@ Fixed a bug where the filter select dropdown box in the settings menu showed no 
 | | https://15.204.247.166.my.local-ip.sh | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://15.204.247.166.xip.lhjmmc.cn/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://grandemass-yt.kellerzahnarzt.ch/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://mission.gap-peace.org/ | 4/25/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://extralearning.pirazymatma.pl/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://extralearning.porcile.cl/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://sp2.simplysweetcakesoc.com | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
@@ -4680,7 +4679,7 @@ Fixed a bug where the filter select dropdown box in the settings menu showed no 
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | libcurl, epoxy | Scramjet | 83 |
+> | Proxy/Games | libcurl, epoxy | Scramjet | 73 |
 | Locked | Link | Found Date | Username | Password | Contributor |
 | - | - | - | - | - | - |
 | | https://catclass.brtk.eu | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -4707,21 +4706,16 @@ Fixed a bug where the filter select dropdown box in the settings menu showed no 
 | | https://sum-tail48.mathmatics.ccwu.cc/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://testingcf.jsdelivr.net/gh/task4z/classroom-15x@main/images/2026-07-25/catclass/logo.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://wayground.com/_media/catclass/4d4a841b-168d-4d12-9239-32bc158d7e63-v2 | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://byte-workshop40.becasuniversitarias.org/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdelivr.net/gh/task4z/classroom-15x@main/images/2026-07-25/catclass-cloak/logo.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.statically.io/gh/task4z/classroom-15x@main/images/2026-07-25/catclass-cloak/logo.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.staticdelivr.com/gh/task4z/classroom-15x/main/images/2026-07-25/catclass-cloak/logo.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://diploma-journal78.bridgeportmath.org/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://fastly.jsdelivr.net/gh/task4z/classroom-15x@main/images/2026-07-25/catclass-cloak/logo.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://force-test59.fukushimastudy.org/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://gcore.jsdelivr.net/gh/task4z/classroom-15x@main/images/2026-07-25/catclass-cloak/logo.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://mew-logic14.task4z.dpdns.org/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://quizizz-static.s3-accelerate.amazonaws.com/_media/catclass/9fa6052b-e151-4b67-b0c3-cf1ba9a3a4df-v2 | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://quizizz-static.s3.amazonaws.com/_media/catclass/9fa6052b-e151-4b67-b0c3-cf1ba9a3a4df-v2 | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://quizizz.com/_media/catclass/9fa6052b-e151-4b67-b0c3-cf1ba9a3a4df-v2 | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://raw.githack.com/task4z/classroom-15x/main/images/2026-07-25/catclass-cloak/logo.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://rawcdn.githack.com/task4z/classroom-15x/main/images/2026-07-25/catclass-cloak/logo.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://school-force28.mathmatics.ccwu.cc/ | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://testingcf.jsdelivr.net/gh/task4z/classroom-15x@main/images/2026-07-25/catclass-cloak/logo.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://wayground.com/_media/catclass/9fa6052b-e151-4b67-b0c3-cf1ba9a3a4df-v2 | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.jsdelivr.net/gh/task4z/classroom-15x@main/images/57cc835ea2/catclass/logo.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -4752,18 +4746,13 @@ Fixed a bug where the filter select dropdown box in the settings menu showed no 
 | | https://cdn.jsdelivr.net/gh/task4z/classroom-15x@main/images/4031eaaa36/catclass-cloak/logo.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.statically.io/gh/task4z/classroom-15x@main/images/4031eaaa36/catclass-cloak/logo.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://cdn.staticdelivr.com/gh/task4z/classroom-15x/main/images/4031eaaa36/catclass-cloak/logo.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://faculty-yarn36.mathmatics.ccwu.cc | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://fastly.jsdelivr.net/gh/task4z/classroom-15x@main/images/4031eaaa36/catclass-cloak/logo.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://gcore.jsdelivr.net/gh/task4z/classroom-15x@main/images/4031eaaa36/catclass-cloak/logo.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://leap-lab45.bridgeportmath.org | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://matrix-integral40.fukushimastudy.org | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://music-lab67.task4z.dpdns.org | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://quizizz-static.s3-accelerate.amazonaws.com/_media/catclass/3e1f3354-14d9-4430-8967-973189a10f73-v2 | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://quizizz-static.s3.amazonaws.com/_media/catclass/3e1f3354-14d9-4430-8967-973189a10f73-v2 | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://quizizz.com/_media/catclass/3e1f3354-14d9-4430-8967-973189a10f73-v2 | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://raw.githack.com/task4z/classroom-15x/main/images/4031eaaa36/catclass-cloak/logo.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://rawcdn.githack.com/task4z/classroom-15x/main/images/4031eaaa36/catclass-cloak/logo.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://root-student38.becasuniversitarias.org | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://testingcf.jsdelivr.net/gh/task4z/classroom-15x@main/images/4031eaaa36/catclass-cloak/logo.svg | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://wayground.com/_media/catclass/3e1f3354-14d9-4430-8967-973189a10f73-v2 | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://cdn.esm.sh/gh/task4z/classroom-15x@main/images/a68c380f45/catclass/logo.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
@@ -4786,25 +4775,20 @@ Fixed a bug where the filter select dropdown box in the settings menu showed no 
 |  | https://testingcf.jsdelivr.net/gh/task4z/classroom-15x@main/images/a68c380f45/catclass/logo.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://wave-quiz33.bridgeportmath.org/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://wayground.com/_media/catclass/f3a49754-49ec-4ea5-b3c2-90c775106908-v2 | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://calc-prof69.fukushimastudy.org/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://cdn.esm.sh/gh/task4z/classroom-15x@main/images/a9652cb4cf/catclass-cloak/logo.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://cdn.jsdelivr.net/gh/task4z/classroom-15x@main/images/a9652cb4cf/catclass-cloak/logo.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://cdn.statically.io/gh/task4z/classroom-15x@main/images/a9652cb4cf/catclass-cloak/logo.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://cdn.staticdelivr.com/gh/task4z/classroom-15x/main/images/a9652cb4cf/catclass-cloak/logo.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://esm.sh/gh/task4z/classroom-15x@main/images/a9652cb4cf/catclass-cloak/logo.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://faculty-theory31.task4z.dpdns.org/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://fastly.jsdelivr.net/gh/task4z/classroom-15x@main/images/a9652cb4cf/catclass-cloak/logo.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://gcore.jsdelivr.net/gh/task4z/classroom-15x@main/images/a9652cb4cf/catclass-cloak/logo.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://kit-algebra56.bridgeportmath.org/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://quizizz-static.s3-accelerate.amazonaws.com/_media/catclass/b0b9dd80-759a-461a-912b-63ebff7c82e3-v2 | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://quizizz-static.s3.amazonaws.com/_media/catclass/b0b9dd80-759a-461a-912b-63ebff7c82e3-v2 | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://quizizz.com/_media/catclass/b0b9dd80-759a-461a-912b-63ebff7c82e3-v2 | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://raw.esm.sh/gh/task4z/classroom-15x@main/images/a9652cb4cf/catclass-cloak/logo.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://raw.githack.com/task4z/classroom-15x/main/images/a9652cb4cf/catclass-cloak/logo.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://rawcdn.githack.com/task4z/classroom-15x/main/images/a9652cb4cf/catclass-cloak/logo.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://seminar-homework52.becasuniversitarias.org/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://testingcf.jsdelivr.net/gh/task4z/classroom-15x@main/images/a9652cb4cf/catclass-cloak/logo.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://theorem-fluff62.mathmatics.ccwu.cc/ | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://wayground.com/_media/catclass/b0b9dd80-759a-461a-912b-63ebff7c82e3-v2 | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 
 # 🧊 C00lkidtech
