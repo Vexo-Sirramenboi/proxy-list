@@ -240,42 +240,22 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-26T06:42:52Z",
-    "checked_at_display": "2026-08-26 06:42 UTC",
+    "checked_at": "2026-08-26T12:45:16Z",
+    "checked_at_display": "2026-08-26 12:45 UTC",
     "added_count": 0,
-    "removed_count": 18,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://edu.50friends.com.mx",
-      "https://wildcard.cmstarhely.hu",
-      "https://nav.chisto-pozhit.ru",
-      "https://app.383.li",
-      "https://node.383.li",
-      "https://discover.383.li",
-      "https://return.383.li",
-      "https://def.383.li",
-      "https://h1.383.li",
-      "https://h2.383.li",
-      "https://h3.383.li",
-      "https://h4.383.li",
-      "https://h5.383.li",
-      "https://function.ng1.uk",
-      "https://render.ng1.uk",
-      "https://const.ng1.uk",
-      "https://let.ng1.uk",
-      "https://try.ng1.uk"
-    ]
+    "removed_links": []
   },
   "failing_links": {
-    "https://sunny-day.global.ssl.fastly.net": 1,
-    "https://education.math.wikidelia.net": 1,
-    "https://focus-and-learn.2gfkitchen.com": 1,
-    "https://study-smart-daily.bigheadpromo.com": 1,
-    "https://revise-and-succeed.sage.li": 1,
-    "https://learn-practice-grow.shirokuriwaki.com": 1,
-    "https://plan-study-repeat.solarorbit.net": 1,
-    "https://martnullscapeacademy.lisd.net.galaxysoft.ro": 1,
-    "https://nobloccstatus.mattle.uk": 1
+    "https://sunny-day.global.ssl.fastly.net": 2,
+    "https://education.math.wikidelia.net": 2,
+    "https://focus-and-learn.2gfkitchen.com": 2,
+    "https://study-smart-daily.bigheadpromo.com": 2,
+    "https://revise-and-succeed.sage.li": 2,
+    "https://learn-practice-grow.shirokuriwaki.com": 2,
+    "https://plan-study-repeat.solarorbit.net": 2,
+    "https://martnullscapeacademy.lisd.net.galaxysoft.ro": 2
   },
   "links": [
     {
