@@ -240,38 +240,32 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-25T18:35:53Z",
-    "checked_at_display": "2026-08-25 18:35 UTC",
+    "checked_at": "2026-08-26T01:06:17Z",
+    "checked_at_display": "2026-08-26 01:06 UTC",
     "added_count": 0,
-    "removed_count": 4,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://bums.edificare.cl",
-      "https://marksenergy.maxmir-energy.ru",
-      "https://anyalizing.newtonanalytics.com",
-      "https://elephant.elprado.com.ar"
-    ]
+    "removed_links": []
   },
   "failing_links": {
-    "https://edu.50friends.com.mx": 1,
-    "https://wildcard.cmstarhely.hu": 1,
-    "https://nav.chisto-pozhit.ru": 1,
-    "https://app.383.li": 1,
-    "https://node.383.li": 1,
-    "https://discover.383.li": 1,
-    "https://return.383.li": 1,
-    "https://def.383.li": 1,
-    "https://h1.383.li": 1,
-    "https://h2.383.li": 1,
-    "https://h3.383.li": 1,
-    "https://h4.383.li": 1,
-    "https://h5.383.li": 1,
-    "https://function.ng1.uk": 1,
-    "https://render.ng1.uk": 1,
-    "https://const.ng1.uk": 1,
-    "https://let.ng1.uk": 1,
-    "https://try.ng1.uk": 1,
-    "https://nobloccstatus.mattle.uk": 1
+    "https://edu.50friends.com.mx": 2,
+    "https://wildcard.cmstarhely.hu": 2,
+    "https://nav.chisto-pozhit.ru": 2,
+    "https://app.383.li": 2,
+    "https://node.383.li": 2,
+    "https://discover.383.li": 2,
+    "https://return.383.li": 2,
+    "https://def.383.li": 2,
+    "https://h1.383.li": 2,
+    "https://h2.383.li": 2,
+    "https://h3.383.li": 2,
+    "https://h4.383.li": 2,
+    "https://h5.383.li": 2,
+    "https://function.ng1.uk": 2,
+    "https://render.ng1.uk": 2,
+    "https://const.ng1.uk": 2,
+    "https://let.ng1.uk": 2,
+    "https://try.ng1.uk": 2
   },
   "links": [
     {
