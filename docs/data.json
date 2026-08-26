@@ -240,22 +240,32 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-26T12:45:16Z",
-    "checked_at_display": "2026-08-26 12:45 UTC",
+    "checked_at": "2026-08-26T19:45:28Z",
+    "checked_at_display": "2026-08-26 19:45 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 8,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://sunny-day.global.ssl.fastly.net",
+      "https://focus-and-learn.2gfkitchen.com",
+      "https://study-smart-daily.bigheadpromo.com",
+      "https://revise-and-succeed.sage.li",
+      "https://learn-practice-grow.shirokuriwaki.com",
+      "https://plan-study-repeat.solarorbit.net",
+      "https://education.math.wikidelia.net",
+      "https://martnullscapeacademy.lisd.net.galaxysoft.ro"
+    ]
   },
   "failing_links": {
-    "https://sunny-day.global.ssl.fastly.net": 2,
-    "https://education.math.wikidelia.net": 2,
-    "https://focus-and-learn.2gfkitchen.com": 2,
-    "https://study-smart-daily.bigheadpromo.com": 2,
-    "https://revise-and-succeed.sage.li": 2,
-    "https://learn-practice-grow.shirokuriwaki.com": 2,
-    "https://plan-study-repeat.solarorbit.net": 2,
-    "https://martnullscapeacademy.lisd.net.galaxysoft.ro": 2
+    "https://learn.savequeechylake.org": 1,
+    "https://cdn.timeless-twilight.com": 1,
+    "https://potato.cafelafete.cl": 1,
+    "https://src.sixorizon.com": 1,
+    "https://viper.thevideobay.org": 1,
+    "https://trim.barberduck.ro": 1,
+    "https://tungtung.vcsa.alalalal.com": 1,
+    "https://tungtung.avtosnoj.si": 1,
+    "https://quantil.jsdelivr.net/gh/avaisadev/github.com@latest/index.svg": 1
   },
   "links": [
     {
@@ -57253,150 +57263,6 @@
       "locked": "",
       "link": "https://storage.googleapis.com/mathlearning/ilovessp/fckyoukiz/arctic_414",
       "found": "8/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "📚 OnlyLessons",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://sunny-day.global.ssl.fastly.net/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "📚 OnlyLessons",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://focus-and-learn.2gfkitchen.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "📚 OnlyLessons",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://study-smart-daily.bigheadpromo.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "📚 OnlyLessons",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://revise-and-succeed.sage.li/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "📚 OnlyLessons",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://learn-practice-grow.shirokuriwaki.com/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "📚 OnlyLessons",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://plan-study-repeat.solarorbit.net/",
-      "found": "5/9/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "📚 OnlyLessons",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://education.math.wikidelia.net",
-      "found": "5/6/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
-    },
-    {
-      "provider": "📚 OnlyLessons",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://martnullscapeacademy.lisd.net.galaxysoft.ro",
-      "found": "5/22/2026",
       "username": "N/A",
       "password": "N/A",
       "contributor": "yourworstnightmare1",
