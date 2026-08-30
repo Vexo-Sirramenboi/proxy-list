@@ -240,14 +240,16 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-30T15:59:38Z",
-    "checked_at_display": "2026-08-30 15:59 UTC",
+    "checked_at": "2026-08-30T20:30:54Z",
+    "checked_at_display": "2026-08-30 20:30 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
-  "failing_links": {},
+  "failing_links": {
+    "https://jsd.onmicrosoft.cn/combine/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg": 1
+  },
   "links": [
     {
       "provider": "🌙 Velara",
