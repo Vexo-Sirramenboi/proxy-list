@@ -1,7 +1,7 @@
 # Proxy List
 > [!NOTE]
 > v6.3 | Released: August 13, 2026
-> r270 | Last Updated: August 23, 2026
+> r271 | Last Updated: August 30, 2026
 > Total onsite links: 4820 (4478 sorted + 342 unsorted)\
 > https://yourworstnightmare1.github.io/proxy-list/
 <br>
@@ -257,7 +257,7 @@ Fixed a bug where the filter select dropdown box in the settings menu showed no 
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | captcha | Ultraviolet | 38 |
+> | Proxy/Games | captcha | Ultraviolet | 37 |
 
 > [!IMPORTANT]
 > on some networks, the proxy will load a white screen or an ultraviolet error page, if this happens try using another link as that is known to fix this issue
@@ -278,7 +278,6 @@ Fixed a bug where the filter select dropdown box in the settings menu showed no 
 | | https://parkviewpylusd.org/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://denisonisd.org/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://gloverschool.org/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-| | https://homeworkstudies.phire.ca/ | 4/26/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://hcstemm.org/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://canvas.instructure.page.gd/ | 4/30/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://volcanicfrog2.srivaishnavam.org.au | 5/1/2026 | N/A | N/A | [1NobleCyber](https://github.com/1NobleCyber)

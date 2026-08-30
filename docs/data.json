@@ -1,16 +1,16 @@
 {
   "meta": {
     "version": "v6.3",
-    "revision": "r270",
-    "last_updated": "August 23, 2026",
+    "revision": "r271",
+    "last_updated": "August 30, 2026",
     "unsorted_total": 342,
     "important_notices": "",
     "update_notice": "# Offline downloading\nYou can now save the Proxy List as an HTML, text, or markdown file for offline viewing when the list is blocked or not accessable. Note that the offline version has all online features stripped and is really just the bare bones of the list.\n\n# Random link\nYou can now choose a random link by clicking the \"Random link\" button highlighted in purple on the sidebar. It will go through every provider and once it lands on one, you will get a random link from that provider.\n\n# Developer/debug settings\nThere is now debug mode for developers and also to improve development. You can fire test notifications, view your user agent, see memory and CPU estimations, and console warnings, errors, and chunk loadtime data.\n\n# Manual resizing\nYou can now manually select the mode you want the site to format the site to (mobile, desktop, or auto detect).\n\n# Save data\nYou can now import and export your saved filter and settings data in the Settings menu.",
     "update_changelog": [
       {
         "version": "v6.3",
-        "revision": "r270",
-        "released": "August 23, 2026",
+        "revision": "r271",
+        "released": "August 30, 2026",
         "update_notice": "# Offline downloading\nYou can now save the Proxy List as an HTML, text, or markdown file for offline viewing when the list is blocked or not accessable. Note that the offline version has all online features stripped and is really just the bare bones of the list.\n\n# Random link\nYou can now choose a random link by clicking the \"Random link\" button highlighted in purple on the sidebar. It will go through every provider and once it lands on one, you will get a random link from that provider.\n\n# Developer/debug settings\nThere is now debug mode for developers and also to improve development. You can fire test notifications, view your user agent, see memory and CPU estimations, and console warnings, errors, and chunk loadtime data.\n\n# Manual resizing\nYou can now manually select the mode you want the site to format the site to (mobile, desktop, or auto detect).\n\n# Save data\nYou can now import and export your saved filter and settings data in the Settings menu."
       },
       {
@@ -240,28 +240,17 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-30T03:28:14Z",
-    "checked_at_display": "2026-08-30 03:28 UTC",
+    "checked_at": "2026-08-30T11:12:14Z",
+    "checked_at_display": "2026-08-30 11:12 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 1,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://homeworkstudies.phire.ca"
+    ]
   },
   "failing_links": {
-    "https://strawberry.autos": 1,
-    "https://homeworkstudies.phire.ca": 2,
-    "https://quotes.gcpservicios.cl": 1,
-    "https://cook.cthulhu.li": 1,
-    "https://zlami.unibutton.com": 1,
-    "https://internet.isageek.net": 1,
-    "https://bike.flyredwing.ru": 1,
-    "https://foxes.computersforpeace.net": 1,
-    "https://voya.bielenberg.id.au": 1,
-    "https://voya.buf2.com": 1,
-    "https://voya.krepche.com": 1,
-    "https://voya.worldmicroscope.com": 1,
-    "https://voyavcsa.localcito.com": 1,
-    "https://schoolmath.berugy.hu": 1
+    "https://bridalmegamall.com": 1
   },
   "links": [
     {
@@ -3862,26 +3851,6 @@
       "additional_notes": "on some networks, the proxy will load a white screen or an ultraviolet error page, if this happens try using another link as that is known to fix this issue",
       "locked": "",
       "link": "https://gloverschool.org/",
-      "found": "4/26/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐸 frogie's arcade",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "additional_notes": "on some networks, the proxy will load a white screen or an ultraviolet error page, if this happens try using another link as that is known to fix this issue",
-      "locked": "",
-      "link": "https://homeworkstudies.phire.ca/",
       "found": "4/26/2026",
       "username": "N/A",
       "password": "N/A",
