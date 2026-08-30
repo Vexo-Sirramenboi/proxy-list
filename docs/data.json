@@ -240,40 +240,28 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-29T20:22:12Z",
-    "checked_at_display": "2026-08-29 20:22 UTC",
+    "checked_at": "2026-08-30T03:28:14Z",
+    "checked_at_display": "2026-08-30 03:28 UTC",
     "added_count": 0,
-    "removed_count": 24,
+    "removed_count": 0,
     "added_links": [],
-    "removed_links": [
-      "https://firsttire.org/index",
-      "https://generaltrend.lol/index",
-      "https://folkloreoffset.org/index",
-      "https://notebooklamb.space/index",
-      "https://civilizationmars.org/index",
-      "https://innovationroom.space/index",
-      "https://seaofseals.org",
-      "https://difficultycrossing.org",
-      "https://excavationdash.space",
-      "https://justicenoise.org",
-      "https://springmultimedia.space",
-      "https://normalmeans.space",
-      "https://definitechaos.org",
-      "https://motivationaisle.org",
-      "https://monopolywolf.org",
-      "https://visualtraffic.org",
-      "https://notorioussymbol.space",
-      "https://headinsist.space",
-      "https://exemptpaint.space",
-      "https://courtesytell.life",
-      "https://credibilityfairy.org",
-      "https://sustainpilot.space",
-      "https://withdrawfrog.space",
-      "https://broadcastelement.space"
-    ]
+    "removed_links": []
   },
   "failing_links": {
-    "https://homeworkstudies.phire.ca": 1
+    "https://strawberry.autos": 1,
+    "https://homeworkstudies.phire.ca": 2,
+    "https://quotes.gcpservicios.cl": 1,
+    "https://cook.cthulhu.li": 1,
+    "https://zlami.unibutton.com": 1,
+    "https://internet.isageek.net": 1,
+    "https://bike.flyredwing.ru": 1,
+    "https://foxes.computersforpeace.net": 1,
+    "https://voya.bielenberg.id.au": 1,
+    "https://voya.buf2.com": 1,
+    "https://voya.krepche.com": 1,
+    "https://voya.worldmicroscope.com": 1,
+    "https://voyavcsa.localcito.com": 1,
+    "https://schoolmath.berugy.hu": 1
   },
   "links": [
     {
