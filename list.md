@@ -3981,7 +3981,6 @@ Fixed a bug where the filter select dropdown box in the settings menu showed no 
 |  | https://jsd.onmicrosoft.cn/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://jsd.onmicrosoft.cn/combine/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://jsd.onmicrosoft.cn/combine/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
-|  | https://jsd.onmicrosoft.cn/combine/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://bradarwhatisthis.web.app | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://raw.esm.sh/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 |  | https://esm.sh/ubzone@1.0.0/assets/index.svg | 8/3/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
