@@ -240,15 +240,21 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-08-30T20:30:54Z",
-    "checked_at_display": "2026-08-30 20:30 UTC",
+    "checked_at": "2026-08-31T03:26:08Z",
+    "checked_at_display": "2026-08-31 03:26 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
   "failing_links": {
-    "https://jsd.onmicrosoft.cn/combine/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg": 1
+    "https://unpkg.com/browselucide@latest/logo.svg": 1,
+    "https://jsd.onmicrosoft.cn/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg": 1,
+    "https://jsd.onmicrosoft.cn/gh/UNBL0CKEDZ0NE/ubassets@main/assets/index.svg": 1,
+    "https://jsd.onmicrosoft.cn/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg": 1,
+    "https://jsd.onmicrosoft.cn/combine/gh/UNBL0CKEDZ0NE/ubassets@latest/assets/index.svg": 1,
+    "https://jsd.onmicrosoft.cn/combine/gh/UNBL0CKEDZ0NE/ubassets@master/assets/index.svg": 1,
+    "https://jsd.onmicrosoft.cn/combine/gh/UNBL0CKEDZ0NE/ubassets/assets/index.svg": 2
   },
   "links": [
     {
