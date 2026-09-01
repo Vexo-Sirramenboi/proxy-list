@@ -240,35 +240,25 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-09-01T16:02:00Z",
-    "checked_at_display": "2026-09-01 16:02 UTC",
+    "checked_at": "2026-09-01T20:30:52Z",
+    "checked_at_display": "2026-09-01 20:30 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
   "failing_links": {
-    "https://rb3hwx4r.lakehillpreschool.org": 1,
-    "https://theory.grade.bamastuff.com": 1,
-    "https://grid.skills.geckobungalow.com": 1,
-    "https://grade.recap.europeserv.org": 1,
-    "https://know.tech.europeserv.org": 1,
-    "https://clever.data.airlinemeals.net": 1,
-    "https://madebyplyrnationforsk.hjshop.net": 1,
-    "https://bestspark.indevs.in": 1,
-    "https://bestspark.sryze.cc": 1,
-    "https://studyready.ryzedns.org": 1,
-    "https://studyready.zone.id": 1,
-    "https://bestspark.nett.to": 1,
-    "https://bestspark.bielenberg.id.au": 1,
-    "https://bestspark.buf2.com": 1,
-    "https://bestspark.krepche.com": 1,
-    "https://bestspark.worldmicroscope.com": 1,
-    "https://bestspark.cafemeridiano.com.br": 1,
-    "https://bestspark.freshmilk.co.za": 1,
-    "https://bestspark.gparente.net.br": 1,
-    "https://bestspark.oxsec.com.mx": 1,
-    "https://bestspark.windowpublication.com.np": 1
+    "https://theory.grade.bamastuff.com": 2,
+    "https://grid.skills.geckobungalow.com": 2,
+    "https://grade.recap.europeserv.org": 2,
+    "https://know.tech.europeserv.org": 2,
+    "https://clever.data.airlinemeals.net": 2,
+    "https://madebyplyrnationforsk.hjshop.net": 2,
+    "https://ghostylts.org": 1,
+    "https://potatoesryummy.space": 1,
+    "https://videovideoplayer.org": 1,
+    "https://secure.bitds.eu": 1,
+    "https://tungtung.avtosnoj.si": 1
   },
   "links": [
     {
