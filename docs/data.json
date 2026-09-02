@@ -240,17 +240,16 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-09-02T15:56:21Z",
-    "checked_at_display": "2026-09-02 15:56 UTC",
+    "checked_at": "2026-09-02T20:29:06Z",
+    "checked_at_display": "2026-09-02 20:29 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
   "failing_links": {
-    "https://edu.kb-photos.com": 1,
-    "https://mason.zapier.app": 1,
-    "https://cdn.jsdelivr.net/gh/task4z/classroom-15x@main/images/57cc835ea2/catclass/logo.svg": 1
+    "https://edu.kb-photos.com": 2,
+    "https://mason.zapier.app": 2
   },
   "links": [
     {
