@@ -240,17 +240,29 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-09-04T02:47:37Z",
-    "checked_at_display": "2026-09-04 02:47 UTC",
+    "checked_at": "2026-09-04T10:32:34Z",
+    "checked_at_display": "2026-09-04 10:32 UTC",
     "added_count": 0,
-    "removed_count": 0,
+    "removed_count": 1,
     "added_links": [],
-    "removed_links": []
+    "removed_links": [
+      "https://media.blooket.com/raw/upload/vo4ovjvc1qq2mq3dsw4f.html"
+    ]
   },
   "failing_links": {
-    "https://ss.maxmir-energy.ru": 1,
-    "https://english.neeb.wtf": 1,
-    "https://media.blooket.com/raw/upload/vo4ovjvc1qq2mq3dsw4f.html": 2
+    "https://omniman.cfd": 1,
+    "https://volcanicfrog2.srivaishnavam.org.au": 1,
+    "https://ss.maxmir-energy.ru": 2,
+    "https://english.neeb.wtf": 2,
+    "https://studying.nigelupchurch.com": 1,
+    "https://dylanwantspay.cfd": 1,
+    "https://cdn.jsdelivr.net/gh/AetherGamesOfficial/adoapsdipi@main/studyhub.svg": 1,
+    "https://testingcf.jsdelivr.net/gh/AetherGamesOfficial/adoapsdipi@f190765/studyhub.svg": 1,
+    "https://originfastly.jsdelivr.net/gh/AetherGamesOfficial/dlklasdlkj@482ad6b/studyhub.svg": 1,
+    "https://originfastly.jsdelivr.net/gh/AetherGamesOfficial/AetherEducationStatic@26b0f7c/enrichment.svg": 1,
+    "https://testingcf.jsdelivr.net/gh/AetherGamesOfficial/AetherEducationStatic@26b0f7c/resources.svg": 1,
+    "https://testingcf.jsdelivr.net/gh/googleaccountuser/myfirstrepo/windows10background.svg": 1,
+    "https://originfastly.jsdelivr.net/gh/avaisadev/github@latest/index.svg": 1
   },
   "links": [
     {
@@ -50137,29 +50149,6 @@
       "additional_notes": "",
       "locked": "",
       "link": "https://quizizz-static.s3-accelerate.amazonaws.com/_media/yukiwebos/5ca19e9d-a871-4439-a893-eddda170d684-v2",
-      "found": "8/11/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "❄️ Yuki",
-      "category": "Proxy/Games",
-      "capabilities": "wisp, epoxy, libcurl",
-      "capability_tags": [
-        "wisp",
-        "epoxy",
-        "libcurl"
-      ],
-      "protocols": "Scramjet, Tor",
-      "protocol_tags": [
-        "scramjet",
-        "tor"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://media.blooket.com/raw/upload/vo4ovjvc1qq2mq3dsw4f.html",
       "found": "8/11/2026",
       "username": "N/A",
       "password": "N/A",
