@@ -240,29 +240,42 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-09-04T10:32:34Z",
-    "checked_at_display": "2026-09-04 10:32 UTC",
+    "checked_at": "2026-09-04T15:43:35Z",
+    "checked_at_display": "2026-09-04 15:43 UTC",
     "added_count": 0,
-    "removed_count": 1,
+    "removed_count": 2,
     "added_links": [],
     "removed_links": [
-      "https://media.blooket.com/raw/upload/vo4ovjvc1qq2mq3dsw4f.html"
+      "https://ss.maxmir-energy.ru",
+      "https://english.neeb.wtf"
     ]
   },
   "failing_links": {
-    "https://omniman.cfd": 1,
-    "https://volcanicfrog2.srivaishnavam.org.au": 1,
-    "https://ss.maxmir-energy.ru": 2,
-    "https://english.neeb.wtf": 2,
-    "https://studying.nigelupchurch.com": 1,
-    "https://dylanwantspay.cfd": 1,
-    "https://cdn.jsdelivr.net/gh/AetherGamesOfficial/adoapsdipi@main/studyhub.svg": 1,
-    "https://testingcf.jsdelivr.net/gh/AetherGamesOfficial/adoapsdipi@f190765/studyhub.svg": 1,
-    "https://originfastly.jsdelivr.net/gh/AetherGamesOfficial/dlklasdlkj@482ad6b/studyhub.svg": 1,
-    "https://originfastly.jsdelivr.net/gh/AetherGamesOfficial/AetherEducationStatic@26b0f7c/enrichment.svg": 1,
-    "https://testingcf.jsdelivr.net/gh/AetherGamesOfficial/AetherEducationStatic@26b0f7c/resources.svg": 1,
-    "https://testingcf.jsdelivr.net/gh/googleaccountuser/myfirstrepo/windows10background.svg": 1,
-    "https://originfastly.jsdelivr.net/gh/avaisadev/github@latest/index.svg": 1
+    "https://omniman.cfd": 2,
+    "https://classroom.tozsugianto.com": 1,
+    "https://college.vaultnoir.com": 1,
+    "https://edu.vaultnoir.com": 1,
+    "https://volcanicfrog2.srivaishnavam.org.au": 2,
+    "https://studying.nigelupchurch.com": 2,
+    "https://dylanwantspay.cfd": 2,
+    "https://triplet.gandhinagar.com": 1,
+    "https://tungtung.gandhinagar.com": 1,
+    "https://automobiles.lkmobility.es": 1,
+    "https://teamtomlin.com/index": 1,
+    "https://urbanmma.com": 1,
+    "https://eepresearch.org": 1,
+    "https://bridalmegamall.com": 1,
+    "https://sleepsixsevensleep.org": 1,
+    "https://sleepeepsleepeep.org": 1,
+    "https://johnbingofelden.org": 1,
+    "https://careersandjobs.org": 1,
+    "https://masterstep.org": 1,
+    "https://videoplayerviewer.com": 1,
+    "https://sixseventimesfour.space": 1,
+    "https://ireallyneedeep.org": 1,
+    "https://harmonyeducationcenter.org": 1,
+    "https://onwfootball.com": 1,
+    "https://fakeoakleysunglassessale.com": 1
   },
   "links": [
     {
@@ -4762,31 +4775,6 @@
       ],
       "additional_notes": "this proxy seems to be very slow on some links. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.",
       "locked": "",
-      "link": "https://ss.maxmir-energy.ru",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "⭐ DayDream X",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp, captcha, reflux",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp",
-        "captcha",
-        "reflux"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "this proxy seems to be very slow on some links. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.",
-      "locked": "",
       "link": "https://science.haasencloud.de",
       "found": "5/2/2026",
       "username": "N/A",
@@ -5630,29 +5618,6 @@
       "additional_notes": "some space links have a similar problem like daydream where it will be very slow for some reason. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.",
       "locked": "",
       "link": "https://math.soyescalahumana.cl",
-      "found": "5/2/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌑 Space",
-      "category": "Proxy/Games",
-      "capabilities": "epoxy, libcurl, wisp",
-      "capability_tags": [
-        "epoxy",
-        "libcurl",
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "some space links have a similar problem like daydream where it will be very slow for some reason. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.",
-      "locked": "",
-      "link": "https://english.neeb.wtf",
       "found": "5/2/2026",
       "username": "N/A",
       "password": "N/A",

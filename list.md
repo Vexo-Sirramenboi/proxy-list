@@ -308,7 +308,7 @@ Fixed a bug where the filter select dropdown box in the settings menu showed no 
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp, captcha, reflux | Scramjet, Ultraviolet | 24 |
+> | Proxy/Games | epoxy, libcurl, wisp, captcha, reflux | Scramjet, Ultraviolet | 23 |
 
 > [!IMPORTANT]
 > this proxy seems to be very slow on some links. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.
@@ -330,7 +330,6 @@ Fixed a bug where the filter select dropdown box in the settings menu showed no 
 | | https://cdn.jsdelivr.net/gh/TwiLabs/history/dist/index.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://cdn.jsdelivr.net/gh/TwiLabs/daydreaming/dist/index.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://cdn.jsdelivr.net/gh/TwiLabs/art/dist/index.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://ss.maxmir-energy.ru | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://science.haasencloud.de | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://raw.esm.sh/gh/NightProxy/DD-Static/dist/index.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://raw.esm.sh/gh/TwiLabs/math/dist/index.svg | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
@@ -365,7 +364,7 @@ Fixed a bug where the filter select dropdown box in the settings menu showed no 
 > [!NOTE]
 > | Category | Capabilities | Protocol(s) | Links |
 > | - | - | - | - |
-> | Proxy/Games | epoxy, libcurl, wisp | Scramjet, Ultraviolet | 24 |
+> | Proxy/Games | epoxy, libcurl, wisp | Scramjet, Ultraviolet | 23 |
 
 > [!IMPORTANT]
 > some space links have a similar problem like daydream where it will be very slow for some reason. if you are on a link and nothing loads or loads very slowly, try another link and make sure that if it is a jsdelivr domain, you choose the fastest option based on your location.
@@ -392,7 +391,6 @@ Fixed a bug where the filter select dropdown box in the settings menu showed no 
 | | https://eyes.lervs.ro | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://school.gressvikbmx.no | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://math.soyescalahumana.cl | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
-| | https://english.neeb.wtf | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 | | https://spacing.bull.srivaishnavam.org.au | 5/2/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)|
 |  | https://math-lessons-space-17244170.codehs.me/index.html | 7/10/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
 | | https://science.cthulhu.li | 8/1/2026 | N/A | N/A | [yourworstnightmare1](https://github.com/yourworstnightmare1)
