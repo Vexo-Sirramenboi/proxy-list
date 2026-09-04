@@ -240,42 +240,22 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-09-04T15:43:35Z",
-    "checked_at_display": "2026-09-04 15:43 UTC",
+    "checked_at": "2026-09-04T20:14:51Z",
+    "checked_at_display": "2026-09-04 20:14 UTC",
     "added_count": 0,
-    "removed_count": 2,
+    "removed_count": 4,
     "added_links": [],
     "removed_links": [
-      "https://ss.maxmir-energy.ru",
-      "https://english.neeb.wtf"
+      "https://volcanicfrog2.srivaishnavam.org.au",
+      "https://studying.nigelupchurch.com",
+      "https://dylanwantspay.cfd",
+      "https://omniman.cfd"
     ]
   },
   "failing_links": {
-    "https://omniman.cfd": 2,
-    "https://classroom.tozsugianto.com": 1,
-    "https://college.vaultnoir.com": 1,
-    "https://edu.vaultnoir.com": 1,
-    "https://volcanicfrog2.srivaishnavam.org.au": 2,
-    "https://studying.nigelupchurch.com": 2,
-    "https://dylanwantspay.cfd": 2,
-    "https://triplet.gandhinagar.com": 1,
-    "https://tungtung.gandhinagar.com": 1,
-    "https://automobiles.lkmobility.es": 1,
-    "https://teamtomlin.com/index": 1,
-    "https://urbanmma.com": 1,
-    "https://eepresearch.org": 1,
-    "https://bridalmegamall.com": 1,
-    "https://sleepsixsevensleep.org": 1,
-    "https://sleepeepsleepeep.org": 1,
-    "https://johnbingofelden.org": 1,
-    "https://careersandjobs.org": 1,
-    "https://masterstep.org": 1,
-    "https://videoplayerviewer.com": 1,
-    "https://sixseventimesfour.space": 1,
-    "https://ireallyneedeep.org": 1,
-    "https://harmonyeducationcenter.org": 1,
-    "https://onwfootball.com": 1,
-    "https://fakeoakleysunglassessale.com": 1
+    "https://classroom.tozsugianto.com": 2,
+    "https://college.vaultnoir.com": 2,
+    "https://edu.vaultnoir.com": 2
   },
   "links": [
     {
@@ -3921,26 +3901,6 @@
       "password": "N/A",
       "contributor": "yourworstnightmare1",
       "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🐸 frogie's arcade",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Ultraviolet",
-      "protocol_tags": [
-        "ultraviolet"
-      ],
-      "additional_notes": "on some networks, the proxy will load a white screen or an ultraviolet error page, if this happens try using another link as that is known to fix this issue",
-      "locked": "",
-      "link": "https://volcanicfrog2.srivaishnavam.org.au",
-      "found": "5/1/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "1NobleCyber",
-      "contributor_url": "https://github.com/1NobleCyber"
     },
     {
       "provider": "🐸 frogie's arcade",
@@ -10902,27 +10862,6 @@
       "additional_notes": "Lunar has performance issues and noticeably lags the whole browser when it's the current tab. If you have a lower-end device, you might experience problems. (tested on MacBook M1 Pro (2020), macOS 26.3.1)",
       "locked": "",
       "link": "https://learning.hkieca.com/",
-      "found": "N/A",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌕 Lunar",
-      "category": "Proxy/Games",
-      "capabilities": "wisp",
-      "capability_tags": [
-        "wisp"
-      ],
-      "protocols": "Scramjet, Ultraviolet",
-      "protocol_tags": [
-        "scramjet",
-        "ultraviolet"
-      ],
-      "additional_notes": "Lunar has performance issues and noticeably lags the whole browser when it's the current tab. If you have a lower-end device, you might experience problems. (tested on MacBook M1 Pro (2020), macOS 26.3.1)",
-      "locked": "",
-      "link": "https://studying.nigelupchurch.com/",
       "found": "N/A",
       "username": "N/A",
       "password": "N/A",
@@ -20161,46 +20100,6 @@
       "password": "N/A",
       "contributor": "Vexo Sirramenboi",
       "contributor_url": "https://github.com/Vexo-Sirramenboi"
-    },
-    {
-      "provider": "🌙 LuminalOS",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://dylanwantspay.cfd/",
-      "found": "6/7/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🌙 LuminalOS",
-      "category": "Proxy/Games",
-      "capabilities": "captcha",
-      "capability_tags": [
-        "captcha"
-      ],
-      "protocols": "Scramjet",
-      "protocol_tags": [
-        "scramjet"
-      ],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://omniman.cfd/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
     },
     {
       "provider": "🌙 LuminalOS",
