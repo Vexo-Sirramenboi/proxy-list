@@ -240,23 +240,18 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-09-04T20:14:51Z",
-    "checked_at_display": "2026-09-04 20:14 UTC",
+    "checked_at": "2026-09-05T02:49:15Z",
+    "checked_at_display": "2026-09-05 02:49 UTC",
     "added_count": 0,
-    "removed_count": 4,
+    "removed_count": 3,
     "added_links": [],
     "removed_links": [
-      "https://volcanicfrog2.srivaishnavam.org.au",
-      "https://studying.nigelupchurch.com",
-      "https://dylanwantspay.cfd",
-      "https://omniman.cfd"
+      "https://classroom.tozsugianto.com",
+      "https://college.vaultnoir.com",
+      "https://edu.vaultnoir.com"
     ]
   },
-  "failing_links": {
-    "https://classroom.tozsugianto.com": 2,
-    "https://college.vaultnoir.com": 2,
-    "https://edu.vaultnoir.com": 2
-  },
+  "failing_links": {},
   "links": [
     {
       "provider": "🌙 Velara",
@@ -21222,39 +21217,7 @@
       "protocol_tags": [],
       "additional_notes": "",
       "locked": "",
-      "link": "https://classroom.tozsugianto.com/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🗝️ 1Key",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [],
-      "protocols": "unknown",
-      "protocol_tags": [],
-      "additional_notes": "",
-      "locked": "",
       "link": "https://college.rkimport.com/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🗝️ 1Key",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [],
-      "protocols": "unknown",
-      "protocol_tags": [],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://college.vaultnoir.com/",
       "found": "4/25/2026",
       "username": "N/A",
       "password": "N/A",
@@ -21287,22 +21250,6 @@
       "additional_notes": "",
       "locked": "",
       "link": "https://edu.tvjumbleanswers.com/",
-      "found": "4/25/2026",
-      "username": "N/A",
-      "password": "N/A",
-      "contributor": "yourworstnightmare1",
-      "contributor_url": "https://github.com/yourworstnightmare1"
-    },
-    {
-      "provider": "🗝️ 1Key",
-      "category": "Proxy/Games",
-      "capabilities": "unknown",
-      "capability_tags": [],
-      "protocols": "unknown",
-      "protocol_tags": [],
-      "additional_notes": "",
-      "locked": "",
-      "link": "https://edu.vaultnoir.com/",
       "found": "4/25/2026",
       "username": "N/A",
       "password": "N/A",
