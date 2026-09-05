@@ -240,14 +240,17 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-09-05T09:55:54Z",
-    "checked_at_display": "2026-09-05 09:55 UTC",
+    "checked_at": "2026-09-05T14:32:08Z",
+    "checked_at_display": "2026-09-05 14:32 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
-  "failing_links": {},
+  "failing_links": {
+    "https://unpkg.com/bluebook-testing@3.1.3/index.html": 1,
+    "https://mathhomeworkhelperthingy.free.nf/?i=1": 1
+  },
   "links": [
     {
       "provider": "🌙 Velara",
