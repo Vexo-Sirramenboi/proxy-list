@@ -240,14 +240,20 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-09-05T19:54:32Z",
-    "checked_at_display": "2026-09-05 19:54 UTC",
+    "checked_at": "2026-09-06T02:47:28Z",
+    "checked_at_display": "2026-09-06 02:47 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
-  "failing_links": {},
+  "failing_links": {
+    "https://unpkg.com/bluebook-testing@3.1.3/index.html": 1,
+    "https://triplet.elemporio.ar": 1,
+    "https://nobloccstatus.mattle.uk": 1,
+    "https://ghostylts.org": 1,
+    "https://cdn.jsdelivr.net/combine/npm/ubzone@latest/assets/index.svg": 1
+  },
   "links": [
     {
       "provider": "🌙 Velara",
