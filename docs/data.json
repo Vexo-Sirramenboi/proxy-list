@@ -240,14 +240,20 @@
     ]
   },
   "link_check": {
-    "checked_at": "2026-09-06T14:54:05Z",
-    "checked_at_display": "2026-09-06 14:54 UTC",
+    "checked_at": "2026-09-06T19:58:04Z",
+    "checked_at_display": "2026-09-06 19:58 UTC",
     "added_count": 0,
     "removed_count": 0,
     "added_links": [],
     "removed_links": []
   },
-  "failing_links": {},
+  "failing_links": {
+    "https://update.5432sdabhvaewukbcfjkaesk.152.53.136.204.nip.io": 1,
+    "https://onmlkfehgfeupdate.update.218765432sdabhvaewukbcfjkaesk.152.53.136.204.nip.io": 1,
+    "https://32update.2sdabhvaewukbcfjkaesk.152.53.136.204.nip.io": 1,
+    "https://nmlkjmlkjihupdate.update.987298765432sdabhvaewukbcfjkaesk.152.53.136.204.nip.io": 1,
+    "https://bestspark.nett.to": 1
+  },
   "links": [
     {
       "provider": "🌙 Velara",
