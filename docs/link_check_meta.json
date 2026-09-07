@@ -1,8 +1,14 @@
 {
-  "checked_at": "2026-09-07T02:37:11Z",
-  "checked_at_display": "2026-09-07 02:37 UTC",
+  "checked_at": "2026-09-07T11:33:19Z",
+  "checked_at_display": "2026-09-07 11:33 UTC",
   "added_count": 0,
-  "removed_count": 0,
+  "removed_count": 5,
   "added_links": [],
-  "removed_links": []
+  "removed_links": [
+    "https://update.5432sdabhvaewukbcfjkaesk.152.53.136.204.nip.io",
+    "https://onmlkfehgfeupdate.update.218765432sdabhvaewukbcfjkaesk.152.53.136.204.nip.io",
+    "https://32update.2sdabhvaewukbcfjkaesk.152.53.136.204.nip.io",
+    "https://nmlkjmlkjihupdate.update.987298765432sdabhvaewukbcfjkaesk.152.53.136.204.nip.io",
+    "https://bestspark.nett.to"
+  ]
 }
