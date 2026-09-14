@@ -2,6 +2,12 @@
   "_note": "Archived site update notices. Regenerate history with: python3 scripts/build_update_changelog.py",
   "entries": [
     {
+      "version": "v7.2",
+      "revision": "r287",
+      "released": "September 14, 2026",
+      "update_notice": "### New\n- Added a button that allows hiding/showing the sidebar\n- Made filters persist in browser local storage so that you don't have to reapply them each time you go to another page on the site\n- Added 4.9k+ links (no filter data yet)\n- Added debug menu with quick options to some debug settings which can be activated with the backtick key (`) (requires debug mode to be enabled)\n- Made performance menu draggable\n- Made user agent bar minimizable\n- Added list culling preview, which allows you to view how the list is culling/load data in the site\n- Optimized mobile UI\n- Optimized list culling to save performance\n- Added zooming on graphs\n- Improved graph readability\n\n### Fixed\n- Fixed hitboxes on graph items\n- Security fixes\n- Fixed a bug that caused database changes to not be tracked"
+    },
+    {
       "version": "v7.1.2",
       "revision": "r286",
       "released": "September 8, 2026",

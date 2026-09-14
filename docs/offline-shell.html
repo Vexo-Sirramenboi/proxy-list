@@ -560,8 +560,8 @@
       <div class="summary-body">
         <p class="summary-muted">Choose the filter used on your network. Summaries show a warning when this filter reports blocked or warning.</p>
         <select id="filterSelect"><option value="">Any / Not selected</option></select>
-        <p style="margin-top:0.75rem"><button class="btn" id="hideBlockedBtn" type="button">Hide blocked links: Off</button></p>
-        <p style="margin-top:0.5rem"><button class="btn" id="hideUncheckedBtn" type="button">Hide unchecked links: Off</button></p>
+        <p style="margin-top:0.75rem"><button class="btn btn-active" id="hideBlockedBtn" type="button">Hide blocked links: On</button></p>
+        <p style="margin-top:0.5rem"><button class="btn btn-active" id="hideUncheckedBtn" type="button">Hide unchecked links: On</button></p>
       </div>
     </section>
   </div>
@@ -628,8 +628,8 @@
   var summaryEntryCache = new Map();
   var lensDomainSignalFirst = new Map();
   var selectedGnMathFilter = "";
-  var hideBlockedBySelectedFilter = false;
-  var hideLinksWithoutLensCheck = false;
+  var hideBlockedBySelectedFilter = true;
+  var hideLinksWithoutLensCheck = true;
   var linkLensHydrated = false;
   var filteredCache = [];
   var renderedCount = 0;

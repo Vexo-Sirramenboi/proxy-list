@@ -789,6 +789,12 @@
     html[data-device="desktop"] .layout {
       grid-template-columns: minmax(260px, 300px) 1fr;
     }
+    /* Desktop sizing must still collapse on narrow viewports (specificity beats the rule above). */
+    @media (max-width: 840px) {
+      html[data-device="desktop"] .layout {
+        grid-template-columns: 1fr;
+      }
+    }
     .sidebar-column {
       min-width: 0;
       display: flex;
@@ -801,6 +807,15 @@
     html.sidebar-collapsed .layout,
     html.sidebar-collapsed[data-device="desktop"] .layout {
       grid-template-columns: max-content 1fr;
+    }
+    @media (max-width: 840px) {
+      html.sidebar-collapsed .layout,
+      html.sidebar-collapsed[data-device="desktop"] .layout {
+        grid-template-columns: 1fr;
+      }
+    }
+    html.sidebar-collapsed[data-device="mobile"] .layout {
+      grid-template-columns: 1fr;
     }
     .sidebar-toggle-btn {
       display: inline-flex;
@@ -828,12 +843,6 @@
       width: auto;
       margin: 0.75rem 0.65rem 0.75rem 0.75rem;
     }
-    html.sidebar-collapsed[data-device="mobile"] .layout {
-      grid-template-columns: 1fr;
-    }
-    @media (max-width: 840px) {
-      html.sidebar-collapsed .layout { grid-template-columns: 1fr; }
-    }
     button.contributor-search-btn {
       background: none;
       border: none;
@@ -853,15 +862,18 @@
       background: #141414;
       align-self: start;
     }
+    /* Sticky sidebar only for wide desktop layout. Mobile is single-column and
+       must not stick — landscape phones are often ≥841px wide, which used to
+       pin the filters over the scrolling table. */
     @media (min-width: 841px) {
-      .sidebar-column {
+      html[data-device="desktop"] .sidebar-column {
         position: sticky;
         top: 0;
         max-height: 100vh;
         overflow-y: auto;
         overscroll-behavior: contain;
       }
-      aside {
+      html[data-device="desktop"] aside {
         position: static;
         max-height: none;
         overflow: visible;
@@ -869,6 +881,19 @@
     }
     @media (max-width: 840px) {
       aside { border-right: none; border-bottom: 1px solid var(--border); }
+      html[data-device="desktop"] .sidebar-column {
+        position: static;
+        max-height: none;
+        overflow: visible;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+    }
+    html[data-device="mobile"] .sidebar-column {
+      position: static;
+      max-height: none;
+      overflow: visible;
+      border-right: none;
     }
     html[data-device="mobile"] aside {
       position: static;
@@ -878,11 +903,6 @@
       border-bottom: 1px solid var(--border);
     }
     html[data-device="desktop"] .sidebar-column {
-      position: sticky;
-      top: 0;
-      max-height: 100vh;
-      overflow-y: auto;
-      overscroll-behavior: contain;
       border-right: 1px solid var(--border);
       border-bottom: none;
     }
@@ -2544,6 +2564,17 @@
     #filterSelect {
       width: 100%;
       max-width: none;
+      /* most-opened-sort-select uses flex:1 for sidebar toolbars; in this column
+         modal that stretches the control into a tall empty listbox. */
+      flex: 0 0 auto;
+      align-self: stretch;
+      height: auto;
+      min-height: 0;
+      field-sizing: content;
+    }
+    #filterBackdrop .summary-body > .summary-muted,
+    #filterBackdrop .summary-body > p {
+      flex: 0 0 auto;
     }
 
     /* New deploy / list update — sticky below orientation overlay; below modal backdrop (30) */
@@ -3302,10 +3333,10 @@
           <option value="">Any / Not selected</option>
         </select>
         <p style="margin-top:0.75rem;">
-          <button class="btn" id="hideBlockedBtn" type="button">Hide blocked links: Off</button>
+          <button class="btn btn-active" id="hideBlockedBtn" type="button">Hide blocked links: On</button>
         </p>
         <p style="margin-top:0.5rem;">
-          <button class="btn" id="hideUncheckedBtn" type="button">Hide unchecked links: Off</button>
+          <button class="btn btn-active" id="hideUncheckedBtn" type="button">Hide unchecked links: On</button>
         </p>
         <p class="filter-powered-by">Powered by <span class="filter-powered-by-credit">gn-math discord bot</span></p>
       </div>
@@ -3353,10 +3384,10 @@
               <option value="">Any / Not selected</option>
             </select>
             <p style="margin-top:0.65rem;">
-              <button class="btn" id="settingsHideBlockedBtn" type="button">Hide blocked links: Off</button>
+              <button class="btn btn-active" id="settingsHideBlockedBtn" type="button">Hide blocked links: On</button>
             </p>
             <p style="margin-top:0.45rem;">
-              <button class="btn" id="settingsHideUncheckedBtn" type="button">Hide unchecked links: Off</button>
+              <button class="btn btn-active" id="settingsHideUncheckedBtn" type="button">Hide unchecked links: On</button>
             </p>
             <p class="settings-desc" style="margin-top:0.35rem;">
               When browsing, hides URLs with no filter check yet. Searches and provider checkboxes still show them (including new submissions).
@@ -3535,6 +3566,17 @@
                 <option value="enabled">Enabled</option>
               </select>
             </div>
+            <div class="settings-field">
+              <label for="settingsDebugCullingTestSelect">Enable culling testing</label>
+              <p class="settings-desc">
+                See how the site dynamically makes site elements visible/invisible when they&apos;re out of view of the
+                user&apos;s point of view. Enabling or disabling requires a refresh.
+              </p>
+              <select id="settingsDebugCullingTestSelect" aria-label="Enable culling testing">
+                <option value="disabled">Disabled (default)</option>
+                <option value="enabled">Enabled</option>
+              </select>
+            </div>
             <h4 class="settings-subsection-title">Debug Testing</h4>
             <div class="settings-field">
               <label for="settingsDebugTestNotificationSelect">Fire Test Notification</label>
@@ -3627,6 +3669,22 @@
       <div class="summary-footer">
         <button class="btn" id="debugModeWarnCancelBtn" type="button">Cancel</button>
         <button class="btn btn-primary" id="debugModeWarnConfirmBtn" type="button">Enable &amp; Refresh</button>
+      </div>
+    </section>
+  </div>
+  <div class="summary-backdrop debug-mode-warn-backdrop" id="debugCullingWarnBackdrop" aria-hidden="true">
+    <section class="summary-modal debug-mode-warn-modal" role="dialog" aria-modal="true" aria-labelledby="debugCullingWarnTitle">
+      <div class="summary-head">
+        <h2 class="summary-title" id="debugCullingWarnTitle">Refresh required</h2>
+      </div>
+      <div class="summary-body">
+        <p class="summary-muted" id="debugCullingWarnBody">
+          Changing culling testing requires refreshing the site.
+        </p>
+      </div>
+      <div class="summary-footer">
+        <button class="btn" id="debugCullingWarnCancelBtn" type="button">Cancel</button>
+        <button class="btn btn-primary" id="debugCullingWarnConfirmBtn" type="button">Save &amp; Refresh</button>
       </div>
     </section>
   </div>
@@ -3975,6 +4033,7 @@
       debugShowUserAgent: true,
       firebaseApiEnabled: true,
       debugPerfGraph: false,
+      debugCullingTest: false,
       linkSelectionAction: "summary",
       additionalNotesVisibility: "show",
       renderEmojis: true,
@@ -4010,6 +4069,7 @@
       if (typeof raw.debugShowUserAgent === "boolean") out.debugShowUserAgent = raw.debugShowUserAgent;
       if (typeof raw.firebaseApiEnabled === "boolean") out.firebaseApiEnabled = raw.firebaseApiEnabled;
       if (typeof raw.debugPerfGraph === "boolean") out.debugPerfGraph = raw.debugPerfGraph;
+      if (typeof raw.debugCullingTest === "boolean") out.debugCullingTest = raw.debugCullingTest;
       const action = String(raw.linkSelectionAction || "");
       if (action === "summary" || action === "open" || action === "copy") out.linkSelectionAction = action;
       const notesVis = String(raw.additionalNotesVisibility || "");
@@ -4351,6 +4411,29 @@
       syncDebugOverlayVisibility();
     }
 
+    // Keep main-list appSettings in sync when the backtick debug menu patches overlays.
+    window.addEventListener("proxylist-debug-settings", (ev) => {
+      const detail = ev && ev.detail;
+      if (!detail || typeof detail !== "object") return;
+      const next = {
+        debugShowUserAgent: detail.debugShowUserAgent !== false,
+        debugPerfGraph: detail.debugPerfGraph === true,
+        debugCullingTest: detail.debugCullingTest === true,
+      };
+      if (
+        appSettings.debugShowUserAgent === next.debugShowUserAgent &&
+        appSettings.debugPerfGraph === next.debugPerfGraph &&
+        appSettings.debugCullingTest === next.debugCullingTest
+      ) {
+        return;
+      }
+      appSettings = normalizeAppSettings(Object.assign({}, appSettings, next));
+      void persistAppSettings();
+      syncSettingsFormFromState();
+      // Overlays already applied the patch; avoid re-entering applySettings unless needed.
+      syncDebugExtraSettingsVisibility();
+    });
+
     function openDebugModeWarnModal() {
       const backdrop = $("debugModeWarnBackdrop");
       if (!backdrop) return;
@@ -4376,6 +4459,46 @@
     async function confirmDebugModeEnableAndRefresh() {
       closeDebugModeWarnModal();
       await updateAppSetting({ debugMode: true });
+      location.reload();
+    }
+
+    let pendingDebugCullingTest = null;
+
+    function openDebugCullingWarnModal(enabled) {
+      pendingDebugCullingTest = !!enabled;
+      const backdrop = $("debugCullingWarnBackdrop");
+      if (!backdrop) return;
+      const body = $("debugCullingWarnBody");
+      if (body) {
+        body.textContent = enabled
+          ? "Enabling culling testing requires refreshing the site."
+          : "Disabling culling testing requires refreshing the site.";
+      }
+      backdrop.classList.add("open");
+      backdrop.setAttribute("aria-hidden", "false");
+      const confirmBtn = $("debugCullingWarnConfirmBtn");
+      if (confirmBtn) confirmBtn.focus();
+    }
+
+    function closeDebugCullingWarnModal() {
+      const backdrop = $("debugCullingWarnBackdrop");
+      if (!backdrop) return;
+      backdrop.classList.remove("open");
+      backdrop.setAttribute("aria-hidden", "true");
+    }
+
+    function cancelDebugCullingChange() {
+      closeDebugCullingWarnModal();
+      pendingDebugCullingTest = null;
+      const sel = $("settingsDebugCullingTestSelect");
+      if (sel) sel.value = appSettings.debugCullingTest === true ? "enabled" : "disabled";
+    }
+
+    async function confirmDebugCullingChangeAndRefresh() {
+      const next = pendingDebugCullingTest === true;
+      pendingDebugCullingTest = null;
+      closeDebugCullingWarnModal();
+      await updateAppSetting({ debugCullingTest: next });
       location.reload();
     }
 
@@ -4796,6 +4919,7 @@
             debugMode: settings && settings.debugMode === true,
             debugShowUserAgent: !(settings && settings.debugShowUserAgent === false),
             debugPerfGraph: settings && settings.debugPerfGraph === true,
+            debugCullingTest: settings && settings.debugCullingTest === true,
           })
         );
       } catch (_) {}
@@ -4840,6 +4964,9 @@
           if (fromLs.debugPerfGraph === true || fromIdb.debugPerfGraph === true) {
             merged.debugPerfGraph = true;
           }
+          if (fromLs.debugCullingTest === true || fromIdb.debugCullingTest === true) {
+            merged.debugCullingTest = true;
+          }
           appSettingsLoadedFromIdb = true;
         }
       }
@@ -4865,6 +4992,8 @@
       if (debugFbSel) debugFbSel.value = appSettings.firebaseApiEnabled === false ? "disabled" : "enabled";
       const debugPerfSel = $("settingsDebugPerfGraphSelect");
       if (debugPerfSel) debugPerfSel.value = appSettings.debugPerfGraph === true ? "enabled" : "disabled";
+      const debugCullSel = $("settingsDebugCullingTestSelect");
+      if (debugCullSel) debugCullSel.value = appSettings.debugCullingTest === true ? "enabled" : "disabled";
       syncDebugExtraSettingsVisibility();
       const actionSel = $("settingsLinkActionSelect");
       if (actionSel) actionSel.value = appSettings.linkSelectionAction || "summary";
@@ -6328,6 +6457,7 @@
                   debugMode: appSettings.debugMode,
                   debugShowUserAgent: appSettings.debugShowUserAgent,
                   debugPerfGraph: appSettings.debugPerfGraph,
+                  debugCullingTest: appSettings.debugCullingTest,
                 });
           applyAppSettings(app, { skipUi: true });
         }
@@ -7337,9 +7467,75 @@
       }
     }
 
+    async function fetchLinkRatingsViaWorker(rawNorms, stamp) {
+      const sharedApiAvailable =
+        typeof window.ProxyListPresence !== "undefined" &&
+        typeof window.ProxyListPresence.apiUrl === "function";
+      if (!sharedApiAvailable || !rawNorms.length) return false;
+      const WORKER_RATING_BATCH = 80;
+      let fetchedAny = false;
+      for (let offset = 0; offset < rawNorms.length; offset += WORKER_RATING_BATCH) {
+        const batch = rawNorms.slice(offset, offset + WORKER_RATING_BATCH);
+        try {
+          const res = await fetch(window.ProxyListPresence.apiUrl("/api/link-ratings/get"), {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ urls: batch }),
+            mode: "cors",
+          });
+          if (!res.ok) continue;
+          const data = await res.json();
+          if (!(data && data.ok && data.ratings && typeof data.ratings === "object")) continue;
+          fetchedAny = true;
+          for (const n of batch) {
+            const workerKey = normalizeUrlKeyForClicks(n);
+            let best = null;
+            for (const v of urlKeyVariants(n)) {
+              const k = normalizeUrlKeyForClicks(v);
+              const r =
+                data.ratings[k] != null
+                  ? data.ratings[k]
+                  : data.ratings[v] != null
+                    ? data.ratings[v]
+                    : null;
+              if (!r || typeof r !== "object") continue;
+              const ag = { up: Number(r.up) || 0, down: Number(r.down) || 0 };
+              if (!best || ag.up > best.up || ag.down > best.down) best = ag;
+            }
+            if (!best && data.ratings[workerKey]) {
+              const r = data.ratings[workerKey];
+              best = { up: Number(r.up) || 0, down: Number(r.down) || 0 };
+            }
+            if (!best) continue;
+            let primaryHash = normToHashCache.get(n);
+            if (!primaryHash) {
+              primaryHash = await sha256Hex(n);
+              normToHashCache.set(n, primaryHash);
+              hashToNormMap.set(primaryHash, n);
+            }
+            const prev = linkRatingAggByHash.get(primaryHash);
+            if (!prev || best.up > prev.up || best.down > prev.down) {
+              linkRatingAggByHash.set(primaryHash, best);
+            }
+          }
+        } catch (_) {
+          /* Worker ratings unavailable */
+        }
+      }
+      if (fetchedAny && stamp) {
+        const hashes = [];
+        for (const n of rawNorms) {
+          const h = normToHashCache.get(n);
+          if (h) hashes.push(h);
+        }
+        persistLinkRatingAggDiskCache(stamp, hashes);
+      }
+      return fetchedAny;
+    }
+
     async function prefetchLinkRatingsForNorms(normsList, opts) {
       const rawNorms = [...new Set((normsList || []).map((n) => String(n || "").trim()).filter(Boolean))];
-      if (!firebaseDb || !rawNorms.length) return;
+      if (!rawNorms.length) return;
 
       const stamp = ((opts && opts.listVersionStamp) || currentListVersionStamp || "").trim();
 
@@ -7370,50 +7566,33 @@
         hydrateLinkRatingAggFromDiskCacheRelaxed(hashes);
         if (!opts || !opts.skipLinkSaveCounts) hydrateLinkSaveCountFromDiskCache(stamp, hashes);
 
-        // When Spark quota is exhausted, rely on disk cache only so votes can still write.
-        if (isFirestoreReadCooled()) {
+        const needsWorkerFallback =
+          !firebaseDb || isFirestoreReadCooled();
+
+        // Client Firebase Auth is blocked on workers.dev (API key HTTP referrer),
+        // so ratings must come from the Worker Admin proxy (or disk cache).
+        if (needsWorkerFallback) {
+          await fetchLinkRatingsViaWorker(rawNorms, stamp);
+          // Fill gaps so UI does not keep spinning; prefer disk/worker over inventing zeros early.
           hashes.forEach((h) => {
             if (!linkRatingAggByHash.has(h)) linkRatingAggByHash.set(h, { up: 0, down: 0 });
           });
           return;
         }
 
-        const missingModern = [];
-        const toFetchAgg = [...new Set(modernHashes)].filter((h) => !linkRatingAggByHash.has(h));
+        // Fetch ALL variant hashes (modern + legacy). Do not stamp modern misses as
+        // 0/0 before legacy reads — ratings often live only on the legacy hash doc.
+        const toFetchAgg = hashes.filter((h) => !linkRatingAggByHash.has(h));
         await parallelFirestoreDocGets("linkRatings", toFetchAgg, (h, snap) => {
           if (snap.exists) {
             const d = snap.data() || {};
             linkRatingAggByHash.set(h, { up: Number(d.up) || 0, down: Number(d.down) || 0 });
           } else {
             linkRatingAggByHash.set(h, { up: 0, down: 0 });
-            missingModern.push(h);
           }
         });
 
-        const legacyToFetch = [];
-        if (missingModern.length) {
-          const missingSet = new Set(missingModern);
-          for (const n of rawNorms) {
-            const list = normToHashList.get(n) || [];
-            const modern = list[0];
-            if (!modern || !missingSet.has(modern)) continue;
-            for (let i = 1; i < list.length; i++) {
-              if (!linkRatingAggByHash.has(list[i])) legacyToFetch.push(list[i]);
-            }
-          }
-        }
-        if (legacyToFetch.length) {
-          await parallelFirestoreDocGets("linkRatings", [...new Set(legacyToFetch)], (h, snap) => {
-            if (snap.exists) {
-              const d = snap.data() || {};
-              linkRatingAggByHash.set(h, { up: Number(d.up) || 0, down: Number(d.down) || 0 });
-            } else {
-              linkRatingAggByHash.set(h, { up: 0, down: 0 });
-            }
-          });
-        }
-
-        // Copy legacy-hash aggregates onto the modern norm key when only the old doc exists.
+        // Copy best aggregate onto the modern norm key when only a legacy doc exists.
         for (const n of rawNorms) {
           const list = normToHashList.get(n) || [];
           let best = null;
@@ -7466,11 +7645,17 @@
         } else if (isFirestoreResourceExhausted(err)) {
           tripFirestoreReadCooldown(3 * 60 * 1000);
           console.warn(
-            "[proxy-list] Link ratings prefetch hit Firestore quota/rate limits; pausing bulk reads so likes can still save. Counts may be incomplete until the cooldown ends.",
+            "[proxy-list] Link ratings prefetch hit Firestore quota/rate limits; pausing bulk reads so likes can still save. Falling back to Worker ratings API.",
             err
           );
+          try {
+            await fetchLinkRatingsViaWorker(rawNorms, stamp);
+          } catch (_) {}
         } else {
-          console.warn("[proxy-list] Link ratings prefetch failed", err);
+          console.warn("[proxy-list] Link ratings prefetch failed; trying Worker ratings API", err);
+          try {
+            await fetchLinkRatingsViaWorker(rawNorms, stamp);
+          } catch (_) {}
         }
       }
     }
@@ -8137,17 +8322,19 @@
 
     function syncClickCountInUi(url, count) {
       const norm = normalizeUrlKeyForClicks(url);
-      if (!norm || !Number.isFinite(count)) return;
-      clickCountCache.set(norm, count);
+      if (!norm || !Number.isFinite(count) || count < 0) return;
+      // Never let a lower edge/local response overwrite a higher shared count.
+      const next = Math.max(Number(clickCountCache.get(norm)) || 0, count);
+      clickCountCache.set(norm, next);
       if (bulkClickCountCache) {
-        bulkClickCountCache.set(norm, Math.max(Number(bulkClickCountCache.get(norm)) || 0, count));
+        bulkClickCountCache.set(norm, Math.max(Number(bulkClickCountCache.get(norm)) || 0, next));
       }
       const stamp = (currentListVersionStamp || "").trim();
       if (stamp) persistClickCountDiskCache(stamp, [norm]);
       document.querySelectorAll("td.click-cell[data-click-url]").forEach((td) => {
         const link = td.getAttribute("data-click-url") || "";
         if (normalizeUrlKeyForClicks(link) !== norm) return;
-        td.textContent = String(count);
+        td.textContent = String(next);
       });
     }
 
@@ -8204,6 +8391,8 @@
       const norms = [...new Set(urls.map((u) => normalizeUrlKeyForClicks(u)).filter(Boolean))];
       const map = new Map();
       const stamp = (currentListVersionStamp || "").trim();
+      // Disk cache is optimistic only — always revalidate against the shared Worker
+      // when available so localhost / Pages don't stick on stale lower counts.
       hydrateClickCountDiskCache(stamp, norms);
       hydrateClickCountDiskCacheRelaxed(norms);
       const mergeClickCountCache = () => {
@@ -8221,77 +8410,109 @@
         return map;
       }
       mergeClickCountCache();
-      const uncached = norms.filter((n) => !clickCountCache.has(n));
-      if (!uncached.length) {
+
+      const sharedApiAvailable =
+        typeof window.ProxyListPresence !== "undefined" &&
+        typeof window.ProxyListPresence.apiUrl === "function";
+      // When the shared API is available, refresh every requested URL (not only
+      // disk misses). Otherwise keep the old "uncached only" behavior for offline.
+      const toFetch = sharedApiAvailable
+        ? norms.slice()
+        : norms.filter((n) => !clickCountCache.has(n));
+      if (!toFetch.length) {
         if (onProgress) onProgress(norms.length, norms.length);
         return map;
       }
 
-      // Try Worker batch get first (same origin on Cloudflare).
+      // Try Worker batch get first (same origin on Cloudflare / workers.dev on local+Pages).
+      // Worker accepts at most 80 URLs per request — batch so "load all" still refreshes.
+      const WORKER_CLICK_BATCH = 80;
       try {
         if (!stillGoing()) return map;
-        const displayUrls = uncached.slice();
-        const controller = typeof AbortController !== "undefined" ? new AbortController() : null;
-        const abortTimer =
-          controller && shouldContinue
-            ? setInterval(() => {
-                if (!stillGoing()) {
-                  try {
-                    controller.abort();
-                  } catch (_) {}
-                }
-              }, 250)
-            : null;
-        let res;
-        try {
-          res = await fetch(
-            typeof window.ProxyListPresence !== "undefined" && window.ProxyListPresence.apiUrl
-              ? window.ProxyListPresence.apiUrl("/api/link-clicks/get")
-              : "./api/link-clicks/get",
-            {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ urls: displayUrls }),
-            mode: "cors",
-            signal: controller ? controller.signal : undefined,
-            }
-          );
-        } finally {
-          if (abortTimer) clearInterval(abortTimer);
-        }
-        if (!stillGoing()) return map;
-        if (res.ok) {
+        let fetchedAny = false;
+        for (let offset = 0; offset < toFetch.length; offset += WORKER_CLICK_BATCH) {
+          if (!stillGoing()) return map;
+          const displayUrls = toFetch.slice(offset, offset + WORKER_CLICK_BATCH);
+          const controller = typeof AbortController !== "undefined" ? new AbortController() : null;
+          const abortTimer =
+            controller && shouldContinue
+              ? setInterval(() => {
+                  if (!stillGoing()) {
+                    try {
+                      controller.abort();
+                    } catch (_) {}
+                  }
+                }, 250)
+              : null;
+          let res;
+          try {
+            res = await fetch(
+              sharedApiAvailable
+                ? window.ProxyListPresence.apiUrl("/api/link-clicks/get")
+                : "./api/link-clicks/get",
+              {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ urls: displayUrls }),
+              mode: "cors",
+              signal: controller ? controller.signal : undefined,
+              }
+            );
+          } finally {
+            if (abortTimer) clearInterval(abortTimer);
+          }
+          if (!stillGoing()) return map;
+          if (!res.ok) continue;
           const data = await res.json();
           if (!stillGoing()) return map;
-          if (data && data.ok && data.counts && typeof data.counts === "object") {
-            uncached.forEach((n) => {
-              const workerKey = normalizeUrlKeyForClicks(n);
-              let best = 0;
-              for (const v of urlKeyVariants(n)) {
-                const k = normalizeUrlKeyForClicks(v);
-                const val =
-                  data.counts[k] != null
-                    ? data.counts[k]
-                    : data.counts[v] != null
-                      ? data.counts[v]
-                      : null;
-                if (Number.isFinite(val)) best = Math.max(best, val);
+          if (!(data && data.ok && data.counts && typeof data.counts === "object")) continue;
+          fetchedAny = true;
+          displayUrls.forEach((n) => {
+            const workerKey = normalizeUrlKeyForClicks(n);
+            let best = 0;
+            let sawWorker = false;
+            for (const v of urlKeyVariants(n)) {
+              const k = normalizeUrlKeyForClicks(v);
+              const val =
+                data.counts[k] != null
+                  ? data.counts[k]
+                  : data.counts[v] != null
+                    ? data.counts[v]
+                    : null;
+              if (Number.isFinite(val)) {
+                sawWorker = true;
+                best = Math.max(best, val);
               }
-              if (best <= 0) {
-                const v =
-                  data.counts[workerKey] != null
-                    ? data.counts[workerKey]
-                    : data.counts[n];
-                if (Number.isFinite(v)) best = v;
+            }
+            if (!sawWorker) {
+              const v =
+                data.counts[workerKey] != null
+                  ? data.counts[workerKey]
+                  : data.counts[n];
+              if (Number.isFinite(v)) {
+                sawWorker = true;
+                best = v;
               }
-              map.set(n, best);
-              clickCountCache.set(n, best);
-            });
-            mergeClickCountCache();
-            if (stamp) persistClickCountDiskCache(stamp, norms);
-            if (onProgress) onProgress(norms.length, norms.length);
-            return map;
+            }
+            // Worker omits keys when Firestore is unavailable — keep disk/cache.
+            if (!sawWorker) return;
+            const merged = Math.max(
+              Number(clickCountCache.get(n)) || 0,
+              Number(map.get(n)) || 0,
+              best
+            );
+            map.set(n, merged);
+            clickCountCache.set(n, merged);
+          });
+          if (onProgress) {
+            onProgress(Math.min(offset + displayUrls.length, toFetch.length), toFetch.length);
           }
+        }
+        if (fetchedAny) {
+          mergeClickCountCache();
+          if (stamp) persistClickCountDiskCache(stamp, norms);
+          if (onProgress) onProgress(norms.length, norms.length);
+          return map;
         }
       } catch (_) {
         /* aborted or Worker unavailable — fall through */
@@ -8299,7 +8520,7 @@
 
       if (!stillGoing()) return map;
 
-      uncached.forEach((n) => {
+      toFetch.forEach((n) => {
         if (!map.has(n)) map.set(n, localClickGet(n));
       });
       mergeClickCountCache();
@@ -8451,10 +8672,11 @@
       } catch (_) {}
       if (!firebaseDb || isFirestoreReadCooled()) return topOpenedDocsCache.docs || [];
       try {
+        // Fetch extra docs so legacy/modern hash pairs can be merged client-side.
         const snap = await firebaseDb
           .collection("link_clicks")
           .orderBy("count", "desc")
-          .limit(cap)
+          .limit(Math.min(200, Math.max(cap * 4, 80)))
           .get();
         const docs = snap.docs.map((doc) => {
           const d = doc.data() || {};
@@ -8524,16 +8746,14 @@
 
       const byNorm = buildLinkNormIndex(links);
       const docs = await fetchTopOpenedFromFirestore(TOP_OPENS_FETCH_CAP);
+      // Keep every matching Firestore/Worker doc so mergeMostOpenedCandidates can
+      // sum legacy+modern hash splits (do not dedupe before merge).
       const candidates = [];
-      const seenKeys = new Set();
       for (const { url, count } of docs) {
         const row =
           byNorm.get(normalizeUrlKeyForClicks(url)) || byNorm.get(legacyNormalizeUrlKey(url));
         if (!row) continue;
-        const key = normalizeUrlKeyForClicks(row.link) || String(row.link || "");
-        if (!key || seenKeys.has(key)) continue;
-        seenKeys.add(key);
-        candidates.push({ row, count });
+        candidates.push({ row, count: Number(count) || 0 });
       }
       const merged = mergeMostOpenedCandidates(candidates);
 
@@ -10494,6 +10714,7 @@
     let tableVirtualState = null;
     let tableVirtualScrollHandler = null;
     let tableVirtualResizeHandler = null;
+    let tableVirtualCullingZoomHandler = null;
     let renderDebounceTimer = null;
     let filterCountsIdleHandle = null;
     let bulkClickCountCache = null;
@@ -10509,6 +10730,10 @@
       if (tableVirtualResizeHandler) {
         window.removeEventListener("resize", tableVirtualResizeHandler);
         tableVirtualResizeHandler = null;
+      }
+      if (tableVirtualCullingZoomHandler) {
+        window.removeEventListener("proxylist-culling-zoom", tableVirtualCullingZoomHandler);
+        tableVirtualCullingZoomHandler = null;
       }
       tableVirtualState = null;
     }
@@ -10536,9 +10761,45 @@
       return !isUnoptimizedTableRender() && filteredLen > TABLE_VIRTUAL_THRESHOLD;
     }
 
+    function getDebugCullingScale() {
+      try {
+        if (
+          window.ProxyListDebug &&
+          typeof window.ProxyListDebug.isCullingTestActive === "function" &&
+          window.ProxyListDebug.isCullingTestActive() &&
+          typeof window.ProxyListDebug.getCullingScale === "function"
+        ) {
+          const s = Number(window.ProxyListDebug.getCullingScale());
+          if (s > 0 && s <= 1) return s;
+        }
+      } catch (_) {}
+      if (document.documentElement.classList.contains("debug-culling-test")) {
+        const raw = parseFloat(
+          getComputedStyle(document.documentElement).getPropertyValue("--debug-culling-scale")
+        );
+        if (raw > 0 && raw <= 1) return raw;
+      }
+      return 1;
+    }
+
+    function layoutDocumentTop(el) {
+      let y = 0;
+      let node = el;
+      while (node) {
+        y += node.offsetTop || 0;
+        node = node.offsetParent;
+      }
+      return y;
+    }
+
     function getTableChunkWrapTop() {
       const wrap = document.querySelector(".table-chunk-wrap");
       if (!wrap) return 0;
+      // Under culling zoom, body is CSS-transformed — client rects are scaled but
+      // scrollY is not. Use layout offsets so the virtual window stays aligned.
+      if (getDebugCullingScale() < 1) {
+        return layoutDocumentTop(wrap);
+      }
       return wrap.getBoundingClientRect().top + window.scrollY;
     }
 
@@ -10550,12 +10811,17 @@
       const thead = table && table.querySelector("thead");
       const headerHeight = thead ? thead.offsetHeight : 40;
       const rowH = virtualTableRowHeight(st);
+      const cullScale = getDebugCullingScale();
+      // When zoomed out for culling tests, the screen shows ~1/scale screens of
+      // document content — render enough rows to fill that region (then cull viz
+      // hides the ones outside the green FOV).
+      const viewH = window.innerHeight / Math.max(0.4, cullScale);
       const relativeScroll = Math.max(0, window.scrollY - wrapTop + headerHeight);
-      const visibleCount = Math.ceil(window.innerHeight / rowH) + TABLE_VIRTUAL_BUFFER * 2;
+      const visibleCount = Math.ceil(viewH / rowH) + TABLE_VIRTUAL_BUFFER * 2;
       let start = Math.max(0, Math.floor(relativeScroll / rowH) - TABLE_VIRTUAL_BUFFER);
       let end = Math.min(st.filtered.length, start + visibleCount);
       const nearBottom =
-        window.scrollY + window.innerHeight >=
+        window.scrollY + viewH >=
         wrapTop + headerHeight + st.filtered.length * rowH - rowH * 2;
       if (nearBottom) {
         end = st.filtered.length;
@@ -10622,11 +10888,15 @@
         });
       };
       tableVirtualResizeHandler = tableVirtualScrollHandler;
+      tableVirtualCullingZoomHandler = () => {
+        paintVirtualTableWindow(true);
+      };
       window.addEventListener("scroll", tableVirtualScrollHandler, { passive: true });
       window.addEventListener("resize", tableVirtualResizeHandler, { passive: true });
       if (typeof window.addEventListener === "function") {
         window.addEventListener("scrollend", tableVirtualScrollHandler, { passive: true });
       }
+      window.addEventListener("proxylist-culling-zoom", tableVirtualCullingZoomHandler);
       paintVirtualTableWindow(true);
     }
 
@@ -12513,11 +12783,9 @@
 
     function importantNoticeAlertClass(title) {
       const t = String(title || "").trim();
-      if (/fyinx unavailable for legal reasons/i.test(t)) return "notice-alert-danger";
       if (/google forms deprecated/i.test(t)) return "notice-alert-warning";
       if (/proxy connections fully operational/i.test(t)) return "notice-alert-success";
       if (/canary branch coming soon/i.test(t)) return "notice-alert-info";
-      if (/try out the game browser/i.test(t)) return "notice-alert-info";
       if (/link ratings back up/i.test(t)) return "notice-alert-info";
       return "";
     }
@@ -12783,7 +13051,8 @@
       "gdb:lucide":
         "Lucide's built-in game catalog, shipped via lucideproxy/svg (GamesPage assets). Used by Lucide and Lunar links.",
       "gdb:sdxp": "Rift vault pack (SDXP). No detailed info on this database yet.",
-      "gdb:duckmath": "Rift vault pack (DuckMath). No detailed info on this database yet.",
+      "gdb:duckmath":
+        "DuckMath game catalog (local docs/gdb-catalogs/duckmath.json, merged from current DuckMath deploys + Neruvy backup).",
       "gdb:ccported": "Rift vault pack (CCPorted). No detailed info on this database yet.",
       "gdb:selenite": "Selenite's game catalog (also exposed as a Rift vault pack). No detailed info on this database yet.",
       "gdb:radon": "Rift vault pack (Radon). No detailed info on this database yet.",
@@ -13500,6 +13769,32 @@
             void updateAppSetting({
               debugPerfGraph: settingsDebugPerfGraphSelect.value === "enabled",
             });
+          });
+        }
+        const settingsDebugCullingTestSelect = $("settingsDebugCullingTestSelect");
+        if (settingsDebugCullingTestSelect) {
+          settingsDebugCullingTestSelect.addEventListener("change", () => {
+            const enabled = settingsDebugCullingTestSelect.value === "enabled";
+            // Revert until confirm; enable and disable both require a refresh.
+            settingsDebugCullingTestSelect.value =
+              appSettings.debugCullingTest === true ? "enabled" : "disabled";
+            openDebugCullingWarnModal(enabled);
+          });
+        }
+        const debugCullingWarnCancelBtn = $("debugCullingWarnCancelBtn");
+        if (debugCullingWarnCancelBtn) {
+          debugCullingWarnCancelBtn.addEventListener("click", () => cancelDebugCullingChange());
+        }
+        const debugCullingWarnConfirmBtn = $("debugCullingWarnConfirmBtn");
+        if (debugCullingWarnConfirmBtn) {
+          debugCullingWarnConfirmBtn.addEventListener("click", () => {
+            void confirmDebugCullingChangeAndRefresh();
+          });
+        }
+        const debugCullingWarnBackdrop = $("debugCullingWarnBackdrop");
+        if (debugCullingWarnBackdrop) {
+          debugCullingWarnBackdrop.addEventListener("click", (ev) => {
+            if (ev.target === debugCullingWarnBackdrop) cancelDebugCullingChange();
           });
         }
         const debugExportConsoleBtn = $("debugExportConsoleBtn");

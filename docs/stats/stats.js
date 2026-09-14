@@ -44,6 +44,9 @@
     clickMonthly: null,
     clickYearly: null,
     usersSpan: "7d",
+    providerLinksSpan: "all",
+    providerOpensSpan: "1m",
+    providerOpensSeries: null,
     panel: "providers",
   };
 
@@ -215,6 +218,35 @@
     );
   }
 
+  /** Doughnut/pie: require pointer over the arc (global nearest+intersect:false picks wrong slices). */
+  function applyArcHoverOptions(options) {
+    options.interaction = Object.assign(
+      { mode: "nearest", intersect: true },
+      options.interaction || {}
+    );
+    options.hover = Object.assign({ mode: "nearest", intersect: true }, options.hover || {});
+    options.plugins = options.plugins || {};
+    options.plugins.tooltip = Object.assign(
+      { enabled: true, mode: "nearest", intersect: true },
+      options.plugins.tooltip || {}
+    );
+  }
+
+  /** Bars: score distance only along the category axis so adjacent rows/columns don't steal hover. */
+  function applyBarHoverOptions(options, indexAxis) {
+    var axis = indexAxis === "y" ? "y" : "x";
+    options.interaction = Object.assign(
+      { mode: "nearest", intersect: true, axis: axis },
+      options.interaction || {}
+    );
+    options.hover = Object.assign({ mode: "nearest", intersect: true }, options.hover || {});
+    options.plugins = options.plugins || {};
+    options.plugins.tooltip = Object.assign(
+      { enabled: true, mode: "nearest", intersect: true },
+      options.plugins.tooltip || {}
+    );
+  }
+
   function categoryAxisId(chart) {
     return chart.options && chart.options.indexAxis === "y" ? "y" : "x";
   }
@@ -238,36 +270,52 @@
 
   function setCategoryWindow(chart, start, end) {
     var n = labelCount(chart);
-    if (n <= 0) return;
+    if (n <= 0) return false;
     var axisId = categoryAxisId(chart);
-    chart.options.scales = chart.options.scales || {};
-    chart.options.scales[axisId] = chart.options.scales[axisId] || {};
+    // Mutate scale options in place. After chart.update(), chart.options.scales.*
+    // is Chart.js's internal resolver Proxy — reassigning it
+    // (`scales.x = scales.x || {}`) writes that resolver back as options and
+    // triggers "Ignoring resolver…" plus `t.startsWith is not a function`.
+    var scales = chart.options && chart.options.scales;
+    var scaleOpts = scales && scales[axisId];
+    if (!scaleOpts) return false;
     var lo = Math.max(0, Math.min(n - 1, Math.floor(start)));
     var hi = Math.max(lo, Math.min(n - 1, Math.ceil(end)));
-    if (lo <= 0 && hi >= n - 1) {
-      delete chart.options.scales[axisId].min;
-      delete chart.options.scales[axisId].max;
+    var cur = currentCategoryWindow(chart);
+    var nextFull = lo <= 0 && hi >= n - 1;
+    var curFull = cur.start <= 0 && cur.end >= n - 1;
+    if (nextFull && curFull) {
+      syncChartZoomToolbar(chart);
+      return false;
+    }
+    if (!nextFull && cur.start === lo && cur.end === hi) {
+      syncChartZoomToolbar(chart);
+      return false;
+    }
+    if (nextFull) {
+      delete scaleOpts.min;
+      delete scaleOpts.max;
     } else {
-      chart.options.scales[axisId].min = lo;
-      chart.options.scales[axisId].max = hi;
+      scaleOpts.min = lo;
+      scaleOpts.max = hi;
     }
     chart.update("none");
     syncChartZoomToolbar(chart);
+    return true;
   }
 
   function resetBarZoom(chart) {
-    setCategoryWindow(chart, 0, labelCount(chart) - 1);
+    return setCategoryWindow(chart, 0, labelCount(chart) - 1);
   }
 
   function zoomBarWindow(chart, factor, anchorRatio) {
     var win = currentCategoryWindow(chart);
-    if (win.n <= 1) return;
+    if (win.n <= 1) return false;
     var span = Math.max(1, win.end - win.start + 1);
-    var nextSpan = Math.max(3, Math.min(win.n, Math.round(span * factor)));
-    if (nextSpan === span && factor >= 1) {
-      resetBarZoom(chart);
-      return;
-    }
+    var minSpan = Math.min(3, win.n);
+    var nextSpan = Math.max(minSpan, Math.min(win.n, Math.round(span * factor)));
+    // Already at min/max zoom — do not call chart.update() (wheel spam spikes memory).
+    if (nextSpan === span) return false;
     var ratio = Number.isFinite(anchorRatio) ? Math.max(0, Math.min(1, anchorRatio)) : 0.5;
     var center = win.start + span * ratio;
     var start = Math.round(center - nextSpan * ratio);
@@ -281,13 +329,16 @@
       end = win.n - 1;
     }
     start = Math.max(0, start);
-    setCategoryWindow(chart, start, end);
+    return setCategoryWindow(chart, start, end);
   }
 
   function panBarWindow(chart, delta) {
     var win = currentCategoryWindow(chart);
-    if (win.n <= 1) return;
+    if (win.n <= 1) return false;
+    if (!delta) return false;
     var span = win.end - win.start;
+    // Fully zoomed out — panning cannot change the window.
+    if (span >= win.n - 1) return false;
     var start = win.start + delta;
     var end = start + span;
     if (start < 0) {
@@ -298,17 +349,26 @@
       end = win.n - 1;
       start = Math.max(0, end - span);
     }
-    setCategoryWindow(chart, start, end);
+    if (start === win.start && end === win.end) return false;
+    return setCategoryWindow(chart, start, end);
   }
 
   function syncChartZoomToolbar(chart) {
     var tools = chart && chart.$zoomTools;
     if (!tools) return;
     var win = currentCategoryWindow(chart);
+    var span = Math.max(1, win.end - win.start + 1);
+    var minSpan = Math.min(3, win.n);
     var zoomed = win.start > 0 || win.end < win.n - 1;
+    var canZoomIn = span > minSpan;
+    var canZoomOut = zoomed;
     tools.classList.toggle("is-zoomed", zoomed);
     var resetBtn = tools.querySelector("[data-chart-zoom='reset']");
+    var inBtn = tools.querySelector("[data-chart-zoom='in']");
+    var outBtn = tools.querySelector("[data-chart-zoom='out']");
     if (resetBtn) resetBtn.disabled = !zoomed;
+    if (inBtn) inBtn.disabled = !canZoomIn;
+    if (outBtn) outBtn.disabled = !canZoomOut;
   }
 
   function ensureChartZoomToolbar(chart) {
@@ -326,7 +386,7 @@
         '<button type="button" class="btn" data-chart-zoom="in" title="Zoom in">+</button>' +
         '<button type="button" class="btn" data-chart-zoom="out" title="Zoom out">−</button>' +
         '<button type="button" class="btn" data-chart-zoom="reset" title="Reset zoom">Reset</button>' +
-        '<span class="chart-zoom-hint">Scroll or drag to pan</span>';
+        '<span class="chart-zoom-hint">Scroll to zoom · drag to pan · double-click reset</span>';
       wrap.insertBefore(tools, wrap.firstChild);
     }
     chart.$zoomTools = tools;
@@ -349,8 +409,10 @@
     return tools;
   }
 
-  function attachBarChartZoom(chart) {
-    if (!chart || chart.config.type !== "bar") return;
+  function attachCategoryChartZoom(chart) {
+    if (!chart) return;
+    var type = chart.config && chart.config.type;
+    if (type !== "bar" && type !== "line") return;
     if (labelCount(chart) < 4) return;
     var canvas = chart.canvas;
     var wrap = canvas && canvas.parentElement;
@@ -362,9 +424,22 @@
     var dragging = false;
     var lastY = 0;
     var lastX = 0;
+    var wheelRaf = 0;
+    var pendingWheel = null;
 
     function liveChart() {
       return wrap.$barZoomChart;
+    }
+
+    function flushWheel() {
+      wheelRaf = 0;
+      var job = pendingWheel;
+      pendingWheel = null;
+      if (!job) return;
+      var live = liveChart();
+      if (!live) return;
+      if (job.pan) panBarWindow(live, job.pan);
+      else zoomBarWindow(live, job.factor, job.along);
     }
 
     canvas.addEventListener(
@@ -381,10 +456,13 @@
             : (ev.clientX - rect.left) / Math.max(1, rect.width);
         if (ev.shiftKey || Math.abs(ev.deltaX) > Math.abs(ev.deltaY)) {
           var panPx = axisId === "y" ? ev.deltaY || ev.deltaX : ev.deltaX || ev.deltaY;
-          panBarWindow(live, panPx > 0 ? 1 : -1);
-          return;
+          pendingWheel = { pan: panPx > 0 ? 1 : -1 };
+        } else {
+          pendingWheel = { factor: ev.deltaY > 0 ? 1.25 : 0.8, along: along };
         }
-        zoomBarWindow(live, ev.deltaY > 0 ? 1.25 : 0.8, along);
+        if (!wheelRaf) {
+          wheelRaf = requestAnimationFrame(flushWheel);
+        }
       },
       { passive: false }
     );
@@ -422,6 +500,11 @@
       var live = liveChart();
       if (live) resetBarZoom(live);
     });
+  }
+
+  /** @deprecated Use attachCategoryChartZoom */
+  function attachBarChartZoom(chart) {
+    attachCategoryChartZoom(chart);
   }
 
   /** Bar charts: grow from the baseline along the value axis only (no pop/scale-in). */
@@ -534,6 +617,7 @@
       if (!config.options.animation) {
         config.options.animation = { duration: 850, easing: "easeOutQuart" };
       }
+      applyBarHoverOptions(config.options, indexAxis);
     } else if (type === "doughnut" || type === "pie") {
       config.options.animation = Object.assign({}, doughnutFillAnimation(), config.options.animation || {});
       // Prevent radius pop-in; only sweep the arc.
@@ -546,6 +630,7 @@
         },
         config.options.animations || {}
       );
+      applyArcHoverOptions(config.options);
     } else if (type === "line") {
       config.options.animations = Object.assign({}, lineFillAnimations(), config.options.animations || {});
       applyLinePointHighlights(config);
@@ -553,7 +638,7 @@
     }
 
     var chart = new Chart(canvas, config);
-    if (type === "bar") attachBarChartZoom(chart);
+    if (type === "bar" || type === "line") attachCategoryChartZoom(chart);
     (bucket || charts).push(chart);
     return chart;
   }
@@ -656,19 +741,218 @@
     });
     var labels = [];
     var values = [];
+    var times = [];
     var cum = 0;
     var unknown = providerLinks.length - dated.length;
     if (unknown > 0) {
       labels.push("Unknown date");
       values.push(unknown);
+      times.push(null);
       cum = unknown;
     }
     dated.forEach(function (ts) {
       cum += 1;
       labels.push(formatShortDate(new Date(ts)));
       values.push(cum);
+      times.push(ts);
     });
-    return { labels: labels, values: values, earliest: dated.length ? new Date(dated[0]) : null };
+    return {
+      labels: labels,
+      values: values,
+      times: times,
+      earliest: dated.length ? new Date(dated[0]) : null,
+    };
+  }
+
+  function spanCutoffMs(span) {
+    if (!span || span === "all") return null;
+    var now = Date.now();
+    var day = 86400000;
+    if (span === "7d") return now - 7 * day;
+    if (span === "1m") return now - 31 * day;
+    if (span === "6m") return now - 183 * day;
+    if (span === "1y") return now - 366 * day;
+    if (span === "3y") return now - 3 * 366 * day;
+    if (span === "5y") return now - 5 * 366 * day;
+    return null;
+  }
+
+  function sliceSeriesBySpan(series, span, opts) {
+    opts = opts || {};
+    var labels = (series && series.labels) || [];
+    var values = (series && series.values) || [];
+    var times = (series && series.times) || null;
+    var cutoff = spanCutoffMs(span);
+    if (!cutoff || !labels.length) {
+      return { labels: labels.slice(), values: values.slice() };
+    }
+    if (times && times.length === labels.length) {
+      var outL = [];
+      var outV = [];
+      for (var i = 0; i < labels.length; i++) {
+        var t = times[i];
+        if (t == null) {
+          if (opts.keepUnknown) {
+            outL.push(labels[i]);
+            outV.push(values[i]);
+          }
+          continue;
+        }
+        if (t >= cutoff) {
+          outL.push(labels[i]);
+          outV.push(values[i]);
+        }
+      }
+      return { labels: outL, values: outV };
+    }
+    // Fallback: keep the trailing N points for day-like series.
+    var days =
+      span === "7d" ? 7 : span === "1m" ? 31 : span === "6m" ? 183 : span === "1y" ? 366 : span === "3y" ? 1098 : span === "5y" ? 1830 : labels.length;
+    var start = Math.max(0, labels.length - days);
+    return { labels: labels.slice(start), values: values.slice(start) };
+  }
+
+  function syncRangeToggle(rootId, attr, activeSpan) {
+    var root = $(rootId);
+    if (!root) return;
+    root.querySelectorAll("[" + attr + "]").forEach(function (btn) {
+      btn.classList.toggle("is-active", btn.getAttribute(attr) === activeSpan);
+    });
+  }
+
+  function wireProviderRangeToggles() {
+    var linksRoot = $("providerLinksRangeToggle");
+    if (linksRoot && linksRoot.dataset.wired !== "1") {
+      linksRoot.dataset.wired = "1";
+      linksRoot.addEventListener("click", function (ev) {
+        var btn = ev.target && ev.target.closest ? ev.target.closest("[data-provider-links-span]") : null;
+        if (!btn || !linksRoot.contains(btn)) return;
+        state.providerLinksSpan = btn.getAttribute("data-provider-links-span") || "all";
+        syncRangeToggle("providerLinksRangeToggle", "data-provider-links-span", state.providerLinksSpan);
+        if (state.selectedProvider) void refreshProviderDetailChartsOnly();
+      });
+    }
+    var opensRoot = $("providerOpensRangeToggle");
+    if (opensRoot && opensRoot.dataset.wired !== "1") {
+      opensRoot.dataset.wired = "1";
+      opensRoot.addEventListener("click", function (ev) {
+        var btn = ev.target && ev.target.closest ? ev.target.closest("[data-provider-opens-span]") : null;
+        if (!btn || !opensRoot.contains(btn)) return;
+        state.providerOpensSpan = btn.getAttribute("data-provider-opens-span") || "1m";
+        syncRangeToggle("providerOpensRangeToggle", "data-provider-opens-span", state.providerOpensSpan);
+        if (state.selectedProvider) void refreshProviderDetailChartsOnly();
+      });
+    }
+  }
+
+  function renderProviderLinksChart(fullSeries) {
+    var sliced = sliceSeriesBySpan(fullSeries, state.providerLinksSpan, { keepUnknown: false });
+    makeChart(
+      $("providerLinksOverTimeChart"),
+      {
+        type: "line",
+        data: {
+          labels: sliced.labels.length ? sliced.labels : ["No dated links"],
+          datasets: [
+            {
+              label: "Cumulative links",
+              data: sliced.values.length ? sliced.values : [0],
+              borderColor: CHART_COLORS[0],
+              backgroundColor: "rgba(108, 179, 255, 0.15)",
+              fill: true,
+              tension: 0.2,
+              pointRadius: sliced.labels.length > 40 ? 0 : 2,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: {
+              ticks: {
+                maxRotation: 0,
+                autoSkip: true,
+                maxTicksLimit: 8,
+              },
+              grid: { color: "#2a2a2a" },
+            },
+            y: {
+              beginAtZero: true,
+              ticks: { precision: 0 },
+              grid: { color: "#2a2a2a" },
+            },
+          },
+        },
+      },
+      detailCharts
+    );
+  }
+
+  function renderProviderOpensChart(fullSeries) {
+    var sliced = sliceSeriesBySpan(fullSeries || { labels: [], values: [], times: [] }, state.providerOpensSpan);
+    var hasDaily = sliced.values.some(function (v) {
+      return v > 0;
+    });
+    makeChart(
+      $("providerOpensOverTimeChart"),
+      {
+        type: "line",
+        data: {
+          labels: sliced.labels.length ? sliced.labels : ["—"],
+          datasets: [
+            {
+              label: "Daily opens",
+              data: sliced.values.length ? sliced.values : [0],
+              borderColor: CHART_COLORS[1],
+              backgroundColor: "rgba(62, 207, 142, 0.15)",
+              fill: true,
+              tension: 0.2,
+              pointRadius: sliced.labels.length > 40 ? 0 : 2,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            subtitle: hasDaily
+              ? undefined
+              : {
+                  display: true,
+                  text: "No daily open data yet for this provider",
+                  color: "#9a9a9a",
+                },
+          },
+          scales: {
+            x: {
+              ticks: { maxTicksLimit: 10, maxRotation: 0 },
+              grid: { color: "#2a2a2a" },
+            },
+            y: {
+              beginAtZero: true,
+              ticks: { precision: 0 },
+              grid: { color: "#2a2a2a" },
+            },
+          },
+        },
+      },
+      detailCharts
+    );
+  }
+
+  async function refreshProviderDetailChartsOnly() {
+    var provider = state.providers.find(function (p) {
+      return p.name === state.selectedProvider;
+    });
+    if (!provider) return;
+    destroyChartList(detailCharts);
+    var series = linksOverTimeSeries(provider.links);
+    state.providerLinksSeries = series;
+    renderProviderLinksChart(series);
+    renderProviderOpensChart(state.providerOpensSeries || { labels: [], values: [], times: [] });
   }
 
   function renderProviderTable(rows) {
@@ -1680,6 +1964,7 @@
     );
 
     var series = linksOverTimeSeries(provider.links);
+    state.providerLinksSeries = series;
     setText("detailLinks", formatInt(provider.count));
     setText(
       "detailFirstFound",
@@ -1693,47 +1978,9 @@
     setText("detailCategories", formatInt(cats.size));
 
     destroyChartList(detailCharts);
-    makeChart(
-      $("providerLinksOverTimeChart"),
-      {
-        type: "line",
-        data: {
-          labels: series.labels.length ? series.labels : ["No dated links"],
-          datasets: [
-            {
-              label: "Cumulative links",
-              data: series.values.length ? series.values : [0],
-              borderColor: CHART_COLORS[0],
-              backgroundColor: "rgba(108, 179, 255, 0.15)",
-              fill: true,
-              tension: 0.2,
-              pointRadius: series.labels.length > 40 ? 0 : 2,
-            },
-          ],
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: { legend: { display: false } },
-          scales: {
-            x: {
-              ticks: {
-                maxRotation: 0,
-                autoSkip: true,
-                maxTicksLimit: 8,
-              },
-              grid: { color: "#2a2a2a" },
-            },
-            y: {
-              beginAtZero: true,
-              ticks: { precision: 0 },
-              grid: { color: "#2a2a2a" },
-            },
-          },
-        },
-      },
-      detailCharts
-    );
+    syncRangeToggle("providerLinksRangeToggle", "data-provider-links-span", state.providerLinksSpan);
+    syncRangeToggle("providerOpensRangeToggle", "data-provider-opens-span", state.providerOpensSpan);
+    renderProviderLinksChart(series);
 
     var hashes = [];
     for (var i = 0; i < provider.links.length; i++) {
@@ -1746,6 +1993,7 @@
     var opensTotal = 0;
     var openLabels = [];
     var openValues = [];
+    var openTimes = [];
     if (state.db) {
       try {
         opensTotal = await lifetimeOpensForHashes(state.db, hashes);
@@ -1759,62 +2007,20 @@
           });
           openLabels.push(day.date.slice(5));
           openValues.push(sum);
+          var ts = Date.parse(day.date + "T00:00:00Z");
+          openTimes.push(Number.isFinite(ts) ? ts : null);
         });
       } catch (err) {
         console.warn("[stats] provider opens failed", err);
       }
     }
     setText("detailOpens", state.db ? formatInt(opensTotal) : "—");
-
-    var hasDaily = openValues.some(function (v) {
-      return v > 0;
-    });
-    makeChart(
-      $("providerOpensOverTimeChart"),
-      {
-        type: "line",
-        data: {
-          labels: openLabels.length ? openLabels : ["—"],
-          datasets: [
-            {
-              label: "Daily opens",
-              data: openValues.length ? openValues : [0],
-              borderColor: CHART_COLORS[1],
-              backgroundColor: "rgba(62, 207, 142, 0.15)",
-              fill: true,
-              tension: 0.2,
-              pointRadius: 0,
-            },
-          ],
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: { display: false },
-            subtitle: hasDaily
-              ? undefined
-              : {
-                  display: true,
-                  text: "No daily open data yet for this provider",
-                  color: "#9a9a9a",
-                },
-          },
-          scales: {
-            x: {
-              ticks: { maxTicksLimit: 10, maxRotation: 0 },
-              grid: { color: "#2a2a2a" },
-            },
-            y: {
-              beginAtZero: true,
-              ticks: { precision: 0 },
-              grid: { color: "#2a2a2a" },
-            },
-          },
-        },
-      },
-      detailCharts
-    );
+    state.providerOpensSeries = {
+      labels: openLabels,
+      values: openValues,
+      times: openTimes,
+    };
+    renderProviderOpensChart(state.providerOpensSeries);
 
     try {
       card.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -1841,6 +2047,7 @@
   }
 
   function wireProviderUi() {
+    wireProviderRangeToggles();
     var search = $("providerSearch");
     if (search) {
       search.addEventListener("input", function () {

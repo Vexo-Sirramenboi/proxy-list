@@ -11,6 +11,12 @@
  *
  * POST /api/link-clicks/get  { "urls": ["https://..."] }
  *   - Returns { counts: { [normUrl]: number } } from edge-cached Firestore reads.
+ *   - Sums distinct hash docs across URL-key variants (legacy vs modern keys).
+ *   - Omits keys when Firestore is unavailable so clients keep disk cache.
+ *
+ * POST /api/link-ratings/get  { "urls": ["https://..."] }
+ *   - Returns { ratings: { [normUrl]: { up, down } } } via Admin Firestore.
+ *   - Used when client Firebase Auth is blocked (e.g. workers.dev referrer).
  *
  * GET /api/top-opens
  *   - Cached top link_clicks by count (5 min) for the Most opened section.
@@ -73,6 +79,12 @@ export default {
       return handleGetClicks(request, env, ctx);
     }
     if (url.pathname === "/api/link-clicks/get" && request.method === "OPTIONS") {
+      return cors(new Response(null, { status: 204 }));
+    }
+    if (url.pathname === "/api/link-ratings/get" && request.method === "POST") {
+      return handleGetRatings(request, env, ctx);
+    }
+    if (url.pathname === "/api/link-ratings/get" && request.method === "OPTIONS") {
       return cors(new Response(null, { status: 204 }));
     }
     if (url.pathname === "/api/top-opens" && request.method === "GET") {
@@ -232,7 +244,8 @@ async function sha256Hex(text) {
 }
 
 function fsClickNormCacheRequest(normHash) {
-  return new Request(`https://fs-click-norm.proxy-list.internal/${normHash}`);
+  // v2: counts sum legacy+modern URL hashes (v1 cached Math.max and under-counted).
+  return new Request(`https://fs-click-norm.proxy-list.internal/v2/${normHash}`);
 }
 
 function cacheTextResponse(text, ttlSec) {
@@ -770,7 +783,6 @@ async function firestoreReadClickCount(env, docId, token) {
 async function firestoreGetCounts(env, norms, ctx) {
   const project = env.FIREBASE_PROJECT_ID;
   const out = {};
-  for (const norm of norms) out[norm] = 0;
   if (!project || !norms.length) return out;
 
   const cache = caches.default;
@@ -809,6 +821,7 @@ async function firestoreGetCounts(env, norms, ctx) {
   }
   const idToCount = new Map();
   const batchUrl = `https://firestore.googleapis.com/v1/projects/${project}/databases/(default)/documents:batchGet`;
+  let batchOk = false;
 
   for (let i = 0; i < allIds.length; i += 100) {
     const chunk = allIds.slice(i, i + 100);
@@ -825,6 +838,7 @@ async function firestoreGetCounts(env, norms, ctx) {
         }),
       });
       if (!res.ok) continue;
+      batchOk = true;
       const rows = await res.json();
       if (!Array.isArray(rows)) continue;
       for (const row of rows) {
@@ -840,13 +854,31 @@ async function firestoreGetCounts(env, norms, ctx) {
   }
 
   for (const norm of missing) {
-    let best = 0;
+    // Sum distinct Firestore docs across URL-key variants. Legacy clients hashed
+    // lowercase/stripped URLs; modern clients use URL.href — clicks split across
+    // two docs. Math.max under-counted (e.g. 207+175 → showed 207 instead of 382).
+    let total = 0;
+    const seenIds = new Set();
+    let sawAny = false;
     for (const variant of clickUrlVariants(norm)) {
       const id = await sha256Hex(variant);
-      if (idToCount.has(id)) best = Math.max(best, idToCount.get(id));
+      if (seenIds.has(id)) continue;
+      seenIds.add(id);
+      if (idToCount.has(id)) {
+        sawAny = true;
+        total += Number(idToCount.get(id)) || 0;
+      }
     }
-    out[norm] = best;
-    await cachePutClickNorm(norm, best, ctx);
+    // Only set/cache when we observed real docs — omit key on FS failure so
+    // clients keep disk cache instead of treating missing as 0.
+    if (sawAny) {
+      out[norm] = total;
+      await cachePutClickNorm(norm, total, ctx);
+    } else if (batchOk) {
+      // Confirmed empty (batch succeeded, no docs) — safe to report 0.
+      out[norm] = 0;
+      await cachePutClickNorm(norm, 0, ctx);
+    }
   }
   return out;
 }
@@ -862,6 +894,9 @@ async function firestoreTopOpens(env, limit) {
     return [];
   }
   const cap = Math.max(1, Math.min(limit, 100));
+  // Pull extra docs so legacy+modern hash pairs for the same URL can be summed
+  // before we take the top N unique links.
+  const fetchCap = Math.min(300, Math.max(cap * 4, 120));
 
   function parseDocFields(fields) {
     if (!fields || typeof fields !== "object") return null;
@@ -877,10 +912,30 @@ async function firestoreTopOpens(env, limit) {
     return { url: urlVal, count: countVal };
   }
 
+  function mergeTopOpenRows(rows) {
+    const byNorm = new Map();
+    for (const row of rows || []) {
+      if (!row || !row.url) continue;
+      const norm = normalizeUrl(row.url) || legacyNormalizeUrl(row.url);
+      if (!norm) continue;
+      const prev = byNorm.get(norm);
+      const count = Number(row.count) || 0;
+      if (!prev) {
+        byNorm.set(norm, { url: normalizeUrl(row.url) || row.url, count });
+      } else {
+        prev.count += count;
+        // Prefer the modern normalized URL as the display key.
+        const modern = normalizeUrl(row.url);
+        if (modern) prev.url = modern;
+      }
+    }
+    return [...byNorm.values()].sort((a, b) => b.count - a.count).slice(0, cap);
+  }
+
   try {
     const listUrl =
       `https://firestore.googleapis.com/v1/projects/${project}/databases/(default)/documents/link_clicks` +
-      `?pageSize=${cap}&orderBy=count%20desc`;
+      `?pageSize=${fetchCap}&orderBy=count%20desc`;
     const listRes = await fetch(listUrl, {
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -892,7 +947,8 @@ async function firestoreTopOpens(env, limit) {
         const row = parseDocFields(doc.fields);
         if (row) out.push(row);
       }
-      if (out.length) return out;
+      const merged = mergeTopOpenRows(out);
+      if (merged.length) return merged;
     } else {
       const t = await listRes.text().catch(() => "");
       console.error("top_opens_list_failed", listRes.status, t.slice(0, 300));
@@ -913,7 +969,7 @@ async function firestoreTopOpens(env, limit) {
         structuredQuery: {
           from: [{ collectionId: "link_clicks" }],
           orderBy: [{ field: { fieldPath: "count" }, direction: "DESCENDING" }],
-          limit: cap,
+          limit: fetchCap,
         },
       }),
     });
@@ -931,7 +987,7 @@ async function firestoreTopOpens(env, limit) {
       const parsed = parseDocFields(doc.fields);
       if (parsed) out.push(parsed);
     }
-    return out;
+    return mergeTopOpenRows(out);
   } catch (err) {
     console.error("top_opens_query_error", err);
     return [];
@@ -1007,28 +1063,170 @@ async function handleGetClicks(request, env, ctx) {
   const urls = Array.isArray(body && body.urls) ? body.urls.slice(0, 80) : [];
   const norms = [...new Set(urls.map(normalizeUrl).filter((u) => u && u.length >= 10))];
   try {
-    let counts;
+    let counts = {};
     if (hasFirebaseAdmin(env) || env.FIREBASE_PROJECT_ID) {
       counts = await firestoreGetCounts(env, norms, ctx);
-    } else {
-      counts = {};
     }
     const edgeCounts = await edgeGetCounts(norms);
+    const out = {};
     for (const norm of norms) {
-      const fs = counts[norm] || 0;
-      const edge = edgeCounts[norm] || 0;
-      counts[norm] = Math.max(fs, edge);
+      const hasFs = Object.prototype.hasOwnProperty.call(counts, norm);
+      const fs = hasFs ? Number(counts[norm]) || 0 : null;
+      const edge = Number(edgeCounts[norm]) || 0;
+      if (hasFs) {
+        out[norm] = Math.max(fs, edge);
+      } else if (edge > 0) {
+        out[norm] = edge;
+      }
+      // If neither FS nor edge has a value, omit the key so clients keep disk cache.
     }
-    return json({ ok: true, counts });
+    return json({ ok: true, counts: out });
   } catch (err) {
     console.error("get_clicks_failed", err);
     return json({ ok: false, error: "internal_error" }, 500);
   }
 }
 
+async function firestoreGetRatings(env, norms, ctx) {
+  const project = env.FIREBASE_PROJECT_ID;
+  const out = {};
+  if (!project || !hasFirebaseAdmin(env) || !norms.length) return out;
+
+  let token;
+  try {
+    token = await getGoogleAccessToken(env);
+  } catch (err) {
+    console.error("get_ratings_token_failed", err);
+    return out;
+  }
+
+  const cache = caches.default;
+  const missing = [];
+  for (const norm of norms) {
+    const hash = await sha256Hex(norm);
+    const cacheReq = new Request(`https://fs-rating-norm.proxy-list.internal/v1/${hash}`);
+    const hit = await cache.match(cacheReq);
+    if (hit) {
+      try {
+        const parsed = JSON.parse(await hit.text());
+        if (parsed && typeof parsed === "object") {
+          out[norm] = { up: Number(parsed.up) || 0, down: Number(parsed.down) || 0 };
+          continue;
+        }
+      } catch (_) {}
+    }
+    missing.push(norm);
+  }
+  if (!missing.length) return out;
+
+  const allIds = [];
+  const seenId = new Set();
+  for (const norm of missing) {
+    for (const variant of clickUrlVariants(norm)) {
+      const id = await sha256Hex(variant);
+      if (seenId.has(id)) continue;
+      seenId.add(id);
+      allIds.push(id);
+    }
+  }
+
+  const idToRating = new Map();
+  const batchUrl = `https://firestore.googleapis.com/v1/projects/${project}/databases/(default)/documents:batchGet`;
+  let batchOk = false;
+
+  for (let i = 0; i < allIds.length; i += 100) {
+    const chunk = allIds.slice(i, i + 100);
+    try {
+      const res = await fetch(batchUrl, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          documents: chunk.map(
+            (id) => `projects/${project}/databases/(default)/documents/linkRatings/${id}`
+          ),
+        }),
+      });
+      if (!res.ok) continue;
+      batchOk = true;
+      const rows = await res.json();
+      if (!Array.isArray(rows)) continue;
+      for (const row of rows) {
+        const found = row && row.found;
+        if (!found || !found.name) continue;
+        const id = found.name.split("/").pop();
+        const fields = found.fields || {};
+        const up = fields.up && fields.up.integerValue != null ? Number(fields.up.integerValue) : 0;
+        const down =
+          fields.down && fields.down.integerValue != null ? Number(fields.down.integerValue) : 0;
+        idToRating.set(id, { up, down });
+      }
+    } catch (err) {
+      console.error("get_ratings_batch_failed", err);
+    }
+  }
+
+  if (!batchOk) return out;
+
+  for (const norm of missing) {
+    let best = { up: 0, down: 0 };
+    let sawAny = false;
+    const used = new Set();
+    for (const variant of clickUrlVariants(norm)) {
+      const id = await sha256Hex(variant);
+      if (used.has(id)) continue;
+      used.add(id);
+      if (!idToRating.has(id)) continue;
+      const ag = idToRating.get(id);
+      if (!sawAny || ag.up > best.up || ag.down > best.down) {
+        best = ag;
+        sawAny = true;
+      }
+    }
+    out[norm] = best;
+    const hash = await sha256Hex(norm);
+    const cacheReq = new Request(`https://fs-rating-norm.proxy-list.internal/v1/${hash}`);
+    const put = cache.put(
+      cacheReq,
+      new Response(JSON.stringify(best), {
+        headers: {
+          "Cache-Control": `public, max-age=${FS_CLICK_CACHE_TTL_SEC}`,
+          "Content-Type": "application/json",
+        },
+      })
+    );
+    if (ctx && typeof ctx.waitUntil === "function") ctx.waitUntil(put);
+    else await put;
+  }
+  return out;
+}
+
+async function handleGetRatings(request, env, ctx) {
+  let body;
+  try {
+    body = await request.json();
+  } catch (_) {
+    return json({ ok: false, error: "invalid_json" }, 400);
+  }
+  const urls = Array.isArray(body && body.urls) ? body.urls.slice(0, 80) : [];
+  const norms = [...new Set(urls.map(normalizeUrl).filter((u) => u && u.length >= 10))];
+  try {
+    if (!hasFirebaseAdmin(env)) {
+      return json({ ok: true, ratings: {}, warning: "firebase_admin_unavailable" });
+    }
+    const ratings = await firestoreGetRatings(env, norms, ctx);
+    return json({ ok: true, ratings });
+  } catch (err) {
+    console.error("get_ratings_failed", err);
+    return json({ ok: false, error: "internal_error" }, 500);
+  }
+}
+
 async function handleTopOpens(request, env, ctx) {
   const cache = caches.default;
-  const cacheKey = new Request("https://top-opens.proxy-list.internal/v2");
+  const cacheKey = new Request("https://top-opens.proxy-list.internal/v3");
   try {
     const hit = await cache.match(cacheKey);
     if (hit) {

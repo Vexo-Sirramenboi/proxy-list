@@ -30,6 +30,11 @@ GIT_ADD_PATHS = [
     "docs/stats/archive/gdb_catalogs",
 ]
 
+GIT_GDB_PATHS = [
+    "docs/gdb_stats.json",
+    "docs/stats/archive/gdb_catalogs",
+]
+
 GIT_USER_NAME = "auto-link-bot"
 GIT_USER_EMAIL = "bot@users.noreply.github.com"
 
@@ -80,10 +85,10 @@ def git_pull(repo_root: Path) -> None:
     _run(["git", "pull", "--ff-only", "origin", "main"], cwd=repo_root)
 
 
-def git_commit_and_push(repo_root: Path, info: dict[str, str]) -> bool:
+def git_commit_and_push(repo_root: Path, info: dict[str, str], *, paths: list[str] | None = None, message: str | None = None) -> bool:
     _run(["git", "config", "user.name", GIT_USER_NAME], cwd=repo_root)
     _run(["git", "config", "user.email", GIT_USER_EMAIL], cwd=repo_root)
-    _run(["git", "add", *GIT_ADD_PATHS], cwd=repo_root)
+    _run(["git", "add", *(paths or GIT_ADD_PATHS)], cwd=repo_root)
     diff = subprocess.run(
         ["git", "diff", "--cached", "--quiet"],
         cwd=repo_root,
@@ -93,8 +98,8 @@ def git_commit_and_push(repo_root: Path, info: dict[str, str]) -> bool:
         print("[pipeline] No changes to commit", flush=True)
         return False
 
-    message = commit_message_for_run(info)
-    _run(["git", "commit", "-m", message], cwd=repo_root)
+    commit_message = message or commit_message_for_run(info)
+    _run(["git", "commit", "-m", commit_message], cwd=repo_root)
     _run(["git", "push", "origin", "main"], cwd=repo_root)
     return True
 
@@ -113,16 +118,26 @@ def run_pipeline(
 
     link_checker = _run([py, "scripts/link_checker.py"], cwd=repo_root, check=False)
     if link_checker.returncode == 2:
-        info = read_commit_info(repo_root)
+        # Still snapshot game databases — abort only skips list purge/export.
         print(
-            "[pipeline] Link checker aborted purge (exit 2); skipping export/commit.",
+            "[pipeline] Link checker aborted purge (exit 2); still snapshotting game databases.",
             flush=True,
         )
+        _run([py, "scripts/build_gdb_stats.py"], cwd=repo_root, check=False)
+        info = read_commit_info(repo_root)
+        committed = False
+        if push:
+            committed = git_commit_and_push(
+                repo_root,
+                info,
+                paths=GIT_GDB_PATHS,
+                message="Silent maintenance | game database snapshot",
+            )
         return {
             "ok": False,
             "aborted": True,
             "link_checker_exit": 2,
-            "committed": False,
+            "committed": committed,
             **info,
         }
 

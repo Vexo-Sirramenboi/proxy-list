@@ -225,7 +225,8 @@
 
   <script>
     (function () {
-      var LS_FILTER = "proxyList_app_settings_v1";
+      var LS_LIST_FILTERS = "proxyList_list_filters_v1";
+      var LS_APP_SETTINGS = "proxyList_app_settings_v1";
       var selectedFilter = "";
       var mirrors = [];
 
@@ -287,15 +288,33 @@
         return null;
       }
 
-      function loadSavedFilter() {
+      function readJsonLocal(key) {
         try {
-          var raw = localStorage.getItem(LS_FILTER);
-          if (!raw) return "";
+          var raw = localStorage.getItem(key);
+          if (!raw) return null;
           var parsed = JSON.parse(raw);
-          return parsed && parsed.webFilter ? String(parsed.webFilter) : "";
+          return parsed && typeof parsed === "object" ? parsed : null;
         } catch (_) {
-          return "";
+          return null;
         }
+      }
+
+      /** Same source as the main list: proxyList_list_filters_v1.webFilter. */
+      function loadSavedFilter() {
+        var listFilters = readJsonLocal(LS_LIST_FILTERS);
+        if (listFilters && listFilters.webFilter) return String(listFilters.webFilter);
+        var app = readJsonLocal(LS_APP_SETTINGS);
+        if (app && app.webFilter) return String(app.webFilter);
+        return "";
+      }
+
+      function persistSelectedFilter(value) {
+        var next = String(value || "");
+        try {
+          var listFilters = readJsonLocal(LS_LIST_FILTERS) || {};
+          listFilters.webFilter = next;
+          localStorage.setItem(LS_LIST_FILTERS, JSON.stringify(listFilters));
+        } catch (_) {}
       }
 
       function populateFilters() {
@@ -474,6 +493,7 @@
 
       $("filterSelect").addEventListener("change", function () {
         selectedFilter = $("filterSelect").value || "";
+        persistSelectedFilter(selectedFilter);
         renderMirrors();
       });
     })();

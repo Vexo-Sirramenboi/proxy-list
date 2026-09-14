@@ -14,3 +14,8 @@ scripts/batch_links_*.txt
 link_check_abort.json
 commit_info.json
 commit_info.txt
+.WORDS.md
+.env
+.env.local
+streamdeck.ps1
+_tmp

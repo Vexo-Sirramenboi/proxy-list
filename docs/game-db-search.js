@@ -647,15 +647,25 @@
   }
 
   async function loadDuckmath() {
-    var rows = await fetchJson(
-      "https://raw.githubusercontent.com/Neruvy/duckmath/main/backup_classes.json"
-    );
+    // Prefer the local catalog extracted from current DuckMath deploys
+    // (docs/gdb-catalogs/duckmath.json). Fall back to Neruvy remote if missing.
+    var rows = null;
+    try {
+      rows = await fetchLocalCatalog("duckmath.json");
+    } catch (_) {
+      rows = null;
+    }
+    if (!Array.isArray(rows) || !rows.length) {
+      rows = await fetchJson(
+        "https://raw.githubusercontent.com/Neruvy/duckmath/main/backup_classes.json"
+      );
+    }
     if (!Array.isArray(rows)) return [];
     return normalizeEntries(
       rows.map(function (g) {
         return {
           name: g && (g.title || g.name),
-          publisher: "",
+          publisher: (g && (g.publisher || g.developer_name || g.developer)) || "",
           description: String((g && (g.desc || g.description)) || "")
             .replace(/^#+\s*/gm, "")
             .replace(/\r/g, "")

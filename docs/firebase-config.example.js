@@ -8,9 +8,12 @@
 
    Google Cloud → APIs & Services → Credentials → your browser API key →
    HTTP referrers must include ALL of: your GitHub Pages origin (e.g.
-   https://USER.github.io/*), localhost (e.g. http://localhost:8080/*), AND
+   https://USER.github.io/*), localhost (e.g. http://localhost:8080/*),
+   https://proxy-list.jasonthegamer48.workers.dev/*, AND
    https://<projectId>.firebaseapp.com/* — Auth runs helper iframes from
-   authDomain; without this, Identity Toolkit returns API_KEY_HTTP_REFERRER_BLOCKED.
+   authDomain; without this, Identity Toolkit returns API_KEY_HTTP_REFERRER_BLOCKED
+   (ratings show 0/0 on the Worker host until the referrer is allowed, though the
+   Worker also exposes POST /api/link-ratings/get as a read fallback).
 
    For "Most opened", deploy docs/firestore.rules (client writes to link_clicks are denied).
    Statistics provider open-over-time charts read click_daily/{yyyy-mm-dd} (Worker writes counts.{hash}).

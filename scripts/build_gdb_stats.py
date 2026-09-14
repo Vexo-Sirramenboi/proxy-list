@@ -345,6 +345,10 @@ def load_radon() -> list[str]:
 
 
 def load_duckmath() -> list[str]:
+    # Prefer local catalog (extracted from DuckMath SVG/deploy + Neruvy merge).
+    local = load_local("duckmath.json")
+    if local:
+        return local
     rows = http_json("https://raw.githubusercontent.com/Neruvy/duckmath/main/backup_classes.json")
     return names_from_rows(rows if isinstance(rows, list) else [], "title", "name")
 
