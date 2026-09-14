@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-14T11:41:43Z",
+  "generated_at": "2026-09-14T17:41:33Z",
   "snapshot_date": "2026-09-14",
   "catalog_count": 22,
-  "total_entries": 30419,
+  "total_entries": 30416,
   "unique_games": 26056,
   "catalogs": [
     {
       "tag": "gdb:unblockedzone",
       "label": "Unblockedzone",
-      "count": 188,
+      "count": 185,
       "empty": false
     },
     {
@@ -490,7 +490,7 @@
     {
       "date": "2026-09-14",
       "counts": {
-        "gdb:unblockedzone": 188,
+        "gdb:unblockedzone": 185,
         "gdb:gn-math": 833,
         "gdb:luminsdk": 833,
         "gdb:noahs-tutoring": 406,
@@ -513,7 +513,7 @@
         "gdb:dogeub": 20739,
         "gdb:utopia": 275
       },
-      "total_entries": 30419,
+      "total_entries": 30416,
       "unique_games": 26056
     }
   ],
@@ -523,10 +523,17 @@
     "by_catalog": {
       "gdb:unblockedzone": {
         "label": "Unblockedzone",
-        "added": [],
-        "removed": [],
-        "added_count": 0,
-        "removed_count": 0,
+        "added": [
+          "Soccer Bros"
+        ],
+        "removed": [
+          "Bitlife",
+          "Blade Ball",
+          "Brawl Stars",
+          "Wrestle Bros"
+        ],
+        "added_count": 1,
+        "removed_count": 4,
         "added_truncated": 0,
         "removed_truncated": 0
       },
@@ -1324,10 +1331,31 @@
           "label": "DuckMath"
         }
       ],
-      "removed": [],
-      "added_count": 248,
-      "removed_count": 0,
-      "added_truncated": 148,
+      "removed": [
+        {
+          "name": "Bitlife",
+          "tag": "gdb:unblockedzone",
+          "label": "Unblockedzone"
+        },
+        {
+          "name": "Blade Ball",
+          "tag": "gdb:unblockedzone",
+          "label": "Unblockedzone"
+        },
+        {
+          "name": "Brawl Stars",
+          "tag": "gdb:unblockedzone",
+          "label": "Unblockedzone"
+        },
+        {
+          "name": "Wrestle Bros",
+          "tag": "gdb:unblockedzone",
+          "label": "Unblockedzone"
+        }
+      ],
+      "added_count": 249,
+      "removed_count": 4,
+      "added_truncated": 149,
       "removed_truncated": 0
     }
   },
@@ -1336,16 +1364,23 @@
       "date": "2026-09-14",
       "kind": "diff",
       "catalogs_touched": [
-        "gdb:duckmath"
+        "gdb:duckmath",
+        "gdb:unblockedzone"
       ],
-      "added": 248,
-      "removed": 0,
+      "added": 249,
+      "removed": 4,
       "by_catalog": [
         {
           "tag": "gdb:duckmath",
           "label": "DuckMath",
           "added": 248,
           "removed": 0
+        },
+        {
+          "tag": "gdb:unblockedzone",
+          "label": "Unblockedzone",
+          "added": 1,
+          "removed": 4
         }
       ]
     },
