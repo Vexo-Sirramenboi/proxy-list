@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-14T21:33:27Z",
-  "snapshot_date": "2026-09-14",
+  "generated_at": "2026-09-15T03:08:18Z",
+  "snapshot_date": "2026-09-15",
   "catalog_count": 22,
   "total_entries": 30416,
   "unique_games": 26056,
@@ -515,25 +515,47 @@
       },
       "total_entries": 30416,
       "unique_games": 26056
+    },
+    {
+      "date": "2026-09-15",
+      "counts": {
+        "gdb:unblockedzone": 185,
+        "gdb:gn-math": 833,
+        "gdb:luminsdk": 833,
+        "gdb:noahs-tutoring": 406,
+        "gdb:elite-games": 325,
+        "gdb:ultimate-game-stash": 2446,
+        "gdb:seraph": 500,
+        "gdb:chicken-kings-vault": 821,
+        "gdb:lucide": 833,
+        "gdb:sdxp": 0,
+        "gdb:duckmath": 498,
+        "gdb:ccported": 22,
+        "gdb:selenite": 266,
+        "gdb:radon": 302,
+        "gdb:truffled": 0,
+        "gdb:totally-science": 0,
+        "gdb:petezah": 1121,
+        "gdb:frogies-arcade": 0,
+        "gdb:space": 0,
+        "gdb:boredom": 11,
+        "gdb:dogeub": 20739,
+        "gdb:utopia": 275
+      },
+      "total_entries": 30416,
+      "unique_games": 26056
     }
   ],
   "latest_changes": {
-    "date": "2026-09-14",
+    "date": "2026-09-15",
     "is_baseline": false,
     "by_catalog": {
       "gdb:unblockedzone": {
         "label": "Unblockedzone",
-        "added": [
-          "Soccer Bros"
-        ],
-        "removed": [
-          "Bitlife",
-          "Blade Ball",
-          "Brawl Stars",
-          "Wrestle Bros"
-        ],
-        "added_count": 1,
-        "removed_count": 4,
+        "added": [],
+        "removed": [],
+        "added_count": 0,
+        "removed_count": 0,
         "added_truncated": 0,
         "removed_truncated": 0
       },
@@ -620,112 +642,11 @@
       },
       "gdb:duckmath": {
         "label": "DuckMath",
-        "added": [
-          "2-player-crazy-racer",
-          "8-ball-pool-billiard",
-          "99-nights-forest-survival",
-          "ado-cars-drifter",
-          "age-of-battle",
-          "agent-smith",
-          "alien-sky-invasion",
-          "american-touchdown",
-          "among-impostor",
-          "ants-clicker",
-          "archer-hero",
-          "arena-of-heroes",
-          "armed-forces-io",
-          "arrow-master",
-          "awesome-pirates",
-          "axis-football-league",
-          "backflip-challenge",
-          "basket-hoop",
-          "basket-random-pro",
-          "basketball-king",
-          "basketball-slam-dunk",
-          "battle-simulator",
-          "bffs-black-friday-collection",
-          "block-blast",
-          "blocky-combat-swat",
-          "bookworm",
-          "brookhaven",
-          "bubble-shooter-easy",
-          "burnout-city",
-          "burnout-drift-hunter",
-          "burnout-racers",
-          "cactus-mccoy-1",
-          "cactus-mccoy-2",
-          "cake-match-puzzle",
-          "car-parkour",
-          "car-stunt-king",
-          "car-wash",
-          "cargo-jeep-racing",
-          "cat-simulator",
-          "checkout-frenzy",
-          "chess",
-          "city-stunts",
-          "classicube",
-          "cloud",
-          "cluster-reborn",
-          "cobraz-io-classic",
-          "conquer-kingdoms",
-          "cool-cookie-clicker",
-          "crazy-cattle-3d-pro",
-          "crazy-christmas-3d",
-          "crazy-hill-climb",
-          "crazy-moto-racing",
-          "crazy-parking-fury",
-          "crazy-roll",
-          "crazy-stickman-physics",
-          "cross-roads",
-          "crown-defense",
-          "cube-worlds",
-          "cubecraft-survival",
-          "dark-forest-idle",
-          "darkness-survivors",
-          "davo",
-          "deer-hunter",
-          "diggy",
-          "diver-down",
-          "doggo-clicker",
-          "dont-fall-io",
-          "doom-2d",
-          "dreamlike-room",
-          "drift-city",
-          "drift-fury",
-          "drift-hunters",
-          "drift-hunters-2024",
-          "drift-hunters-pro",
-          "drift-king",
-          "drift-rider",
-          "dublix",
-          "ducky-clicker",
-          "e-life-simulator",
-          "eagle-craft",
-          "eagle-duckcraft",
-          "edys-car-simulator",
-          "egg-car-racing",
-          "elastic-duck",
-          "elastic-man",
-          "escape-tsunami-for-brainrots",
-          "extreme-run-3d",
-          "f1-drift-racer",
-          "fall-boys",
-          "fall-brainrots",
-          "famidash",
-          "farming-island",
-          "fast-food-manager",
-          "fast-food-rush",
-          "find-it",
-          "fire-and-water",
-          "fish-it",
-          "fnaf-world",
-          "fnf-garcello",
-          "fnf-mods"
-        ],
+        "added": [],
         "removed": [],
-        "added_count": 248,
+        "added_count": 0,
         "removed_count": 0,
-        "added_truncated": 148,
+        "added_truncated": 0,
         "removed_truncated": 0
       },
       "gdb:ccported": {
@@ -829,537 +750,23 @@
       }
     },
     "all": {
-      "added": [
-        {
-          "name": "2-player-crazy-racer",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "8-ball-pool-billiard",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "99-nights-forest-survival",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "ado-cars-drifter",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "age-of-battle",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "agent-smith",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "alien-sky-invasion",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "american-touchdown",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "among-impostor",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "ants-clicker",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "archer-hero",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "arena-of-heroes",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "armed-forces-io",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "arrow-master",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "awesome-pirates",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "axis-football-league",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "backflip-challenge",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "basket-hoop",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "basket-random-pro",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "basketball-king",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "basketball-slam-dunk",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "battle-simulator",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "bffs-black-friday-collection",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "block-blast",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "blocky-combat-swat",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "bookworm",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "brookhaven",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "bubble-shooter-easy",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "burnout-city",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "burnout-drift-hunter",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "burnout-racers",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "cactus-mccoy-1",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "cactus-mccoy-2",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "cake-match-puzzle",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "car-parkour",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "car-stunt-king",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "car-wash",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "cargo-jeep-racing",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "cat-simulator",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "checkout-frenzy",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "chess",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "city-stunts",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "classicube",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "cloud",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "cluster-reborn",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "cobraz-io-classic",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "conquer-kingdoms",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "cool-cookie-clicker",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "crazy-cattle-3d-pro",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "crazy-christmas-3d",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "crazy-hill-climb",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "crazy-moto-racing",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "crazy-parking-fury",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "crazy-roll",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "crazy-stickman-physics",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "cross-roads",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "crown-defense",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "cube-worlds",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "cubecraft-survival",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "dark-forest-idle",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "darkness-survivors",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "davo",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "deer-hunter",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "diggy",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "diver-down",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "doggo-clicker",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "dont-fall-io",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "doom-2d",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "dreamlike-room",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "drift-city",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "drift-fury",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "drift-hunters",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "drift-hunters-2024",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "drift-hunters-pro",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "drift-king",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "drift-rider",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "dublix",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "ducky-clicker",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "e-life-simulator",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "eagle-craft",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "eagle-duckcraft",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "edys-car-simulator",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "egg-car-racing",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "elastic-duck",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "elastic-man",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "escape-tsunami-for-brainrots",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "extreme-run-3d",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "f1-drift-racer",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "fall-boys",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "fall-brainrots",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "famidash",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "farming-island",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "fast-food-manager",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "fast-food-rush",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "find-it",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "fire-and-water",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "fish-it",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "fnaf-world",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "fnf-garcello",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        },
-        {
-          "name": "fnf-mods",
-          "tag": "gdb:duckmath",
-          "label": "DuckMath"
-        }
-      ],
-      "removed": [
-        {
-          "name": "Bitlife",
-          "tag": "gdb:unblockedzone",
-          "label": "Unblockedzone"
-        },
-        {
-          "name": "Blade Ball",
-          "tag": "gdb:unblockedzone",
-          "label": "Unblockedzone"
-        },
-        {
-          "name": "Brawl Stars",
-          "tag": "gdb:unblockedzone",
-          "label": "Unblockedzone"
-        },
-        {
-          "name": "Wrestle Bros",
-          "tag": "gdb:unblockedzone",
-          "label": "Unblockedzone"
-        }
-      ],
-      "added_count": 249,
-      "removed_count": 4,
-      "added_truncated": 149,
+      "added": [],
+      "removed": [],
+      "added_count": 0,
+      "removed_count": 0,
+      "added_truncated": 0,
       "removed_truncated": 0
     }
   },
   "modifications": [
+    {
+      "date": "2026-09-15",
+      "kind": "diff",
+      "catalogs_touched": [],
+      "added": 0,
+      "removed": 0,
+      "by_catalog": []
+    },
     {
       "date": "2026-09-14",
       "kind": "diff",
