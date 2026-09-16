@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-15T20:55:36Z",
-  "snapshot_date": "2026-09-15",
+  "generated_at": "2026-09-16T03:02:07Z",
+  "snapshot_date": "2026-09-16",
   "catalog_count": 22,
   "total_entries": 30416,
   "unique_games": 26056,
@@ -544,10 +544,39 @@
       },
       "total_entries": 30416,
       "unique_games": 26056
+    },
+    {
+      "date": "2026-09-16",
+      "counts": {
+        "gdb:unblockedzone": 185,
+        "gdb:gn-math": 833,
+        "gdb:luminsdk": 833,
+        "gdb:noahs-tutoring": 406,
+        "gdb:elite-games": 325,
+        "gdb:ultimate-game-stash": 2446,
+        "gdb:seraph": 500,
+        "gdb:chicken-kings-vault": 821,
+        "gdb:lucide": 833,
+        "gdb:sdxp": 0,
+        "gdb:duckmath": 498,
+        "gdb:ccported": 22,
+        "gdb:selenite": 266,
+        "gdb:radon": 302,
+        "gdb:truffled": 0,
+        "gdb:totally-science": 0,
+        "gdb:petezah": 1121,
+        "gdb:frogies-arcade": 0,
+        "gdb:space": 0,
+        "gdb:boredom": 11,
+        "gdb:dogeub": 20739,
+        "gdb:utopia": 275
+      },
+      "total_entries": 30416,
+      "unique_games": 26056
     }
   ],
   "latest_changes": {
-    "date": "2026-09-15",
+    "date": "2026-09-16",
     "is_baseline": false,
     "by_catalog": {
       "gdb:unblockedzone": {
@@ -759,6 +788,14 @@
     }
   },
   "modifications": [
+    {
+      "date": "2026-09-16",
+      "kind": "diff",
+      "catalogs_touched": [],
+      "added": 0,
+      "removed": 0,
+      "by_catalog": []
+    },
     {
       "date": "2026-09-15",
       "kind": "diff",
