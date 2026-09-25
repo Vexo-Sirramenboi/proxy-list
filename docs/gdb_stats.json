@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-25T16:45:31Z",
+  "generated_at": "2026-09-25T21:12:52Z",
   "snapshot_date": "2026-09-25",
   "catalog_count": 22,
-  "total_entries": 30228,
-  "unique_games": 25946,
+  "total_entries": 30231,
+  "unique_games": 25948,
   "catalogs": [
     {
       "tag": "gdb:unblockedzone",
@@ -74,7 +74,7 @@
     {
       "tag": "gdb:ccported",
       "label": "CCPorted",
-      "count": 19,
+      "count": 22,
       "empty": false
     },
     {
@@ -820,7 +820,7 @@
         "gdb:lucide": 833,
         "gdb:sdxp": 0,
         "gdb:duckmath": 498,
-        "gdb:ccported": 19,
+        "gdb:ccported": 22,
         "gdb:selenite": 266,
         "gdb:radon": 302,
         "gdb:truffled": 0,
@@ -832,8 +832,8 @@
         "gdb:dogeub": 20739,
         "gdb:utopia": 275
       },
-      "total_entries": 30228,
-      "unique_games": 25946
+      "total_entries": 30231,
+      "unique_games": 25948
     }
   ],
   "latest_changes": {
@@ -1043,13 +1043,9 @@
       "gdb:ccported": {
         "label": "CCPorted",
         "added": [],
-        "removed": [
-          "Mainland Wars",
-          "Minecraft 1.12 (WASM)",
-          "Riddle Transfer"
-        ],
+        "removed": [],
         "added_count": 0,
-        "removed_count": 3,
+        "removed_count": 0,
         "added_truncated": 0,
         "removed_truncated": 0
       },
@@ -1649,9 +1645,9 @@
         }
       ],
       "added_count": 0,
-      "removed_count": 188,
+      "removed_count": 185,
       "added_truncated": 0,
-      "removed_truncated": 88
+      "removed_truncated": 85
     }
   },
   "modifications": [
@@ -1659,23 +1655,16 @@
       "date": "2026-09-25",
       "kind": "diff",
       "catalogs_touched": [
-        "gdb:unblockedzone",
-        "gdb:ccported"
+        "gdb:unblockedzone"
       ],
       "added": 0,
-      "removed": 188,
+      "removed": 185,
       "by_catalog": [
         {
           "tag": "gdb:unblockedzone",
           "label": "Unblockedzone",
           "added": 0,
           "removed": 185
-        },
-        {
-          "tag": "gdb:ccported",
-          "label": "CCPorted",
-          "added": 0,
-          "removed": 3
         }
       ]
     },
