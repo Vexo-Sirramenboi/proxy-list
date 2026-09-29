@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-29T12:15:31Z",
+  "generated_at": "2026-09-29T22:03:36Z",
   "snapshot_date": "2026-09-29",
   "catalog_count": 22,
-  "total_entries": 30231,
-  "unique_games": 25948,
+  "total_entries": 30243,
+  "unique_games": 25952,
   "catalogs": [
     {
       "tag": "gdb:unblockedzone",
@@ -14,13 +14,13 @@
     {
       "tag": "gdb:gn-math",
       "label": "gn-math",
-      "count": 833,
+      "count": 837,
       "empty": false
     },
     {
       "tag": "gdb:luminsdk",
       "label": "Lumin SDK",
-      "count": 833,
+      "count": 837,
       "empty": false
     },
     {
@@ -56,7 +56,7 @@
     {
       "tag": "gdb:lucide",
       "label": "Lucide",
-      "count": 833,
+      "count": 837,
       "empty": false
     },
     {
@@ -926,14 +926,14 @@
       "date": "2026-09-29",
       "counts": {
         "gdb:unblockedzone": 0,
-        "gdb:gn-math": 833,
-        "gdb:luminsdk": 833,
+        "gdb:gn-math": 837,
+        "gdb:luminsdk": 837,
         "gdb:noahs-tutoring": 406,
         "gdb:elite-games": 325,
         "gdb:ultimate-game-stash": 2446,
         "gdb:seraph": 500,
         "gdb:chicken-kings-vault": 821,
-        "gdb:lucide": 833,
+        "gdb:lucide": 837,
         "gdb:sdxp": 0,
         "gdb:duckmath": 498,
         "gdb:ccported": 22,
@@ -948,8 +948,8 @@
         "gdb:dogeub": 20739,
         "gdb:utopia": 275
       },
-      "total_entries": 30231,
-      "unique_games": 25948
+      "total_entries": 30243,
+      "unique_games": 25952
     }
   ],
   "latest_changes": {
@@ -967,18 +967,28 @@
       },
       "gdb:gn-math": {
         "label": "gn-math",
-        "added": [],
+        "added": [
+          "Gang Beasts",
+          "Lethal Company",
+          "Team Fortress 2",
+          "Web Dashers"
+        ],
         "removed": [],
-        "added_count": 0,
+        "added_count": 4,
         "removed_count": 0,
         "added_truncated": 0,
         "removed_truncated": 0
       },
       "gdb:luminsdk": {
         "label": "Lumin SDK",
-        "added": [],
+        "added": [
+          "Gang Beasts",
+          "Lethal Company",
+          "Team Fortress 2",
+          "Web Dashers"
+        ],
         "removed": [],
-        "added_count": 0,
+        "added_count": 4,
         "removed_count": 0,
         "added_truncated": 0,
         "removed_truncated": 0
@@ -1030,9 +1040,14 @@
       },
       "gdb:lucide": {
         "label": "Lucide",
-        "added": [],
+        "added": [
+          "Gang Beasts",
+          "Lethal Company",
+          "Team Fortress 2",
+          "Web Dashers"
+        ],
         "removed": [],
-        "added_count": 0,
+        "added_count": 4,
         "removed_count": 0,
         "added_truncated": 0,
         "removed_truncated": 0
@@ -1156,9 +1171,70 @@
       }
     },
     "all": {
-      "added": [],
+      "added": [
+        {
+          "name": "Gang Beasts",
+          "tag": "gdb:gn-math",
+          "label": "gn-math"
+        },
+        {
+          "name": "Gang Beasts",
+          "tag": "gdb:luminsdk",
+          "label": "Lumin SDK"
+        },
+        {
+          "name": "Gang Beasts",
+          "tag": "gdb:lucide",
+          "label": "Lucide"
+        },
+        {
+          "name": "Lethal Company",
+          "tag": "gdb:gn-math",
+          "label": "gn-math"
+        },
+        {
+          "name": "Lethal Company",
+          "tag": "gdb:luminsdk",
+          "label": "Lumin SDK"
+        },
+        {
+          "name": "Lethal Company",
+          "tag": "gdb:lucide",
+          "label": "Lucide"
+        },
+        {
+          "name": "Team Fortress 2",
+          "tag": "gdb:gn-math",
+          "label": "gn-math"
+        },
+        {
+          "name": "Team Fortress 2",
+          "tag": "gdb:luminsdk",
+          "label": "Lumin SDK"
+        },
+        {
+          "name": "Team Fortress 2",
+          "tag": "gdb:lucide",
+          "label": "Lucide"
+        },
+        {
+          "name": "Web Dashers",
+          "tag": "gdb:gn-math",
+          "label": "gn-math"
+        },
+        {
+          "name": "Web Dashers",
+          "tag": "gdb:luminsdk",
+          "label": "Lumin SDK"
+        },
+        {
+          "name": "Web Dashers",
+          "tag": "gdb:lucide",
+          "label": "Lucide"
+        }
+      ],
       "removed": [],
-      "added_count": 0,
+      "added_count": 12,
       "removed_count": 0,
       "added_truncated": 0,
       "removed_truncated": 0
@@ -1168,10 +1244,33 @@
     {
       "date": "2026-09-29",
       "kind": "diff",
-      "catalogs_touched": [],
-      "added": 0,
+      "catalogs_touched": [
+        "gdb:gn-math",
+        "gdb:lucide",
+        "gdb:luminsdk"
+      ],
+      "added": 12,
       "removed": 0,
-      "by_catalog": []
+      "by_catalog": [
+        {
+          "tag": "gdb:gn-math",
+          "label": "gn-math",
+          "added": 4,
+          "removed": 0
+        },
+        {
+          "tag": "gdb:lucide",
+          "label": "Lucide",
+          "added": 4,
+          "removed": 0
+        },
+        {
+          "tag": "gdb:luminsdk",
+          "label": "Lumin SDK",
+          "added": 4,
+          "removed": 0
+        }
+      ]
     },
     {
       "date": "2026-09-28",
